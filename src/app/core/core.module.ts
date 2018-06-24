@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { LogoComponent } from './logo/logo.component';
+import { HeaderLogoComponent } from './header-logo/header-logo.component';
 
 @NgModule({
   imports: [
@@ -12,7 +12,7 @@ import { LogoComponent } from './logo/logo.component';
   declarations: [
     HeaderComponent,
     FooterComponent,
-    LogoComponent,
+    HeaderLogoComponent,
   ],
   exports: [
     HeaderComponent,

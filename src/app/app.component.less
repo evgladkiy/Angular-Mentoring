@@ -1,0 +1,27 @@
+@import 'variables';
+
+html, body, :host, :host > div {
+    height: 100%;
+}
+
+body {
+	position: relative;
+    max-width: @max-width;
+	min-width: @min-width;
+    font-size: @font-size;
+	line-height: @base-line-height;
+    overflow-x: hidden;
+}
+
+:host app-header {
+    height: @header-height;
+}
+
+:host app-header + * {
+    min-height: calc(100% - @header-height - @footer-height);
+    display: block;
+}
+
+:host app-footer {
+    height: @footer-height;
+}

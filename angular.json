@@ -8,7 +8,11 @@
       "sourceRoot": "src",
       "projectType": "application",
       "prefix": "app",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {
+          "styleext": "less",
+        }
+      },
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -23,8 +27,16 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/@fortawesome/fontawesome-free/less/fontawesome.less",
+              "node_modules/@fortawesome/fontawesome-free/less/fa-solid.less",
+              "node_modules/@fortawesome/fontawesome-free/less/fa-regular.less",
+              "src/less/styles.less"
             ],
+            "stylePreprocessorOptions": {
+                "includePaths": [
+                    "src/less"
+                ]
+            },
             "scripts": []
           },
           "configurations": {
@@ -72,7 +84,10 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "node_modules/@fortawesome/fontawesome-free/less/fontawesome.less",
+              "node_modules/@fortawesome/fontawesome-free/less/fa-solid.less",
+              "node_modules/@fortawesome/fontawesome-free/less/fa-regular.less",
+              "src/less/styles.less"
             ],
             "scripts": [],
             "assets": [
