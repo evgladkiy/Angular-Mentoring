@@ -1,3 +1,33 @@
-<p>
-    {{course | json}}
-</p>
+<section class="course-container">
+    <div class="course-img__container">
+        <img  [src]='course.img' alt="Course image">
+    </div>
+    <div class="course-info__container">
+        <!-- there will be pipe in future-->
+        <h3 class="course-info__header">{{course.title[0].toUpperCase() + course.title.slice(1)}}</h3>
+        <p class="course-info__description">
+            {{course.description.length > 250 ? (course.description | slice : 0 : 250) + "..." :  course.description}}
+        </p>
+        <div class="course-info__footer">
+            <div class="course-info__footer-item course-info__footer-item_author">
+                <i class="far fa-user"></i>
+                <span>Author:</span>
+                <span>{{course.author}}</span>
+            </div>
+            <div class="course-info__footer-item course-info__footer-item_duration">
+                <i class="far fa-clock"></i>
+                <span>Duration:</span>
+                <span>{{course.duration}} minutes</span>
+            </div>
+            <div class="course-info__footer-item course-info__footer-item_duration">
+                <i class="far fa-calendar-alt"></i>
+                <span>Date:</span>
+                <span>{{course.creationDate | date}}</span>
+            </div>
+        </div>
+    </div>
+    <div class="course-btns__contqiner">
+        <button class="btn">Delete</button>
+        <button class="btn">Edit</button>
+    </div>
+</section>

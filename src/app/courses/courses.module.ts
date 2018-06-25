@@ -7,18 +7,20 @@ import { CourseListComponent } from './course-list/course-list.component';
 import { ToolboxComponent } from './toolbox/toolbox.component';
 import { CoursesPageComponent } from './courses-page/courses-page.component';
 import { CourseListItemComponent } from './course-list-item/course-list-item.component';
+import { CoursesPaginationComponent } from './courses-pagination/courses-pagination.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    SharedModule,
-  ],
-  declarations: [
-    CourseListComponent,
-    ToolboxComponent,
-    CoursesPageComponent,
-    CourseListItemComponent,
-  ],
-  exports: [ CoursesPageComponent ],
+    imports: [
+        CommonModule,
+        SharedModule,
+    ],
+    declarations: [
+        CourseListComponent,
+        ToolboxComponent,
+        CoursesPageComponent,
+        CourseListItemComponent,
+        CoursesPaginationComponent,
+    ],
+    exports: [ CoursesPageComponent ],
 })
 export class CoursesModule { }
