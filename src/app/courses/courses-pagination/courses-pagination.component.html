@@ -1,6 +1,6 @@
 <p>Shown <b>{{itemsOnPage}}</b> of <b>{{courses.length}}</b> results</p>
 <ul class="pagination-container">
     <li *ngFor="let pageBtn of pages">
-        <button (click)="onClickPaginationBtn(pageBtn)">{{ pageBtn }}</button>
+        <button (click)="onClickPaginationBtn(pageBtn)">{{pageBtn}}</button>
     </li>
 </ul>

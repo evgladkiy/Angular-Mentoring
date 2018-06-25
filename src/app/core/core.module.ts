@@ -4,19 +4,21 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderLogoComponent } from './header-logo/header-logo.component';
+import { UserPanelComponent } from './user-panel/user-panel.component';
 
 @NgModule({
-  imports: [
-    CommonModule,
-  ],
-  declarations: [
-    HeaderComponent,
-    FooterComponent,
-    HeaderLogoComponent,
-  ],
-  exports: [
-    HeaderComponent,
-    FooterComponent,
-  ],
+    imports: [
+        CommonModule,
+    ],
+    declarations: [
+        HeaderComponent,
+        FooterComponent,
+        HeaderLogoComponent,
+        UserPanelComponent,
+    ],
+    exports: [
+        HeaderComponent,
+        FooterComponent,
+    ],
 })
 export class CoreModule { }

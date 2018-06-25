@@ -1,2 +1,4 @@
-<app-course-list [courses]="courses"></app-course-list>
+<app-breadcrumbs [path]="pagePath"></app-breadcrumbs>
+<app-toolbox></app-toolbox>
+<app-course-list [courses]="courses" (deleted)="onDeleteCourse($event)"></app-course-list>
 <app-courses-pagination courses-per-page="5" [courses]="courses"></app-courses-pagination>

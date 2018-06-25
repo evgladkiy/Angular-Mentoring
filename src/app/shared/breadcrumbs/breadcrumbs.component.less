@@ -1,0 +1,19 @@
+@import "variables";
+
+.breadcrumbs-navigation {
+    display: flex;
+    padding: 15px 0 5px;
+    border-bottom: 1px solid @light-grey;
+
+    &__item {
+        padding-right: 3px;
+
+        &:not(:last-of-type)::after {
+            content: '/';
+            font-size: 1.8rem;
+            padding-left: 3px;
+            font-weight: bold;
+            color: @black;
+        }
+    }
+};

@@ -1,3 +1,5 @@
-<p>
-  breadcrumbs works!
-</p>
+<nav class="breadcrumbs-navigation">
+    <li class="breadcrumbs-navigation__item" *ngFor="let page of path">
+        <a class="breadcrumbs-navigation__link" href="#">{{page}}</a>
+    </li>
+</nav>
