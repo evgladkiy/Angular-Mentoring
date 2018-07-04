@@ -10,7 +10,7 @@
       "prefix": "app",
       "schematics": {
         "@schematics/angular:component": {
-          "styleext": "less",
+          "styleext": "less"
         }
       },
       "architect": {
@@ -33,9 +33,7 @@
               "src/less/styles.less"
             ],
             "stylePreprocessorOptions": {
-                "includePaths": [
-                    "src/less"
-                ]
+              "includePaths": ["src/less"]
             },
             "scripts": []
           },
@@ -89,6 +87,9 @@
               "node_modules/@fortawesome/fontawesome-free/less/fa-regular.less",
               "src/less/styles.less"
             ],
+            "stylePreprocessorOptions": {
+              "includePaths": ["src/less"]
+            },
             "scripts": [],
             "assets": [
               "src/favicon.ico",

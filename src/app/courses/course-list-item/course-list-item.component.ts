@@ -13,8 +13,7 @@ export class CourseListItemComponent {
 
     constructor() { }
 
-    clickHandler(id: string): void {
-        this.deleted.emit(id);
+    onClick(id: string): void {
+      this.deleted.emit(id);
     }
-
 }

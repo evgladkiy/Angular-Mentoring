@@ -1,4 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { DebugElement } from '@angular/core';
+import { By } from '@angular/platform-browser';
 
 import { FooterComponent } from './footer.component';
 
@@ -19,7 +21,12 @@ describe('FooterComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
+  it('Footer should contain text "@Copyright" with current year', () => {
+    const pDebugElement: DebugElement = fixture.debugElement.query(By.css('p'));
+    const p: HTMLElement = pDebugElement.nativeElement;
+    const currentYear = (new Date()).getFullYear();
+
+    expect(p.textContent).toContain(`@Copyright ${component.currentYear}`);
+
   });
 });

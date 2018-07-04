@@ -14,6 +14,6 @@ export class CourseListComponent {
     constructor() { }
 
     onDeleteCourse(id: string): void {
-        this.deleted.emit(id);
+      this.deleted.emit(id);
     }
 }

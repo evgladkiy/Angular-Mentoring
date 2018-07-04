@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class ToolboxComponent {
 
-    public searchQuery: string = '';
+    public searchQuery = null;
 
     constructor() { }
 

@@ -1,6 +1,6 @@
 <section class="course-container">
     <div class="course-img__container">
-        <img  [src]='course.img' alt="Course image">
+        <img [src]='course.img' alt="Course image">
     </div>
     <div class="course-info__container">
         <!-- there will be pipe in future-->
@@ -9,25 +9,25 @@
             {{course.description.length > 250 ? (course.description | slice : 0 : 250) + "..." :  course.description}}
         </p>
         <div class="course-info__footer">
-            <div class="course-info__footer-item course-info__footer-item_author">
+            <div class="course-info__footer-item course-author">
                 <i class="far fa-user"></i>
                 <span>Author:</span>
-                <span>{{course.author}}</span>
+                <span class="course-author__txt">{{course.author}}</span>
             </div>
-            <div class="course-info__footer-item course-info__footer-item_duration">
+            <div class="course-info__footer-item course-duration">
                 <i class="far fa-clock"></i>
                 <span>Duration:</span>
-                <span>{{course.duration}} minutes</span>
+                <span class="course-duration__txt">{{course.duration}} minutes</span>
             </div>
-            <div class="course-info__footer-item course-info__footer-item_duration">
+            <div class="course-info__footer-item course-date">
                 <i class="far fa-calendar-alt"></i>
                 <span>Date:</span>
-                <span>{{course.creationDate | date}}</span>
+                <span class="course-date__txt">{{course.creationDate | date}}</span>
             </div>
         </div>
     </div>
     <div class="course-btns__contqiner">
-        <button class="btn" (click)="clickHandler(course._id)">Delete</button>
+        <button class="btn btn-delete" (click)="onClick(course._id)">Delete</button>
         <button class="btn btn-cadetblue">Edit</button>
     </div>
 </section>

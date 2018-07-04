@@ -6,8 +6,7 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./breadcrumbs.component.less'],
 })
 export class BreadcrumbsComponent {
-    @Input() path: string[];
+  @Input() path: string[];
 
-    constructor() { }
-
+  constructor() { }
 }

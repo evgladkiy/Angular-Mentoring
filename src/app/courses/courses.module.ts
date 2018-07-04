@@ -1,8 +1,10 @@
 import { NgModule } from '@angular/core';
-import { CommonModule,  } from '@angular/common';
-import { FormsModule }   from '@angular/forms';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
 
 import { SharedModule } from './../shared/shared.module';
+
+import { CoursesService } from './courses.service';
 
 import { CourseListComponent } from './course-list/course-list.component';
 import { ToolboxComponent } from './toolbox/toolbox.component';
@@ -11,7 +13,7 @@ import { CourseListItemComponent } from './course-list-item/course-list-item.com
 import { CoursesPaginationComponent } from './courses-pagination/courses-pagination.component';
 
 @NgModule({
-    imports: [
+  imports: [
         CommonModule,
         FormsModule,
         SharedModule,
@@ -23,6 +25,7 @@ import { CoursesPaginationComponent } from './courses-pagination/courses-paginat
         CourseListItemComponent,
         CoursesPaginationComponent,
     ],
+    providers: [ CoursesService ],
     exports: [ CoursesPageComponent ],
 })
 export class CoursesModule { }
