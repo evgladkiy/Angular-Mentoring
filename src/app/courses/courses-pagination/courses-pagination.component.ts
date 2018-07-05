@@ -11,12 +11,12 @@ export class CoursesPaginationComponent implements OnInit {
   public pages: string[];
 
   @Input() courses: Course[];
-  @Input() itemsOnPage: string;
+  @Input('courses-per-page') coursesPerPage: string;
 
   constructor() {}
 
   ngOnInit() {
-    const numberOfPages: number = Math.ceil(this.courses.length / Number(this.itemsOnPage));
+    const numberOfPages: number = Math.ceil(this.courses.length / Number(this.coursesPerPage));
 
     this.pages = Array(numberOfPages).fill(null).map((item, index) => String(index + 1));
     this.pages.unshift('first');

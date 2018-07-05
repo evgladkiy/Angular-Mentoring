@@ -10,7 +10,7 @@ describe('FooterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FooterComponent ]
+      declarations: [ FooterComponent ],
     })
     .compileComponents();
   }));
@@ -23,10 +23,8 @@ describe('FooterComponent', () => {
 
   it('Footer should contain text "@Copyright" with current year', () => {
     const pDebugElement: DebugElement = fixture.debugElement.query(By.css('p'));
-    const p: HTMLElement = pDebugElement.nativeElement;
     const currentYear = (new Date()).getFullYear();
 
-    expect(p.textContent).toContain(`@Copyright ${component.currentYear}`);
-
+    expect(pDebugElement.nativeElement.textContent).toContain(`@Copyright ${component.currentYear}`);
   });
 });
