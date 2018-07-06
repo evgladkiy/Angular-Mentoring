@@ -77,9 +77,9 @@ describe('CourseListItemComponent', () => {
 
   it('should create correct number of pagination buttons', () => {
     const coursesPaginationEl: DebugElement = fixture.debugElement.query(By.css('.pagination-container'));
-    const numberOFbuttons = coursesPaginationEl.nativeElement.children.length;
+    const numberOfButtons = coursesPaginationEl.nativeElement.children.length;
     const numberOfPages: number = Math.ceil(testHost.courses.length / Number(testHost.coursesPerPage));
 
-    expect(numberOFbuttons).toBeTruthy(numberOfPages + 2);  // first and last button
+    expect(numberOfButtons).toBeTruthy(numberOfPages + 2);  // first and last button
   });
 });

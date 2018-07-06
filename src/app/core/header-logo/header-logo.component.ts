@@ -9,5 +9,4 @@ export class HeaderLogoComponent {
   public logoText = 'AwesomeLogo';
 
   constructor() { }
-
 }

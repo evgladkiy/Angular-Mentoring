@@ -46,18 +46,21 @@ describe('CourseListItemComponent', () => {
     fixture.detectChanges();
   });
 
-  it('img src attr should have propper path', () => {
+  it('img src attr should have correct path', () => {
     const imgDebugElement: DebugElement = courseEl.query(By.css('img'));
+
     expect(imgDebugElement.nativeElement.src).toBe(testHost.course.img);
   });
 
   it('course header should be correct', () => {
     const h3DebugElement: DebugElement = courseEl.query(By.css('.course-info__header'));
+
     expect(h3DebugElement.nativeElement.textContent).toBe(testHost.course.title);
   });
 
   it('course description should be correct', () => {
     const pDebugElement: DebugElement = courseEl.query(By.css('.course-info__description'));
+
     expect(pDebugElement.nativeElement.textContent.trim()).toBe(testHost.course.description);
   });
 
@@ -68,6 +71,7 @@ describe('CourseListItemComponent', () => {
 
   it('course duration should be correct', () => {
     const courseDurationDebugElement: DebugElement = courseEl.query(By.css('.course-duration__txt'));
+
     expect(courseDurationDebugElement.nativeElement.textContent).toContain(testHost.course.duration);
   });
 

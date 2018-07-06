@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.less'],
 })
 export class FooterComponent {
-  public currentYear: String = '2018';
+  public currentYear = '2018';
 
   constructor() { }
 }

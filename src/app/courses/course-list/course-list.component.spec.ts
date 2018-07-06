@@ -50,22 +50,24 @@ describe('CourseListComponent', () => {
 
   it('course list should have correct numbers of items', () => {
     const coursesElem: HTMLElement = courseListEl.nativeElement;
+
     expect(coursesElem.children.length).toBe(courseList.length);
   });
 
   it('should raise delete course event when deleted', () => {
     let courseToDeleteId: string;
-    const courseListitem1 = courseListEl.children[0];
-    const courseListitem2 = courseListEl.children[1];
-    const course1Id = courseListitem1.nativeElement.course._id;
-    const course2Id = courseListitem2.nativeElement.course._id;
+    const courseListItem1 = courseListEl.children[0];
+    const courseListItem2 = courseListEl.children[1];
+    const course1Id = courseListItem1.nativeElement.course._id;
+    const course2Id = courseListItem2.nativeElement.course._id;
 
     component.deleted.subscribe((id: string) => courseToDeleteId = id);
+    courseListItem1.triggerEventHandler('deleted', course1Id);
 
-    courseListitem1.triggerEventHandler('deleted', course1Id);
     expect(courseToDeleteId).toBe(courseList[0]._id);
 
-    courseListitem2.triggerEventHandler('deleted', course2Id);
+    courseListItem2.triggerEventHandler('deleted', course2Id);
+
     expect(courseToDeleteId).toBe(courseList[1]._id);
   });
 });

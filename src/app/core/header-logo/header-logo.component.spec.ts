@@ -5,7 +5,6 @@ import { By } from '@angular/platform-browser';
 import { HeaderLogoComponent } from './header-logo.component';
 
 describe('HeaderLogoComponent', () => {
-  let component: HeaderLogoComponent;
   let fixture: ComponentFixture<HeaderLogoComponent>;
   const expectedLogoText = 'AwesomeLogo';
 
@@ -18,7 +17,6 @@ describe('HeaderLogoComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HeaderLogoComponent);
-    component = fixture.componentInstance;
     fixture.detectChanges();
   });
 

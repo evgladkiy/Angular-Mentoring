@@ -4,15 +4,15 @@
     height: 100%;
 }
 
-:host app-header {
+app-header {
     min-height: @header-height;
 }
 
-:host app-header + * {
+app-header + * {
     min-height: calc(100% - @header-height - @footer-height);
     display: block;
 }
 
-:host app-footer {
+app-footer {
     min-height: @footer-height;
 }

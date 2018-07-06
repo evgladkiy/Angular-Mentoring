@@ -23,7 +23,6 @@ describe('FooterComponent', () => {
 
   it('Footer should contain text "@Copyright" with current year', () => {
     const pDebugElement: DebugElement = fixture.debugElement.query(By.css('p'));
-    const currentYear = (new Date()).getFullYear();
 
     expect(pDebugElement.nativeElement.textContent).toContain(`@Copyright ${component.currentYear}`);
   });

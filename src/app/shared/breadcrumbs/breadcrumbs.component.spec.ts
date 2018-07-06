@@ -25,7 +25,7 @@ describe('BreadcrumbsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create correct number of breadcrums', () => {
+  it('should create correct number of breadcrumbs', () => {
     const navElement: HTMLElement = breadcrumbsDebugElement.nativeElement;
 
     expect(navElement.children.length).toBe(path.length);

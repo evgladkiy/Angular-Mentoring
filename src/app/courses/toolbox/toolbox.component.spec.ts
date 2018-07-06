@@ -8,14 +8,13 @@ import { FormsModule } from '@angular/forms';
 describe('ToolboxComponent', () => {
   let component: ToolboxComponent;
   let fixture: ComponentFixture<ToolboxComponent>;
-  let searchInputDebugElement: DebugElement;
   let submitButtonDebugElement: DebugElement;
-  const expextedSearchQuery = 'Angular';
+  const expectedSearchQuery = 'Angular';
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [ FormsModule ],
       declarations: [ ToolboxComponent ],
-      imports: [ FormsModule ]
     })
     .compileComponents();
   }));
@@ -23,17 +22,14 @@ describe('ToolboxComponent', () => {
   beforeEach(() => {
     fixture = TestBed.createComponent(ToolboxComponent);
     component = fixture.componentInstance;
-    searchInputDebugElement = fixture.debugElement.query(By.css('.form-input_search'));
-    submitButtonDebugElement = fixture.debugElement.query(By.css('.btn_search-course'));
+    component.searchQuery = expectedSearchQuery;
     fixture.detectChanges();
   });
 
   it('toolbox should print correct search input value', () => {
-    searchInputDebugElement.nativeElement.value = expextedSearchQuery;
+    submitButtonDebugElement = fixture.debugElement.query(By.css('.btn_search-course'));
     submitButtonDebugElement.nativeElement.click();
-    component.onSearhBtnClick();
-    fixture.detectChanges();
 
-    expect('Angular').toBe(expextedSearchQuery);
+    expect(component.printedValue).toBe(expectedSearchQuery);
   });
 });

@@ -9,7 +9,6 @@ describe('CoursesPageComponent', () => {
   let component: CoursesPageComponent;
   let fixture: ComponentFixture<CoursesPageComponent>;
 
-  const courseToDeleteId = '123599f0d880855dde';
   const courses = [
     {
       _id: '123599f0d880855dde',

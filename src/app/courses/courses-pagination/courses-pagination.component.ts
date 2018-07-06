@@ -26,5 +26,4 @@ export class CoursesPaginationComponent implements OnInit {
   onClickPaginationBtn(btn: string): void {
     console.log(`Pagination Btn ${btn} was clicked`);
   }
-
 }
