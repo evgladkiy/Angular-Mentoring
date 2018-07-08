@@ -4,7 +4,10 @@
     </div>
     <div class="course-info__container">
         <!-- there will be pipe in future-->
-        <h3 class="course-info__header">{{course.title[0].toUpperCase() + course.title.slice(1)}}</h3>
+        <h3 class="course-info__header">
+          {{course.title | capitalized}}
+          <i *ngIf="course.topRated" class="fas fa-star" ngClass="icon icon-yellow"></i>
+        </h3>
         <p class="course-info__description">
             {{course.description.length > 250 ? (course.description | slice : 0 : 250) + "..." :  course.description}}
         </p>
@@ -17,12 +20,12 @@
             <div class="course-info__footer-item course-duration">
                 <i class="far fa-clock"></i>
                 <span>Duration:</span>
-                <span class="course-duration__txt">{{course.duration}} minutes</span>
+                <span class="course-duration__txt">{{course.duration | duration}}</span>
             </div>
             <div class="course-info__footer-item course-date">
                 <i class="far fa-calendar-alt"></i>
                 <span>Date:</span>
-                <span class="course-date__txt">{{course.creationDate | date}}</span>
+                <span class="course-date__txt">{{course.creationDate | date : 'dd MMMM, yyyy'}}</span>
             </div>
         </div>
     </div>

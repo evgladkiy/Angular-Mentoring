@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { SharedModule } from './../shared/shared.module';
 
+import { HighlightByDateDirective } from './course-list/highlight-by-date.directive';
+
 import { CourseListComponent } from './course-list/course-list.component';
 import { ToolboxComponent } from './toolbox/toolbox.component';
 import { CoursesPageComponent } from './courses-page/courses-page.component';
@@ -12,17 +14,18 @@ import { CoursesPaginationComponent } from './courses-pagination/courses-paginat
 
 @NgModule({
   imports: [
-        CommonModule,
-        FormsModule,
-        SharedModule,
-    ],
-    declarations: [
-        CourseListComponent,
-        ToolboxComponent,
-        CoursesPageComponent,
-        CourseListItemComponent,
-        CoursesPaginationComponent,
-    ],
-    exports: [ CoursesPageComponent ],
+    CommonModule,
+    FormsModule,
+    SharedModule,
+  ],
+  declarations: [
+    HighlightByDateDirective,
+    CourseListComponent,
+    ToolboxComponent,
+    CoursesPageComponent,
+    CourseListItemComponent,
+    CoursesPaginationComponent,
+  ],
+  exports: [ CoursesPageComponent ],
 })
 export class CoursesModule { }

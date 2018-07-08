@@ -26,4 +26,10 @@ export class CoursesPaginationComponent implements OnInit {
   onClickPaginationBtn(btn: string): void {
     console.log(`Pagination Btn ${btn} was clicked`);
   }
+
+  getShownPages(): string {
+    return this.courses.length <= Number(this.coursesPerPage)
+      ? String(this.courses.length)
+      : this.coursesPerPage;
+  }
 }

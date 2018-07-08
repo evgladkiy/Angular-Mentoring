@@ -1,4 +1,8 @@
 <app-breadcrumbs [path]="pagePath"></app-breadcrumbs>
-<app-toolbox></app-toolbox>
-<app-course-list [courses]="courses" (deleted)="onDeleteCourse($event)"></app-course-list>
-<app-courses-pagination courses-per-page="5" [courses]="courses"></app-courses-pagination>
+<app-toolbox (filtred)="onFiltredCourse($event)"></app-toolbox>
+<button
+  class="btn btn-large" (click)="toggleCoursesVisibility()">
+  {{shouldShowCourses ? 'Hide' : 'Show'}} courses
+</button>
+<app-course-list *ngIf="shouldShowCourses" [courses]="courses" (deleted)="onDeleteCourse($event)"></app-course-list>
+<app-courses-pagination *ngIf="shouldShowCourses" courses-per-page="5" [courses]="courses"></app-courses-pagination>

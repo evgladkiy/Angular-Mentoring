@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-toolbox',
@@ -6,19 +6,15 @@ import { Component } from '@angular/core';
   styleUrls: ['./toolbox.component.less'],
 })
 export class ToolboxComponent {
-  public searchQuery: string;
-  public printedValue: string;
+  public searchQuery = '';
+
+  @Output() filtred = new EventEmitter<string>();
 
   constructor() { }
 
-  onSearchBtnClick(): void {
-    const inputValue: string = this.searchQuery.trim();
-
-    if (inputValue.length > 0) {
-      console.log(`Toolbox search input value - '${inputValue}'`);
-      this.printedValue = inputValue;
-    } else {
-      console.log('Toolbox search input is empty');
+  onFilterBtnClick(): void {
+    if (this.searchQuery.trim() !== '') {
+      this.filtred.emit(this.searchQuery.toLowerCase());
     }
   }
 }
