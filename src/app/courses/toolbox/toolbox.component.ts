@@ -13,8 +13,6 @@ export class ToolboxComponent {
   constructor() { }
 
   onFilterBtnClick(): void {
-    if (this.searchQuery.trim() !== '') {
-      this.filtred.emit(this.searchQuery.toLowerCase());
-    }
+    this.filtred.emit(this.searchQuery.toLowerCase());
   }
 }

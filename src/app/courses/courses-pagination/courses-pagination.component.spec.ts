@@ -1,9 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { Component, DebugElement } from '@angular/core';
+import { By } from '@angular/platform-browser';
+
+import { Course } from './../course.model';
 
 import { CoursesPaginationComponent } from './courses-pagination.component';
-import { Component, DebugElement } from '@angular/core';
-import { Course } from './../course.model';
-import { By } from '@angular/platform-browser';
 
 @Component({
   template: `
@@ -61,9 +62,10 @@ class TestHostComponent {
   ];
 }
 
-describe('CourseListItemComponent', () => {
+describe('courses pagination component', () => {
   let testHost: TestHostComponent;
   let fixture: ComponentFixture<TestHostComponent>;
+  const numberOfAdditionalBtns = 2;  // first and last button
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -83,15 +85,18 @@ describe('CourseListItemComponent', () => {
     const coursesPaginationEl: DebugElement = fixture.debugElement.query(By.css('.pagination-container'));
     const numberOfButtons = coursesPaginationEl.nativeElement.children.length;
     const numberOfPages: number = Math.ceil(testHost.courses.length / Number(testHost.coursesPerPage));
-    expect(numberOfButtons).toBe(numberOfPages + 2);  // first and last button
+
+    expect(numberOfButtons).toBe(numberOfPages + numberOfAdditionalBtns);
   });
 
   it('should create react to input param changes', () => {
     testHost.coursesPerPage = '2';
     fixture.detectChanges();
+
     const coursesPaginationEl: DebugElement = fixture.debugElement.query(By.css('.pagination-container'));
     const numberOfButtons = coursesPaginationEl.nativeElement.children.length;
     const numberOfPages: number = Math.ceil(testHost.courses.length / Number(testHost.coursesPerPage));
-    expect(numberOfButtons).toBe(numberOfPages + 2);  // first and last button
+
+    expect(numberOfButtons).toBe(numberOfPages + numberOfAdditionalBtns);
   });
 });

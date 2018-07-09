@@ -4,5 +4,13 @@
   class="btn btn-large" (click)="toggleCoursesVisibility()">
   {{shouldShowCourses ? 'Hide' : 'Show'}} courses
 </button>
-<app-course-list *ngIf="shouldShowCourses" [courses]="courses" (deleted)="onDeleteCourse($event)"></app-course-list>
-<app-courses-pagination *ngIf="shouldShowCourses" courses-per-page="5" [courses]="courses"></app-courses-pagination>
+<app-course-list
+    *ngIf="shouldShowCourses"
+    [courses]="courses"
+    [courses-per-page]="coursesPerPage"
+    (deleted)="onDeleteCourse($event)">
+</app-course-list>
+<app-courses-pagination
+    *ngIf="shouldShowCourses && courses.length > 0"
+    [courses-per-page]="coursesPerPage" [courses]="courses">
+</app-courses-pagination>

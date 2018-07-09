@@ -9,6 +9,7 @@ import { Course } from './../course.model';
 })
 export class CourseListComponent {
   @Input() courses: Course[];
+  @Input('courses-per-page') coursesPerPage: string;
   @Output() deleted = new EventEmitter<string>();
 
   constructor() { }

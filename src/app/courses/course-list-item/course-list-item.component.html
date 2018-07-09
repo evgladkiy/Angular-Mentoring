@@ -3,10 +3,9 @@
         <img [src]='course.img' alt="Course image">
     </div>
     <div class="course-info__container">
-        <!-- there will be pipe in future-->
         <h3 class="course-info__header">
           {{course.title | capitalized}}
-          <i *ngIf="course.topRated" class="fas fa-star" ngClass="icon icon-yellow"></i>
+          <i class="fas fa-star icon" [ngClass]="{ 'icon-yellow': course.topRated }"></i>
         </h3>
         <p class="course-info__description">
             {{course.description.length > 250 ? (course.description | slice : 0 : 250) + "..." :  course.description}}

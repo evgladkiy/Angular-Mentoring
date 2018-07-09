@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
 
 import { Course } from '../course.model';
 
@@ -7,7 +7,7 @@ import { Course } from '../course.model';
   templateUrl: './courses-pagination.component.html',
   styleUrls: ['./courses-pagination.component.less'],
 })
-export class CoursesPaginationComponent implements OnInit {
+export class CoursesPaginationComponent implements OnInit, OnChanges {
   public pages: string[];
 
   @Input() courses: Course[];
@@ -15,8 +15,19 @@ export class CoursesPaginationComponent implements OnInit {
 
   constructor() {}
 
-  ngOnInit() {
-    const numberOfPages: number = Math.ceil(this.courses.length / Number(this.coursesPerPage));
+  ngOnInit(): void {
+    this.updateButtons(this.courses, this.coursesPerPage);
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    const courses: Course[] = changes.courses ? changes.courses.currentValue : this.courses;
+    const coursesPerPage: string = changes.coursesPerPage ? changes.coursesPerPage.currentValue : this.coursesPerPage;
+
+    this.updateButtons(this.courses, this.coursesPerPage);
+  }
+
+  private updateButtons(courses: Course[], coursesPerPage: string): void {
+    const numberOfPages: number = Math.ceil(courses.length / Number(coursesPerPage));
 
     this.pages = Array(numberOfPages).fill(null).map((item, index) => String(index + 1));
     this.pages.unshift('first');
