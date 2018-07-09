@@ -19,6 +19,7 @@ describe('CoursesPageComponent', () => {
       // tslint:disable-next-line:max-line-length
       description: 'Amet amet proident duis deserunt in occaecat. Ullamco culpa elit sit culpa ullamco magna fugiat non tempor eu magna. Duis amet anim cillum nostrud voluptate incididunt. Proident nostrud sint aute fugiat ex.',
       title: 'Consequat minim fugiat magna esse magna ipsum mollit sint',
+      topRated: true,
     },
     {
       _id: '5b2fe37c5599f0d880855dde',
@@ -29,6 +30,7 @@ describe('CoursesPageComponent', () => {
       // tslint:disable-next-line:max-line-length
       description: 'Amet amet proident duis deserunt in occaecat. Ullamco culpa elit sit culpa ullamco magna fugiat non tempor eu magna. Duis amet anim cillum nostrud voluptate incididunt. Proident nostrud sint aute fugiat ex.',
       title: 'Consequat minim fugiat magna esse magna ipsum mollit sint',
+      topRated: false,
     },
   ];
 

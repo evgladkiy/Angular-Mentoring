@@ -3,6 +3,7 @@ import { By } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, DebugElement } from '@angular/core';
 
 import { CourseListComponent } from './course-list.component';
+import { CapitalizedPipe } from '../../shared/pipes';
 //
 describe('CourseListComponent', () => {
   let component: CourseListComponent;
@@ -18,6 +19,7 @@ describe('CourseListComponent', () => {
       // tslint:disable-next-line:max-line-length
       description: 'Amet amet proident duis deserunt in occaecat. Ullamco culpa elit sit culpa ullamco magna fugiat non tempor eu magna. Duis amet anim cillum nostrud voluptate incididunt. Proident nostrud sint aute fugiat ex.',
       title: 'Consequat minim fugiat magna esse magna ipsum mollit sint',
+      topRated: true,
     },
     {
       _id: '5b2fe37c5599f0d880855dde',
@@ -28,12 +30,13 @@ describe('CourseListComponent', () => {
       // tslint:disable-next-line:max-line-length
       description: 'Amet amet proident duis deserunt in occaecat. Ullamco culpa elit sit culpa ullamco magna fugiat non tempor eu magna. Duis amet anim cillum nostrud voluptate incididunt. Proident nostrud sint aute fugiat ex.',
       title: 'Consequat minim fugiat magna esse magna ipsum mollit sint',
+      topRated: false,
     },
   ];
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CourseListComponent ],
+      declarations: [ CourseListComponent, CapitalizedPipe ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
     })
     .compileComponents();
