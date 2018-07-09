@@ -83,7 +83,15 @@ describe('CourseListItemComponent', () => {
     const coursesPaginationEl: DebugElement = fixture.debugElement.query(By.css('.pagination-container'));
     const numberOfButtons = coursesPaginationEl.nativeElement.children.length;
     const numberOfPages: number = Math.ceil(testHost.courses.length / Number(testHost.coursesPerPage));
+    expect(numberOfButtons).toBe(numberOfPages + 2);  // first and last button
+  });
 
-    expect(numberOfButtons).toBeTruthy(numberOfPages + 2);  // first and last button
+  it('should create react to input param changes', () => {
+    testHost.coursesPerPage = '2';
+    fixture.detectChanges();
+    const coursesPaginationEl: DebugElement = fixture.debugElement.query(By.css('.pagination-container'));
+    const numberOfButtons = coursesPaginationEl.nativeElement.children.length;
+    const numberOfPages: number = Math.ceil(testHost.courses.length / Number(testHost.coursesPerPage));
+    expect(numberOfButtons).toBe(numberOfPages + 2);  // first and last button
   });
 });
