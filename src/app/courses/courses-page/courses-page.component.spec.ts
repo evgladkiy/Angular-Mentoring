@@ -9,7 +9,7 @@ import { CapitalizedPipe } from '../../shared/pipes';
 describe('CoursesPageComponent', () => {
   let component: CoursesPageComponent;
   let fixture: ComponentFixture<CoursesPageComponent>;
-  let capitalized: CapitalizedPipe;
+  // let capitalized: CapitalizedPipe;
 
   const defaultCourses: Course[] = coursesMock;
   const courses: Course[] = [...defaultCourses];
@@ -17,10 +17,11 @@ describe('CoursesPageComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [ CoursesPageComponent, CapitalizedPipe ],
-      schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
+      //providers: [CapitalizedPipe]
     })
     .compileComponents();
-    capitalized = new CapitalizedPipe();
+    //capitalized = new CapitalizedPipe();
   }));
 
   beforeEach(() => {
@@ -32,7 +33,6 @@ describe('CoursesPageComponent', () => {
 
   it('should correctly delete course by Id', () => {
     const deletedCourse: Course = component.onDeleteCourse(courses[0]._id);
-
     expect(deletedCourse).toEqual(courses[0]);
     expect(component.courses.length).toBe(courses.length - 1);
   });

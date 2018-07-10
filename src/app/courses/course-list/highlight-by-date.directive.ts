@@ -9,7 +9,7 @@ export class HighlightByDateDirective implements OnInit {
   constructor(private el: ElementRef) { }
 
   ngOnInit(): void {
-    const courseElement: HTMLElement = this.el.nativeElement;
+    const nativeElement: HTMLElement = this.el.nativeElement;
 
     const todayMs = Date.now();
     const creationDateMs = Number(this.creationDate);
@@ -19,11 +19,11 @@ export class HighlightByDateDirective implements OnInit {
     const freshCourseDuration: number = 1000 * 60 * 60 * 24 * daysForFreshCourse;
 
     if (differenceInMs < 0) { // upcoming course
-      courseElement.style.borderColor = 'crimson';
+      nativeElement.style.borderColor = 'crimson';
     }
 
     if (differenceInMs > 0 && differenceInMs <= freshCourseDuration) { // fresh course
-      courseElement.style.borderColor = '#238523';
+      nativeElement.style.borderColor = 'rgb(35, 133, 35)';
     }
   }
 
