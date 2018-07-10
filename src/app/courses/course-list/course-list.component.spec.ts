@@ -3,7 +3,7 @@ import { By } from '@angular/platform-browser';
 import { CUSTOM_ELEMENTS_SCHEMA, DebugElement } from '@angular/core';
 
 import { CourseListComponent } from './course-list.component';
-import { CapitalizedPipe } from '../../shared/pipes';
+import { CapitalizedPipe, OrderByPipe } from '../../shared/pipes';
 //
 describe('CourseListComponent', () => {
   let component: CourseListComponent;
@@ -36,7 +36,7 @@ describe('CourseListComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CourseListComponent, CapitalizedPipe ],
+      declarations: [ CourseListComponent, CapitalizedPipe, OrderByPipe ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
     })
     .compileComponents();

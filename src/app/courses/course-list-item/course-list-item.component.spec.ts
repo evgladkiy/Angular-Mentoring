@@ -3,6 +3,7 @@ import { By } from '@angular/platform-browser';
 import { Component, DebugElement } from '@angular/core';
 
 import { CourseListItemComponent } from './course-list-item.component';
+import { CapitalizedPipe, DurationPipe } from '../../shared/pipes';
 
 // test host approach
 
@@ -18,7 +19,7 @@ class TestHostComponent {
     author: 'Juliette Cochran',
     img: 'https://loremflickr.com/400/200?random=2',
     creationDate: new Date('2018-05-25T09:59:24'),
-    duration: 267,
+    duration: 30,
     // tslint:disable-next-line:max-line-length
     description: 'Amet amet proident duis deserunt in occaecat. Ullamco culpa elit sit culpa ullamco magna fugiat non tempor eu magna. Duis amet anim cillum nostrud voluptate incididunt. Proident nostrud sint aute fugiat ex.',
     title: 'Consequat minim fugiat magna esse magna ipsum mollit sint',
@@ -34,7 +35,12 @@ describe('CourseListItemComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CourseListItemComponent, TestHostComponent ],
+      declarations: [
+        CourseListItemComponent,
+        TestHostComponent,
+        CapitalizedPipe,
+        DurationPipe,
+      ],
     })
     .compileComponents();
   }));
@@ -55,7 +61,7 @@ describe('CourseListItemComponent', () => {
   it('course header should be correct', () => {
     const h3DebugElement: DebugElement = courseEl.query(By.css('.course-info__header'));
 
-    expect(h3DebugElement.nativeElement.textContent).toBe(testHost.course.title);
+    expect(h3DebugElement.nativeElement.textContent.trim()).toBe(testHost.course.title);
   });
 
   it('course description should be correct', () => {

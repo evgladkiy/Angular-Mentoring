@@ -9,19 +9,16 @@ import { CapitalizedPipe } from '../../shared/pipes';
 describe('CoursesPageComponent', () => {
   let component: CoursesPageComponent;
   let fixture: ComponentFixture<CoursesPageComponent>;
-  // let capitalized: CapitalizedPipe;
 
   const defaultCourses: Course[] = coursesMock;
   const courses: Course[] = [...defaultCourses];
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CoursesPageComponent, CapitalizedPipe ],
+      declarations: [ CoursesPageComponent ],
       schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
-      //providers: [CapitalizedPipe]
     })
     .compileComponents();
-    //capitalized = new CapitalizedPipe();
   }));
 
   beforeEach(() => {

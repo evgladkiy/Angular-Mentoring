@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 import { Course } from '../course.model';
 
@@ -7,17 +7,13 @@ import { Course } from '../course.model';
   templateUrl: './courses-pagination.component.html',
   styleUrls: ['./courses-pagination.component.less'],
 })
-export class CoursesPaginationComponent implements OnInit, OnChanges {
+export class CoursesPaginationComponent implements OnChanges {
   public pages: string[];
 
   @Input() courses: Course[];
   @Input('courses-per-page') coursesPerPage: string;
 
   constructor() {}
-
-  ngOnInit(): void {
-    this.updateButtons(this.courses, this.coursesPerPage);
-  }
 
   ngOnChanges(changes: SimpleChanges): void {
     const courses: Course[] = changes.courses ? changes.courses.currentValue : this.courses;

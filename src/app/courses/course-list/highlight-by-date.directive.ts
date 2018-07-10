@@ -22,7 +22,7 @@ export class HighlightByDateDirective implements OnInit {
       nativeElement.style.borderColor = 'crimson';
     }
 
-    if (differenceInMs > 0 && differenceInMs <= freshCourseDuration) { // fresh course
+    if (differenceInMs >= 0 && differenceInMs <= freshCourseDuration) { // fresh course
       nativeElement.style.borderColor = 'rgb(35, 133, 35)';
     }
   }
