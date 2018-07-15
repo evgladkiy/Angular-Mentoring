@@ -1,7 +1,12 @@
-import { CoursesFilterPipe } from './courses-filter.pipe';
+import { Injectable } from '@angular/core';
 
-describe('CoursesFilterPipe', () => {
-  const courses = [
+import { Course } from './course.model';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class CoursesService {
+  private courses: Course[] = [
     {
       _id: '5b2fe37cec2d7b6d260c7dd4',
       author: 'Bruce Burch',
@@ -69,33 +74,33 @@ describe('CoursesFilterPipe', () => {
       topRated: true,
     },
   ];
-  const itemsToFilter = [ ...courses ];
+  constructor() { }
 
-  let coursesFilter: CoursesFilterPipe;
+  getCourses(): Course[] {
+    return this.courses;
+  }
 
-  beforeEach(() => {
-    coursesFilter = new CoursesFilterPipe();
-  });
+  getCoursebyId(id: string): Course {
+    return this.courses.find(course => course._id === id);
+  }
 
-  it('create an instance of CoursesFilterPipe', () => {
-    expect(coursesFilter).toBeTruthy();
-  });
+  addCourse(newCourse: Course): void {
+    this.courses = [ ... this.courses, newCourse ];
+  }
 
-  it('should correct filter course', () => {
-    const filtredItems = coursesFilter.transform(itemsToFilter, 'excepteur');
+  updateCourse(updatedCourse: Course): void {
+    this.courses = this.courses.map((course) => {
+      if (course._id === updatedCourse._id) {
+        return updatedCourse;
+      }
+      return course;
+    });
+  }
 
-    expect(filtredItems.length).toBe(2);
-  });
+  deleteCourse(id: string): Course {
+    const courseToDelete = this.courses.find(course => course._id === id);
 
-  it('should correct filter course if filter query are empty', () => {
-    const filtredItems = coursesFilter.transform(itemsToFilter, '');
-
-    expect(filtredItems.length).toBe(courses.length);
-  });
-
-  it('should correct filter course if courses title do not contain filter query', () => {
-    const filtredItems = coursesFilter.transform(itemsToFilter, 'non contained words');
-
-    expect(filtredItems.length).toBe(0);
-  });
-});
+    this.courses = this.courses.filter(course => course._id !== id);
+    return courseToDelete;
+  }
+}

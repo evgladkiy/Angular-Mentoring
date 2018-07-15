@@ -1,20 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
-import { User } from './user.model';
+
+import { User } from '../../shared/models/user.model';
+
+import { AuthService } from './../../shared/services/authorization/auth.service';
 
 @Component({
   selector: 'app-user-panel',
   templateUrl: './user-panel.component.html',
   styleUrls: ['./user-panel.component.less'],
 })
-export class UserPanelComponent {
+export class UserPanelComponent implements OnInit {
+  @Input() currentUser: User:
+  @Output() logout = new EventEmitter<>();
 
-  public currentUser: User = {
-    id: 12,
-    firstName: 'Vasia',
-    lastName: 'Pupkin',
-  };
+  constructor(private router: Router,
+              private authService: AuthService) { }
 
-  constructor() { }
+  ngOnInit() {
+    console.log(this.currentUser);
+  }
 
+  onLogout(): void {
+    this.logout.emit()
+  }
 }

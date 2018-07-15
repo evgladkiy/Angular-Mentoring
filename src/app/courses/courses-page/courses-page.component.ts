@@ -1,31 +1,37 @@
+import { Router } from '@angular/router';
+import { AuthService } from './../../shared/services/authorization/auth.service';
 import { Component, OnInit } from '@angular/core';
 
 import { CoursesFilterPipe } from './courses-filter.pipe';
-import { CapitalizedPipe } from './../../shared/pipes/capitalized/capitalized.pipe';
 import { Course } from '../course.model';
-import { courses } from './courses';
+import { CoursesService } from '../courses.service';
 
 @Component({
     selector: 'app-courses-page',
     templateUrl: './courses-page.component.html',
     styleUrls: ['./courses-page.component.less'],
-    providers: [CoursesFilterPipe, CapitalizedPipe],
+    providers: [CoursesFilterPipe],
 })
 export class CoursesPageComponent implements OnInit {
-  private defaultCourses: Course[] = courses;
   public courses: Course[];
   public pagePath: string[] = ['Courses', 'Next-Page'];
-  public coursesPerPage = '2';
+  public coursesPerPage = '5';
   public shouldShowCourses: boolean;
 
   constructor(
+    private router: Router,
+    private coursesServise: CoursesService,
+    private authServise: AuthService,
     private coursesFilterPipe: CoursesFilterPipe,
-    private capitalized: CapitalizedPipe
   ) { }
 
   ngOnInit() {
-    this.shouldShowCourses = false;
-    this.courses = [...this.defaultCourses];
+    if (!this.authServise.isAuthenticated()) {
+      this.router.navigate(['/login']);
+    } else {
+      this.shouldShowCourses = false;
+      this.courses = [...this.coursesServise.getCourses()];
+    }
   }
 
   onDeleteCourse(id: string): Course {
@@ -35,14 +41,14 @@ export class CoursesPageComponent implements OnInit {
     if (courseToDeleteIndex >= 0) {
       courseToDelete = this.courses[courseToDeleteIndex];
       this.courses = this.courses.filter(course => course._id !== id);
-      this.defaultCourses = this.defaultCourses.filter(course => course._id !== id);
+      this.coursesServise.deleteCourse(id);
     }
 
     return courseToDelete;
   }
 
   onFiltredCourse(value: string): void {
-    this.courses = this.coursesFilterPipe.transform(this.defaultCourses, value);
+    this.courses = this.coursesFilterPipe.transform(this.coursesServise.getCourses(), value);
   }
 
   toggleCoursesVisibility(): void {

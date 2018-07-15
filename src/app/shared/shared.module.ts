@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 
 import { BreadcrumbsComponent } from './components';
 
+import { AuthService } from './services';
+
 import { CapitalizedPipe, DurationPipe, OrderByPipe } from './pipes';
 
 @NgModule({
@@ -13,6 +15,7 @@ import { CapitalizedPipe, DurationPipe, OrderByPipe } from './pipes';
     DurationPipe,
     OrderByPipe,
   ],
+  providers: [ AuthService ],
   exports: [
     BreadcrumbsComponent,
     CapitalizedPipe,
