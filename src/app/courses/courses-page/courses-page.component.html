@@ -1,16 +1,16 @@
 <app-breadcrumbs [path]="pagePath"></app-breadcrumbs>
 <app-toolbox (filtred)="onFiltredCourse($event)"></app-toolbox>
-<button
-  class="btn btn-large" (click)="toggleCoursesVisibility()">
-  {{shouldShowCourses ? 'Hide' : 'Show'}} courses
-</button>
+<app-modal-window
+    *ngIf="shouldShowModal" modalTitle="WAT???!!!" submitText="Delete"
+    (submitModal)="onSubmitModal()" (closeModal)="onCloseModal()">
+      <p>Do you really want to delete course <b>"{{courseToDelete.title | capitalized}}"</b> by <b>{{courseToDelete.author}}</b>???</p>
+</app-modal-window>
 <app-course-list
-    *ngIf="shouldShowCourses"
     [courses]="courses"
-    [courses-per-page]="coursesPerPage"
-    (deleted)="onDeleteCourse($event)">
+    [coursesPerPage]="coursesPerPage"
+    (deleted)="onDeleteBtnPressed($event)">
 </app-course-list>
 <app-courses-pagination
-    *ngIf="shouldShowCourses && courses.length > 0"
-    [courses-per-page]="coursesPerPage" [courses]="courses">
+    *ngIf="courses.length > 0"
+    [coursesPerPage]="coursesPerPage" [courses]="courses">
 </app-courses-pagination>

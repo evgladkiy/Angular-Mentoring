@@ -7,7 +7,20 @@ import { User } from './../../models/user.model';
 })
 export class AuthService {
   private activeUser: User;
+  private storageKey: 'activeUser';
+
   constructor() { }
+
+  private getUserFromStore(): User {
+    return JSON.parse(localStorage.getItem(this.storageKey));
+  }
+
+  private settUserToStore(user: User): void {
+    localStorage.setItem(this.storageKey, JSON.stringify(user));
+  }
+  private deleteUserFromStore(): void {
+    localStorage.removeItem(this.storageKey);
+  }
 
   login(login: string, password: string): User {
     this.activeUser = {
@@ -15,29 +28,31 @@ export class AuthService {
       login,
       password,
     };
-    localStorage.setItem('activeUser', JSON.stringify(this.activeUser));
+    this.settUserToStore(this.activeUser);
 
     return this.activeUser;
   }
 
   logout(): void {
-    localStorage.removeItem('activeUser');
+    this.deleteUserFromStore();
     this.activeUser = null;
   }
 
   isAuthenticated(): boolean {
     if (!this.activeUser) {
-      this.activeUser = JSON.parse( localStorage.getItem('activeUser'));
+      this.activeUser = this.getUserFromStore();
 
       return !!this.activeUser;
     }
+
     return true;
   }
 
   getUserInfo(): User {
     if (!this.activeUser) {
-      this.activeUser = JSON.parse(localStorage.getItem('activeUser'));
+      this.activeUser = this.getUserFromStore();
     }
+
     return this.activeUser;
   }
 }

@@ -89,18 +89,16 @@ export class CoursesService {
   }
 
   updateCourse(updatedCourse: Course): void {
-    this.courses = this.courses.map((course) => {
-      if (course._id === updatedCourse._id) {
-        return updatedCourse;
-      }
-      return course;
-    });
+    this.courses = this.courses.map(course => (
+      course._id === updatedCourse._id ? updatedCourse : course;
+    ));
   }
 
   deleteCourse(id: string): Course {
     const courseToDelete = this.courses.find(course => course._id === id);
 
     this.courses = this.courses.filter(course => course._id !== id);
+
     return courseToDelete;
   }
 }

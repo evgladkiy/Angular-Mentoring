@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { BreadcrumbsComponent } from './components';
-
 import { AuthService } from './services';
+
+import { BreadcrumbsComponent, ModalWindowComponent } from './components';
 
 import { CapitalizedPipe, DurationPipe, OrderByPipe } from './pipes';
 
@@ -14,10 +14,12 @@ import { CapitalizedPipe, DurationPipe, OrderByPipe } from './pipes';
     CapitalizedPipe,
     DurationPipe,
     OrderByPipe,
+    ModalWindowComponent,
   ],
   providers: [ AuthService ],
   exports: [
     BreadcrumbsComponent,
+    ModalWindowComponent,
     CapitalizedPipe,
     DurationPipe,
     OrderByPipe,

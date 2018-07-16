@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-login-page',
   templateUrl: './login-page.component.html',
-  styleUrls: ['./login-page.component.less']
+  styleUrls: [ './login-page.component.less' ],
 })
 export class LoginPageComponent implements OnInit {
   public user = {
@@ -17,6 +17,7 @@ export class LoginPageComponent implements OnInit {
               private authService: AuthService) { }
 
   ngOnInit() {
+    this.authService.logout(); // for force open login page
   }
 
   onSubmit(): void {

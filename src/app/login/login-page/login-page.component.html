@@ -1,7 +1,13 @@
-<div>
-  <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm.value)" novalidate>
-    <input type="text" name="login" placeholder="login" [(ngModel)]="user.login" required />
-    <input type="password" name="password" placeholder="password" [(ngModel)]="user.password" required />
-    <button type="submit" >Log in </button>
-  </form>
-</div>
+<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm.value)" novalidate>
+    <div class="input-container">
+        <label class="label label-required" for="login">Login</label>
+        <input id="login" class="form-input" type="text" name="login" placeholder="login" [(ngModel)]="user.login" required />
+    </div>
+    <div class="input-container">
+        <label class="label label-required" for="password">Password</label>
+        <input id="password"  class="form-input" type="password" name="password" placeholder="password" [(ngModel)]="user.password" required />
+    </div>
+    <div class="submit-container">
+        <button class="btn" type="submit" >Log in </button>
+    </div>
+</form>

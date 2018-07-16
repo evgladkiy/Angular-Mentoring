@@ -5,11 +5,11 @@ import { Course } from './../course.model';
 @Component({
   selector: 'app-course-list',
   templateUrl: './course-list.component.html',
-  styleUrls: ['./course-list.component.less'],
+  styleUrls: [ './course-list.component.less' ],
 })
 export class CourseListComponent {
   @Input() courses: Course[];
-  @Input('courses-per-page') coursesPerPage: string;
+  @Input() coursesPerPage: string;
   @Output() deleted = new EventEmitter<string>();
 
   constructor() { }

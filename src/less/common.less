@@ -12,9 +12,17 @@ body {
     overflow-x: hidden;
     color: @text-color;
     line-height: @base-line-height;
+    &.with-modal {
+      overflow: hidden;
+      padding-right: 17px;
+    }
 }
 
-.width {
+* {
+  box-sizing: border-box;
+}
+
+.wide {
     & > * {
         max-width: @max-width;
         margin: 0 auto;
@@ -37,6 +45,11 @@ a:hover {
     text-decoration: underline;
 }
 
+.input-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
 .form-input {
     display: inline-block;
     height: 36px;
@@ -52,6 +65,18 @@ a:hover {
 .form-input:focus {
     border-bottom: 2px solid @main-color;
     padding-bottom: 0;
+}
+
+.label {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+
+    &.label-required::after {
+      content: "*";
+      padding-left: 5px;
+      color: @crimson;
+   }
 }
 
 .btn {

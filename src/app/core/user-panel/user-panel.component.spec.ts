@@ -29,6 +29,6 @@ describe('UserPanelComponent', () => {
     const debugElement: DebugElement = fixture.debugElement.query(By.css('.user-panel__user'));
     const { login, password } = user;
 
-    expect(debugElement.nativeElement.textContent).toBe(`${firstName} ${lastName}`);
+    expect(debugElement.nativeElement.textContent).toBe(`${login} ${password}`);
   });
 });

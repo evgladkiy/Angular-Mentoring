@@ -1,22 +1,25 @@
 import { Router } from '@angular/router';
-import { AuthService } from './../../shared/services/authorization/auth.service';
 import { Component, OnInit } from '@angular/core';
 
-import { CoursesFilterPipe } from './courses-filter.pipe';
 import { Course } from '../course.model';
+
 import { CoursesService } from '../courses.service';
+import { AuthService } from './../../shared/services';
+
+import { CoursesFilterPipe } from './courses-filter.pipe';
 
 @Component({
-    selector: 'app-courses-page',
-    templateUrl: './courses-page.component.html',
-    styleUrls: ['./courses-page.component.less'],
-    providers: [CoursesFilterPipe],
+  selector: 'app-courses-page',
+  templateUrl: './courses-page.component.html',
+  styleUrls: ['./courses-page.component.less'],
+  providers: [ CoursesFilterPipe ],
 })
 export class CoursesPageComponent implements OnInit {
   public courses: Course[];
+  public courseToDelete: Course;
   public pagePath: string[] = ['Courses', 'Next-Page'];
-  public coursesPerPage = '5';
-  public shouldShowCourses: boolean;
+  public coursesPerPage = '4';
+  public shouldShowModal = false;
 
   constructor(
     private router: Router,
@@ -25,33 +28,39 @@ export class CoursesPageComponent implements OnInit {
     private coursesFilterPipe: CoursesFilterPipe,
   ) { }
 
-  ngOnInit() {
+  ngOnInit(): void {
     if (!this.authServise.isAuthenticated()) {
       this.router.navigate(['/login']);
     } else {
-      this.shouldShowCourses = false;
       this.courses = [...this.coursesServise.getCourses()];
     }
   }
 
-  onDeleteCourse(id: string): Course {
+  onDeleteBtnPressed(id: string): Course {
     const courseToDeleteIndex: number = this.courses.findIndex(course => course._id === id);
-    let courseToDelete: Course = null;
 
     if (courseToDeleteIndex >= 0) {
-      courseToDelete = this.courses[courseToDeleteIndex];
-      this.courses = this.courses.filter(course => course._id !== id);
-      this.coursesServise.deleteCourse(id);
+      this.courseToDelete = this.courses[courseToDeleteIndex];
+      this.shouldShowModal = true;
     }
 
-    return courseToDelete;
+    return this.courseToDelete;
+  }
+
+  onSubmitModal(): void {
+    const courseToDeleteId = this.courseToDelete._id;
+
+    this.courses = this.courses.filter(course => course._id !== courseToDeleteId);
+    this.coursesServise.deleteCourse(courseToDeleteId);
+    this.shouldShowModal = false;
+  }
+
+  onCloseModal(): void {
+    this.shouldShowModal = false;
+    this.courseToDelete = null;
   }
 
   onFiltredCourse(value: string): void {
     this.courses = this.coursesFilterPipe.transform(this.coursesServise.getCourses(), value);
-  }
-
-  toggleCoursesVisibility(): void {
-    this.shouldShowCourses = !this.shouldShowCourses;
   }
 }

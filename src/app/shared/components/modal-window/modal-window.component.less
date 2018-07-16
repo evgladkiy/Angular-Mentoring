@@ -1,0 +1,59 @@
+
+.with-modal :host {
+    padding-right: 17px;
+}
+
+:host {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    width: 500px;
+    background: azure;
+    margin-top: 10%;
+    border-radius: 5px;
+    padding: 18px 24px;
+}
+
+.modal-header,
+.modal-footer {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.modal-header {
+    padding-bottom: 18px;
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 2.4rem;
+    letter-spacing: 1.2px;
+}
+
+.close-modal {
+    display: flex;
+    align-self: center;
+    padding: 0;
+    border: none;
+    background: azure;
+    font-size: 1.8rem;
+    padding: 2px 0px 2px 2px;
+    cursor: pointer;
+}
+
+.modal-body {
+    font-size: 1.8rem;
+    padding-bottom: 18px;
+}
+
+

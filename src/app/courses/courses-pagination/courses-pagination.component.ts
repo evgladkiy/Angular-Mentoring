@@ -5,13 +5,13 @@ import { Course } from '../course.model';
 @Component({
   selector: 'app-courses-pagination',
   templateUrl: './courses-pagination.component.html',
-  styleUrls: ['./courses-pagination.component.less'],
+  styleUrls: [ './courses-pagination.component.less' ],
 })
 export class CoursesPaginationComponent implements OnChanges {
   public pages: string[];
 
   @Input() courses: Course[];
-  @Input('courses-per-page') coursesPerPage: string;
+  @Input() coursesPerPage: string;
 
   constructor() {}
 

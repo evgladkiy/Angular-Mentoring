@@ -8,11 +8,18 @@ app-header {
     min-height: @header-height;
 }
 
-app-header + * {
+router-outlet ::ng-deep +  * {
+    display: flex;
+    flex-direction: column;
     min-height: calc(100% - @header-height - @footer-height);
-    display: block;
+    max-width: @max-width;
+    margin: 0 auto;
 }
 
 app-footer {
     min-height: @footer-height;
+}
+
+.with-modal {
+  overflow: hidden;
 }
