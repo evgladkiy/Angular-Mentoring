@@ -17,8 +17,6 @@ export class ModalWindowComponent implements OnInit, OnDestroy {
   private bodyEl: HTMLBodyElement;
   private escCode = 27;
 
-  constructor(private el: ElementRef) {}
-
   @HostListener('click', ['$event'])
   onclick(event: MouseEvent): void {
     if (event.target === this.el.nativeElement) {
@@ -32,6 +30,8 @@ export class ModalWindowComponent implements OnInit, OnDestroy {
       this.closeModal.emit();
     }
   }
+
+  constructor(private el: ElementRef) {}
 
   ngOnInit(): void {
     this.bodyEl = this.el.nativeElement.closest('body');

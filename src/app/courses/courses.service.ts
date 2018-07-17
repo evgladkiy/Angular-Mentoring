@@ -90,7 +90,7 @@ export class CoursesService {
 
   updateCourse(updatedCourse: Course): void {
     this.courses = this.courses.map(course => (
-      course._id === updatedCourse._id ? updatedCourse : course;
+      course._id === updatedCourse._id ? updatedCourse : course
     ));
   }
 

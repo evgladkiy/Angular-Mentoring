@@ -7,7 +7,7 @@ import { User } from './../../models/user.model';
 })
 export class AuthService {
   private activeUser: User;
-  private storageKey: 'activeUser';
+  private storageKey = 'activeUser';
 
   constructor() { }
 
@@ -15,9 +15,10 @@ export class AuthService {
     return JSON.parse(localStorage.getItem(this.storageKey));
   }
 
-  private settUserToStore(user: User): void {
+  private setUserToStore(user: User): void {
     localStorage.setItem(this.storageKey, JSON.stringify(user));
   }
+
   private deleteUserFromStore(): void {
     localStorage.removeItem(this.storageKey);
   }
@@ -28,7 +29,7 @@ export class AuthService {
       login,
       password,
     };
-    this.settUserToStore(this.activeUser);
+    this.setUserToStore(this.activeUser);
 
     return this.activeUser;
   }
