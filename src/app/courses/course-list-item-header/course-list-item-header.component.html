@@ -1,0 +1,17 @@
+<header class="course-header">
+    <div class="course-header__items-container">
+      <span class="course-header__item"><i class="fas fa-microphone"></i>{{language}}</span>
+      <span class="course-header__item"><i class="fas fa-headphones"></i>{{type}}</span>
+      <span class="course-header__item" [ngSwitch]="difficulty">
+        <i *ngSwitchCase="'For All'" class="fas fa-thermometer-empty"><p></p></i>
+        <i *ngSwitchCase="'Novice'" class="fas fa-thermometer-quarter"></i>
+        <i *ngSwitchCase="'Intermediate'" class="fas fa-thermometer-half"></i>
+        <i *ngSwitchCase="'Advanced'" class="fas fa-thermometer-three-quarters"></i>
+        <i *ngSwitchCase="'Expert'" class="fas fa-thermometer-full"></i>{{difficulty}}
+      </span>
+    </div>
+    <button class="btn-container course-header__bookmarks" [ngSwitch]="isFavorite">
+        <i *ngSwitchCase="false" class="far fa-bookmark"></i>
+        <i *ngSwitchCase="true" class="fas fa-bookmark"></i>
+    </button>
+</header>

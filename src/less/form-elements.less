@@ -1,0 +1,16 @@
+.input-container {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.label {
+    display: inline-block;
+    font-size: 1.6rem;
+    margin-bottom: 6px;
+
+    &.label-required::after {
+      content: "*";
+      padding-left: 5px;
+      color: @fuchsia;
+   }
+}

@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
-import { Course } from '../course.model';
+import { Course } from '../../shared/models/course.model';
 
 @Component({
   selector: 'app-courses-pagination',
@@ -8,7 +8,8 @@ import { Course } from '../course.model';
   styleUrls: [ './courses-pagination.component.less' ],
 })
 export class CoursesPaginationComponent implements OnChanges {
-  public pages: string[];
+  public pages: number[];
+  public buttons = [1, 2, 3, 4, 5];
 
   @Input() courses: Course[];
   @Input() coursesPerPage: string;
@@ -24,10 +25,8 @@ export class CoursesPaginationComponent implements OnChanges {
 
   private updateButtons(courses: Course[], coursesPerPage: string): void {
     const numberOfPages: number = Math.ceil(courses.length / Number(coursesPerPage));
-
-    this.pages = Array(numberOfPages).fill(null).map((item, index) => String(index + 1));
-    this.pages.unshift('first');
-    this.pages.push('last');
+    this.pages = this.buttons;
+    // this.pages = Array(5).fill(null).map((item, index) => String(index + 1));
   }
 
   onClickPaginationBtn(btn: string): void {

@@ -1,0 +1,149 @@
+/* ===== buttons ===== */
+
+.btn {
+    position: relative;
+    padding: 10px 18px;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    background: none;
+    font-size: 1.4rem;
+    line-height: 1;
+    cursor: pointer;
+}
+
+.btn-container {
+    padding: 0;
+    border: none;
+    background: none;
+    color: @text-color;
+    cursor: pointer;
+}
+
+
+/* ===== button icons ===== */
+
+.btn.btn-icon-right i,
+.btn.btn-icon-left i {
+    position: absolute;
+    top: 5px;
+    width: 24px;
+    height: 24px;
+    font-size: 1.6rem;
+    line-height: 22px;
+}
+
+.btn.btn-icon-left {
+    padding-left: 32px;
+
+    & i {
+        left: 5px;
+    }
+}
+
+.btn.btn-icon-right {
+    padding-right: 32px;
+
+    & i {
+        right: 5px;
+    }
+}
+
+/* ===== button size ===== */
+
+.btn.btn-small {
+    padding: 5px 12px;
+    font-size: 1.2rem;
+
+    &.btn-icon-left i,
+    &.btn-icon-right i {
+        width: 12px;
+        height: 12px;
+        font-size: 1.2rem;
+        line-height: 12px;
+    }
+
+    &.btn-icon-left {
+        padding-left: 22px;
+    }
+
+    &.btn-icon-right {
+        padding-right: 22px;
+    }
+}
+
+.btn.btn-large {
+    padding: 12px 24px;
+    font-size: 1.6rem;
+
+    &.btn-icon-left i,
+    &.btn-icon-right i {
+        width: 30px;
+        height: 30px;
+        line-height: 26px;
+        font-size: 1.8rem;
+    }
+
+    &.btn-icon-left {
+        padding-left: 40px;
+    }
+
+    &.btn-icon-right {
+        padding-right: 40px;
+    }
+}
+
+/* ===== button colors mixin ===== */
+
+.btn(@main, @hover, @active, @txt-color: @white) {
+    border-color: @main;
+    color: @main;
+
+    &:hover {
+        background: @main;
+        color: @txt-color;
+    }
+
+    &:active {
+        border-color: @active;
+        background: @active;
+        color: @txt-color;
+    }
+
+    &.btn-solid {
+        border-color: @main;
+        background: @main;
+        color: @txt-color;
+
+        &:hover {
+            border-color: @hover;
+            background: @hover;
+            color: @txt-color;
+        }
+
+        &:active {
+            border-color: @active;
+            background: @active;
+            color: @txt-color;
+
+        }
+    }
+}
+
+/* ===== button colors ===== */
+
+.btn.btn-red {
+    .btn(@btn-red, @btn-red-hover, @btn-red-active);
+}
+
+.btn.btn-blue {
+    .btn(@btn-blue, @btn-blue-hover, @btn-blue-active);
+}
+
+.btn.btn-green {
+    .btn(@btn-green, @btn-green-hover, @btn-green-active);
+}
+
+.btn.btn-grey {
+    .btn( @btn-grey,  @btn-grey-hover,  @btn-grey-active, @btn-grey-text-color);
+}

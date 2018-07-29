@@ -1,0 +1,27 @@
+<footer>
+    <div class="trainers-container" >
+        <div class="photos-container">
+            <img class="trainer-photo" [src]="trainers[0].avatar" alt="trainer photo">
+            <img class="trainer-photo" *ngIf="trainers.length >= 2" [src]="trainers[1].avatar" alt="trainer photo">
+        </div>
+        <ul class="trainers-name-list">
+            <li>{{trainers[0].name}}</li>
+            <li *ngIf="trainers.length >= 2">
+                {{trainers[1].name}}
+                <a *ngIf="trainers.length > 2">+{{trainers.length - 1}} more</a>
+            </li>
+        </ul>
+    </div>
+    <div class="info-container">
+        <p></p>
+        <div class="info-container__date">
+            <p><i class="far fa-calendar-alt"></i>{{startDate | date : 'dd MMMM, yyyy'}}</p>
+            <span class="divider">|</span>
+            <p><i class="far fa-clock"></i><span>{{duration | duration}}</span></p>
+        </div>
+    </div>
+    <div class="rating-container">
+        <i class="fas fa-star icon"></i>
+        <span >{{rating}}</span>
+    </div>
+</footer>

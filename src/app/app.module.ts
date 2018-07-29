@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LoginModule } from './login/login.module';
 
 import { AppComponent } from './app.component';
+import { AddCourseModule } from './add-course/add-course.module';
 
 
 
@@ -19,6 +20,7 @@ import { AppComponent } from './app.component';
     SharedModule,
     CoursesModule,
     LoginModule,
+    AddCourseModule,
     AppRoutingModule,
   ],
   providers: [],

@@ -1,10 +1,10 @@
 import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 
-import { Course } from '../course.model';
+import { Course } from '../../shared/models/course.model';
 
-import { CoursesService } from '../courses.service';
-import { AuthService } from './../../shared/services';
+import { CoursesService } from '../../shared/services/courses/courses.service';
+import { AuthService } from '../../shared/services';
 
 import { CoursesFilterPipe } from './courses-filter.pipe';
 

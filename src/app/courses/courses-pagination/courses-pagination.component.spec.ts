@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { Component, DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
 
-import { Course } from './../course.model';
+import { Course } from '../../shared/models/course.model';
 
 import { CoursesPaginationComponent } from './courses-pagination.component';
 

@@ -1,35 +1,24 @@
+
 <section class="course-container">
     <div class="course-img__container">
         <img [src]='course.img' alt="Course image">
     </div>
     <div class="course-info__container">
-        <h3 class="course-info__header">
-          {{course.title | capitalized}}
-          <i class="fas fa-star icon" [ngClass]="{ 'icon-yellow': course.topRated }"></i>
-        </h3>
-        <p class="course-info__description">
-            {{course.description.length > 250 ? (course.description | slice : 0 : 250) + "..." :  course.description}}
-        </p>
-        <div class="course-info__footer">
-            <div class="course-info__footer-item course-author">
-                <i class="far fa-user"></i>
-                <span>Author:</span>
-                <span class="course-author__txt">{{course.author}}</span>
-            </div>
-            <div class="course-info__footer-item course-duration">
-                <i class="far fa-clock"></i>
-                <span>Duration:</span>
-                <span class="course-duration__txt">{{course.duration | duration}}</span>
-            </div>
-            <div class="course-info__footer-item course-date">
-                <i class="far fa-calendar-alt"></i>
-                <span>Date:</span>
-                <span class="course-date__txt">{{course.creationDate | date : 'dd MMMM, yyyy'}}</span>
-            </div>
-        </div>
-    </div>
-    <div class="course-btns__contqiner">
-        <button class="btn btn-delete" (click)="onClick(course._id)">Delete</button>
-        <button class="btn btn-cadetblue">Edit</button>
+        <app-course-list-item-header
+            [type]="course.type"
+            [language]="course.language"
+            [difficulty]="course.difficulty"
+            [isFavorite]="course.isFavorite">
+        </app-course-list-item-header>
+        <app-course-list-item-body 
+            [title]="course.title"
+            [description]="course.description">
+        </app-course-list-item-body>
+        <app-course-list-item-footer
+            [duration]="course.duration"
+            [rating]="course.rating"
+            [startDate]="course.date"
+            [trainers]="course.trainers">
+        </app-course-list-item-footer>
     </div>
 </section>

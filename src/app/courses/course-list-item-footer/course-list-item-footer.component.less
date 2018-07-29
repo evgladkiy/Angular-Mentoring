@@ -1,0 +1,67 @@
+@import "variables";
+
+footer,
+.trainers-container,
+.photos-container {
+    display: flex;
+}
+
+footer {
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.trainer-photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.trainers-name-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1.6rem;
+
+    & li:not(:last-of-type) {
+        padding-bottom: 3px;
+    }
+
+    & a {
+        text-decoration: none;
+        cursor: pointer;
+        padding-left: 3px;
+        font-size: 1.6rem;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.info-container {
+    font-size: 1.8rem;
+
+    &__date {
+        display: flex;
+    }
+
+    p i {
+        padding-right: 6px;
+    }
+
+    & .divider {
+        padding: 0 6px;
+    }
+}
+
+.rating-container {
+    font-size: 2rem;
+
+    & i {
+        color: @star-icon-color;
+        padding-right: 6px;
+    }
+}
+
