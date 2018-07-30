@@ -10,7 +10,7 @@
         <i *ngSwitchCase="'Expert'" class="fas fa-thermometer-full"></i>{{difficulty}}
       </span>
     </div>
-    <button class="btn-container course-header__bookmarks" [ngSwitch]="isFavorite">
+    <button class="btn-container course-header__bookmarks" [ngSwitch]="isFavorite" (click)="onClickFavoriteBtn()">
         <i *ngSwitchCase="false" class="far fa-bookmark"></i>
         <i *ngSwitchCase="true" class="fas fa-bookmark"></i>
     </button>

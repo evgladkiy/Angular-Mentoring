@@ -1,6 +1,6 @@
 import {Component, Input, Output, EventEmitter} from '@angular/core';
 
-import { Course } from '../../shared/models/course.model';
+import { Course } from '../../shared/models';
 
 @Component({
   selector: 'app-course-list',
@@ -10,11 +10,7 @@ import { Course } from '../../shared/models/course.model';
 export class CourseListComponent {
   @Input() courses: Course[];
   @Input() coursesPerPage: string;
-  @Output() deleted = new EventEmitter<string>();
 
   constructor() { }
 
-  onDeleteCourse(id: string): void {
-    this.deleted.emit(id);
-  }
 }

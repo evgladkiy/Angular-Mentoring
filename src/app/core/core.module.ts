@@ -3,25 +3,30 @@ import { CommonModule } from '@angular/common';
 
 import { SharedModule } from '../shared/shared.module';
 
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderLogoComponent } from './header-logo/header-logo.component';
-import { UserPanelComponent } from './user-panel/user-panel.component';
+import {
+  HeaderComponent,
+  FooterComponent,
+  HeaderLogoComponent,
+  UserPanelComponent,
+  BreadcrumbsComponent
+ } from './';
 
 @NgModule({
-    imports: [
-        CommonModule,
-        SharedModule,
-    ],
-    declarations: [
-        HeaderComponent,
-        FooterComponent,
-        HeaderLogoComponent,
-        UserPanelComponent,
-    ],
-    exports: [
-        HeaderComponent,
-        FooterComponent,
-    ],
+  imports: [
+    CommonModule,
+    SharedModule,
+  ],
+  declarations: [
+    HeaderComponent,
+    FooterComponent,
+    HeaderLogoComponent,
+    UserPanelComponent,
+    BreadcrumbsComponent,
+  ],
+  exports: [
+    HeaderComponent,
+    FooterComponent,
+    BreadcrumbsComponent,
+  ],
 })
 export class CoreModule { }

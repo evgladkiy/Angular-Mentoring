@@ -1,10 +1,10 @@
 import { Router } from '@angular/router';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Subscription } from 'rxjs';
 
-import { Course } from '../../shared/models/course.model';
+import { Course } from '../../shared/models';
 
-import { CoursesService } from '../../shared/services/courses/courses.service';
-import { AuthService } from '../../shared/services';
+import { CoursesService, ModalWindowService, AuthService  } from '../../shared/services';
 
 import { CoursesFilterPipe } from './courses-filter.pipe';
 
@@ -14,18 +14,19 @@ import { CoursesFilterPipe } from './courses-filter.pipe';
   styleUrls: ['./courses-page.component.less'],
   providers: [ CoursesFilterPipe ],
 })
-export class CoursesPageComponent implements OnInit {
+export class CoursesPageComponent implements OnInit, OnDestroy {
+  private sub: Subscription;
   public courses: Course[];
   public courseToDelete: Course;
-  public pagePath: string[] = ['Courses', 'Next-Page'];
+  public shouldShowModal: boolean;
   public coursesPerPage = '4';
-  public shouldShowModal = false;
 
   constructor(
     private router: Router,
     private coursesServise: CoursesService,
     private authServise: AuthService,
     private coursesFilterPipe: CoursesFilterPipe,
+    private modalWindowService: ModalWindowService,
   ) { }
 
   ngOnInit(): void {
@@ -33,18 +34,17 @@ export class CoursesPageComponent implements OnInit {
       this.router.navigate(['/login']);
     } else {
       this.courses = [...this.coursesServise.getCourses()];
+      this.sub = this.modalWindowService.channel$.subscribe((id) => {
+        this.shouldShowModal = Boolean(id);
+        this.courseToDelete = this.shouldShowModal
+          ? this.courses.find(course => course._id === id)
+          : null;
+      });
     }
   }
 
-  onDeleteBtnPressed(id: string): Course {
-    const courseToDeleteIndex: number = this.courses.findIndex(course => course._id === id);
-
-    if (courseToDeleteIndex >= 0) {
-      this.courseToDelete = this.courses[courseToDeleteIndex];
-      this.shouldShowModal = true;
-    }
-
-    return this.courseToDelete;
+  ngOnDestroy(): void {
+    this.sub.unsubscribe();
   }
 
   onSubmitModal(): void {
@@ -52,15 +52,16 @@ export class CoursesPageComponent implements OnInit {
 
     this.courses = this.courses.filter(course => course._id !== courseToDeleteId);
     this.coursesServise.deleteCourse(courseToDeleteId);
-    this.shouldShowModal = false;
+    this.modalWindowService.closeModal();
   }
 
   onCloseModal(): void {
-    this.shouldShowModal = false;
-    this.courseToDelete = null;
+    this.modalWindowService.closeModal();
   }
 
   onFiltredCourse(value: string): void {
-    this.courses = this.coursesFilterPipe.transform(this.coursesServise.getCourses(), value);
+    const allCourses = this.coursesServise.getCourses();
+
+    this.courses = this.coursesFilterPipe.transform(allCourses, value);
   }
 }

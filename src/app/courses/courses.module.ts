@@ -4,8 +4,6 @@ import { FormsModule } from '@angular/forms';
 
 import { SharedModule } from '../shared/shared.module';
 
-import { CoursesService } from '../shared/services/courses/courses.service';
-
 import { CourseListComponent } from './course-list/course-list.component';
 import { ToolboxComponent } from './toolbox/toolbox.component';
 import { CoursesPageComponent } from './courses-page/courses-page.component';
@@ -36,7 +34,6 @@ import { CoursesFilterPipe } from './courses-page/courses-filter.pipe';
     CourseListItemBodyComponent,
     CourseListItemFooterComponent,
   ],
-  providers: [ CoursesService ],
   exports: [ CoursesPageComponent ],
 })
 export class CoursesModule { }

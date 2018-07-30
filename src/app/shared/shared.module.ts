@@ -3,33 +3,34 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
-import { AuthService } from './services';
+import { AuthService, CoursesService, ModalWindowService } from './services';
 
-import { BreadcrumbsComponent, ModalWindowComponent } from './components';
+import { ModalWindowComponent } from './components';
 
 import { CapitalizedPipe, DurationPipe, OrderByPipe } from './pipes';
 
-
 @NgModule({
   imports: [
+    FormsModule,
     CommonModule,
     HttpClientModule,
-    FormsModule
   ],
   declarations: [
-    BreadcrumbsComponent,
-    CapitalizedPipe,
-    DurationPipe,
     OrderByPipe,
+    DurationPipe,
+    CapitalizedPipe,
     ModalWindowComponent,
   ],
-  providers: [ AuthService ],
+  providers: [
+    AuthService,
+    CoursesService,
+    ModalWindowService,
+  ],
   exports: [
-    BreadcrumbsComponent,
-    ModalWindowComponent,
-    CapitalizedPipe,
-    DurationPipe,
     OrderByPipe,
+    DurationPipe,
+    CapitalizedPipe,
+    ModalWindowComponent,
   ],
 })
 export class SharedModule { }

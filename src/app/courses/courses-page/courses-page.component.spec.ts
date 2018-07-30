@@ -2,7 +2,7 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { CoursesPageComponent } from './courses-page.component';
-import { Course } from '../../shared/models/course.model';
+import { Course } from '../../shared/models';
 import { CapitalizedPipe } from '../../shared/pipes';
 
 describe('CoursesPageComponent', () => {

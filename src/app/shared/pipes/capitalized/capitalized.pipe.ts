@@ -7,6 +7,7 @@ export class CapitalizedPipe implements PipeTransform {
 
   transform(value: string): string {
     value = value.trim();
+
     return value[0].toUpperCase() + value.slice(1).toLocaleLowerCase();
   }
 }

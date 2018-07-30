@@ -1,7 +1,7 @@
 <header>
     <app-header-logo></app-header-logo>
-    <app-user-panel 
-        *ngIf="authService.isAuthenticated()" 
+    <app-user-panel
+        *ngIf="authService.isAuthenticated()"
         [currentUser]="authService.getUserInfo()"
         (logout)="onLogout($event)">
     </app-user-panel>

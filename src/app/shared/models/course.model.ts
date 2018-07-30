@@ -1,4 +1,4 @@
-import Trainer from './trainer.model';
+import { Trainer } from './trainer.model';
 
 export interface Course {
   _id: string;

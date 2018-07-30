@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
-import { Course } from '../../shared/models/course.model';
+import { Course } from '../../shared/models';
 
 @Component({
   selector: 'app-courses-pagination',

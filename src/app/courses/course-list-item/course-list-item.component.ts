@@ -1,6 +1,6 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
-import { Course } from '../../shared/models/course.model';
+import { Course } from '../../shared/models';
 
 @Component({
   selector: 'app-course-list-item',
@@ -9,11 +9,6 @@ import { Course } from '../../shared/models/course.model';
 })
 export class CourseListItemComponent {
   @Input() course: Course;
-  @Output() deleted = new EventEmitter<string>();
 
   constructor() { }
-
-  onClick(id: string): void {
-    this.deleted.emit(id);
-  }
 }

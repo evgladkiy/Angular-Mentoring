@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import { CoursesService } from '../../shared/services';
+import { Course } from '../../shared/models';
 
 @Component({
   selector: 'app-course-list-item-header',
@@ -10,7 +12,15 @@ export class CourseListItemHeaderComponent {
   @Input() difficulty: string;
   @Input() type: string;
   @Input() isFavorite: boolean;
+  @Input() id: string;
 
-  constructor() { }
+  constructor(private coursesService: CoursesService) { }
 
+  onClickFavoriteBtn(): void {
+    this.isFavorite = !this.isFavorite;
+    this.coursesService.updateCourse({
+      _id: this.id,
+      isFavorite: this.isFavorite,
+    });
+  }
 }

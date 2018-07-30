@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+
 import { courses } from './courses';
 
-import { Course } from '../../models/course.model';
+import { Course } from '../../models';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CoursesService {
   private courses: Course[];
+
   constructor() { }
 
   getCourses(): Course[] {
@@ -19,9 +20,9 @@ export class CoursesService {
           date: new Date(course.date)
         }
       ));
+    }
 
     return this.courses;
-    }
   }
 
   getCoursebyId(id: string): Course {
@@ -32,10 +33,14 @@ export class CoursesService {
     this.courses = [ ... this.courses, newCourse ];
   }
 
-  updateCourse(updatedCourse: Course): void {
-    this.courses = this.courses.map(course => (
-      course._id === updatedCourse._id ? updatedCourse : course
-    ));
+  updateCourse(updatedProps: Partial<Course>): void {
+    const updatedCourse = this.courses.find(course => course._id === updatedProps._id);
+
+    this.courses = this.courses.filter(course => course._id !== updatedCourse._id);
+    this.courses = [
+      ...this.courses,
+      { ...updatedCourse, ...updatedProps }
+    ];
   }
 
   deleteCourse(id: string): Course {

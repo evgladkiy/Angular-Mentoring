@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 
-import Trainer from '../../shared/models/trainer.model';
+import { Trainer } from '../../shared/models';
 
 @Component({
   selector: 'app-course-list-item-footer',

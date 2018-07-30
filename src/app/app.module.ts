@@ -10,16 +10,14 @@ import { LoginModule } from './login/login.module';
 import { AppComponent } from './app.component';
 import { AddCourseModule } from './add-course/add-course.module';
 
-
-
 @NgModule({
   declarations: [AppComponent],
   imports: [
-    BrowserModule,
     CoreModule,
+    BrowserModule,
+    LoginModule,
     SharedModule,
     CoursesModule,
-    LoginModule,
     AddCourseModule,
     AppRoutingModule,
   ],

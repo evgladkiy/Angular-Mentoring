@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { ModalWindowService } from '../../shared/services';
 
 @Component({
   selector: 'app-course-list-item-body',
@@ -8,6 +9,11 @@ import { Component, Input } from '@angular/core';
 export class CourseListItemBodyComponent {
   @Input() title: string;
   @Input() description: string;
+  @Input() id: string;
 
-  constructor() { }
+  constructor(private modalWindowService: ModalWindowService) { }
+
+  onClick(id: string): void {
+    this.modalWindowService.showModalByCourseId(id);
+  }
 }
