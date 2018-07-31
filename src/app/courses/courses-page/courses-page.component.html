@@ -7,8 +7,4 @@
         <span *ngIf="courseToDelete.trainers.length > 1">and other trainers</span>???
       </p>
 </app-modal-window>
-<app-course-list [courses]="courses" [coursesPerPage]="coursesPerPage"></app-course-list>
-<app-courses-pagination
-    *ngIf="courses.length > 0"
-    [coursesPerPage]="coursesPerPage" [courses]="courses">
-</app-courses-pagination>
+<app-course-list [courses]="courses"></app-course-list>

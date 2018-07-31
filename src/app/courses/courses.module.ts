@@ -15,6 +15,7 @@ import { CourseListItemFooterComponent } from './course-list-item-footer/course-
 
 import { HighlightByDateDirective } from './course-list/highlight-by-date.directive';
 import { CoursesFilterPipe } from './courses-page/courses-filter.pipe';
+import { CoursesPaginationService } from './courses-pagination/courses-pagination.service';
 
 @NgModule({
   imports: [
@@ -34,6 +35,7 @@ import { CoursesFilterPipe } from './courses-page/courses-filter.pipe';
     CourseListItemBodyComponent,
     CourseListItemFooterComponent,
   ],
+  providers: [ CoursesPaginationService ],
   exports: [ CoursesPageComponent ],
 })
 export class CoursesModule { }

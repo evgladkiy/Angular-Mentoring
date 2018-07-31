@@ -5,4 +5,7 @@
         [course]="course" [appHighlightByDate]="course.date">
     </app-course-list-item>
 </div>
-
+<app-courses-pagination
+    *ngIf="courses.length > 0"
+    [numberOfCourses]="courses.length">
+</app-courses-pagination>

@@ -1,13 +1,46 @@
-<p>Shown <b>{{getShownPages()}}</b> of <b>{{courses.length}}</b> results</p>
+<p>Shown <b>{{activePage * coursesPerPage}}</b> course of <b>{{numberOfCourses}}</b> courses</p>
 <div class="pagination-wrapper">
     <ul class="pagination-container">
-        <li><button class="btn btn-small btn-blue"><i class="fas fa-angle-double-left"></i></button></li>
-        <li><button class="btn btn-small btn-blue"><i class="fas fa-angle-left"></i></button></li>
-        <li *ngFor="let pageBtn of pages">
-            <button class="btn btn-small btn-blue" (click)="onClickPaginationBtn(pageBtn)">{{pageBtn}}</button>
+        <li>
+            <button
+                class="btn btn-small btn-blue"
+                (click)="onClickPaginationBtn(1)"
+                [disabled]="activePage === 1" >
+                    <i class="fas fa-angle-double-left"></i>
+            </button>
         </li>
-        <li><button class="btn btn-small btn-blue"><i class="fas fa-angle-right"></i></button></li>
-        <li><button class="btn btn-small btn-blue"><i class="fas fa-angle-double-right"></i></button></li>
+        <li>
+            <button
+                class="btn btn-small btn-blue"
+                (click)="onClickPaginationBtn(activePage - 1)"
+                [disabled]="activePage === 1">
+                    <i class="fas fa-angle-left"></i>
+            </button>
+        </li>
+        <li *ngFor="let buttonNum of buttons">
+            <button
+                class="btn btn-small btn-blue"
+                [ngClass]="{'active': buttonNum === activePage}"
+                (click)="onClickPaginationBtn(buttonNum)">
+                    {{buttonNum}}
+            </button>
+        </li>
+        <li>
+            <button
+                class="btn btn-small btn-blue"
+                (click)="onClickPaginationBtn(activePage + 1)"
+                [disabled]="activePage === numberOfPages">
+                    <i class="fas fa-angle-right"></i>
+            </button>
+        </li>
+        <li>
+            <button
+                class="btn btn-small btn-blue"
+                (click)="onClickPaginationBtn(numberOfPages)"
+                [disabled]="activePage === numberOfPages">
+                    <i class="fas fa-angle-double-right"></i>
+              </button>
+        </li>
     </ul>
 </div>
 

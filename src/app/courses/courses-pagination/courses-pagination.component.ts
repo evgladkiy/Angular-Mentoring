@@ -1,41 +1,61 @@
-import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
+import { Subscription } from 'rxjs';
 
-import { Course } from '../../shared/models';
+import { CoursesPaginationService } from './courses-pagination.service';
 
 @Component({
   selector: 'app-courses-pagination',
   templateUrl: './courses-pagination.component.html',
   styleUrls: [ './courses-pagination.component.less' ],
 })
-export class CoursesPaginationComponent implements OnChanges {
-  public pages: number[];
-  public buttons = [1, 2, 3, 4, 5];
+export class CoursesPaginationComponent implements OnInit, OnChanges, OnDestroy {
+  private buttonsSub: Subscription;
+  private numberOfPagesSub: Subscription;
+  public buttons: number[];
+  public numberOfPages: number;
+  public coursesPerPage = 5;
+  public activePage = 1;
 
-  @Input() courses: Course[];
-  @Input() coursesPerPage: string;
+  @Input() numberOfCourses: number;
 
-  constructor() {}
+  constructor(private paginationService: CoursesPaginationService) {}
+
+  ngOnInit(): void {
+    this.buttonsSub = this.paginationService.buttonsChannel$.subscribe(
+      buttons => this.buttons = buttons
+    );
+    this.numberOfPagesSub = this.paginationService.numberOfPagesChannel$.subscribe((numOfPages) => {
+      this.numberOfPages = numOfPages;
+
+      if (this.activePage > numOfPages) {
+        this.activePage = numOfPages;
+      }
+
+    });
+    this.updateButtons();
+  }
 
   ngOnChanges(changes: SimpleChanges): void {
-    const courses: Course[] = changes.courses ? changes.courses.currentValue : this.courses;
-    const coursesPerPage: string = changes.coursesPerPage ? changes.coursesPerPage.currentValue : this.coursesPerPage;
-
-    this.updateButtons(this.courses, this.coursesPerPage);
+    this.updateButtons();
+    console.log(this.activePage);
   }
 
-  private updateButtons(courses: Course[], coursesPerPage: string): void {
-    const numberOfPages: number = Math.ceil(courses.length / Number(coursesPerPage));
-    this.pages = this.buttons;
-    // this.pages = Array(5).fill(null).map((item, index) => String(index + 1));
+  ngOnDestroy(): void {
+    this.buttonsSub.unsubscribe();
   }
 
-  onClickPaginationBtn(btn: string): void {
-    console.log(`Pagination Btn ${btn} was clicked`);
+  private updateButtons(): void {
+    this.paginationService.getButtons(this.numberOfCourses, this.coursesPerPage, this.activePage);
   }
 
-  getShownPages(): string {
-    return this.courses.length <= Number(this.coursesPerPage)
-      ? String(this.courses.length)
-      : this.coursesPerPage;
+  onClickPaginationBtn(btn: number): void {
+    this.activePage = btn;
+    this.updateButtons();
   }
+
+  // getShownCourses(): string {
+    // return this.numberOfCourses <= this.coursesPerPage * this.activePage
+    //   ? this.numberOfCourses
+    //   : this.coursesPerPage * this.activePage
+  // }
 }

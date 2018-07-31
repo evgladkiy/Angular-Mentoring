@@ -19,7 +19,6 @@ export class CoursesPageComponent implements OnInit, OnDestroy {
   public courses: Course[];
   public courseToDelete: Course;
   public shouldShowModal: boolean;
-  public coursesPerPage = '4';
 
   constructor(
     private router: Router,

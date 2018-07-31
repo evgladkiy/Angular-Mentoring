@@ -8,8 +8,9 @@ import { Course } from '../../shared/models';
   styleUrls: [ './course-list.component.less' ],
 })
 export class CourseListComponent {
+  public coursesPerPage = 5;
+
   @Input() courses: Course[];
-  @Input() coursesPerPage: string;
 
   constructor() { }
 
