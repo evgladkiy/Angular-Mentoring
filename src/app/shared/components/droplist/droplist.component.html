@@ -1,0 +1,11 @@
+<div class="droplist">
+    <input class="droplist__input" type="checkbox" [id]="value">
+    <label class="droplist__label input" [for]="value">{{value}}
+        <i class="fas fa-angle-down droplist__label-icon"></i>
+    </label>
+    <ul class="droplist__list">
+        <li class="droplist__list-item" *ngFor="let item of items">
+            <button class="btn-container droplist__btn" (click)="onClick(item)">{{item}}</button>
+        </li>
+    </ul>
+</div>

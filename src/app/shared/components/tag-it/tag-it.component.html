@@ -1,0 +1,14 @@
+<ul class="tag-it">
+    <li class="tag-it__item" *ngFor="let item of items">
+      {{item.name}}
+      <span class="btn-container delete-btn" (click)="onClick(item.id)">
+        <i class="fas fa-times"></i>
+      </span>
+    </li>
+    <li class="tag-it__input-container">
+        <input
+            id="trainers" class="" type="text" required
+            name="trainers" placeholder="new trainers" [(ngModel)]="newItemName"
+            (keydown)="onKeyDown($event)" (blur)="onBlur()" (focus)="onFocus()" />
+    </li>
+</ul>

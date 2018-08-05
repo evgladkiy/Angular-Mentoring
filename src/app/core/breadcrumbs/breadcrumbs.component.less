@@ -8,13 +8,13 @@
 .breadcrumbs-navigation {
     display: flex;
     align-items: center;
-    height: 30px;
+    height: @breadcrumbs-height;
 
-    &__link {
+    &__link, span {
         color: @white;
         font-family: 'Roboto', sans-serif;
         font-size: 1.6rem;
-        line-height: 30px;
+        line-height: @breadcrumbs-height;
 
         &:hover {
           text-decoration: none;

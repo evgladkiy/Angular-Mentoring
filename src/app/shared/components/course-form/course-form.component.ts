@@ -57,7 +57,10 @@ export class CourseFormComponent implements OnInit {
     this.submited.emit(this.course);
   }
 
-  onDroplistValueChanged(trainers: Trainer[]): void {
+  onTagItValueChanged(trainers: Trainer[]): void {
     this.course.trainers = trainers;
+  }
+  onDropdownValueChanged(value: string, prop: string): void {
+    this.course[prop] = value;
   }
 }

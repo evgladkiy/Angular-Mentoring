@@ -4,12 +4,14 @@ import { FormsModule } from '@angular/forms';
 
 import { AddCoursePageComponent } from './add-course-page/add-course-page.component';
 import { SharedModule } from '../shared/shared.module';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     SharedModule,
+    CoreModule,
   ],
   declarations: [ AddCoursePageComponent ],
   exports: [ AddCoursePageComponent ],

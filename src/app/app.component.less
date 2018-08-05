@@ -11,9 +11,7 @@ app-header {
 router-outlet ::ng-deep +  * {
     display: flex;
     flex-direction: column;
-    min-height: calc(100% - @header-height - @footer-height);
-    max-width: @max-width;
-    margin: 0 auto;
+    min-height: calc(100vh - @header-height - @footer-height);
 }
 
 app-footer {

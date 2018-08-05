@@ -1,2 +1,6 @@
-<h2>Add new course</h2>
-<app-course-form submitBtnText="Add Course" (submited)="onSubmit($event)"></app-course-form>
+<app-breadcrumbs class="wide" [path]="['courses', 'new']"></app-breadcrumbs>
+<div>
+    <h2>Add new course</h2>
+    <app-course-form submitBtnText="Add Course" (submited)="onSubmit($event)"></app-course-form>
+</div>
+

@@ -3,11 +3,15 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
+
 import { AuthService, CoursesService, ModalWindowService } from './services';
-
-import { ModalWindowComponent, CourseFormComponent, FormDroplistComponent } from './components';
-
 import { CapitalizedPipe, DurationPipe, OrderByPipe } from './pipes';
+import {
+  ModalWindowComponent,
+  CourseFormComponent,
+  DroplistComponent,
+  TagItComponent
+} from './components';
 
 @NgModule({
   imports: [
@@ -22,7 +26,8 @@ import { CapitalizedPipe, DurationPipe, OrderByPipe } from './pipes';
     CapitalizedPipe,
     ModalWindowComponent,
     CourseFormComponent,
-    FormDroplistComponent,
+    TagItComponent,
+    DroplistComponent,
   ],
   providers: [
     AuthService,
@@ -35,6 +40,8 @@ import { CapitalizedPipe, DurationPipe, OrderByPipe } from './pipes';
     CapitalizedPipe,
     ModalWindowComponent,
     CourseFormComponent,
+    TagItComponent,
+    DroplistComponent,
   ],
 })
 export class SharedModule { }

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { FormDroplistComponent } from './form-droplist.component';
+import { DroplistComponent } from './droplist.component';
 
-describe('FormDroplistComponent', () => {
-  let component: FormDroplistComponent;
-  let fixture: ComponentFixture<FormDroplistComponent>;
+describe('DroplistComponent', () => {
+  let component: DroplistComponent;
+  let fixture: ComponentFixture<DroplistComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ FormDroplistComponent ]
+      declarations: [ DroplistComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(FormDroplistComponent);
+    fixture = TestBed.createComponent(DroplistComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

@@ -20,11 +20,12 @@
     align-items: flex-start;
 }
 
-input[type="checkbox"] {
+.checkbox {
     display: none;
 
     & + label {
         position: relative;
+        top: 2px;
         display: block;
         width: 18px;
         height: 18px;
@@ -143,54 +144,5 @@ input[type='date'] {
     right: 0;
     padding: 0.539em 0.34em;
     border-radius: 3px;
-}
-
-.droplist {
-    display: flex;
-    flex-wrap: wrap;
-    width: 100%;
-    padding: 0 12px 8px 12px;
-    border: 1px solid #d9dbe3;
-    border-radius: 3px;
-    font-size: 1.6rem;
-
-  &__item {
-      height: 30px;
-      margin: 12px 12px 0 0 ;
-      padding: 0 12px;
-      background: #f2f3f7;
-      font-size: 1.4rem;
-      line-height: 30px;
-      vertical-align: middle;
-  }
-
-  &__input-container {
-      flex: 1;
-      margin-top: 12px;
-
-      & input {
-          height: 30px;
-          width: 100%;
-          min-width: 200px;
-          border: none;
-          font-size: 1.6rem;
-      }
-  }
-
-  & .delete-btn {
-      margin-left: 5px;
-      padding: 0 5px;
-      cursor: pointer;
-
-      & i {
-          font-size: 1rem;
-          opacity: 0.7;
-          .transition;
-      }
-
-      &:hover i {
-        opacity: 0.5;
-      }
-  }
 }
 

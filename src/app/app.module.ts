@@ -9,6 +9,9 @@ import { LoginModule } from './login/login.module';
 
 import { AppComponent } from './app.component';
 import { AddCourseModule } from './add-course/add-course.module';
+import { ErrorPageModule } from './error-page/error-page.module';
+
+import { AuthGuard } from './guards/auth.guard';
 
 @NgModule({
   declarations: [AppComponent],
@@ -19,9 +22,10 @@ import { AddCourseModule } from './add-course/add-course.module';
     SharedModule,
     CoursesModule,
     AddCourseModule,
+    ErrorPageModule,
     AppRoutingModule,
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

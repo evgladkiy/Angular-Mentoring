@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { SharedModule } from '../shared/shared.module';
+import { CoreModule } from '../core/core.module';
 
 import { EditCoursePageComponent } from './edit-course-page/edit-course-page.component';
 
@@ -11,6 +12,7 @@ import { EditCoursePageComponent } from './edit-course-page/edit-course-page.com
     CommonModule,
     FormsModule,
     SharedModule,
+    CoreModule,
   ],
   declarations: [ EditCoursePageComponent ],
 })

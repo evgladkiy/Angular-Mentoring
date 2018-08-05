@@ -23,7 +23,7 @@ export class EditCoursePageComponent implements OnInit {
     this.course = this.coursesService.getCoursebyId(courseId);
 
     if (!this.course) {
-      this.router.navigate(['/']);
+      this.router.navigate(['/404']);
     }
   }
 

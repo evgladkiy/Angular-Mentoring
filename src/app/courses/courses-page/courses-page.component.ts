@@ -1,9 +1,8 @@
-import { Router } from '@angular/router';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { Course } from '../../shared/models';
-import { CoursesService, ModalWindowService, AuthService  } from '../../shared/services';
+import { CoursesService, ModalWindowService  } from '../../shared/services';
 import { CoursesFilterPipe } from './courses-filter.pipe';
 
 @Component({
@@ -19,25 +18,19 @@ export class CoursesPageComponent implements OnInit, OnDestroy {
   public shouldShowModal: boolean;
 
   constructor(
-    private router: Router,
     private coursesServise: CoursesService,
-    private authServise: AuthService,
     private coursesFilterPipe: CoursesFilterPipe,
     private modalWindowService: ModalWindowService,
   ) { }
 
   ngOnInit(): void {
-    if (!this.authServise.isAuthenticated()) {
-      this.router.navigate(['/login']);
-    } else {
-      this.courses = this.coursesServise.getCourses();
-      this.modalWindowSub = this.modalWindowService.channel$.subscribe((id) => {
-        this.shouldShowModal = Boolean(id);
-        this.courseToDelete = this.shouldShowModal
-          ? this.courses.find(course => course._id === id)
-          : null;
-      });
-    }
+    this.courses = this.coursesServise.getCourses();
+    this.modalWindowSub = this.modalWindowService.channel$.subscribe((id) => {
+      this.shouldShowModal = Boolean(id);
+      this.courseToDelete = this.shouldShowModal
+        ? this.courses.find(course => course._id === id)
+        : null;
+    });
   }
 
   ngOnDestroy(): void {
