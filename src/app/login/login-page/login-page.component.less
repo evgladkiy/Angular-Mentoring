@@ -4,57 +4,7 @@
     align-items: center;
 }
 
-.label {
-    display: inline-block;
-    font-size: 1.6rem;
-    margin-bottom: 6px;
-    font-weight: 600;
-
-    &.label-required::after {
-      content: "*";
-      padding-left: 5px;
-      color: @fuchsia;
-   }
-}
-
 form {
     width: 30%;
     margin-top: 150px;
-}
-
-.submit-container {
-    display: flex;
-    justify-content: flex-end;
-}
-
-.input {
-    display: inline-block;
-    border: 1px solid @input-border-color;
-    border-radius: 3px;
-    height: 48px;
-    width: 100%;
-    padding: 0 12px;
-    background: none;
-    color: @input-text-color;
-    font-size: 1.6rem;
-    &:focus {
-        border-color: @input-active-border-color;
-    }
-}
-
-.form-input:focus {
-    border-bottom: 2px solid @main-color;
-    padding-bottom: 0;
-}
-
-::placeholder {
-    color: @placeholder-color
-}
-
-:-ms-input-placeholder {
-    color: @placeholder-color;
-}
-
-::-ms-input-placeholder {
-    color: @placeholder-color;
 }

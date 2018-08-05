@@ -1,0 +1,61 @@
+<form (keydown.enter)="$event.preventDefault()" #courseForm="ngForm" novalidate>
+    <div class="input-container">
+        <label class="label label-required" for="title">Title</label>
+        <input id="title" class="input" type="text" name="title" placeholder="course title" [(ngModel)]="course.title" required />
+    </div>
+    <div class="input-container">
+        <label class="label label-required" for="description">Description</label>
+        <textarea id="description" class="input" name="description" placeholder="course description" [(ngModel)]="course.description" required ></textarea>
+    </div>
+    <div class="input-container">
+        <label class="label label-required" for="img">Course poster</label>
+        <input id="img" class="input" type="text" name="img" placeholder="course img" [(ngModel)]="course.img" required />
+    </div>
+    <div class="small-inputs-container">
+        <div class="input-container">
+            <label class="label label-required" for="date">Date</label>
+            <input id="date" class="input" type="date" name="date" placeholder="course date" [(ngModel)]="date" required />
+        </div>
+        <div class="duration-container">
+            <div class="input-container">
+                <label class="label label-required" for="date">Duration in minutes</label>
+                <input id="duration" class="input" type="number" name="duration"  max="3600" [(ngModel)]="course.duration" required />
+            </div>
+            <p>{{course.duration | duration}}</p>
+        </div>
+    </div>
+    <div class="small-inputs-container">
+        <div class="input-container">
+            <label class="label label-required" for="rating">Rating (1-100)</label>
+            <input id="rating" class="input" type="number" name="rating" min="0" max="100" placeholder="course rating" [(ngModel)]="course.rating" required />
+        </div>
+          <div class="input-container">
+              <label class="label label-required" for="language">Language</label>
+              <input id="language" class="input" type="text" name="language"  max="3600" placeholder="course language" [(ngModel)]="course.language" required />
+          </div>
+    </div>
+    <app-form-droplist [items]="course.trainers" (droplistValueChanged)="onDroplistValueChanged($event)"></app-form-droplist>
+    <div class="small-inputs-container">
+        <div class="input-container">
+            <label class="label label-required" for="difficulty">Difficulty</label>
+            <select class="input" name="difficulty" id="difficulty" [(ngModel)]="course.difficulty">
+                <option *ngFor="let difficulty of coursesDifficulty" [ngValue]="difficulty">{{difficulty}}</option>
+            </select>
+        </div>
+          <div class="input-container">
+              <label class="label label-required" for="type">Type</label>
+              <select class="input" name="type" id="type" [(ngModel)]="course.type">
+                  <option *ngFor="let type of typesOfCourse" [ngValue]="type">{{type}}</option>
+              </select>
+          </div>
+    </div>
+    <div class="checkbox-container">
+        <label class="label" for="isFavorite">Favorite Course: </label>
+        <input id="isFavorite" class="checkbox" type="checkbox" name="isFavorite" [(ngModel)]="course.isFavorite" required />
+        <label class="label-icon" for="isFavorite"><i class="fas fa-check"></i></label>
+    </div>
+    <div class="bnts-container">
+        <a routerLink="/" class="btn btn-solid btn-blue btn-icon-left" type="submit"><i class="fas fa-chevron-left"></i> Back</a>
+        <button class="btn btn-solid btn-green" type="submit" (click)="onSubmit()">{{submitBtnText}}</button>
+    </div>
+</form>

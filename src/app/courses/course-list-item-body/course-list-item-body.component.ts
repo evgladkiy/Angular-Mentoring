@@ -1,10 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { ModalWindowService } from '../../shared/services';
 
 @Component({
   selector: 'app-course-list-item-body',
   templateUrl: './course-list-item-body.component.html',
   styleUrls: ['./course-list-item-body.component.less'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CourseListItemBodyComponent {
   @Input() title: string;

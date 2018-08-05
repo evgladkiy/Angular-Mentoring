@@ -6,13 +6,19 @@ html, body {
     height: 100%;
 }
 
+body,
+input,
+button,
+textarea {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 body {
     position: relative;
     min-width: @min-width;
     overflow-x: hidden;
     color: @text-color;
     line-height: @base-line-height;
-    font-family: 'Source Sans Pro', sans-serif;
 
     &.with-modal {
         overflow: hidden;
@@ -44,3 +50,11 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+

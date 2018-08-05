@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
+import { RouterModule } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 
 import { CourseListComponent } from './course-list/course-list.component';
@@ -22,6 +22,7 @@ import { CoursesPaginationService } from './courses-pagination/courses-paginatio
     CommonModule,
     FormsModule,
     SharedModule,
+    RouterModule
   ],
   declarations: [
     HighlightByDateDirective,

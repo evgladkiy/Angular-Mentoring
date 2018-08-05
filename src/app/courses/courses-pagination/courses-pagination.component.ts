@@ -37,7 +37,6 @@ export class CoursesPaginationComponent implements OnInit, OnChanges, OnDestroy 
 
   ngOnChanges(changes: SimpleChanges): void {
     this.updateButtons();
-    console.log(this.activePage);
   }
 
   ngOnDestroy(): void {

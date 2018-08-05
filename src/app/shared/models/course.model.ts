@@ -13,5 +13,4 @@ export interface Course {
   difficulty: string;
   type: string;
   isFavorite: boolean;
-  owner: string;
 }

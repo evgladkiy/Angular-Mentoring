@@ -3,9 +3,7 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { Course } from '../../shared/models';
-
 import { CoursesService, ModalWindowService, AuthService  } from '../../shared/services';
-
 import { CoursesFilterPipe } from './courses-filter.pipe';
 
 @Component({
@@ -15,7 +13,7 @@ import { CoursesFilterPipe } from './courses-filter.pipe';
   providers: [ CoursesFilterPipe ],
 })
 export class CoursesPageComponent implements OnInit, OnDestroy {
-  private sub: Subscription;
+  private modalWindowSub: Subscription;
   public courses: Course[];
   public courseToDelete: Course;
   public shouldShowModal: boolean;
@@ -32,8 +30,8 @@ export class CoursesPageComponent implements OnInit, OnDestroy {
     if (!this.authServise.isAuthenticated()) {
       this.router.navigate(['/login']);
     } else {
-      this.courses = [...this.coursesServise.getCourses()];
-      this.sub = this.modalWindowService.channel$.subscribe((id) => {
+      this.courses = this.coursesServise.getCourses();
+      this.modalWindowSub = this.modalWindowService.channel$.subscribe((id) => {
         this.shouldShowModal = Boolean(id);
         this.courseToDelete = this.shouldShowModal
           ? this.courses.find(course => course._id === id)
@@ -43,7 +41,7 @@ export class CoursesPageComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.sub.unsubscribe();
+    this.modalWindowSub.unsubscribe();
   }
 
   onSubmitModal(): void {

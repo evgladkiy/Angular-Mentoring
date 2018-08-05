@@ -6,6 +6,10 @@ footer,
     display: flex;
 }
 
+.trainers-container {
+    flex: 2;
+}
+
 footer {
     justify-content: space-between;
     align-items: flex-end;
@@ -42,9 +46,11 @@ footer {
 
 .info-container {
     font-size: 1.8rem;
+    flex: 2;
 
     &__date {
         display: flex;
+        justify-content: center;
     }
 
     p i {
@@ -57,7 +63,9 @@ footer {
 }
 
 .rating-container {
+    flex: 1;
     font-size: 2rem;
+    text-align: right;
 
     & i {
         color: @star-icon-color;

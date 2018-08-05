@@ -1,11 +1,12 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, ChangeDetectionStrategy } from '@angular/core';
 
 import { Trainer } from '../../shared/models';
 
 @Component({
   selector: 'app-course-list-item-footer',
   templateUrl: './course-list-item-footer.component.html',
-  styleUrls: ['./course-list-item-footer.component.less']
+  styleUrls: [ './course-list-item-footer.component.less' ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CourseListItemFooterComponent implements OnInit {
   @Input() trainers: Trainer[];

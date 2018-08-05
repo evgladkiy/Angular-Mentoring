@@ -1,3 +1,7 @@
+@import "variables";
+
+@pagination-color: @fuchsia;
+
 :host {
     display: flex;
     justify-content: space-between;
@@ -14,18 +18,64 @@
     justify-content: center;
 }
 
-.btn.btn.active {
-  background: #ccc;
-}
-
 .pagination-container {
     display: flex;
+    border: 1px solid @pagination-color;
+    border-radius: 3px;
+    overflow: hidden;
+}
 
-    & li:not(:last-of-type) {
-        margin-right: 5px;
+.pagination-btn,
+.pagination-btn__arrow {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: none;
+    background: none;
+    color: @pagination-color;
+    cursor: pointer;
+}
+
+.pagination-btn {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    color: @pagination-color;
+
+    &.active,
+    &:hover {
+        background-color: @pagination-color;
+        color: @white;
+    }
+
+    &__arrow {
+        width: 36px;
+        opacity: 0.75;
+
+        &:disabled {
+          cursor: default;
+          opacity: 0.5;
+        }
+    }
+
+    &__arrow_left {
+        border-right: 1px solid @pagination-color;
+    }
+
+    &__arrow_right {
+        border-left: 1px solid @pagination-color;
+    }
+
+    i {
+        vertical-align: middle;
     }
 }
 
-.btn.btn-small{
-    padding: 6px 12px;
+.ellipsis {
+    display: inline-block;
+    height: 34px;
+    padding: 0 10px;
+    color: @pagination-color;
+    font-size: 2.1rem;
+    vertical-align: middle;
+    letter-spacing: 1px;
 }

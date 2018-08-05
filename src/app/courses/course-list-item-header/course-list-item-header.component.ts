@@ -1,11 +1,11 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { CoursesService } from '../../shared/services';
-import { Course } from '../../shared/models';
 
 @Component({
   selector: 'app-course-list-item-header',
   templateUrl: './course-list-item-header.component.html',
   styleUrls: ['./course-list-item-header.component.less'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CourseListItemHeaderComponent {
   @Input() language: string;

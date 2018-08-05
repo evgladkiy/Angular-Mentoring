@@ -9,19 +9,14 @@ import { Course } from '../../models';
 })
 export class CoursesService {
   private courses: Course[];
+  private typesOfCourse: string[] = ['Training', 'Lecture', 'Video course', 'Seminar'];
+  private coursesDifficulty: string[] = ['For All', 'Novice', 'Intermediate', 'Advanced', 'Expert'];
 
-  constructor() { }
+  constructor() {
+    this.init();
+   }
 
   getCourses(): Course[] {
-    if (!this.courses) {
-      this.courses = courses.map(course => (
-        {
-          ...course,
-          date: new Date(course.date)
-        }
-      ));
-    }
-
     return this.courses;
   }
 
@@ -49,5 +44,21 @@ export class CoursesService {
     this.courses = this.courses.filter(course => course._id !== id);
 
     return courseToDelete;
+  }
+  getTypesOfCourses(): string[] {
+    return this.typesOfCourse;
+  }
+
+  getDifficultyOfCourses(): string[] {
+    return this.coursesDifficulty;
+  }
+
+  init(): void {
+    this.courses = courses.map(course => (
+      {
+        ...course,
+        date: new Date(course.date)
+      }
+    ));
   }
 }

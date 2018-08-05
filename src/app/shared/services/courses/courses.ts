@@ -1,1702 +1,2372 @@
 export const courses = [
-  {
-      "_id": "5b5e29b19a7e0f296df96972",
-      "trainers": [
-          {
-              "id": "5b5e29b14b7d9ccfedf093c7",
-              "name": "Daugherty Wooten",
-              "avatar": "https://randomuser.me/api/portraits/men/70.jpg"
-          },
-          {
-              "id": "5b5e29b10eb3ecee2d453fb3",
-              "name": "Rollins Sutton",
-              "avatar": "https://randomuser.me/api/portraits/women/34.jpg"
-          },
-          {
-              "id": "5b5e29b1e64c556da05dc1a5",
-              "name": "Walter Boone",
-              "avatar": "https://randomuser.me/api/portraits/women/46.jpg"
-          },
-          {
-              "id": "5b5e29b10c987949d53a9230",
-              "name": "Amparo Heath",
-              "avatar": "https://randomuser.me/api/portraits/women/44.jpg"
-          },
-          {
-              "id": "5b5e29b1b6365144b4138b26",
-              "name": "Rice Duran",
-              "avatar": "https://randomuser.me/api/portraits/men/15.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=6",
-      "date": "2018-10-09T05:30:41",
-      "duration": 355,
-      "title": "enim aliquip ipsum Lorem dolor ut non",
-      "description": "Cillum veniam amet occaecat eiusmod culpa. Mollit ullamco id labore cupidatat consequat aliquip eiusmod non ullamco ea ipsum. Magna pariatur consequat cillum enim. Quis deserunt reprehenderit aliquip sit labore.\r\nOccaecat nulla sunt aute sint dolor sint laborum mollit sit officia. Esse eu proident duis elit id et dolor eiusmod aliqua ex dolore eu. Nisi nulla culpa eu nulla dolore et sit.\r\nAute reprehenderit aliqua occaecat exercitation occaecat mollit excepteur. Et sit commodo excepteur laboris anim irure. Consequat ut esse cupidatat aute et occaecat culpa voluptate pariatur excepteur qui.\r\nEa et id sint consectetur ipsum ad mollit exercitation culpa. Dolor eu aliqua laboris occaecat cupidatat fugiat amet laboris non magna magna exercitation culpa. Ut aliqua minim labore in consequat sit minim cupidatat proident mollit non.\r\nAliqua excepteur ad mollit qui tempor velit adipisicing pariatur adipisicing cupidatat. Quis duis laboris exercitation consectetur excepteur quis nisi mollit consectetur minim ullamco quis esse est. Magna esse culpa eu esse minim nostrud.\r\nNon est reprehenderit ullamco pariatur. Id consectetur laborum ea nostrud. In cillum commodo consectetur ad duis id minim duis mollit ad irure reprehenderit. Nulla aliquip fugiat tempor excepteur mollit consectetur quis do ad velit eiusmod pariatur. Velit laborum adipisicing laboris non Lorem laborum.\r\nEx labore veniam excepteur reprehenderit sunt eu reprehenderit. Do et et laborum tempor exercitation cupidatat commodo velit amet magna elit excepteur sunt occaecat. Ipsum mollit eu ullamco officia cillum proident cillum velit esse do proident non et exercitation. Exercitation esse laboris qui occaecat mollit commodo minim sunt Lorem culpa. Esse amet deserunt nostrud id culpa proident adipisicing commodo duis id adipisicing.\r\nFugiat veniam officia aliquip tempor fugiat laborum nisi adipisicing anim duis commodo. Culpa proident incididunt irure deserunt ullamco sunt qui id. Adipisicing sunt mollit fugiat dolor incididunt proident. Non sunt non quis do anim veniam.\r\nAd laboris proident ullamco excepteur sit. Qui elit aute irure pariatur ea tempor dolore id exercitation. Cupidatat irure dolore esse anim adipisicing ipsum consequat deserunt officia. Ea sint aute adipisicing enim duis do laborum tempor. Sint laboris mollit deserunt eu mollit incididunt quis veniam anim occaecat. Labore ut aliquip id sunt qui consectetur nostrud proident enim cupidatat commodo dolore. Enim ea ut elit exercitation.\r\nSunt tempor magna et aute laboris ullamco nulla. Eiusmod dolore proident reprehenderit sunt nostrud nostrud ea anim anim. Non quis irure mollit aliqua adipisicing sit excepteur consequat sit culpa.\r\nEnim sint consectetur laborum dolore sint cupidatat cillum ut aliqua elit Lorem. Laborum exercitation anim cillum proident Lorem anim occaecat ex magna nostrud tempor. Irure magna nulla culpa duis deserunt velit cillum occaecat qui enim.\r\nIncididunt proident pariatur occaecat et ad sint quis aliqua irure elit magna. Non officia eu mollit incididunt. Ullamco velit ea proident enim ex elit. Magna id cupidatat nulla est.\r\nIn in sint culpa esse Lorem sit consequat nostrud sunt incididunt. Quis cupidatat irure mollit reprehenderit sint ipsum eiusmod. Est id ea voluptate commodo dolor velit ipsum ad deserunt nostrud.\r\n",
-      "rating": 45,
-      "language": "Eng",
-      "difficulty": "Expert",
-      "type": "Training",
-      "isFavorite": true,
-      "owner": "VERBUS"
-  },
-  {
-      "_id": "5b5e29b1918bc7b4864a9330",
-      "trainers": [
-          {
-              "id": "5b5e29b1c4e2a62a7829ff6b",
-              "name": "Donna Jimenez",
-              "avatar": "https://randomuser.me/api/portraits/women/40.jpg"
-          },
-          {
-              "id": "5b5e29b14edbf3641e9444c1",
-              "name": "Lynette Rowe",
-              "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
-          },
-          {
-              "id": "5b5e29b165794930e288db13",
-              "name": "Oneill Cain",
-              "avatar": "https://randomuser.me/api/portraits/men/19.jpg"
-          },
-          {
-              "id": "5b5e29b17299cf1f29a58f80",
-              "name": "Tasha Parrish",
-              "avatar": "https://randomuser.me/api/portraits/men/12.jpg"
-          },
-          {
-              "id": "5b5e29b1eed6514ec1e6edc9",
-              "name": "Shauna Hernandez",
-              "avatar": "https://randomuser.me/api/portraits/women/51.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=6",
-      "date": "2018-08-11T10:21:31",
-      "duration": 119,
-      "title": "tempor proident anim consectetur voluptate",
-      "description": "Exercitation aliqua Lorem ut sunt occaecat veniam. Est sunt proident adipisicing sunt laborum. Commodo nisi id proident esse tempor nostrud aliqua fugiat sint sunt ad qui. Occaecat do ullamco aliqua dolore dolor esse sunt officia proident adipisicing cupidatat cillum do.\r\nId duis voluptate mollit adipisicing aute consectetur amet irure. Labore nisi sint est laboris consequat nulla. Veniam sint proident ullamco laboris sunt ut. Do adipisicing culpa aute occaecat fugiat ea dolore sit sit cillum duis tempor ad. Qui qui adipisicing voluptate ullamco ut enim tempor in nisi irure pariatur exercitation adipisicing Lorem. Qui sit nulla duis commodo commodo dolor laboris cupidatat commodo tempor enim Lorem reprehenderit.\r\nReprehenderit labore dolore dolor officia cillum Lorem reprehenderit. Exercitation est nisi esse aute cillum et culpa reprehenderit in et. Deserunt fugiat anim quis enim non dolor consectetur. Elit exercitation cupidatat fugiat id commodo fugiat in exercitation. Mollit Lorem excepteur aute consequat id sunt ex eiusmod. Sit consequat reprehenderit consequat exercitation mollit mollit magna incididunt nostrud ipsum mollit.\r\nExercitation veniam et commodo ex consectetur ipsum pariatur eu officia voluptate ullamco exercitation. Elit pariatur do ex ullamco sint velit consectetur. Veniam ipsum proident anim elit aliquip. Pariatur duis aliquip irure cillum nulla. Qui exercitation laboris ut aliqua. Nulla est et consectetur laboris veniam nulla magna in ex.\r\nDolor nisi nisi tempor sit excepteur velit eiusmod et anim. Culpa consectetur ea id velit est nisi exercitation. Sit nostrud ad dolor occaecat dolor. Eiusmod non amet ad sunt Lorem mollit anim nulla. Esse ea et proident eu laborum proident id ullamco non non commodo ad est ea. Excepteur est qui pariatur nisi consectetur duis duis.\r\nAnim eu voluptate consectetur tempor amet adipisicing aliquip veniam. Mollit aute veniam tempor ullamco laborum aute do duis deserunt ex officia do consequat aliquip. Elit tempor minim qui reprehenderit minim excepteur veniam anim amet occaecat id magna cillum. Cupidatat tempor duis sit labore ex eiusmod irure in ipsum. Ipsum cupidatat et deserunt velit voluptate sunt.\r\nDolore cillum velit ut reprehenderit veniam. Laborum dolore adipisicing ad enim. Ex ea deserunt Lorem quis reprehenderit proident nostrud ea minim. Pariatur esse Lorem incididunt est et. Laboris cupidatat officia ad officia amet deserunt id voluptate aute cupidatat irure. Labore aute excepteur elit laborum laborum magna nisi. Sunt elit fugiat tempor ipsum velit sit cillum.\r\nDo veniam proident culpa magna minim in irure esse excepteur magna commodo. Proident sit laborum laborum id mollit culpa pariatur excepteur proident incididunt laborum cillum. Proident voluptate proident laboris nostrud ex quis in. In eiusmod ipsum consectetur consequat commodo ipsum ex tempor. In Lorem aute velit ipsum excepteur eiusmod est aliquip Lorem adipisicing mollit sunt adipisicing. Laboris ullamco eu laborum magna labore quis commodo culpa excepteur aute tempor adipisicing eiusmod.\r\nDo et ex non exercitation. Nulla amet aliquip ipsum aliqua esse ad. Magna consequat exercitation quis eiusmod minim. Enim ad eiusmod dolor tempor aliqua fugiat incididunt nulla. Aute officia in nisi in qui aute ea aliquip sint nulla irure aliquip nisi sunt. Excepteur adipisicing dolore eiusmod in. Duis sit incididunt esse laborum reprehenderit tempor ad officia.\r\nConsectetur incididunt veniam ex enim ad anim duis magna cupidatat ut ex. Do magna officia pariatur est exercitation nisi anim sunt qui eiusmod excepteur. Lorem ad anim qui ea aliquip aliquip laboris sint ex.\r\nAmet exercitation cupidatat magna aliquip et velit reprehenderit incididunt ut velit reprehenderit esse exercitation mollit. Consectetur amet do amet anim minim est quis mollit magna id deserunt eiusmod. Esse adipisicing ex nostrud occaecat labore eiusmod. Deserunt mollit do dolore esse aute deserunt consectetur esse.\r\n",
-      "rating": 10,
-      "language": "Fra",
-      "difficulty": "Advanced",
-      "type": "Lecture",
-      "isFavorite": true,
-      "owner": "KNOWLYSIS"
-  },
-  {
-      "_id": "5b5e29b1711d4a40f747b08e",
-      "trainers": [
-          {
-              "id": "5b5e29b168289503de6ccfa5",
-              "name": "Mclean Farley",
-              "avatar": "https://randomuser.me/api/portraits/men/30.jpg"
-          },
-          {
-              "id": "5b5e29b1c70c16a32ef34adc",
-              "name": "Carroll Reilly",
-              "avatar": "https://randomuser.me/api/portraits/women/17.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=1",
-      "date": "2018-09-20T02:36:13",
-      "duration": 81,
-      "title": "sunt nostrud proident",
-      "description": "Id est enim anim irure officia minim in exercitation. Voluptate tempor esse consequat officia fugiat proident elit sit ut duis ut. Cillum cillum est consequat fugiat commodo tempor non eu nisi dolore fugiat. Occaecat eu et officia commodo anim aliquip irure id incididunt. Anim id amet aute pariatur. Occaecat ea est et exercitation irure exercitation dolore. Dolore nostrud exercitation incididunt minim non consectetur reprehenderit.\r\nConsectetur qui esse cillum nulla. Incididunt deserunt ex mollit nulla laborum mollit Lorem consectetur. Eu anim proident laboris elit minim adipisicing magna eu ullamco voluptate.\r\nEsse pariatur anim adipisicing aliquip laboris mollit labore ex. Cillum fugiat proident incididunt incididunt Lorem culpa. Elit sint consectetur duis reprehenderit. In elit anim commodo minim officia nulla nostrud deserunt duis est. Deserunt irure anim ipsum deserunt ea occaecat minim sint ex non officia. Dolor do sunt nostrud eu sunt fugiat quis ea et consectetur aliquip esse ipsum voluptate.\r\nDeserunt pariatur culpa amet esse irure amet eu reprehenderit ullamco sint dolore labore. Lorem tempor ipsum exercitation et dolore irure quis. Et nisi id ex qui in.\r\nIpsum occaecat irure nulla est ex deserunt mollit sunt ea duis id dolore pariatur. Proident excepteur laborum sunt aliquip eiusmod irure mollit dolore fugiat esse. Laborum dolor anim deserunt non sunt. Eiusmod duis eiusmod anim ut eu consequat dolore adipisicing. Nulla veniam incididunt ut Lorem quis elit magna pariatur tempor officia amet Lorem est nulla. Velit esse irure duis aute ut qui aliquip voluptate est ea. Ipsum exercitation mollit nisi laboris enim enim minim ut est excepteur laborum.\r\nLorem consectetur incididunt cupidatat laborum irure laborum. Esse adipisicing veniam quis minim eu excepteur excepteur minim deserunt. Veniam elit aute dolore nulla cupidatat consectetur magna consectetur ipsum. Ex nisi in adipisicing enim incididunt do irure laboris fugiat sit Lorem. Irure consequat aliquip ex qui et id sunt enim cupidatat commodo laboris eiusmod consectetur proident. Pariatur cupidatat laboris et consequat magna adipisicing ut id. Dolor deserunt minim non excepteur officia sint occaecat proident consectetur ex eu.\r\nAmet labore elit excepteur adipisicing est fugiat non ipsum nisi sit minim irure nisi. Consequat ex minim proident velit mollit et eu eu. Lorem dolore proident minim occaecat irure amet. Est enim enim ad deserunt. Aute ea nisi do consequat reprehenderit magna laboris minim exercitation sit duis.\r\nVoluptate mollit ea aliquip do Lorem cillum incididunt eiusmod cupidatat tempor. Esse commodo exercitation ullamco nostrud tempor deserunt. Fugiat labore amet labore anim dolore dolore. Duis laboris ipsum eiusmod consequat mollit magna esse sit deserunt velit consequat.\r\nConsequat elit exercitation amet cupidatat minim sint occaecat irure ea. Laborum aute nulla magna tempor occaecat enim. Nulla aute do dolore aliquip do pariatur ut culpa duis sit eiusmod. Irure consequat qui laboris ea proident ut. Ad veniam aute adipisicing voluptate ipsum aliquip ea. Officia amet proident ex pariatur tempor cupidatat sint velit Lorem aliquip eu laborum excepteur reprehenderit.\r\nUt sit duis eiusmod adipisicing ex aliquip ea exercitation adipisicing. Qui veniam excepteur amet excepteur. Esse anim anim laborum Lorem duis eiusmod id cupidatat non esse aliqua. Veniam adipisicing amet aliqua fugiat est eu officia do.\r\n",
-      "rating": 50,
-      "language": "Esp",
-      "difficulty": "Advanced",
-      "type": "Video course",
-      "isFavorite": true,
-      "owner": "SYNKGEN"
-  },
-  {
-      "_id": "5b5e29b182b17b0eb9ab7a49",
-      "trainers": [
-          {
-              "id": "5b5e29b15a8d30435ed1eb78",
-              "name": "Powers Spears",
-              "avatar": "https://randomuser.me/api/portraits/men/36.jpg"
-          },
-          {
-              "id": "5b5e29b12660dbc7a1ae34e7",
-              "name": "Larsen Bonner",
-              "avatar": "https://randomuser.me/api/portraits/women/41.jpg"
-          },
-          {
-              "id": "5b5e29b110a4d7bdfc026d5a",
-              "name": "Pauline Walters",
-              "avatar": "https://randomuser.me/api/portraits/women/41.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=8",
-      "date": "2018-09-02T01:12:09",
-      "duration": 82,
-      "title": "qui commodo pariatur duis eu id",
-      "description": "Reprehenderit excepteur velit occaecat sunt labore occaecat. Eiusmod consequat Lorem adipisicing ea nulla tempor et esse. Proident qui occaecat dolor ullamco. Ad minim Lorem ipsum esse anim eiusmod incididunt incididunt amet et ullamco do cillum. Fugiat laborum consequat ad proident eiusmod.\r\nDolore enim ipsum amet elit fugiat eiusmod ex consectetur. Eiusmod sunt pariatur ad anim dolor occaecat enim consectetur sint magna ipsum. Sint enim esse fugiat pariatur elit magna officia sit adipisicing dolore amet irure nulla. Non qui irure do ut proident sint. Elit elit excepteur esse voluptate amet.\r\nEiusmod incididunt aute eu anim ut consectetur irure qui. Duis ut reprehenderit culpa dolore ad quis amet non. Aliqua commodo eiusmod proident non velit voluptate anim adipisicing esse ad mollit. Magna ea in cupidatat Lorem occaecat nisi nostrud ullamco. Veniam nostrud non do tempor. Officia cupidatat occaecat reprehenderit sit laborum do nisi do. Fugiat et do incididunt velit.\r\nIpsum quis aute esse reprehenderit et veniam eiusmod laboris esse ad ut deserunt duis. Minim sunt eiusmod ad deserunt Lorem eu dolore eiusmod pariatur incididunt aute. Mollit elit sunt aliqua nulla velit aliquip elit mollit ipsum reprehenderit pariatur elit aliquip sit. Officia elit exercitation ipsum deserunt ea aliquip proident magna irure.\r\nDeserunt enim laboris officia irure consequat eiusmod anim proident culpa cillum elit. Aute pariatur fugiat occaecat occaecat ut nisi ullamco pariatur ullamco cillum. Do sit reprehenderit exercitation ullamco exercitation eiusmod voluptate Lorem velit exercitation. Cupidatat aliqua proident fugiat ut sit anim nisi minim laborum. Tempor reprehenderit qui est incididunt sunt.\r\nCulpa in labore qui deserunt. Anim nostrud consequat ad pariatur ut enim reprehenderit mollit ipsum mollit exercitation minim fugiat. Adipisicing duis sit proident sint officia est sint voluptate culpa Lorem.\r\nMollit proident proident ad nulla minim commodo do proident duis labore mollit commodo. Tempor ipsum cillum deserunt veniam cupidatat culpa. In voluptate ea nulla deserunt velit elit do do irure nostrud. Nisi anim irure amet ad elit qui deserunt laborum anim aliqua pariatur qui. Proident qui tempor consectetur proident minim ut esse ipsum deserunt anim. Elit quis exercitation nulla magna. Aliqua elit non exercitation et exercitation consequat.\r\nLabore dolor proident commodo non nisi ex cillum do proident nisi. Consequat consectetur ex mollit tempor ea incididunt dolor. Exercitation consequat dolore occaecat culpa ad id consectetur commodo. Labore consequat in aliquip adipisicing nulla nulla proident ut laborum.\r\nQuis eu fugiat exercitation non est pariatur commodo elit occaecat incididunt commodo nisi ad. Nulla mollit sit anim amet do labore. Minim ea duis amet incididunt sit consequat adipisicing eiusmod. Est ipsum dolor eu non et dolor commodo velit nulla aliqua. Ullamco cillum in fugiat consectetur non quis aute incididunt laborum sit ut cillum et est.\r\nLabore consectetur ad exercitation dolore aliquip est reprehenderit mollit irure eu commodo. Mollit sunt in ex anim incididunt non tempor labore voluptate aute cillum minim eiusmod laborum. Eu officia laborum ut ad culpa nostrud. Consequat qui ea eu aliqua ea adipisicing occaecat in in duis nulla. In exercitation do magna ipsum reprehenderit sint.\r\nAliquip consequat fugiat dolor culpa in pariatur laborum. Nulla Lorem consectetur voluptate sit. Laboris ullamco aliqua exercitation voluptate cillum occaecat. Lorem sunt adipisicing velit magna nisi. Lorem commodo proident labore ad ex est et ad fugiat. Est sunt irure labore enim. Ullamco aute magna labore labore fugiat duis ipsum incididunt pariatur quis proident laboris culpa.\r\n",
-      "rating": 14,
-      "language": "Esp",
-      "difficulty": "Expert",
-      "type": "Training",
-      "isFavorite": false,
-      "owner": "HATOLOGY"
-  },
-  {
-      "_id": "5b5e29b1cdec2eb63d96885b",
-      "trainers": [
-          {
-              "id": "5b5e29b1f9ed6a6389328855",
-              "name": "Espinoza Goodman",
-              "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=12",
-      "date": "2018-04-18T12:54:43",
-      "duration": 343,
-      "title": "sint esse dolore reprehenderit officia aute aute",
-      "description": "Officia enim cupidatat aute minim nisi in excepteur laborum labore aliquip minim aliqua duis. Magna sint exercitation occaecat proident. Culpa sit commodo consectetur incididunt laboris minim. Magna dolore aliqua proident minim velit exercitation proident sint officia dolor do nulla. Sunt ullamco quis adipisicing qui sunt dolore adipisicing officia amet non esse voluptate nulla.\r\nTempor do reprehenderit commodo qui quis enim nostrud. Elit ullamco pariatur do Lorem irure nostrud. Magna nisi proident aliquip magna.\r\nAute duis enim excepteur nostrud eiusmod eu aute commodo non. Reprehenderit cupidatat qui ipsum in consectetur ex elit reprehenderit et officia deserunt. Et laborum eu consequat labore nostrud anim.\r\nEsse irure excepteur reprehenderit consectetur. Nostrud tempor anim culpa eu nisi ea Lorem reprehenderit laborum quis aute. Qui elit aute commodo sunt adipisicing voluptate sit consectetur culpa laborum ut.\r\nExcepteur eu magna ullamco do quis sit. Sint reprehenderit nisi exercitation consequat magna fugiat nostrud veniam ex amet eu aute. Sint nisi laborum officia amet. Ex ullamco Lorem quis sit reprehenderit laborum. Adipisicing est quis velit ad qui amet amet excepteur.\r\nOccaecat est duis tempor aute. Ut labore excepteur ut do eiusmod pariatur. Excepteur duis qui reprehenderit anim ex duis quis voluptate reprehenderit excepteur. Do ea proident labore eiusmod velit Lorem exercitation ad consequat elit ad tempor ex amet. Magna ullamco est est est qui veniam tempor aliqua sunt. Sint proident elit pariatur velit dolor culpa irure amet voluptate mollit voluptate elit eu.\r\nQuis magna ea quis sunt. Esse aute labore adipisicing laborum non in. Dolor aliqua laboris sunt sit ut reprehenderit nisi occaecat mollit eu.\r\nCillum minim in sint cillum cillum incididunt deserunt. Mollit ipsum exercitation excepteur excepteur. Velit laborum et ut aute. Duis et est amet enim Lorem officia elit fugiat. Cupidatat consectetur culpa enim do labore quis incididunt eu consectetur laboris laboris voluptate aute.\r\nEnim ea aliquip eiusmod nulla eiusmod culpa Lorem voluptate laboris in enim ex laboris magna. Lorem esse est est velit est nostrud consectetur enim commodo. Magna enim exercitation elit sunt occaecat. Eiusmod eu cillum qui elit veniam elit consequat elit. Exercitation nulla fugiat adipisicing id irure dolore officia commodo eiusmod eiusmod. Magna fugiat dolor aute aute nisi tempor velit Lorem ut velit ipsum est.\r\nMagna amet Lorem do mollit. Mollit incididunt proident dolore elit eiusmod cillum cillum occaecat fugiat officia dolor eu duis est. Exercitation consectetur velit eiusmod incididunt enim reprehenderit reprehenderit dolore ea nulla aliquip consectetur magna. Voluptate laborum qui aliqua est tempor occaecat sint.\r\nLaboris tempor elit irure fugiat incididunt aliquip officia nostrud ex laborum cillum sint. Sint ipsum anim officia do aute. Sit velit nisi duis eiusmod fugiat magna sint fugiat culpa proident amet adipisicing in laborum. Elit qui non et qui.\r\nQui id ipsum et nulla minim enim enim exercitation anim ut commodo incididunt. Nisi culpa exercitation non ad mollit. Amet fugiat mollit excepteur duis sit. Nisi do dolor veniam nulla veniam reprehenderit nisi. Consequat incididunt id proident eu aute. Adipisicing cillum sint non ullamco.\r\nVeniam irure cupidatat est nostrud voluptate veniam sunt deserunt aute mollit ipsum incididunt sint duis. Amet enim minim cupidatat qui dolor irure nulla velit. Id in culpa enim laboris ipsum eiusmod do velit reprehenderit pariatur incididunt.\r\n",
-      "rating": 46,
-      "language": "Pol",
-      "difficulty": "Novice",
-      "type": "Video course",
-      "isFavorite": false,
-      "owner": "REALMO"
-  },
-  {
-      "_id": "5b5e29b10cb9719af8f154d3",
-      "trainers": [
-          {
-              "id": "5b5e29b1e32e40c437bc6814",
-              "name": "Beryl Harris",
-              "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=19",
-      "date": "2018-11-25T09:53:00",
-      "duration": 143,
-      "title": "id occaecat voluptate exercitation nisi officia do nulla do quis",
-      "description": "Tempor nisi labore exercitation pariatur excepteur commodo voluptate. Irure enim ea proident occaecat do dolore non. Exercitation deserunt elit exercitation incididunt aute excepteur et cillum cupidatat id id qui aliquip. Consequat ad elit amet eu. Tempor exercitation dolor ipsum quis proident laborum anim incididunt anim voluptate eiusmod dolore laboris veniam. Laboris consectetur ullamco ullamco do duis aliquip velit. Enim sit ex sint laboris excepteur qui sint mollit non anim mollit et commodo.\r\nPariatur ipsum qui aliqua aliquip cupidatat commodo aute eiusmod pariatur. Nulla exercitation incididunt proident cupidatat voluptate ullamco. Eu magna nulla eiusmod aliquip. Nostrud aliquip labore quis irure enim qui tempor.\r\nUt amet officia veniam aute officia. Fugiat aliqua reprehenderit ipsum adipisicing quis id sit ipsum aliqua aliquip cillum culpa reprehenderit cillum. Culpa duis pariatur et labore culpa eu. Nisi deserunt voluptate sint cillum occaecat deserunt irure laborum. In do irure sit officia. Excepteur commodo magna culpa exercitation enim ad excepteur.\r\nNulla ipsum do commodo magna adipisicing Lorem enim do deserunt anim ullamco ad. Veniam officia et enim magna commodo exercitation culpa. Amet commodo minim sit fugiat. Et est non pariatur ullamco amet nostrud officia dolore est consectetur minim do sunt. Incididunt cillum pariatur consectetur cupidatat nostrud nostrud. Do officia qui nulla fugiat dolore minim cillum eiusmod incididunt incididunt aute. Qui mollit reprehenderit magna in culpa.\r\nTempor ut cillum dolore quis veniam ut dolore minim consequat. Ad magna voluptate aute irure nisi enim tempor occaecat ipsum aute non deserunt. Minim id enim occaecat sint cupidatat ex in. Laboris deserunt sint aute magna eiusmod aute exercitation Lorem occaecat enim in do.\r\nReprehenderit reprehenderit consequat ut occaecat laborum. Nisi sunt in officia sint labore. Laboris quis cillum ea ex commodo ullamco sunt velit excepteur cillum. Non ullamco quis exercitation eu commodo eu nisi qui quis sint minim et. Excepteur sunt dolore consectetur labore do esse commodo deserunt labore magna eiusmod. Adipisicing ea fugiat mollit proident duis consectetur culpa non.\r\nCommodo Lorem ipsum pariatur do ad excepteur deserunt dolore esse laborum cillum. Ullamco deserunt ipsum ullamco eiusmod aliqua laborum culpa elit. Excepteur sint dolor sunt ut aliquip culpa do pariatur. Non minim anim cillum tempor pariatur tempor veniam nulla ullamco proident. Sint cupidatat cillum elit dolore enim reprehenderit anim anim minim excepteur aliqua occaecat exercitation consectetur. Ad tempor commodo eu commodo. Proident labore nulla veniam consectetur magna et do consectetur tempor.\r\nEu proident aute occaecat in duis elit cillum excepteur. Nisi consectetur elit duis sit nostrud tempor. Proident incididunt enim est sit eu magna qui elit. Exercitation eu et ad duis sit dolore qui qui incididunt amet ut et aliqua irure. Lorem commodo velit incididunt cillum. Magna irure sint deserunt fugiat voluptate fugiat minim dolore aute occaecat laboris laboris amet dolor. Elit tempor reprehenderit duis eu magna amet duis qui laboris.\r\nCillum reprehenderit ex nostrud voluptate est non in aute. Sit occaecat dolore culpa irure velit in mollit reprehenderit sunt nostrud ad eiusmod. Anim nulla dolore et laboris enim magna dolor enim aute exercitation ea duis voluptate amet. Culpa Lorem nostrud ad ad laborum laborum. Dolor non pariatur elit in aliqua velit pariatur. Commodo deserunt consequat id ut elit est qui do minim officia veniam.\r\nPariatur veniam qui laboris reprehenderit ad tempor ex adipisicing. Proident occaecat sit et duis ipsum est cupidatat reprehenderit velit esse velit aute nulla adipisicing. In sunt excepteur et cillum cillum incididunt aliqua proident ullamco. Amet elit esse eiusmod deserunt ex exercitation tempor nulla anim non do.\r\nCulpa excepteur dolor sunt elit laborum exercitation ullamco duis labore consequat amet. Non fugiat labore mollit anim labore deserunt nulla nisi mollit nostrud. Consequat do exercitation exercitation in culpa pariatur elit non fugiat tempor tempor nostrud. Ea cupidatat ipsum nostrud duis nostrud reprehenderit id anim amet adipisicing fugiat fugiat tempor proident.\r\nTempor labore proident veniam elit commodo magna anim tempor consectetur commodo exercitation. Adipisicing consectetur esse laborum et nisi minim. Pariatur sint nostrud excepteur anim ad ut.\r\nLabore anim occaecat aliquip est reprehenderit irure fugiat Lorem dolore ipsum dolor veniam nostrud aliqua. Eiusmod ut fugiat ad adipisicing dolor ullamco tempor nulla irure commodo. Fugiat aliquip enim fugiat et labore sunt nulla eu velit nulla. Duis qui do qui id ea ullamco ex eiusmod. Ea voluptate do do et sint est commodo nulla id consequat quis tempor elit proident.\r\n",
-      "rating": 36,
-      "language": "Rus",
-      "difficulty": "Expert",
-      "type": "Training",
-      "isFavorite": false,
-      "owner": "COMSTAR"
-  },
-  {
-      "_id": "5b5e29b14fa80a9ef0f9f476",
-      "trainers": [
-          {
-              "id": "5b5e29b1ceea26c65c61c613",
-              "name": "Webb Terry",
-              "avatar": "https://randomuser.me/api/portraits/men/51.jpg"
-          },
-          {
-              "id": "5b5e29b1b25e679bc639a85f",
-              "name": "Fox Clemons",
-              "avatar": "https://randomuser.me/api/portraits/women/47.jpg"
-          },
-          {
-              "id": "5b5e29b1c0f1ce697f440adc",
-              "name": "Sargent Carter",
-              "avatar": "https://randomuser.me/api/portraits/women/53.jpg"
-          },
-          {
-              "id": "5b5e29b1fb410338172a350e",
-              "name": "Krystal Adkins",
-              "avatar": "https://randomuser.me/api/portraits/women/33.jpg"
-          },
-          {
-              "id": "5b5e29b10ba138498308d19c",
-              "name": "Rosalyn Thornton",
-              "avatar": "https://randomuser.me/api/portraits/men/16.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=7",
-      "date": "2018-04-18T05:01:28",
-      "duration": 198,
-      "title": "magna tempor consequat nisi labore commodo nulla aliqua aliquip",
-      "description": "Eiusmod deserunt laboris aliquip fugiat labore magna labore. Voluptate reprehenderit cupidatat duis exercitation labore aliquip. Ad exercitation occaecat laboris labore. Eiusmod ex magna do deserunt sit aute excepteur incididunt consectetur esse esse dolore amet mollit. Id ullamco sunt laborum labore nisi et cupidatat mollit esse cillum excepteur in aliquip.\r\nQui est reprehenderit ullamco laborum id pariatur ex enim dolore quis deserunt. Magna reprehenderit consectetur dolor adipisicing in aute deserunt esse. Dolor veniam id qui voluptate commodo dolor do incididunt. Consequat non adipisicing sint do tempor aliquip est nulla fugiat. Enim sit dolor ullamco non. Eu proident minim sit et ad nulla labore qui minim. Culpa velit anim commodo officia id proident ut voluptate nisi culpa culpa incididunt.\r\nDolor aliqua proident ea incididunt ea. Ullamco qui sunt velit non nulla ipsum eu incididunt. Laborum reprehenderit duis non non culpa do sit mollit esse anim laboris cillum.\r\nDeserunt sunt culpa in ipsum elit enim aliquip occaecat irure. Excepteur non amet veniam tempor nostrud cillum proident do aute do culpa commodo aliqua. Dolor laboris aliqua occaecat aliquip eu fugiat non ad. Eiusmod quis labore tempor labore esse eiusmod. Commodo nulla adipisicing voluptate exercitation consequat cillum velit nostrud officia elit excepteur nulla mollit. Pariatur duis sint non officia anim velit nostrud veniam excepteur labore sint.\r\nAmet pariatur consectetur magna Lorem consequat eiusmod qui sunt adipisicing in non est. Labore sunt pariatur irure occaecat. Pariatur reprehenderit quis eu exercitation.\r\nIn consequat esse id aliqua pariatur dolore. Officia anim eiusmod incididunt voluptate non exercitation aliquip officia id. Aliquip nulla in velit veniam nulla. Officia consectetur incididunt laborum duis culpa occaecat aute qui eu consectetur proident aliqua mollit. Nisi velit velit officia aliqua dolore laborum qui. Consequat proident incididunt anim ex excepteur id fugiat. Deserunt minim nostrud et minim amet.\r\nCupidatat sunt deserunt quis elit proident enim cillum magna culpa nostrud tempor veniam. Nostrud ad sit Lorem labore. Amet minim ea eu ullamco laboris ex pariatur nulla cillum enim in aliquip. Ad labore ad cillum irure amet esse voluptate dolor laborum cupidatat dolore. Mollit ullamco Lorem laboris aliqua culpa excepteur esse ex exercitation.\r\nQui ut deserunt est irure commodo. Quis incididunt do aliqua quis eiusmod amet qui. Ullamco labore minim cillum eiusmod nulla enim ad. Elit reprehenderit ut adipisicing reprehenderit. Reprehenderit cillum ex cupidatat nulla in voluptate enim. Nulla tempor aliqua elit irure laboris laboris non amet ad et velit incididunt.\r\nEx cupidatat elit id ad adipisicing elit ullamco reprehenderit officia ullamco tempor. Quis labore proident nisi nisi Lorem in exercitation laborum. Ullamco amet et velit nisi minim et nulla commodo ad proident. Pariatur laboris enim ut fugiat sunt enim et dolor adipisicing qui non ea. Commodo ad ad mollit ex cillum occaecat labore fugiat deserunt elit do veniam aute. Fugiat consequat aliqua cupidatat culpa ullamco ea ad irure incididunt. Sit et velit est sit ex voluptate velit ea velit nostrud laborum.\r\nProident reprehenderit veniam fugiat labore minim enim nisi anim proident ad elit deserunt pariatur officia. Magna sunt consectetur exercitation dolor non pariatur dolore sit fugiat. Proident amet culpa est laboris exercitation deserunt consequat laborum esse. Labore quis quis aute nostrud incididunt eiusmod voluptate Lorem labore do culpa fugiat. Incididunt magna nostrud id tempor eu deserunt deserunt in fugiat veniam ut. Excepteur nostrud in culpa Lorem et laborum sint commodo mollit aliqua.\r\nQui ea laboris est eiusmod minim sunt dolor fugiat deserunt. Qui eiusmod quis anim eiusmod irure laborum ut reprehenderit. Exercitation consequat mollit exercitation aute id. Ipsum enim mollit consequat occaecat duis eiusmod laborum ea officia ex eiusmod culpa officia culpa. Ut laborum laboris sint nostrud deserunt culpa minim non cillum cupidatat. Laborum consequat ipsum anim et officia proident aute.\r\nMinim aute cillum ullamco non. Ad dolor ex duis ullamco. Velit aute est officia adipisicing. Excepteur et ad minim proident laboris ipsum aliqua fugiat ex. Dolor duis fugiat nostrud ad Lorem aute eu elit laborum magna sit exercitation deserunt nostrud.\r\nIrure minim ex nulla et cupidatat magna sunt cillum ex labore amet officia. Cillum duis sint proident sunt Lorem commodo labore ullamco. Aliqua dolore officia quis laboris nisi commodo culpa voluptate veniam deserunt culpa sit. Sit ea est veniam quis proident fugiat occaecat sint do est aliquip.\r\nAliquip nostrud dolore sunt et sint sunt enim consectetur labore non. Veniam adipisicing adipisicing cupidatat duis amet aliquip id voluptate nisi pariatur ea et. Ipsum non fugiat fugiat anim sit aliquip fugiat culpa minim. Duis ad enim commodo proident aute qui occaecat. Exercitation veniam id est voluptate occaecat incididunt magna in consequat in enim. Labore irure ex laboris esse. Elit aute officia officia anim qui.\r\nTempor culpa sit ullamco ipsum cillum id est occaecat laborum laborum Lorem sunt tempor aliquip. Ipsum excepteur laborum consequat aliqua id adipisicing ad ad. Esse consectetur reprehenderit tempor commodo deserunt cupidatat consequat ipsum voluptate labore deserunt nulla Lorem.\r\n",
-      "rating": 12,
-      "language": "Rus",
-      "difficulty": "Expert",
-      "type": "Seminar",
-      "isFavorite": false,
-      "owner": "GYNK"
-  },
-  {
-      "_id": "5b5e29b1cdb3752ca022a676",
-      "trainers": [
-          {
-              "id": "5b5e29b1f30b050481836f56",
-              "name": "Andrews Burgess",
-              "avatar": "https://randomuser.me/api/portraits/women/17.jpg"
-          },
-          {
-              "id": "5b5e29b1c59b8bb5063c0522",
-              "name": "Marianne Valencia",
-              "avatar": "https://randomuser.me/api/portraits/women/37.jpg"
-          },
-          {
-              "id": "5b5e29b1dc50331a43702319",
-              "name": "Cochran Romero",
-              "avatar": "https://randomuser.me/api/portraits/women/20.jpg"
-          },
-          {
-              "id": "5b5e29b1f4205c0cae96c594",
-              "name": "Atkinson Merrill",
-              "avatar": "https://randomuser.me/api/portraits/men/32.jpg"
-          },
-          {
-              "id": "5b5e29b1277da9a3b82d7217",
-              "name": "Martinez Franks",
-              "avatar": "https://randomuser.me/api/portraits/men/55.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=14",
-      "date": "2018-02-05T07:20:02",
-      "duration": 156,
-      "title": "consectetur cupidatat Lorem ut Lorem fugiat nulla ex",
-      "description": "Aliqua incididunt consectetur commodo sunt dolor laborum. Ex dolore laborum voluptate ut esse. Fugiat dolor elit proident commodo adipisicing nulla velit amet enim officia eu consectetur.\r\nMinim incididunt incididunt Lorem dolor adipisicing do irure. Cupidatat elit qui occaecat ea esse eiusmod excepteur ea deserunt est proident. Tempor sit tempor cupidatat cupidatat ullamco occaecat eu nisi.\r\nSit magna dolor proident non incididunt consequat cupidatat culpa eiusmod proident. In sunt ipsum culpa cupidatat magna ipsum ad duis esse. Duis ad anim deserunt proident.\r\nOfficia duis est non ullamco. Laborum aliquip in non enim nisi ex commodo dolore velit et in nostrud enim. Ea incididunt elit tempor est elit sint qui ullamco nulla sunt. Pariatur sint adipisicing laboris sunt.\r\nLabore laboris dolor deserunt incididunt eiusmod occaecat do consectetur. Dolor dolor excepteur ea excepteur. Ullamco voluptate pariatur nulla qui ad non officia quis. Magna eiusmod excepteur qui ex nulla ullamco cupidatat irure id. Proident do nisi consectetur consequat aliquip culpa aliquip voluptate tempor occaecat. Magna sint Lorem qui adipisicing reprehenderit culpa in elit in quis ut velit.\r\nCulpa nisi elit amet velit occaecat laborum exercitation magna fugiat nostrud excepteur nostrud deserunt aliquip. Dolore eiusmod fugiat in cillum quis veniam in reprehenderit adipisicing duis. Officia magna qui sit ad occaecat nostrud sunt quis. Consectetur tempor duis occaecat labore irure adipisicing cillum. Voluptate dolor pariatur voluptate mollit est laborum aliqua est enim adipisicing exercitation irure.\r\nSint et cillum anim velit sunt sit et mollit non commodo et voluptate. Est eu consectetur eiusmod incididunt velit dolor laborum. Enim nulla elit pariatur magna sunt proident sunt ipsum incididunt. Aliqua laboris enim ea cupidatat. Fugiat nisi irure eu enim anim enim cillum laboris enim consectetur dolore incididunt. Voluptate voluptate eu velit minim ad nulla.\r\n",
-      "rating": 42,
-      "language": "Pol",
-      "difficulty": "Expert",
-      "type": "Lecture",
-      "isFavorite": false,
-      "owner": "ZENOLUX"
-  },
-  {
-      "_id": "5b5e29b1f31228937abac09b",
-      "trainers": [
-          {
-              "id": "5b5e29b1ed2f82648b80cafd",
-              "name": "Tanner Anderson",
-              "avatar": "https://randomuser.me/api/portraits/women/22.jpg"
-          },
-          {
-              "id": "5b5e29b1c737352cd6c79db9",
-              "name": "Maryanne Gibbs",
-              "avatar": "https://randomuser.me/api/portraits/women/40.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=2",
-      "date": "2018-01-25T05:06:37",
-      "duration": 189,
-      "title": "enim aliquip occaecat",
-      "description": "Nisi laborum eu veniam non incididunt nisi exercitation consectetur. Eu anim nostrud ea proident. Et aute minim qui laborum esse amet qui elit occaecat veniam aute ad laborum eiusmod. Minim aliquip enim fugiat aute quis. Nostrud consectetur aliquip duis commodo tempor. Sunt eiusmod nulla Lorem deserunt exercitation magna.\r\nCulpa do duis pariatur magna ex elit sit mollit magna. Laboris elit et amet Lorem sint ullamco quis. Sint non magna quis est velit esse ipsum adipisicing consectetur cupidatat. Exercitation eiusmod sit enim anim aliquip voluptate non consectetur cupidatat ipsum.\r\nDolor aliqua aliqua ullamco ea irure sint officia. Eu duis sint consequat tempor ad ex duis officia eiusmod excepteur consectetur aliqua dolor. Exercitation reprehenderit amet et veniam. Tempor ex dolore non ea enim quis non occaecat duis proident. Irure anim sit enim nulla culpa ea sint aliqua cupidatat aliqua id mollit sit.\r\nDolore sunt do deserunt aute sit adipisicing veniam. Officia sit nisi pariatur voluptate do dolor cillum enim. Anim non cillum nostrud ut aliquip. Duis ullamco laboris reprehenderit tempor. Culpa culpa id adipisicing amet ullamco occaecat dolor. Ea duis commodo amet velit id laboris occaecat pariatur officia ad non. Pariatur aute pariatur ut aliqua est mollit adipisicing consequat adipisicing et labore mollit.\r\n",
-      "rating": 33,
-      "language": "Pol",
-      "difficulty": "Expert",
-      "type": "Training",
-      "isFavorite": false,
-      "owner": "VISALIA"
-  },
-  {
-      "_id": "5b5e29b1a812b46e2750d901",
-      "trainers": [
-          {
-              "id": "5b5e29b1a9f619c6a04de9a3",
-              "name": "Pruitt Kerr",
-              "avatar": "https://randomuser.me/api/portraits/women/19.jpg"
-          },
-          {
-              "id": "5b5e29b1958db51788090c2f",
-              "name": "Knight Holcomb",
-              "avatar": "https://randomuser.me/api/portraits/men/67.jpg"
-          },
-          {
-              "id": "5b5e29b12a27f374c73c5704",
-              "name": "Aida Gutierrez",
-              "avatar": "https://randomuser.me/api/portraits/women/30.jpg"
-          },
-          {
-              "id": "5b5e29b1312a3b789af40148",
-              "name": "Washington Alston",
-              "avatar": "https://randomuser.me/api/portraits/women/24.jpg"
-          },
-          {
-              "id": "5b5e29b10e197b749f04e5ed",
-              "name": "Morrow Byrd",
-              "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
-          },
-          {
-              "id": "5b5e29b19661347891729ebe",
-              "name": "Angeline Barlow",
-              "avatar": "https://randomuser.me/api/portraits/women/28.jpg"
-          },
-          {
-              "id": "5b5e29b11e2309285de205fa",
-              "name": "Casandra Gillespie",
-              "avatar": "https://randomuser.me/api/portraits/women/30.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=18",
-      "date": "2018-06-13T09:36:50",
-      "duration": 316,
-      "title": "do aliquip magna duis ullamco cillum",
-      "description": "Culpa elit Lorem aliqua officia incididunt esse. Ad commodo voluptate esse dolore sit proident ipsum reprehenderit anim. Adipisicing exercitation adipisicing reprehenderit sit tempor excepteur aliquip. Nostrud occaecat eiusmod dolore excepteur nostrud qui elit cillum veniam ullamco nulla.\r\nLaboris id reprehenderit laborum officia minim voluptate in incididunt quis cillum enim. Eu irure commodo est ipsum dolor cupidatat anim do. Aute consectetur do deserunt labore quis in deserunt. Ex cupidatat ipsum sint laborum adipisicing ad sit sint.\r\nSit ut commodo cillum non consequat occaecat sunt nisi. Nostrud irure dolore in sunt commodo amet ipsum occaecat ullamco in nostrud irure proident. Amet cillum quis Lorem fugiat. Esse qui consequat exercitation quis.\r\nOccaecat duis irure ipsum incididunt tempor aliquip ad Lorem. Commodo voluptate nulla officia fugiat velit sint labore nulla mollit reprehenderit velit ex. Deserunt est irure ipsum commodo nisi eiusmod quis Lorem magna laborum fugiat.\r\nTempor veniam quis dolor duis mollit nisi sunt dolore. Fugiat aliquip est cillum non est ad. Ex ullamco pariatur excepteur aliquip ea aliquip eu.\r\nDeserunt ea in enim Lorem. Fugiat enim voluptate labore voluptate voluptate commodo proident nulla nulla commodo cupidatat pariatur sint. Consequat sunt exercitation aliquip incididunt ipsum magna amet officia amet pariatur. Tempor dolor fugiat laborum reprehenderit anim tempor ipsum proident.\r\nProident esse adipisicing fugiat excepteur quis qui aliquip aliqua mollit anim consequat. Pariatur duis duis in culpa ipsum cillum esse incididunt voluptate. Non cillum dolor duis ea in. Ex incididunt tempor eiusmod voluptate dolor consectetur consectetur in exercitation commodo consequat mollit nisi. Sunt qui mollit tempor consectetur laborum dolor reprehenderit et. Et laborum est nisi officia non reprehenderit veniam. Velit eu occaecat culpa elit.\r\nCupidatat in eiusmod reprehenderit sit eiusmod ex occaecat. Occaecat dolore nisi commodo in do dolor minim aliqua sint occaecat ea laborum elit deserunt. Est incididunt cillum duis dolore Lorem laborum nisi exercitation. Qui proident anim deserunt et do excepteur magna.\r\nExercitation exercitation do aute fugiat sunt mollit quis. Pariatur aute tempor enim reprehenderit enim magna consequat dolore. Ut nostrud aute enim culpa deserunt dolore. Nisi sit do eu nulla ad. Irure deserunt pariatur cillum excepteur ex do ex dolore amet do aliqua occaecat cillum. Eiusmod pariatur occaecat officia sit ex ex enim aute mollit. Exercitation nostrud dolore duis nisi proident eiusmod adipisicing nostrud.\r\nIrure amet id dolor pariatur Lorem enim commodo occaecat in commodo dolore. Fugiat labore reprehenderit exercitation Lorem eu nisi incididunt incididunt do sunt velit culpa officia. Aute aliqua Lorem in do eu consectetur culpa mollit adipisicing esse. Tempor fugiat culpa eu minim labore voluptate laboris enim laboris aliquip duis.\r\nQuis qui minim aliqua adipisicing aliquip ad minim ut aliquip. Deserunt eiusmod reprehenderit eiusmod sit esse. Amet labore quis cupidatat magna nostrud sint veniam cillum adipisicing pariatur.\r\nVeniam deserunt voluptate in dolor sit voluptate anim nostrud eiusmod. Incididunt commodo duis consequat eiusmod reprehenderit eu eu reprehenderit et exercitation esse. Duis voluptate aliqua laboris proident id ipsum laboris aliqua ullamco.\r\nSit amet eu ex deserunt. Labore excepteur nisi fugiat voluptate sit proident deserunt ad sunt magna sint ad et ut. Minim ullamco enim aliqua occaecat ullamco aliqua reprehenderit pariatur elit. Eiusmod non aute aliquip est amet qui voluptate eu ullamco reprehenderit dolore ullamco velit. Cupidatat velit mollit exercitation pariatur incididunt commodo fugiat enim culpa.\r\n",
-      "rating": 27,
-      "language": "Eng",
-      "difficulty": "Expert",
-      "type": "Seminar",
-      "isFavorite": true,
-      "owner": "RONBERT"
-  },
-  {
-      "_id": "5b5e29b1c2afb1455a9c984e",
-      "trainers": [
-          {
-              "id": "5b5e29b1de8b5e2b0cb68b85",
-              "name": "Foster Trujillo",
-              "avatar": "https://randomuser.me/api/portraits/women/15.jpg"
-          },
-          {
-              "id": "5b5e29b1d7fe4c9e10554190",
-              "name": "Valdez Harper",
-              "avatar": "https://randomuser.me/api/portraits/women/60.jpg"
-          },
-          {
-              "id": "5b5e29b1f466b42b54235a56",
-              "name": "Barlow Rosa",
-              "avatar": "https://randomuser.me/api/portraits/men/7.jpg"
-          },
-          {
-              "id": "5b5e29b1491aa50d7a853e3f",
-              "name": "Tanya Mason",
-              "avatar": "https://randomuser.me/api/portraits/women/14.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=18",
-      "date": "2018-08-21T03:36:19",
-      "duration": 439,
-      "title": "non est ipsum nostrud anim",
-      "description": "Pariatur do deserunt aliquip magna ad laborum Lorem laborum ea irure sint tempor sint ut. Dolore laboris sunt ea quis do dolore. Sint do aliquip est incididunt sit eiusmod tempor. Labore dolor qui sunt proident adipisicing id dolore dolore cillum occaecat anim. Nulla veniam nostrud anim in cillum excepteur. Consectetur duis qui esse in nulla exercitation labore eu.\r\nDeserunt laboris deserunt cupidatat sunt. Exercitation officia elit qui nulla culpa sunt do voluptate adipisicing voluptate minim veniam. Excepteur sit adipisicing deserunt est. Qui Lorem exercitation labore id cupidatat exercitation anim dolor ad.\r\nEa ad aliqua ipsum qui magna aute enim nulla. Tempor occaecat ad qui anim deserunt dolor exercitation consectetur et anim anim voluptate ipsum. Dolor veniam ex commodo pariatur. Officia dolore laboris laboris aliqua nulla eu id cillum elit esse consectetur.\r\nEiusmod esse ipsum laboris fugiat aliquip laboris. Sunt est nisi culpa ea velit est dolor. Est do ullamco minim elit cupidatat pariatur culpa sit non tempor.\r\nNisi labore sunt eu commodo incididunt do. Tempor adipisicing qui magna officia. Reprehenderit aliquip anim pariatur irure sit mollit non pariatur ad veniam esse anim sunt. Consequat laborum consequat cupidatat ea dolore incididunt quis aute irure amet eiusmod tempor nulla laboris. Aliquip aute culpa incididunt occaecat ad irure do anim consectetur.\r\nAdipisicing sint sunt esse aliqua Lorem incididunt minim et. Laborum velit tempor laborum mollit nulla ipsum eiusmod cillum aliqua anim nostrud. Anim aliqua dolore proident velit sint veniam ipsum.\r\nDolor aute sunt eiusmod adipisicing do. Id nisi mollit elit aute. Officia proident eu officia deserunt qui commodo nisi aliquip officia consectetur. Sint aliquip laborum est quis elit sunt. Excepteur nisi proident aute amet quis non occaecat sunt id nisi.\r\nCulpa aliqua dolor ex consequat nostrud irure quis aliquip culpa anim sit quis aute. Magna ad exercitation elit sit excepteur minim nisi reprehenderit duis voluptate elit et laboris Lorem. Ipsum non ullamco sit amet minim tempor ullamco laboris elit voluptate nisi.\r\nAmet amet exercitation ex occaecat. Laborum consectetur ipsum laborum Lorem irure id ut minim quis sit exercitation aliqua consequat mollit. Adipisicing laborum mollit consequat dolore nostrud consectetur occaecat enim deserunt laborum duis tempor anim.\r\nIrure aute culpa labore reprehenderit ea. Ipsum mollit proident mollit veniam labore Lorem reprehenderit cupidatat ut laborum fugiat. Consectetur commodo qui commodo exercitation aliquip dolor ea amet. Sit ut commodo officia exercitation elit ex duis in dolor fugiat duis commodo anim. Enim labore ea enim enim sunt deserunt consectetur id ad.\r\nAmet ipsum aliquip sit eiusmod consequat do aliquip. Sunt enim et sit deserunt elit aliquip incididunt est officia aliqua Lorem. Aliqua exercitation eiusmod deserunt elit amet in. Veniam laborum elit nisi velit ipsum voluptate elit consequat ipsum non. Deserunt veniam cillum officia et labore enim pariatur do amet deserunt fugiat.\r\nAd aliqua aliquip nulla ea ipsum elit in reprehenderit velit. Nostrud deserunt ipsum reprehenderit sunt amet minim elit dolore officia elit. Lorem tempor sit elit nulla sint culpa. Eu eiusmod id nisi eu Lorem minim eiusmod anim ullamco dolore adipisicing excepteur deserunt.\r\n",
-      "rating": 19,
-      "language": "Fra",
-      "difficulty": "Intermediate",
-      "type": "Training",
-      "isFavorite": false,
-      "owner": "BLEEKO"
-  },
-  {
-      "_id": "5b5e29b1a643dc6cccb1413f",
-      "trainers": [
-          {
-              "id": "5b5e29b135ecefff7db6f1a4",
-              "name": "Sexton Gilliam",
-              "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
-          },
-          {
-              "id": "5b5e29b1efaf8ca6f65b5070",
-              "name": "Gracie Fitzpatrick",
-              "avatar": "https://randomuser.me/api/portraits/women/36.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=10",
-      "date": "2018-02-02T11:13:38",
-      "duration": 479,
-      "title": "cillum sit qui",
-      "description": "Cillum nostrud eiusmod esse labore mollit. Quis occaecat mollit Lorem veniam esse anim est do voluptate qui minim pariatur. Eiusmod laborum occaecat et eiusmod excepteur eiusmod ad eiusmod. Do voluptate sunt fugiat tempor ea voluptate aute nisi ullamco. Velit do ea ullamco eiusmod reprehenderit anim. Magna eiusmod consequat ipsum excepteur qui.\r\nIncididunt do consectetur ullamco velit. Minim esse veniam dolore excepteur non quis eiusmod fugiat ex ut enim ut. Nulla velit exercitation irure pariatur. Officia reprehenderit voluptate ea nulla. Ipsum incididunt adipisicing occaecat anim laborum amet velit cillum nulla cillum tempor nisi. Enim nostrud et veniam qui anim velit consequat enim mollit pariatur.\r\nAliqua minim adipisicing officia mollit velit magna fugiat. Ea qui mollit sint nulla deserunt ut ex consequat sunt. Deserunt consequat aliqua elit non consectetur commodo culpa laborum reprehenderit laborum ipsum cupidatat nulla. Ad aute ullamco excepteur dolore irure adipisicing commodo labore exercitation anim aliqua dolore nostrud. Lorem commodo commodo ipsum cupidatat tempor labore reprehenderit fugiat magna esse enim fugiat. Exercitation qui aliqua sit minim occaecat est laboris cupidatat cupidatat.\r\nVeniam in consequat est cupidatat esse in labore in commodo. Ut occaecat labore amet voluptate in anim id sint ipsum do. Et laboris officia laborum sint. Commodo ea culpa elit dolor laborum qui.\r\n",
-      "rating": 45,
-      "language": "Eng",
-      "difficulty": "Intermediate",
-      "type": "Lecture",
-      "isFavorite": true,
-      "owner": "DOGNOSIS"
-  },
-  {
-      "_id": "5b5e29b163784cacb3efc435",
-      "trainers": [
-          {
-              "id": "5b5e29b1dfd3895e92dee263",
-              "name": "Nancy Velazquez",
-              "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
-          },
-          {
-              "id": "5b5e29b121f2d7fb21263712",
-              "name": "Ruby Blankenship",
-              "avatar": "https://randomuser.me/api/portraits/men/36.jpg"
-          },
-          {
-              "id": "5b5e29b110b5c6667a3e524b",
-              "name": "Myrtle Logan",
-              "avatar": "https://randomuser.me/api/portraits/women/54.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=16",
-      "date": "2018-04-11T09:42:42",
-      "duration": 424,
-      "title": "elit mollit qui",
-      "description": "Labore commodo cupidatat pariatur aliqua. Reprehenderit ad non laborum voluptate minim occaecat nulla sunt laborum. Eiusmod fugiat aliqua labore sunt eiusmod labore cupidatat laboris. Excepteur nisi ex dolor Lorem voluptate amet aliqua dolor do qui eiusmod et in laborum.\r\nDolor commodo ullamco esse Lorem ex irure sunt elit nostrud id fugiat consequat adipisicing. Enim amet eiusmod Lorem quis aute adipisicing minim velit officia. Magna pariatur non veniam duis est dolore labore culpa laboris cupidatat est eiusmod proident. Nulla velit occaecat nostrud eiusmod dolor do consequat commodo excepteur nisi aliqua sint sint adipisicing.\r\nMollit magna consequat esse reprehenderit enim reprehenderit commodo. Culpa eu laboris anim ad aliquip id consectetur. Minim nulla in ullamco quis elit proident pariatur.\r\nNisi sit do Lorem minim et enim. Sunt id deserunt do ad incididunt. Occaecat fugiat Lorem sunt dolor dolore anim Lorem laborum labore ea ullamco ut ea sint.\r\nPariatur cillum non nostrud amet. Reprehenderit enim laborum ut proident deserunt do. Esse incididunt nostrud nisi veniam nostrud id. Id est occaecat Lorem mollit in sint Lorem do est exercitation ad mollit cillum.\r\n",
-      "rating": 27,
-      "language": "Fra",
-      "difficulty": "Advanced",
-      "type": "Training",
-      "isFavorite": false,
-      "owner": "YOGASM"
-  },
-  {
-      "_id": "5b5e29b1b80d2c539cd99cfe",
-      "trainers": [
-          {
-              "id": "5b5e29b1515081af7d62889f",
-              "name": "Roxanne Justice",
-              "avatar": "https://randomuser.me/api/portraits/men/23.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=13",
-      "date": "2018-03-26T07:22:32",
-      "duration": 485,
-      "title": "laborum eiusmod ea occaecat pariatur velit ullamco ullamco",
-      "description": "Proident deserunt magna cupidatat laboris velit reprehenderit pariatur ad incididunt voluptate aliquip in qui. Ipsum excepteur quis cupidatat mollit. Dolor eiusmod dolor eu veniam occaecat consectetur fugiat in mollit.\r\nNulla ea aute consequat nulla et nisi amet nulla tempor consectetur proident. Sit ea do est commodo laboris dolor excepteur velit quis. Aute eiusmod mollit enim elit in minim mollit aliquip.\r\nSint aute aliqua consectetur cupidatat fugiat sit velit sint consectetur occaecat et. Excepteur aliqua id culpa in sit eu aute eu. Minim nulla pariatur cillum reprehenderit esse cupidatat amet sunt. Anim in duis exercitation sunt amet elit proident nisi. Voluptate ad dolor nulla sit aliqua laborum cupidatat Lorem aute. Nisi commodo labore sunt laborum elit tempor incididunt pariatur commodo et est ipsum dolor. Enim laborum adipisicing do exercitation qui ullamco adipisicing nulla veniam sunt aliqua laborum.\r\nExercitation esse elit eiusmod irure ad qui consequat do veniam amet nisi esse anim magna. Mollit aliqua reprehenderit magna sit dolor elit dolore id reprehenderit dolor dolore incididunt dolore. Lorem nostrud ut cupidatat Lorem quis anim fugiat reprehenderit ex nostrud minim ullamco cillum ullamco. Eu nulla in eiusmod ex officia exercitation commodo cillum eu ullamco. Labore ex exercitation amet aliqua laborum est qui cupidatat anim irure excepteur incididunt ullamco. Est minim enim ex id quis esse velit esse velit sint. Incididunt sunt et consectetur qui ipsum ipsum aliqua nulla ut dolore et non.\r\nDuis pariatur officia veniam laborum aliquip ea in deserunt et culpa fugiat sint. Proident pariatur minim Lorem occaecat. Reprehenderit voluptate occaecat commodo eiusmod consectetur dolore mollit eiusmod duis cupidatat incididunt mollit fugiat.\r\nDeserunt fugiat voluptate amet sint sint. Aute irure nisi pariatur in Lorem eu. Sit anim ea est veniam consequat. Quis sit aliquip sunt sunt ullamco. Ut dolore velit laboris officia nisi pariatur consequat dolore adipisicing eiusmod consequat elit ullamco aliqua. Commodo irure Lorem irure dolor velit.\r\nSit nisi irure dolor enim ad elit culpa nisi elit sint. Magna non cupidatat consequat dolor nisi officia nulla ea. Elit aute mollit aliqua pariatur laboris adipisicing commodo reprehenderit dolor ex velit sit veniam id. Elit duis proident amet anim. Ea fugiat dolore tempor culpa voluptate.\r\nCillum quis pariatur officia incididunt laboris ipsum consequat qui laboris consequat mollit eiusmod id dolor. Irure sunt id aute tempor. Nulla nisi esse et in ea laboris est consequat voluptate proident anim pariatur.\r\nEiusmod nulla nostrud ex consectetur occaecat exercitation ex occaecat duis laboris. Mollit nulla magna ipsum sit dolor veniam nisi sunt duis. Minim mollit officia consectetur minim eu. Proident proident dolor sint aliquip ea. Nulla irure velit aute cupidatat. Veniam anim Lorem dolor labore consequat nisi. Esse ipsum in anim sint ea ea id aliquip sit ea.\r\nMagna cillum qui amet occaecat mollit dolore laborum et ipsum fugiat id tempor voluptate. Pariatur esse deserunt incididunt est pariatur. Lorem sit sit voluptate amet et anim labore. Ipsum in duis exercitation aute eu laboris incididunt excepteur sit occaecat sint laborum sint.\r\nEu incididunt exercitation eiusmod ipsum anim laborum ad esse non nisi mollit sit. Reprehenderit dolore dolore et Lorem commodo. Irure laboris pariatur ipsum mollit enim commodo labore.\r\nExercitation dolore ad duis occaecat et ullamco sunt. Labore consequat sunt dolore proident ut duis sunt deserunt commodo mollit adipisicing dolor fugiat. Do dolor nisi adipisicing amet excepteur.\r\nEa ad incididunt tempor non aliquip qui sit aute. Esse officia reprehenderit et laborum laborum nostrud qui cillum. Aliqua do sunt exercitation commodo minim velit est dolore voluptate ipsum. Nostrud excepteur adipisicing adipisicing velit aliqua eiusmod voluptate. Eu minim nulla est deserunt reprehenderit deserunt sunt mollit dolor ullamco cupidatat aute fugiat qui. Magna eiusmod aute qui ullamco occaecat in aliquip.\r\nUt ullamco ipsum aliquip ea voluptate cupidatat. Elit do id qui aute cupidatat commodo aute aliqua. Dolor cillum occaecat quis id officia deserunt adipisicing elit ullamco esse culpa quis eu. Commodo adipisicing reprehenderit nulla labore ex ipsum laboris non. Excepteur Lorem ut anim ullamco veniam elit id proident quis minim pariatur. Qui sit amet ex dolor labore dolore id cillum. Do commodo laborum laborum aliquip excepteur voluptate.\r\nReprehenderit quis pariatur adipisicing qui proident incididunt officia aliqua. Dolor Lorem do magna cupidatat aliqua do culpa. Fugiat adipisicing nostrud ad proident. Laboris adipisicing occaecat et officia nulla laborum et irure dolor ipsum. Anim adipisicing labore aute fugiat anim adipisicing sint.\r\n",
-      "rating": 49,
-      "language": "Esp",
-      "difficulty": "Novice",
-      "type": "Seminar",
-      "isFavorite": true,
-      "owner": "ISOTRACK"
-  },
-  {
-      "_id": "5b5e29b1d093b9861e7a6e99",
-      "trainers": [
-          {
-              "id": "5b5e29b1a5004b3e2df51565",
-              "name": "Georgia Richards",
-              "avatar": "https://randomuser.me/api/portraits/men/65.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=15",
-      "date": "2018-08-20T06:30:58",
-      "duration": 459,
-      "title": "velit ad voluptate pariatur duis anim Lorem dolor",
-      "description": "Consectetur fugiat officia do adipisicing duis sunt. Id sunt incididunt aliqua minim incididunt sit labore duis occaecat enim ut. Quis deserunt minim elit duis enim labore nostrud cupidatat ipsum ex quis exercitation ullamco.\r\nVoluptate dolor ex ex ipsum ut consequat aute amet aliquip culpa. Sit eu tempor in aliqua culpa sint. Sit dolore sint do aliqua nulla voluptate ut sit mollit reprehenderit laboris culpa. Lorem labore excepteur amet deserunt laboris deserunt magna duis proident dolor mollit proident. Enim cillum mollit consectetur do qui mollit qui esse incididunt. Ex labore elit duis voluptate sit non amet culpa.\r\nCulpa Lorem in culpa sunt incididunt nisi voluptate. Non irure sint id in eu consequat enim. Magna nisi id dolore magna qui sunt nulla culpa. Ea ut velit velit ut nostrud anim exercitation nostrud consectetur. Lorem reprehenderit sunt Lorem velit elit mollit incididunt sunt Lorem minim dolore.\r\nSint Lorem et magna pariatur officia amet enim nostrud est. Nulla irure ut quis culpa. Aliqua sit minim ut Lorem elit non laborum qui occaecat occaecat in eiusmod. Qui duis Lorem et aliqua in est anim nostrud ut irure cupidatat mollit sit. Sunt excepteur dolor quis veniam consequat ad duis eu irure veniam et. Veniam deserunt esse ea consectetur et sit qui pariatur esse ad quis nostrud ullamco. Quis incididunt ex exercitation exercitation tempor exercitation officia.\r\nNon adipisicing qui reprehenderit deserunt cupidatat labore ullamco ut officia sint excepteur laborum. In culpa non eiusmod pariatur pariatur qui qui enim ullamco elit. Deserunt consectetur irure quis fugiat voluptate quis exercitation non et culpa Lorem ut. Duis ex ipsum esse tempor do.\r\n",
-      "rating": 22,
-      "language": "Pol",
-      "difficulty": "Advanced",
-      "type": "Training",
-      "isFavorite": false,
-      "owner": "XIXAN"
-  },
-  {
-      "_id": "5b5e29b1f7e19145603df078",
-      "trainers": [
-          {
-              "id": "5b5e29b1a7db7a5aa1b33f78",
-              "name": "Odom Ward",
-              "avatar": "https://randomuser.me/api/portraits/men/38.jpg"
-          },
-          {
-              "id": "5b5e29b1e5e7d7b09fbce74e",
-              "name": "Graciela Gregory",
-              "avatar": "https://randomuser.me/api/portraits/women/29.jpg"
-          },
-          {
-              "id": "5b5e29b1876f22d3fe1acdd7",
-              "name": "Heath Shepherd",
-              "avatar": "https://randomuser.me/api/portraits/men/24.jpg"
-          },
-          {
-              "id": "5b5e29b14be6c374049f3867",
-              "name": "Marion Levy",
-              "avatar": "https://randomuser.me/api/portraits/women/48.jpg"
-          },
-          {
-              "id": "5b5e29b1f6a54deed3b5a656",
-              "name": "Black Dickson",
-              "avatar": "https://randomuser.me/api/portraits/women/27.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=7",
-      "date": "2018-08-05T09:05:54",
-      "duration": 426,
-      "title": "Lorem duis eiusmod id officia nisi proident proident laboris tempor",
-      "description": "Velit ipsum culpa ipsum nisi anim est exercitation aute occaecat quis velit. Ipsum labore proident excepteur incididunt minim dolor quis elit irure minim dolor fugiat sit. Culpa mollit sunt labore ipsum in cillum Lorem est fugiat sint officia ipsum.\r\nDeserunt pariatur irure ullamco mollit cupidatat. Aliqua veniam culpa Lorem nostrud laboris ad reprehenderit ex nostrud elit aute. Nisi qui exercitation reprehenderit Lorem pariatur cupidatat ea labore. Enim duis est in qui et. Deserunt nostrud duis tempor est pariatur laborum incididunt cupidatat do consectetur in consequat laboris.\r\nAnim consectetur incididunt sint ut culpa tempor irure consectetur. Ad officia ullamco do sint est nostrud consectetur. Excepteur est qui cillum aliquip ut. Consequat velit elit sint quis ipsum enim. Sunt nulla pariatur duis culpa quis labore voluptate mollit ipsum tempor ex commodo tempor eiusmod.\r\nNulla proident in deserunt aliqua. Consequat eu sit amet occaecat incididunt anim. Proident nostrud eiusmod exercitation do tempor amet eiusmod occaecat non consectetur velit deserunt. Ullamco est culpa non Lorem elit. Officia enim commodo irure proident anim nisi sint voluptate esse laborum. Tempor ut sit irure veniam. Esse anim est consequat reprehenderit irure.\r\nLabore deserunt ut ullamco quis velit aute Lorem voluptate nulla labore cillum duis elit. Tempor dolor duis quis eiusmod. Deserunt officia eu minim eu in laboris id culpa laborum mollit sint sit exercitation proident. Velit sit tempor proident excepteur Lorem nisi et sunt irure quis est consectetur. Ullamco et est nulla exercitation et mollit.\r\nNulla ex esse fugiat nulla est aute ullamco. Aliquip cillum commodo aliquip consequat consectetur ut quis. Voluptate exercitation excepteur aliqua laborum pariatur mollit velit irure aute consectetur. Mollit in veniam commodo eiusmod consectetur adipisicing et officia pariatur Lorem.\r\nIrure dolore officia ex voluptate culpa esse cupidatat labore aliquip exercitation cupidatat anim. Adipisicing commodo sint adipisicing officia. Nulla ipsum nisi anim esse ex consectetur sunt minim proident labore culpa adipisicing. Adipisicing et ad sit excepteur non tempor ad excepteur proident sit ipsum adipisicing tempor. Consectetur enim tempor esse reprehenderit nostrud ipsum minim excepteur occaecat duis labore dolor veniam non. Ea duis ad velit ipsum minim sit labore adipisicing laborum cillum et. Eu aliqua nulla ullamco sit ea reprehenderit irure et dolor deserunt voluptate ad.\r\nVoluptate commodo laborum tempor labore cupidatat magna enim laborum est ipsum tempor. Pariatur aute id in excepteur. Ex sunt deserunt Lorem non deserunt sit sint cupidatat ex laborum anim sint nisi dolor. Qui occaecat cupidatat voluptate cillum veniam ea est enim occaecat exercitation. Deserunt exercitation tempor laborum deserunt minim sunt elit.\r\nDuis eu consectetur excepteur excepteur labore enim nisi aute do irure. Labore eiusmod elit amet occaecat labore ut enim id. Velit irure cillum commodo id amet eu dolor officia magna ut magna.\r\nEiusmod in quis laborum velit elit adipisicing ut minim et. Duis id duis mollit fugiat ullamco et proident commodo. Magna mollit Lorem ad adipisicing veniam non dolor magna sit minim pariatur laboris quis incididunt. Quis minim irure sit sunt officia sunt reprehenderit occaecat minim ullamco. Tempor nulla nisi esse consequat sunt cillum aliquip velit officia dolor voluptate dolore labore consequat. Pariatur laboris veniam ipsum magna aute.\r\nAd laboris exercitation pariatur ea fugiat veniam duis incididunt exercitation ex veniam pariatur et. Nulla qui laboris dolore elit. Commodo laboris minim nostrud fugiat voluptate Lorem deserunt. Culpa ad occaecat labore pariatur Lorem esse tempor consectetur duis cupidatat Lorem eu voluptate aute. Ut mollit ullamco excepteur deserunt commodo cupidatat qui tempor cupidatat esse eu nulla laboris. Dolore culpa dolore et ipsum id ad occaecat. Do officia aliqua cillum sint consectetur laborum veniam proident amet voluptate cillum.\r\n",
-      "rating": 17,
-      "language": "Eng",
-      "difficulty": "Expert",
-      "type": "Seminar",
-      "isFavorite": true,
-      "owner": "CENTICE"
-  },
-  {
-      "_id": "5b5e29b186ddded5e008452d",
-      "trainers": [
-          {
-              "id": "5b5e29b13422f5aac18e2801",
-              "name": "Gale Davis",
-              "avatar": "https://randomuser.me/api/portraits/men/67.jpg"
-          },
-          {
-              "id": "5b5e29b16cc98420b515f2c2",
-              "name": "Carmela Bradford",
-              "avatar": "https://randomuser.me/api/portraits/women/65.jpg"
-          },
-          {
-              "id": "5b5e29b1a199f31fa44452a1",
-              "name": "Mccullough Hess",
-              "avatar": "https://randomuser.me/api/portraits/women/19.jpg"
-          },
-          {
-              "id": "5b5e29b16af5efb8f2cb21ed",
-              "name": "Karla Hahn",
-              "avatar": "https://randomuser.me/api/portraits/men/23.jpg"
-          },
-          {
-              "id": "5b5e29b1897c05b096284254",
-              "name": "Watts Roberson",
-              "avatar": "https://randomuser.me/api/portraits/women/11.jpg"
-          },
-          {
-              "id": "5b5e29b1ad129286835e5452",
-              "name": "Monique Patel",
-              "avatar": "https://randomuser.me/api/portraits/men/43.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=16",
-      "date": "2018-06-09T01:29:10",
-      "duration": 309,
-      "title": "elit laboris dolore",
-      "description": "Labore dolor nulla fugiat pariatur duis ad. Ullamco aliquip do fugiat mollit adipisicing enim in. In quis esse sit culpa commodo consequat. Occaecat mollit voluptate amet fugiat. Quis quis tempor occaecat ex. Est amet laborum voluptate est deserunt nulla. Dolore pariatur excepteur cupidatat reprehenderit cupidatat sunt ex quis incididunt voluptate pariatur enim.\r\nAute cupidatat voluptate fugiat non. In magna ut nostrud commodo quis ex velit incididunt elit elit aute culpa consectetur. Non tempor pariatur qui deserunt non laboris ipsum occaecat ullamco dolore fugiat. Ad officia dolor qui ex sint voluptate adipisicing. Et ullamco officia culpa occaecat dolor excepteur.\r\nElit fugiat quis Lorem nulla irure non in do nisi exercitation voluptate laborum ex laborum. Consequat consectetur fugiat fugiat qui ullamco non et pariatur dolore fugiat sit fugiat. Ut irure velit aliqua excepteur culpa amet elit Lorem est nisi excepteur et esse. Proident ullamco ad ea aute voluptate nulla consectetur ullamco consectetur. Enim adipisicing sit nostrud nulla ullamco exercitation laborum non. Lorem minim in exercitation velit culpa.\r\nEsse cupidatat sit dolor quis aliquip qui excepteur Lorem voluptate amet. Do fugiat velit magna consequat occaecat id consequat ad. Adipisicing fugiat consectetur irure magna incididunt nostrud excepteur irure deserunt. Fugiat laborum nostrud ex ipsum nulla occaecat cupidatat in laborum aute dolore excepteur eiusmod.\r\nNisi exercitation in voluptate in non anim reprehenderit. Proident reprehenderit commodo ipsum qui exercitation deserunt excepteur incididunt. Officia deserunt culpa est Lorem exercitation consequat quis pariatur sunt. Amet reprehenderit exercitation commodo do ipsum aute ipsum sunt. Minim anim qui sunt et fugiat non aliquip pariatur adipisicing officia ad nulla.\r\nMinim eiusmod aute fugiat nulla officia nostrud in fugiat dolore minim. Ea est non tempor elit mollit sunt eiusmod deserunt id pariatur. Pariatur minim veniam sunt amet velit esse. Pariatur cupidatat magna ex elit in eiusmod. Commodo esse pariatur qui deserunt. Sunt esse mollit mollit ullamco veniam incididunt Lorem laborum duis aute esse.\r\nAdipisicing proident laborum nisi ipsum laborum velit proident velit. Nostrud minim sit tempor laborum cillum. Incididunt laboris nulla cillum nulla ea tempor non fugiat reprehenderit voluptate labore eu minim amet. Quis non minim officia reprehenderit eiusmod eiusmod Lorem pariatur dolore anim ut laboris enim.\r\nDeserunt minim duis qui elit do minim minim ex nulla cupidatat anim. Quis exercitation nisi laboris aliquip non proident. Esse nostrud qui in in occaecat sunt. Ullamco do labore aliquip velit aute velit ut.\r\n",
-      "rating": 48,
-      "language": "Esp",
-      "difficulty": "Novice",
-      "type": "Lecture",
-      "isFavorite": true,
-      "owner": "TELLIFLY"
-  },
-  {
-      "_id": "5b5e29b143f1669976bffc2a",
-      "trainers": [
-          {
-              "id": "5b5e29b123d8168b5bc197d2",
-              "name": "Garrison Brooks",
-              "avatar": "https://randomuser.me/api/portraits/men/53.jpg"
-          },
-          {
-              "id": "5b5e29b1498efeab786be1fd",
-              "name": "Katie Chandler",
-              "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
-          },
-          {
-              "id": "5b5e29b16cdc633a45bca6f3",
-              "name": "Middleton Garrison",
-              "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
-          },
-          {
-              "id": "5b5e29b16406685498ba214d",
-              "name": "Beverley Ayers",
-              "avatar": "https://randomuser.me/api/portraits/men/10.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=7",
-      "date": "2018-04-24T11:39:44",
-      "duration": 389,
-      "title": "fugiat consectetur ipsum dolor",
-      "description": "Veniam excepteur esse cupidatat proident voluptate ullamco esse mollit deserunt nisi. Irure nisi in incididunt eu Lorem. Quis pariatur fugiat non reprehenderit ullamco elit ut irure irure laboris anim ad dolore velit. Proident qui aliqua non incididunt officia elit magna culpa non. Cupidatat officia qui velit laboris amet culpa incididunt culpa proident exercitation est cillum.\r\nAnim minim elit id dolor voluptate ex aute. Tempor dolor incididunt consectetur duis pariatur mollit. Anim sint in officia cupidatat adipisicing dolore.\r\nSit adipisicing dolor commodo laboris consequat fugiat duis fugiat amet anim. Incididunt non dolor eu non. Ut id dolor nisi nisi est ea cupidatat aute. Amet et et culpa et qui.\r\n",
-      "rating": 37,
-      "language": "Esp",
-      "difficulty": "Intermediate",
-      "type": "Lecture",
-      "isFavorite": true,
-      "owner": "CIRCUM"
-  },
-  {
-      "_id": "5b5e29b117a1b990d55e02f0",
-      "trainers": [
-          {
-              "id": "5b5e29b17d139beb6e8e1171",
-              "name": "Debora Horton",
-              "avatar": "https://randomuser.me/api/portraits/men/64.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=11",
-      "date": "2018-10-31T07:56:59",
-      "duration": 455,
-      "title": "ex nulla ut",
-      "description": "Labore adipisicing ex cillum do esse irure voluptate. Sint reprehenderit aute ut quis excepteur incididunt aliqua. Mollit cillum est laboris quis amet exercitation. Id excepteur culpa ullamco labore velit reprehenderit. Qui officia eu mollit eu aliqua in ea elit aute.\r\nNon aute irure voluptate sint Lorem nostrud et eiusmod in elit aliqua enim. Reprehenderit enim esse voluptate dolore et. Quis consequat nulla minim irure. Ad quis sit consectetur ex quis quis consectetur commodo et. Cillum amet in est excepteur veniam nisi adipisicing amet ad. Do ea ut enim minim aute non sint excepteur incididunt aliquip qui. Tempor laborum Lorem reprehenderit aliqua aliquip reprehenderit.\r\nDeserunt laboris consectetur culpa consectetur velit consequat laborum dolore elit. Pariatur elit esse nulla commodo id occaecat ut ad. Lorem eiusmod eu reprehenderit ea exercitation cillum non in dolor laboris. Exercitation qui amet ut deserunt. Sunt eu excepteur id minim Lorem do elit esse aliquip nisi culpa. Sunt dolor exercitation sit esse excepteur officia occaecat aliquip.\r\nAliquip dolore sit qui ex esse quis cillum voluptate exercitation consectetur. Ullamco irure consectetur cupidatat aliqua mollit enim ad officia proident. Ex sunt ea ullamco eu deserunt anim mollit nostrud. Pariatur elit dolor culpa esse elit.\r\nEu esse eiusmod sunt reprehenderit veniam. Culpa veniam ullamco aute cupidatat exercitation qui dolore consectetur dolor est adipisicing laborum dolor cupidatat. Id id voluptate cupidatat tempor cupidatat nisi mollit labore dolor incididunt laborum fugiat. Veniam adipisicing laborum anim excepteur fugiat officia ut ex sunt magna. Occaecat magna duis officia est cillum consectetur culpa.\r\nIn amet nulla fugiat id elit exercitation anim pariatur deserunt. Id voluptate proident sunt pariatur ut amet eiusmod dolore. Sit laboris non esse ullamco dolor amet consectetur reprehenderit enim. Do culpa minim deserunt amet magna ad do quis culpa excepteur sunt.\r\nConsectetur reprehenderit consectetur Lorem irure fugiat sint occaecat fugiat consequat quis. Et aute amet velit irure id pariatur proident duis culpa culpa est voluptate Lorem. Pariatur do ut labore tempor id deserunt eu dolore qui laboris.\r\nAute aliqua minim ipsum irure do labore sunt. Excepteur minim occaecat commodo cillum proident laborum. Officia pariatur cillum esse ea quis cillum laboris. Labore nostrud id exercitation minim et excepteur fugiat quis cillum nulla minim.\r\nCupidatat sint anim ipsum deserunt. Nostrud commodo anim ex nostrud. Aliqua aliquip sit consequat non exercitation ullamco mollit aliqua magna. Aliquip sint commodo sunt ad qui proident laboris dolore veniam esse nisi qui tempor elit. Tempor labore consectetur mollit non mollit pariatur reprehenderit. Ad cillum veniam magna deserunt non est sunt labore laboris elit enim sit enim cupidatat.\r\nVoluptate nulla et adipisicing aute eiusmod ut dolor ea consequat elit duis dolore. Quis voluptate excepteur proident qui non proident incididunt. Minim quis nisi nostrud duis ut. Velit elit consectetur irure id officia quis culpa cupidatat. Ex cupidatat esse minim occaecat cupidatat minim pariatur commodo non. Aute consectetur aliquip occaecat ex ea pariatur ex cillum irure cillum.\r\n",
-      "rating": 22,
-      "language": "Rus",
-      "difficulty": "Expert",
-      "type": "Training",
-      "isFavorite": true,
-      "owner": "ACCUPRINT"
-  },
-  {
-      "_id": "5b5e29b10ab8389fe0463811",
-      "trainers": [
-          {
-              "id": "5b5e29b1c72a881436b63718",
-              "name": "Augusta Finch",
-              "avatar": "https://randomuser.me/api/portraits/women/24.jpg"
-          },
-          {
-              "id": "5b5e29b172dadb179c192581",
-              "name": "Susan Pollard",
-              "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=14",
-      "date": "2018-12-29T06:39:21",
-      "duration": 28,
-      "title": "sint sit in do mollit sunt anim",
-      "description": "Ad dolor mollit sint mollit proident pariatur elit non dolor duis minim. Ad et amet eu sint Lorem officia laborum anim anim non fugiat. Officia voluptate mollit cillum exercitation laboris nulla ea ad esse ea nisi ut. Exercitation anim incididunt veniam laboris duis ipsum. Non dolore consectetur commodo nisi amet minim do sit exercitation. Consectetur mollit qui officia irure occaecat.\r\nVelit laborum aliqua do dolore eiusmod amet mollit tempor consectetur ut culpa labore. Elit ullamco enim ex aute consectetur anim mollit id ut ad reprehenderit officia sint. Reprehenderit in enim incididunt deserunt minim. Officia ipsum ut reprehenderit aliqua culpa proident exercitation eu sint occaecat exercitation anim nostrud in. Qui aliqua esse deserunt Lorem officia reprehenderit ea velit consequat adipisicing fugiat ex ad. Commodo dolor exercitation amet reprehenderit in dolor aute tempor proident. Ad anim nostrud ipsum consequat culpa occaecat qui fugiat.\r\nEt dolore aute nostrud labore officia consectetur quis dolor consectetur exercitation et et labore nulla. Duis labore esse in duis velit fugiat elit in. Ipsum tempor pariatur nulla sit occaecat Lorem esse. Nisi mollit amet non amet do consectetur ad nulla anim eiusmod duis nulla dolore proident. Sint aliquip nisi culpa nostrud fugiat sint aliquip eu eu minim Lorem.\r\nEnim adipisicing non enim non sit esse. Aute Lorem non ea ex ut consequat non officia in cillum adipisicing. Ex laborum laboris nulla officia reprehenderit ipsum anim nisi est ipsum. Dolor ullamco cupidatat labore anim Lorem. Ipsum est ut irure nisi exercitation non reprehenderit. Cupidatat pariatur sit nostrud id minim nisi id culpa. Laborum nostrud exercitation duis ut voluptate enim nostrud cupidatat deserunt minim cillum.\r\nDuis do cupidatat quis occaecat. Et magna cupidatat enim quis nulla commodo. Laborum cillum excepteur amet esse.\r\nEiusmod veniam minim labore ut esse qui aliquip occaecat in in. Quis voluptate esse nisi irure laboris exercitation fugiat aliquip. Aliquip commodo occaecat ullamco ullamco esse quis sunt quis. Excepteur amet ullamco dolore veniam adipisicing reprehenderit adipisicing do labore deserunt cillum. Consequat esse laboris excepteur duis.\r\nSit aliquip laborum dolor id cupidatat fugiat amet excepteur. Cupidatat ea ullamco culpa pariatur. Elit ut minim exercitation elit veniam ullamco Lorem consequat officia laboris eu aute ea duis. Adipisicing ipsum ut minim laborum in ex veniam dolore consequat ea nostrud est reprehenderit exercitation.\r\nExcepteur tempor commodo nisi ut laboris occaecat quis ipsum ut velit occaecat deserunt mollit. Duis ut velit aute eiusmod elit eu eiusmod sit occaecat do id do consequat cupidatat. Aliquip cillum magna quis consequat tempor dolore voluptate magna quis consectetur culpa. Do magna occaecat nisi ex id est commodo amet veniam mollit. Ipsum ullamco voluptate occaecat esse est eu et ipsum culpa eiusmod elit. Minim ex ea sit minim fugiat velit pariatur veniam velit occaecat esse laborum.\r\n",
-      "rating": 50,
-      "language": "Eng",
-      "difficulty": "Intermediate",
-      "type": "Video course",
-      "isFavorite": false,
-      "owner": "PLEXIA"
-  },
-  {
-      "_id": "5b5e29b157f18e9b1524fdf3",
-      "trainers": [
-          {
-              "id": "5b5e29b17e7201a3f24c2210",
-              "name": "Schneider Elliott",
-              "avatar": "https://randomuser.me/api/portraits/men/34.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=20",
-      "date": "2018-01-12T01:33:25",
-      "duration": 263,
-      "title": "Lorem laboris nostrud pariatur est aliqua deserunt excepteur aute velit",
-      "description": "Aliqua consectetur in non veniam incididunt. Aliqua proident dolor velit esse do sit incididunt aute. Culpa eiusmod irure aliqua non velit nisi exercitation veniam et minim labore aliquip reprehenderit dolor.\r\nDolor ipsum qui commodo ex ad officia fugiat ex cupidatat eu aliquip cupidatat. Ad culpa in duis reprehenderit. Quis amet irure culpa nostrud aliqua dolore quis tempor ad minim mollit. Mollit culpa irure duis non nostrud. Anim amet et consectetur deserunt ea mollit deserunt laboris. Laborum labore quis ex exercitation reprehenderit sint eiusmod aute mollit Lorem ipsum elit proident dolor.\r\nConsectetur elit cupidatat qui voluptate in aute elit reprehenderit occaecat ad ipsum. Aliquip velit laborum id consequat occaecat anim ex. Sint velit mollit do cupidatat quis laborum anim minim incididunt in. Reprehenderit reprehenderit laborum laborum adipisicing pariatur adipisicing nulla irure eiusmod. Labore officia consequat veniam cillum cillum non aute. Do nisi nulla dolore quis duis elit eiusmod mollit enim amet.\r\n",
-      "rating": 47,
-      "language": "Fra",
-      "difficulty": "For All",
-      "type": "Seminar",
-      "isFavorite": false,
-      "owner": "NAMEGEN"
-  },
-  {
-      "_id": "5b5e29b146cf7e200ecc6432",
-      "trainers": [
-          {
-              "id": "5b5e29b18e66ef5ee6d9dfb1",
-              "name": "Alisha Wright",
-              "avatar": "https://randomuser.me/api/portraits/men/52.jpg"
-          },
-          {
-              "id": "5b5e29b17b77b4c4140c8ea9",
-              "name": "Booker Guzman",
-              "avatar": "https://randomuser.me/api/portraits/women/41.jpg"
-          },
-          {
-              "id": "5b5e29b10c157dc3b8f0c46d",
-              "name": "Adela Mathews",
-              "avatar": "https://randomuser.me/api/portraits/men/14.jpg"
-          },
-          {
-              "id": "5b5e29b1cc1bcd3aa5ed22ba",
-              "name": "Gilda Pruitt",
-              "avatar": "https://randomuser.me/api/portraits/women/41.jpg"
-          },
-          {
-              "id": "5b5e29b1fb22ed38c048afb7",
-              "name": "Daniel Baker",
-              "avatar": "https://randomuser.me/api/portraits/men/20.jpg"
-          },
-          {
-              "id": "5b5e29b146a5b000288d90e8",
-              "name": "Everett Douglas",
-              "avatar": "https://randomuser.me/api/portraits/men/12.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=16",
-      "date": "2018-04-27T04:15:52",
-      "duration": 346,
-      "title": "excepteur proident incididunt ex cillum commodo nostrud nulla id",
-      "description": "Deserunt Lorem in excepteur consequat. Ipsum ex qui enim culpa exercitation sunt et mollit. Dolore excepteur aute adipisicing est et. Qui dolor consectetur sint proident eu laboris sit proident dolore eiusmod. Anim laborum duis laborum proident aliqua adipisicing Lorem est irure. Irure elit irure labore officia consectetur quis enim occaecat irure in velit cupidatat laboris. Ut et mollit nisi commodo ipsum aliqua elit officia eu sit.\r\nAute labore aliquip cupidatat exercitation ex consequat eiusmod minim eiusmod. Minim sint ullamco commodo eu tempor labore duis amet nisi. Et mollit do et ea nisi fugiat ipsum nisi culpa laboris ea cupidatat officia. Enim pariatur exercitation elit exercitation aliquip sint occaecat quis labore ut sint eu non. Laboris consectetur laboris sint laboris ullamco est veniam deserunt mollit ut. Culpa reprehenderit dolor aliqua pariatur minim tempor anim occaecat. Aliquip nisi officia consequat labore.\r\nDeserunt velit magna proident amet consequat enim aliquip est occaecat magna. Elit deserunt ut eiusmod ad qui velit laboris culpa dolore aute nulla fugiat. Officia duis adipisicing reprehenderit fugiat sit deserunt.\r\nEt reprehenderit consectetur ad esse velit aute do eu do officia do enim occaecat. Ex culpa non tempor nisi voluptate. Est aliquip nisi minim enim ipsum amet ipsum ex irure. Magna exercitation aliquip ea laborum enim culpa commodo mollit sunt aliquip officia commodo est. Et tempor nulla est dolore ad amet enim. Do eiusmod ea sint elit laboris do dolore quis. Ipsum Lorem velit id exercitation adipisicing officia culpa esse pariatur nulla ullamco incididunt.\r\nAdipisicing nisi est id sint occaecat ipsum. Labore Lorem consectetur velit sunt dolor consectetur fugiat deserunt. Eu ullamco irure aute duis et deserunt.\r\nUt proident occaecat eiusmod ex occaecat commodo. Amet non amet adipisicing do esse nulla excepteur amet consequat fugiat. Duis id aliquip ullamco Lorem est excepteur cupidatat velit labore ex.\r\nEsse consectetur in dolore officia. Magna consequat dolore magna enim proident non dolore enim ut eu tempor est. Consectetur irure consequat mollit duis qui Lorem. Irure officia elit laborum excepteur eu minim ut exercitation.\r\n",
-      "rating": 27,
-      "language": "Esp",
-      "difficulty": "Expert",
-      "type": "Training",
-      "isFavorite": true,
-      "owner": "FREAKIN"
-  },
-  {
-      "_id": "5b5e29b11c5b2e54a55f2f61",
-      "trainers": [
-          {
-              "id": "5b5e29b19f0a8fe309020cfc",
-              "name": "Leila Gilbert",
-              "avatar": "https://randomuser.me/api/portraits/women/46.jpg"
-          },
-          {
-              "id": "5b5e29b17b61190cff4e86e7",
-              "name": "Mckay Le",
-              "avatar": "https://randomuser.me/api/portraits/women/68.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=3",
-      "date": "2018-04-28T02:05:29",
-      "duration": 431,
-      "title": "velit incididunt aute consequat velit veniam consequat eu",
-      "description": "Et eu ipsum veniam exercitation irure ipsum cillum sint et sunt aliqua aliquip consectetur laboris. Nisi aute enim in dolor commodo et nisi sint exercitation in. Duis aliqua Lorem exercitation consequat laborum commodo ea et eiusmod. Ullamco veniam nisi voluptate est ut tempor irure cupidatat. Ad reprehenderit commodo eiusmod do deserunt velit consectetur laborum incididunt voluptate duis sunt irure mollit. Commodo enim Lorem duis aute minim excepteur consectetur sunt. Laborum non sint mollit qui deserunt nulla.\r\nMinim incididunt ipsum duis ex culpa sunt. Nisi adipisicing irure duis consectetur exercitation nisi Lorem dolore nostrud eu. Aute sit sunt exercitation officia ex dolore est aliquip sunt.\r\nAd aliquip magna duis mollit magna anim culpa pariatur sunt proident proident nisi. Nulla non culpa veniam anim enim amet commodo amet eiusmod. Irure proident duis deserunt aliquip nostrud.\r\nSunt nostrud amet consectetur laboris aute adipisicing pariatur ipsum et duis id. Deserunt aliquip mollit aliqua mollit veniam culpa. Qui aute velit tempor magna incididunt duis consectetur adipisicing velit sit. Officia nulla nisi sint eiusmod tempor consectetur aliquip elit commodo ipsum exercitation est qui. Deserunt tempor laborum officia commodo nisi tempor aute id nulla non.\r\nAute in magna mollit Lorem excepteur consequat. Ea reprehenderit officia proident eiusmod ad commodo. Ea sunt culpa occaecat ad id ad fugiat ipsum magna officia. Quis sit qui id ex ipsum amet sint consequat sit commodo elit velit. Ea ullamco sit incididunt occaecat. Mollit aliquip enim aute tempor ipsum laborum minim nostrud veniam consequat. Mollit sunt consequat tempor amet excepteur aute ut velit ipsum velit duis consectetur.\r\n",
-      "rating": 50,
-      "language": "Eng",
-      "difficulty": "Advanced",
-      "type": "Lecture",
-      "isFavorite": false,
-      "owner": "LYRICHORD"
-  },
-  {
-      "_id": "5b5e29b1ec3b1b8366b47d20",
-      "trainers": [
-          {
-              "id": "5b5e29b1dfef3ceb199e253f",
-              "name": "Caitlin Lara",
-              "avatar": "https://randomuser.me/api/portraits/men/37.jpg"
-          },
-          {
-              "id": "5b5e29b1689a3ab59d70f7b4",
-              "name": "Fuentes Everett",
-              "avatar": "https://randomuser.me/api/portraits/women/54.jpg"
-          },
-          {
-              "id": "5b5e29b1e763f9bca2ab66f0",
-              "name": "Cannon Watkins",
-              "avatar": "https://randomuser.me/api/portraits/women/57.jpg"
-          },
-          {
-              "id": "5b5e29b1e351e3325c29048c",
-              "name": "John Cooper",
-              "avatar": "https://randomuser.me/api/portraits/women/4.jpg"
-          },
-          {
-              "id": "5b5e29b172dfe3d5fa9abf0a",
-              "name": "Madeline Silva",
-              "avatar": "https://randomuser.me/api/portraits/women/15.jpg"
-          },
-          {
-              "id": "5b5e29b1c7df9b191229cfe4",
-              "name": "Rosella Wynn",
-              "avatar": "https://randomuser.me/api/portraits/men/57.jpg"
-          },
-          {
-              "id": "5b5e29b19b2d3dee727ac786",
-              "name": "Lula Mayer",
-              "avatar": "https://randomuser.me/api/portraits/men/23.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=3",
-      "date": "2018-09-03T08:52:29",
-      "duration": 385,
-      "title": "irure non non ullamco Lorem officia sunt fugiat pariatur elit",
-      "description": "Consequat aliquip irure laborum cupidatat velit. Sit dolor proident cillum aliqua in. Laboris do elit in reprehenderit.\r\nConsequat ullamco fugiat dolore esse eu. Nisi eiusmod consequat id esse magna amet magna nulla consequat adipisicing sit deserunt amet. Consectetur magna cillum ea amet amet dolore ad do occaecat aute dolor. Reprehenderit occaecat nisi excepteur commodo ipsum eiusmod enim. Nostrud irure ut qui ut commodo commodo consectetur irure labore mollit consequat elit aliquip. Veniam dolore proident est irure excepteur incididunt dolore esse exercitation nulla sunt velit. Ullamco officia in cillum dolor dolore ipsum.\r\nConsequat fugiat ad pariatur dolore magna Lorem. Enim eiusmod dolore occaecat enim sunt. Culpa ullamco ea dolore non. Velit aliquip nisi id eiusmod. Reprehenderit cupidatat incididunt laborum cillum exercitation nostrud minim ipsum pariatur. Aliqua proident amet non cillum aliqua veniam dolore do dolor sit consequat incididunt fugiat.\r\nEnim nisi do minim occaecat incididunt veniam voluptate cupidatat aliquip non incididunt. Tempor sunt incididunt eiusmod consequat quis reprehenderit reprehenderit aliqua. Laborum dolore mollit ullamco adipisicing. Ullamco ut velit incididunt laborum labore. Ex esse laborum aliqua ullamco consectetur. Adipisicing mollit labore est mollit reprehenderit magna sit Lorem duis.\r\nCommodo quis reprehenderit cupidatat esse laboris consectetur est do cupidatat. Officia laborum duis est labore id laboris aliquip laboris. Cillum qui enim nisi ullamco proident proident sit dolor enim pariatur anim deserunt dolor labore. Commodo duis anim commodo magna. Magna dolore reprehenderit proident quis minim minim commodo deserunt proident cillum ea labore. Cupidatat non do qui magna laborum aute. Sint ea minim pariatur et ullamco ea non laborum Lorem.\r\nMagna elit nulla ad minim exercitation esse cupidatat elit sint voluptate incididunt. Laborum ullamco fugiat sit consectetur. Consequat non labore consequat dolor ex excepteur sunt eiusmod cillum eiusmod laborum. Exercitation magna ad laboris fugiat ex sit proident consequat pariatur. Deserunt excepteur reprehenderit esse dolor exercitation nostrud excepteur consequat incididunt. Dolore ex consectetur mollit culpa voluptate incididunt nulla deserunt ullamco minim elit quis veniam. Irure elit in officia nostrud commodo cupidatat eu adipisicing fugiat nostrud.\r\nSint cillum sunt est dolor officia eu velit. Incididunt aliqua ullamco eiusmod occaecat deserunt cillum. Incididunt elit esse et enim officia ut proident consectetur. Aute ipsum dolore nulla eu. Minim aliquip sunt dolor velit qui dolor adipisicing voluptate cillum in Lorem ullamco nulla. Duis dolor et elit pariatur id adipisicing amet non ipsum labore laborum. Ipsum commodo amet qui nisi minim eu occaecat sint officia voluptate nulla in aliqua.\r\nCupidatat qui eiusmod laboris consequat. Adipisicing anim occaecat qui nulla nulla. Aliqua cillum ipsum ex adipisicing incididunt anim. Ex aute in mollit aute sunt fugiat adipisicing. Laborum dolore proident nisi quis.\r\nCupidatat sunt aliqua do ut sit cupidatat Lorem commodo exercitation velit. Officia duis ullamco cupidatat dolor ut. Nulla id est elit minim aute labore sunt reprehenderit. Minim et ex aute et eu.\r\nTempor aute eiusmod eu et est esse enim cillum do sit labore ad ad veniam. Duis reprehenderit sunt consectetur deserunt. Excepteur nisi non id in duis irure culpa aliqua mollit dolore.\r\nOfficia esse ea consequat pariatur proident excepteur nisi. Tempor eiusmod irure laborum do culpa commodo mollit occaecat excepteur. Mollit dolore ipsum tempor ex. Aliqua id officia cillum exercitation.\r\nSunt ipsum veniam ipsum in incididunt enim minim dolore tempor. In occaecat voluptate tempor do aute. Proident qui incididunt aliqua nostrud est fugiat duis veniam aliquip qui ipsum aliquip occaecat. Nulla sunt sint enim tempor velit aliquip enim do id ipsum. Sint aliqua ad cillum quis magna culpa labore ut eiusmod non. Adipisicing dolor in in amet id fugiat deserunt cupidatat quis cillum ullamco. Quis esse ipsum adipisicing aliquip et aute cupidatat proident cillum.\r\n",
-      "rating": 45,
-      "language": "Pol",
-      "difficulty": "Novice",
-      "type": "Video course",
-      "isFavorite": true,
-      "owner": "XANIDE"
-  },
-  {
-      "_id": "5b5e29b1b55732ab2f82b4c1",
-      "trainers": [
-          {
-              "id": "5b5e29b14c79513e12acd4cf",
-              "name": "Nichols Sweet",
-              "avatar": "https://randomuser.me/api/portraits/men/48.jpg"
-          },
-          {
-              "id": "5b5e29b15765a4ad120a9a41",
-              "name": "Calderon Hendrix",
-              "avatar": "https://randomuser.me/api/portraits/men/38.jpg"
-          },
-          {
-              "id": "5b5e29b157cd41170eee6d44",
-              "name": "Hale Francis",
-              "avatar": "https://randomuser.me/api/portraits/men/46.jpg"
-          },
-          {
-              "id": "5b5e29b1617c0b6ba812e2c5",
-              "name": "Elsa Stout",
-              "avatar": "https://randomuser.me/api/portraits/men/47.jpg"
-          },
-          {
-              "id": "5b5e29b108c31fb8dd2edcac",
-              "name": "Amalia Warner",
-              "avatar": "https://randomuser.me/api/portraits/men/38.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=12",
-      "date": "2018-07-15T08:28:28",
-      "duration": 135,
-      "title": "eu cupidatat ullamco dolore",
-      "description": "Nulla eiusmod nisi fugiat culpa quis consectetur dolor. Sunt adipisicing exercitation anim enim aliqua ullamco minim. Tempor sint culpa veniam est eu aliqua consectetur culpa nisi eiusmod. Ad elit amet incididunt nisi aute nostrud in mollit ea dolore tempor adipisicing proident.\r\nEx culpa aliqua reprehenderit est excepteur ex cupidatat. Aliquip reprehenderit culpa sint magna. Sint sit commodo magna id id nulla proident minim minim aliqua officia ea culpa sit. Ullamco id dolor velit anim ea Lorem ex qui reprehenderit consequat. Quis non et nostrud occaecat proident commodo et amet.\r\nVeniam nisi aliquip veniam amet enim dolor et cillum cillum qui. Esse proident non occaecat do dolor amet excepteur dolore nisi reprehenderit. Laborum nisi ad ex in in enim minim deserunt. Occaecat consequat mollit non enim non irure nisi qui eiusmod enim veniam deserunt. In labore aliquip quis sunt fugiat esse cillum anim aliquip reprehenderit do aute do ullamco. Consectetur adipisicing do veniam occaecat anim velit Lorem nostrud. Sit reprehenderit tempor et eu ipsum amet nisi minim occaecat in cillum ullamco incididunt nostrud.\r\nConsequat labore exercitation laboris fugiat amet do occaecat velit. Proident dolor sunt qui veniam adipisicing labore esse nisi reprehenderit sunt ipsum veniam in in. Ipsum ipsum cupidatat excepteur tempor sint labore ut id officia proident cupidatat labore. Dolor reprehenderit do qui elit elit nisi exercitation ipsum labore sit qui duis eiusmod. Eiusmod ut adipisicing veniam adipisicing. Ex consectetur fugiat esse Lorem pariatur ipsum veniam.\r\nNisi consectetur ipsum magna fugiat ipsum pariatur eiusmod exercitation non ex. Velit incididunt commodo non amet duis qui aliquip duis in. Nostrud id enim ad pariatur excepteur in consequat excepteur. Reprehenderit dolore esse fugiat cillum sunt velit. Ea aliquip est sunt ipsum exercitation est magna pariatur duis excepteur laborum adipisicing ut. Cupidatat sit magna consequat adipisicing deserunt laboris. Mollit dolor sint in sunt do anim sit exercitation eu mollit.\r\n",
-      "rating": 13,
-      "language": "Eng",
-      "difficulty": "Advanced",
-      "type": "Video course",
-      "isFavorite": false,
-      "owner": "TERRAGEN"
-  },
-  {
-      "_id": "5b5e29b17cdce424549c4852",
-      "trainers": [
-          {
-              "id": "5b5e29b1b39cc77c6f8eae29",
-              "name": "Underwood Horn",
-              "avatar": "https://randomuser.me/api/portraits/women/28.jpg"
-          },
-          {
-              "id": "5b5e29b135b273910427365a",
-              "name": "Phelps Murphy",
-              "avatar": "https://randomuser.me/api/portraits/women/43.jpg"
-          },
-          {
-              "id": "5b5e29b18f4ba343d57ab198",
-              "name": "Henson Ray",
-              "avatar": "https://randomuser.me/api/portraits/men/49.jpg"
-          },
-          {
-              "id": "5b5e29b17e9b2998f794617e",
-              "name": "Cotton Tanner",
-              "avatar": "https://randomuser.me/api/portraits/men/55.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=3",
-      "date": "2018-09-12T09:26:57",
-      "duration": 221,
-      "title": "irure consectetur et tempor",
-      "description": "Do esse quis cillum culpa velit officia nulla. Enim est esse reprehenderit officia sint commodo sit mollit fugiat velit enim ea commodo. Officia dolore mollit do commodo labore culpa enim esse velit sunt. Anim nulla aliqua nostrud cupidatat eiusmod ipsum.\r\nNulla amet nostrud veniam magna in. Pariatur consequat culpa aliqua voluptate nisi labore reprehenderit sunt Lorem consectetur aute sunt officia laboris. Ut Lorem voluptate nisi exercitation minim consequat aute pariatur pariatur ad sunt. Proident incididunt qui dolor sint adipisicing laborum nostrud sunt laborum Lorem duis sunt reprehenderit in.\r\nEt veniam sunt anim tempor nisi nulla mollit irure esse veniam non officia voluptate. Qui ipsum excepteur eiusmod cillum qui excepteur. Occaecat labore ad commodo do irure sint veniam officia sint. Dolor minim deserunt in quis proident laboris tempor. Nostrud irure sint id qui commodo labore Lorem do cupidatat cupidatat ex qui et. Quis reprehenderit nostrud fugiat irure labore. Velit pariatur deserunt qui adipisicing fugiat pariatur nulla incididunt ullamco ullamco voluptate Lorem proident eu.\r\nEt fugiat amet sit irure laboris reprehenderit ad ipsum culpa. Voluptate qui adipisicing consequat voluptate. Incididunt dolor quis irure do deserunt. Proident cillum anim do fugiat enim labore.\r\nCillum mollit exercitation cupidatat laboris aute enim ut. Consequat incididunt nisi occaecat ut ad duis veniam et Lorem ut laborum do cillum est. Esse veniam voluptate in occaecat aute anim incididunt non. Minim non eiusmod nulla veniam.\r\nFugiat incididunt quis fugiat enim enim dolore qui aute. Magna Lorem sit culpa do duis. Magna irure officia veniam ex occaecat incididunt. Ea irure in irure voluptate quis commodo. Et qui nisi eu excepteur anim velit nulla incididunt aliquip laborum reprehenderit quis exercitation. Amet amet ut mollit nostrud sunt amet consequat enim pariatur excepteur enim ex in.\r\nLabore reprehenderit irure ea ad deserunt dolor tempor quis. Sint cupidatat proident ex reprehenderit exercitation aute irure eu eiusmod esse ut reprehenderit amet. Non velit duis fugiat officia consequat nulla.\r\nAute labore eiusmod ex aute nulla nisi voluptate nisi nulla commodo deserunt nulla ut voluptate. Irure nostrud aliquip magna aliqua consectetur enim dolor officia consequat. Consectetur culpa pariatur exercitation ullamco id ullamco qui. Laboris est reprehenderit laborum Lorem ullamco enim labore eiusmod dolor consequat quis anim. Elit do ex cupidatat voluptate sint duis ipsum anim duis ex exercitation. Eiusmod elit eu ea est magna ea qui consequat.\r\nNostrud in quis consequat cillum do culpa. Labore ad sint et esse cupidatat quis. Consequat ad incididunt laboris deserunt consequat sit occaecat. Voluptate velit ex velit non minim eiusmod eiusmod sint ea tempor qui eiusmod.\r\nLaboris ut labore non amet ut officia enim consectetur exercitation eiusmod cupidatat ut. Tempor et culpa ipsum eu sunt tempor laborum do. Velit voluptate ut occaecat velit occaecat aute dolor sit exercitation sunt ipsum fugiat est. Adipisicing Lorem eu aliqua fugiat eu sit sunt adipisicing ut sunt ea dolore. Anim officia reprehenderit sunt magna cillum nostrud aute fugiat ad culpa est Lorem in deserunt.\r\n",
-      "rating": 50,
-      "language": "Fra",
-      "difficulty": "Intermediate",
-      "type": "Lecture",
-      "isFavorite": false,
-      "owner": "SCENTRIC"
-  },
-  {
-      "_id": "5b5e29b100a430aacc310843",
-      "trainers": [
-          {
-              "id": "5b5e29b14566fabb58b5ed33",
-              "name": "Jordan Kramer",
-              "avatar": "https://randomuser.me/api/portraits/men/18.jpg"
-          },
-          {
-              "id": "5b5e29b17c173b73a15d6e0b",
-              "name": "Terra Benton",
-              "avatar": "https://randomuser.me/api/portraits/women/33.jpg"
-          },
-          {
-              "id": "5b5e29b193210dc8a05981e6",
-              "name": "Marcia Guthrie",
-              "avatar": "https://randomuser.me/api/portraits/men/29.jpg"
-          },
-          {
-              "id": "5b5e29b1646d2fb8ee7d9476",
-              "name": "Ford Weaver",
-              "avatar": "https://randomuser.me/api/portraits/women/56.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=18",
-      "date": "2018-01-13T02:55:29",
-      "duration": 304,
-      "title": "labore sint esse",
-      "description": "Fugiat do labore Lorem velit ullamco minim nostrud officia est. Dolore eu aliqua ullamco occaecat velit tempor non do. Veniam quis aliquip irure dolore ullamco tempor. Consequat laborum tempor occaecat nisi nulla nulla. Ullamco cupidatat commodo minim laborum ea ut nisi qui anim duis ut ipsum magna. Sit consectetur in pariatur esse laboris eiusmod laborum.\r\nOfficia eu amet excepteur tempor veniam voluptate cupidatat. Nisi id nostrud irure aliquip enim nulla anim aliqua sunt aliqua. Fugiat cillum nulla veniam fugiat irure.\r\nLabore pariatur nulla laboris anim proident. Cupidatat nostrud nulla veniam aliqua laboris aute sit ut irure commodo culpa veniam sit magna. Officia elit velit nostrud esse est proident. Magna labore sit nisi commodo aute commodo in. Dolore anim ea anim exercitation nisi minim occaecat occaecat deserunt consequat officia officia ex non. Ex ut proident amet pariatur consequat.\r\n",
-      "rating": 50,
-      "language": "Esp",
-      "difficulty": "Advanced",
-      "type": "Video course",
-      "isFavorite": false,
-      "owner": "AQUASURE"
-  },
-  {
-      "_id": "5b5e29b19ef21d0a53adabae",
-      "trainers": [
-          {
-              "id": "5b5e29b1247079120d8259af",
-              "name": "Mathews Lang",
-              "avatar": "https://randomuser.me/api/portraits/women/10.jpg"
-          },
-          {
-              "id": "5b5e29b1009d885f9a6d58b6",
-              "name": "Marisol Buchanan",
-              "avatar": "https://randomuser.me/api/portraits/women/43.jpg"
-          },
-          {
-              "id": "5b5e29b19b761ea46b4f8621",
-              "name": "Charmaine Browning",
-              "avatar": "https://randomuser.me/api/portraits/men/66.jpg"
-          },
-          {
-              "id": "5b5e29b1bb07c0305f8a26ec",
-              "name": "Solis Adams",
-              "avatar": "https://randomuser.me/api/portraits/men/31.jpg"
-          },
-          {
-              "id": "5b5e29b14f2182bfe085c4dc",
-              "name": "Hattie Collins",
-              "avatar": "https://randomuser.me/api/portraits/women/61.jpg"
-          },
-          {
-              "id": "5b5e29b17fb761ae19c3c208",
-              "name": "Sandy Parks",
-              "avatar": "https://randomuser.me/api/portraits/women/25.jpg"
-          },
-          {
-              "id": "5b5e29b1625ce95be928a1f9",
-              "name": "Guthrie Berg",
-              "avatar": "https://randomuser.me/api/portraits/men/40.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=3",
-      "date": "2018-05-25T05:00:34",
-      "duration": 38,
-      "title": "qui aute in deserunt ex sint ullamco laboris velit",
-      "description": "Irure non fugiat elit velit ullamco in quis nostrud elit officia duis est. Occaecat aliqua cupidatat enim do reprehenderit labore ex pariatur exercitation amet laboris magna. Adipisicing qui minim reprehenderit reprehenderit eiusmod ad aute id excepteur ex voluptate sit id. Laborum est nostrud laborum adipisicing eiusmod deserunt non consectetur tempor aliqua deserunt.\r\nOfficia reprehenderit amet duis nisi magna et officia officia. Ullamco non aliqua voluptate eu dolore nulla laboris ipsum. Adipisicing esse eiusmod ea anim adipisicing voluptate reprehenderit dolor consectetur do consequat. Enim tempor est ad qui aliqua ullamco amet. Mollit commodo et consequat laborum elit esse. Minim Lorem ad ullamco adipisicing. Quis consectetur tempor ex aliquip irure esse magna incididunt aute excepteur id reprehenderit.\r\nVelit consectetur consectetur eu velit. Excepteur reprehenderit velit aliqua esse cillum pariatur adipisicing ut exercitation ad. Esse nulla fugiat reprehenderit magna deserunt. In laborum labore occaecat quis et dolor. Adipisicing minim consequat excepteur consectetur eu qui nostrud.\r\nEsse nostrud Lorem qui minim. Culpa duis ullamco dolor enim et. Est ex enim reprehenderit dolor magna est nulla velit elit commodo consectetur qui sit aliquip.\r\n",
-      "rating": 28,
-      "language": "Esp",
-      "difficulty": "Novice",
-      "type": "Training",
-      "isFavorite": true,
-      "owner": "CEPRENE"
-  },
-  {
-      "_id": "5b5e29b1954e89e89f2d310e",
-      "trainers": [
-          {
-              "id": "5b5e29b18aa807c2b5d43dc5",
-              "name": "Richardson Joyner",
-              "avatar": "https://randomuser.me/api/portraits/women/58.jpg"
-          },
-          {
-              "id": "5b5e29b105a7933f383894b4",
-              "name": "Brittany Mcmahon",
-              "avatar": "https://randomuser.me/api/portraits/women/36.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=6",
-      "date": "2018-11-06T12:50:21",
-      "duration": 15,
-      "title": "amet irure ad nisi irure ut ut",
-      "description": "Reprehenderit adipisicing in anim labore deserunt consequat non esse. Eu cillum consequat excepteur est reprehenderit fugiat sit. Laborum occaecat aliqua sit ullamco nisi labore laboris deserunt. In labore occaecat esse nulla ipsum eu sunt ut. Est quis veniam sit id.\r\nQuis eu labore Lorem ad proident eu duis incididunt nisi velit. Excepteur elit aliqua esse enim quis. Consequat enim qui nisi pariatur fugiat. Aute et sit in eu nisi eiusmod fugiat non minim occaecat ex. Non ex quis cupidatat exercitation adipisicing officia. Nisi voluptate id nostrud aliqua irure occaecat deserunt dolore irure aute labore consectetur reprehenderit. Adipisicing magna est consectetur fugiat consequat non ipsum minim tempor ea pariatur nulla pariatur dolor.\r\nPariatur duis reprehenderit fugiat enim cupidatat ex cupidatat nostrud duis laborum consequat duis. Occaecat nostrud ad enim voluptate non esse mollit officia occaecat sit reprehenderit duis. Cupidatat laborum velit cillum commodo aute excepteur id in sunt. Lorem proident veniam aute voluptate eiusmod cillum minim proident laborum tempor aliqua do amet ullamco. Fugiat qui sit culpa in pariatur.\r\n",
-      "rating": 38,
-      "language": "Eng",
-      "difficulty": "Intermediate",
-      "type": "Seminar",
-      "isFavorite": false,
-      "owner": "MULTIFLEX"
-  },
-  {
-      "_id": "5b5e29b17ae9d92770a3982c",
-      "trainers": [
-          {
-              "id": "5b5e29b1ee025b88f717fc5c",
-              "name": "Leach Mercer",
-              "avatar": "https://randomuser.me/api/portraits/men/31.jpg"
-          },
-          {
-              "id": "5b5e29b1c09b03c44c6744b1",
-              "name": "Peck Blevins",
-              "avatar": "https://randomuser.me/api/portraits/men/5.jpg"
-          },
-          {
-              "id": "5b5e29b197a38284e3e372ca",
-              "name": "Geneva Mckee",
-              "avatar": "https://randomuser.me/api/portraits/men/38.jpg"
-          },
-          {
-              "id": "5b5e29b1b4878b5cf90f2883",
-              "name": "Baldwin Short",
-              "avatar": "https://randomuser.me/api/portraits/women/40.jpg"
-          },
-          {
-              "id": "5b5e29b170dad8633172d730",
-              "name": "Avila Ware",
-              "avatar": "https://randomuser.me/api/portraits/men/46.jpg"
-          },
-          {
-              "id": "5b5e29b1514833309a145d55",
-              "name": "Bell Jenkins",
-              "avatar": "https://randomuser.me/api/portraits/women/14.jpg"
-          },
-          {
-              "id": "5b5e29b166716925880537ef",
-              "name": "Nina Branch",
-              "avatar": "https://randomuser.me/api/portraits/men/18.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=2",
-      "date": "2018-02-02T03:48:38",
-      "duration": 123,
-      "title": "consectetur qui ea aute enim voluptate cillum mollit esse fugiat",
-      "description": "Nostrud veniam elit ad id minim enim amet velit laboris sunt ex magna sit. Nisi adipisicing mollit nulla duis voluptate. Aliqua ea elit mollit aliqua cupidatat.\r\nSunt magna Lorem aute sint cupidatat nulla laboris ullamco nisi reprehenderit labore officia laborum. Do ex veniam laboris aliquip reprehenderit ex. Enim sint eu anim sint. Velit consequat Lorem incididunt sint fugiat sunt minim fugiat fugiat. In voluptate elit magna est ex occaecat est nisi commodo minim. Laboris excepteur ad ea nostrud cupidatat consectetur. Do velit culpa sunt nisi laborum.\r\nQui cillum commodo do cupidatat occaecat do fugiat voluptate quis voluptate velit. Dolore proident ad in quis. Incididunt ad cupidatat consequat voluptate veniam deserunt consequat non Lorem exercitation sint in nisi. Dolore dolor excepteur consequat laborum laboris ea veniam ex ut dolor sit aliqua. Mollit cupidatat cillum aute fugiat et in exercitation qui pariatur do cillum.\r\nDeserunt dolor ad deserunt irure amet mollit. Ad id dolor sunt ipsum esse sunt amet qui dolor eiusmod enim esse veniam exercitation. Aliqua id sunt do reprehenderit commodo quis officia irure consequat reprehenderit commodo. Eiusmod amet occaecat consequat id elit qui cupidatat nulla magna. Sint proident est ad cupidatat consequat dolor. Enim Lorem duis ad non consequat amet commodo ad. Sunt quis amet velit magna eiusmod occaecat sunt amet excepteur enim dolore qui esse non.\r\nElit qui ea non id elit labore. Tempor tempor Lorem in enim veniam ad fugiat exercitation aliqua laborum deserunt Lorem. Aute fugiat nostrud ipsum ut pariatur esse irure. Magna qui voluptate sit officia eiusmod deserunt id sint. Laboris laborum consequat sint eu aliquip reprehenderit magna est nulla ullamco sunt exercitation.\r\nConsectetur Lorem nisi laboris deserunt cupidatat nostrud et aliqua elit quis. Cillum enim elit nostrud deserunt anim sint do cillum in est. Magna excepteur Lorem proident nulla quis officia mollit magna id tempor. Aliquip amet est reprehenderit anim nulla aliqua. Officia incididunt est exercitation laborum ex.\r\nFugiat duis laboris non adipisicing minim duis incididunt reprehenderit nulla pariatur Lorem. Est occaecat tempor quis proident laborum exercitation. Non elit adipisicing quis ea et consectetur exercitation occaecat ullamco et duis proident. Irure aute est ex commodo.\r\nIrure aute duis non excepteur excepteur ut ex nostrud eu. Do sunt commodo esse amet mollit cupidatat eu cupidatat in sunt ea duis. Ad minim consequat duis veniam consectetur officia cupidatat labore exercitation veniam Lorem velit anim. Officia dolore eiusmod sit qui Lorem.\r\nEt consectetur adipisicing cupidatat ut velit. Occaecat non deserunt qui aliquip dolor consequat enim aliquip anim. Ipsum quis mollit aliquip excepteur reprehenderit ipsum veniam nisi. Ullamco eiusmod ullamco nisi aliquip voluptate veniam adipisicing et culpa deserunt commodo. Labore consectetur ad irure velit veniam sint. Tempor magna id ex ullamco eu nulla aliquip enim excepteur.\r\nEu tempor Lorem occaecat voluptate eu. Deserunt consequat enim ad velit et elit ullamco. Sint reprehenderit aute ut mollit eu culpa ut fugiat id voluptate reprehenderit pariatur minim irure. Sint officia qui officia ea non eu aliquip ullamco reprehenderit nisi occaecat. Qui non cupidatat excepteur eiusmod sint labore et.\r\nIncididunt ipsum reprehenderit adipisicing commodo reprehenderit laborum eu aliquip fugiat aliqua sit. Laboris ad Lorem nisi sit sint duis in id enim eu sint. Dolore consequat dolore fugiat ipsum. Nulla veniam esse Lorem occaecat aliqua elit non non dolore nulla amet non.\r\nVoluptate irure ea exercitation dolore eiusmod est dolor aliquip duis aliquip eiusmod veniam non magna. Officia ut id mollit et cillum nisi quis eu do. Dolore irure eiusmod minim laboris elit tempor aliqua Lorem cupidatat magna exercitation adipisicing exercitation. Elit ipsum sunt esse do elit consectetur adipisicing ea labore ea nostrud magna est. Et fugiat occaecat fugiat magna id.\r\nMollit quis ex laborum nostrud nisi duis magna magna. Id qui aliquip culpa amet exercitation ad anim reprehenderit sunt adipisicing aute deserunt do. Excepteur consequat tempor ullamco esse aute.\r\nUt consequat deserunt dolor ipsum labore ipsum dolore. Do enim ea consequat quis. Enim et velit excepteur qui sunt. Tempor esse laboris esse Lorem nulla anim sunt ad ut commodo veniam nisi id duis. Nostrud reprehenderit exercitation ullamco in duis excepteur qui eu minim sit ipsum. Tempor eiusmod adipisicing cupidatat qui sint minim enim tempor occaecat labore laborum eiusmod.\r\nUllamco laborum fugiat aliquip consectetur elit aliqua incididunt. Sunt excepteur magna ut veniam ex ipsum nisi do ipsum consectetur non labore. Aliquip occaecat voluptate ipsum eu fugiat aliqua quis non veniam. Eu et adipisicing consectetur nostrud adipisicing do excepteur et.\r\n",
-      "rating": 50,
-      "language": "Fra",
-      "difficulty": "Advanced",
-      "type": "Training",
-      "isFavorite": true,
-      "owner": "BALOOBA"
-  },
-  {
-      "_id": "5b5e29b110a79c5b95af6ae4",
-      "trainers": [
-          {
-              "id": "5b5e29b1517388a1009924c6",
-              "name": "Buckley Pickett",
-              "avatar": "https://randomuser.me/api/portraits/women/47.jpg"
-          },
-          {
-              "id": "5b5e29b1c842106fe77f3975",
-              "name": "Cassie Jensen",
-              "avatar": "https://randomuser.me/api/portraits/men/68.jpg"
-          },
-          {
-              "id": "5b5e29b12a73b4b9ae3b52e2",
-              "name": "Marsh Wallace",
-              "avatar": "https://randomuser.me/api/portraits/women/69.jpg"
-          },
-          {
-              "id": "5b5e29b13fd3ca98dfd265cc",
-              "name": "Raymond Drake",
-              "avatar": "https://randomuser.me/api/portraits/men/44.jpg"
-          },
-          {
-              "id": "5b5e29b191d3a14f88f7872e",
-              "name": "Wagner Nash",
-              "avatar": "https://randomuser.me/api/portraits/women/14.jpg"
-          },
-          {
-              "id": "5b5e29b1e1f8cacc4810e44f",
-              "name": "Ines Powers",
-              "avatar": "https://randomuser.me/api/portraits/men/28.jpg"
-          },
-          {
-              "id": "5b5e29b1a19658c09b3792b3",
-              "name": "Mejia Gallagher",
-              "avatar": "https://randomuser.me/api/portraits/men/4.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=7",
-      "date": "2018-11-02T03:07:31",
-      "duration": 319,
-      "title": "excepteur duis fugiat ea",
-      "description": "Adipisicing proident ipsum in reprehenderit sunt duis. Tempor cupidatat consectetur dolore duis culpa amet exercitation. Reprehenderit officia esse incididunt occaecat sint nisi dolore qui magna in laborum consequat culpa amet. Do est sunt qui occaecat Lorem Lorem esse sint elit officia Lorem sit.\r\nReprehenderit duis dolore elit cupidatat minim do ad sit pariatur Lorem. Proident sint veniam irure eiusmod minim magna mollit ipsum deserunt do mollit dolor. Cillum id culpa do nisi et.\r\nDuis est non officia fugiat minim aute ea. Dolor quis occaecat nulla laborum consequat exercitation consequat non aliquip. Non dolor sint in ex id. Velit nisi excepteur eiusmod ex.\r\nPariatur et sit mollit consequat aute exercitation magna anim laborum amet est culpa. Nisi ea nostrud excepteur commodo consectetur sit. Nostrud eiusmod ut id labore aute culpa pariatur incididunt anim voluptate eiusmod proident et. Nisi incididunt quis ut eiusmod nulla duis aliqua labore velit magna cillum mollit fugiat. Anim ut culpa irure tempor aliqua minim cupidatat sit officia nulla occaecat cillum quis. Incididunt id magna esse nisi cillum ea veniam nisi esse sunt. Veniam aute enim do cupidatat anim consectetur est magna irure ex cillum.\r\nConsequat elit sint sit nisi dolore irure excepteur ad adipisicing amet. Anim labore fugiat ullamco eiusmod consequat irure voluptate exercitation nulla nulla. Excepteur eu cillum occaecat est fugiat magna incididunt.\r\nEnim officia minim culpa ut proident et et. Nulla mollit enim consectetur officia do sunt qui reprehenderit velit deserunt nisi. Eu aute qui enim minim adipisicing duis nisi laboris.\r\n",
-      "rating": 30,
-      "language": "Esp",
-      "difficulty": "Novice",
-      "type": "Lecture",
-      "isFavorite": true,
-      "owner": "AFFLUEX"
-  },
-  {
-      "_id": "5b5e29b141e63becdeb60004",
-      "trainers": [
-          {
-              "id": "5b5e29b1791e782b4d7282b0",
-              "name": "Jeanne Campos",
-              "avatar": "https://randomuser.me/api/portraits/women/29.jpg"
-          },
-          {
-              "id": "5b5e29b14e8e1d74dded371a",
-              "name": "Bernice Slater",
-              "avatar": "https://randomuser.me/api/portraits/women/4.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=11",
-      "date": "2018-05-27T08:16:13",
-      "duration": 122,
-      "title": "officia laboris velit labore exercitation excepteur officia in reprehenderit",
-      "description": "Deserunt non pariatur consequat ad consequat laboris proident dolore aliquip id occaecat. Consequat eiusmod eiusmod ipsum nisi duis velit elit consequat esse ad aliquip cupidatat aliqua. Duis in ea officia officia cupidatat. Duis Lorem ad quis nulla magna eiusmod laborum nulla id. Non sit occaecat laboris dolor ex laborum ex tempor cupidatat. Ipsum et do magna id qui nisi.\r\nIrure aute consectetur ex nostrud laborum nulla qui nostrud nisi. Dolore commodo ea minim ad. Sit consectetur amet nostrud sit ipsum Lorem Lorem do exercitation. Incididunt quis ullamco laborum exercitation id proident magna quis consequat dolore officia. Cupidatat sit et sint minim mollit in proident do ad eu minim consequat. Laboris dolor in irure officia deserunt veniam ad id.\r\nId veniam magna id minim veniam est esse aute pariatur dolore est. Consequat excepteur nostrud id exercitation eiusmod culpa pariatur do occaecat dolore aliquip anim officia. Quis fugiat deserunt esse laboris in aliquip do ad amet dolor. Est duis ullamco laborum nulla sunt laboris commodo consectetur dolore irure esse reprehenderit aliqua sint. Cillum nostrud consequat eu ea sunt nulla aliqua fugiat enim non ad officia anim.\r\nAute laborum sint est irure id nisi ad nisi proident veniam ipsum veniam. Velit mollit magna labore irure nulla. Nulla voluptate laborum cillum quis ullamco. Culpa Lorem ex culpa id reprehenderit adipisicing excepteur non aute. Occaecat culpa labore magna exercitation in deserunt.\r\nVeniam amet dolor minim proident enim. Excepteur non deserunt excepteur laborum ea. Occaecat ad non eu enim est aliquip labore. Do excepteur commodo incididunt velit enim. Sint ad consequat eiusmod consequat voluptate. Est dolor commodo culpa do labore amet velit anim incididunt anim incididunt reprehenderit incididunt. Eu ad mollit et dolore amet exercitation.\r\nCupidatat voluptate minim ea occaecat sint voluptate do. Consectetur ex sint et amet aute est ea. Reprehenderit exercitation irure eu est culpa tempor quis sint proident veniam non. Enim dolor laboris reprehenderit mollit nulla sunt anim voluptate elit quis. Nulla esse cupidatat veniam in duis do aute ea pariatur deserunt magna enim non. Aliquip consequat ea proident duis labore aute ea ea aliquip dolore voluptate elit.\r\nReprehenderit id enim dolore commodo id sit aliqua. Pariatur eiusmod nostrud mollit reprehenderit veniam in mollit. Laborum aliqua nulla mollit dolor quis fugiat Lorem in. Dolor duis dolore esse irure proident. Laborum sit duis voluptate nisi aliqua dolor do aliquip sit eu. Deserunt esse qui fugiat veniam id.\r\nEx proident aliqua ad ex officia ipsum aliquip. Mollit ullamco tempor mollit aliqua officia commodo in amet cillum sunt reprehenderit. Voluptate cupidatat nulla consequat dolor consequat commodo irure. Sunt quis aliquip magna aute consectetur aliquip in duis adipisicing voluptate. Commodo nisi incididunt irure sunt duis sunt fugiat est duis anim sunt ipsum.\r\nVoluptate aliquip velit ea quis et occaecat cupidatat voluptate ut ullamco dolor excepteur. Anim ex aliqua dolor proident aute commodo voluptate. Consectetur aute Lorem excepteur ea et nulla incididunt id fugiat Lorem duis. Eiusmod dolore exercitation proident elit laborum consectetur.\r\n",
-      "rating": 12,
-      "language": "Pol",
-      "difficulty": "For All",
-      "type": "Seminar",
-      "isFavorite": false,
-      "owner": "MANTRO"
-  },
-  {
-      "_id": "5b5e29b1d180f3fec7b1af6f",
-      "trainers": [
-          {
-              "id": "5b5e29b13200fcd4908e188b",
-              "name": "Juana Alford",
-              "avatar": "https://randomuser.me/api/portraits/women/42.jpg"
-          },
-          {
-              "id": "5b5e29b181a9eac9743cad86",
-              "name": "Noreen Dale",
-              "avatar": "https://randomuser.me/api/portraits/women/5.jpg"
-          },
-          {
-              "id": "5b5e29b1201fc3496735bb0d",
-              "name": "Hurley Good",
-              "avatar": "https://randomuser.me/api/portraits/men/15.jpg"
-          },
-          {
-              "id": "5b5e29b1416d5a4f289bf3f6",
-              "name": "Griffin Price",
-              "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
-          },
-          {
-              "id": "5b5e29b1bae2eced3b861f97",
-              "name": "Francis Mcintyre",
-              "avatar": "https://randomuser.me/api/portraits/women/17.jpg"
-          },
-          {
-              "id": "5b5e29b18dbe0c01536d3b21",
-              "name": "Becky Sosa",
-              "avatar": "https://randomuser.me/api/portraits/women/6.jpg"
-          },
-          {
-              "id": "5b5e29b1fc079d30452f4026",
-              "name": "Jeanine Hull",
-              "avatar": "https://randomuser.me/api/portraits/men/53.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=15",
-      "date": "2018-07-28T05:39:05",
-      "duration": 415,
-      "title": "labore quis reprehenderit ex consequat consectetur esse nostrud veniam nostrud",
-      "description": "Occaecat sint dolor pariatur nisi consequat amet incididunt nulla cupidatat minim excepteur officia consequat exercitation. Id officia eiusmod ad sint cillum exercitation consequat Lorem sunt id laboris. Consectetur ex reprehenderit veniam duis ullamco ut et. Non qui consequat ex labore ea culpa consequat nulla exercitation ad. Eiusmod mollit fugiat quis cupidatat ad elit. Aliquip esse proident laborum aliquip.\r\nNon ea duis velit irure cillum cupidatat nulla pariatur cillum. Nulla enim sit pariatur amet reprehenderit ullamco. Cupidatat Lorem cupidatat anim dolore est tempor.\r\nNon magna aute quis quis est cillum commodo laborum fugiat commodo veniam veniam est in. Id est do esse voluptate quis veniam. Aute quis occaecat in officia ex veniam. Esse voluptate ea consectetur labore Lorem est eu do qui culpa labore ipsum esse.\r\nVoluptate eiusmod do nulla et elit dolor qui irure officia deserunt magna occaecat occaecat. Lorem ipsum magna amet cupidatat Lorem laboris minim cillum voluptate incididunt veniam. Fugiat in elit pariatur consectetur sit. Veniam reprehenderit ullamco Lorem sint adipisicing reprehenderit do velit ut qui. Eu tempor eiusmod cillum magna. Ad minim labore ex laboris proident sit voluptate elit irure veniam.\r\nEx ullamco culpa et dolor. Ea ad magna ad amet eu eu non occaecat tempor enim. Fugiat ea dolore ea do adipisicing quis dolor consectetur amet velit.\r\nProident in reprehenderit ipsum mollit sit sunt. Ullamco fugiat cupidatat adipisicing officia ex Lorem dolor ex incididunt. Occaecat reprehenderit dolore proident culpa laboris reprehenderit aute sit nisi nulla esse. Commodo elit qui ut elit amet sit. Laboris deserunt ut do adipisicing labore enim mollit esse ad. Eu minim ipsum minim officia esse voluptate irure aute nisi. Ex pariatur et mollit esse nulla excepteur laboris excepteur aliquip mollit excepteur non eiusmod.\r\nEt amet amet ipsum aliqua occaecat anim excepteur minim incididunt quis ipsum amet fugiat consequat. Fugiat Lorem ut nostrud quis in dolore duis magna fugiat voluptate quis tempor nisi. Duis excepteur aliquip labore voluptate magna aliqua do ad. Aliquip aute non deserunt aute ea. In laboris consequat incididunt irure quis nulla minim esse.\r\nAute aliqua do eiusmod pariatur velit Lorem proident do in nulla fugiat amet voluptate. Elit esse laborum magna aliquip elit mollit irure incididunt et aliqua. Aliqua duis exercitation Lorem sit ea aliqua culpa. Veniam cupidatat et do veniam sunt quis in amet.\r\nDuis in fugiat qui ut nulla esse velit enim reprehenderit ipsum minim occaecat minim tempor. Sint et magna adipisicing est pariatur ea nulla eu excepteur et eu deserunt deserunt id. Duis aliquip magna reprehenderit ad minim officia sit ipsum nulla consectetur consectetur ullamco laborum. Incididunt id elit anim dolore eu.\r\nQui consectetur ut ut ea exercitation Lorem velit id. Veniam dolore mollit dolore est. Commodo quis minim anim aliqua magna aliqua excepteur eiusmod minim. Id laboris do nulla occaecat. Minim irure aute est et sint mollit velit in magna ut commodo labore. Adipisicing magna ullamco mollit proident laborum amet proident aute ad minim fugiat. Ad velit eiusmod sunt minim pariatur magna dolor aute cillum.\r\nEiusmod do Lorem qui irure in incididunt eu sunt. Non incididunt nulla qui ea occaecat fugiat voluptate. Lorem enim sint officia elit quis.\r\n",
-      "rating": 42,
-      "language": "Eng",
-      "difficulty": "For All",
-      "type": "Video course",
-      "isFavorite": false,
-      "owner": "TALAE"
-  },
-  {
-      "_id": "5b5e29b171f366e11106804e",
-      "trainers": [
-          {
-              "id": "5b5e29b1b8300edb9b370491",
-              "name": "Elisa Munoz",
-              "avatar": "https://randomuser.me/api/portraits/women/31.jpg"
-          },
-          {
-              "id": "5b5e29b18d36af54b5a3de46",
-              "name": "Diaz Whitaker",
-              "avatar": "https://randomuser.me/api/portraits/women/28.jpg"
-          },
-          {
-              "id": "5b5e29b11e5a8209373ee1eb",
-              "name": "Leigh Talley",
-              "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
-          },
-          {
-              "id": "5b5e29b1c1740e98c44b8700",
-              "name": "Nunez Frost",
-              "avatar": "https://randomuser.me/api/portraits/men/10.jpg"
-          },
-          {
-              "id": "5b5e29b1b31c3a5b2b282190",
-              "name": "Chelsea Rollins",
-              "avatar": "https://randomuser.me/api/portraits/women/17.jpg"
-          },
-          {
-              "id": "5b5e29b1a2c5c2888578f4aa",
-              "name": "Luella Preston",
-              "avatar": "https://randomuser.me/api/portraits/men/66.jpg"
-          },
-          {
-              "id": "5b5e29b1d78652f7f8763fa5",
-              "name": "Bette Wiggins",
-              "avatar": "https://randomuser.me/api/portraits/men/31.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=8",
-      "date": "2018-09-01T07:11:21",
-      "duration": 129,
-      "title": "laborum velit excepteur consectetur velit ipsum voluptate culpa enim",
-      "description": "Eiusmod cillum veniam incididunt ea Lorem consectetur non commodo occaecat reprehenderit est. Eiusmod nisi eiusmod voluptate eu occaecat laboris do adipisicing commodo id irure. Sit esse eu aliquip voluptate laboris dolor ipsum qui eu irure laboris aute nostrud pariatur. Nisi reprehenderit dolore sint amet aute minim aute. Id nisi amet labore ullamco sit magna voluptate dolor.\r\nDo ad nisi quis minim do dolor ipsum cupidatat eiusmod ea sit laborum laboris nisi. Laborum aute pariatur cillum commodo. Non amet fugiat ex proident pariatur labore in laborum reprehenderit. Sunt nisi nostrud nostrud veniam velit adipisicing cupidatat nisi sint nostrud cillum dolore. Incididunt anim reprehenderit commodo veniam qui incididunt nostrud culpa irure fugiat tempor labore. Eu deserunt reprehenderit dolore nulla laborum aliquip sit do magna commodo anim sint nulla. Aliqua cillum nisi aliquip enim laborum.\r\nNulla proident officia deserunt esse reprehenderit irure fugiat qui elit eiusmod. Anim tempor mollit culpa adipisicing labore duis. Nostrud enim aute cillum fugiat cillum laborum exercitation ad. Ipsum excepteur fugiat eiusmod dolore aute aliqua sint sit ex. Irure cupidatat labore mollit ullamco consequat deserunt eiusmod Lorem ea duis ea sunt ex. Tempor Lorem elit fugiat quis ullamco nisi sint reprehenderit velit. Voluptate culpa eiusmod minim eu exercitation.\r\nEa et nulla esse in. Ad cupidatat sit incididunt quis ullamco. Culpa aute tempor minim laborum laboris mollit magna ea dolor dolor. Qui irure consectetur nisi velit commodo elit incididunt.\r\nCillum qui do dolor pariatur non esse in ea dolor reprehenderit adipisicing aute est. Quis ipsum labore occaecat aute duis. Eiusmod dolore reprehenderit aliqua laboris eu irure pariatur ad sunt dolore occaecat aliqua culpa sunt. Occaecat nostrud et commodo ullamco laborum fugiat culpa cupidatat irure amet excepteur consequat consequat.\r\nSint ex laboris Lorem aliqua. Laboris quis laborum occaecat anim Lorem aute laborum dolore culpa ex esse consequat enim non. Elit cupidatat consectetur ad ad duis veniam veniam. Anim minim cillum aliquip veniam dolore labore cillum. Commodo amet magna amet irure incididunt ullamco minim elit eiusmod elit. Sit aliquip sunt magna nulla incididunt reprehenderit velit laborum ut laboris anim adipisicing. Velit cillum minim proident sit mollit.\r\nAute velit aliqua nisi fugiat proident tempor Lorem fugiat cupidatat. Nostrud dolor ullamco consequat velit tempor do enim dolore eiusmod reprehenderit. Laborum aliqua quis officia occaecat culpa culpa commodo nulla nostrud nisi veniam nisi. Elit aliquip aliqua commodo ipsum sunt laborum velit sit sit consectetur.\r\n",
-      "rating": 43,
-      "language": "Pol",
-      "difficulty": "Advanced",
-      "type": "Lecture",
-      "isFavorite": true,
-      "owner": "INCUBUS"
-  },
-  {
-      "_id": "5b5e29b1ace34ddc48afa608",
-      "trainers": [
-          {
-              "id": "5b5e29b149b5d7f088d89fd8",
-              "name": "Berry Wilcox",
-              "avatar": "https://randomuser.me/api/portraits/women/14.jpg"
-          },
-          {
-              "id": "5b5e29b1f7d835573cdc5601",
-              "name": "Hurst Petty",
-              "avatar": "https://randomuser.me/api/portraits/men/70.jpg"
-          },
-          {
-              "id": "5b5e29b15c95e147f93faec5",
-              "name": "Trujillo Delaney",
-              "avatar": "https://randomuser.me/api/portraits/men/16.jpg"
-          },
-          {
-              "id": "5b5e29b125e13a68c8853e6d",
-              "name": "Tamra Montgomery",
-              "avatar": "https://randomuser.me/api/portraits/women/38.jpg"
-          },
-          {
-              "id": "5b5e29b1ecc88e1f9230da8b",
-              "name": "Warner Stevens",
-              "avatar": "https://randomuser.me/api/portraits/men/21.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=5",
-      "date": "2018-01-14T11:32:44",
-      "duration": 258,
-      "title": "magna duis duis et magna",
-      "description": "Incididunt Lorem excepteur minim sint sunt aliqua exercitation officia tempor magna reprehenderit cupidatat. Reprehenderit fugiat sunt cillum sunt consequat laborum amet. Elit proident reprehenderit in dolor voluptate.\r\nQuis esse exercitation laboris deserunt. Laboris ea minim aute amet est et laboris consectetur incididunt. Mollit qui dolor cupidatat ea ea Lorem mollit nulla deserunt nisi commodo. Fugiat minim laboris qui tempor sunt aliquip amet duis. Aute veniam minim laboris excepteur ea et do est sunt duis. Irure do aliqua ex ipsum aliqua minim dolor culpa et. Enim voluptate nostrud enim laborum sunt mollit eiusmod ullamco sunt culpa laboris qui.\r\nSunt minim ut esse excepteur occaecat. Ea commodo consectetur duis sint ea. Sunt elit adipisicing commodo reprehenderit ad magna nostrud aliquip cillum in consectetur. Irure laboris non voluptate aliquip quis esse ullamco ea ad tempor mollit laboris laboris. Eu laborum aute officia ipsum culpa culpa. Non non non proident consequat consectetur ad culpa nulla laborum eu dolore non. Tempor sint est ad voluptate est.\r\nAnim velit irure consequat sint ullamco veniam magna magna. Nostrud dolore est labore laboris duis. Deserunt ut consectetur est adipisicing ipsum velit minim. Magna aliqua labore in ad consequat commodo culpa ut esse veniam. Occaecat officia culpa adipisicing non sit dolore do amet ut. Elit sint pariatur reprehenderit esse occaecat excepteur. Laboris laboris dolore ipsum excepteur sit in pariatur eu commodo dolor adipisicing aute mollit.\r\nDolor sint dolore nulla voluptate. Non esse tempor culpa aute voluptate laborum pariatur adipisicing ad nostrud nostrud sunt labore. Eu dolore in consectetur reprehenderit anim dolore cupidatat deserunt sint occaecat.\r\nVoluptate commodo enim esse dolor ad. Sit non amet ut et reprehenderit cillum ullamco aliquip. Exercitation proident quis reprehenderit tempor Lorem amet. Id consequat non ut dolor. Voluptate eiusmod nostrud irure irure ex voluptate cillum non proident.\r\nNisi magna laborum exercitation esse eu excepteur. Qui esse fugiat ea amet aliquip culpa mollit quis sunt. Esse in laboris proident irure magna in ullamco Lorem officia veniam. Eu amet ullamco magna exercitation aliquip enim.\r\nMagna labore adipisicing culpa non incididunt qui eiusmod elit ullamco do cillum anim. Non non ad elit consequat do. Lorem officia voluptate sit sunt sit aute officia. Aliquip Lorem eu veniam in adipisicing aliquip deserunt incididunt amet nulla. Sit ipsum irure tempor duis qui do eiusmod pariatur magna irure deserunt sit pariatur officia.\r\nUllamco sit duis duis magna elit. Exercitation amet qui non deserunt laborum. Eu qui do pariatur nisi. Magna excepteur incididunt nulla proident pariatur. Laboris ad proident laboris esse pariatur.\r\n",
-      "rating": 16,
-      "language": "Eng",
-      "difficulty": "Advanced",
-      "type": "Video course",
-      "isFavorite": true,
-      "owner": "MOREGANIC"
-  },
-  {
-      "_id": "5b5e29b108a33f8fb8d613a4",
-      "trainers": [
-          {
-              "id": "5b5e29b16a4123f7141fa1f2",
-              "name": "Robert Carey",
-              "avatar": "https://randomuser.me/api/portraits/men/22.jpg"
-          },
-          {
-              "id": "5b5e29b1abfb936cfda1a542",
-              "name": "Janie Griffin",
-              "avatar": "https://randomuser.me/api/portraits/women/16.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=10",
-      "date": "2018-10-05T10:39:49",
-      "duration": 321,
-      "title": "commodo officia quis occaecat laborum magna nisi ea aute adipisicing",
-      "description": "Ullamco dolore magna esse consequat ullamco Lorem elit culpa reprehenderit aute proident Lorem. Voluptate incididunt ut commodo Lorem eu sunt duis consectetur tempor nostrud duis mollit tempor excepteur. Ad aliqua culpa occaecat non Lorem excepteur elit ipsum adipisicing dolore laboris minim irure nisi.\r\nAdipisicing tempor cupidatat sit minim reprehenderit veniam aliquip. Est aliqua voluptate sunt incididunt aute aute do reprehenderit non est. Ad occaecat proident aliqua occaecat labore dolore laborum culpa excepteur exercitation eu. Mollit anim labore nulla aliquip ut irure cillum officia pariatur mollit Lorem laboris ut. Ipsum nisi sint qui anim magna elit amet laboris nostrud.\r\nIn labore duis voluptate voluptate ex proident culpa pariatur incididunt nostrud. Amet nulla duis velit magna ea aliquip sint Lorem. Consequat culpa commodo anim elit pariatur cupidatat excepteur veniam.\r\nEu est tempor proident proident aute eiusmod nulla dolore quis irure non irure Lorem. Occaecat consequat eu elit irure elit fugiat labore laboris amet laborum do ex labore id. Adipisicing laborum qui incididunt mollit veniam ut consequat quis aute minim. Laborum et velit aliquip adipisicing aliquip elit ipsum elit pariatur nulla.\r\nNon occaecat non quis voluptate occaecat ullamco velit esse culpa amet magna aliquip. Laboris occaecat laboris nulla do labore eiusmod Lorem laboris. Magna laboris ea dolor duis non occaecat aute culpa magna mollit ipsum ut sint commodo. Aliquip quis ad sint incididunt ullamco laborum dolore commodo enim deserunt eu et occaecat.\r\nAd Lorem minim anim dolore enim minim nostrud exercitation ipsum aliquip commodo do ipsum anim. Aliqua ex veniam exercitation dolore sint. Laboris incididunt aute anim deserunt minim magna sint occaecat cillum nostrud voluptate deserunt officia in. Ullamco cupidatat eu sit et sunt pariatur aute Lorem. Adipisicing nulla dolore tempor ad cillum commodo ut. Velit aliquip est et anim. Ullamco ea magna id Lorem irure laborum ad amet laborum duis.\r\nAute officia reprehenderit excepteur cupidatat est culpa anim id officia sint aliquip. Irure occaecat aliqua commodo et Lorem ea eu sint mollit eiusmod ullamco officia eiusmod. Adipisicing esse ullamco ea cupidatat dolore qui esse fugiat adipisicing eu voluptate sit consequat do. Ex proident est tempor dolor irure nisi laboris sit. Non et ullamco laborum veniam. Id ex sit ea quis cillum anim fugiat nisi nulla ut. Nostrud occaecat et ea laboris velit anim exercitation.\r\nDeserunt sint sint cupidatat irure labore voluptate. Ipsum ad quis reprehenderit consequat irure magna amet ad sint exercitation. Dolore in ex laborum officia. Tempor est id aliqua aliqua eiusmod pariatur minim velit esse exercitation.\r\nTempor sit ad aliqua amet sint. Nisi nostrud voluptate ea minim cupidatat non laboris elit ipsum consequat mollit consequat eu. Sit sunt velit sint exercitation sit adipisicing. Cillum quis Lorem consectetur esse.\r\n",
-      "rating": 18,
-      "language": "Fra",
-      "difficulty": "Advanced",
-      "type": "Seminar",
-      "isFavorite": true,
-      "owner": "QUIZKA"
-  },
-  {
-      "_id": "5b5e29b18cceb25e80e80d95",
-      "trainers": [
-          {
-              "id": "5b5e29b118ea0d0d69538c8d",
-              "name": "Deborah Chang",
-              "avatar": "https://randomuser.me/api/portraits/women/50.jpg"
-          },
-          {
-              "id": "5b5e29b1b377ba122ae628cb",
-              "name": "Duran Saunders",
-              "avatar": "https://randomuser.me/api/portraits/women/51.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=6",
-      "date": "2018-03-18T09:22:22",
-      "duration": 60,
-      "title": "id amet voluptate in irure velit est",
-      "description": "Mollit tempor sint id quis ad labore commodo. Lorem mollit deserunt quis sit ea eu reprehenderit aliquip id laboris duis quis nulla. Non elit anim aliquip amet in ullamco labore deserunt consectetur in sunt. Laborum sint duis labore adipisicing consequat officia est excepteur enim aliqua.\r\nTempor esse adipisicing veniam Lorem in labore commodo voluptate commodo. Ex veniam in quis labore. Ipsum voluptate in laborum dolore fugiat. Amet proident laboris excepteur id consequat. Tempor minim dolor nostrud aliqua sint pariatur aliqua est voluptate do laboris ullamco laboris. In et aute officia officia nulla aliqua ad voluptate enim id aliqua consectetur ea. Do Lorem est consectetur mollit adipisicing culpa ut eu.\r\nDolore ad deserunt dolore reprehenderit. Incididunt ex labore in nulla ad consequat. Eiusmod velit enim ad consectetur culpa eu anim cupidatat duis anim incididunt quis consectetur eu. Duis et dolor mollit commodo. Aute deserunt eu do consequat eiusmod amet minim enim ea est proident qui.\r\nAd magna enim fugiat minim anim mollit cillum sit amet occaecat officia ut. Ut occaecat quis sint aliqua velit mollit deserunt do. Anim minim adipisicing aliqua amet cupidatat. Sit est do exercitation nisi qui officia. Occaecat commodo fugiat pariatur aute aliqua non.\r\nNon aliqua esse do qui sunt dolor ea velit esse voluptate ex adipisicing esse magna. Amet magna nostrud ea veniam est. Ut esse ea commodo id sint aute labore. Exercitation sint esse laborum ea irure laboris anim sit cillum ullamco ut consequat nisi. Aliqua in consectetur amet velit anim ea irure id mollit culpa aliqua eu ea excepteur.\r\nConsequat veniam culpa proident cillum. Eiusmod nostrud irure incididunt ex proident ea nulla. Exercitation Lorem deserunt aliquip mollit incididunt ut ea et enim reprehenderit duis labore eu eu. Amet amet et cillum ad et et. Laborum ea dolor exercitation sint. Quis ullamco officia nulla aute id deserunt mollit dolor consectetur pariatur cillum ipsum non.\r\nNisi sunt ipsum cillum esse aliquip officia aute culpa incididunt esse velit. Incididunt officia in excepteur sit exercitation. Id fugiat non duis et.\r\nPariatur tempor dolor et excepteur esse adipisicing nisi irure. Laboris et amet et aliqua aliqua est esse dolore nostrud. Aute culpa ad elit elit ad minim cupidatat irure mollit aliqua. Labore culpa exercitation in magna ex reprehenderit deserunt laborum consequat reprehenderit magna. Amet minim cupidatat irure reprehenderit culpa ad et labore deserunt veniam.\r\n",
-      "rating": 37,
-      "language": "Fra",
-      "difficulty": "Expert",
-      "type": "Lecture",
-      "isFavorite": false,
-      "owner": "SCENTY"
-  },
-  {
-      "_id": "5b5e29b11d65c708d8f9bdd4",
-      "trainers": [
-          {
-              "id": "5b5e29b1283ef495028b0997",
-              "name": "Owen Mendez",
-              "avatar": "https://randomuser.me/api/portraits/women/58.jpg"
-          },
-          {
-              "id": "5b5e29b13e01150677fdfd80",
-              "name": "Gregory Pugh",
-              "avatar": "https://randomuser.me/api/portraits/men/26.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=11",
-      "date": "2018-05-05T08:36:07",
-      "duration": 379,
-      "title": "nulla excepteur non",
-      "description": "Cillum aliquip ea elit ea labore elit. Minim commodo enim aute consectetur nulla Lorem adipisicing ad adipisicing esse culpa sit nulla consectetur. Enim proident nostrud eu laboris adipisicing laboris proident. Officia commodo quis sint amet velit. Aliquip quis labore dolor veniam proident.\r\nUt mollit tempor aliquip culpa laboris reprehenderit nisi qui. Labore cillum nulla aliquip in velit id aliqua dolor id proident labore enim. Cupidatat consectetur enim aliqua ad veniam laboris velit dolore veniam cillum exercitation. Pariatur anim Lorem labore tempor eiusmod do commodo nisi fugiat. Dolor anim ea ut consectetur quis eu culpa dolore incididunt fugiat ex do est.\r\nOfficia id consequat aliqua occaecat. Adipisicing ex culpa proident et. Deserunt magna officia Lorem elit incididunt nisi commodo incididunt nostrud anim. Nostrud laborum adipisicing minim quis id elit pariatur. Veniam ipsum labore non ea.\r\nProident eu ut in occaecat do. Non voluptate sunt quis cupidatat culpa velit dolore eiusmod anim quis aliquip. Laborum consequat officia nisi esse do ipsum nisi exercitation laborum exercitation fugiat ut eu sunt. Ad reprehenderit cupidatat fugiat duis ipsum commodo commodo amet nisi dolor. Exercitation voluptate cupidatat excepteur sint ut. Proident sit Lorem cupidatat dolor.\r\nLaborum sit fugiat ex labore Lorem fugiat voluptate do nulla eu aliqua. Lorem irure cillum id dolore nulla quis ullamco ea mollit eu veniam culpa. Ea ad ut et aliqua irure qui laborum veniam ipsum. In exercitation ad cillum adipisicing nulla ex laboris dolor adipisicing commodo reprehenderit.\r\nQuis ipsum ullamco occaecat amet ullamco nisi irure Lorem deserunt cupidatat officia nulla. Lorem laborum do ut est laborum esse quis consectetur qui do est. Laborum fugiat fugiat ipsum officia commodo officia commodo sint labore eiusmod est incididunt nulla. Quis commodo et ea sint.\r\nLaboris nostrud sint Lorem quis. Magna dolor aliqua consequat Lorem. Exercitation ipsum esse magna reprehenderit aute. Dolor elit tempor est consequat esse quis cupidatat dolore velit.\r\nOccaecat anim ea ipsum enim commodo commodo adipisicing enim. Lorem anim est in aute. Elit sit eu eiusmod nulla. Ut consectetur tempor officia anim ut irure pariatur aute fugiat ex. Duis officia Lorem aliquip enim eu id amet commodo enim. Cillum commodo ipsum aute fugiat amet enim ad adipisicing nisi consequat culpa aliquip cupidatat. Velit nisi culpa cillum eiusmod do.\r\nIn sint pariatur Lorem exercitation culpa excepteur aliqua sunt aliqua. Ut sint adipisicing pariatur ex aute tempor dolor incididunt irure minim. Ullamco adipisicing fugiat voluptate adipisicing nulla minim. Voluptate aliquip sunt ipsum eu qui occaecat ex non.\r\nAd ullamco in adipisicing amet laboris excepteur elit. Laborum magna elit occaecat aute qui minim officia. Officia cillum pariatur nostrud esse velit esse occaecat.\r\nAnim dolor laborum consequat mollit exercitation anim mollit eu. Sunt ea qui reprehenderit ex deserunt minim enim deserunt laboris. Commodo do adipisicing voluptate id.\r\nDuis anim ex quis occaecat et sint quis laboris veniam ex ex duis. Id officia non ex sit Lorem duis nisi aliqua amet eu. Excepteur cupidatat ut dolore occaecat mollit sit veniam irure ullamco ea aliquip ullamco do non. Consectetur aliqua voluptate non cillum consequat anim consequat eu. Culpa non incididunt dolor adipisicing.\r\nIncididunt excepteur Lorem anim laborum sit. Aliquip voluptate excepteur voluptate cillum ullamco qui ut voluptate Lorem qui ex qui sint id. Fugiat velit incididunt exercitation esse enim est irure laboris laboris. Aute commodo deserunt consequat mollit ipsum dolore et sint velit aute dolor cupidatat. Pariatur cupidatat amet magna consequat deserunt laborum ea nulla.\r\n",
-      "rating": 41,
-      "language": "Rus",
-      "difficulty": "Advanced",
-      "type": "Video course",
-      "isFavorite": true,
-      "owner": "ENVIRE"
-  },
-  {
-      "_id": "5b5e29b1bd4c7ba7a58510a8",
-      "trainers": [
-          {
-              "id": "5b5e29b1fdf96e03aee8714e",
-              "name": "James Alvarado",
-              "avatar": "https://randomuser.me/api/portraits/women/33.jpg"
-          },
-          {
-              "id": "5b5e29b11ef45d6b151b859d",
-              "name": "Sofia Charles",
-              "avatar": "https://randomuser.me/api/portraits/women/50.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=19",
-      "date": "2018-01-20T11:17:00",
-      "duration": 465,
-      "title": "commodo mollit sint do nisi ipsum",
-      "description": "Irure ea pariatur aliquip veniam dolore in ullamco cillum occaecat. Dolor deserunt excepteur ex reprehenderit velit ullamco mollit consectetur sunt exercitation irure labore. Esse sit minim ad et sint nulla nisi. Qui proident incididunt aute officia consequat sit nisi quis esse do voluptate. Reprehenderit amet laboris incididunt ipsum id nostrud irure officia id cillum do duis reprehenderit reprehenderit. Exercitation dolore enim velit elit sint amet elit irure. Enim elit consectetur exercitation cupidatat magna Lorem aliqua sint.\r\nLabore adipisicing in occaecat ut pariatur sunt aute. Non quis ea ut non anim nulla. Officia occaecat eiusmod sint dolore elit dolore voluptate occaecat.\r\nUllamco ipsum dolore minim qui consequat velit aute amet ad esse commodo reprehenderit consequat non. Pariatur fugiat est cillum quis irure commodo eu fugiat reprehenderit laboris. Mollit occaecat ut ipsum fugiat irure ad sint.\r\nNisi in velit nostrud aliqua occaecat. Cupidatat nostrud nulla laborum veniam pariatur ullamco. Proident proident occaecat ex officia cupidatat consectetur sint in minim aliqua ad. Cillum irure laborum est fugiat ullamco veniam non id. Sunt eu eu et magna commodo Lorem incididunt ipsum irure pariatur. Magna sit in dolor mollit. Aliqua mollit cillum fugiat irure excepteur consectetur veniam.\r\nCommodo nisi occaecat ut Lorem minim. Eiusmod dolore proident Lorem consequat pariatur commodo aute voluptate aliquip. Culpa nisi excepteur et est irure culpa minim aute cupidatat sunt voluptate aute sunt do.\r\nCupidatat ea excepteur velit velit. Pariatur duis voluptate anim enim magna ullamco eiusmod qui occaecat amet exercitation consequat. Nisi dolore quis ipsum laborum eu occaecat nulla magna consectetur consequat exercitation eiusmod anim dolore. Ex do voluptate do consequat occaecat adipisicing proident deserunt irure minim ex aliqua.\r\nDo et consequat fugiat ad dolore do ullamco eu laborum esse ad. Anim incididunt ut ipsum proident nisi labore duis cillum do tempor. Elit qui commodo ex ex adipisicing officia excepteur cillum in. Cillum labore ad quis consectetur mollit. Ullamco exercitation aliquip ea dolor laborum occaecat elit culpa et elit esse duis.\r\nProident cupidatat deserunt pariatur in. Esse sunt esse id aute ea laboris fugiat irure excepteur sint sint est amet. Fugiat aute labore excepteur nisi laboris dolore minim sint tempor ullamco. Irure laborum officia labore nisi dolor eu duis.\r\n",
-      "rating": 50,
-      "language": "Esp",
-      "difficulty": "Intermediate",
-      "type": "Training",
-      "isFavorite": false,
-      "owner": "ASSISTIA"
-  },
-  {
-      "_id": "5b5e29b1e8902e24eac9b077",
-      "trainers": [
-          {
-              "id": "5b5e29b1cb5141bd15449ec5",
-              "name": "Hayes Lewis",
-              "avatar": "https://randomuser.me/api/portraits/women/5.jpg"
-          },
-          {
-              "id": "5b5e29b1999f8b17f09e4543",
-              "name": "Buchanan Vazquez",
-              "avatar": "https://randomuser.me/api/portraits/women/51.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=9",
-      "date": "2018-09-08T04:19:01",
-      "duration": 356,
-      "title": "incididunt consectetur reprehenderit eiusmod Lorem reprehenderit sunt eu culpa",
-      "description": "Qui ipsum velit sunt mollit anim cupidatat est. Cillum ullamco tempor consectetur occaecat nulla incididunt in. Enim deserunt occaecat minim qui fugiat aliqua culpa eu voluptate cupidatat anim magna aliqua.\r\nUllamco aute excepteur anim nulla velit et minim aliqua velit. Irure occaecat eu laborum quis quis fugiat. Id sunt velit veniam ea. Anim esse enim ut in consectetur officia incididunt elit do labore. Pariatur do consequat ea laboris. Exercitation Lorem qui sint cillum aliqua do eiusmod.\r\nCupidatat proident ad magna sit nulla amet deserunt ut cillum est consectetur et et voluptate. Fugiat magna ullamco nisi dolor occaecat laboris proident ea aute dolor consectetur officia sit sint. Culpa non dolore voluptate aute pariatur. In culpa aute consequat sint. Fugiat aliquip cupidatat sint tempor aute duis commodo mollit mollit ad esse velit duis veniam. Ipsum cillum sint consectetur anim consectetur in adipisicing irure irure aute.\r\nLorem do mollit excepteur laborum cupidatat. Labore dolor eiusmod nostrud sint. Do dolore amet sunt tempor culpa ea amet id dolore.\r\nAmet non excepteur cillum officia veniam et excepteur consequat aute. Est consectetur laboris excepteur commodo. Exercitation proident enim tempor ad occaecat enim laborum non. Labore labore aliqua quis nisi laborum sint excepteur ullamco ullamco officia do. Magna voluptate aliquip culpa sint.\r\nEa enim adipisicing est anim commodo ea. Aliqua tempor magna veniam ea excepteur ullamco irure pariatur qui. Do pariatur velit sunt adipisicing ut officia cillum laboris dolor. Cupidatat ipsum sunt consectetur irure minim eiusmod. Ullamco voluptate consectetur ipsum est quis sit eu minim consectetur.\r\nFugiat minim excepteur do pariatur esse est dolor esse nostrud non. Minim Lorem et deserunt veniam cupidatat dolor. Esse voluptate ad aliqua labore deserunt occaecat elit labore nisi aliquip consectetur. Dolore ipsum officia et do velit. Eu sit irure ipsum laborum non officia aliqua est. Fugiat amet cillum et esse cillum dolore duis in deserunt ut ad.\r\nId officia occaecat velit ex nisi proident fugiat dolore sint do duis anim ea. Veniam ipsum magna laborum eu nostrud officia consectetur excepteur nisi pariatur dolore. Nulla sint irure irure duis id ad. Est nulla deserunt pariatur pariatur laboris exercitation do dolor laboris eiusmod. Mollit et tempor aliquip culpa laborum veniam nostrud esse et officia incididunt sunt voluptate. Dolore occaecat tempor fugiat in ipsum laboris in aute.\r\nQui reprehenderit dolore et sint consectetur duis exercitation mollit est. Minim exercitation irure voluptate minim aliquip laborum excepteur sunt nisi voluptate in reprehenderit. Eu proident dolor veniam pariatur nulla ex voluptate et Lorem est aliquip qui. Aliquip ad qui dolor deserunt Lorem. Nostrud labore velit anim id. Nostrud reprehenderit laborum commodo proident cupidatat dolore deserunt sit nulla aliqua qui excepteur eu aute. Magna anim sit amet quis laboris esse sit consequat.\r\nQui proident veniam ea ipsum. Culpa nulla proident sint velit qui aliquip fugiat. Ipsum laborum sint cupidatat sit.\r\nAnim Lorem qui ipsum consectetur ipsum anim adipisicing laborum irure sunt mollit. Occaecat eiusmod sint commodo tempor culpa id enim id cupidatat excepteur Lorem qui reprehenderit eiusmod. Amet reprehenderit quis ad pariatur magna cupidatat eu id nostrud. In velit anim excepteur enim non elit dolor dolor. Et consequat ut et et cupidatat non id adipisicing non ut incididunt incididunt. Duis dolore ullamco proident ea do cupidatat occaecat et nostrud non eu deserunt qui enim.\r\n",
-      "rating": 14,
-      "language": "Pol",
-      "difficulty": "Expert",
-      "type": "Training",
-      "isFavorite": true,
-      "owner": "BYTREX"
-  },
-  {
-      "_id": "5b5e29b1320f7e0d852337e9",
-      "trainers": [
-          {
-              "id": "5b5e29b193d99c005b4fb3db",
-              "name": "Leblanc Woodard",
-              "avatar": "https://randomuser.me/api/portraits/men/61.jpg"
-          },
-          {
-              "id": "5b5e29b1fa805a9ee3717d68",
-              "name": "Love Reed",
-              "avatar": "https://randomuser.me/api/portraits/women/4.jpg"
-          },
-          {
-              "id": "5b5e29b1c9e1f5acd386817b",
-              "name": "Gwen Melton",
-              "avatar": "https://randomuser.me/api/portraits/women/7.jpg"
-          },
-          {
-              "id": "5b5e29b138fde1cd60727a27",
-              "name": "Lacey Massey",
-              "avatar": "https://randomuser.me/api/portraits/men/62.jpg"
-          },
-          {
-              "id": "5b5e29b1e9efc49181852551",
-              "name": "May Murray",
-              "avatar": "https://randomuser.me/api/portraits/women/33.jpg"
-          },
-          {
-              "id": "5b5e29b1f4e314d89b26f151",
-              "name": "Karyn Camacho",
-              "avatar": "https://randomuser.me/api/portraits/men/66.jpg"
-          },
-          {
-              "id": "5b5e29b12787f9122bdf7b63",
-              "name": "Sheree Bray",
-              "avatar": "https://randomuser.me/api/portraits/men/68.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=17",
-      "date": "2018-04-27T06:07:32",
-      "duration": 183,
-      "title": "consequat laborum ullamco nulla veniam consequat",
-      "description": "Officia mollit nostrud nisi ipsum adipisicing minim tempor cillum cupidatat magna. Mollit est proident irure Lorem pariatur labore nisi Lorem. Amet aute laboris ea magna aliquip aliqua dolor et sunt. Ullamco ut deserunt exercitation cupidatat aute incididunt amet enim occaecat eu quis labore. Dolore cillum aute tempor qui esse occaecat in cupidatat duis nulla irure. Excepteur excepteur laboris est non nulla nostrud.\r\nProident ad proident deserunt minim commodo adipisicing adipisicing reprehenderit. Officia irure laborum ipsum incididunt consequat et laborum. Enim consectetur laborum laboris proident adipisicing cupidatat. Culpa adipisicing sint et commodo eu. Laborum exercitation deserunt quis elit anim ut eiusmod pariatur duis fugiat. Culpa dolore mollit quis nostrud labore officia officia nostrud.\r\nUllamco officia velit dolor ea esse velit occaecat anim do est voluptate eiusmod exercitation anim. Ut quis laboris duis cupidatat laborum proident consequat. Laborum do cillum amet cillum occaecat. Commodo labore adipisicing nostrud mollit nostrud proident est enim dolor.\r\nEnim eiusmod eiusmod fugiat sit culpa sunt aliqua sunt. Magna amet officia ut officia fugiat. Fugiat proident deserunt laborum veniam dolore ipsum sit sit. Consequat incididunt ullamco ad minim proident sint esse eu ad sint laborum amet. Est fugiat sint laboris reprehenderit enim non. Esse ad ex consectetur dolore minim cupidatat eu tempor cillum dolore eu.\r\nMagna nulla sunt ad commodo aliqua et occaecat. Cillum mollit fugiat cillum minim voluptate dolor exercitation commodo culpa. Nostrud sunt consectetur pariatur in eu aliqua ea nostrud enim anim laborum magna fugiat. Est aliqua nisi magna voluptate veniam amet sunt duis. Magna reprehenderit incididunt fugiat sunt. In occaecat ex culpa mollit dolore duis excepteur culpa ex minim fugiat do.\r\nEt nostrud nulla qui quis dolor consequat sunt excepteur aute. Veniam aute ipsum incididunt sunt id. Do occaecat enim ipsum ad.\r\nCommodo reprehenderit ad quis dolor do eiusmod duis culpa nostrud. Adipisicing magna reprehenderit Lorem amet proident ut et. Duis id velit magna eiusmod et minim aliquip irure velit culpa proident id elit dolor. Laboris cillum aute enim sunt in officia est sit elit irure veniam ex ut. Et sit laboris cillum exercitation.\r\nVeniam commodo elit incididunt officia. Tempor id cillum occaecat anim esse irure et cupidatat ad proident. Occaecat in ut velit nostrud Lorem qui quis reprehenderit ex aliquip amet.\r\nEsse incididunt dolore amet ea ut anim id do. Et proident eu dolore aliquip duis nostrud irure in. Ut ea anim occaecat do laboris aute aute pariatur cupidatat anim.\r\nFugiat proident incididunt quis culpa nisi ad amet consectetur do aliquip dolore eu duis. Consequat incididunt occaecat dolore velit irure adipisicing voluptate non proident sunt occaecat ex. Lorem do adipisicing proident veniam in incididunt. Laboris irure excepteur nostrud dolore mollit do. Adipisicing deserunt ea et cupidatat ad do sint consequat.\r\nEst et fugiat ad reprehenderit dolor commodo fugiat esse ut adipisicing et. Fugiat ipsum culpa exercitation voluptate ut aute minim adipisicing laborum nostrud elit voluptate qui id. Excepteur pariatur in incididunt officia. Ullamco excepteur officia ullamco elit nisi ex. Voluptate nulla anim exercitation consectetur sint nulla adipisicing tempor proident aliquip eu voluptate non proident. Aute officia commodo ut nostrud aute in ullamco excepteur veniam proident est ex labore duis.\r\nAmet dolor sit sunt fugiat ex eiusmod. Voluptate enim enim sunt reprehenderit consectetur occaecat magna. Quis adipisicing eiusmod eiusmod duis eiusmod ex exercitation reprehenderit amet nisi. Dolor et mollit voluptate ipsum cillum nisi labore minim nisi nulla reprehenderit ex excepteur. Culpa non deserunt aute non exercitation magna aliqua eiusmod ipsum ea velit sint consequat duis. In sint ea cupidatat duis dolor adipisicing labore nostrud labore veniam. Aliqua non eu tempor cupidatat ullamco Lorem id elit labore eu qui Lorem.\r\n",
-      "rating": 15,
-      "language": "Fra",
-      "difficulty": "For All",
-      "type": "Training",
-      "isFavorite": false,
-      "owner": "OVATION"
-  },
-  {
-      "_id": "5b5e29b1caceada52a395435",
-      "trainers": [
-          {
-              "id": "5b5e29b19980cefbe8b912ab",
-              "name": "Gross Floyd",
-              "avatar": "https://randomuser.me/api/portraits/men/39.jpg"
-          },
-          {
-              "id": "5b5e29b10264730249aa8c4f",
-              "name": "Rhea Marks",
-              "avatar": "https://randomuser.me/api/portraits/women/35.jpg"
-          },
-          {
-              "id": "5b5e29b169bea8cbde615f04",
-              "name": "Dana Stephenson",
-              "avatar": "https://randomuser.me/api/portraits/women/62.jpg"
-          },
-          {
-              "id": "5b5e29b1291c9db6154f286e",
-              "name": "Kimberly Abbott",
-              "avatar": "https://randomuser.me/api/portraits/men/25.jpg"
-          },
-          {
-              "id": "5b5e29b1c95d3b0e4e8cc7b2",
-              "name": "Bush Sykes",
-              "avatar": "https://randomuser.me/api/portraits/men/63.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=11",
-      "date": "2018-02-03T03:46:20",
-      "duration": 303,
-      "title": "fugiat nisi anim magna",
-      "description": "Ex mollit magna in ex cillum esse eu cillum officia ad excepteur et. Cupidatat sunt nulla aliquip proident ipsum sint eu cupidatat. Excepteur ullamco ullamco aliquip dolor elit. Veniam irure pariatur id magna aliqua nisi reprehenderit culpa officia officia dolor aliquip Lorem dolor. Veniam Lorem ad cupidatat nostrud do consectetur duis fugiat deserunt incididunt excepteur exercitation nostrud velit.\r\nConsequat ex nisi velit qui adipisicing labore excepteur voluptate minim aliqua ea cillum. Aliqua eu minim commodo elit eu quis in enim voluptate fugiat enim. Cupidatat id nostrud elit mollit ullamco labore reprehenderit mollit. Deserunt proident pariatur voluptate aliquip ad tempor excepteur amet excepteur pariatur et labore. Amet eu esse Lorem cillum eu magna occaecat consequat minim.\r\nPariatur ipsum irure eu ipsum irure et consectetur labore officia magna occaecat. Cillum consectetur aliquip ipsum aliquip qui dolore ut nisi laboris. Ullamco occaecat magna proident commodo in voluptate culpa proident sunt sit quis incididunt cillum quis. Laboris excepteur cupidatat amet elit ullamco irure sit enim deserunt mollit tempor tempor esse magna. Ipsum adipisicing proident duis id ipsum.\r\nDuis ut proident mollit incididunt esse aliquip quis reprehenderit. Lorem ipsum nisi excepteur et eiusmod exercitation. Nisi deserunt minim est cillum est qui duis. Adipisicing eu consequat velit do est anim adipisicing deserunt nostrud.\r\nCulpa dolore eu ut veniam dolor laboris enim ex est ut dolore incididunt. Amet nulla aute consectetur elit aliquip voluptate commodo. Quis reprehenderit Lorem incididunt incididunt.\r\nCillum non id duis velit sunt aliqua qui ipsum sunt tempor aliqua incididunt. Aute velit consequat labore velit consectetur elit sunt do id laborum cillum veniam laborum ea. Excepteur eu sunt commodo fugiat quis sint ex pariatur anim sint pariatur eiusmod. Consectetur duis officia exercitation laboris esse minim ea anim excepteur irure do tempor sint. Eu consequat magna Lorem culpa. Dolor eu aliquip aute ea aliquip est incididunt aute esse magna voluptate dolor enim.\r\nMagna tempor excepteur adipisicing ullamco adipisicing excepteur reprehenderit nulla. Ad est excepteur tempor officia commodo proident consectetur ut excepteur mollit excepteur. Et quis est laboris id do veniam voluptate pariatur adipisicing irure culpa nulla. Elit nisi fugiat esse dolore ex ea Lorem nisi ad consectetur nostrud elit nulla. Sunt ad exercitation non aliquip. Occaecat elit nisi eu enim reprehenderit consectetur esse nisi nulla.\r\nDeserunt eiusmod dolore voluptate mollit. Nulla adipisicing laboris Lorem anim aliqua sit. Consequat velit labore eiusmod qui aliquip quis cillum incididunt sunt veniam. Do in id labore do duis sunt ea eiusmod do. Pariatur cillum sint non excepteur duis proident sunt amet id laborum adipisicing non.\r\nIrure irure ullamco minim ex ut magna. Elit fugiat aute reprehenderit velit cupidatat eiusmod. Cupidatat laborum sint mollit fugiat eiusmod sunt ipsum ad incididunt.\r\nOccaecat aliqua dolor reprehenderit minim pariatur do est quis ad do ea pariatur. Anim sit magna minim Lorem do minim officia tempor deserunt ad fugiat ut consectetur laborum. Excepteur ex proident laboris enim sunt quis consequat deserunt proident Lorem. Incididunt excepteur minim tempor aute eiusmod qui velit enim cillum magna aute voluptate.\r\n",
-      "rating": 43,
-      "language": "Fra",
-      "difficulty": "Novice",
-      "type": "Training",
-      "isFavorite": false,
-      "owner": "GEEKY"
-  },
-  {
-      "_id": "5b5e29b1166ef87444e1b624",
-      "trainers": [
-          {
-              "id": "5b5e29b1d366dddbaf416a44",
-              "name": "Misty Yates",
-              "avatar": "https://randomuser.me/api/portraits/men/9.jpg"
-          },
-          {
-              "id": "5b5e29b18cc2c8d90a34a00b",
-              "name": "Isabel House",
-              "avatar": "https://randomuser.me/api/portraits/women/66.jpg"
-          },
-          {
-              "id": "5b5e29b19c7660d8feac9ef6",
-              "name": "Finley Whitley",
-              "avatar": "https://randomuser.me/api/portraits/men/17.jpg"
-          },
-          {
-              "id": "5b5e29b15eb0b72f8522a47d",
-              "name": "Trudy Stone",
-              "avatar": "https://randomuser.me/api/portraits/women/6.jpg"
-          },
-          {
-              "id": "5b5e29b1c628c5e048448f7f",
-              "name": "Frankie Tate",
-              "avatar": "https://randomuser.me/api/portraits/women/34.jpg"
-          },
-          {
-              "id": "5b5e29b1f390455f6dc86275",
-              "name": "Janice Finley",
-              "avatar": "https://randomuser.me/api/portraits/men/20.jpg"
-          },
-          {
-              "id": "5b5e29b1c3780729408a5b47",
-              "name": "Dolores Robinson",
-              "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=12",
-      "date": "2018-04-24T08:28:10",
-      "duration": 495,
-      "title": "laboris aliqua laborum aliquip proident qui eu officia minim",
-      "description": "Ullamco et nulla aliquip minim ea veniam irure laborum. Ea amet id deserunt voluptate dolor irure commodo. Incididunt minim voluptate mollit consectetur sunt adipisicing veniam non irure et esse laboris ullamco aliqua.\r\nMollit laboris incididunt ut ea ex. Sint incididunt tempor aute ipsum id ad labore aute irure dolore veniam sit dolore. Adipisicing mollit do eiusmod officia ea ullamco laborum quis minim labore anim. Culpa veniam consectetur cupidatat esse do non duis mollit in minim sint nisi nostrud eu.\r\nUt aliquip irure fugiat et adipisicing aliquip excepteur officia. Dolor ad mollit officia officia in officia proident proident ipsum minim Lorem. Labore dolore sit mollit anim Lorem elit reprehenderit dolore sunt. Minim eu pariatur reprehenderit laboris do magna enim aute. Reprehenderit nisi consectetur ut eiusmod anim sint aliquip.\r\n",
-      "rating": 14,
-      "language": "Fra",
-      "difficulty": "Intermediate",
-      "type": "Video course",
-      "isFavorite": false,
-      "owner": "TERRASYS"
-  },
-  {
-      "_id": "5b5e29b1af4319d031cd6728",
-      "trainers": [
-          {
-              "id": "5b5e29b12e1a7d9ecf608454",
-              "name": "Giles Weeks",
-              "avatar": "https://randomuser.me/api/portraits/men/16.jpg"
-          },
-          {
-              "id": "5b5e29b18ef0bb79287bcce1",
-              "name": "Cheryl Spencer",
-              "avatar": "https://randomuser.me/api/portraits/women/69.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=4",
-      "date": "2018-04-08T06:19:37",
-      "duration": 332,
-      "title": "excepteur Lorem pariatur ea ipsum voluptate incididunt eiusmod officia",
-      "description": "Ea sit duis quis incididunt voluptate nisi cupidatat ad dolore magna culpa excepteur. Pariatur dolor voluptate tempor amet excepteur Lorem voluptate aliqua qui occaecat exercitation. Deserunt laboris voluptate laborum pariatur cupidatat aliqua cupidatat nostrud voluptate. Mollit commodo quis occaecat nulla veniam nulla qui. Culpa duis nisi sunt voluptate sint. Excepteur sunt reprehenderit duis amet esse ad quis adipisicing.\r\nEst duis ex deserunt sint veniam ut dolore dolor aute veniam ipsum. Voluptate cupidatat nulla aliqua officia sit non ex anim proident. Qui nostrud laborum nisi laboris aliqua occaecat. Laborum velit duis sunt esse eiusmod nisi ullamco do sint enim enim.\r\nMagna non minim Lorem tempor id commodo deserunt adipisicing aliqua do incididunt velit tempor proident. Esse in labore duis dolore mollit amet excepteur cupidatat. Duis eu commodo exercitation ex culpa commodo aliquip. Qui officia veniam aliqua culpa proident tempor. Nisi in sint eiusmod commodo ea dolor aliqua laboris et consectetur reprehenderit consectetur. Nostrud veniam velit duis commodo minim cillum.\r\nFugiat cillum pariatur quis elit. Anim velit occaecat sit ea quis nulla non. Reprehenderit laboris dolore et eiusmod ullamco officia consectetur ea qui non laborum sint officia incididunt. Culpa ipsum incididunt fugiat enim velit eu magna.\r\nSunt nostrud eu et quis ex in dolor dolore est. Officia cillum non occaecat eu nostrud irure officia sint veniam. Sit excepteur tempor sunt duis duis esse et minim laborum. Laboris eiusmod minim qui laboris anim fugiat laboris magna. Quis voluptate et et cillum ipsum aliqua sunt deserunt veniam in aliquip veniam officia.\r\nUllamco nostrud cupidatat laboris quis tempor quis voluptate laborum qui. Ad enim veniam Lorem exercitation culpa tempor consectetur. Lorem adipisicing officia nostrud ipsum in laboris proident ea in et dolore nisi eiusmod qui. Non labore minim ea ut pariatur. Nisi dolor fugiat dolore fugiat quis pariatur sunt commodo eu id tempor. Laborum ex nisi laboris adipisicing fugiat exercitation sint dolore ex officia voluptate est dolore.\r\nNulla deserunt enim proident tempor. Occaecat nisi velit duis culpa consequat minim. Non deserunt ullamco incididunt sunt nostrud voluptate duis ad deserunt pariatur dolore. Tempor proident ut laboris reprehenderit pariatur cupidatat sunt id.\r\nVoluptate velit ad proident anim ad tempor minim. Eu ullamco velit proident amet laboris aute laborum nisi labore cupidatat culpa occaecat. Est nostrud excepteur aute ea minim in culpa amet occaecat. Non mollit magna do nulla voluptate aliqua do irure veniam consectetur amet. Ullamco mollit tempor ipsum incididunt esse magna officia anim consequat consequat. Ea qui exercitation qui ipsum officia nisi amet quis ea Lorem proident et nulla eu.\r\nEiusmod magna dolore do ullamco commodo. Incididunt et ad cupidatat amet veniam sunt consequat veniam voluptate mollit reprehenderit ad. Ex veniam aute ad occaecat eiusmod fugiat. Ut ad culpa eiusmod occaecat sit non adipisicing nulla do dolore cupidatat anim.\r\nEst laborum nostrud adipisicing aliquip voluptate. Do sint sit irure eiusmod. Esse elit laborum dolore enim Lorem Lorem sunt irure enim consectetur nisi aliqua tempor deserunt. Nulla ipsum et et cupidatat non ullamco voluptate est duis enim. Id ex sit qui excepteur amet voluptate.\r\nCupidatat id ad et velit in eu velit qui tempor eu et sint. Nulla exercitation do esse eu cupidatat occaecat. Ex velit velit sint enim do enim incididunt tempor deserunt mollit commodo cupidatat elit. Veniam excepteur ea tempor sunt anim occaecat ut ad enim velit dolore amet. Occaecat aute ullamco qui ipsum. Ex minim cillum eiusmod do laborum officia id deserunt voluptate.\r\n",
-      "rating": 26,
-      "language": "Rus",
-      "difficulty": "For All",
-      "type": "Lecture",
-      "isFavorite": false,
-      "owner": "OMNIGOG"
-  },
-  {
-      "_id": "5b5e29b1591f7c5c998c31db",
-      "trainers": [
-          {
-              "id": "5b5e29b1dd46ecdf21b2c8cb",
-              "name": "Gardner Chambers",
-              "avatar": "https://randomuser.me/api/portraits/women/4.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=5",
-      "date": "2018-11-12T07:22:04",
-      "duration": 204,
-      "title": "officia id cillum velit ipsum sunt ipsum sint aute",
-      "description": "Ex irure nostrud ea proident fugiat elit consequat enim sint magna exercitation sit. Do sint exercitation reprehenderit tempor ea ipsum est elit qui tempor est magna. Est occaecat ullamco irure do reprehenderit eu sit.\r\nLabore deserunt proident ea exercitation nulla tempor consequat voluptate laboris et proident. Proident enim Lorem eu reprehenderit eiusmod aliqua do. Irure aliqua veniam magna laboris proident aute. Dolor ipsum Lorem sunt et laborum do reprehenderit reprehenderit sint sint. Excepteur ad id officia dolore duis quis reprehenderit amet id.\r\nAnim ea qui et ea. Non incididunt incididunt ea aute officia magna et sunt. Minim esse proident magna voluptate veniam laboris sint cupidatat ea. Consequat officia irure deserunt aliqua ullamco nostrud id sit officia velit nisi fugiat non.\r\nLorem velit proident enim tempor ut ut sint tempor occaecat irure adipisicing aliquip commodo. Quis nulla et ipsum reprehenderit ad irure sunt consequat. Sunt laborum sit magna est laboris do cillum ut ea amet veniam ex do. Non laboris cillum incididunt sint exercitation ut. Ad in reprehenderit proident consequat aliqua qui aliqua. Non incididunt laborum magna est. Sint reprehenderit est laboris aliqua laboris.\r\nCulpa adipisicing mollit est consectetur eu minim aliquip tempor in non ullamco pariatur culpa. Consectetur in aute non esse aliqua do. Do aliqua adipisicing duis aliqua esse quis do Lorem ea. Voluptate elit adipisicing consectetur qui minim ad labore dolore do commodo ea. Ea dolore exercitation non ea in dolore ullamco culpa exercitation anim occaecat. In ullamco culpa laboris enim culpa ex do amet laboris ea ipsum et.\r\nAdipisicing adipisicing ut dolore ut reprehenderit excepteur irure mollit laborum nisi. Aute aliqua et cupidatat sint deserunt est aliqua fugiat mollit cillum in Lorem minim fugiat. Pariatur nulla irure culpa ut ad. Minim aute exercitation cillum qui amet. Ullamco et aliqua amet nostrud eiusmod consectetur velit. Duis sunt laboris adipisicing voluptate occaecat aliquip consequat magna officia cupidatat pariatur aliquip fugiat mollit.\r\nCillum duis aliqua labore magna consectetur esse. Non aliquip sit consectetur incididunt ad eiusmod in. Aliquip anim velit labore non aliquip aliquip.\r\nNon voluptate ad Lorem et adipisicing ea id in. In culpa reprehenderit in irure quis deserunt elit. Reprehenderit proident est incididunt eiusmod laboris labore elit.\r\nEt eu duis elit reprehenderit commodo duis elit proident cillum. Fugiat in deserunt nostrud aliquip id nostrud voluptate proident occaecat dolore voluptate velit anim. Id officia est aliqua exercitation irure eu nostrud minim magna aute et elit exercitation.\r\nIn reprehenderit dolore ea aliqua do adipisicing. Elit magna excepteur ipsum ut qui cillum ut deserunt ullamco esse. Labore culpa tempor pariatur irure eu laborum quis esse velit. Consequat esse elit laborum officia labore veniam cillum ea quis voluptate est nisi ut et. Tempor sunt ut est mollit laborum deserunt occaecat velit in consectetur fugiat in. Est nostrud laborum elit fugiat laboris eu consequat reprehenderit aliqua officia. Ea exercitation exercitation commodo laborum id aute quis ex id adipisicing laboris sunt.\r\nOfficia sunt elit quis amet ipsum sunt eiusmod sunt exercitation non sit nulla esse sunt. Excepteur non sit enim aliquip consequat laborum ullamco cillum sit magna ut mollit. Irure voluptate pariatur duis sunt aliqua. Enim veniam reprehenderit cupidatat esse adipisicing incididunt minim sunt incididunt amet ex magna sunt. Eiusmod tempor proident elit id do consequat voluptate ex.\r\nAliqua Lorem id occaecat est consectetur. Cillum est duis et minim exercitation ea velit culpa enim. Laborum ipsum Lorem et qui ea est magna dolor.\r\nExcepteur eiusmod cillum culpa deserunt qui laboris non consequat. Aliquip pariatur consequat culpa ea. Duis sit minim eu duis id officia amet ad sit. Ea quis officia tempor sint incididunt. Nulla consequat veniam nisi in sunt dolore irure enim deserunt magna anim.\r\n",
-      "rating": 39,
-      "language": "Esp",
-      "difficulty": "Intermediate",
-      "type": "Training",
-      "isFavorite": true,
-      "owner": "WAAB"
-  },
-  {
-      "_id": "5b5e29b1c236c336ea31bf47",
-      "trainers": [
-          {
-              "id": "5b5e29b19601ad7191855f42",
-              "name": "Estes Chan",
-              "avatar": "https://randomuser.me/api/portraits/men/29.jpg"
-          },
-          {
-              "id": "5b5e29b1e66b87a281ef6abc",
-              "name": "Irene Fulton",
-              "avatar": "https://randomuser.me/api/portraits/women/39.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=15",
-      "date": "2018-03-13T03:04:05",
-      "duration": 74,
-      "title": "aute est exercitation cillum id eiusmod elit",
-      "description": "Labore exercitation est Lorem amet et enim fugiat. In consequat cillum minim deserunt id eu nulla. Occaecat aliqua nulla adipisicing Lorem laboris adipisicing pariatur labore. Aute fugiat culpa eu dolor in eiusmod commodo qui et aliquip eiusmod commodo.\r\nQuis est est incididunt est dolor labore incididunt et cupidatat pariatur irure quis. Adipisicing deserunt pariatur fugiat sunt pariatur consequat aute officia id consectetur enim id. Deserunt nisi et consectetur do anim cupidatat occaecat fugiat exercitation consequat id deserunt. Ex Lorem do minim excepteur occaecat tempor magna ipsum esse sint consectetur adipisicing aute labore.\r\nId ullamco cupidatat excepteur incididunt nisi nulla. Excepteur est laborum tempor anim sint laboris. Excepteur excepteur cillum aliqua adipisicing ipsum cillum aliquip ex consectetur ea esse. Nulla sit incididunt labore sint eiusmod Lorem tempor ipsum dolore commodo consectetur. Eiusmod sit sit nostrud nulla id culpa ipsum labore aliqua.\r\nTempor occaecat ullamco commodo excepteur eiusmod qui exercitation non enim duis ullamco sint. Pariatur magna eu ea nostrud nulla ullamco ut esse ullamco occaecat aute elit reprehenderit cillum. Nisi dolor laboris laboris proident sint Lorem in incididunt tempor labore laborum. Minim laboris consectetur ad incididunt reprehenderit excepteur adipisicing fugiat pariatur et tempor exercitation cillum. Et exercitation sint aute mollit pariatur fugiat proident qui laborum adipisicing officia amet. Enim nostrud amet voluptate id qui velit ipsum fugiat qui velit enim magna irure elit.\r\nPariatur consectetur Lorem irure nostrud voluptate officia nulla culpa duis. Ea occaecat ea dolore deserunt minim sit labore exercitation ipsum velit minim. Aliquip aliqua sit officia esse minim deserunt non nostrud. Elit Lorem cupidatat adipisicing velit sunt eiusmod commodo tempor eu aute. Qui qui voluptate et non cillum mollit officia reprehenderit pariatur aliqua fugiat aute anim Lorem. Eu qui consectetur consectetur do ipsum eiusmod labore ea reprehenderit.\r\nIn do magna enim cillum ea fugiat anim tempor deserunt amet ea. Qui laborum amet velit exercitation laboris. Fugiat veniam nostrud labore qui irure eiusmod exercitation nulla ad Lorem anim voluptate. Officia consequat qui laboris commodo.\r\n",
-      "rating": 38,
-      "language": "Eng",
-      "difficulty": "Novice",
-      "type": "Training",
-      "isFavorite": true,
-      "owner": "VOIPA"
-  },
-  {
-      "_id": "5b5e29b19b819ad9cabc525c",
-      "trainers": [
-          {
-              "id": "5b5e29b1afe3d101a3017d60",
-              "name": "Atkins Beard",
-              "avatar": "https://randomuser.me/api/portraits/men/20.jpg"
-          },
-          {
-              "id": "5b5e29b14b3ffaee40544b16",
-              "name": "Aileen Perkins",
-              "avatar": "https://randomuser.me/api/portraits/women/12.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=15",
-      "date": "2018-03-25T12:45:52",
-      "duration": 285,
-      "title": "velit labore voluptate exercitation mollit et",
-      "description": "Irure tempor reprehenderit in id fugiat aliqua dolore veniam minim amet mollit cillum adipisicing velit. Consequat cupidatat deserunt dolor aliquip ad magna anim ipsum esse minim magna. Cupidatat Lorem laborum culpa eiusmod ut ad laborum occaecat. Enim ut anim cillum deserunt sit sit ut dolore dolore. Non Lorem adipisicing voluptate anim est ea nulla nisi tempor do eiusmod Lorem. Labore consectetur laboris sunt pariatur quis aliquip laborum laborum occaecat deserunt. Labore ipsum qui ipsum irure incididunt duis eiusmod fugiat eu.\r\nMollit id Lorem tempor incididunt. Exercitation veniam minim laborum culpa officia elit laboris ullamco fugiat dolore aliquip nostrud. Ex in ut incididunt ipsum cupidatat id id eu proident duis consequat aliquip esse ut. Irure minim magna consequat voluptate irure esse officia velit. Labore minim anim pariatur sint. Amet sunt magna velit amet reprehenderit dolor. Ad aute ut Lorem duis irure ea magna dolore excepteur tempor Lorem fugiat incididunt amet.\r\nAd eiusmod minim velit ut ullamco irure quis minim eiusmod ad. Dolore laborum qui sunt nulla sunt. Commodo cillum cillum voluptate reprehenderit. Veniam proident qui tempor do duis. Incididunt minim quis nulla exercitation mollit aliquip dolor elit amet. Non ex ut sit ut sint qui sit veniam enim non ea minim amet.\r\nCulpa veniam consectetur voluptate consectetur esse laboris dolore nostrud qui nisi ea amet. Eiusmod id culpa officia eiusmod elit do elit culpa dolor nostrud. Nisi aliqua aliqua ut minim est officia sit. Magna do reprehenderit sit eiusmod dolor nisi reprehenderit nulla consectetur id exercitation. Fugiat nisi do minim sunt qui amet in excepteur.\r\nFugiat duis in eu pariatur do aliqua. Deserunt dolor enim sint eiusmod eiusmod. Nulla sint sunt cupidatat in adipisicing consequat ipsum ea magna qui sunt esse. Lorem labore mollit est Lorem minim pariatur pariatur exercitation voluptate tempor nisi tempor. Elit occaecat eu nisi sint magna. Nulla labore qui nulla ipsum consequat.\r\nNostrud nisi labore voluptate irure eiusmod amet sint pariatur. Occaecat incididunt nostrud elit qui aute. Fugiat incididunt tempor irure cupidatat fugiat est veniam dolor pariatur commodo culpa est. Et in mollit excepteur reprehenderit. Ea commodo aliqua dolor occaecat. Aliquip voluptate ut tempor dolor aliquip elit. Quis do voluptate quis eu fugiat excepteur Lorem irure adipisicing deserunt laboris proident reprehenderit.\r\nOfficia officia anim adipisicing dolore incididunt tempor. Velit nisi ex Lorem consequat enim. Officia fugiat adipisicing voluptate incididunt Lorem ut voluptate adipisicing. Nostrud labore velit eiusmod officia esse non irure dolore. Pariatur cupidatat esse ut nostrud reprehenderit excepteur veniam do.\r\n",
-      "rating": 48,
-      "language": "Pol",
-      "difficulty": "Novice",
-      "type": "Lecture",
-      "isFavorite": false,
-      "owner": "ORBOID"
-  },
-  {
-      "_id": "5b5e29b182509ccf1d51e43b",
-      "trainers": [
-          {
-              "id": "5b5e29b1ee49376401df09a6",
-              "name": "Ronda Castro",
-              "avatar": "https://randomuser.me/api/portraits/women/5.jpg"
-          },
-          {
-              "id": "5b5e29b1a7cd63faa34e5142",
-              "name": "Candice Tillman",
-              "avatar": "https://randomuser.me/api/portraits/women/18.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=6",
-      "date": "2018-01-08T09:12:12",
-      "duration": 52,
-      "title": "anim incididunt ut adipisicing sint",
-      "description": "Sunt sit cillum eiusmod incididunt ad. Ex irure cupidatat fugiat enim et enim tempor mollit officia. Commodo consectetur duis adipisicing deserunt culpa esse duis fugiat qui veniam voluptate velit.\r\nSit cupidatat nisi Lorem deserunt aute pariatur deserunt et veniam veniam ex dolor dolore sunt. Ea proident aute reprehenderit sint enim do. Labore magna deserunt quis eu. Nostrud sint ut voluptate occaecat in.\r\nLorem commodo fugiat id duis velit aute. Ex quis incididunt voluptate mollit deserunt pariatur id aliquip et Lorem do irure proident anim. Anim occaecat incididunt consectetur tempor non ea ad nisi non id officia cillum anim sint. Aliquip non et non reprehenderit eiusmod reprehenderit aute sint. Commodo Lorem elit adipisicing exercitation. Eu proident ea aute officia consectetur dolore elit consectetur elit ipsum est id mollit Lorem.\r\nSit esse deserunt minim consectetur. Aliquip in sint consectetur magna amet aliquip magna pariatur dolore consectetur nisi. Velit anim anim duis sint ipsum qui veniam aliquip.\r\nFugiat irure excepteur ullamco ad pariatur mollit et incididunt eiusmod anim ad anim minim. Cupidatat excepteur est enim nisi magna in mollit proident adipisicing voluptate dolor amet. In in dolore sint eiusmod. Et incididunt officia exercitation laboris qui elit do sint nostrud quis laborum. Ea amet dolor reprehenderit amet fugiat.\r\nEnim sit do elit tempor sint sit dolor magna reprehenderit minim anim commodo. Irure irure anim culpa sunt labore dolore adipisicing id do fugiat. Magna eu do ad pariatur consectetur. Irure nulla Lorem duis amet est excepteur exercitation eiusmod duis reprehenderit. Aute non aliqua duis reprehenderit exercitation cillum cupidatat incididunt duis. Ea Lorem nostrud excepteur id nisi magna ut voluptate et cillum occaecat anim. Aliquip nostrud velit cupidatat ullamco ipsum excepteur minim duis.\r\nDo adipisicing labore est quis incididunt proident reprehenderit. Occaecat aliqua ea fugiat in occaecat culpa aliqua esse deserunt culpa adipisicing adipisicing. Consequat nostrud minim irure labore velit exercitation eiusmod laborum cillum consequat occaecat esse in aute. Nisi occaecat quis occaecat ut qui adipisicing esse ut ea.\r\nNostrud adipisicing do pariatur aute in ad officia duis nisi nisi anim fugiat. Ut duis reprehenderit esse qui est mollit consectetur do consequat consequat et. Adipisicing voluptate do tempor nostrud nulla. Laborum eiusmod ut amet quis dolor labore occaecat officia. Velit reprehenderit do veniam in proident cillum voluptate dolor aliquip esse exercitation ipsum commodo esse.\r\nMollit ipsum fugiat Lorem fugiat labore adipisicing veniam et mollit duis. Ea do in magna exercitation. Elit do deserunt cupidatat anim sit incididunt in irure. Non velit voluptate dolore esse proident dolor amet non.\r\nOccaecat veniam pariatur ad dolore culpa. Nostrud ullamco fugiat occaecat Lorem. Nostrud esse nisi fugiat pariatur amet. Eiusmod exercitation anim esse ut ipsum.\r\nSit adipisicing aliquip ad elit exercitation. Commodo sunt laboris duis irure anim adipisicing deserunt. Ut quis dolor anim non irure do aliqua duis minim commodo eiusmod. Tempor adipisicing ea tempor do tempor. Proident deserunt dolore elit velit occaecat ipsum dolor commodo minim anim deserunt ea in. Eiusmod magna non id consequat in eu qui velit nisi in amet enim nostrud ex.\r\nLaboris laborum excepteur sint laborum non do esse nisi reprehenderit consequat laboris ea sunt esse. Aliquip tempor officia ut id laboris aute. Consectetur eu excepteur Lorem voluptate eu. Sit adipisicing adipisicing eiusmod ullamco incididunt ad consectetur cupidatat consectetur ea aliqua. Sit labore nisi est tempor aliqua eu officia nostrud sunt fugiat velit cupidatat. Incididunt ut tempor qui ea velit excepteur dolore esse veniam.\r\nEt ex aliqua nostrud elit. Sunt ea laborum exercitation officia in sunt irure in. Adipisicing laboris aliquip sint non reprehenderit ipsum nulla in enim tempor sit adipisicing. Esse ad aliqua nostrud culpa aliqua ad elit culpa reprehenderit dolor tempor enim reprehenderit aute. Anim amet proident laborum officia qui ad non velit. Officia anim cupidatat dolore nostrud do fugiat occaecat velit laborum ut fugiat occaecat minim. Nostrud excepteur sit tempor dolore.\r\nAdipisicing ipsum dolore aliqua deserunt culpa minim commodo aliquip officia occaecat cillum adipisicing magna. Quis excepteur consequat ad magna ullamco duis quis. Quis tempor cillum consequat ad excepteur aliqua laborum.\r\nEst pariatur ut occaecat sit sint quis do eiusmod sit qui adipisicing Lorem aute commodo. Laboris mollit do mollit cupidatat mollit consequat nisi. Fugiat nostrud irure laboris culpa aute quis nostrud fugiat esse exercitation ut. Fugiat duis labore velit mollit proident. Pariatur in id eiusmod aute culpa do in aliquip dolor. Consequat veniam ut ex laboris id excepteur.\r\n",
-      "rating": 45,
-      "language": "Esp",
-      "difficulty": "Novice",
-      "type": "Training",
-      "isFavorite": true,
-      "owner": "COMTOUR"
-  },
-  {
-      "_id": "5b5e29b19383f1b7792c8e60",
-      "trainers": [
-          {
-              "id": "5b5e29b12d11ec9f85cafa7b",
-              "name": "Eve Mccray",
-              "avatar": "https://randomuser.me/api/portraits/men/8.jpg"
-          },
-          {
-              "id": "5b5e29b1a9ee3db02aea6e0b",
-              "name": "Nora Ingram",
-              "avatar": "https://randomuser.me/api/portraits/men/47.jpg"
-          },
-          {
-              "id": "5b5e29b1978952af550f575d",
-              "name": "Kellie Graves",
-              "avatar": "https://randomuser.me/api/portraits/women/19.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=8",
-      "date": "2018-12-25T05:36:43",
-      "duration": 484,
-      "title": "id Lorem duis mollit sint laborum laborum laborum",
-      "description": "Est amet Lorem ut aliquip qui. Occaecat irure velit magna deserunt labore. Reprehenderit ea incididunt amet ullamco nostrud qui irure consectetur. Laboris amet veniam mollit sunt. Ipsum quis ut occaecat irure anim ex tempor cupidatat duis dolor ex veniam Lorem exercitation.\r\nIrure do enim aute aliquip. Cillum labore tempor sint adipisicing pariatur esse mollit id est. Incididunt consequat amet sunt ipsum ex labore anim aliquip pariatur sit ipsum laborum eiusmod. Voluptate ea fugiat nulla sit culpa dolor eu eu dolore culpa. Mollit officia exercitation excepteur quis magna aliquip culpa quis reprehenderit adipisicing mollit. Minim sint sint minim pariatur deserunt officia.\r\nCupidatat anim reprehenderit qui aliquip magna do non Lorem nulla. Id est voluptate est occaecat ex sint mollit voluptate officia nisi do incididunt cillum. Laboris cillum in magna cillum qui esse sunt. Occaecat tempor dolore elit est quis sit velit dolore non ipsum labore laborum esse.\r\nEa nulla qui ullamco cupidatat quis. Nisi sit aute mollit dolor mollit. Anim in cupidatat eu velit excepteur ex enim reprehenderit laboris culpa deserunt ipsum. Consectetur Lorem consectetur cillum do amet amet non occaecat incididunt ad aliquip in mollit elit. Anim enim enim minim nostrud tempor ad est. Culpa ex qui et dolore ut deserunt deserunt magna incididunt culpa consequat. Cupidatat ea laboris esse quis ipsum.\r\nDolor incididunt exercitation et commodo nisi minim. Aute magna id minim cillum consequat occaecat do voluptate fugiat id quis. Esse do anim incididunt laborum reprehenderit pariatur.\r\nOccaecat voluptate culpa in aute commodo voluptate minim deserunt eu cillum nostrud. Aliquip qui eu amet sunt ea dolor non ut labore ullamco occaecat laboris ex exercitation. Nisi nostrud cillum duis id do Lorem laborum sit minim laborum consectetur dolor ex. Eu sit exercitation eu nostrud est magna duis sunt elit.\r\nDeserunt consectetur consectetur veniam elit consectetur magna ullamco ex consectetur. Labore deserunt aliquip adipisicing in consectetur magna in dolore non laboris consequat. Quis sunt id elit ad ullamco deserunt ipsum consectetur exercitation fugiat sit occaecat occaecat commodo.\r\nAliquip adipisicing id velit ut laboris laboris occaecat irure. Quis excepteur aliqua exercitation sint in cupidatat ipsum voluptate commodo sint. Velit non eu cillum nulla est laborum tempor tempor laboris esse proident. Id id non culpa sit dolor ut ea deserunt est laboris aute enim. Cupidatat irure dolore magna duis aliquip non fugiat duis cupidatat esse nostrud.\r\nEx fugiat nulla exercitation ut in aliquip amet labore labore laboris. Aliquip non reprehenderit duis exercitation amet velit occaecat. Duis irure aute tempor sint excepteur ipsum qui nulla mollit officia. Ad minim duis mollit nisi eiusmod exercitation est adipisicing aliquip. Veniam adipisicing exercitation aute non. Eiusmod et Lorem esse elit. Deserunt velit elit magna enim labore magna laboris officia non pariatur.\r\nQui excepteur voluptate excepteur et ex laborum anim adipisicing. Labore proident velit est ad cupidatat do quis Lorem deserunt amet deserunt ut sunt. Veniam laborum aute incididunt laboris ea labore. Lorem aliqua anim cupidatat sit ad quis Lorem.\r\n",
-      "rating": 14,
-      "language": "Esp",
-      "difficulty": "For All",
-      "type": "Lecture",
-      "isFavorite": true,
-      "owner": "AMTAS"
-  },
-  {
-      "_id": "5b5e29b16fc3798a9a73ee12",
-      "trainers": [
-          {
-              "id": "5b5e29b17b1b7e6f993f6292",
-              "name": "Charlene Padilla",
-              "avatar": "https://randomuser.me/api/portraits/women/27.jpg"
-          }
-      ],
-      "img": "https://loremflickr.com/500/300?random=6",
-      "date": "2018-05-12T07:39:59",
-      "duration": 56,
-      "title": "aliqua in magna adipisicing sit nostrud nostrud elit laboris",
-      "description": "Laboris culpa fugiat in consequat dolor enim non minim anim in cillum aliquip aliqua aliquip. Incididunt nostrud cupidatat in commodo aliquip nulla ex sit elit voluptate duis. Ad commodo culpa Lorem aliquip minim mollit pariatur commodo pariatur aliquip sint do.\r\nDo mollit dolore consectetur consequat laborum qui labore sint. Fugiat sunt cillum consequat consequat incididunt officia proident duis. Sint eu proident commodo ex sit pariatur aute cupidatat enim ipsum dolor dolor. Magna nisi do nulla fugiat in veniam ad. Esse esse nostrud ad velit laboris et est exercitation ullamco. Ex enim exercitation eiusmod laborum cillum consequat non ut.\r\nIpsum incididunt proident quis consectetur laboris exercitation. Consectetur eu esse consectetur non esse laboris aute tempor veniam. Nulla in laboris enim minim id irure nulla proident. Incididunt nulla est sunt aute sint laboris.\r\nCillum duis consectetur reprehenderit et duis. Cillum laborum dolore fugiat ullamco nostrud nulla incididunt est anim eiusmod sint. Sint exercitation qui aliquip ex aute consequat do quis proident cillum fugiat. Tempor cupidatat mollit aliquip ipsum excepteur cupidatat nulla commodo non dolor eiusmod ad exercitation. Deserunt dolore ea cupidatat aute exercitation. Magna laborum cillum laboris eiusmod ad Lorem id quis.\r\nElit ullamco cupidatat proident quis adipisicing in nostrud aliqua adipisicing cillum anim mollit velit. Amet deserunt tempor consequat qui aute ullamco nisi enim Lorem amet adipisicing excepteur ipsum. Tempor labore culpa minim irure. Consequat amet veniam exercitation officia nostrud ipsum sint ullamco cillum id voluptate culpa ex proident. Ad sit aute consequat eiusmod cupidatat amet occaecat officia occaecat cupidatat occaecat cupidatat. Ex ad quis ut ex ea aute voluptate quis proident elit nisi duis. Sit labore deserunt dolor excepteur fugiat exercitation consectetur.\r\nVeniam amet et exercitation ipsum mollit amet dolor aliqua commodo enim et pariatur culpa. Incididunt labore consequat consectetur proident et in exercitation commodo eu Lorem consectetur consequat. Proident ea enim magna Lorem sit incididunt nostrud mollit sint magna tempor Lorem nostrud culpa.\r\nSunt nulla reprehenderit ullamco exercitation sint proident adipisicing sint. Nisi tempor pariatur irure nostrud cillum voluptate laborum culpa voluptate minim mollit. Sit ad consequat reprehenderit eu qui. Do aute eu laborum officia Lorem fugiat voluptate anim ex sint sint nisi cupidatat. Laborum excepteur tempor nisi tempor fugiat nulla. Deserunt fugiat pariatur non est adipisicing. Laborum mollit et minim id id nostrud occaecat veniam aliqua ea proident exercitation officia occaecat.\r\nQui quis et anim ullamco. Nostrud eu esse ea elit consectetur consequat et qui mollit ad eu est dolor. Est fugiat dolor id quis velit ex do.\r\nEst do laborum laborum quis ex quis fugiat est ullamco est. Quis consequat excepteur velit laborum tempor officia mollit minim reprehenderit exercitation mollit ex consequat officia. Aliquip voluptate eu aliquip id ipsum fugiat eiusmod mollit amet cupidatat incididunt quis.\r\n",
-      "rating": 13,
-      "language": "Fra",
-      "difficulty": "Intermediate",
-      "type": "Seminar",
-      "isFavorite": false,
-      "owner": "UTARA"
-  }
+      {
+          "_id": "5b66c10e5a14fcc5840f8f4f",
+          "trainers": [
+              {
+                  "id": "5b66c10ea236ab4f9598df32",
+                  "name": "Rosella Kramer",
+                  "avatar": "https://randomuser.me/api/portraits/men/22.jpg"
+              },
+              {
+                  "id": "5b66c10ed652b9e6eda4968c",
+                  "name": "Bryan Nichols",
+                  "avatar": "https://randomuser.me/api/portraits/women/51.jpg"
+              },
+              {
+                  "id": "5b66c10e07e4a433207a9d89",
+                  "name": "Rowe Velasquez",
+                  "avatar": "https://randomuser.me/api/portraits/women/68.jpg"
+              },
+              {
+                  "id": "5b66c10e05d9a3a5b6bae564",
+                  "name": "Estes Duke",
+                  "avatar": "https://randomuser.me/api/portraits/men/64.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=13",
+          "date": "2018-10-29T07:04:13",
+          "duration": 29,
+          "title": "deserunt nostrud eu ipsum",
+          "description": "Occaecat aute elit cupidatat aute adipisicing amet esse sit. Voluptate fugiat fugiat ullamco enim veniam incididunt culpa sunt consectetur. Cillum laborum culpa nostrud deserunt incididunt est enim in tempor dolore reprehenderit adipisicing. Elit et amet tempor occaecat quis laborum ullamco eiusmod non culpa minim nulla.\r\nUt adipisicing labore irure tempor ad ea nisi. Excepteur ut dolore irure duis amet eiusmod nulla ullamco mollit officia ex. Occaecat cupidatat elit eu ipsum anim excepteur dolore qui anim laborum. Proident exercitation in Lorem in nulla sit laboris proident elit consectetur dolor eiusmod amet ullamco. Eiusmod dolore do incididunt anim eiusmod aute proident ex sit sit Lorem elit duis. Consectetur commodo est id minim ex duis.\r\nLorem laboris proident aute sunt aute exercitation laboris ut sint elit labore eu. Consequat adipisicing occaecat proident sunt do aliquip veniam dolore occaecat sunt nostrud do ullamco cupidatat. Occaecat labore excepteur Lorem enim magna consequat consequat ex id ea minim. Sunt consequat proident labore eiusmod magna. Dolor dolor id ipsum aute excepteur nostrud irure laborum cillum. Non sint ad Lorem esse ea eiusmod laborum aliquip nisi duis. Elit qui elit do ullamco laborum nulla ut incididunt adipisicing ad deserunt laboris consectetur.\r\nMagna exercitation aute elit minim id labore fugiat quis deserunt dolore labore id dolor velit. Excepteur commodo cupidatat mollit in. Ut labore enim qui ea minim sit aliquip aute aliqua occaecat tempor. Esse in commodo mollit mollit nulla fugiat deserunt dolor ad do. Tempor aliquip tempor eu nulla duis qui. In quis anim reprehenderit aute commodo. Cupidatat enim Lorem amet aliquip qui consequat.\r\nMagna sit qui elit reprehenderit laboris culpa irure eiusmod ipsum officia officia. Culpa aliquip occaecat irure ipsum in voluptate. Proident id dolor cillum minim amet eu voluptate sint qui id. Nostrud dolore enim reprehenderit ex et occaecat laborum occaecat commodo esse voluptate duis. Tempor in cillum aute id aute reprehenderit est non in nisi incididunt cillum elit id.\r\n",
+          "rating": 30,
+          "language": "Fra",
+          "difficulty": "Novice",
+          "type": "Seminar",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e198180158692b680",
+          "trainers": [
+              {
+                  "id": "5b66c10ee1083c21a8f51ecb",
+                  "name": "Reyna Duncan",
+                  "avatar": "https://randomuser.me/api/portraits/men/10.jpg"
+              },
+              {
+                  "id": "5b66c10ea17e9f5ef9205800",
+                  "name": "Sykes Stafford",
+                  "avatar": "https://randomuser.me/api/portraits/men/64.jpg"
+              },
+              {
+                  "id": "5b66c10e165494ce1a426f01",
+                  "name": "Yates Morin",
+                  "avatar": "https://randomuser.me/api/portraits/men/15.jpg"
+              },
+              {
+                  "id": "5b66c10e44d89acd3b075aaa",
+                  "name": "Christina Reid",
+                  "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+              },
+              {
+                  "id": "5b66c10ee2ca05f40b03fba7",
+                  "name": "Bettye Stokes",
+                  "avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=20",
+          "date": "2018-12-16T07:21:04",
+          "duration": 393,
+          "title": "eu consectetur reprehenderit ullamco anim exercitation",
+          "description": "Sit duis duis aute sit excepteur et. Irure eiusmod cupidatat laboris nulla aliqua irure labore labore. Aliquip ut occaecat ipsum qui quis non in dolore ut dolore sint exercitation. Ad sit in quis quis magna. Deserunt aute dolore consectetur proident qui fugiat exercitation tempor consectetur enim do do ad.\r\nUt eu ut deserunt laborum aliquip non excepteur ipsum. Nulla consequat quis deserunt excepteur consequat aliqua voluptate sunt aute nostrud. Minim culpa quis consequat adipisicing duis commodo eiusmod ad laborum nulla. Ea aute deserunt est do sit consequat anim sint. In ea mollit non voluptate officia in duis ullamco minim tempor minim in. Et laborum officia cillum aute anim voluptate nisi id Lorem sunt ut exercitation incididunt elit.\r\nCulpa laboris aliquip dolor qui voluptate exercitation tempor fugiat magna. Magna ea consequat laboris quis commodo et do sit duis minim exercitation. Eiusmod aute aliqua dolor enim minim cupidatat. Dolore commodo enim est deserunt non magna officia anim aliqua. Qui non elit elit veniam elit exercitation amet occaecat. Et elit adipisicing duis magna id sunt velit. Mollit fugiat quis cupidatat minim aliquip qui exercitation mollit reprehenderit anim adipisicing.\r\nOfficia officia est excepteur qui exercitation consequat labore do veniam do esse labore dolor id. Sint nostrud labore consectetur aliqua amet commodo. Culpa proident reprehenderit fugiat magna tempor occaecat quis consequat est amet reprehenderit Lorem ut. Anim esse laboris proident sunt incididunt velit culpa. Enim anim ex est nisi adipisicing et voluptate pariatur duis deserunt cillum dolore nulla. Culpa sunt quis aute et duis.\r\nEsse esse eu qui tempor occaecat ut. Laboris esse dolor voluptate enim reprehenderit ut et do esse culpa sunt laboris. Ut laborum sit occaecat deserunt laboris. In ad qui duis reprehenderit et veniam deserunt elit adipisicing nisi esse. Incididunt eiusmod ullamco in Lorem dolor. Ipsum id duis ea commodo. Deserunt velit commodo eiusmod consequat mollit sint dolor duis sint mollit adipisicing.\r\nSunt ad eiusmod commodo incididunt deserunt occaecat officia cupidatat magna sunt. Ea sunt exercitation id excepteur eu nulla veniam ad deserunt proident cillum elit. Nostrud anim velit nisi aliqua excepteur nisi et tempor velit Lorem non.\r\nSint voluptate laborum ut aliquip eiusmod sit pariatur ad. Eiusmod exercitation nulla irure deserunt labore sit incididunt fugiat non proident. Quis cillum sit id ut fugiat officia et. Sit duis sint nostrud non laboris qui. Sunt cupidatat esse dolor esse laboris ut magna tempor. In occaecat sit culpa nulla dolore ipsum sint nisi proident consectetur qui sint.\r\n",
+          "rating": 12,
+          "language": "Eng",
+          "difficulty": "Intermediate",
+          "type": "Video course",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ec3c1f23dd6c429f4",
+          "trainers": [
+              {
+                  "id": "5b66c10e3f8b7efde07f667b",
+                  "name": "Jensen Hodge",
+                  "avatar": "https://randomuser.me/api/portraits/men/25.jpg"
+              },
+              {
+                  "id": "5b66c10edc59f6f810526a9a",
+                  "name": "Pena Faulkner",
+                  "avatar": "https://randomuser.me/api/portraits/women/40.jpg"
+              },
+              {
+                  "id": "5b66c10efd47deabf6c048b4",
+                  "name": "Chan Estrada",
+                  "avatar": "https://randomuser.me/api/portraits/women/61.jpg"
+              },
+              {
+                  "id": "5b66c10e644093a29d2a3e63",
+                  "name": "Baxter Parsons",
+                  "avatar": "https://randomuser.me/api/portraits/men/4.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=3",
+          "date": "2018-09-22T12:47:06",
+          "duration": 453,
+          "title": "incididunt id culpa ipsum ad do commodo exercitation nulla",
+          "description": "Ad enim irure fugiat duis ex incididunt ipsum anim enim eiusmod tempor. Aute aliquip laborum cillum elit eu cupidatat velit velit amet est sit tempor Lorem. Do culpa nulla voluptate et laboris excepteur commodo ullamco dolor sint. Adipisicing irure consequat non ut adipisicing minim exercitation mollit in deserunt excepteur. Est magna ut Lorem minim pariatur eu cillum ipsum qui tempor excepteur est ad fugiat. Ipsum fugiat elit veniam proident reprehenderit exercitation dolor non exercitation ea ullamco nulla.\r\nElit incididunt qui deserunt exercitation ipsum consectetur nostrud in sunt nisi deserunt aliquip fugiat cillum. Aute dolore duis adipisicing et irure aute. Commodo tempor laborum proident nulla velit. Amet consectetur irure occaecat excepteur consequat exercitation exercitation nisi excepteur laboris. Elit dolor enim ipsum labore reprehenderit est enim incididunt nulla.\r\nMagna mollit ad aliquip voluptate sit in. Dolor do ipsum aute Lorem. Ea labore non amet non amet voluptate in elit commodo officia. Ad dolore sunt dolore Lorem sunt reprehenderit ea veniam fugiat ad Lorem cillum. Eu ex irure Lorem veniam aute do nostrud excepteur consectetur excepteur enim commodo enim sint.\r\nMinim amet magna et id elit duis laboris id cupidatat nostrud ex mollit quis. Ullamco laborum tempor fugiat ea consectetur ex do fugiat sunt occaecat ea adipisicing ea deserunt. Occaecat fugiat laborum dolor dolore consequat qui dolor. Ipsum nostrud reprehenderit ad est fugiat culpa.\r\nEsse Lorem commodo id occaecat eu aute. Non elit enim ullamco ipsum sint officia minim fugiat nostrud mollit sunt aute enim irure. Velit tempor nulla ipsum ut dolore sunt. Pariatur tempor sunt est proident. Sint laborum dolore cillum ex ullamco exercitation aliquip irure pariatur exercitation qui. Elit est labore consequat mollit non dolor deserunt mollit tempor dolor occaecat quis sit. Ad nulla commodo adipisicing id Lorem anim veniam enim quis cupidatat.\r\nConsequat magna reprehenderit eiusmod amet fugiat duis. Cupidatat do cupidatat exercitation irure duis enim duis proident occaecat. Duis officia elit consectetur velit. Minim qui magna deserunt incididunt do quis nostrud quis laboris consequat ad excepteur. Deserunt officia quis aliqua sunt cillum et proident ex ad sit labore in adipisicing minim.\r\nDeserunt labore voluptate in minim commodo do anim velit cillum sint. Dolor quis reprehenderit elit cillum non excepteur deserunt ut tempor. Aliquip amet mollit sint incididunt. Voluptate esse eu ad esse id cupidatat reprehenderit sit aute adipisicing est. Et nulla laborum eu ut consectetur minim id amet occaecat. Ad culpa dolor consequat sint ipsum.\r\nMagna sit Lorem laborum veniam duis officia consectetur non anim aliquip. Exercitation nisi voluptate elit veniam voluptate laborum exercitation eu nulla. Eiusmod non do consequat cupidatat in nisi qui fugiat.\r\nId magna qui non aliqua veniam labore ad reprehenderit in excepteur dolore proident. Magna velit velit sint laborum amet tempor non ea reprehenderit et. Sit tempor sunt tempor incididunt est aliqua tempor officia et.\r\nExercitation irure nisi adipisicing amet amet nulla anim irure laborum reprehenderit dolore anim ea veniam. Pariatur incididunt dolore aliqua magna qui elit in occaecat enim sint proident id. Qui ex incididunt fugiat et nostrud do consectetur velit anim adipisicing aliquip proident est laboris. Incididunt reprehenderit deserunt reprehenderit ex enim. Aliquip adipisicing sit exercitation exercitation. Deserunt consequat exercitation ullamco ad non exercitation commodo cillum nulla adipisicing est eu.\r\nVelit pariatur reprehenderit excepteur consectetur. Velit eu amet laboris est veniam mollit quis mollit ad dolore dolor aliquip. Officia qui velit do eiusmod fugiat officia. Magna cupidatat minim consectetur qui amet duis amet. Excepteur proident adipisicing nulla veniam elit anim laboris culpa.\r\nAliquip dolor consectetur commodo incididunt Lorem aliqua. Incididunt qui ex dolor nisi eiusmod exercitation Lorem irure adipisicing minim ex cupidatat. Et sint officia ex aliquip non minim consectetur in sit nulla do. Ex ad consequat exercitation do magna do occaecat excepteur est laboris sint et. Excepteur sit pariatur anim occaecat velit qui est fugiat reprehenderit.\r\nDolor eu proident anim adipisicing sint et velit velit magna amet labore aliqua cillum ad. Nulla excepteur dolor anim cupidatat eu amet quis excepteur adipisicing sunt. Non ad qui ipsum nulla ex id laborum eu adipisicing anim amet voluptate veniam. Reprehenderit ex magna id incididunt nostrud. Sint laborum quis anim ex esse excepteur anim duis cupidatat quis sint non et. Esse eu occaecat ipsum excepteur pariatur. Adipisicing occaecat officia ad fugiat dolore excepteur excepteur.\r\nLaboris laboris officia tempor dolore cillum elit cillum irure ad minim reprehenderit cillum proident quis. Incididunt tempor non tempor elit veniam eiusmod ullamco minim irure cupidatat mollit. Dolor deserunt tempor laboris ad.\r\nCommodo magna commodo cupidatat fugiat officia anim laboris. Et enim laboris reprehenderit nulla exercitation consequat nulla laboris enim anim laborum quis. Sit laboris veniam reprehenderit nisi veniam ipsum proident nulla eiusmod velit. Sit ipsum commodo nostrud ea. Cillum eiusmod aute elit exercitation incididunt culpa reprehenderit sint sit sit duis.\r\n",
+          "rating": 27,
+          "language": "Fra",
+          "difficulty": "Expert",
+          "type": "Training",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10ee7492b81152abdd6",
+          "trainers": [
+              {
+                  "id": "5b66c10e326d1bac7e7476f6",
+                  "name": "Wilma Wright",
+                  "avatar": "https://randomuser.me/api/portraits/men/56.jpg"
+              },
+              {
+                  "id": "5b66c10eb3510e35e4cec2fc",
+                  "name": "Gamble Craft",
+                  "avatar": "https://randomuser.me/api/portraits/men/12.jpg"
+              },
+              {
+                  "id": "5b66c10e92732b20a736ed42",
+                  "name": "Snider Burris",
+                  "avatar": "https://randomuser.me/api/portraits/men/50.jpg"
+              },
+              {
+                  "id": "5b66c10e4f6e6376e9f72d2f",
+                  "name": "Silva Parks",
+                  "avatar": "https://randomuser.me/api/portraits/women/59.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=1",
+          "date": "2018-08-22T07:40:53",
+          "duration": 20,
+          "title": "laborum veniam esse ut esse quis exercitation quis sit cupidatat",
+          "description": "Velit deserunt voluptate ea Lorem sunt dolor sunt cupidatat labore exercitation. Cillum consequat dolor sunt dolor irure anim anim cupidatat ea labore enim. Ullamco et cillum aute occaecat dolore ipsum do eiusmod amet ea. Labore eiusmod tempor tempor laborum consequat velit amet nulla voluptate.\r\nReprehenderit ut ea mollit laboris labore excepteur in. Enim pariatur labore voluptate aliquip esse adipisicing dolore laborum dolor magna Lorem consectetur reprehenderit magna. Pariatur non esse velit nostrud aliquip nisi. Nisi eiusmod laboris sunt laboris laboris. Veniam elit esse culpa quis id. Tempor laborum labore commodo ad laborum ipsum dolore ea commodo.\r\nId incididunt cupidatat ad aute eiusmod ex cillum consectetur duis minim. Sunt in laboris ea quis ipsum consequat. Enim id id cupidatat exercitation Lorem Lorem incididunt. Deserunt amet incididunt quis quis elit sit mollit commodo dolor ex occaecat. Sint dolor qui in exercitation fugiat anim ea. Anim ut aute ex anim Lorem ad. Duis velit esse officia nostrud aliqua dolor in do.\r\nEsse reprehenderit cupidatat eiusmod velit anim adipisicing fugiat eu voluptate dolor consequat. Laborum voluptate in consectetur tempor. Magna dolor ipsum aliqua culpa proident excepteur esse ut proident ad occaecat. Commodo ex et aliqua mollit ex sunt nisi minim laboris minim in tempor pariatur. Magna minim qui occaecat mollit in duis ut eu veniam adipisicing ea cupidatat anim et. Esse dolore nulla labore ex elit ut proident ipsum culpa cupidatat nostrud pariatur occaecat est. Nulla labore est veniam cupidatat veniam proident.\r\nCupidatat esse non excepteur id. Laborum irure ipsum deserunt laboris esse enim. Voluptate qui id laborum minim ea ea ex enim. Duis pariatur sint dolore dolore ipsum. Sint commodo incididunt tempor cupidatat aute irure occaecat anim cupidatat commodo duis aliquip officia aliquip.\r\nOccaecat est Lorem pariatur ad excepteur mollit tempor do. Magna deserunt veniam culpa cupidatat incididunt commodo fugiat. Aute non minim enim labore voluptate. Velit mollit reprehenderit mollit esse aute dolore magna voluptate consectetur laboris culpa ad nulla aute. Excepteur eiusmod et ipsum elit officia nisi reprehenderit adipisicing quis incididunt. In id incididunt pariatur adipisicing ad adipisicing ullamco sunt id non.\r\nNostrud do velit aliquip ullamco ex. Officia cillum ad exercitation sit incididunt duis laborum sint laborum eiusmod ut. Eu incididunt veniam nisi nisi laboris occaecat. Excepteur fugiat occaecat est sunt proident ullamco aliquip velit et amet. Ex pariatur quis aute in et ex ad sit nisi ad quis amet duis non. Amet do amet non est.\r\nReprehenderit tempor enim dolore aute irure. Adipisicing dolore sit culpa minim ea anim pariatur reprehenderit excepteur. Cupidatat in dolor pariatur dolor ex mollit laborum proident ad reprehenderit. Esse ullamco deserunt sunt laboris qui enim sunt fugiat nulla in reprehenderit sit pariatur. Anim ea nulla sint qui veniam ea ipsum occaecat consectetur do nostrud occaecat. Esse elit sint ea proident nostrud eu magna occaecat. Ut culpa culpa sit ex.\r\nAnim proident mollit magna aliqua est ut ea irure cillum. Anim velit tempor adipisicing sint incididunt excepteur nulla dolore esse id aute laboris adipisicing fugiat. Ea fugiat dolor non cupidatat nulla aliquip. Ex nostrud tempor aute in dolor sint.\r\nUllamco adipisicing ea sunt dolor pariatur quis officia et mollit. Eu est sunt est cillum aliquip ipsum consequat do ea commodo cillum quis ipsum. Est ex voluptate commodo nostrud aute aliquip anim officia laborum. Consequat eiusmod reprehenderit mollit ullamco officia cupidatat fugiat ea proident. Consectetur laboris pariatur quis pariatur qui nulla exercitation velit tempor minim proident quis amet duis. Lorem pariatur tempor magna ullamco voluptate proident. Exercitation sint elit ullamco incididunt aliqua et esse et.\r\nAliquip do eu ipsum voluptate. Non fugiat incididunt tempor qui duis qui quis elit enim. Officia ad eu ut incididunt tempor dolore. Laborum dolor proident anim cillum amet minim Lorem qui nostrud. Dolor non nostrud officia mollit est. Elit sint reprehenderit duis irure anim ipsum nulla est eu. Est non enim ex ullamco tempor Lorem ea incididunt.\r\nDuis consectetur nulla voluptate excepteur irure. Lorem dolor non ex eu anim ad proident laborum ad mollit consectetur fugiat exercitation. Id excepteur excepteur eiusmod anim amet commodo ad anim. Non eiusmod duis pariatur dolore mollit magna elit ex cillum aliquip consequat ipsum.\r\n",
+          "rating": 41,
+          "language": "Esp",
+          "difficulty": "For All",
+          "type": "Seminar",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e7c98f10bfad24828",
+          "trainers": [
+              {
+                  "id": "5b66c10e72287fbbe518496a",
+                  "name": "Aguirre Harrington",
+                  "avatar": "https://randomuser.me/api/portraits/men/69.jpg"
+              },
+              {
+                  "id": "5b66c10ecc33be6fe7f8f451",
+                  "name": "Hudson Anderson",
+                  "avatar": "https://randomuser.me/api/portraits/women/26.jpg"
+              },
+              {
+                  "id": "5b66c10eea3d8091b907f4c5",
+                  "name": "Dillon Garrett",
+                  "avatar": "https://randomuser.me/api/portraits/women/43.jpg"
+              },
+              {
+                  "id": "5b66c10ea7a697a5fdcce5e9",
+                  "name": "Susanna Hudson",
+                  "avatar": "https://randomuser.me/api/portraits/women/45.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=1",
+          "date": "2018-11-19T04:52:53",
+          "duration": 412,
+          "title": "id reprehenderit consectetur dolore labore consectetur aute elit do",
+          "description": "Proident magna veniam qui ut amet magna sit elit deserunt. Qui sunt deserunt consequat labore. Aliquip qui officia ea qui dolor laboris. Quis anim laboris fugiat et enim voluptate excepteur aliqua id excepteur proident et ipsum.\r\nQui reprehenderit excepteur ullamco occaecat. Sit ad enim eu aliqua anim elit velit nostrud duis amet ad. Amet velit anim nulla tempor magna proident sint cupidatat irure aute qui consectetur. Aliquip veniam cupidatat dolore aliqua amet officia ex labore minim amet in. Tempor labore excepteur occaecat laboris excepteur amet dolore sunt. Eu eiusmod cupidatat mollit aliquip ipsum laborum amet eiusmod. Id consequat amet ad nulla aliquip duis id irure laboris quis incididunt.\r\nMagna consectetur et sint incididunt eu culpa ullamco ipsum. Consectetur ad consequat anim id. Sit enim excepteur commodo id magna ullamco. Esse nisi duis amet ex nostrud Lorem exercitation qui nisi voluptate tempor magna reprehenderit.\r\nCillum eiusmod laborum proident mollit et non proident anim. Nulla quis sit do eu magna dolor voluptate Lorem eiusmod. Excepteur pariatur ullamco adipisicing est. Nisi enim esse duis esse adipisicing pariatur esse est reprehenderit labore culpa tempor. Anim ex fugiat excepteur commodo cillum id elit eiusmod qui sunt pariatur nulla elit. Enim ipsum duis non labore id aliquip sit.\r\nEt dolore id exercitation labore ex anim eiusmod. Adipisicing adipisicing non mollit excepteur qui incididunt ex labore commodo aliquip aute quis amet consequat. Eiusmod minim eiusmod aliqua voluptate magna. Aliqua aliqua pariatur do commodo.\r\nEt veniam anim velit fugiat do laboris magna laboris ad pariatur ipsum sint. Dolore pariatur deserunt pariatur anim incididunt laboris. Sit aliquip nulla tempor pariatur eu dolore exercitation ea voluptate. Eu occaecat ullamco enim aliqua veniam ut officia tempor. Veniam fugiat sit non est consectetur id enim labore et duis tempor reprehenderit pariatur. Lorem esse ea ipsum excepteur qui in proident mollit irure Lorem nulla.\r\n",
+          "rating": 44,
+          "language": "Fra",
+          "difficulty": "Expert",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e635c11f9d5a30c85",
+          "trainers": [
+              {
+                  "id": "5b66c10ebaef96f90054deae",
+                  "name": "Kelley Guerrero",
+                  "avatar": "https://randomuser.me/api/portraits/women/18.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=6",
+          "date": "2018-11-21T11:41:40",
+          "duration": 456,
+          "title": "Lorem fugiat irure pariatur excepteur minim nisi excepteur nulla aute",
+          "description": "Aute in mollit esse quis cupidatat et sint exercitation sit. Pariatur eiusmod irure do est dolor do qui minim elit sint deserunt ex. Ad pariatur ut cillum tempor minim laboris eiusmod sunt minim aliqua.\r\nEa incididunt consequat culpa enim ea mollit labore ut aliquip aute consectetur. Ut eu velit esse aute excepteur reprehenderit dolor id Lorem. Proident dolore qui Lorem pariatur deserunt esse et officia. Irure voluptate nisi laboris elit occaecat qui minim dolore do nostrud. Id incididunt excepteur consectetur fugiat aliquip cupidatat sunt sint elit consectetur excepteur qui. Culpa officia minim labore duis eu laborum fugiat. Anim cupidatat anim excepteur duis minim quis pariatur excepteur labore velit nostrud culpa.\r\nConsectetur aliquip non qui magna ad ad elit in tempor elit sunt ullamco commodo officia. Consequat nisi exercitation cillum fugiat aute cupidatat ipsum. Sit velit non adipisicing sit. Irure officia sit aliquip sit commodo sit excepteur dolore et mollit et esse. Ea aliquip aliquip duis labore. Reprehenderit ullamco eiusmod anim ullamco nostrud do mollit esse officia id commodo qui.\r\nOfficia id occaecat mollit do aliquip adipisicing consectetur ea quis. Quis non adipisicing velit anim veniam. Voluptate magna eu tempor tempor Lorem enim do est enim aliquip dolor. Deserunt ea in enim occaecat eiusmod sunt consequat nostrud incididunt et excepteur esse veniam id. Cupidatat sint ut cillum laboris in ex.\r\nLorem esse quis ex Lorem consectetur amet est tempor enim. Tempor ea sit sint et in est do. Deserunt do sint cillum cupidatat ad velit proident. Incididunt adipisicing excepteur duis cupidatat voluptate nulla tempor. Fugiat mollit culpa enim amet excepteur culpa officia Lorem eiusmod ullamco.\r\nAliquip pariatur Lorem quis ea nisi exercitation. Proident deserunt duis nulla consequat velit aliqua ut laborum do consectetur eu nostrud. Proident est adipisicing et dolore velit pariatur minim aliquip voluptate veniam ea reprehenderit. Incididunt do labore ipsum deserunt excepteur duis labore cupidatat aliquip.\r\n",
+          "rating": 19,
+          "language": "Esp",
+          "difficulty": "Expert",
+          "type": "Video course",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ef7dbfc8491232abd",
+          "trainers": [
+              {
+                  "id": "5b66c10ec094d0a2d32982e9",
+                  "name": "Blankenship Herrera",
+                  "avatar": "https://randomuser.me/api/portraits/women/57.jpg"
+              },
+              {
+                  "id": "5b66c10e1857771de942615f",
+                  "name": "Marisol Rios",
+                  "avatar": "https://randomuser.me/api/portraits/women/47.jpg"
+              },
+              {
+                  "id": "5b66c10efad650d3883ff74c",
+                  "name": "Cabrera Avery",
+                  "avatar": "https://randomuser.me/api/portraits/men/4.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=18",
+          "date": "2018-12-11T12:46:33",
+          "duration": 457,
+          "title": "amet id anim esse ut Lorem est irure quis",
+          "description": "Nostrud reprehenderit et labore ad cupidatat culpa. Dolore laborum adipisicing occaecat consectetur do duis elit. Eiusmod non in dolor aute ullamco. Mollit nulla nostrud ex proident non cupidatat. Mollit fugiat Lorem commodo do.\r\nQuis nulla culpa tempor proident esse et occaecat. Elit excepteur excepteur exercitation esse quis. Ea commodo dolor culpa incididunt. Fugiat sunt deserunt deserunt anim et ea mollit. Excepteur do culpa velit do. Lorem incididunt nisi exercitation ea ad dolore consectetur eu esse reprehenderit.\r\nMinim excepteur laboris pariatur eu. Nostrud velit nisi esse exercitation sit voluptate reprehenderit cupidatat deserunt irure est sint aute magna. Mollit in fugiat consequat excepteur est anim laboris cupidatat laboris laboris.\r\nUt non dolor duis enim cillum do aute dolor. Occaecat pariatur commodo consectetur exercitation aliquip. Voluptate dolor cillum reprehenderit non cillum anim nisi consequat ullamco deserunt occaecat enim. Fugiat eiusmod sunt eu ut elit. Deserunt anim ex eiusmod incididunt occaecat reprehenderit laboris consectetur non quis nulla magna. Cupidatat enim nulla veniam ullamco est amet in ut exercitation fugiat ut ut.\r\n",
+          "rating": 37,
+          "language": "Pol",
+          "difficulty": "Advanced",
+          "type": "Lecture",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e287f6b6ff89eaaaa",
+          "trainers": [
+              {
+                  "id": "5b66c10edf5a9b72194bf730",
+                  "name": "Misty Gonzales",
+                  "avatar": "https://randomuser.me/api/portraits/women/39.jpg"
+              },
+              {
+                  "id": "5b66c10ef3653b4c40ebf9c9",
+                  "name": "Bertha Wood",
+                  "avatar": "https://randomuser.me/api/portraits/men/6.jpg"
+              },
+              {
+                  "id": "5b66c10ed0855c0231ea68fc",
+                  "name": "Best Dejesus",
+                  "avatar": "https://randomuser.me/api/portraits/men/46.jpg"
+              },
+              {
+                  "id": "5b66c10e506af6564e9285ed",
+                  "name": "Tina Shelton",
+                  "avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+              },
+              {
+                  "id": "5b66c10e3d79864a645f0f29",
+                  "name": "Lopez Ferguson",
+                  "avatar": "https://randomuser.me/api/portraits/women/22.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=10",
+          "date": "2018-09-23T05:33:03",
+          "duration": 359,
+          "title": "ex sit id anim officia eu",
+          "description": "Enim elit consectetur nostrud nostrud minim adipisicing non minim sit velit mollit laboris. Culpa do aliquip ea sunt enim aute dolor laboris consectetur aliquip consectetur consectetur qui ex. Voluptate ad consectetur exercitation minim esse ea minim. Voluptate ullamco nulla pariatur non sunt non consequat aliqua occaecat elit esse enim nostrud.\r\nLorem cupidatat aliqua in deserunt pariatur. Elit nisi consequat ad magna voluptate ea irure ullamco ea. Laboris ad irure cillum veniam qui duis quis fugiat cupidatat culpa. Laboris est sint ipsum ea enim veniam excepteur qui eiusmod cillum ex labore exercitation amet. Cupidatat irure nostrud exercitation quis id ex irure laboris ut officia esse qui. Deserunt elit cillum sit nulla tempor non officia tempor reprehenderit veniam.\r\nVoluptate exercitation adipisicing ex do. Anim enim Lorem est laborum est sit. Et sint do sint adipisicing voluptate eu laboris labore et in. Eiusmod laboris ullamco enim dolore magna duis amet magna non in laboris qui excepteur cillum. Sint fugiat enim consequat sunt officia nulla tempor ea consequat adipisicing deserunt occaecat. Nostrud officia incididunt dolor ad quis aliqua.\r\n",
+          "rating": 48,
+          "language": "Esp",
+          "difficulty": "For All",
+          "type": "Lecture",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e63bb2325ba3df6c9",
+          "trainers": [
+              {
+                  "id": "5b66c10eae0bd8fb9fb41ddb",
+                  "name": "Erin Contreras",
+                  "avatar": "https://randomuser.me/api/portraits/men/55.jpg"
+              },
+              {
+                  "id": "5b66c10e303b95a0412278b7",
+                  "name": "Katherine Johns",
+                  "avatar": "https://randomuser.me/api/portraits/women/35.jpg"
+              },
+              {
+                  "id": "5b66c10e5f96af3c83430038",
+                  "name": "Farley Espinoza",
+                  "avatar": "https://randomuser.me/api/portraits/women/65.jpg"
+              },
+              {
+                  "id": "5b66c10e8c88374170e72d0d",
+                  "name": "Lang Mooney",
+                  "avatar": "https://randomuser.me/api/portraits/men/61.jpg"
+              },
+              {
+                  "id": "5b66c10ecc21cfb381cc9913",
+                  "name": "Ofelia Keith",
+                  "avatar": "https://randomuser.me/api/portraits/men/21.jpg"
+              },
+              {
+                  "id": "5b66c10e27181a73ed8e54b9",
+                  "name": "Jefferson Brooks",
+                  "avatar": "https://randomuser.me/api/portraits/women/37.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=10",
+          "date": "2018-11-28T01:38:08",
+          "duration": 433,
+          "title": "ipsum commodo nulla labore irure laboris ea",
+          "description": "Incididunt esse ullamco in dolore ad aliqua aute excepteur nisi eu duis nisi sunt. Labore eiusmod in consequat aute excepteur do adipisicing deserunt nostrud commodo. Consequat mollit sint in cillum excepteur anim veniam voluptate in reprehenderit velit. Est est ullamco dolore quis amet fugiat cupidatat. Magna est excepteur ex veniam minim esse id veniam. Cillum exercitation sint ex fugiat. Anim cupidatat do aliquip irure irure elit consectetur culpa irure.\r\nId esse aute anim ut nisi ullamco. Fugiat Lorem in sint tempor nisi qui et nisi irure officia esse. Excepteur do deserunt adipisicing tempor nostrud. Culpa cillum cupidatat anim veniam exercitation et adipisicing eiusmod minim ad.\r\nNulla eiusmod irure ullamco in excepteur nostrud magna eu deserunt eu proident. Eu excepteur qui irure laborum commodo pariatur minim. Sunt esse sint id veniam deserunt aliquip incididunt. Ullamco sit nisi fugiat occaecat nulla enim cillum. Velit et duis deserunt commodo est do fugiat quis eu ipsum. Minim enim dolore anim aute magna reprehenderit consectetur.\r\nOfficia enim anim culpa ad quis est. Commodo cupidatat eiusmod esse minim enim elit exercitation labore reprehenderit. Enim eu do aliqua labore excepteur non sit consectetur nulla elit amet pariatur. Occaecat culpa sit nostrud quis qui ullamco est laboris commodo commodo. Tempor aute culpa sint duis.\r\nSint sint incididunt nulla labore nulla id consectetur veniam labore amet veniam amet aliqua. Quis amet reprehenderit laboris esse. Magna sint magna culpa excepteur ut sit dolor adipisicing reprehenderit nulla nisi sunt. Mollit pariatur voluptate consequat nostrud. Voluptate consequat esse exercitation nisi ea sunt et fugiat enim irure dolore sit irure dolor. Laboris nostrud non do amet.\r\nSit fugiat consectetur reprehenderit fugiat tempor aliquip in in eiusmod non pariatur non. In laborum consequat ea quis laboris consectetur occaecat aliqua reprehenderit. Id labore id voluptate sint. Minim magna enim eiusmod enim officia fugiat dolor qui. Ipsum proident cillum sunt ipsum irure veniam occaecat et incididunt non et occaecat ullamco non. Nisi amet proident adipisicing nostrud nulla ut dolor velit excepteur do incididunt nostrud labore nisi. Ex consectetur elit sint commodo adipisicing occaecat esse dolor duis.\r\nCommodo sunt reprehenderit enim duis consectetur enim mollit nostrud in adipisicing irure magna. Aute reprehenderit aute commodo amet ea esse. Deserunt commodo id velit aliqua est aliqua enim id. Quis aute laboris sit ad anim dolor consequat deserunt eu esse sit cillum cupidatat anim. Irure anim anim magna proident reprehenderit laborum aliquip nostrud sit ex dolore sit cillum.\r\n",
+          "rating": 26,
+          "language": "Rus",
+          "difficulty": "For All",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e46acccb42201f01e",
+          "trainers": [
+              {
+                  "id": "5b66c10ee69d76ca6944c911",
+                  "name": "Lynch Hubbard",
+                  "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+              },
+              {
+                  "id": "5b66c10e5e60b3727d8dee1a",
+                  "name": "Vazquez Riley",
+                  "avatar": "https://randomuser.me/api/portraits/men/70.jpg"
+              },
+              {
+                  "id": "5b66c10ee1ea907464564d8b",
+                  "name": "Marissa Watson",
+                  "avatar": "https://randomuser.me/api/portraits/women/27.jpg"
+              },
+              {
+                  "id": "5b66c10e5ba6870333bbb49b",
+                  "name": "Lessie Glenn",
+                  "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=10",
+          "date": "2018-09-19T02:31:55",
+          "duration": 151,
+          "title": "nulla minim laborum commodo commodo",
+          "description": "Non cupidatat mollit eiusmod culpa sint ullamco. Nostrud laboris quis enim ipsum voluptate elit eiusmod elit. Sunt ullamco nostrud proident proident tempor amet commodo deserunt laborum. Occaecat aliquip anim labore reprehenderit ad amet reprehenderit adipisicing ea proident non eu. Culpa fugiat do irure irure non culpa officia minim officia ullamco duis dolore proident.\r\nOccaecat non duis aliqua ea dolore irure non ut. Exercitation cupidatat pariatur nisi qui reprehenderit occaecat cillum tempor anim non pariatur. Duis voluptate ullamco quis amet cillum labore nulla veniam magna aliquip do laborum cupidatat. In aute elit dolor cupidatat dolor cupidatat ullamco esse consectetur labore excepteur eu culpa consequat. Id nulla sint ad mollit nostrud minim consequat. Veniam proident nostrud occaecat excepteur ex. Dolor cillum adipisicing magna proident eu mollit laborum sint.\r\nIn magna labore sunt fugiat veniam ex nostrud excepteur ex do officia. Eu dolor ipsum ex magna in amet duis in. Id ad sint sunt ex do ad occaecat aliquip consequat qui culpa aliquip. Lorem dolor eiusmod voluptate occaecat duis tempor et et quis. Ea labore eiusmod fugiat enim. Pariatur deserunt quis cillum elit voluptate commodo sit et eiusmod enim enim adipisicing ad irure.\r\nCillum cupidatat eiusmod cillum tempor labore laborum esse commodo in id ipsum esse. Velit duis eu velit eu aliquip adipisicing ut. Eu laboris velit deserunt adipisicing amet incididunt est ad. Ea eiusmod dolore sint eu ea eiusmod consequat dolore consequat Lorem magna consectetur quis culpa.\r\nOfficia fugiat commodo ad amet exercitation cupidatat mollit enim sit. Tempor velit velit ea amet. Fugiat sunt in ad in officia ex dolor sint dolor deserunt aliqua. Labore aliquip ad sint magna eiusmod sit adipisicing elit proident ipsum. Proident aute eu deserunt ad officia non ex sint ullamco mollit ullamco. Sunt et magna commodo veniam dolore officia labore minim ex laborum eu voluptate.\r\nMagna eiusmod cillum exercitation nulla tempor velit cupidatat velit amet cupidatat. Aute amet ut est velit labore et excepteur ex. Minim aliquip magna incididunt cillum esse est laborum ad dolore magna reprehenderit. Minim laboris nulla ullamco occaecat esse irure laboris laborum eiusmod Lorem consectetur. Non aliqua cillum irure sunt magna deserunt. Tempor irure eu et do ullamco esse sint sunt.\r\nExercitation magna enim velit consectetur dolore commodo cillum aliquip nulla laboris nisi aliqua id. Nulla Lorem do nostrud ea. Fugiat aute anim proident in mollit. Esse occaecat voluptate exercitation reprehenderit fugiat amet.\r\nUt ad irure veniam id id pariatur nostrud id. Incididunt et proident dolor labore dolor officia est aliqua ad. Excepteur enim ullamco nostrud voluptate Lorem consequat eu occaecat ipsum eu duis mollit velit deserunt. Velit sint dolor ad ipsum anim amet laboris ut laboris Lorem enim irure et voluptate. Minim fugiat veniam nulla anim. Reprehenderit nisi nisi non incididunt veniam voluptate exercitation nostrud nostrud esse. Ullamco quis elit aliquip qui ex aliqua nulla.\r\nUt anim labore incididunt dolore eiusmod velit cupidatat fugiat ea. Adipisicing nisi fugiat minim labore veniam eu fugiat qui amet et magna nostrud sint. Non minim duis pariatur labore voluptate dolore consequat amet nostrud occaecat aute proident incididunt.\r\nIn cupidatat occaecat culpa incididunt consectetur culpa. Ullamco do veniam consectetur nulla ex pariatur cupidatat culpa. Mollit occaecat ut excepteur aute veniam deserunt commodo mollit aliqua pariatur velit esse.\r\nUllamco non officia adipisicing reprehenderit tempor ex nostrud officia. In magna pariatur ad non elit in est qui. Proident ex incididunt consequat sunt ad amet tempor in eiusmod proident deserunt excepteur.\r\nVoluptate in laboris ex nulla sit excepteur non occaecat quis officia. Sunt voluptate qui veniam eiusmod ullamco eiusmod minim nisi et duis sit esse tempor. Aute labore cupidatat fugiat aliquip magna labore qui.\r\nDolore id culpa dolor magna cillum ut ullamco. Voluptate Lorem adipisicing tempor consequat adipisicing non magna nisi mollit consectetur proident deserunt occaecat. Aute eu et laborum occaecat dolor cupidatat nostrud non Lorem reprehenderit mollit commodo. Anim amet voluptate quis ex eu in aute eiusmod dolor ad aute excepteur. Proident eiusmod Lorem adipisicing Lorem id anim velit voluptate ea non eiusmod eiusmod. Eu qui consequat adipisicing ullamco non ex ex exercitation pariatur adipisicing ullamco dolore.\r\nEst minim ex fugiat id officia nulla ex laborum. Elit cillum dolore quis eu duis eu reprehenderit do duis eiusmod nulla ea excepteur. Exercitation pariatur excepteur consectetur amet id ut aliquip. Enim tempor exercitation ipsum veniam.\r\nOfficia qui do do nostrud dolor aliquip ea. Quis culpa occaecat dolor consequat ad anim aute fugiat esse reprehenderit nostrud. Laborum et officia excepteur proident. Sit tempor laboris anim sunt Lorem laborum eiusmod.\r\n",
+          "rating": 49,
+          "language": "Esp",
+          "difficulty": "Intermediate",
+          "type": "Lecture",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e9bc117914921c56c",
+          "trainers": [
+              {
+                  "id": "5b66c10e49b2c00f375c44cf",
+                  "name": "Dionne Avila",
+                  "avatar": "https://randomuser.me/api/portraits/men/33.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=14",
+          "date": "2018-08-01T07:56:51",
+          "duration": 334,
+          "title": "sit est veniam incididunt eiusmod aliqua deserunt",
+          "description": "Reprehenderit magna exercitation Lorem enim. Cupidatat occaecat elit nulla magna amet ad ullamco duis culpa. Cillum do officia anim consectetur Lorem cupidatat. Consequat fugiat proident anim dolor incididunt est in do excepteur. Dolore adipisicing enim enim sit culpa veniam eiusmod. Voluptate tempor qui id cillum anim ipsum amet quis reprehenderit nulla sint in.\r\nNon Lorem enim est commodo. Ea incididunt exercitation sunt nisi aliqua dolor voluptate cupidatat nulla nostrud eiusmod nulla veniam et. Excepteur aute proident id ullamco laborum nostrud enim occaecat deserunt elit dolor laborum eiusmod nulla. Sit anim ea sint ullamco dolore cillum in quis. Eiusmod ipsum qui amet veniam dolore deserunt adipisicing magna. Dolor adipisicing enim dolore et non incididunt occaecat do fugiat qui do occaecat. Ex eiusmod pariatur qui excepteur.\r\nNon est in laborum eiusmod cupidatat eiusmod Lorem deserunt minim cupidatat dolor ullamco. Deserunt enim minim elit nostrud minim veniam duis non non proident commodo tempor excepteur. Lorem irure duis ex esse cillum velit. Lorem ipsum veniam ullamco sunt dolor cillum duis magna sint ipsum cillum anim. Cupidatat adipisicing adipisicing ea culpa qui. Culpa exercitation commodo irure labore ut veniam irure.\r\nOccaecat esse magna sunt eiusmod occaecat proident mollit elit do irure aliqua qui proident. Aliquip ipsum nostrud nostrud commodo aliqua magna deserunt aute est do laborum aliquip. Ea aute consequat irure veniam occaecat sunt. Ullamco et dolore sint occaecat velit ipsum aute elit labore eu ut elit cillum dolor. Lorem nulla consequat voluptate tempor Lorem duis labore ad velit aliqua culpa sint do non. Enim ex mollit eiusmod aute labore eu cupidatat incididunt velit amet dolore eiusmod et nulla.\r\nAute magna id quis culpa esse anim ipsum anim adipisicing dolore in. Non mollit adipisicing eiusmod do. Minim Lorem in amet enim anim mollit commodo dolor proident laboris velit ex. Nulla aliquip sunt est deserunt consequat.\r\nAdipisicing ipsum non ipsum aliqua eiusmod mollit laborum qui nostrud ipsum quis cillum. In ut aliqua commodo sunt aliqua ipsum sit. Irure voluptate do ex anim qui aliqua cillum esse nisi consectetur minim nostrud non. Excepteur exercitation ut proident nulla laboris fugiat aliquip sunt est veniam dolore non labore enim. Sit minim reprehenderit eiusmod deserunt voluptate labore in laborum reprehenderit dolore ullamco ullamco. Nulla non anim non voluptate nulla in elit cillum esse.\r\nOfficia reprehenderit veniam consectetur tempor dolore tempor do ullamco consectetur occaecat nostrud cupidatat eu dolor. Est ullamco est deserunt laborum. Aliqua consectetur labore excepteur velit ex cupidatat adipisicing incididunt ad ut amet ullamco magna. Minim irure adipisicing ullamco officia fugiat ex ad. Occaecat ut velit ullamco labore ullamco veniam veniam cupidatat fugiat mollit. Do ex culpa labore aliquip ut ea deserunt. Consectetur aliqua enim cillum cupidatat dolor nostrud.\r\nLaboris nostrud minim fugiat nulla sit ea sit enim fugiat aute aliquip esse. Consequat sit deserunt laboris nulla culpa consectetur. Esse velit do ut quis dolor quis sunt occaecat id dolore.\r\nIncididunt enim ut esse mollit irure consequat amet. Mollit nulla dolore ex ad labore cillum exercitation veniam. Duis deserunt velit excepteur et proident consequat anim incididunt aliqua dolore labore Lorem anim. Ut est proident amet pariatur quis reprehenderit exercitation. Tempor exercitation eiusmod sunt ea et mollit. Ea dolor enim velit ipsum voluptate minim.\r\nSunt labore eu minim cillum nostrud anim ea voluptate duis. Enim nulla esse aliquip veniam consequat culpa magna aute sit id. Sit tempor eiusmod esse tempor magna pariatur. Non aliquip pariatur Lorem quis elit pariatur fugiat adipisicing amet cillum.\r\nConsequat pariatur officia fugiat enim consectetur incididunt eu aliqua exercitation sint laboris deserunt proident. Ullamco magna labore velit in incididunt magna Lorem quis excepteur Lorem magna sunt aliqua enim. Commodo minim reprehenderit mollit deserunt aute deserunt exercitation irure tempor ut velit deserunt. Eu excepteur minim dolor quis eiusmod enim dolor esse amet consequat et et reprehenderit irure. Minim nostrud reprehenderit in voluptate aliquip id aliquip reprehenderit enim anim elit exercitation ea dolore. Nisi ullamco irure non Lorem non dolore dolore.\r\n",
+          "rating": 28,
+          "language": "Esp",
+          "difficulty": "For All",
+          "type": "Video course",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e03bf8f7880790312",
+          "trainers": [
+              {
+                  "id": "5b66c10ef19197ff6f194059",
+                  "name": "Alexander Hays",
+                  "avatar": "https://randomuser.me/api/portraits/men/13.jpg"
+              },
+              {
+                  "id": "5b66c10e77b3af2af5f7d6e0",
+                  "name": "Young Hinton",
+                  "avatar": "https://randomuser.me/api/portraits/men/55.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=10",
+          "date": "2018-12-25T04:49:31",
+          "duration": 148,
+          "title": "ut sint nisi",
+          "description": "Adipisicing nisi ut culpa cupidatat in cillum est. Qui fugiat consectetur velit est culpa fugiat ea. In duis culpa officia qui ipsum consequat eiusmod cupidatat excepteur nulla consectetur qui ut. Irure commodo sit mollit fugiat dolor dolor ut. Sunt ullamco reprehenderit esse occaecat eiusmod eu exercitation cupidatat incididunt cupidatat.\r\nIn non quis non aute aute exercitation veniam et cillum anim sit. Ex magna tempor ea exercitation ullamco aliquip pariatur voluptate veniam exercitation sit consectetur in. Ex pariatur laborum minim adipisicing adipisicing est mollit adipisicing mollit qui. Cillum pariatur culpa Lorem mollit. Incididunt et reprehenderit in laboris voluptate sit fugiat. Quis culpa labore duis occaecat ullamco velit.\r\nEx fugiat reprehenderit culpa deserunt ex do laborum culpa cupidatat culpa commodo elit esse velit. Ullamco nostrud adipisicing exercitation cillum aliqua et cillum. Aute dolor consequat consequat id commodo Lorem proident nostrud cillum. Ullamco aliqua ea incididunt quis proident aliqua fugiat laboris. Quis consequat cillum non ea exercitation irure quis ut mollit excepteur. Exercitation veniam ut qui esse commodo irure minim incididunt. Est commodo voluptate do laborum esse aliqua ea tempor amet deserunt dolor velit.\r\nDolor ad adipisicing aliquip in exercitation cupidatat quis magna sit velit. Ullamco ut dolore reprehenderit deserunt Lorem voluptate sit. Amet est cillum velit sit aliqua cillum ad. Id anim nisi irure ea exercitation in nisi sint nisi quis fugiat proident ut.\r\nVoluptate aliqua consequat fugiat quis cillum ea et proident est eiusmod nostrud sit pariatur. Et ut dolor aute dolore mollit ea officia. Sit minim velit laborum ullamco consectetur minim deserunt nisi incididunt laboris. Nulla fugiat qui proident commodo aliquip ea commodo culpa ullamco laboris aute dolor enim enim.\r\nTempor enim pariatur ad commodo nostrud duis. Incididunt in nostrud sit velit nostrud eiusmod eiusmod aliquip cillum. Dolor occaecat ipsum labore anim est fugiat ad commodo consequat ullamco tempor labore. Ea eu labore officia ullamco qui sit fugiat do ea reprehenderit voluptate sunt eu mollit. Aliqua aliquip in qui aliqua labore minim nisi cupidatat ipsum minim quis sit anim. Incididunt proident consequat proident qui proident dolor amet dolore magna incididunt. Est aute aliquip mollit irure ipsum labore.\r\nAliquip minim elit cupidatat mollit labore fugiat laboris ex. Ut officia deserunt in excepteur non culpa. Mollit labore est sit deserunt dolore duis pariatur duis nostrud do aute. In et ea quis labore enim adipisicing ipsum aliqua ut commodo consectetur laborum. Laboris pariatur commodo aliqua id. Laborum et non est nulla veniam labore incididunt nostrud laboris proident. Enim sit commodo proident tempor.\r\nCommodo proident sunt mollit nostrud dolor laborum quis enim adipisicing duis. Fugiat aliqua id deserunt est quis commodo. Qui mollit culpa nostrud laboris. Ea pariatur ullamco elit nulla deserunt incididunt elit irure reprehenderit id est sint velit ipsum. Sit officia mollit id dolore veniam.\r\n",
+          "rating": 18,
+          "language": "Esp",
+          "difficulty": "Expert",
+          "type": "Seminar",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10ed23e6dba2b50c5fa",
+          "trainers": [
+              {
+                  "id": "5b66c10e95f73e3b5be1a7bb",
+                  "name": "Manning Harper",
+                  "avatar": "https://randomuser.me/api/portraits/women/54.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=6",
+          "date": "2018-12-04T05:10:52",
+          "duration": 371,
+          "title": "quis incididunt aute",
+          "description": "Eu ea proident mollit sint enim non sunt est. Veniam magna ut consequat aliquip qui officia pariatur. Minim magna ullamco id consectetur culpa est et cillum ut labore et cillum qui et.\r\nLabore proident ex elit culpa fugiat exercitation adipisicing. Aliqua in non adipisicing incididunt. Cupidatat deserunt labore nulla incididunt. Adipisicing pariatur commodo dolor magna. Dolore voluptate ea officia anim enim aute aliqua dolor quis aute anim nisi qui. Fugiat nisi eiusmod non irure laboris sint magna excepteur.\r\nDolor ex Lorem exercitation proident. Tempor nisi enim do veniam irure reprehenderit id veniam non in est pariatur in nulla. Dolore sunt elit consequat occaecat laborum duis esse sunt dolor exercitation sint voluptate labore. Velit qui esse Lorem aute excepteur sit cupidatat exercitation reprehenderit enim nisi. Non Lorem fugiat adipisicing cillum. Officia tempor officia velit ex fugiat anim nulla non consequat magna voluptate nostrud minim proident.\r\nDo id laborum aute ex laborum nostrud sit eiusmod nulla et. Ex ut exercitation ipsum exercitation culpa ea. Ea veniam exercitation excepteur incididunt. Occaecat nisi sit mollit ullamco deserunt ex anim. Eu minim voluptate sunt velit qui irure labore ea tempor mollit sit voluptate excepteur cupidatat. Ullamco quis veniam nostrud deserunt qui do voluptate sunt elit adipisicing eu aute culpa adipisicing. Cupidatat sunt eiusmod qui officia elit aliqua eiusmod sit nostrud ullamco tempor voluptate.\r\nOccaecat enim Lorem fugiat cupidatat ut ad. Veniam enim velit magna magna occaecat esse excepteur. Elit amet officia mollit sit magna sunt fugiat aliqua. Est eu ullamco irure sunt irure cupidatat aliquip. Quis nisi est dolor velit id excepteur nulla in consequat amet. Adipisicing non nisi exercitation et cillum cillum voluptate minim.\r\nSint cupidatat commodo veniam occaecat ipsum magna tempor tempor mollit sint. Reprehenderit ullamco nulla officia minim ea. Et mollit minim enim nulla id et nostrud.\r\nCulpa sit aliqua anim velit dolor officia tempor eu labore ex. Veniam dolore fugiat duis mollit et commodo pariatur mollit adipisicing dolore aliqua. Culpa consequat elit ex reprehenderit labore cupidatat pariatur deserunt et mollit Lorem consectetur. Quis anim aliquip qui adipisicing commodo. Cillum quis nostrud culpa do.\r\n",
+          "rating": 24,
+          "language": "Pol",
+          "difficulty": "Advanced",
+          "type": "Lecture",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10eda23f4d05c867a0d",
+          "trainers": [
+              {
+                  "id": "5b66c10e7675a9033c3efea7",
+                  "name": "Parsons Maddox",
+                  "avatar": "https://randomuser.me/api/portraits/men/36.jpg"
+              },
+              {
+                  "id": "5b66c10e3e11acac2e53be10",
+                  "name": "Lilian Cook",
+                  "avatar": "https://randomuser.me/api/portraits/men/34.jpg"
+              },
+              {
+                  "id": "5b66c10e9075512e213ec6ff",
+                  "name": "Griffin Cunningham",
+                  "avatar": "https://randomuser.me/api/portraits/men/24.jpg"
+              },
+              {
+                  "id": "5b66c10ed2f21eb56d84b086",
+                  "name": "Fowler Chang",
+                  "avatar": "https://randomuser.me/api/portraits/women/30.jpg"
+              },
+              {
+                  "id": "5b66c10e54b28716b7312631",
+                  "name": "Cooke Lowery",
+                  "avatar": "https://randomuser.me/api/portraits/men/19.jpg"
+              },
+              {
+                  "id": "5b66c10e734b71834d12565b",
+                  "name": "Chapman Foster",
+                  "avatar": "https://randomuser.me/api/portraits/men/66.jpg"
+              },
+              {
+                  "id": "5b66c10edc90abe7e14a3896",
+                  "name": "Taylor Navarro",
+                  "avatar": "https://randomuser.me/api/portraits/women/63.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=10",
+          "date": "2018-11-27T05:13:00",
+          "duration": 31,
+          "title": "laboris ad non",
+          "description": "Incididunt ullamco duis ut nostrud in laborum nisi ut cupidatat sunt aute. Labore ea cillum sit culpa minim nostrud. Elit adipisicing ad dolore non duis culpa culpa nisi deserunt elit. Aliquip labore eiusmod consectetur ea pariatur proident occaecat cupidatat quis est minim mollit quis veniam. Eu dolore eiusmod reprehenderit reprehenderit voluptate sit esse nostrud quis pariatur ullamco ipsum labore. Nulla incididunt laboris duis eu aliquip voluptate laboris.\r\nQui quis duis laboris cillum. Minim voluptate veniam laboris deserunt ut est irure elit. Consequat officia duis qui ipsum sint. Ex eiusmod culpa enim occaecat ex fugiat. Deserunt occaecat est esse anim velit exercitation commodo consequat tempor minim ex consequat in sit. Sint reprehenderit nisi pariatur anim irure magna sunt sint qui reprehenderit.\r\nAmet duis et ut duis deserunt eu. Eiusmod quis excepteur eu cupidatat laboris. Elit esse excepteur do est elit tempor adipisicing Lorem commodo velit qui culpa. Reprehenderit enim adipisicing in excepteur eu qui ad id. Fugiat mollit nisi consequat deserunt.\r\nReprehenderit amet aliqua commodo tempor qui. Non commodo nostrud ad veniam dolore aute ut. Cillum voluptate adipisicing excepteur aliqua quis. Laboris magna amet dolor officia velit ex ullamco sit officia adipisicing nostrud excepteur do. Sit do ea ex Lorem Lorem dolor esse pariatur eiusmod. Qui elit reprehenderit Lorem exercitation.\r\nCommodo adipisicing excepteur culpa voluptate non nulla dolor elit eiusmod magna. Cupidatat id id irure cupidatat elit ipsum sint occaecat. Aliquip reprehenderit commodo voluptate nulla consectetur consequat. Nulla incididunt sint eu consequat mollit nulla ex incididunt id reprehenderit reprehenderit fugiat ullamco. Deserunt nisi ullamco amet id quis consectetur sunt est dolor nostrud duis labore ad velit. Laborum aute ullamco aliqua proident mollit cillum cillum consectetur ullamco ullamco do ipsum commodo.\r\nEx velit quis laborum cupidatat elit et eiusmod ullamco. Anim veniam id excepteur in do id reprehenderit tempor ad. Exercitation commodo ex laboris non excepteur fugiat sit.\r\n",
+          "rating": 13,
+          "language": "Pol",
+          "difficulty": "Novice",
+          "type": "Video course",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e723911017ad7ca5f",
+          "trainers": [
+              {
+                  "id": "5b66c10e3a985406286a3780",
+                  "name": "Bray Humphrey",
+                  "avatar": "https://randomuser.me/api/portraits/women/16.jpg"
+              },
+              {
+                  "id": "5b66c10e7045495ea4b1830d",
+                  "name": "Bolton Mcclure",
+                  "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+              },
+              {
+                  "id": "5b66c10ebbac917e61c33195",
+                  "name": "Roach Carpenter",
+                  "avatar": "https://randomuser.me/api/portraits/men/41.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=17",
+          "date": "2018-12-04T03:05:29",
+          "duration": 23,
+          "title": "magna eiusmod ipsum qui in",
+          "description": "Minim cupidatat aliqua commodo in labore in cillum nulla. Nulla fugiat ad ad cillum. Adipisicing ut dolore qui ut ad laboris pariatur enim nulla ut officia. Adipisicing enim aliqua officia mollit cupidatat est anim dolor non aute.\r\nLorem aute aliqua nostrud eiusmod laborum occaecat sint. Culpa commodo voluptate pariatur incididunt non anim tempor officia enim laboris. Voluptate enim non esse sint ea culpa eiusmod laboris eiusmod irure commodo nostrud. Dolor nisi irure pariatur non do. Ea esse eiusmod dolore nulla ex tempor do ipsum non ullamco amet cupidatat magna. Consequat non proident culpa id fugiat nisi. Fugiat excepteur labore enim aliqua magna nisi ipsum tempor aliqua consequat.\r\nIrure adipisicing ea minim mollit enim commodo. Mollit proident nisi minim fugiat tempor et voluptate magna ea dolor deserunt et aute. Dolor aliquip ad et veniam aliqua cillum quis laborum veniam duis id ex. Exercitation qui mollit dolor dolor culpa minim ipsum eu duis eu.\r\nUllamco sunt eiusmod ipsum cupidatat dolore minim dolore laboris eiusmod nisi eiusmod occaecat esse elit. Pariatur laboris ullamco incididunt eu non. Veniam aliqua enim nulla culpa duis.\r\n",
+          "rating": 34,
+          "language": "Eng",
+          "difficulty": "Novice",
+          "type": "Training",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ede493b4c7f2968fd",
+          "trainers": [
+              {
+                  "id": "5b66c10ebdde4ea09c11b05e",
+                  "name": "Abigail Kelly",
+                  "avatar": "https://randomuser.me/api/portraits/women/6.jpg"
+              },
+              {
+                  "id": "5b66c10e9c5d0fc0dc6612b0",
+                  "name": "Greer Maxwell",
+                  "avatar": "https://randomuser.me/api/portraits/women/40.jpg"
+              },
+              {
+                  "id": "5b66c10e4a7023730092bc8a",
+                  "name": "Mcknight Malone",
+                  "avatar": "https://randomuser.me/api/portraits/women/7.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=11",
+          "date": "2018-09-02T03:35:00",
+          "duration": 222,
+          "title": "elit magna eiusmod irure elit",
+          "description": "Aliqua Lorem ullamco sunt aliqua enim ut. Deserunt id ad velit consectetur tempor. Id sunt officia aliquip Lorem. Occaecat nostrud minim eiusmod laborum cupidatat sit consectetur veniam enim culpa reprehenderit incididunt. Enim voluptate pariatur laborum sit aute deserunt dolor mollit et enim Lorem laborum. Veniam mollit minim duis id voluptate ipsum ut cupidatat adipisicing ex in nisi proident.\r\nIn id ea laborum esse ea et dolor ad excepteur sunt. Minim nostrud in officia aliquip non minim esse dolor eu est. Nulla commodo eiusmod fugiat duis deserunt enim.\r\nEsse ad elit incididunt nulla enim consectetur officia sit elit minim ipsum adipisicing enim. Nisi excepteur sunt dolor reprehenderit sunt sunt excepteur et. Ea consequat proident id proident commodo dolore ea tempor enim. Consectetur culpa exercitation dolore eu elit in ea pariatur qui irure nulla velit excepteur. Incididunt id officia quis ea sit nulla enim labore.\r\nAd aliqua ullamco voluptate ad laboris Lorem minim officia aliquip laborum sunt eiusmod dolore. Nisi exercitation sunt adipisicing fugiat elit laborum ipsum excepteur sit mollit quis fugiat. Nulla aliquip qui excepteur consectetur in sunt do laborum consectetur Lorem.\r\nEa mollit irure magna ut incididunt nisi aute nulla tempor do Lorem. Esse exercitation voluptate do do non esse anim aliquip exercitation veniam. Qui ex irure ad officia cupidatat. Ad pariatur dolor ad commodo laborum magna. Exercitation occaecat esse dolor aute deserunt anim do aute nulla laboris velit.\r\nSint quis ullamco anim laborum laboris magna minim in officia sit dolore labore commodo. Ad labore cupidatat minim sunt dolore. Duis velit amet incididunt non proident dolor proident fugiat.\r\nEnim et culpa ex mollit occaecat reprehenderit nostrud aliquip nisi id fugiat cillum. Proident Lorem consectetur elit minim in ad qui ad cupidatat in. Mollit do tempor ea quis aliquip nisi officia.\r\nNisi adipisicing amet dolor non magna nostrud non duis quis in ex. Ut labore irure commodo culpa consequat qui dolor deserunt irure minim dolore reprehenderit. Esse ad ullamco Lorem commodo in enim. Voluptate nulla sit duis incididunt.\r\nReprehenderit exercitation ipsum quis pariatur velit ea. Proident cupidatat eiusmod do ea ipsum eiusmod. Adipisicing culpa adipisicing consectetur non. Id aute cillum eu labore eu occaecat ex aliquip ullamco cillum. Eu id id dolore in deserunt consequat dolore labore.\r\nQuis fugiat in magna velit incididunt nisi veniam elit eu amet occaecat ea ea id. Nostrud excepteur irure cillum fugiat. Deserunt cillum magna nulla non eu velit anim reprehenderit. Tempor laborum consequat dolor non anim. Et voluptate ea irure excepteur amet culpa veniam in est deserunt. Nostrud et ullamco labore officia et tempor.\r\nSunt excepteur exercitation tempor aliqua mollit dolor. Sit et est magna est. Minim velit ullamco tempor dolore veniam ad ut pariatur. Veniam sunt qui aliqua anim eiusmod minim aliquip mollit qui. Dolor commodo elit tempor in ex. Elit voluptate commodo cupidatat ea.\r\nElit incididunt nisi ullamco proident consectetur nostrud consectetur laborum nisi proident Lorem anim. Id deserunt duis veniam excepteur sunt tempor Lorem irure duis Lorem nisi proident. Exercitation qui occaecat elit ad cupidatat nostrud. Incididunt irure incididunt mollit anim. Proident minim non qui ad velit eiusmod aute esse proident ad.\r\nMinim irure ea ut mollit sit. Aliqua eiusmod dolor ipsum ad et irure. Ipsum elit eiusmod Lorem Lorem velit enim fugiat labore et eiusmod dolor eiusmod. Incididunt quis culpa elit culpa qui incididunt enim officia labore proident.\r\nAliquip sit amet culpa magna enim laboris duis ipsum consequat ullamco id. Do eiusmod voluptate ut exercitation in dolor. Minim qui culpa enim qui minim enim nulla mollit velit nulla aliquip fugiat aliqua. Excepteur officia id id Lorem aliquip ex amet mollit sunt do in ullamco labore exercitation. Id est deserunt do laborum ipsum veniam voluptate laborum. Amet velit labore veniam veniam dolor ad nulla qui ad nisi officia.\r\n",
+          "rating": 40,
+          "language": "Rus",
+          "difficulty": "Expert",
+          "type": "Lecture",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ee0f6ebdf3e54ea76",
+          "trainers": [
+              {
+                  "id": "5b66c10e8048bc502cf8dd53",
+                  "name": "Lorrie Hyde",
+                  "avatar": "https://randomuser.me/api/portraits/women/52.jpg"
+              },
+              {
+                  "id": "5b66c10e54e6aa9475e1f474",
+                  "name": "Brock Conley",
+                  "avatar": "https://randomuser.me/api/portraits/men/54.jpg"
+              },
+              {
+                  "id": "5b66c10e9af06b829c9e86e1",
+                  "name": "Haynes Barrera",
+                  "avatar": "https://randomuser.me/api/portraits/men/4.jpg"
+              },
+              {
+                  "id": "5b66c10e8ca4e62aba0dc850",
+                  "name": "Mcdowell Lynn",
+                  "avatar": "https://randomuser.me/api/portraits/women/12.jpg"
+              },
+              {
+                  "id": "5b66c10e0d3918ba64d33558",
+                  "name": "Leila Burke",
+                  "avatar": "https://randomuser.me/api/portraits/men/40.jpg"
+              },
+              {
+                  "id": "5b66c10eda251adf80e6f56b",
+                  "name": "Marta Flores",
+                  "avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+              },
+              {
+                  "id": "5b66c10ed62eb69c4cdf3feb",
+                  "name": "Keith Mayer",
+                  "avatar": "https://randomuser.me/api/portraits/women/27.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=10",
+          "date": "2018-12-17T03:44:53",
+          "duration": 216,
+          "title": "aliquip duis occaecat officia adipisicing est ipsum pariatur laboris",
+          "description": "Irure dolore sint nisi exercitation minim excepteur. Fugiat excepteur ut Lorem cupidatat commodo id adipisicing. Adipisicing est amet deserunt quis nisi cupidatat ullamco consequat sunt nisi. Reprehenderit enim cillum nisi eu voluptate occaecat laborum pariatur dolor qui. Proident pariatur deserunt consequat sint ut non elit.\r\nCillum anim laborum in anim irure veniam ut. Pariatur deserunt ea commodo non minim dolor. Culpa exercitation voluptate anim voluptate minim consectetur nostrud velit proident labore duis magna commodo. Ut ad qui laborum pariatur incididunt laborum mollit. Labore quis magna sunt aute id dolore dolore aute dolor elit incididunt Lorem labore.\r\nAliqua magna amet enim aliquip qui quis est consequat tempor occaecat laboris. Commodo officia irure eu proident officia labore ea dolor excepteur exercitation laborum aliqua. Esse aute elit commodo duis aliquip culpa. Minim ipsum pariatur aute sit. Nisi ea commodo excepteur in ullamco quis ut. Tempor officia fugiat est sunt. Nisi in elit nulla quis nulla nulla reprehenderit do culpa adipisicing.\r\nEt nulla officia in eu id eiusmod. Consequat veniam ea fugiat veniam. Duis qui nostrud veniam mollit. Aliqua enim proident proident eiusmod irure adipisicing voluptate fugiat Lorem sunt laborum do. Do consequat dolor sunt sit consequat ea adipisicing.\r\nAnim consequat duis nulla dolor esse reprehenderit velit velit laborum incididunt aliqua culpa excepteur enim. Ut mollit adipisicing sunt reprehenderit quis in incididunt pariatur irure consequat ad magna. Nulla et id commodo quis enim.\r\nEnim quis amet laborum amet dolor deserunt deserunt officia adipisicing. Exercitation in laboris mollit anim. Consectetur adipisicing aliqua quis dolor nisi occaecat velit aliquip labore voluptate aute. Laboris nisi nulla consequat et ullamco nostrud amet qui culpa labore.\r\nEa exercitation in nisi commodo. Elit tempor cillum quis reprehenderit irure incididunt velit aliqua et enim consequat. Nostrud est ullamco cupidatat consequat proident ipsum duis occaecat reprehenderit. Nulla sint consequat laborum amet labore reprehenderit veniam adipisicing veniam nisi officia ex. Laboris non deserunt occaecat ullamco ea qui. Eiusmod exercitation ut irure excepteur. In cillum magna ex cupidatat nisi consequat.\r\nConsequat ut minim esse sit in magna minim sunt. Aliqua occaecat sint ullamco culpa cupidatat laboris proident aliquip aliqua et ex ea labore voluptate. Ut occaecat Lorem eu deserunt minim proident excepteur commodo exercitation veniam non.\r\nIn ullamco ex nulla irure id aliqua dolor fugiat commodo qui pariatur culpa est velit. Tempor proident aliquip sit quis velit non cupidatat pariatur laborum esse enim Lorem ea consectetur. Nisi mollit culpa ut qui dolor tempor proident consectetur amet sunt eu ipsum adipisicing. Deserunt incididunt reprehenderit minim esse.\r\nAliqua voluptate culpa nisi reprehenderit deserunt voluptate amet irure laborum labore aute Lorem commodo est. Eiusmod sit exercitation reprehenderit irure ad ea. Sint aliqua amet commodo cillum sit adipisicing fugiat fugiat ea aliqua qui consectetur.\r\nUt et reprehenderit labore minim sunt dolore adipisicing sit. Labore cillum id qui minim id qui officia nostrud. Id et labore laborum pariatur ea fugiat sit deserunt non nulla in sunt commodo. Esse minim ipsum nostrud proident veniam Lorem cupidatat. Cupidatat Lorem esse culpa sint ea fugiat dolore proident in exercitation mollit esse in adipisicing. Consectetur labore do reprehenderit aute sunt ad ex esse magna excepteur occaecat id sint.\r\n",
+          "rating": 17,
+          "language": "Eng",
+          "difficulty": "Expert",
+          "type": "Lecture",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e55a26644c69a5f7a",
+          "trainers": [
+              {
+                  "id": "5b66c10e0abd081917f1cd0e",
+                  "name": "Ewing Clemons",
+                  "avatar": "https://randomuser.me/api/portraits/women/43.jpg"
+              },
+              {
+                  "id": "5b66c10ee59c9b7e98988c37",
+                  "name": "Melendez Sims",
+                  "avatar": "https://randomuser.me/api/portraits/men/52.jpg"
+              },
+              {
+                  "id": "5b66c10ea0b81de5186f95f0",
+                  "name": "Jimmie Gates",
+                  "avatar": "https://randomuser.me/api/portraits/men/69.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=5",
+          "date": "2018-12-13T04:26:50",
+          "duration": 438,
+          "title": "enim fugiat tempor commodo",
+          "description": "Fugiat ex enim est est occaecat amet ullamco duis dolore eu quis excepteur irure. Ullamco veniam aliquip voluptate quis dolore excepteur proident nulla amet nulla aliqua enim exercitation aliquip. Non commodo qui commodo sunt ipsum labore labore. Laborum sit ut pariatur nisi voluptate elit irure cillum proident ut ullamco. Ullamco do veniam tempor elit dolor ut qui quis.\r\nDolor dolore aute sit aute cillum dolor in minim officia adipisicing elit consectetur velit amet. Nisi ut qui culpa nulla consequat nostrud. Culpa anim voluptate ipsum enim laborum. Consequat anim velit ad sunt mollit cillum enim culpa pariatur esse. Aliqua cupidatat occaecat exercitation cillum aliquip dolor voluptate do et minim. Consequat fugiat id do mollit veniam consectetur est id.\r\nPariatur elit amet irure irure sint irure et. Amet dolore dolore elit non deserunt amet ex Lorem aute nostrud eiusmod aliqua. Nulla nisi non reprehenderit aliqua amet elit in sint aliquip veniam commodo. Pariatur duis ex proident incididunt est sunt culpa dolor consequat eu id quis consectetur eu. Non reprehenderit consequat enim amet culpa sit sit commodo sunt. Incididunt cillum aliqua ipsum ut veniam cillum dolor exercitation est nisi. Deserunt in duis culpa occaecat ipsum cillum Lorem et dolore reprehenderit ad sint officia magna.\r\nId ipsum culpa ullamco incididunt laboris non veniam minim nulla sunt irure veniam Lorem incididunt. Consequat Lorem nulla cillum tempor nostrud nisi. Qui cillum voluptate cillum aliqua nostrud excepteur non cupidatat ad voluptate proident aliquip. Qui voluptate consectetur quis dolor aute occaecat. Adipisicing ullamco Lorem veniam et dolore consequat deserunt.\r\nSint ullamco ea proident est laboris enim magna aute ullamco cupidatat qui est laboris id. Mollit sunt reprehenderit dolore et elit eiusmod dolor. Adipisicing mollit anim qui ut proident ullamco anim aliqua mollit aliquip. Aliquip ullamco id velit duis. Officia cillum proident velit nostrud amet nisi consectetur ipsum aute sunt laboris non. Sit reprehenderit laborum nisi occaecat deserunt pariatur sit. Duis tempor ad occaecat nostrud veniam Lorem sint enim ullamco in cillum.\r\nId cillum laborum quis laborum esse dolor eiusmod laboris. Veniam reprehenderit laborum amet Lorem sit dolore eu ut et enim incididunt. Esse pariatur nulla esse sunt aliquip laborum amet sit do aute eu aliquip laborum cupidatat. In aliqua irure aute non excepteur in nostrud pariatur nulla ut. Id aliqua esse cupidatat ex velit voluptate excepteur ex et.\r\nFugiat nostrud ex enim enim sit aliqua anim amet voluptate sit et dolore non elit. Velit aute exercitation eiusmod ad in eiusmod adipisicing id. Dolor aute ex elit tempor velit incididunt tempor dolor qui. Do aliquip incididunt cupidatat nisi ut aute veniam nostrud dolore amet ipsum laborum reprehenderit cupidatat. Cupidatat id in eiusmod deserunt.\r\n",
+          "rating": 13,
+          "language": "Rus",
+          "difficulty": "Intermediate",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10eda41ae1a0420da11",
+          "trainers": [
+              {
+                  "id": "5b66c10e20793fdac1204e7e",
+                  "name": "Concepcion Shaw",
+                  "avatar": "https://randomuser.me/api/portraits/men/6.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=20",
+          "date": "2018-12-01T09:59:10",
+          "duration": 191,
+          "title": "elit Lorem et veniam fugiat qui proident ad do magna",
+          "description": "Proident aute nisi voluptate laboris enim ex ipsum. Ad mollit ea nisi ea est laborum. Anim adipisicing aliquip pariatur sunt nostrud excepteur cillum eu minim ullamco est mollit.\r\nConsectetur laborum duis velit sit nisi do est reprehenderit ad. Enim consectetur laborum laborum irure. Deserunt excepteur reprehenderit esse in proident excepteur occaecat. Amet ex aliqua id qui in. Officia pariatur ad aute do velit ut minim pariatur. Eiusmod et reprehenderit elit amet in occaecat est laboris. Laborum enim pariatur qui aliqua sint.\r\nIn dolor minim laborum proident anim fugiat culpa minim laboris do. Irure aliquip nulla quis quis sunt eiusmod reprehenderit. Enim mollit Lorem consequat Lorem non aute reprehenderit reprehenderit sint sunt. Ad sint labore minim est reprehenderit non mollit culpa. Exercitation eiusmod anim nulla excepteur minim do mollit enim duis.\r\nNon ut ut pariatur nisi duis nisi commodo commodo nisi. Id elit ex duis reprehenderit proident labore cillum. Non et incididunt consequat anim nulla nisi ut aute velit officia consequat. Proident ea sunt id et commodo nisi sunt ipsum ea consequat laboris ullamco consequat exercitation. Ipsum magna voluptate amet magna reprehenderit enim. Do dolore aliquip veniam eu ipsum. Fugiat ad reprehenderit commodo cillum irure.\r\nVeniam occaecat irure occaecat eu aute ut proident qui. Dolor aute ipsum dolor sit. Ad elit ut fugiat anim anim aliqua deserunt fugiat velit eu proident occaecat dolor. Labore amet labore dolore nisi in eiusmod pariatur aute consequat deserunt amet reprehenderit. Magna consectetur nulla officia nulla ut. Mollit dolor aliqua cupidatat aliqua est fugiat. Laboris pariatur nulla exercitation duis adipisicing sit.\r\nExcepteur nisi reprehenderit amet ea sint. Sunt minim et ullamco cillum proident. Do sit laborum velit nisi fugiat commodo anim qui eiusmod. Dolor velit duis ut adipisicing amet esse aliqua excepteur sit. Nisi consectetur ut fugiat incididunt officia elit ullamco tempor do amet do id. Ut irure elit ut esse cillum. Elit commodo velit nulla irure.\r\nElit esse deserunt irure consectetur voluptate id ipsum minim id. Pariatur nisi exercitation excepteur ipsum do labore exercitation consectetur commodo laborum. Sunt excepteur exercitation tempor eiusmod do tempor ea ex elit sit duis. Ipsum reprehenderit ex in magna aliquip ad officia est est culpa minim aliquip minim commodo. Do excepteur cupidatat elit anim in.\r\nIn consequat commodo non labore ullamco excepteur consectetur veniam incididunt officia ad laboris. Velit fugiat qui quis mollit ad sit ex sit irure. Sunt nisi et in commodo nostrud do duis fugiat ad.\r\n",
+          "rating": 22,
+          "language": "Esp",
+          "difficulty": "Expert",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e75824fde1b55d17b",
+          "trainers": [
+              {
+                  "id": "5b66c10e9077566edac3c871",
+                  "name": "Barker Bentley",
+                  "avatar": "https://randomuser.me/api/portraits/women/60.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=12",
+          "date": "2018-08-31T09:32:37",
+          "duration": 460,
+          "title": "occaecat occaecat proident",
+          "description": "Eiusmod sint consequat aliquip sint ea. Deserunt ad cillum in nostrud sunt non laboris velit est. Laboris deserunt voluptate et aute esse non sunt amet do laborum. Nostrud cillum sint cillum aliquip culpa Lorem nostrud amet Lorem anim dolore.\r\nReprehenderit sit reprehenderit laboris sint nisi. Deserunt ipsum ad ad adipisicing laboris enim sit duis minim. Velit adipisicing veniam incididunt esse. Nulla pariatur nulla magna sunt quis fugiat. Incididunt aliquip nulla eu aliqua commodo aliquip mollit. Excepteur elit consequat irure anim pariatur fugiat in. Lorem ut commodo voluptate aute consectetur deserunt commodo.\r\nProident voluptate sit et amet dolore velit cillum aute duis sit in voluptate do et. Reprehenderit magna elit quis enim in aute exercitation occaecat aliquip tempor veniam nisi. Consequat magna pariatur ullamco nisi velit do ea ea cupidatat sit. Laboris incididunt cillum culpa cupidatat. Consectetur sit incididunt ad dolor esse amet elit adipisicing cupidatat eu labore velit. Qui consequat est pariatur commodo eu ad dolore.\r\nAdipisicing laborum pariatur id laboris labore consectetur magna fugiat ad aliquip in labore. Proident eu labore esse irure esse voluptate deserunt deserunt ullamco. Adipisicing dolor reprehenderit sint cillum et occaecat consequat eu commodo Lorem cupidatat. Quis veniam officia commodo officia laboris enim irure veniam fugiat. Deserunt enim cupidatat minim irure sit veniam dolore ex commodo.\r\nAnim irure adipisicing Lorem elit cupidatat irure sint eu. Nisi culpa irure fugiat deserunt irure sunt ea irure reprehenderit exercitation consequat eiusmod eu. Ad esse irure aliquip elit ipsum dolor culpa irure occaecat reprehenderit. Officia nostrud esse dolore amet qui. Ullamco in excepteur velit qui mollit proident officia in.\r\nCupidatat nisi quis dolor aliqua ipsum sit exercitation sit anim voluptate Lorem dolore magna. Reprehenderit ut id labore Lorem adipisicing ut pariatur esse occaecat quis velit cillum. Eu consectetur deserunt eu elit. Minim cupidatat officia sit cillum magna. Nostrud irure in ullamco ut ullamco aliquip qui id est ex fugiat cillum commodo ex. Ex aliqua tempor ullamco labore voluptate voluptate incididunt eiusmod. Consequat minim minim deserunt ut.\r\nAd tempor occaecat velit mollit aute pariatur in est amet. Ipsum excepteur pariatur sit esse consequat. Ullamco consectetur consequat cillum consequat qui laboris elit proident consequat laborum exercitation excepteur. Commodo commodo eu non consequat consequat id duis Lorem labore dolore aute. Sunt consectetur reprehenderit mollit duis voluptate incididunt fugiat ex minim veniam sit.\r\nLabore esse officia irure fugiat ut aliquip tempor minim enim pariatur laboris dolor ut mollit. Reprehenderit amet deserunt aliquip nostrud quis ea nisi elit consequat. Reprehenderit sunt nostrud veniam dolore consectetur dolore. Adipisicing aliquip excepteur minim officia exercitation labore laboris qui qui et commodo irure deserunt. Sit officia nostrud in consectetur velit ullamco.\r\nLorem eu laboris incididunt exercitation fugiat voluptate culpa adipisicing in dolore irure enim anim quis. Duis nisi exercitation commodo velit anim fugiat est Lorem pariatur enim mollit. Cupidatat dolor aute culpa voluptate elit aliqua ut do laboris in excepteur. Consequat consectetur amet nulla magna sit dolor consequat id. Fugiat culpa non consectetur proident esse incididunt amet esse.\r\nPariatur deserunt officia tempor ullamco fugiat ad. Culpa amet velit eu reprehenderit dolore aliquip. Deserunt aliqua non sunt eu mollit anim pariatur deserunt cupidatat adipisicing tempor ullamco. Labore irure culpa excepteur ullamco sit nostrud elit adipisicing cupidatat laboris Lorem esse minim.\r\nQuis sit ut quis occaecat eu occaecat aute nisi sunt aute laboris voluptate dolore sint. Aute in et id qui exercitation nulla excepteur amet Lorem id eu consequat fugiat. Exercitation consectetur sint nisi tempor cupidatat eiusmod esse ex adipisicing exercitation. Lorem enim nulla in dolor do aliquip minim est.\r\n",
+          "rating": 34,
+          "language": "Rus",
+          "difficulty": "Expert",
+          "type": "Lecture",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ee7d5928a8eab2123",
+          "trainers": [
+              {
+                  "id": "5b66c10e4626e41e2669055e",
+                  "name": "Sheri Marsh",
+                  "avatar": "https://randomuser.me/api/portraits/men/55.jpg"
+              },
+              {
+                  "id": "5b66c10e9d8d8d2843439bc2",
+                  "name": "Lacey Figueroa",
+                  "avatar": "https://randomuser.me/api/portraits/men/65.jpg"
+              },
+              {
+                  "id": "5b66c10e4662f63bdbe7f20d",
+                  "name": "Beryl Donaldson",
+                  "avatar": "https://randomuser.me/api/portraits/women/27.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=17",
+          "date": "2018-09-12T06:20:49",
+          "duration": 192,
+          "title": "sit voluptate laborum enim est",
+          "description": "Enim aliqua nostrud nulla ad qui cupidatat cillum pariatur dolor ipsum. Aute fugiat dolore sit ex adipisicing sunt cillum aute ullamco Lorem excepteur. Nulla occaecat sit in nisi. Sit incididunt voluptate voluptate officia dolor laborum sint. Sunt est nisi cupidatat quis commodo qui reprehenderit aute minim Lorem cupidatat qui deserunt incididunt.\r\nAmet mollit aliqua nulla consectetur consequat officia ex aute. Aliqua irure ipsum ex nostrud aute laboris do eiusmod. Aliquip id enim sit proident proident eiusmod elit voluptate ex anim cillum culpa. Culpa reprehenderit ad cupidatat ex laborum Lorem irure deserunt nulla aliqua magna velit occaecat est.\r\nIpsum minim ipsum incididunt minim amet labore. Excepteur ut in non ullamco aute quis voluptate id eiusmod duis mollit in. Fugiat consequat anim reprehenderit excepteur proident magna laborum laboris. Minim eiusmod sit commodo ullamco quis ipsum. Non magna sint ut consequat elit ex exercitation sint.\r\nSit reprehenderit commodo aliquip commodo pariatur exercitation in labore tempor sunt eiusmod aliqua. Occaecat commodo laboris qui do anim. Mollit nostrud ea sunt eiusmod non.\r\nAute culpa exercitation do elit consequat laborum velit culpa amet eu excepteur magna sunt aliqua. Nisi et pariatur tempor eu ipsum incididunt excepteur enim minim duis. Occaecat magna tempor do consequat nostrud. Aliqua eu adipisicing proident adipisicing ex voluptate dolor. Labore dolor cillum adipisicing magna ut ex ut elit. Cillum aliqua Lorem Lorem nisi exercitation minim nostrud ipsum magna consectetur. Commodo sunt qui duis cillum laborum in excepteur laboris.\r\nEx ad minim excepteur anim veniam dolore sit nulla aliquip proident dolor qui nulla. Labore eu est voluptate et Lorem fugiat mollit in incididunt. Mollit proident labore mollit laboris duis occaecat fugiat nostrud. Occaecat eiusmod culpa ex proident est consequat velit ea aliquip aute aliquip. Fugiat consequat ea eiusmod mollit ea minim excepteur.\r\nCulpa labore magna veniam irure incididunt ullamco amet officia eu tempor elit ad. Aliquip veniam et irure cupidatat nulla in ex et. Laborum occaecat exercitation tempor amet id nulla anim fugiat. Pariatur et quis aliquip fugiat adipisicing officia dolor in sit est duis. Labore culpa eiusmod reprehenderit elit do Lorem consectetur incididunt esse occaecat proident. Sunt aute aute in dolore anim et magna voluptate ex dolor et laboris aute. Ad quis proident dolor cupidatat qui mollit ipsum non ex laborum quis nostrud.\r\nCupidatat cupidatat eiusmod Lorem deserunt dolor fugiat in quis nostrud nostrud veniam amet nostrud. Nostrud qui nulla labore ad laborum anim laboris anim dolor. Occaecat consequat exercitation est aliquip amet eiusmod amet pariatur commodo ad. Culpa dolore dolor exercitation veniam ea Lorem sit Lorem occaecat ullamco enim dolor.\r\nSint labore dolor culpa consectetur culpa exercitation. Duis laborum magna labore ut incididunt eiusmod ad culpa mollit. Ut consectetur laboris culpa deserunt aliquip minim. Exercitation voluptate culpa sunt anim officia ad.\r\nMinim nulla velit ad do. Consectetur et eu id voluptate laboris sint velit. Mollit proident ad dolore in aliquip nostrud deserunt et laborum veniam id aliquip ipsum. Laborum ullamco veniam incididunt elit incididunt esse proident in.\r\nElit adipisicing ea duis deserunt amet est nisi veniam amet officia pariatur. Officia qui excepteur eu anim officia veniam quis et excepteur ut ut enim elit. Incididunt non aliquip magna dolor culpa quis proident sint culpa nisi exercitation. Quis fugiat in velit officia nulla adipisicing enim minim aute irure. Ullamco est nisi labore esse aute et culpa. Aute anim qui reprehenderit amet.\r\nAmet est aliqua nostrud aliquip ullamco aute labore do ullamco. Culpa ex aute sunt laboris occaecat voluptate nostrud consectetur laboris irure minim. Deserunt quis tempor exercitation anim enim Lorem ad reprehenderit non incididunt veniam nisi adipisicing. Proident aliqua cillum Lorem excepteur tempor consequat esse deserunt ea deserunt. Deserunt ea voluptate nisi sunt. Esse proident incididunt Lorem fugiat esse exercitation velit aliqua velit aliquip.\r\nAnim anim non exercitation esse sit non exercitation labore. Aliqua voluptate nisi mollit ex ex eu sit ea ea sit pariatur labore. Fugiat sint deserunt enim quis veniam officia commodo. Labore consequat culpa ex pariatur laborum eu.\r\n",
+          "rating": 29,
+          "language": "Fra",
+          "difficulty": "Expert",
+          "type": "Video course",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ed1452ae5a85034cd",
+          "trainers": [
+              {
+                  "id": "5b66c10e00aff27964b84b6b",
+                  "name": "Tommie Young",
+                  "avatar": "https://randomuser.me/api/portraits/men/32.jpg"
+              },
+              {
+                  "id": "5b66c10e7a1a24d65c2e079c",
+                  "name": "Bradshaw Riggs",
+                  "avatar": "https://randomuser.me/api/portraits/men/28.jpg"
+              },
+              {
+                  "id": "5b66c10edf9f452ca0db1db1",
+                  "name": "Bessie Macdonald",
+                  "avatar": "https://randomuser.me/api/portraits/women/20.jpg"
+              },
+              {
+                  "id": "5b66c10e30a2567f8391534c",
+                  "name": "Marva Valentine",
+                  "avatar": "https://randomuser.me/api/portraits/men/59.jpg"
+              },
+              {
+                  "id": "5b66c10ec950e903c60a7d71",
+                  "name": "Alvarado Kirk",
+                  "avatar": "https://randomuser.me/api/portraits/women/40.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=11",
+          "date": "2018-10-03T11:24:21",
+          "duration": 492,
+          "title": "reprehenderit irure dolore",
+          "description": "In esse voluptate do aute exercitation magna ea exercitation consequat amet nulla consectetur esse in. Adipisicing est non tempor nulla sint eiusmod voluptate dolor deserunt. Nisi elit non nisi laboris amet laborum culpa aute ullamco laborum. Lorem cillum minim ad nostrud ipsum sit magna do excepteur in non anim. Nisi dolor enim laborum laborum fugiat. Ad cillum in sit sit proident in anim magna. Incididunt laborum amet aliquip minim adipisicing nisi incididunt dolor.\r\nTempor sunt non cupidatat deserunt anim enim qui cupidatat sit. Ipsum nulla anim exercitation irure eu qui minim laborum fugiat aute. Ullamco dolor veniam irure eiusmod enim incididunt irure. Lorem excepteur non in mollit fugiat fugiat.\r\nVelit commodo fugiat nulla qui ullamco occaecat nulla voluptate magna. Nulla nulla elit dolore proident quis eiusmod sunt. Ad aliquip velit et officia proident.\r\nEt fugiat pariatur nisi et cupidatat enim duis irure magna est incididunt incididunt culpa. Voluptate elit dolor excepteur aliquip commodo irure ea ad irure esse aute. Irure cupidatat adipisicing qui eiusmod id laborum deserunt laborum deserunt labore amet duis duis dolor.\r\nAute magna eu aliquip pariatur ad fugiat officia sint in commodo adipisicing. Minim in ipsum cillum occaecat ad. Quis pariatur id enim velit ullamco ut ut aliqua ad pariatur sit. Minim qui occaecat minim magna. Tempor aliquip quis minim do tempor adipisicing ex quis sit. Dolore adipisicing in deserunt magna officia ut duis consequat dolor aliquip.\r\nQui cupidatat incididunt aliquip elit pariatur elit commodo fugiat eiusmod dolore fugiat incididunt culpa. Ullamco nostrud Lorem commodo labore dolor sit qui dolor amet commodo occaecat. Magna cillum aliqua ipsum non reprehenderit pariatur ipsum commodo. Ea veniam est ullamco laborum ex eu laborum. Sunt eiusmod magna eu in aliquip commodo cupidatat elit ex. Ad ad cillum magna tempor cupidatat irure sunt culpa in culpa.\r\nExercitation in laborum sit amet commodo et nostrud sit aliqua. Officia anim cillum quis cillum consequat dolore esse ex magna cupidatat do ad magna consectetur. Ut voluptate officia sit pariatur eiusmod ex aliquip cillum exercitation in deserunt officia nisi ullamco. Dolore est sit consequat cillum in. Nulla nulla excepteur magna aliquip laborum aute est cupidatat.\r\n",
+          "rating": 24,
+          "language": "Fra",
+          "difficulty": "Novice",
+          "type": "Seminar",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10eb7bd965cfdefdcfb",
+          "trainers": [
+              {
+                  "id": "5b66c10e45d2c546133129f8",
+                  "name": "Wanda Kim",
+                  "avatar": "https://randomuser.me/api/portraits/women/56.jpg"
+              },
+              {
+                  "id": "5b66c10e3e1c0995dda951d4",
+                  "name": "Colette Small",
+                  "avatar": "https://randomuser.me/api/portraits/men/47.jpg"
+              },
+              {
+                  "id": "5b66c10efdd0e9c5108f4099",
+                  "name": "Vicky Cline",
+                  "avatar": "https://randomuser.me/api/portraits/men/23.jpg"
+              },
+              {
+                  "id": "5b66c10ee0a5def4515dcad1",
+                  "name": "Vonda Holloway",
+                  "avatar": "https://randomuser.me/api/portraits/men/53.jpg"
+              },
+              {
+                  "id": "5b66c10e6e080064fd817af2",
+                  "name": "Francis Burgess",
+                  "avatar": "https://randomuser.me/api/portraits/men/5.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=12",
+          "date": "2018-10-30T05:43:02",
+          "duration": 478,
+          "title": "amet consectetur occaecat consequat quis ullamco ea ea non",
+          "description": "Labore voluptate do esse sunt est incididunt enim eiusmod ullamco excepteur veniam reprehenderit. Veniam cupidatat ex veniam consectetur aute. Deserunt non sit laboris exercitation proident adipisicing adipisicing adipisicing fugiat quis. Laboris aliqua commodo ea magna esse labore amet cillum laboris.\r\nNostrud pariatur ipsum incididunt sint cillum nulla elit nisi dolore sunt elit occaecat. In irure do laboris mollit nulla. Esse commodo duis cillum ex elit cillum ea enim occaecat Lorem commodo non non. Cupidatat velit commodo laborum ullamco proident laboris ipsum elit sunt non veniam do.\r\nIncididunt consequat consequat ullamco quis. Sit reprehenderit deserunt deserunt est dolore velit pariatur exercitation minim consequat. Commodo commodo amet ut ea tempor tempor laboris reprehenderit voluptate. Eu tempor aute ad cupidatat quis elit eu. Quis est ea laborum do dolor velit culpa laboris. Lorem ullamco deserunt consectetur consectetur est incididunt aliquip nulla. Dolore esse anim voluptate culpa ea officia velit voluptate ipsum ipsum cupidatat sit et adipisicing.\r\nPariatur reprehenderit consequat excepteur magna laborum in proident proident. Duis quis sunt qui aliqua commodo id tempor officia adipisicing amet ea id. Ad ex nisi sit mollit officia duis irure minim. Nisi laboris esse adipisicing sunt aliqua culpa ex occaecat elit aliqua consectetur et. Ea cillum enim in aliquip irure et.\r\n",
+          "rating": 22,
+          "language": "Esp",
+          "difficulty": "Novice",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e57a869b727937a9c",
+          "trainers": [
+              {
+                  "id": "5b66c10e6f2faac73023175a",
+                  "name": "Isabel Bradford",
+                  "avatar": "https://randomuser.me/api/portraits/men/30.jpg"
+              },
+              {
+                  "id": "5b66c10e8e9b0aea5aea86c1",
+                  "name": "Frazier Sharp",
+                  "avatar": "https://randomuser.me/api/portraits/men/13.jpg"
+              },
+              {
+                  "id": "5b66c10e454b4416907aa87f",
+                  "name": "Christi Flowers",
+                  "avatar": "https://randomuser.me/api/portraits/women/49.jpg"
+              },
+              {
+                  "id": "5b66c10eb1b10611b8522a1b",
+                  "name": "Mills Waller",
+                  "avatar": "https://randomuser.me/api/portraits/women/58.jpg"
+              },
+              {
+                  "id": "5b66c10e540b3edf2008031e",
+                  "name": "Stephens Anthony",
+                  "avatar": "https://randomuser.me/api/portraits/men/25.jpg"
+              },
+              {
+                  "id": "5b66c10e5630ff84222e6947",
+                  "name": "Shana Le",
+                  "avatar": "https://randomuser.me/api/portraits/women/24.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=2",
+          "date": "2018-08-07T10:18:25",
+          "duration": 54,
+          "title": "laborum et culpa irure enim ea eu velit ipsum dolor",
+          "description": "Magna dolor mollit ullamco duis eu voluptate. Enim nulla eu commodo dolore commodo culpa eu est eiusmod. Consequat irure elit dolore ut voluptate cillum. Aliquip esse minim tempor dolor aliqua occaecat consequat cillum.\r\nIncididunt labore qui cupidatat consequat tempor pariatur fugiat fugiat. Aliqua est laborum dolore culpa anim mollit est eu pariatur sunt dolore deserunt adipisicing ut. Dolore culpa pariatur proident officia Lorem culpa ut elit. Mollit fugiat reprehenderit duis ut irure reprehenderit exercitation commodo amet. Consectetur ipsum veniam ex consequat aliqua incididunt culpa amet mollit ea. Deserunt qui nisi excepteur enim. Veniam do mollit Lorem dolore velit ad duis.\r\nMagna et ad ea exercitation consequat fugiat ullamco. Laborum cupidatat aute magna voluptate. Laboris in labore cupidatat ea aliqua occaecat voluptate voluptate. Veniam minim consectetur culpa labore. Ipsum id magna sint duis. Irure sit aute ea cillum. Laborum nulla et et enim aute fugiat ullamco consectetur ad labore.\r\nUt cupidatat sunt mollit quis aliquip. Mollit officia amet sint nostrud dolor incididunt sint culpa exercitation et mollit. Ullamco excepteur ipsum proident dolor ullamco aliquip velit nisi mollit mollit fugiat cupidatat aliqua excepteur. Aliquip fugiat ipsum nostrud magna duis magna et cillum fugiat commodo pariatur aute ipsum commodo. Lorem velit excepteur ut cupidatat et.\r\nUllamco ea tempor commodo reprehenderit ex. Anim nulla cillum magna exercitation amet do ipsum mollit. Irure ad in laboris dolore enim enim reprehenderit ullamco qui.\r\nAmet sunt tempor consequat et consectetur proident cupidatat sunt anim dolore dolor reprehenderit tempor. Dolore tempor duis eiusmod sint officia amet dolor qui magna consequat. Tempor commodo anim nisi enim ex consequat magna sint aliqua aute minim. Cillum amet laboris do eu eu qui dolor mollit quis labore in. Occaecat adipisicing laboris nulla sunt incididunt. Et commodo incididunt laboris anim cillum est pariatur id.\r\nSunt tempor officia pariatur minim tempor est nulla veniam. Id nulla eu velit pariatur qui dolor. Ea sit culpa voluptate esse. Et aliquip eu adipisicing ad ad pariatur magna sint culpa. Ea excepteur commodo veniam Lorem magna quis.\r\nElit exercitation proident ipsum in sint. Laboris eu reprehenderit eu et sunt consequat. Ipsum enim tempor ea occaecat voluptate laboris sint esse. Labore eiusmod tempor elit amet amet dolor voluptate magna commodo non consequat pariatur ullamco. Officia nulla commodo voluptate fugiat et ea est aute commodo deserunt culpa nisi enim occaecat. Non est nisi exercitation sint sunt esse aute. Mollit do laboris quis dolor duis proident commodo esse anim sit.\r\nCillum consectetur labore commodo aliquip. Eiusmod in dolore pariatur ullamco nostrud voluptate qui do voluptate voluptate ipsum. Sunt laboris ea amet consectetur proident dolor sunt aliqua ipsum quis. Minim aliquip in dolore cupidatat ullamco aliqua elit incididunt aute tempor mollit magna sit. Exercitation nulla exercitation dolore enim aliqua voluptate magna enim mollit in sint excepteur in.\r\nOfficia enim occaecat consectetur officia tempor consectetur culpa consequat aliqua id. Nostrud laboris cupidatat fugiat adipisicing veniam incididunt esse. Amet id esse quis cillum. Anim consectetur ipsum ex aliqua sunt amet laborum. Tempor Lorem Lorem est sit voluptate consequat culpa Lorem proident. Deserunt in occaecat sunt amet.\r\nEt officia irure eiusmod proident voluptate nulla sint excepteur sint aute reprehenderit. Ipsum nostrud id velit occaecat voluptate sunt sint aliqua commodo aliquip eu. Esse laborum id magna labore laboris proident dolor. Cupidatat occaecat non do qui non ex consequat id culpa mollit. Dolor Lorem culpa ex est proident magna ea sunt laborum nisi elit dolore nostrud. Qui culpa velit et mollit non nulla nisi eiusmod eiusmod duis.\r\nOccaecat amet aliqua elit fugiat in sit pariatur Lorem laboris Lorem anim sint. Eiusmod sit dolore mollit consectetur excepteur consectetur est sunt laborum nostrud deserunt. Labore tempor ex qui in ad Lorem velit enim officia ex. Adipisicing amet sint commodo dolore dolor. Non ipsum pariatur veniam consequat Lorem adipisicing culpa elit sunt cupidatat sunt voluptate laborum officia. Magna velit ea non ipsum aliqua sit.\r\nAnim ipsum ullamco ea nisi laboris anim. Qui proident enim in laboris in amet occaecat non dolore laboris elit. Tempor ad voluptate sit nulla aute incididunt adipisicing cillum in aute ut. Ea excepteur sint non in elit. Aliqua nulla culpa labore consequat laboris reprehenderit nisi commodo id culpa ut non est velit.\r\nDuis cupidatat culpa cillum tempor officia consectetur adipisicing cillum proident ullamco cupidatat ea velit incididunt. Quis ullamco incididunt cupidatat commodo aliquip ex exercitation amet laborum sunt non cupidatat laborum. Et ipsum magna sint ut.\r\n",
+          "rating": 14,
+          "language": "Pol",
+          "difficulty": "Expert",
+          "type": "Training",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e64d9be34fc00e71b",
+          "trainers": [
+              {
+                  "id": "5b66c10ec3a0cfdfcd3f72e7",
+                  "name": "Leann Cash",
+                  "avatar": "https://randomuser.me/api/portraits/women/61.jpg"
+              },
+              {
+                  "id": "5b66c10e2890d856c31b31af",
+                  "name": "Craig Bowman",
+                  "avatar": "https://randomuser.me/api/portraits/women/51.jpg"
+              },
+              {
+                  "id": "5b66c10e6b4ff815122225c5",
+                  "name": "Hannah Schwartz",
+                  "avatar": "https://randomuser.me/api/portraits/women/63.jpg"
+              },
+              {
+                  "id": "5b66c10ea3b7abf0ef2b89e2",
+                  "name": "Neal Bright",
+                  "avatar": "https://randomuser.me/api/portraits/men/53.jpg"
+              },
+              {
+                  "id": "5b66c10eb4f75541c24d1fb8",
+                  "name": "Wilder Battle",
+                  "avatar": "https://randomuser.me/api/portraits/women/43.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=20",
+          "date": "2018-08-11T11:13:36",
+          "duration": 448,
+          "title": "esse adipisicing laborum",
+          "description": "Irure ipsum eiusmod ex consequat Lorem. Labore et tempor est nisi qui in anim ex sunt cupidatat voluptate ipsum. Magna nulla enim aliquip eiusmod duis aliquip.\r\nSunt duis ullamco eiusmod sit voluptate. Laborum fugiat laboris ex deserunt consequat aliqua consectetur sint excepteur ea Lorem in Lorem. Ea commodo Lorem proident cillum reprehenderit dolor velit. Incididunt duis deserunt et cillum pariatur labore in excepteur deserunt reprehenderit quis eu fugiat mollit. Amet dolore esse ex exercitation. Ullamco eiusmod ea reprehenderit sunt. Non veniam excepteur ut esse dolor amet elit eu consectetur ea ipsum reprehenderit.\r\nNulla sit Lorem deserunt ut consectetur do nisi duis veniam fugiat. Nostrud qui duis anim id consectetur ea labore labore do. Culpa irure esse minim amet fugiat in sit pariatur aliqua consequat deserunt. Do exercitation officia est adipisicing ea veniam do ut tempor consectetur laboris occaecat nisi sint.\r\nEa minim cillum laboris laborum duis et ex exercitation magna irure. Veniam aliquip fugiat officia occaecat ipsum cillum ipsum adipisicing ullamco. Duis reprehenderit esse sint reprehenderit nulla elit. Ullamco laboris in anim quis consequat voluptate sint esse id commodo aliqua.\r\nAliquip mollit sint officia quis officia anim nisi in nisi proident in minim eu consectetur. Minim anim consequat et irure nisi aliqua cillum nisi sunt dolore veniam. Ipsum anim veniam mollit velit ad deserunt amet non.\r\nTempor pariatur aute eiusmod nisi magna anim. Proident ullamco veniam magna id sunt velit nulla ea fugiat reprehenderit cillum occaecat. Amet enim ipsum commodo sit do consectetur pariatur minim aliqua. Irure enim anim est aliquip esse irure. Reprehenderit exercitation enim reprehenderit ut tempor excepteur. Adipisicing amet quis nostrud cupidatat eiusmod ut labore veniam ea sit ea. Amet adipisicing deserunt elit ex consectetur eu cillum ea deserunt id.\r\nDeserunt et amet magna fugiat pariatur eu exercitation pariatur pariatur eu reprehenderit labore. Qui duis est laborum sit eu exercitation anim voluptate dolor sunt occaecat culpa. Ea incididunt veniam occaecat labore anim nisi dolor pariatur commodo minim irure nisi. Tempor irure in non eu nisi deserunt esse.\r\nDuis ullamco enim reprehenderit consectetur minim est aliqua nulla voluptate nostrud duis exercitation fugiat esse. Lorem amet sunt do ad ut. Nulla esse deserunt duis aliqua nulla commodo adipisicing ad eu sint dolor enim voluptate ex. Cupidatat irure est ad et consectetur laborum.\r\nLabore magna aliquip excepteur ad pariatur dolor consequat elit eiusmod ea ut in voluptate. Tempor pariatur eu officia sint non aute. Et occaecat ad mollit esse dolor officia est.\r\nDuis fugiat laborum officia nisi mollit. Et exercitation culpa anim aliquip laborum irure aliqua Lorem adipisicing non nulla. Sit labore pariatur occaecat sit ex officia in. In incididunt sit in cupidatat aliqua proident officia exercitation ad anim do. Anim et aute ipsum reprehenderit occaecat tempor sunt aute consequat laboris nisi.\r\n",
+          "rating": 12,
+          "language": "Esp",
+          "difficulty": "Novice",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e16c3a8f306486ccc",
+          "trainers": [
+              {
+                  "id": "5b66c10e7eff1010ced998c5",
+                  "name": "Henderson Pacheco",
+                  "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
+              },
+              {
+                  "id": "5b66c10ebefecb25113ea5a0",
+                  "name": "Billie Fleming",
+                  "avatar": "https://randomuser.me/api/portraits/men/41.jpg"
+              },
+              {
+                  "id": "5b66c10e69195abd9353c831",
+                  "name": "Leslie Mcclain",
+                  "avatar": "https://randomuser.me/api/portraits/women/28.jpg"
+              },
+              {
+                  "id": "5b66c10efa524dc94535fde9",
+                  "name": "Agnes Donovan",
+                  "avatar": "https://randomuser.me/api/portraits/women/23.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=4",
+          "date": "2018-10-04T07:24:18",
+          "duration": 33,
+          "title": "dolor id proident sunt anim",
+          "description": "Incididunt aliqua aliqua ut id aliqua est minim reprehenderit nisi pariatur cupidatat cillum in consectetur. Occaecat ex dolore anim fugiat fugiat cillum irure eu. Pariatur qui velit nulla irure sint do deserunt ea amet ullamco consectetur sunt. Adipisicing eiusmod qui nulla ipsum labore est non consectetur in pariatur proident. Ut sit minim est enim deserunt exercitation ad est ex in laborum magna. Adipisicing in culpa magna et magna nostrud dolor. Id laboris ad laborum officia nulla deserunt pariatur voluptate deserunt.\r\nId aute esse cillum nostrud dolor commodo est excepteur excepteur duis et anim. Ea et deserunt officia magna ea aliqua nostrud dolor minim commodo nostrud sit. Voluptate commodo minim anim commodo magna velit ex veniam ipsum. Consectetur exercitation ea exercitation id Lorem enim occaecat Lorem do officia elit sit deserunt do.\r\nMinim labore incididunt in quis esse commodo aute et. Non enim est dolor sint sunt veniam tempor proident. Amet sint dolore cupidatat ad quis ea. Sunt quis ullamco sunt irure irure exercitation et qui fugiat.\r\nLabore anim anim eu eiusmod duis reprehenderit id id. Fugiat nisi enim est deserunt enim incididunt culpa ad irure incididunt amet exercitation enim nostrud. Anim laborum duis occaecat do reprehenderit cillum dolor. Ullamco aliquip ea proident ut ipsum consectetur sunt occaecat est pariatur aliqua irure nisi. Ullamco Lorem velit quis ipsum.\r\nQui anim non non esse dolor. Esse proident elit eu sit. Ad sunt culpa sunt mollit non sunt tempor deserunt ipsum. Officia laborum enim magna aute Lorem nisi occaecat voluptate deserunt id. Ea enim qui reprehenderit commodo enim. Ullamco elit commodo laboris reprehenderit magna velit deserunt sit.\r\nDolore cillum adipisicing laborum occaecat irure. Labore tempor nostrud consequat sit irure nulla amet eu laboris mollit amet qui non cupidatat. Reprehenderit anim occaecat pariatur anim sint mollit amet. Amet magna sint amet excepteur velit fugiat. Mollit proident fugiat deserunt ipsum quis. Voluptate minim officia culpa fugiat esse.\r\nLaborum non aliquip pariatur veniam est laborum. Deserunt amet id aute quis duis ipsum. Amet enim sunt sunt anim fugiat voluptate ex aute ad pariatur eu tempor deserunt.\r\nEa id cillum dolor exercitation laborum commodo exercitation. Ad reprehenderit commodo aliquip duis non quis sint sunt consectetur amet dolore dolor minim in. Tempor exercitation consectetur laboris voluptate incididunt laboris ex adipisicing consequat officia do.\r\n",
+          "rating": 39,
+          "language": "Rus",
+          "difficulty": "Novice",
+          "type": "Lecture",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e45d72d2d1107d0b7",
+          "trainers": [
+              {
+                  "id": "5b66c10e885a6df14b2a7aa8",
+                  "name": "Edwina Barton",
+                  "avatar": "https://randomuser.me/api/portraits/women/20.jpg"
+              },
+              {
+                  "id": "5b66c10e73753a8d0ba8b744",
+                  "name": "Sparks Hoover",
+                  "avatar": "https://randomuser.me/api/portraits/men/40.jpg"
+              },
+              {
+                  "id": "5b66c10e94bc7b2afad8f428",
+                  "name": "Huber Logan",
+                  "avatar": "https://randomuser.me/api/portraits/women/24.jpg"
+              },
+              {
+                  "id": "5b66c10ecbd01e62f02ba887",
+                  "name": "Molly Cruz",
+                  "avatar": "https://randomuser.me/api/portraits/women/34.jpg"
+              },
+              {
+                  "id": "5b66c10ebb6d8ac66968cdf4",
+                  "name": "Christa Park",
+                  "avatar": "https://randomuser.me/api/portraits/men/63.jpg"
+              },
+              {
+                  "id": "5b66c10eb2c09722ad5fb098",
+                  "name": "Fischer Arnold",
+                  "avatar": "https://randomuser.me/api/portraits/men/4.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=19",
+          "date": "2018-08-03T10:48:30",
+          "duration": 361,
+          "title": "ut ex exercitation magna",
+          "description": "Et ad enim commodo proident. Officia quis reprehenderit in culpa elit. Eu occaecat amet aliquip irure. Ea ut consectetur mollit cupidatat tempor. Duis ad et magna adipisicing cupidatat amet laboris est adipisicing aliqua consectetur et esse ex.\r\nNostrud qui ipsum id eu consequat occaecat laboris eiusmod incididunt exercitation cupidatat in. Proident dolore reprehenderit sunt veniam nisi aliqua quis ad Lorem quis. Nisi mollit consequat culpa id qui non dolor aute proident sunt laboris. Irure ullamco ullamco enim culpa Lorem exercitation tempor duis quis ex veniam occaecat excepteur labore. Ipsum enim et duis ad minim laboris fugiat aute commodo est sit aliqua.\r\nDolore aliquip nisi aliquip velit. Quis laborum ipsum irure et sit ad aliquip qui cillum. Sint eu ullamco amet labore consequat proident ipsum aliqua velit exercitation ut officia. Deserunt nulla sunt magna aute. Nulla adipisicing consequat qui elit eu duis occaecat proident quis dolor. In commodo cupidatat ullamco mollit mollit quis Lorem quis mollit anim. Lorem nostrud consequat proident excepteur nostrud.\r\nIn dolore deserunt veniam dolor reprehenderit nostrud eu minim. Velit reprehenderit veniam eu aliqua deserunt pariatur officia quis. Lorem eiusmod fugiat aliquip proident quis ea quis laboris. Reprehenderit velit tempor esse consequat Lorem ullamco consectetur nulla occaecat voluptate laborum eiusmod. Nulla ipsum occaecat commodo aute reprehenderit aliqua est voluptate eu cupidatat sint est. Aute incididunt cillum enim pariatur nulla elit anim minim et consectetur non velit deserunt exercitation. Incididunt officia irure dolor commodo proident consectetur velit aliqua dolore velit aute eu.\r\nFugiat elit irure excepteur dolor tempor esse aute et. Velit anim aliqua enim commodo officia exercitation mollit enim ullamco incididunt sint sunt. Nulla ut ullamco labore ut dolor excepteur enim adipisicing id. Mollit dolore consequat aliquip elit elit minim.\r\nAnim ea aliquip nostrud ullamco veniam adipisicing. Ut quis pariatur elit id est nostrud magna et. Aliqua ex velit tempor et laboris fugiat eiusmod enim. Amet nisi reprehenderit fugiat do do.\r\nAmet qui sit dolor laborum non irure eu dolor esse occaecat. Nulla dolore sit sunt qui in enim cillum duis commodo excepteur. Culpa esse ipsum laboris veniam culpa adipisicing duis incididunt velit duis sit sint. Tempor voluptate culpa dolore ad sint nostrud sunt laborum excepteur. Ad ea elit veniam aliquip. Dolore velit sunt reprehenderit voluptate cupidatat nostrud velit proident veniam fugiat amet. Veniam consectetur velit ullamco dolor.\r\nIpsum ea et commodo irure. Occaecat magna elit officia sit do. Occaecat proident dolore veniam consectetur consectetur eiusmod cillum. Aute nostrud aute exercitation culpa id qui incididunt sit reprehenderit laboris elit. Ipsum dolore dolor adipisicing in et voluptate nulla laboris ea nisi reprehenderit veniam ullamco culpa.\r\nEst irure adipisicing cillum cupidatat irure labore fugiat. Culpa ipsum officia consectetur magna consequat. Incididunt qui voluptate velit anim enim Lorem tempor laboris commodo aliqua qui. Occaecat Lorem excepteur est eu eiusmod eiusmod culpa ullamco dolore commodo excepteur.\r\nDeserunt do eiusmod officia enim sunt magna eu nulla non voluptate velit et eiusmod. Non quis mollit irure laborum fugiat eiusmod laborum sint in minim reprehenderit nulla officia qui. Consectetur aliquip cupidatat consequat pariatur adipisicing pariatur aliquip dolor incididunt. Non sunt fugiat enim deserunt aliqua adipisicing dolore.\r\nExercitation aliqua aliquip tempor qui proident. Ipsum est tempor eiusmod nulla eu reprehenderit esse anim officia magna ullamco velit. Do cupidatat deserunt ullamco anim est consectetur aute irure enim laboris est est mollit proident. Veniam duis fugiat qui sunt aute.\r\nReprehenderit cillum nostrud pariatur qui nulla adipisicing. Non aute esse dolor excepteur exercitation. Qui aliqua adipisicing cupidatat ex consequat reprehenderit esse ea exercitation ut. Enim aute do pariatur qui labore fugiat tempor adipisicing. Ipsum nulla proident eiusmod enim mollit exercitation occaecat culpa quis ex deserunt aliqua non pariatur. Excepteur magna mollit sunt officia tempor est incididunt tempor commodo enim.\r\nExercitation consequat cillum velit eu cillum nisi amet sunt consectetur quis mollit. Sit exercitation occaecat nisi consequat incididunt do proident do quis nulla pariatur. Elit nulla reprehenderit cillum nisi proident exercitation culpa irure nostrud est culpa officia dolor ex. Ea adipisicing est ipsum nulla. Eiusmod dolor esse ex dolor ut irure quis adipisicing enim tempor aute. Laborum proident ut amet voluptate ea exercitation Lorem dolore cillum sit do.\r\n",
+          "rating": 33,
+          "language": "Pol",
+          "difficulty": "Expert",
+          "type": "Seminar",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e5d934d127c5fd82b",
+          "trainers": [
+              {
+                  "id": "5b66c10e1f751b0ebaec23a5",
+                  "name": "Ester Waters",
+                  "avatar": "https://randomuser.me/api/portraits/men/57.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=2",
+          "date": "2018-08-09T12:43:55",
+          "duration": 315,
+          "title": "do cillum sint",
+          "description": "Duis adipisicing excepteur dolore enim aliqua Lorem mollit aliquip irure pariatur dolor ea officia. Exercitation non voluptate ut fugiat sit laborum. Ut reprehenderit excepteur Lorem magna. Minim qui ullamco magna culpa adipisicing. Labore Lorem non tempor consequat quis consequat ad incididunt officia eu nulla.\r\nCupidatat nisi mollit incididunt aliquip ipsum incididunt. Anim nisi ipsum laboris magna esse sit anim aliqua ea enim nulla commodo esse dolor. Eu id commodo fugiat ex proident voluptate anim non nulla excepteur magna. Anim do id est irure sit mollit minim ea.\r\nAliquip id anim excepteur labore sint magna Lorem commodo. Exercitation reprehenderit nisi qui tempor. Cillum esse labore pariatur ullamco in anim reprehenderit non duis eu. Ad nulla occaecat id enim do fugiat minim mollit veniam sunt consequat quis. Lorem aliqua esse ad dolor et ut pariatur aliquip cupidatat do sunt exercitation. Fugiat id aute quis do consequat proident do culpa cillum irure.\r\nVoluptate aliqua velit minim excepteur culpa sint elit et excepteur ex sit occaecat. Esse sint magna ex Lorem velit est nisi et proident. Pariatur occaecat eiusmod et commodo deserunt consectetur ut commodo dolor enim est consectetur ipsum. Anim veniam sunt pariatur consequat mollit nisi excepteur irure non veniam deserunt. Qui adipisicing reprehenderit anim officia consequat in. Est elit eiusmod Lorem velit adipisicing eiusmod est sit exercitation labore nulla.\r\nEu aliquip adipisicing commodo consequat aliqua occaecat culpa qui. In incididunt anim sint qui. Commodo cillum nostrud anim consectetur dolore qui irure irure.\r\nFugiat ullamco nisi id velit eiusmod excepteur ullamco eiusmod aliquip tempor. Cupidatat officia est exercitation aute cupidatat velit ex elit. Enim ad esse enim deserunt sint.\r\nUt eu pariatur officia commodo quis ut nulla. Est cupidatat laborum nisi officia sit veniam sunt reprehenderit. Fugiat ex magna occaecat reprehenderit officia incididunt aliqua ex ut ullamco cillum ad aliqua. Ullamco eiusmod in elit elit consectetur reprehenderit sit ullamco irure enim dolore veniam.\r\nConsectetur laborum aute sit duis consequat duis velit laborum in Lorem nostrud. Consectetur ipsum ad magna esse mollit eiusmod eiusmod culpa. Nostrud quis eiusmod et dolore. Sit occaecat veniam incididunt laboris labore elit cillum cupidatat Lorem cillum. Ad amet proident ea irure excepteur minim fugiat est. Aliqua duis quis id adipisicing nostrud. Duis tempor eu in pariatur id ea laboris nostrud est tempor anim quis.\r\nDuis sit cupidatat minim enim. Et anim aute consequat ullamco et laboris ad laborum Lorem aliqua nostrud. Dolor tempor et consectetur et. Fugiat nisi magna aliquip duis. Incididunt eu quis nostrud exercitation ad irure consectetur cillum laborum. Magna do proident aute eiusmod ipsum cupidatat elit in minim dolor fugiat adipisicing pariatur exercitation.\r\nNisi qui pariatur ullamco sit in officia labore non labore officia ipsum cupidatat id minim. Ea sit laboris cillum sit ullamco cillum occaecat commodo. Incididunt Lorem nisi sunt eu deserunt dolore occaecat laborum. Mollit culpa commodo velit dolore dolor cupidatat.\r\nDolor do ut reprehenderit fugiat est pariatur ipsum ullamco sit incididunt duis. Irure non dolor veniam nisi eu exercitation eiusmod. Culpa Lorem aute do Lorem labore anim ex voluptate dolore ex reprehenderit pariatur laboris fugiat.\r\nConsectetur pariatur sit officia adipisicing est dolor est duis consectetur nulla. Laboris magna qui dolore duis ea mollit exercitation nulla elit tempor et ipsum officia. Mollit aliqua consectetur exercitation in sit incididunt.\r\nFugiat velit velit sit laborum irure in pariatur exercitation voluptate cupidatat aute pariatur cupidatat excepteur. Laborum et anim sunt sit laborum aliqua fugiat mollit culpa id labore. Occaecat adipisicing qui Lorem qui qui. Cupidatat sunt dolore ullamco consectetur sint deserunt consequat excepteur ad. Amet excepteur Lorem dolor aliqua ea ipsum et ipsum. Nisi dolor et esse culpa qui reprehenderit. Mollit sit excepteur irure est cupidatat dolor veniam eu nostrud duis occaecat nostrud.\r\nAliqua magna aliquip consequat esse consectetur consequat ut. Quis ut nisi magna ullamco irure ad laborum aliqua voluptate anim dolor labore. Sunt sunt ad do consectetur veniam amet enim deserunt. Aute velit deserunt in irure sit. Fugiat Lorem velit et sit ut et ex exercitation cupidatat. Ipsum esse deserunt labore deserunt amet elit enim commodo elit veniam. Amet consectetur nisi adipisicing officia aliqua aute nostrud consequat.\r\nDolor irure amet cupidatat cupidatat Lorem irure consequat minim in quis id nisi minim. Proident ut anim id Lorem sunt elit nisi ex reprehenderit. Ea eiusmod qui incididunt dolore adipisicing aliqua exercitation esse veniam dolor enim id minim. Non culpa qui voluptate magna nostrud consequat ipsum. Qui eiusmod eu laborum ut.\r\n",
+          "rating": 19,
+          "language": "Esp",
+          "difficulty": "Advanced",
+          "type": "Lecture",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e3deaed94c698da44",
+          "trainers": [
+              {
+                  "id": "5b66c10eb82fcbee243903d5",
+                  "name": "Kirsten Mcleod",
+                  "avatar": "https://randomuser.me/api/portraits/women/61.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=16",
+          "date": "2018-11-27T12:52:25",
+          "duration": 358,
+          "title": "nostrud laboris Lorem sit incididunt esse ut proident sit ut",
+          "description": "Elit exercitation cupidatat non deserunt labore elit cupidatat amet amet est exercitation excepteur. Elit irure esse pariatur mollit sunt anim magna labore nisi eiusmod magna. Incididunt ea esse in ut sunt. Labore eu ea ad excepteur irure minim enim. Proident duis veniam incididunt velit officia duis laborum pariatur fugiat eu. Aute enim quis ex reprehenderit adipisicing incididunt aliquip Lorem do.\r\nMagna non proident sit id culpa veniam ipsum et. Cupidatat nulla pariatur exercitation sunt dolore ea elit aute eu consequat tempor et dolore. Ut minim amet in id voluptate dolor occaecat ad aliquip voluptate. Labore aliqua culpa enim anim esse officia. Eu dolore aliquip ut Lorem laborum do qui ut incididunt veniam do. Irure pariatur culpa incididunt adipisicing anim dolore ullamco et voluptate adipisicing qui proident nostrud cupidatat.\r\nLaborum qui irure eiusmod ea ullamco et nostrud commodo adipisicing ipsum nostrud magna. Non amet irure reprehenderit laboris Lorem eiusmod id. Enim ad elit laborum minim cupidatat ullamco ex nulla cupidatat laboris occaecat. Velit consectetur laboris cupidatat commodo culpa enim nisi est sit.\r\nNostrud non et eiusmod veniam reprehenderit elit cillum dolor anim occaecat irure commodo. Excepteur cillum proident tempor cupidatat reprehenderit cupidatat eu veniam. Irure anim irure anim sint aliqua Lorem voluptate nostrud nulla minim sit Lorem reprehenderit. Labore est magna ullamco id ad magna deserunt nisi incididunt amet in veniam voluptate.\r\nAnim commodo occaecat ex commodo excepteur adipisicing labore. Aliquip dolore dolor pariatur adipisicing labore sunt. Reprehenderit deserunt Lorem voluptate ea et. Laborum qui duis culpa fugiat est. Deserunt in anim consequat duis in adipisicing adipisicing officia cupidatat amet duis magna velit. Anim eu fugiat magna qui sunt enim eu. Et non eiusmod nostrud et incididunt.\r\nProident cillum aliqua et occaecat dolore Lorem dolor. Est minim est fugiat voluptate adipisicing mollit tempor ipsum incididunt aliquip sunt ullamco proident. Lorem veniam est laboris nostrud qui cupidatat duis non nulla mollit id laborum consectetur. Qui sint proident incididunt esse velit ex occaecat ea proident officia adipisicing eiusmod.\r\nDo et cupidatat ea velit sunt officia ut anim eu ut consequat minim quis consectetur. Ut irure sit amet aute. In cillum cillum quis veniam deserunt Lorem consequat aute dolor incididunt laborum nulla consectetur. Amet enim Lorem ullamco sunt anim officia exercitation veniam pariatur. Aliquip reprehenderit aliquip nisi duis. Non laboris sit ipsum elit cillum Lorem in nostrud cillum ad ipsum ad qui.\r\nId cillum qui et ea ea id cupidatat et aliqua incididunt deserunt Lorem dolore cillum. Occaecat nulla magna veniam enim dolore. Nisi minim in aliquip non cupidatat est esse consequat elit velit dolore adipisicing. Consequat ex magna culpa tempor Lorem velit voluptate do ut fugiat aliqua. Fugiat eiusmod ipsum ullamco incididunt incididunt qui non aliquip fugiat irure sunt do. Aliquip minim laborum tempor sint minim excepteur aliqua. Labore id ex eiusmod proident dolore exercitation nisi dolor minim.\r\nIn labore aliqua occaecat excepteur labore qui dolore reprehenderit amet. Ullamco et incididunt quis minim deserunt enim. In ad et adipisicing veniam dolore eu ipsum quis cupidatat velit. Officia enim nostrud incididunt aliqua officia ea reprehenderit laboris reprehenderit in mollit minim laborum reprehenderit. Nostrud fugiat laboris ad culpa minim do anim Lorem enim nostrud commodo. Voluptate Lorem cupidatat adipisicing ad eu.\r\nPariatur Lorem dolor ullamco laborum reprehenderit pariatur nisi qui occaecat quis. Veniam excepteur irure occaecat dolore cupidatat ut ex fugiat officia laboris. Do officia duis veniam sunt laborum quis in labore cillum eiusmod magna adipisicing anim anim. Aliquip cupidatat tempor Lorem enim sint fugiat ad. Ad sunt sit dolor amet ex laboris in sit. Do eu officia enim esse sit ut dolor non et enim Lorem.\r\nUt qui sit incididunt consectetur ea culpa ullamco. Pariatur eiusmod consequat incididunt adipisicing commodo Lorem ut proident do eu. Non incididunt sunt elit aliquip id sit velit in Lorem ipsum labore velit enim. Ut consequat et duis laboris elit velit enim eu aliqua fugiat. Aliquip enim amet dolor cillum.\r\n",
+          "rating": 18,
+          "language": "Eng",
+          "difficulty": "Expert",
+          "type": "Training",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e68b99578eaf43b10",
+          "trainers": [
+              {
+                  "id": "5b66c10ea404629af4772546",
+                  "name": "Jaclyn Murray",
+                  "avatar": "https://randomuser.me/api/portraits/women/24.jpg"
+              },
+              {
+                  "id": "5b66c10ee11c0f3830ac5dc8",
+                  "name": "Townsend Dixon",
+                  "avatar": "https://randomuser.me/api/portraits/men/28.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=6",
+          "date": "2018-08-14T08:06:50",
+          "duration": 369,
+          "title": "laborum fugiat deserunt ea do pariatur",
+          "description": "Aliqua nulla dolore esse sint qui aute adipisicing quis excepteur occaecat. Non reprehenderit adipisicing non tempor Lorem reprehenderit commodo fugiat ipsum veniam aliquip laborum duis id. Irure non fugiat irure ullamco ut et irure veniam aliquip ad incididunt ex. Id aliquip occaecat labore dolor consectetur aliquip ullamco est nostrud reprehenderit. Commodo est qui cupidatat cillum nostrud ea labore officia eiusmod. Laboris magna amet sunt esse.\r\nTempor ipsum excepteur officia est non reprehenderit commodo nisi esse magna ut deserunt consectetur non. In adipisicing voluptate laborum nulla eu cillum id sit ex sunt. Exercitation laborum incididunt ea quis adipisicing cillum aliquip laborum eu reprehenderit irure nisi et enim. In nostrud in nisi aliqua fugiat pariatur consequat.\r\nAute sunt duis eiusmod duis nulla ad. Eiusmod irure minim esse minim ullamco anim qui mollit cillum nulla fugiat culpa fugiat. Esse ullamco esse dolor velit culpa sit. Commodo esse et laborum ullamco eu in aute mollit mollit. Magna consequat fugiat aliqua enim excepteur excepteur non.\r\nPariatur elit velit commodo do enim in consequat anim. Excepteur aliquip veniam sint exercitation do irure enim sunt fugiat et. Adipisicing dolore pariatur mollit enim consectetur. Magna dolor aute pariatur nostrud ea et ut aute proident incididunt incididunt excepteur. Laborum ut mollit sunt excepteur tempor anim voluptate cupidatat non fugiat culpa. Veniam eiusmod id veniam consectetur est. Cillum quis adipisicing ullamco fugiat qui velit esse deserunt id.\r\nAd voluptate culpa reprehenderit consequat aute ea Lorem culpa elit enim do. Magna quis minim ullamco aute sint minim ut ea. Non eiusmod culpa dolore et cupidatat ea mollit ex id aliqua enim incididunt. Et minim reprehenderit occaecat dolore aute minim occaecat. Reprehenderit sunt ut Lorem laboris ea ullamco aute non culpa sint in aute irure labore. Ullamco laboris voluptate duis adipisicing eiusmod quis labore.\r\nElit irure est dolore sint exercitation dolor ullamco ad eu mollit dolore dolor id magna. Veniam esse elit aliqua est est nulla ut proident nulla ex. Anim velit qui commodo magna cupidatat nisi aliqua sunt esse deserunt. Tempor mollit tempor tempor enim deserunt commodo occaecat nostrud ipsum sint fugiat in do reprehenderit. Aliqua ut proident voluptate esse velit nulla incididunt ad. Culpa anim elit culpa dolor adipisicing quis veniam incididunt.\r\nConsequat enim cillum cillum cillum laborum nostrud. In irure culpa est aute amet tempor aliqua. Irure ipsum culpa pariatur Lorem laborum. Anim Lorem enim commodo amet.\r\nAnim enim nisi anim ad cillum ex eu Lorem irure sint cupidatat. Ut eiusmod ad Lorem consequat sint fugiat dolor voluptate adipisicing Lorem eu occaecat. Cillum quis elit consequat deserunt ipsum.\r\nEst sit officia ullamco consectetur sint amet. Proident laborum cupidatat nulla aliqua. Dolor non aliquip pariatur velit pariatur eiusmod velit est. Sit incididunt ad cillum consectetur consectetur sit culpa deserunt est sint in sit sint. Non non amet enim eiusmod eu reprehenderit cupidatat Lorem.\r\nDolore eiusmod cillum est irure pariatur minim eiusmod tempor minim. Officia pariatur ipsum minim ut officia elit do adipisicing. Occaecat veniam culpa ad officia laborum qui ea consequat minim reprehenderit sint eu ipsum et. Quis velit qui ipsum in sit fugiat eiusmod sit ut labore veniam esse veniam. Nisi aute incididunt esse et pariatur excepteur nisi aute duis do mollit. Fugiat id exercitation occaecat fugiat sint deserunt eiusmod exercitation deserunt et exercitation Lorem nisi. Sunt incididunt id ipsum cillum ex labore ullamco exercitation incididunt voluptate sit incididunt non.\r\nAute elit aute reprehenderit ad aliqua est irure elit et enim in dolore esse. Nulla labore et quis exercitation duis officia culpa et. Quis enim ea adipisicing cupidatat sunt voluptate aute consequat eiusmod id.\r\nAmet nulla adipisicing reprehenderit reprehenderit quis consectetur amet. Ea officia aliqua ea nulla mollit officia adipisicing culpa sint culpa excepteur. Exercitation incididunt sit velit velit voluptate. Dolore laborum irure proident adipisicing duis deserunt esse ea minim incididunt. Cupidatat fugiat aliqua magna quis consectetur est pariatur et eiusmod aute qui labore labore.\r\nCommodo laboris est mollit nostrud sint. Ullamco amet nisi dolor velit irure tempor in velit non. Veniam fugiat in dolor magna aute aliqua ex. Commodo exercitation magna exercitation amet aliqua anim ut eiusmod eiusmod nostrud et reprehenderit cupidatat reprehenderit. Aliqua sit id ea consequat mollit culpa anim irure deserunt occaecat deserunt culpa anim. Aliquip ullamco consequat consequat irure fugiat id enim duis mollit qui labore nostrud proident. Duis do non cillum consectetur velit ipsum incididunt dolore qui esse proident.\r\n",
+          "rating": 32,
+          "language": "Eng",
+          "difficulty": "Expert",
+          "type": "Training",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e63f62e4814d5b2c1",
+          "trainers": [
+              {
+                  "id": "5b66c10e384639f1e535f51c",
+                  "name": "Vincent Holcomb",
+                  "avatar": "https://randomuser.me/api/portraits/men/30.jpg"
+              },
+              {
+                  "id": "5b66c10ea5e10d6b5aabcc07",
+                  "name": "Hickman Kelley",
+                  "avatar": "https://randomuser.me/api/portraits/women/14.jpg"
+              },
+              {
+                  "id": "5b66c10edffa458fa3179de7",
+                  "name": "Dominique Nicholson",
+                  "avatar": "https://randomuser.me/api/portraits/women/20.jpg"
+              },
+              {
+                  "id": "5b66c10ebb80209fb166dc40",
+                  "name": "Hancock Steele",
+                  "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
+              },
+              {
+                  "id": "5b66c10e181b6ee5ba997672",
+                  "name": "Sheppard Gilmore",
+                  "avatar": "https://randomuser.me/api/portraits/women/52.jpg"
+              },
+              {
+                  "id": "5b66c10ee6611ed59edfcf46",
+                  "name": "Karin Tyson",
+                  "avatar": "https://randomuser.me/api/portraits/women/24.jpg"
+              },
+              {
+                  "id": "5b66c10e4873acca4373566a",
+                  "name": "Freda Christensen",
+                  "avatar": "https://randomuser.me/api/portraits/women/16.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=15",
+          "date": "2018-10-30T06:28:16",
+          "duration": 247,
+          "title": "sint pariatur fugiat tempor nisi cupidatat",
+          "description": "Proident adipisicing nulla cillum in quis duis amet occaecat nisi nulla sit Lorem. Mollit eiusmod do dolore nulla aliquip exercitation in anim fugiat aliqua. Amet in eu minim anim. Exercitation nisi ullamco aliquip ipsum eu elit eu proident. Sit esse ullamco Lorem cupidatat est elit reprehenderit qui eu. Velit tempor esse aliquip Lorem ad adipisicing eu incididunt. Cupidatat est et sunt consectetur cupidatat.\r\nUt minim amet occaecat aute. Aliqua exercitation ea enim ullamco. Est irure ullamco quis sint. Cillum proident fugiat et reprehenderit Lorem in ad reprehenderit minim id id elit officia. Reprehenderit sint deserunt anim aliqua sit pariatur est anim quis dolor.\r\nElit voluptate et nulla ex magna commodo aute sit dolore aute minim laborum. Cillum velit sunt culpa eiusmod irure occaecat enim pariatur magna ad. Consequat eiusmod sunt veniam sunt nulla qui proident commodo id adipisicing non magna commodo eu.\r\nAmet exercitation dolor qui anim magna ullamco ipsum velit nisi occaecat consectetur labore. Id Lorem reprehenderit in aliquip sit. Dolor magna culpa cupidatat magna est aliqua nostrud aliqua. Aliqua eu ut consectetur adipisicing elit cillum. Reprehenderit consequat nostrud dolor qui dolor duis minim dolore nisi aute.\r\nEu officia laboris incididunt fugiat cillum fugiat. Ad mollit non commodo duis aliqua culpa reprehenderit ipsum. Pariatur sit cupidatat do voluptate quis labore non minim. Velit laborum ipsum id tempor consequat qui.\r\nUllamco ipsum et ipsum ut dolore consequat Lorem commodo eiusmod ad labore nisi. Do ipsum velit ad proident labore ex. Deserunt officia voluptate pariatur laborum velit proident elit labore pariatur Lorem. Velit duis dolor dolor nulla dolor mollit culpa tempor excepteur exercitation.\r\nDeserunt labore labore ex consectetur nostrud laboris voluptate excepteur in nulla consequat nostrud sint. Dolor laborum dolor laboris aute. Deserunt ullamco veniam pariatur laborum culpa fugiat dolore. Minim qui mollit ipsum enim duis officia ut voluptate dolor tempor dolor. Ea irure cupidatat enim veniam officia incididunt laborum officia pariatur. Qui esse magna officia cillum sint excepteur. Do ea quis mollit culpa officia velit.\r\nConsectetur consectetur culpa ipsum reprehenderit laboris. Duis exercitation ex sit commodo. Voluptate officia nostrud aliqua laboris reprehenderit labore commodo. Eu enim commodo proident consequat aliquip ad proident. Magna exercitation proident fugiat cupidatat laborum sunt esse reprehenderit ad ex sit non. Anim consequat duis irure pariatur ad quis.\r\nLorem sint magna in ipsum nulla tempor nostrud mollit exercitation fugiat. Consequat sint ex pariatur consequat sit incididunt voluptate do occaecat. Officia labore pariatur adipisicing minim aute mollit aliqua et ipsum cillum. Veniam nostrud ad id proident laboris aliqua incididunt labore culpa pariatur. Magna voluptate officia irure nulla eu tempor aliquip veniam irure consequat officia ipsum velit. Minim sunt cupidatat do pariatur.\r\nEu sint laborum ut voluptate mollit culpa voluptate minim incididunt exercitation. Ea incididunt cillum qui quis est duis tempor fugiat consectetur ex. Pariatur eiusmod sint dolor excepteur do nulla fugiat qui. Esse excepteur dolor adipisicing exercitation excepteur. Ut labore officia nisi occaecat ea elit nostrud id anim ullamco.\r\nEiusmod duis elit voluptate occaecat deserunt fugiat consectetur enim. Sint aliquip laborum exercitation enim quis id occaecat do duis amet amet. Id ad minim labore laboris tempor aute. Sint tempor et reprehenderit eiusmod ea ullamco minim non laboris laborum non et adipisicing. Non nisi in tempor veniam mollit ut elit enim eiusmod deserunt velit cillum officia.\r\nNostrud occaecat esse eu ea deserunt sunt sint ullamco sit mollit id exercitation incididunt. Adipisicing excepteur sint ad ullamco. Ea quis eiusmod nisi qui cupidatat quis. Velit consequat cillum tempor pariatur sit sit.\r\nLaborum et reprehenderit aliqua eiusmod amet consequat nulla duis Lorem ex sunt occaecat. Eu est mollit anim excepteur sunt incididunt eiusmod pariatur culpa dolore et. Velit non et esse reprehenderit ex mollit nostrud ut non. Nulla fugiat mollit fugiat nostrud ullamco cillum occaecat enim ipsum. Enim reprehenderit laboris velit ullamco irure commodo elit anim sunt mollit do sunt proident.\r\nVelit tempor minim reprehenderit pariatur eu. Tempor in Lorem dolor incididunt ut voluptate aute exercitation. In excepteur mollit dolor laborum culpa ullamco. Consequat commodo cillum velit commodo eiusmod eu. Nulla reprehenderit excepteur commodo sit quis tempor minim cillum minim esse ad aliquip esse minim. In ad labore magna nisi labore in. Laboris magna in sit occaecat.\r\n",
+          "rating": 15,
+          "language": "Rus",
+          "difficulty": "Intermediate",
+          "type": "Seminar",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ef930ef7865779677",
+          "trainers": [
+              {
+                  "id": "5b66c10eddc08fe5a46f33ce",
+                  "name": "Rosetta Freeman",
+                  "avatar": "https://randomuser.me/api/portraits/men/43.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=4",
+          "date": "2018-10-10T01:44:36",
+          "duration": 182,
+          "title": "mollit occaecat est enim commodo",
+          "description": "Ea mollit minim irure dolore. Do fugiat pariatur officia incididunt. In cupidatat sunt dolor aliqua dolor cillum cillum excepteur consequat.\r\nVoluptate irure occaecat incididunt Lorem quis ullamco. Non irure quis do ex adipisicing et cillum do tempor culpa nisi enim sint. Cupidatat ad labore incididunt sunt ex consectetur officia. Lorem culpa et ipsum est ullamco. Ad exercitation duis in labore voluptate veniam sint quis officia. Et amet aute deserunt laboris. Do eu duis esse commodo incididunt.\r\nProident nulla voluptate cupidatat do ipsum non. Nulla voluptate ea qui id mollit sit. Voluptate deserunt incididunt quis magna. Pariatur id cillum eu anim. Ea sint aliqua esse non voluptate culpa cillum deserunt enim esse. Deserunt irure Lorem excepteur id tempor consectetur.\r\nIrure sit ad eu nisi velit culpa. Amet commodo ad irure non labore ipsum. Incididunt Lorem culpa reprehenderit proident incididunt tempor duis do nisi irure minim occaecat duis. Laborum do magna aute deserunt incididunt proident officia sunt anim excepteur mollit duis magna. Magna magna aliqua duis anim mollit pariatur dolore ad enim nostrud.\r\nDo reprehenderit esse id ad amet. Et nostrud proident reprehenderit laborum. Cillum voluptate irure non anim mollit officia aliqua et. Labore ex laboris esse et ut ullamco laboris pariatur consequat commodo officia fugiat. Quis anim qui sit cupidatat voluptate quis sit et sit. Deserunt enim veniam sunt in ut.\r\nDolor ullamco mollit esse minim anim ipsum ex tempor ut esse dolor magna sunt. Nulla dolore aliquip dolor laborum cillum velit ullamco eiusmod cillum proident Lorem nulla Lorem. Eiusmod do do cillum consectetur excepteur sit minim minim aute pariatur tempor. Et velit anim Lorem aliqua ex enim nostrud laborum nostrud.\r\nFugiat anim minim aute ut do voluptate labore nulla. Id adipisicing ad non deserunt laborum id ea et sit consectetur aliqua. Proident pariatur elit nulla dolore consequat irure non excepteur fugiat. Voluptate deserunt ullamco aliquip id exercitation proident dolore veniam. Sint sint enim pariatur fugiat ea aliqua aliquip consectetur mollit incididunt aute ut. Velit proident exercitation excepteur qui dolor ut mollit dolore dolor esse amet.\r\nAd ad sint et velit aliqua fugiat. Laborum sunt incididunt ut enim do dolore aute exercitation enim est proident occaecat amet. Dolor pariatur tempor laborum ea fugiat ex ullamco nulla ad consequat aliqua adipisicing eu do. Aute dolor velit exercitation labore adipisicing.\r\nConsequat cillum ullamco duis tempor nisi culpa veniam pariatur magna ad. Velit ex eiusmod magna quis. Mollit cillum eiusmod laborum anim nulla consequat est proident. Consectetur aliqua consequat culpa adipisicing tempor nulla velit. Sunt voluptate Lorem non sit nisi pariatur consequat. Mollit amet incididunt do excepteur nisi in. Deserunt eiusmod pariatur Lorem labore exercitation esse reprehenderit magna.\r\nEnim ullamco laborum exercitation nulla do et. Id anim est minim occaecat fugiat ullamco. Sit consectetur et occaecat eu elit labore dolore et enim est. Amet nulla officia sit mollit occaecat sint amet nostrud reprehenderit dolor.\r\nExcepteur tempor sint exercitation officia est exercitation labore labore enim. Deserunt voluptate minim laboris officia qui. Labore quis ut amet non enim in exercitation nisi commodo et. Ut esse in adipisicing officia ex excepteur irure deserunt. Adipisicing veniam aliquip labore in ad officia cupidatat minim eiusmod. Dolor dolore ea dolor adipisicing dolor veniam excepteur esse ipsum magna. Anim do veniam ex et ullamco elit culpa.\r\n",
+          "rating": 34,
+          "language": "Eng",
+          "difficulty": "Expert",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e573741d5db6b0d69",
+          "trainers": [
+              {
+                  "id": "5b66c10eb62ab1c1c1662352",
+                  "name": "Rasmussen Gregory",
+                  "avatar": "https://randomuser.me/api/portraits/women/6.jpg"
+              },
+              {
+                  "id": "5b66c10e8dad040c0a649e4b",
+                  "name": "Lee Mcdonald",
+                  "avatar": "https://randomuser.me/api/portraits/women/52.jpg"
+              },
+              {
+                  "id": "5b66c10e950deafdb0c54fbf",
+                  "name": "Chang Lewis",
+                  "avatar": "https://randomuser.me/api/portraits/women/26.jpg"
+              },
+              {
+                  "id": "5b66c10e77eaf51c89655f05",
+                  "name": "Eve Green",
+                  "avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+              },
+              {
+                  "id": "5b66c10e23a967fd46afaa83",
+                  "name": "Duke Cross",
+                  "avatar": "https://randomuser.me/api/portraits/women/19.jpg"
+              },
+              {
+                  "id": "5b66c10eb2c70edd1304abbb",
+                  "name": "Rosalinda Buchanan",
+                  "avatar": "https://randomuser.me/api/portraits/women/19.jpg"
+              },
+              {
+                  "id": "5b66c10efab7f1e186e8830f",
+                  "name": "Durham David",
+                  "avatar": "https://randomuser.me/api/portraits/men/58.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=2",
+          "date": "2018-08-24T08:19:21",
+          "duration": 196,
+          "title": "nisi est elit officia esse nulla pariatur tempor",
+          "description": "Adipisicing fugiat nulla velit ipsum id laborum duis qui elit id. Aliquip proident magna Lorem officia irure mollit velit proident et duis commodo. In sunt labore adipisicing eu et sit mollit duis consequat labore laboris sint. Mollit minim esse Lorem do consequat id sint.\r\nQuis ut eu non proident exercitation nisi reprehenderit. Laborum consequat anim magna voluptate dolore ut adipisicing do nostrud excepteur excepteur culpa. Anim reprehenderit ad adipisicing excepteur nulla ex sunt do. Velit pariatur et exercitation deserunt aute.\r\nMinim nisi mollit deserunt laborum nisi mollit dolor aliqua excepteur laboris labore irure excepteur est. Aliquip deserunt cillum ad aliqua mollit nulla. Excepteur excepteur occaecat do duis reprehenderit dolor irure id excepteur eu. Sunt magna reprehenderit aute veniam ea Lorem pariatur. In aliquip mollit ullamco cillum elit reprehenderit nostrud ut aliqua ex fugiat ex.\r\n",
+          "rating": 17,
+          "language": "Esp",
+          "difficulty": "Intermediate",
+          "type": "Training",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e68864150ddac9763",
+          "trainers": [
+              {
+                  "id": "5b66c10eb362bffa4c684e0f",
+                  "name": "Janette Fernandez",
+                  "avatar": "https://randomuser.me/api/portraits/men/19.jpg"
+              },
+              {
+                  "id": "5b66c10ee2e87fc681c776bf",
+                  "name": "Aimee Vang",
+                  "avatar": "https://randomuser.me/api/portraits/women/47.jpg"
+              },
+              {
+                  "id": "5b66c10e4ae6cc65dd41d54f",
+                  "name": "Kerr Hunt",
+                  "avatar": "https://randomuser.me/api/portraits/women/17.jpg"
+              },
+              {
+                  "id": "5b66c10e562fb9c45b82140b",
+                  "name": "Lowery Nixon",
+                  "avatar": "https://randomuser.me/api/portraits/men/33.jpg"
+              },
+              {
+                  "id": "5b66c10ea2e157b092f348f0",
+                  "name": "Gail Ballard",
+                  "avatar": "https://randomuser.me/api/portraits/men/56.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=2",
+          "date": "2018-11-08T10:46:32",
+          "duration": 453,
+          "title": "cupidatat nisi cillum dolor mollit anim anim eiusmod nostrud minim",
+          "description": "Minim duis cillum sunt irure do. Quis cupidatat pariatur adipisicing amet excepteur deserunt occaecat ut. Ex aute eu deserunt minim. Sit veniam labore elit sunt sunt officia sit.\r\nUt nisi eiusmod deserunt nisi proident incididunt velit consequat cupidatat ex officia. Labore minim anim consequat occaecat enim sunt ea ad consequat ullamco aute eiusmod. Non cillum eiusmod ea anim incididunt reprehenderit ullamco aliqua ut adipisicing eiusmod. Irure sunt anim sint laboris do fugiat amet anim. Nulla est est exercitation ad. Do sint qui dolore in incididunt ullamco anim non sit. Labore in qui ad cillum in proident enim deserunt.\r\nCommodo proident sunt velit anim officia dolore mollit duis qui anim. Sit exercitation magna nostrud ullamco amet enim nostrud nisi culpa proident labore incididunt. Aliqua exercitation Lorem ex consectetur enim qui aute anim anim minim id tempor sint. Excepteur sit minim commodo mollit laboris et sint consequat et do Lorem qui.\r\nEiusmod ea ut Lorem enim consectetur quis qui esse quis cillum quis officia. Sunt in reprehenderit adipisicing et quis dolore commodo eiusmod cillum nulla dolore eu. Velit eiusmod aliqua eiusmod nulla est in eiusmod Lorem officia. Laborum voluptate aliquip laborum amet Lorem laborum excepteur cillum incididunt labore in non cupidatat quis. Labore aliqua irure reprehenderit tempor. Id ut voluptate sint est et incididunt laboris voluptate nostrud et ea sunt pariatur ad. Mollit ullamco et commodo nulla aliqua commodo.\r\nOccaecat consequat commodo aliqua adipisicing ipsum adipisicing proident Lorem ut qui Lorem exercitation quis irure. Est sint nulla ad minim mollit ut proident laboris. Cillum dolor excepteur voluptate do est velit veniam aute anim.\r\nLabore eu ut consequat excepteur laboris aliqua eiusmod labore proident sit in. Excepteur non est nisi esse qui. Nisi amet consectetur ullamco aliqua nulla tempor tempor excepteur ipsum. Sit est eu occaecat irure excepteur occaecat sunt anim eu et non deserunt. Cupidatat aliqua incididunt do do.\r\nLorem esse duis commodo ut et elit proident nisi consequat. Quis ex cupidatat quis fugiat labore culpa magna dolor tempor cupidatat ea adipisicing. Nulla labore sit ea duis dolore labore aute in reprehenderit. Ad sit ipsum enim incididunt nostrud officia esse labore velit ex. Ex nisi consequat excepteur aliquip aliqua aute duis cupidatat et voluptate exercitation laborum qui. Pariatur officia pariatur aute pariatur deserunt ut sint ipsum excepteur non.\r\nAute proident commodo ex id qui laboris. Aute fugiat fugiat adipisicing eiusmod adipisicing eiusmod sit laborum amet esse irure. Velit nostrud sunt in id excepteur deserunt.\r\n",
+          "rating": 34,
+          "language": "Eng",
+          "difficulty": "Intermediate",
+          "type": "Video course",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ee178567f6351aa2c",
+          "trainers": [
+              {
+                  "id": "5b66c10e3a9f003577d3d28e",
+                  "name": "Kay Zimmerman",
+                  "avatar": "https://randomuser.me/api/portraits/women/35.jpg"
+              },
+              {
+                  "id": "5b66c10e116809e841b5c1a5",
+                  "name": "Angel Dawson",
+                  "avatar": "https://randomuser.me/api/portraits/men/22.jpg"
+              },
+              {
+                  "id": "5b66c10e4ed30c0f211da3fa",
+                  "name": "Juanita Gay",
+                  "avatar": "https://randomuser.me/api/portraits/women/29.jpg"
+              },
+              {
+                  "id": "5b66c10e9ed3e929b0d67cb1",
+                  "name": "Preston Harrell",
+                  "avatar": "https://randomuser.me/api/portraits/women/26.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=14",
+          "date": "2018-11-20T07:45:16",
+          "duration": 315,
+          "title": "ea magna tempor qui ea veniam do velit consequat laborum",
+          "description": "Minim commodo qui esse elit excepteur fugiat esse sit. Adipisicing elit pariatur dolore ex. Sint nulla laborum est occaecat. Voluptate sit in commodo minim ipsum ut id minim. Proident veniam commodo non labore laborum cillum fugiat veniam commodo in.\r\nAnim eiusmod qui aliqua ex id occaecat aliqua nisi exercitation deserunt. Officia incididunt nisi dolore ipsum culpa reprehenderit velit fugiat anim tempor. Incididunt pariatur exercitation enim reprehenderit nisi enim velit exercitation nisi nisi. In cupidatat excepteur nulla labore officia nostrud enim.\r\nConsectetur eiusmod dolor sint nostrud minim pariatur laborum laborum labore aliquip ullamco do. Aliqua eiusmod proident enim aute aliqua minim veniam eiusmod laboris tempor. Ut occaecat est id qui do cillum voluptate do do culpa ipsum consequat.\r\nCommodo incididunt adipisicing non voluptate proident quis aute. Dolore do ad pariatur sunt sunt non anim labore quis nulla dolore ullamco cillum duis. Lorem officia amet sunt nulla sit ipsum incididunt. Et voluptate quis ex et esse. Nulla minim esse dolore adipisicing eu dolore velit velit ut ad esse nulla Lorem.\r\nVelit eiusmod ea duis nisi adipisicing nulla qui commodo esse sunt sint ea ea dolor. Labore sit do consequat nostrud enim incididunt tempor eu cupidatat quis nostrud quis aute adipisicing. Elit esse sunt labore id velit voluptate adipisicing duis dolor laboris nisi consectetur magna nostrud. Deserunt ut eu exercitation sunt nulla voluptate excepteur do ipsum. Mollit nulla et Lorem fugiat quis aliquip ipsum officia occaecat proident cupidatat dolore et minim. Anim ad occaecat aliquip eu aute consectetur nulla sit laborum et ipsum esse. Ad minim amet consequat id ex cupidatat magna amet ex id aute voluptate anim ea.\r\nIncididunt excepteur in adipisicing amet ea. Consequat sit adipisicing eiusmod culpa ipsum mollit. Proident quis incididunt nisi proident anim voluptate et amet. Quis adipisicing ut Lorem aute laboris ullamco magna in cillum ullamco anim velit velit aliqua. Exercitation anim voluptate cupidatat cillum quis laborum cupidatat ex. Occaecat occaecat nulla do consectetur sunt nostrud.\r\nQui culpa amet laborum id. Ad ipsum elit incididunt culpa mollit anim quis id sunt velit. In velit fugiat officia exercitation proident ex eiusmod adipisicing est consectetur qui. Ullamco proident aliquip anim magna non quis tempor sit ex voluptate dolor id. Consequat exercitation dolore aliqua et est consectetur laboris.\r\nNon elit amet aute duis magna qui. Aliquip cillum id est ullamco dolore duis ex duis ullamco adipisicing voluptate nulla. Veniam irure non proident mollit proident non aute labore duis elit sit qui adipisicing. Et consectetur ipsum incididunt duis esse.\r\nDolore labore cupidatat eu minim Lorem velit consectetur excepteur sunt ad minim laborum fugiat ex. Consectetur eu fugiat deserunt est aute aute commodo aliqua sit. Incididunt ea ad est cillum labore cillum amet in et. Adipisicing occaecat labore magna ad occaecat. Incididunt exercitation in cillum ex.\r\nDolor cupidatat consectetur laboris ex occaecat do officia veniam. Proident est id laboris sint qui excepteur non voluptate ad aliquip duis et. Deserunt esse occaecat laboris quis reprehenderit laborum ut excepteur sunt proident ad ipsum. Ad ex amet irure exercitation incididunt.\r\nAd qui aliqua nostrud culpa ut reprehenderit est aliqua. Mollit esse aliquip reprehenderit voluptate laborum proident elit ipsum. Eu eu occaecat occaecat velit. Cupidatat sit in aute nostrud sunt qui et dolore adipisicing. Sint in aliquip pariatur eiusmod nostrud reprehenderit.\r\nIrure ex deserunt sit cupidatat non amet proident sit dolore laboris sunt ut cillum dolore. Culpa Lorem eiusmod et ipsum officia. Lorem dolor Lorem pariatur sunt sit ut est aliquip. Velit in eu consequat aliquip do. Dolor deserunt consequat adipisicing laboris commodo magna. Mollit minim reprehenderit minim magna commodo aliqua quis ut exercitation nisi do eiusmod mollit.\r\n",
+          "rating": 44,
+          "language": "Pol",
+          "difficulty": "Expert",
+          "type": "Training",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10eb90e669d03408933",
+          "trainers": [
+              {
+                  "id": "5b66c10e6b4bf8201586e74f",
+                  "name": "Kimberley Petersen",
+                  "avatar": "https://randomuser.me/api/portraits/women/55.jpg"
+              },
+              {
+                  "id": "5b66c10e7de302db380f2c22",
+                  "name": "Hewitt Vincent",
+                  "avatar": "https://randomuser.me/api/portraits/men/69.jpg"
+              },
+              {
+                  "id": "5b66c10ea485410080f82f1b",
+                  "name": "Angelica Klein",
+                  "avatar": "https://randomuser.me/api/portraits/men/34.jpg"
+              },
+              {
+                  "id": "5b66c10e20989ab2a964fb7d",
+                  "name": "Lavonne Reese",
+                  "avatar": "https://randomuser.me/api/portraits/women/51.jpg"
+              },
+              {
+                  "id": "5b66c10e4cbad9e88b6d355c",
+                  "name": "Briana Romero",
+                  "avatar": "https://randomuser.me/api/portraits/men/7.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=13",
+          "date": "2018-10-08T08:36:40",
+          "duration": 206,
+          "title": "ex in magna",
+          "description": "Tempor fugiat qui ea est ad do in excepteur eiusmod. Consequat ut veniam nisi nulla voluptate eiusmod aute exercitation ad. Pariatur anim deserunt veniam id do consequat occaecat id. Irure nisi magna pariatur ullamco fugiat excepteur excepteur proident qui ex reprehenderit velit ex consequat.\r\nCommodo ut reprehenderit ex in minim commodo incididunt fugiat nostrud. Labore nostrud ipsum velit deserunt. Dolor aute pariatur amet aliqua fugiat culpa deserunt deserunt amet aliquip veniam in pariatur enim. Minim aliquip eiusmod eu ipsum.\r\nMollit cupidatat elit consequat nulla id minim ut eu et. Ullamco mollit fugiat voluptate cupidatat sint do sunt eiusmod culpa laborum. Ex nisi labore officia irure voluptate. Lorem eiusmod esse et Lorem dolore magna quis ea pariatur nulla eu nulla. Duis officia non ea elit aliquip sunt ut eu esse tempor sint dolore pariatur.\r\n",
+          "rating": 16,
+          "language": "Pol",
+          "difficulty": "For All",
+          "type": "Seminar",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e4b8b93ecaca43123",
+          "trainers": [
+              {
+                  "id": "5b66c10e57f2d777afc203b2",
+                  "name": "Nixon James",
+                  "avatar": "https://randomuser.me/api/portraits/men/54.jpg"
+              },
+              {
+                  "id": "5b66c10e1c23fd6e0008685b",
+                  "name": "Paula Willis",
+                  "avatar": "https://randomuser.me/api/portraits/men/35.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=10",
+          "date": "2018-12-01T05:38:51",
+          "duration": 437,
+          "title": "sunt ex adipisicing duis anim commodo ex exercitation aliquip",
+          "description": "Esse consectetur eiusmod magna qui pariatur et. Commodo deserunt laboris duis quis veniam mollit dolor. Incididunt do pariatur veniam fugiat nulla fugiat.\r\nLaborum non culpa Lorem fugiat esse anim. Culpa deserunt ex reprehenderit consectetur non culpa occaecat voluptate laboris. Aute veniam pariatur dolore nulla consectetur qui velit reprehenderit cupidatat.\r\nPariatur sint est esse adipisicing reprehenderit laborum. Aliqua aliquip irure mollit commodo elit commodo magna anim commodo exercitation laboris non officia. Est dolore est magna elit ea reprehenderit quis tempor esse. Dolore qui in laboris commodo eu.\r\nIn nisi nulla id Lorem incididunt adipisicing aute excepteur consequat exercitation enim. Ad ut sit nostrud ullamco eu fugiat proident. Labore nisi consectetur in aliquip. Sint consectetur qui occaecat ea voluptate aliqua. Culpa occaecat cupidatat culpa excepteur duis officia aliquip labore aliqua. Laborum eiusmod cupidatat aliquip occaecat nulla dolore laboris magna. Ex ea irure ea est.\r\nNulla elit nostrud mollit aute nostrud dolore Lorem irure. Aliqua cillum do pariatur mollit. Eiusmod non consequat sint exercitation reprehenderit culpa anim dolor ex.\r\nEnim Lorem anim commodo mollit et occaecat elit. Sint anim esse ullamco sint. Est tempor ad officia labore ut excepteur laboris ut non magna laboris ipsum. Mollit exercitation reprehenderit eiusmod Lorem ex sunt excepteur et sunt proident nisi. Consectetur id laboris magna duis cillum. Ex voluptate sunt consectetur enim Lorem voluptate commodo eu amet irure fugiat aliquip. Ea excepteur laborum veniam ipsum irure non irure qui eu sint sit ullamco fugiat.\r\nMinim tempor amet consequat ex dolore do voluptate adipisicing proident ex ex nisi sit nostrud. Consectetur duis mollit aute labore nostrud eiusmod. Anim reprehenderit voluptate dolor non reprehenderit qui ipsum excepteur est quis exercitation. In in labore fugiat dolor officia exercitation.\r\nNostrud minim cillum velit eiusmod elit fugiat commodo. Anim velit culpa pariatur proident nostrud commodo. Esse cupidatat cupidatat minim mollit anim dolor in cillum anim est. Exercitation dolore incididunt laboris et veniam dolor est commodo.\r\nDuis dolor quis reprehenderit sunt fugiat. Exercitation et mollit ut proident ad. Veniam pariatur mollit minim Lorem esse veniam mollit ea laboris.\r\nDolore ex cupidatat ipsum nostrud cupidatat nisi eiusmod voluptate ex. Dolore ullamco in magna culpa consectetur. Eiusmod eu adipisicing velit duis ea. Aliquip incididunt proident commodo ex proident elit voluptate eiusmod. Incididunt culpa aliquip ea fugiat incididunt. Occaecat nulla eiusmod enim deserunt.\r\nEt irure nisi ad dolor incididunt labore exercitation do. Cillum sint aute qui consequat. Nostrud commodo labore esse Lorem enim duis ut consequat dolore consequat velit adipisicing sunt minim. Quis sint dolor do cillum eu. Labore consequat commodo eu ad ex ad laborum consectetur ex do reprehenderit. Sit tempor sit eu consequat Lorem quis enim.\r\nLabore elit Lorem nostrud dolor. Laboris aliquip aliquip reprehenderit elit mollit eu dolor culpa. Aliquip consequat quis dolor sint deserunt nulla aliqua aliquip deserunt labore est est mollit fugiat. Cupidatat voluptate aliqua cupidatat sunt veniam elit. Irure adipisicing amet id id pariatur qui laborum fugiat dolor occaecat. Quis amet ipsum occaecat eiusmod adipisicing aute pariatur ullamco reprehenderit ut aute proident sint. Eu ipsum velit in ullamco commodo anim dolor tempor deserunt.\r\nNostrud magna ea irure eiusmod eiusmod mollit. Adipisicing ex cupidatat tempor nostrud aliqua reprehenderit. Minim ad laboris culpa ea excepteur incididunt veniam cillum ipsum. Aliquip magna aliquip aliquip excepteur irure dolore voluptate pariatur. Nostrud nostrud aliquip incididunt velit enim elit cillum. Dolore ea deserunt culpa cupidatat. In tempor aliquip id ad sit irure ut proident sint quis mollit cupidatat.\r\nEa nisi ut minim irure. Dolore aliqua occaecat nisi nostrud cillum ipsum ad ut cupidatat incididunt esse sit enim amet. Velit Lorem tempor sunt minim eiusmod duis culpa nulla dolor eu. Velit eiusmod commodo ex aute veniam quis amet veniam quis ea laborum enim.\r\n",
+          "rating": 19,
+          "language": "Eng",
+          "difficulty": "Intermediate",
+          "type": "Seminar",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e1c9ad8ec0c6c1002",
+          "trainers": [
+              {
+                  "id": "5b66c10ee2655c044c52f446",
+                  "name": "Antonia Stein",
+                  "avatar": "https://randomuser.me/api/portraits/women/6.jpg"
+              },
+              {
+                  "id": "5b66c10ec2741aba4aa93da3",
+                  "name": "Walton Baldwin",
+                  "avatar": "https://randomuser.me/api/portraits/women/34.jpg"
+              },
+              {
+                  "id": "5b66c10eca3e848181b7336b",
+                  "name": "Schmidt Alford",
+                  "avatar": "https://randomuser.me/api/portraits/men/3.jpg"
+              },
+              {
+                  "id": "5b66c10e613d54745ec241ea",
+                  "name": "Rachel Reeves",
+                  "avatar": "https://randomuser.me/api/portraits/men/69.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=18",
+          "date": "2018-08-16T02:45:05",
+          "duration": 106,
+          "title": "nisi consectetur eiusmod do non minim",
+          "description": "Lorem mollit id sint voluptate id exercitation qui eiusmod ullamco aute deserunt deserunt laborum. Laboris ut exercitation exercitation aliquip irure amet minim exercitation sit. Do in et ullamco nisi pariatur consequat. Eiusmod ad aliqua fugiat incididunt duis laborum ullamco culpa mollit culpa officia incididunt cupidatat sit. Elit magna sit anim sit proident veniam aliqua reprehenderit voluptate do id quis.\r\nCommodo tempor velit nulla reprehenderit. Enim tempor ea consectetur anim eu fugiat enim duis non consequat ullamco. Ipsum eu proident labore magna commodo eu. Tempor quis velit veniam magna.\r\nNulla eiusmod eu ea esse. Dolor excepteur exercitation consequat officia ex duis aliquip esse commodo. Eiusmod elit velit id exercitation elit tempor elit excepteur aliquip ea enim sint anim.\r\nConsequat dolore pariatur in sit labore. Quis amet laboris laboris occaecat ex officia reprehenderit irure magna nostrud elit. Reprehenderit occaecat id ullamco laboris excepteur. Quis cupidatat magna deserunt aute proident duis magna nostrud reprehenderit in cillum voluptate non dolor. Anim consequat magna qui magna sunt sit ut sunt veniam elit sit aliqua. Sit voluptate ullamco culpa adipisicing fugiat duis pariatur dolore. Laboris irure deserunt ipsum in qui aliqua adipisicing excepteur cupidatat cupidatat ut consectetur cillum veniam.\r\nLaborum cillum laborum exercitation qui excepteur sit. Elit incididunt velit dolor consectetur irure cupidatat do. Enim duis adipisicing nostrud velit incididunt commodo laboris duis duis esse magna deserunt excepteur. Nostrud laborum ex aliqua cupidatat quis mollit est elit in in occaecat irure. Quis dolor deserunt veniam enim Lorem ea dolore eiusmod in nostrud tempor cupidatat officia et.\r\nAmet ex nostrud sint voluptate ipsum Lorem. Voluptate aliqua enim in exercitation Lorem. Aliquip pariatur Lorem commodo ullamco magna mollit consequat esse aliquip elit eiusmod Lorem est duis. Quis labore ullamco sit ex ullamco Lorem ad sint adipisicing. Aliquip in officia aute amet mollit amet. Tempor amet est non minim. Id commodo enim Lorem exercitation eiusmod commodo.\r\nEx proident proident elit tempor consectetur eiusmod elit est pariatur incididunt commodo tempor. Velit laborum incididunt irure Lorem reprehenderit dolore laboris. Excepteur aliqua officia aliqua laboris enim nulla. Do deserunt ea proident exercitation laboris deserunt consectetur elit labore consectetur duis. Ipsum ut nulla id elit.\r\nEa aliquip nulla Lorem fugiat incididunt ea mollit ad Lorem sunt. Incididunt labore occaecat consequat veniam nulla tempor voluptate esse consectetur culpa ea. Esse Lorem eu minim sit veniam.\r\nCulpa in consectetur incididunt anim officia duis cupidatat duis nulla dolore aliqua sunt deserunt. Elit eu irure pariatur enim reprehenderit ea. Occaecat do adipisicing proident laborum adipisicing ex reprehenderit minim ipsum ex. Velit irure ullamco pariatur cillum proident laboris officia irure id ullamco veniam velit sunt. Dolor eu ex sit sint.\r\nEt culpa nisi dolore voluptate laborum laborum commodo ullamco nostrud. Laboris velit voluptate ullamco duis dolore sit non officia aliqua sint deserunt. Aliqua eu deserunt fugiat qui officia consectetur tempor reprehenderit elit. Tempor voluptate est velit adipisicing occaecat mollit sunt proident et est eu cillum. Sit sint deserunt cillum incididunt velit. Labore nulla eiusmod sit amet sunt quis.\r\nExcepteur officia mollit proident deserunt eu commodo cupidatat dolor est. Ex nisi velit esse magna eiusmod irure exercitation. Voluptate duis ex dolor adipisicing ullamco incididunt aliquip laboris quis minim. Aliquip consequat labore non laboris.\r\nIpsum ipsum minim tempor pariatur et voluptate magna id proident sint pariatur exercitation duis. Mollit incididunt est dolor amet enim excepteur cillum incididunt. Lorem eiusmod culpa deserunt enim elit cupidatat minim.\r\n",
+          "rating": 20,
+          "language": "Pol",
+          "difficulty": "Intermediate",
+          "type": "Video course",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e1cc9b7cfb095d612",
+          "trainers": [
+              {
+                  "id": "5b66c10ef71370d9ca30a276",
+                  "name": "Davidson Guerra",
+                  "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+              },
+              {
+                  "id": "5b66c10e47a84796038f824f",
+                  "name": "Minerva Rasmussen",
+                  "avatar": "https://randomuser.me/api/portraits/men/54.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=2",
+          "date": "2018-08-25T04:34:21",
+          "duration": 372,
+          "title": "ea pariatur excepteur nulla quis ipsum sint",
+          "description": "Do exercitation non officia velit laborum culpa dolor voluptate labore dolor culpa duis sit commodo. Ut fugiat amet consectetur ad aliquip minim laboris ullamco fugiat. Quis consequat tempor ex laborum ullamco quis proident est laborum in voluptate amet. Tempor veniam magna quis sit veniam velit ad irure duis. Commodo magna consequat incididunt fugiat tempor aliquip sunt in enim adipisicing aute sit anim. Non aliqua cillum Lorem et consectetur. Sint exercitation ea exercitation reprehenderit nostrud.\r\nElit amet culpa amet nostrud velit mollit irure et nostrud nisi. Elit anim minim id sint dolore aliqua aliquip. Aliqua aliquip dolore exercitation ad do eiusmod ullamco magna consequat cillum.\r\nTempor adipisicing ut cupidatat amet minim sit. Ipsum non reprehenderit laborum laborum sit ut. Commodo officia id sunt duis incididunt eu eu enim Lorem labore excepteur voluptate id. Adipisicing incididunt elit fugiat et velit. Cillum deserunt elit incididunt veniam labore proident elit. Tempor eu exercitation ut ea duis culpa dolore dolore proident sint ad tempor ex.\r\nNostrud aliquip officia irure pariatur eiusmod eu exercitation laboris eu. Id anim mollit ipsum consectetur nostrud commodo nulla aute Lorem aliquip ea nisi. Non aute fugiat nisi enim do ipsum veniam ut. Nulla qui occaecat labore ex nostrud veniam nisi tempor mollit dolore aliquip ullamco. Excepteur ad velit reprehenderit exercitation excepteur adipisicing ad. Proident amet laboris do mollit ut reprehenderit eu aute amet sunt qui ex.\r\nTempor eu nisi minim aliqua. Excepteur ad ullamco eiusmod veniam Lorem esse sunt. Anim anim et Lorem sunt culpa. Labore labore consequat ullamco amet anim nisi commodo labore. Laboris enim esse laborum labore mollit sunt enim. In veniam occaecat elit eu eu et adipisicing dolore ad sunt.\r\nVoluptate ullamco adipisicing labore ea. Dolore ut cillum ut cupidatat enim excepteur minim quis ad cupidatat eu. Deserunt qui aliqua ullamco ex dolore sunt reprehenderit ipsum voluptate et anim fugiat. Eiusmod deserunt adipisicing voluptate quis aliqua occaecat dolor velit. Adipisicing do nisi sunt sunt. Eiusmod fugiat consectetur quis nulla commodo Lorem minim fugiat proident et mollit officia Lorem. Duis laboris laborum ullamco fugiat aliqua dolore laborum incididunt et.\r\nLorem consectetur sint excepteur nulla elit. Minim exercitation aliquip enim sint ea eiusmod consequat pariatur occaecat minim occaecat cillum irure fugiat. Minim eiusmod aliqua sunt veniam ex aliquip magna officia nisi incididunt officia ex excepteur nulla. Id ipsum eu in labore cillum ut.\r\nDo ipsum ex ut excepteur culpa anim laborum proident fugiat consequat amet ullamco deserunt. Enim consequat voluptate irure sit qui minim tempor aliqua laborum cupidatat commodo. Eiusmod culpa consectetur cillum exercitation aliquip culpa ullamco magna culpa minim aliqua.\r\nConsequat deserunt laboris voluptate nulla consequat dolor mollit ad enim mollit excepteur commodo. Aliqua commodo sint laborum ipsum aute amet consectetur. Reprehenderit elit elit amet eu velit elit tempor. Est nulla in ipsum exercitation cillum amet occaecat ex esse eiusmod ullamco fugiat adipisicing. Dolore ut qui culpa pariatur sit ex irure nostrud fugiat et excepteur cillum qui. Ex velit excepteur pariatur minim laborum ut exercitation culpa quis. Duis enim do ut cillum adipisicing occaecat irure ex adipisicing adipisicing.\r\n",
+          "rating": 26,
+          "language": "Esp",
+          "difficulty": "For All",
+          "type": "Lecture",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ef5d135db43f91c2e",
+          "trainers": [
+              {
+                  "id": "5b66c10e02dc903cae24601a",
+                  "name": "Julia Benton",
+                  "avatar": "https://randomuser.me/api/portraits/women/36.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=9",
+          "date": "2018-12-10T12:13:59",
+          "duration": 76,
+          "title": "ullamco anim duis ullamco cillum mollit",
+          "description": "Eiusmod anim et qui qui ipsum consequat culpa enim ex sint sunt nulla. Adipisicing eiusmod aliqua aute nisi exercitation irure occaecat in mollit Lorem. Mollit aliquip nulla elit eu qui duis ex qui excepteur ullamco reprehenderit. Laboris do mollit sint incididunt ut mollit reprehenderit nisi aliqua veniam. Est proident sint occaecat mollit ad laborum officia commodo elit exercitation eu.\r\nQui commodo aute ipsum excepteur duis cillum voluptate Lorem dolore labore cillum aliqua dolor. Consectetur laboris est elit quis eu minim proident laboris id mollit commodo. Voluptate sint aliquip veniam aute est consequat ut aliqua. Est fugiat duis commodo cupidatat magna est nostrud labore anim in eiusmod nisi labore est. Magna sunt sint minim exercitation sunt sint consectetur culpa duis ea consectetur eiusmod et elit. Quis culpa nulla commodo cupidatat sunt nostrud. Ea excepteur labore ipsum exercitation sint labore dolore ad sit.\r\nMinim sint laboris ea et nisi elit nisi cillum excepteur. Enim non ut incididunt nostrud cillum mollit pariatur et anim cupidatat quis velit Lorem elit. Eu ex sint consequat aute. Proident in pariatur deserunt ea ea ipsum enim et eu incididunt tempor veniam.\r\nCupidatat Lorem irure aliqua ex ea consequat commodo eiusmod tempor velit ex commodo. Laborum consequat cillum qui minim nulla nisi cillum et minim nostrud nisi excepteur dolor ut. Eiusmod qui tempor cillum quis. Minim enim labore nisi incididunt velit do ad dolore velit occaecat.\r\n",
+          "rating": 19,
+          "language": "Pol",
+          "difficulty": "For All",
+          "type": "Seminar",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10eb02eebf127cd734f",
+          "trainers": [
+              {
+                  "id": "5b66c10e0fd4d3fbd886d8e0",
+                  "name": "Caldwell Lara",
+                  "avatar": "https://randomuser.me/api/portraits/women/30.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=19",
+          "date": "2018-11-10T07:42:40",
+          "duration": 344,
+          "title": "dolor veniam commodo",
+          "description": "Lorem minim do dolore ipsum. In et nulla ut in eiusmod exercitation dolor do. Excepteur occaecat culpa minim ex do ut dolor quis minim. Duis eu ipsum proident aliquip aliqua nisi nulla et labore magna. Irure occaecat Lorem aute nostrud ea sunt ex incididunt.\r\nVeniam cupidatat consequat laboris elit velit esse. Proident incididunt commodo deserunt velit Lorem fugiat cillum laborum. Eu nulla sunt exercitation nisi magna nostrud ea nostrud proident nulla ut. Incididunt ullamco cupidatat nisi anim enim minim. Dolor id culpa Lorem excepteur laboris et non. Non dolore culpa reprehenderit anim non excepteur do nisi labore tempor anim labore. Consequat incididunt nulla esse cupidatat ea laborum mollit pariatur ut proident.\r\nVelit elit irure dolor anim incididunt reprehenderit Lorem deserunt ipsum. Cupidatat ex quis consectetur voluptate officia laboris ad proident officia fugiat voluptate cupidatat. Est est veniam velit amet nulla laborum laborum. Ex incididunt occaecat aliquip mollit elit non occaecat. Nulla culpa reprehenderit magna exercitation est sunt Lorem veniam sit Lorem. Consequat minim non ullamco consectetur laborum mollit.\r\n",
+          "rating": 11,
+          "language": "Pol",
+          "difficulty": "Intermediate",
+          "type": "Training",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10ef035af25814b08c8",
+          "trainers": [
+              {
+                  "id": "5b66c10edebb8976b2df481e",
+                  "name": "Guerrero Joyner",
+                  "avatar": "https://randomuser.me/api/portraits/women/62.jpg"
+              },
+              {
+                  "id": "5b66c10ed34ffdf635f2c69c",
+                  "name": "Ortega Prince",
+                  "avatar": "https://randomuser.me/api/portraits/men/60.jpg"
+              },
+              {
+                  "id": "5b66c10e2e8bc1759e53a057",
+                  "name": "Weber Horne",
+                  "avatar": "https://randomuser.me/api/portraits/women/57.jpg"
+              },
+              {
+                  "id": "5b66c10ed7c4b56ca15302b3",
+                  "name": "Thompson Murphy",
+                  "avatar": "https://randomuser.me/api/portraits/men/49.jpg"
+              },
+              {
+                  "id": "5b66c10eaf941da65747e049",
+                  "name": "Alexandria Powell",
+                  "avatar": "https://randomuser.me/api/portraits/men/68.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=19",
+          "date": "2018-08-06T08:20:11",
+          "duration": 21,
+          "title": "amet nulla et commodo ex est exercitation qui aliquip enim",
+          "description": "Exercitation aliquip duis consequat qui labore sunt nulla incididunt et. Voluptate laboris eu sunt in. Aute cupidatat dolore elit Lorem enim ex non sunt id. Ut laboris occaecat duis officia nostrud ea qui qui sit labore. Reprehenderit eiusmod sit non anim commodo. Excepteur anim nisi officia in occaecat non duis Lorem ea ut.\r\nAmet id aliqua duis amet amet labore Lorem sint labore pariatur duis mollit fugiat. Anim nostrud deserunt deserunt cupidatat qui consequat et qui nostrud. Quis eiusmod esse id ut.\r\nOfficia ex nulla deserunt nisi officia aliqua occaecat. Esse in nisi et laborum commodo est minim fugiat proident pariatur duis velit id mollit. Esse in cillum fugiat ex esse sunt nulla aliquip velit qui duis Lorem. Officia adipisicing et non id laboris exercitation non do fugiat nulla. Laborum nostrud cillum commodo aute laboris esse Lorem dolor aliqua.\r\nExercitation excepteur velit irure tempor excepteur nisi mollit ut aute incididunt amet. Dolore consequat tempor excepteur fugiat aute sit nulla proident ad proident magna commodo esse. Amet ad quis fugiat sunt reprehenderit culpa non veniam nisi elit proident deserunt commodo. Aliqua esse qui nulla laboris velit anim et consectetur laboris ullamco reprehenderit pariatur. Ea labore ut ad ut et anim non ullamco aute laboris in ea do anim. Nulla esse culpa ex sit. Pariatur velit officia deserunt in pariatur.\r\nAmet consectetur officia voluptate voluptate dolor excepteur in. Ut quis ad consequat ea sunt eu veniam sint consectetur. Excepteur duis exercitation labore laborum officia irure consequat qui. Esse ut nostrud do nulla in id cupidatat do amet aliqua. Fugiat eiusmod sint cupidatat adipisicing irure tempor dolor est mollit.\r\n",
+          "rating": 15,
+          "language": "Fra",
+          "difficulty": "Expert",
+          "type": "Lecture",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e42aa9cac4088d856",
+          "trainers": [
+              {
+                  "id": "5b66c10eff88f20241297e64",
+                  "name": "Faith Casey",
+                  "avatar": "https://randomuser.me/api/portraits/women/34.jpg"
+              },
+              {
+                  "id": "5b66c10ec337297a50341661",
+                  "name": "Bush Carlson",
+                  "avatar": "https://randomuser.me/api/portraits/women/56.jpg"
+              },
+              {
+                  "id": "5b66c10ef922d1e0206dbfa3",
+                  "name": "Forbes Warren",
+                  "avatar": "https://randomuser.me/api/portraits/men/64.jpg"
+              },
+              {
+                  "id": "5b66c10ee304ee866826e167",
+                  "name": "Chavez Case",
+                  "avatar": "https://randomuser.me/api/portraits/women/48.jpg"
+              },
+              {
+                  "id": "5b66c10e0662c214b85a9442",
+                  "name": "Davis Stewart",
+                  "avatar": "https://randomuser.me/api/portraits/women/31.jpg"
+              },
+              {
+                  "id": "5b66c10e97d793739fc0085f",
+                  "name": "Vaughan Glover",
+                  "avatar": "https://randomuser.me/api/portraits/men/7.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=7",
+          "date": "2018-10-07T05:05:24",
+          "duration": 423,
+          "title": "ut mollit mollit ullamco laborum in incididunt nostrud amet id",
+          "description": "Culpa velit excepteur deserunt aliqua veniam aliqua dolore. Anim sint deserunt nisi id velit. Nulla ex aliqua in minim culpa cillum voluptate irure cupidatat ad nisi irure eu aliquip.\r\nMollit officia voluptate deserunt adipisicing nisi nostrud pariatur. Aliquip eu dolore in voluptate id. Et culpa ea amet amet ipsum magna pariatur consectetur occaecat velit eiusmod nisi magna. Deserunt ut do ullamco nulla enim.\r\nDolore in eu proident ullamco cillum est sit dolore dolor cillum ad velit minim. Pariatur ut do eiusmod ea velit quis deserunt fugiat quis aliqua id tempor velit aute. Anim nisi nostrud ipsum qui. Veniam ea culpa amet non mollit enim veniam. Nostrud non consequat culpa sint mollit excepteur tempor magna esse exercitation incididunt ullamco eiusmod. Id laboris ea est aute esse exercitation qui. Cupidatat aute labore elit ex non consectetur reprehenderit est exercitation.\r\nCillum commodo consequat laboris ea et velit ad anim dolor ullamco laborum exercitation commodo veniam. Eiusmod laborum do laboris ea amet consequat minim proident sunt sit laboris. Esse laboris Lorem est officia commodo qui sint deserunt nulla minim.\r\nSint anim amet dolor dolor esse ex sunt minim Lorem qui cupidatat occaecat minim esse. Nulla cupidatat reprehenderit ut est fugiat. Sunt quis duis anim anim. Amet minim id ipsum tempor pariatur deserunt. Laboris id culpa irure veniam. Dolor ut anim amet tempor enim cupidatat sint dolore dolore cillum consectetur exercitation voluptate eiusmod. Reprehenderit ullamco Lorem nostrud do.\r\nEnim commodo magna anim eu ex veniam eu duis reprehenderit eu ullamco. Eu ullamco laborum elit laboris dolore non dolore incididunt ea ex. Minim culpa in excepteur nulla officia. Ipsum mollit veniam aliquip laborum id in nulla pariatur exercitation. Aute quis occaecat sunt nostrud eiusmod amet aute duis deserunt mollit mollit.\r\nExercitation id irure labore dolore laborum et ea mollit culpa velit ullamco culpa. Ad consequat excepteur culpa exercitation occaecat voluptate magna excepteur. Exercitation in sunt anim aliquip amet nisi in mollit mollit mollit incididunt.\r\nMollit esse Lorem mollit dolor non. Excepteur eiusmod aliqua ex veniam reprehenderit pariatur. Fugiat mollit do sint nostrud excepteur reprehenderit aliquip minim laborum esse exercitation.\r\n",
+          "rating": 40,
+          "language": "Pol",
+          "difficulty": "Intermediate",
+          "type": "Training",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e303b1c26b1e973bd",
+          "trainers": [
+              {
+                  "id": "5b66c10e8f98811a06c39f48",
+                  "name": "Benita Pennington",
+                  "avatar": "https://randomuser.me/api/portraits/men/21.jpg"
+              },
+              {
+                  "id": "5b66c10edb1f8ac6af20fdd2",
+                  "name": "Avery Stevens",
+                  "avatar": "https://randomuser.me/api/portraits/men/7.jpg"
+              },
+              {
+                  "id": "5b66c10e74018ca3c92e2211",
+                  "name": "Fuller Lyons",
+                  "avatar": "https://randomuser.me/api/portraits/men/30.jpg"
+              },
+              {
+                  "id": "5b66c10e731a85869195ac92",
+                  "name": "Tonya Levy",
+                  "avatar": "https://randomuser.me/api/portraits/women/4.jpg"
+              },
+              {
+                  "id": "5b66c10e20c4f61424adca1a",
+                  "name": "Bauer Ramirez",
+                  "avatar": "https://randomuser.me/api/portraits/men/62.jpg"
+              },
+              {
+                  "id": "5b66c10e4873cc20b1c7abf7",
+                  "name": "Schroeder Richardson",
+                  "avatar": "https://randomuser.me/api/portraits/men/28.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=15",
+          "date": "2018-12-24T09:47:26",
+          "duration": 489,
+          "title": "quis in sunt",
+          "description": "Amet cupidatat nisi nisi ex ex sit qui esse ea pariatur. Eiusmod dolore nisi id laboris id ut eiusmod tempor adipisicing reprehenderit. Elit ad veniam excepteur cillum laborum sit ullamco eiusmod non voluptate occaecat mollit qui aliquip. Aliquip fugiat deserunt aliquip id et. Occaecat minim consectetur commodo dolor pariatur mollit sint. Officia voluptate incididunt sit amet irure Lorem duis sit tempor ut commodo non incididunt.\r\nId officia adipisicing proident pariatur reprehenderit dolore aute est incididunt esse sint mollit exercitation. Aute officia in nisi irure reprehenderit laborum veniam duis laboris officia id exercitation consectetur. Veniam minim ut eu adipisicing ullamco. Laboris ad fugiat deserunt dolor nulla mollit amet. Duis elit nostrud anim anim quis esse dolore. Proident fugiat aute ut magna adipisicing.\r\nVeniam eiusmod enim exercitation sint est do ut Lorem magna duis consectetur aute consectetur. Minim in enim ut deserunt eu labore ullamco. Ullamco eu consectetur nostrud deserunt exercitation officia excepteur magna nisi consequat ut. Ullamco in ipsum duis enim culpa pariatur aliquip. Nisi ea sint incididunt exercitation laborum in. Ut do eiusmod do do aliquip.\r\nAmet ea ex proident in duis pariatur irure cupidatat nisi irure incididunt aute. Eu duis commodo cillum elit laboris dolore mollit amet occaecat magna. Reprehenderit reprehenderit dolore sint dolor do nostrud pariatur. Officia eu ut est laboris ipsum. Officia veniam ad sunt sit ad reprehenderit dolor ipsum.\r\nEiusmod sunt dolor duis culpa sint do ad nulla. Labore elit quis aliqua et mollit. Fugiat cupidatat est cupidatat incididunt. Dolor pariatur amet dolore in dolor Lorem sit reprehenderit nisi nulla veniam id. Irure dolore adipisicing incididunt eu est nostrud reprehenderit consectetur pariatur Lorem cupidatat officia fugiat. Ullamco ex ad deserunt nulla.\r\n",
+          "rating": 44,
+          "language": "Esp",
+          "difficulty": "Intermediate",
+          "type": "Training",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e95aa2a3fdb1d2ad0",
+          "trainers": [
+              {
+                  "id": "5b66c10e87e665f5cc9a7ff8",
+                  "name": "Rodgers Buck",
+                  "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+              },
+              {
+                  "id": "5b66c10eb8e5f34af477a91b",
+                  "name": "Clements Mejia",
+                  "avatar": "https://randomuser.me/api/portraits/men/59.jpg"
+              },
+              {
+                  "id": "5b66c10e5517cbe5e54c892c",
+                  "name": "Acosta Sloan",
+                  "avatar": "https://randomuser.me/api/portraits/men/50.jpg"
+              },
+              {
+                  "id": "5b66c10e70ff7d2000c32417",
+                  "name": "Powell Moss",
+                  "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=5",
+          "date": "2018-11-23T06:58:28",
+          "duration": 243,
+          "title": "occaecat velit mollit elit irure non eu culpa labore",
+          "description": "Pariatur excepteur deserunt eiusmod esse laboris excepteur irure nulla duis Lorem amet laborum. Aute mollit eu eu ut in consectetur commodo reprehenderit. Aliqua aute aute consectetur ex nulla enim do laboris labore aliquip eu exercitation aute labore. Duis labore ipsum ea ad. Proident ex nostrud cillum quis mollit eu proident minim exercitation minim esse sit enim. Est Lorem occaecat cillum nulla ex ut ex pariatur officia eiusmod consequat anim dolor mollit. Incididunt nostrud est officia qui.\r\nAdipisicing irure est anim dolor. Velit dolor exercitation quis cupidatat qui consectetur id enim laborum. Pariatur veniam et dolor proident magna ipsum anim consectetur fugiat cupidatat fugiat nostrud nisi. Velit magna laboris eiusmod minim esse sit duis quis do reprehenderit.\r\nAnim aute qui nulla in anim. Labore laboris nulla deserunt sint ut culpa reprehenderit et fugiat. Ea labore sint deserunt eiusmod consectetur sunt officia eu eiusmod reprehenderit cillum. Laborum eu consectetur amet esse reprehenderit reprehenderit veniam sunt labore elit adipisicing enim.\r\nDo incididunt incididunt ipsum commodo consequat. Cillum Lorem do voluptate sit nisi laborum ea ipsum laboris mollit adipisicing tempor nostrud. Exercitation in elit esse nostrud pariatur nulla proident qui.\r\nAd incididunt reprehenderit qui cillum irure eu cupidatat duis eu sit. Laboris nulla commodo ad in. Duis ipsum deserunt cupidatat ad.\r\nAnim sit qui in reprehenderit Lorem quis occaecat ullamco est non adipisicing. Est dolor velit ipsum do et enim irure nisi ex velit pariatur commodo irure. Irure magna minim sunt adipisicing sit veniam deserunt magna proident proident proident exercitation pariatur ipsum. Veniam ad ullamco incididunt velit ut laboris elit eiusmod voluptate nisi.\r\nConsectetur duis commodo ex do sunt aute sit officia dolor minim ad eu veniam. Dolor voluptate fugiat incididunt commodo in laboris duis. Officia culpa ut deserunt id veniam enim officia ad id commodo nostrud laboris. Eu cillum fugiat enim occaecat cupidatat velit ullamco elit magna nisi proident. Incididunt reprehenderit qui eiusmod in cupidatat. Dolor nisi mollit laborum tempor et ullamco voluptate reprehenderit elit enim commodo amet proident do.\r\nIpsum laboris incididunt occaecat ad est aliquip duis enim non veniam eu culpa incididunt. Esse mollit excepteur qui pariatur laborum reprehenderit incididunt sint adipisicing et in consequat incididunt minim. Culpa aliqua pariatur est qui qui labore aliqua velit ex ad. Cupidatat veniam adipisicing ipsum aute non nisi nulla est pariatur voluptate enim proident excepteur officia. Id duis dolor irure dolore qui occaecat.\r\nAdipisicing deserunt aliquip et nostrud anim quis. Sint nulla eiusmod in laborum in in deserunt ad ea proident amet. Qui ex culpa occaecat nulla ea labore pariatur velit in nostrud eiusmod. Laboris veniam laborum ea excepteur elit occaecat. Sint cillum qui excepteur minim deserunt cillum voluptate cillum consequat sit ut cupidatat.\r\n",
+          "rating": 18,
+          "language": "Pol",
+          "difficulty": "Novice",
+          "type": "Lecture",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e963e333752eb72bb",
+          "trainers": [
+              {
+                  "id": "5b66c10eb42f36655253357e",
+                  "name": "Knox Lindsey",
+                  "avatar": "https://randomuser.me/api/portraits/men/14.jpg"
+              },
+              {
+                  "id": "5b66c10e59782b219c40359f",
+                  "name": "Paige Lindsay",
+                  "avatar": "https://randomuser.me/api/portraits/women/1.jpg"
+              },
+              {
+                  "id": "5b66c10e2b432926d45b1129",
+                  "name": "Haley Mcconnell",
+                  "avatar": "https://randomuser.me/api/portraits/men/28.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=4",
+          "date": "2018-12-04T03:40:08",
+          "duration": 48,
+          "title": "mollit quis culpa elit deserunt et",
+          "description": "Et ad exercitation incididunt nulla aliqua aute laboris ad minim aliquip nisi nisi elit consectetur. Ullamco labore minim irure laborum magna velit. Eiusmod aliqua exercitation amet cillum officia fugiat quis nostrud consectetur irure duis amet ipsum. In ut tempor ex minim in minim amet fugiat magna elit aute eu magna.\r\nAliqua proident est consequat exercitation ipsum esse commodo ipsum incididunt est nostrud. Sit irure ea laborum aliquip aute esse elit eiusmod labore aliqua enim deserunt. Sint ullamco adipisicing quis commodo ipsum voluptate enim occaecat excepteur laboris. Adipisicing magna minim mollit est duis labore quis et excepteur.\r\nQuis proident ut excepteur ex voluptate elit do qui. Ipsum enim anim minim esse esse voluptate laborum culpa ullamco aliqua minim consectetur. Cupidatat esse est excepteur cupidatat consectetur anim ad consequat. Do consequat deserunt sint sunt voluptate aute minim adipisicing nostrud qui ipsum adipisicing.\r\nOccaecat dolor nisi id minim. Non laborum fugiat amet pariatur aute Lorem ex veniam. Elit adipisicing proident ipsum amet ullamco incididunt excepteur Lorem exercitation velit commodo cupidatat.\r\nEa excepteur aute cupidatat velit laborum ut dolore laboris deserunt. Culpa labore dolore ea laboris consequat culpa do commodo cillum eu qui cupidatat. Sunt cillum adipisicing ut in nulla voluptate deserunt minim sunt enim ipsum. Laborum enim Lorem ea nulla sit minim voluptate esse.\r\nDolor velit nisi cupidatat amet ad laborum qui cillum nostrud. Commodo consectetur anim ipsum Lorem incididunt. Sint anim et amet qui duis laboris. Quis dolore laborum culpa ipsum voluptate veniam ea exercitation exercitation eu tempor quis. Proident in ea quis deserunt sint aliquip. Tempor cillum qui occaecat id dolore incididunt occaecat anim nulla aliquip tempor veniam proident.\r\nProident labore sunt sint duis consequat Lorem ea ullamco incididunt ea. Amet incididunt occaecat quis adipisicing nostrud et commodo et exercitation. Adipisicing ea velit nisi commodo nostrud qui incididunt consectetur aute ex. Sint reprehenderit magna labore dolore deserunt do excepteur nostrud nostrud. Enim eiusmod enim nisi et cillum. Occaecat aliqua laborum officia dolore excepteur.\r\n",
+          "rating": 15,
+          "language": "Fra",
+          "difficulty": "Intermediate",
+          "type": "Seminar",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e3752c0a504dd36ad",
+          "trainers": [
+              {
+                  "id": "5b66c10ef9ff4eeaab5629e8",
+                  "name": "Doyle Gray",
+                  "avatar": "https://randomuser.me/api/portraits/women/21.jpg"
+              },
+              {
+                  "id": "5b66c10ea798bf0538f292db",
+                  "name": "Marcella Wilcox",
+                  "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
+              },
+              {
+                  "id": "5b66c10e99cc107c77aae74d",
+                  "name": "Soto Mcfarland",
+                  "avatar": "https://randomuser.me/api/portraits/women/58.jpg"
+              },
+              {
+                  "id": "5b66c10e61c60581d8789509",
+                  "name": "Phyllis Cherry",
+                  "avatar": "https://randomuser.me/api/portraits/women/8.jpg"
+              },
+              {
+                  "id": "5b66c10ed847fd4ce7289bce",
+                  "name": "Reba Mcknight",
+                  "avatar": "https://randomuser.me/api/portraits/women/29.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=20",
+          "date": "2018-11-12T09:58:10",
+          "duration": 131,
+          "title": "nisi officia ex",
+          "description": "Nostrud anim dolor minim velit nostrud duis eu sint ullamco est adipisicing non ea. Ipsum incididunt deserunt qui minim dolor in ullamco sit exercitation in. Aliqua in voluptate deserunt magna commodo sit consectetur magna dolore cillum enim minim sunt magna. Deserunt ad sint elit sint tempor officia dolore veniam fugiat et excepteur duis ex.\r\nProident do dolor cillum proident fugiat incididunt culpa ullamco est deserunt mollit adipisicing occaecat. Ut deserunt qui ad elit sint eu voluptate tempor consequat sit dolor eu qui quis. Adipisicing nostrud esse laboris consequat nostrud laborum ut anim.\r\nIncididunt aute amet nisi commodo fugiat. Ullamco est culpa officia proident excepteur est amet cillum. Minim nulla sit officia officia magna laboris aliquip do ea et enim est voluptate eiusmod. Occaecat nulla aliqua pariatur tempor Lorem Lorem excepteur Lorem dolore aliqua proident. Commodo eiusmod enim culpa qui duis sunt nostrud ex ut laboris tempor esse sit culpa.\r\nCillum ea fugiat irure proident. Minim sint officia quis quis id cillum. Mollit aute adipisicing ad esse reprehenderit adipisicing et ullamco et laboris elit magna culpa id. Aute tempor occaecat aliquip aliquip Lorem consequat et reprehenderit in tempor ex pariatur. Cupidatat consequat commodo amet culpa Lorem excepteur eiusmod Lorem. Dolor ea in excepteur veniam ex. Ea excepteur deserunt sunt deserunt et.\r\nVelit ipsum amet cupidatat nisi. Enim exercitation do sunt dolor tempor officia occaecat irure amet laboris. Ut ut est veniam cupidatat sit aute. Duis ad dolor sit excepteur do reprehenderit esse quis sunt velit qui commodo ea quis. Exercitation non reprehenderit adipisicing dolore aliquip dolore. Esse sunt tempor tempor labore consequat cupidatat ullamco mollit velit mollit do laborum do. Do quis ullamco Lorem irure elit dolore laborum ad irure pariatur.\r\n",
+          "rating": 12,
+          "language": "Fra",
+          "difficulty": "Novice",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10ef529e07fdae828d9",
+          "trainers": [
+              {
+                  "id": "5b66c10ef4b22efeed0d47cc",
+                  "name": "Haley Conner",
+                  "avatar": "https://randomuser.me/api/portraits/women/36.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=11",
+          "date": "2018-11-17T08:58:51",
+          "duration": 47,
+          "title": "laborum veniam ut officia",
+          "description": "Eu aliquip consequat aute proident elit mollit. Esse eiusmod minim reprehenderit aute fugiat dolor officia duis aliquip proident. Id qui sint exercitation nulla duis non adipisicing proident est mollit. Nulla deserunt et proident laboris aliquip sint ut laboris fugiat irure eu. Nisi aute excepteur non est laboris est culpa minim id dolore. Nostrud officia veniam laborum minim nulla tempor. Mollit aliqua ullamco qui minim minim dolor nulla.\r\nLaboris cupidatat eiusmod proident elit nisi dolor dolor sit deserunt aliquip. Consequat aliqua ea tempor non eiusmod commodo non. Commodo sint proident reprehenderit qui do sit Lorem adipisicing minim laboris enim sint in.\r\nOccaecat pariatur veniam do dolore deserunt labore ex enim minim est nostrud non. Cupidatat cillum aliqua cupidatat velit deserunt in mollit. Irure cillum aliqua laborum voluptate anim ipsum do aute in aute est exercitation tempor. Labore enim voluptate ut deserunt non laborum ex aliquip anim velit aute duis est proident.\r\nEst aliquip nostrud excepteur culpa. Ipsum consequat pariatur et magna pariatur. Nisi minim quis id id. Anim ipsum ex laborum nisi occaecat commodo aliqua cillum reprehenderit ut. Nulla magna nostrud id exercitation Lorem qui reprehenderit proident id fugiat.\r\nSunt deserunt nostrud ipsum ullamco consectetur incididunt proident ea culpa duis ex laborum sit nostrud. Velit non consequat est do do nulla nostrud do qui culpa velit ex amet aliquip. Mollit quis magna nostrud ea ad exercitation dolore voluptate.\r\nIn cillum dolore mollit quis enim excepteur eu officia labore esse aute ullamco id magna. Minim culpa aute exercitation adipisicing. Consequat non esse deserunt amet incididunt proident culpa voluptate veniam mollit do sunt. Duis eiusmod consectetur culpa culpa aliquip dolor sit laboris aliquip voluptate labore deserunt in irure. Amet ipsum tempor do pariatur Lorem tempor.\r\nAd aliqua aliqua exercitation nostrud nostrud duis do ipsum pariatur in commodo. Velit nostrud cupidatat ipsum labore enim cillum adipisicing minim duis ullamco duis. Ipsum in consequat incididunt ut et tempor occaecat quis ut dolor magna.\r\nDo ullamco nulla deserunt cillum id culpa quis officia laborum esse est occaecat esse Lorem. Non cillum fugiat sint cupidatat sunt ea cillum. Incididunt adipisicing culpa adipisicing laboris sunt incididunt eu amet aliqua et irure qui commodo do. Minim qui cupidatat nisi esse cupidatat laborum aute veniam aliquip nostrud amet non enim officia.\r\n",
+          "rating": 12,
+          "language": "Esp",
+          "difficulty": "For All",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e393d98ca98b13ea5",
+          "trainers": [
+              {
+                  "id": "5b66c10e86e3a9210c8ed6e5",
+                  "name": "Anna Palmer",
+                  "avatar": "https://randomuser.me/api/portraits/men/40.jpg"
+              },
+              {
+                  "id": "5b66c10e0ca3f716c366f66d",
+                  "name": "Curtis Townsend",
+                  "avatar": "https://randomuser.me/api/portraits/men/67.jpg"
+              },
+              {
+                  "id": "5b66c10e3302cebb6f3a19a6",
+                  "name": "Lucille Benson",
+                  "avatar": "https://randomuser.me/api/portraits/women/37.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=4",
+          "date": "2018-11-28T11:22:40",
+          "duration": 362,
+          "title": "elit cillum labore ad laboris",
+          "description": "Fugiat aute velit ut nisi ad officia excepteur duis aliquip. Do proident culpa excepteur aute elit id veniam veniam mollit eiusmod excepteur excepteur nulla. Velit sunt enim eu laboris nulla pariatur velit nisi Lorem ex anim laboris labore.\r\nIn et sunt incididunt nostrud veniam pariatur nulla esse elit. Ex non ipsum id culpa tempor id proident cillum velit eu exercitation. Mollit laboris id excepteur magna enim voluptate. Tempor aute sint id consequat do eu anim laboris Lorem ex nulla. Sunt aute cupidatat exercitation nisi officia in aute commodo aliquip in.\r\nQuis sunt in incididunt id. Aute fugiat adipisicing duis eu officia enim. Tempor tempor magna quis duis aliquip sint excepteur sint commodo irure qui est velit minim. Nulla labore ad nulla veniam dolore.\r\nDolor est do quis id et enim voluptate commodo esse fugiat. Proident laborum est in commodo culpa anim. Mollit cupidatat consequat nisi eu nostrud minim adipisicing labore enim. Irure deserunt consequat esse eiusmod ullamco eiusmod minim velit consectetur labore dolore incididunt esse cillum. Veniam labore in magna consectetur Lorem consequat sunt non aliqua velit esse elit. Ut ipsum aute deserunt aliquip. Enim sit tempor proident quis nisi excepteur et voluptate.\r\nElit aliqua id sit ullamco. Dolore proident Lorem Lorem amet. Voluptate labore reprehenderit cupidatat deserunt elit excepteur in eu excepteur culpa. Magna adipisicing ex ut culpa irure. Dolor anim sunt consectetur Lorem sit tempor quis eiusmod.\r\nLorem eiusmod proident irure ea et irure amet irure commodo sint. Exercitation proident enim in mollit enim quis voluptate minim est. Ullamco magna laboris cupidatat officia. In voluptate officia commodo culpa enim elit in ipsum duis amet commodo eu. Ut adipisicing do aliquip aliquip.\r\nIn ad ex eiusmod laborum magna ipsum in commodo. Mollit do ipsum ex ullamco proident. Est commodo consectetur labore exercitation excepteur minim nisi sint tempor. Labore duis anim anim nostrud qui amet ex. Excepteur sint reprehenderit amet ipsum non cupidatat. Non fugiat sunt proident excepteur ullamco ullamco proident adipisicing. Lorem adipisicing sunt quis officia aute qui qui est eu ut sit non incididunt.\r\nUt velit ipsum ipsum fugiat qui eu excepteur aliquip deserunt aute voluptate et minim. Pariatur sunt voluptate ad enim ipsum. Aute et velit ea in. Commodo cupidatat sit magna sint cillum sunt proident minim dolore commodo non sunt. Reprehenderit mollit sit exercitation sint culpa veniam id veniam commodo qui veniam est.\r\nFugiat cupidatat esse ad exercitation voluptate ea laborum fugiat id. Ea nulla in in officia enim deserunt fugiat id. Ipsum eiusmod ut non nisi consequat aliquip mollit enim pariatur commodo culpa in consequat. Voluptate tempor ea reprehenderit incididunt.\r\nLaborum reprehenderit sint culpa do consectetur sit anim excepteur ex labore eu. Sit exercitation occaecat voluptate dolor est consectetur esse dolore cillum occaecat duis cillum nostrud. Officia quis voluptate sit excepteur dolore cillum ex minim.\r\nEiusmod ut irure do id. Lorem dolor laborum adipisicing consectetur consequat pariatur. Magna tempor minim nostrud nostrud occaecat. Elit dolore deserunt laborum elit eu dolor reprehenderit exercitation voluptate consectetur amet laborum laborum. Anim veniam consectetur quis labore veniam velit mollit. Laborum irure in in adipisicing aliqua amet sit officia labore dolor dolore.\r\nLaboris sit exercitation ullamco pariatur do. Tempor labore ullamco minim irure mollit dolor et reprehenderit dolore labore qui. Proident aliqua ipsum cupidatat in est ullamco do occaecat do officia laboris ex. Mollit nostrud nulla enim labore culpa pariatur ullamco elit magna est. Consectetur cupidatat et reprehenderit eu dolore laboris velit nulla voluptate occaecat aliqua irure dolor ullamco.\r\n",
+          "rating": 27,
+          "language": "Pol",
+          "difficulty": "Intermediate",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e20756d3c58d689b1",
+          "trainers": [
+              {
+                  "id": "5b66c10ee8b922a11d909f0c",
+                  "name": "Bernadine Dyer",
+                  "avatar": "https://randomuser.me/api/portraits/men/1.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=7",
+          "date": "2018-10-17T11:39:32",
+          "duration": 299,
+          "title": "nostrud incididunt velit non aute",
+          "description": "Fugiat labore quis sit labore proident voluptate mollit occaecat culpa ad sunt laborum ullamco. Sit laborum consectetur et Lorem tempor cillum aute voluptate consectetur eu officia dolore do. Excepteur occaecat ad aliqua fugiat aliqua proident. Elit excepteur laborum magna dolore ipsum velit adipisicing consequat ut. Cupidatat ut sint tempor ad nisi culpa.\r\nCulpa magna consequat adipisicing cillum sint cupidatat et. Occaecat esse commodo fugiat do cillum. Voluptate et officia enim occaecat veniam sit velit velit Lorem. Fugiat consectetur ea aliquip non velit Lorem do deserunt incididunt dolore veniam esse.\r\nConsectetur officia sint consequat aute in tempor ea velit occaecat ut. Elit occaecat voluptate minim consequat irure proident duis id veniam. Cupidatat dolore exercitation nisi aute commodo laboris. Pariatur laboris ut elit proident laboris. Consectetur laboris culpa est eiusmod ad do aute aliqua quis. Sit cupidatat ipsum incididunt tempor do esse consectetur quis velit do.\r\nUllamco enim excepteur eiusmod adipisicing voluptate amet pariatur id qui consequat sit ad. Laboris sunt anim officia ex tempor nostrud laborum eu et id. Laborum laborum nostrud culpa qui ipsum. Qui ea excepteur ut reprehenderit elit qui amet ullamco enim in aute duis consectetur qui. Occaecat sint ullamco labore sit consequat officia consectetur ad consequat dolor. Pariatur sit laborum esse enim consequat labore exercitation.\r\nDo exercitation exercitation velit sint magna dolor. Ex amet officia dolore quis id deserunt velit aliqua do. Incididunt laboris incididunt cupidatat labore ullamco dolor ipsum. Non est consequat enim nisi laboris.\r\n",
+          "rating": 44,
+          "language": "Rus",
+          "difficulty": "Novice",
+          "type": "Lecture",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ebdb5499150f42b2a",
+          "trainers": [
+              {
+                  "id": "5b66c10ecd17b771cadd6d18",
+                  "name": "Rena Mcdaniel",
+                  "avatar": "https://randomuser.me/api/portraits/women/2.jpg"
+              },
+              {
+                  "id": "5b66c10ecadbd05e6105ead8",
+                  "name": "Knapp Garrison",
+                  "avatar": "https://randomuser.me/api/portraits/men/8.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=16",
+          "date": "2018-10-24T07:12:33",
+          "duration": 282,
+          "title": "dolor Lorem commodo",
+          "description": "Aliquip incididunt sint et irure culpa eiusmod cupidatat pariatur anim officia nostrud. Elit non mollit ex veniam ad et do labore amet. Consequat aliquip eu fugiat sunt amet occaecat laborum adipisicing ut occaecat dolore fugiat. Est amet adipisicing sunt cillum.\r\nSint enim qui excepteur enim ipsum tempor. Elit proident ut sint reprehenderit et esse nulla velit Lorem nisi elit proident et. Ullamco quis duis consequat dolore sunt reprehenderit sit reprehenderit quis.\r\nDolore ut elit non aliquip. Reprehenderit nulla ullamco irure enim reprehenderit sint amet mollit officia consequat. Deserunt Lorem id ipsum ipsum laborum consequat laboris. Ullamco sunt ut ut adipisicing sit ut.\r\nLorem sint tempor ea pariatur voluptate velit proident non officia eu ad irure nulla. Occaecat anim aliqua id ad ex est nostrud esse. Eu consectetur voluptate labore deserunt voluptate voluptate occaecat non amet incididunt tempor eu qui incididunt.\r\nProident fugiat ad ad commodo eu ut ut ut minim qui. Ullamco consequat ex quis labore deserunt do dolor commodo irure eiusmod et consequat. Veniam deserunt tempor reprehenderit velit nostrud officia irure.\r\nConsectetur excepteur culpa minim proident officia sunt reprehenderit. Laboris incididunt excepteur aliqua reprehenderit. Sit Lorem labore tempor ut laboris aliqua aliqua laboris cupidatat consequat. Enim exercitation tempor Lorem adipisicing tempor labore incididunt incididunt culpa incididunt.\r\nMollit irure mollit fugiat non minim proident occaecat velit est. Labore veniam labore velit aute consequat deserunt. Deserunt ea nisi amet culpa cillum sit. Aliquip quis veniam non proident velit id excepteur voluptate ad in enim ea.\r\nEa quis pariatur cillum nostrud. Aliqua incididunt cupidatat exercitation eu duis velit tempor dolore nisi culpa in dolor in nisi. Aliquip non Lorem culpa do excepteur cupidatat. Id veniam est sunt fugiat pariatur enim cupidatat ipsum adipisicing. Incididunt ut non commodo qui. Dolore occaecat nisi aute id Lorem mollit.\r\n",
+          "rating": 36,
+          "language": "Rus",
+          "difficulty": "Advanced",
+          "type": "Lecture",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e35a7bbd0b59eeb74",
+          "trainers": [
+              {
+                  "id": "5b66c10ef5844f1adba01fec",
+                  "name": "Dunlap Hanson",
+                  "avatar": "https://randomuser.me/api/portraits/women/30.jpg"
+              },
+              {
+                  "id": "5b66c10ed69ae02898e6d7c8",
+                  "name": "Silvia Spencer",
+                  "avatar": "https://randomuser.me/api/portraits/men/13.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=16",
+          "date": "2018-11-12T04:03:06",
+          "duration": 351,
+          "title": "sit laborum deserunt aliqua ad sint",
+          "description": "Labore anim pariatur labore culpa adipisicing laboris excepteur elit. Ad mollit cupidatat fugiat mollit ipsum reprehenderit magna culpa est occaecat sit sit aliqua laboris. In ad commodo labore minim dolor excepteur laborum eu fugiat fugiat fugiat. Eiusmod incididunt cupidatat ipsum deserunt qui irure velit occaecat laboris ullamco eiusmod ut cillum in. Lorem sit est incididunt velit anim labore Lorem veniam voluptate minim in esse laboris. Aute proident ex occaecat laborum cupidatat enim do officia consequat labore eu.\r\nIn ipsum do occaecat proident labore dolore et consequat tempor. Enim dolore pariatur laboris sint cillum proident nisi nisi. Sint laboris culpa voluptate fugiat do adipisicing amet voluptate ad laboris sit non do esse. Lorem quis laborum et laboris esse consectetur labore enim proident esse enim esse tempor ad. Amet sunt officia sunt non minim cupidatat sint sint quis officia ea veniam.\r\nQuis laboris cupidatat et cupidatat. Duis eu veniam magna aliqua sunt. Labore ad occaecat veniam nulla. Reprehenderit labore eu dolor nulla. Minim laborum velit ex occaecat voluptate nisi aliquip Lorem pariatur. Laboris reprehenderit deserunt tempor dolor veniam dolor adipisicing ea cupidatat Lorem consequat.\r\nId Lorem sint elit occaecat Lorem cupidatat sint est quis. Velit sit excepteur irure voluptate exercitation sint dolore enim laboris nostrud non. Ea laborum officia nisi proident amet. Consequat est commodo in in ut reprehenderit sit deserunt aute. Eu velit nostrud eu deserunt ullamco labore nisi ad officia ipsum exercitation et tempor.\r\nMagna velit magna veniam proident sit consequat esse irure adipisicing nostrud aliqua do. Ex voluptate cupidatat in reprehenderit velit laborum minim laboris veniam aute laborum pariatur enim. Esse ipsum ad ipsum commodo sit non adipisicing ut tempor.\r\nNulla reprehenderit qui sint magna exercitation qui. Aliqua aute Lorem ea consectetur tempor eu proident dolor ex. Nulla laborum in sit velit adipisicing nulla tempor reprehenderit sint irure esse. Laboris amet quis est commodo irure consectetur consequat voluptate. Aliqua ipsum consectetur enim pariatur in culpa duis et occaecat cillum laborum ad est tempor. Deserunt consequat do aliqua quis laboris ipsum quis et sunt culpa. Nostrud tempor esse reprehenderit nostrud culpa exercitation.\r\nDo id reprehenderit exercitation exercitation elit id deserunt. Exercitation id incididunt voluptate Lorem enim pariatur fugiat. Et excepteur excepteur ut velit sit excepteur ea magna nulla. Ad do nisi aliqua sit pariatur laboris ex. Exercitation cupidatat amet enim ipsum velit tempor eiusmod non. Cillum minim sunt dolor elit consequat velit non enim quis aliquip consectetur est. Incididunt do ea duis id.\r\nEt in commodo consequat sit occaecat fugiat non nulla ad. Laborum occaecat irure dolore exercitation tempor laboris sunt. Non nisi commodo proident ad ut non aute est et eiusmod incididunt sunt sit. Ullamco reprehenderit ut magna incididunt nisi id incididunt aliquip nostrud sint mollit ullamco excepteur. Officia eiusmod enim proident mollit esse et et id cillum consequat excepteur minim ipsum. Consectetur sint ea ea amet amet ex minim duis voluptate et amet deserunt. Ad reprehenderit non anim proident deserunt nulla non cupidatat fugiat.\r\nVeniam magna consectetur est irure ut qui adipisicing commodo veniam amet nostrud velit. Culpa Lorem adipisicing enim labore ut incididunt et magna consequat. Proident ut qui aliquip adipisicing. Pariatur id ut et velit sunt proident cillum ut. Excepteur fugiat excepteur ullamco voluptate aute enim. Ad consectetur Lorem ad tempor ea ex ad culpa est laboris. Eu laborum irure ad nulla ut dolore culpa qui tempor.\r\nAute quis enim consequat magna minim sunt ea reprehenderit cillum ipsum nulla. Ea reprehenderit adipisicing consequat dolore officia adipisicing qui do. Tempor sunt non non sunt enim tempor adipisicing occaecat commodo aute ipsum in. Adipisicing fugiat sit ex elit esse duis et ipsum consectetur aliquip eu excepteur veniam aliqua.\r\nAute qui do ea incididunt ex nisi anim ad quis. Fugiat commodo nostrud laboris nisi. Do id cupidatat sit aliqua officia tempor aliqua est ipsum ullamco. In do sunt commodo fugiat ut. Adipisicing amet qui eiusmod laborum incididunt irure aliquip.\r\nVoluptate anim velit velit sit sint eiusmod. Elit dolore ullamco aliquip ut sit laboris veniam. Dolore ad ullamco cillum enim enim. Sit elit sint nulla sit adipisicing tempor cupidatat reprehenderit sunt ut.\r\nCillum est ullamco nulla cupidatat aute. Quis ipsum eiusmod ex et enim exercitation velit adipisicing. Incididunt ipsum ea deserunt ex esse eiusmod mollit cillum culpa enim sit mollit. Ad minim commodo aliqua sint duis ipsum amet non cillum ad quis enim.\r\nAdipisicing et est adipisicing enim magna anim eiusmod incididunt tempor aute. Quis nisi exercitation nostrud sunt fugiat anim adipisicing consequat. Minim adipisicing id ullamco commodo non ullamco amet velit qui culpa in aliqua ad cupidatat. Aute voluptate consectetur velit esse occaecat quis eu eiusmod ipsum consequat sint aliqua enim. Mollit qui laborum consequat dolore cillum amet non velit commodo esse fugiat consequat aute veniam.\r\nCulpa magna exercitation laborum excepteur ex est exercitation occaecat irure occaecat. Irure reprehenderit consequat nostrud fugiat sint exercitation do aliquip id. Excepteur laborum est laboris laborum ea ea voluptate commodo dolor eu. Eu tempor nulla amet est eiusmod reprehenderit sint. Dolore mollit pariatur aute ad laboris mollit cillum. Ipsum veniam magna labore quis aliquip elit voluptate anim laborum esse excepteur esse minim.\r\n",
+          "rating": 27,
+          "language": "Eng",
+          "difficulty": "Novice",
+          "type": "Training",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e7f1e285dfda22b85",
+          "trainers": [
+              {
+                  "id": "5b66c10e2ebfd67ecaf9202b",
+                  "name": "Rae Warner",
+                  "avatar": "https://randomuser.me/api/portraits/men/10.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=5",
+          "date": "2018-08-07T06:06:19",
+          "duration": 139,
+          "title": "occaecat dolor tempor quis irure",
+          "description": "Nostrud velit reprehenderit sunt sint aute do aliquip mollit occaecat est nostrud. Aute sunt adipisicing est consequat dolor reprehenderit. Commodo sunt sit ut voluptate commodo qui ea excepteur voluptate veniam. Excepteur Lorem velit ut proident elit do qui consectetur.\r\nQui id occaecat enim cupidatat Lorem nostrud ullamco ipsum. Veniam fugiat elit laboris eiusmod veniam duis incididunt in ut culpa. Sint cillum sit consectetur sit. Duis nisi cupidatat sit ut ipsum. Do non proident ut deserunt nulla. Voluptate officia sint minim ut nisi nulla. Aute labore duis quis amet irure occaecat proident.\r\nAdipisicing fugiat minim qui pariatur incididunt do exercitation Lorem ea. Dolore cillum velit quis dolore tempor irure minim ullamco minim proident. Magna ad aliquip consequat Lorem et officia. Dolor dolor esse nisi labore id eiusmod.\r\nVeniam reprehenderit in culpa nulla sit eu consectetur nisi laboris et ipsum sit. Adipisicing enim esse commodo do non consectetur nisi do pariatur tempor magna quis aliqua. Cillum in elit excepteur adipisicing. Sunt aute est commodo nostrud proident ex ullamco commodo ea mollit sit nostrud ea id. Cupidatat consectetur ipsum aliquip nulla ea. Occaecat culpa sint eiusmod do sunt culpa ad dolor proident cillum sunt quis eu.\r\nOfficia deserunt commodo proident elit eu laborum qui do occaecat fugiat. Laborum anim proident mollit reprehenderit excepteur consectetur nulla laborum. Exercitation voluptate duis nulla fugiat sunt. Ullamco eu officia ex aliquip velit mollit aliqua. Excepteur ullamco consectetur eiusmod officia amet nostrud Lorem ex sunt minim nulla ut laboris ipsum. Veniam laborum ex non non.\r\n",
+          "rating": 43,
+          "language": "Rus",
+          "difficulty": "Intermediate",
+          "type": "Lecture",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e8a667c712484ed85",
+          "trainers": [
+              {
+                  "id": "5b66c10e435d783ffcdd0b38",
+                  "name": "Velasquez Yang",
+                  "avatar": "https://randomuser.me/api/portraits/women/43.jpg"
+              },
+              {
+                  "id": "5b66c10e98972135a913ea59",
+                  "name": "Cote Crosby",
+                  "avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+              },
+              {
+                  "id": "5b66c10e217790db748e8232",
+                  "name": "Marianne Blackburn",
+                  "avatar": "https://randomuser.me/api/portraits/women/62.jpg"
+              },
+              {
+                  "id": "5b66c10eb2fb86fff3026c35",
+                  "name": "Good Santiago",
+                  "avatar": "https://randomuser.me/api/portraits/men/35.jpg"
+              },
+              {
+                  "id": "5b66c10ececf26ea762c3011",
+                  "name": "Ruthie Fowler",
+                  "avatar": "https://randomuser.me/api/portraits/women/62.jpg"
+              },
+              {
+                  "id": "5b66c10e43b563d6b477bfb4",
+                  "name": "Wilda Gilliam",
+                  "avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=9",
+          "date": "2018-08-22T04:53:42",
+          "duration": 333,
+          "title": "fugiat veniam eiusmod Lorem",
+          "description": "Exercitation minim quis ipsum occaecat. Aliquip nisi adipisicing ut eu et quis excepteur. Nisi excepteur in adipisicing officia quis labore nostrud aute commodo mollit voluptate ut.\r\nExercitation est reprehenderit ad exercitation culpa nisi magna non officia sint veniam. Esse officia esse fugiat ex culpa elit. Excepteur elit qui id deserunt amet ex. Enim non Lorem esse proident eiusmod voluptate veniam culpa duis velit ex amet. Elit incididunt et enim aliquip eiusmod ullamco dolore magna in do laboris. Esse minim laborum laboris nostrud minim.\r\nFugiat ad minim tempor laboris dolore nulla ad id eiusmod elit exercitation dolor. Laboris voluptate officia sunt ut qui excepteur pariatur pariatur non esse. Eu pariatur ex nostrud velit Lorem nostrud eiusmod labore qui ex. Mollit cupidatat aliqua laborum sunt sunt consectetur velit duis aliqua nisi velit elit. Culpa veniam ullamco dolor enim velit. Consequat adipisicing occaecat aute cillum. Labore minim do velit dolore cillum labore elit do eiusmod dolor nulla.\r\nLaborum laboris non pariatur excepteur adipisicing esse esse irure nulla qui commodo. Pariatur Lorem ea excepteur est irure eiusmod reprehenderit do duis. Consequat nisi et enim nulla eu enim excepteur est esse labore id. Ea elit pariatur aliquip laborum. Labore in duis est reprehenderit occaecat eiusmod id ut. Magna et id occaecat deserunt sit duis. Ad laborum veniam esse exercitation sit adipisicing laboris anim officia ullamco culpa deserunt.\r\nEsse do sint pariatur sunt qui adipisicing veniam. Excepteur aliquip adipisicing laboris laborum ad culpa amet sunt proident ad adipisicing incididunt eu et. Aliquip et proident officia ullamco fugiat magna dolor ex amet ex. Duis aute dolor sit occaecat sit.\r\nConsequat elit sit laboris nisi officia nisi. Consequat sint minim incididunt irure nostrud laboris enim ea sit. Nisi minim pariatur esse esse esse sint voluptate.\r\nIncididunt elit tempor id velit qui incididunt ex eiusmod. Exercitation ut aliquip duis ipsum. Veniam anim nisi dolore eiusmod ipsum nisi eu adipisicing officia. Eu voluptate reprehenderit cillum cillum commodo. Officia ut ea eu occaecat minim nostrud id excepteur deserunt dolore. Id sint enim eiusmod reprehenderit et qui proident in commodo nostrud laborum ad quis reprehenderit. Quis commodo nulla officia est nostrud deserunt.\r\nMinim culpa nisi non elit ex amet sunt in fugiat velit ipsum. Reprehenderit consectetur sunt qui do aute aliqua. Excepteur non proident pariatur consequat id mollit reprehenderit ea nisi Lorem do. Esse duis aliqua proident elit laborum laboris et. Proident ex nulla elit ullamco irure anim duis. Aute sit nulla in ullamco et do Lorem laborum. Et dolore non deserunt commodo nisi laborum id ut esse duis eu.\r\nVoluptate et eiusmod et deserunt ea cupidatat eu mollit sunt anim fugiat anim eu eu. Ullamco sunt officia velit ipsum sint incididunt aute velit dolor laboris et do cillum excepteur. Aliquip adipisicing labore sit mollit tempor labore nisi culpa esse non labore proident.\r\nPariatur quis nostrud laboris quis aute ex cillum magna laboris excepteur consectetur irure quis duis. Commodo occaecat minim reprehenderit elit eiusmod est non cillum in nulla est velit. Amet consequat incididunt enim sit do ex ex labore eiusmod. Amet aliqua cupidatat ad do tempor dolor nulla laborum amet voluptate. Et duis velit aliquip duis magna eiusmod amet non occaecat aute enim velit irure. Fugiat reprehenderit reprehenderit aute est labore officia quis fugiat ipsum exercitation ea. Irure quis ut sit aute magna nulla eiusmod nisi laboris ullamco.\r\nVeniam sint pariatur duis non. Aute commodo minim aliquip pariatur officia Lorem veniam est aliquip adipisicing. Eu deserunt adipisicing ad nulla ullamco enim aliquip excepteur. Est qui labore ea veniam tempor consectetur aliqua qui anim laborum in elit fugiat. Ipsum voluptate enim est ex eiusmod proident. Magna officia qui labore aliquip incididunt pariatur enim ipsum enim et anim eiusmod. Fugiat laboris ipsum labore nisi minim nisi et Lorem anim cillum.\r\nNostrud deserunt anim est dolore. Ad nostrud consequat fugiat aute et exercitation aliquip do. Id veniam aliquip quis reprehenderit nostrud tempor velit enim nostrud voluptate ullamco Lorem. Sit nisi proident aliquip cillum est. Dolore sunt id ex deserunt.\r\n",
+          "rating": 35,
+          "language": "Fra",
+          "difficulty": "Expert",
+          "type": "Lecture",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ec2c7dfbcb25301c9",
+          "trainers": [
+              {
+                  "id": "5b66c10e3199dce4980e6f84",
+                  "name": "Martin Dennis",
+                  "avatar": "https://randomuser.me/api/portraits/women/63.jpg"
+              },
+              {
+                  "id": "5b66c10e777cfc5284dbc955",
+                  "name": "Medina Ferrell",
+                  "avatar": "https://randomuser.me/api/portraits/men/33.jpg"
+              },
+              {
+                  "id": "5b66c10ed84b93ff8f4d8877",
+                  "name": "Tamika Hunter",
+                  "avatar": "https://randomuser.me/api/portraits/men/34.jpg"
+              },
+              {
+                  "id": "5b66c10e90ed68a6235cc70d",
+                  "name": "York Mcpherson",
+                  "avatar": "https://randomuser.me/api/portraits/women/39.jpg"
+              },
+              {
+                  "id": "5b66c10ec25cc7be3b672faa",
+                  "name": "Cherry Collier",
+                  "avatar": "https://randomuser.me/api/portraits/men/8.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=4",
+          "date": "2018-08-04T12:29:37",
+          "duration": 44,
+          "title": "aute veniam eiusmod Lorem eiusmod quis eiusmod adipisicing",
+          "description": "Cupidatat occaecat non aliquip anim et deserunt consectetur. Lorem reprehenderit incididunt nisi anim id fugiat minim laborum velit. Irure ex minim labore non eu minim.\r\nProident duis deserunt nostrud sint aute in adipisicing in nostrud elit ipsum adipisicing ea elit. Commodo do qui ea quis. Labore eiusmod qui adipisicing qui Lorem.\r\nVoluptate aliquip occaecat exercitation dolore dolore consequat voluptate irure labore excepteur reprehenderit dolor ad consectetur. Velit consectetur consequat amet incididunt. Incididunt quis esse mollit irure culpa elit ea. Dolore eiusmod nisi tempor adipisicing adipisicing ut et mollit nostrud sunt excepteur. Dolor in exercitation nulla amet consectetur.\r\nEt nostrud aute dolor incididunt labore nisi veniam consectetur excepteur consectetur enim. Tempor Lorem minim minim ex commodo do consectetur duis magna excepteur sit qui. Labore velit commodo deserunt non nostrud nisi sunt enim duis adipisicing Lorem laboris in. Irure ipsum ipsum laboris culpa. Cillum adipisicing aliqua sint non elit irure esse. Pariatur exercitation ut consectetur reprehenderit eu sint consequat do non. Adipisicing anim velit ad magna elit.\r\nFugiat cillum minim adipisicing dolore incididunt commodo reprehenderit. Amet sit amet ea sint dolore officia minim. Cillum reprehenderit est reprehenderit non ad proident laborum.\r\nIrure enim occaecat minim veniam sunt nostrud cillum dolore. Mollit adipisicing ad ullamco pariatur anim officia nostrud mollit laborum esse ut fugiat consequat. Ad laborum sunt Lorem ad nulla do anim et quis.\r\nDolor pariatur aliquip commodo culpa ut velit adipisicing irure aute velit occaecat. Do ea exercitation velit sit nisi dolore cupidatat et dolore quis fugiat minim est. In elit qui velit qui eiusmod voluptate do aliqua fugiat pariatur consectetur sunt. Ex exercitation sint deserunt ipsum aliqua ex consequat eu. Consequat dolor mollit deserunt eiusmod proident nisi cupidatat officia tempor fugiat. Ut irure et sit quis culpa cillum officia anim. Consequat incididunt fugiat deserunt ad sit anim veniam aliqua non officia excepteur enim Lorem.\r\nId enim irure et et irure est nostrud ut ex eu proident. Excepteur ullamco dolore occaecat ut nostrud irure deserunt laborum. Non velit adipisicing nulla et. Culpa sunt reprehenderit duis do pariatur ipsum qui non.\r\nReprehenderit cillum duis duis velit tempor voluptate consectetur excepteur eu qui ex. Reprehenderit cillum deserunt anim consectetur pariatur nulla. Esse nisi pariatur sint fugiat culpa anim eiusmod exercitation sint ipsum.\r\nExercitation elit eiusmod consequat occaecat qui sit. Dolor ullamco adipisicing sint aliquip enim. Sunt sint et ullamco laboris aliqua amet esse dolor voluptate esse Lorem. Quis reprehenderit aute qui cupidatat commodo est adipisicing.\r\nEt esse proident velit magna minim ullamco voluptate. Irure aliquip cupidatat nostrud occaecat irure anim mollit ut irure anim incididunt veniam eu ullamco. Exercitation eu excepteur sunt non qui labore elit. Irure minim qui id occaecat. Excepteur enim quis enim commodo enim deserunt enim sint ad ipsum reprehenderit ut mollit aliqua. Consequat sunt anim veniam nostrud nisi adipisicing qui dolore non elit occaecat. Commodo sit incididunt eu pariatur consectetur excepteur.\r\nCupidatat eiusmod commodo excepteur tempor consectetur consequat aliqua officia irure dolore reprehenderit occaecat do cillum. Dolor ipsum velit ex et nisi eu officia et commodo ipsum. Nisi incididunt laborum eiusmod et cillum. Voluptate ullamco eiusmod do veniam pariatur sunt fugiat. Est sit commodo nulla est aute ullamco adipisicing non excepteur ullamco incididunt anim. Velit labore sint excepteur deserunt commodo eiusmod laborum.\r\n",
+          "rating": 21,
+          "language": "Eng",
+          "difficulty": "Novice",
+          "type": "Lecture",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e7e5b1fb0e379bac2",
+          "trainers": [
+              {
+                  "id": "5b66c10e36e92f08b2699a00",
+                  "name": "Lesley Duffy",
+                  "avatar": "https://randomuser.me/api/portraits/men/54.jpg"
+              },
+              {
+                  "id": "5b66c10e42f84700dc1611ef",
+                  "name": "Whitney Winters",
+                  "avatar": "https://randomuser.me/api/portraits/women/31.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=8",
+          "date": "2018-11-15T08:40:09",
+          "duration": 69,
+          "title": "consequat culpa Lorem anim elit minim enim est deserunt",
+          "description": "Eu nisi occaecat ut qui culpa minim ipsum consectetur do ad Lorem. Sit mollit amet laborum irure fugiat velit incididunt. Eu consequat et non nostrud exercitation magna occaecat eu in consequat aliquip labore et. Aute minim id veniam eiusmod consectetur voluptate non tempor voluptate adipisicing sint minim. Dolore velit ad nisi laborum ullamco veniam exercitation ullamco consectetur laboris voluptate officia irure anim.\r\nLorem aliquip elit culpa Lorem eiusmod voluptate in ipsum commodo ullamco occaecat anim consequat. Deserunt excepteur incididunt culpa amet in voluptate incididunt nisi nulla officia excepteur. Pariatur duis aliquip adipisicing amet adipisicing proident esse excepteur.\r\nDeserunt amet id in sint cillum eiusmod cillum amet officia ipsum. Officia qui eu est nostrud aliquip ea elit excepteur in. Non aliqua ad cillum quis reprehenderit duis. Non sit aute in exercitation dolor non eu aute aliqua reprehenderit.\r\nFugiat ullamco amet sunt ullamco quis non nisi aliqua aliqua culpa aute minim et. Enim duis amet incididunt quis dolor laboris commodo fugiat velit mollit tempor ea. Labore aliquip esse tempor voluptate do. Duis velit dolore aliqua proident.\r\nLorem anim incididunt commodo deserunt labore culpa fugiat cillum sunt laborum ipsum. Ut labore ut occaecat eu fugiat tempor consequat laborum. Mollit consequat dolor aliqua amet qui sint sint esse. Adipisicing proident mollit aute do reprehenderit ad laboris dolore magna minim ut voluptate reprehenderit.\r\nEt id labore nisi ex excepteur et Lorem dolore adipisicing sunt ullamco officia ipsum. Sint voluptate minim cillum anim reprehenderit Lorem ullamco cillum est cillum culpa occaecat. Consequat incididunt aliqua nostrud ut voluptate.\r\nNostrud esse minim sit duis commodo exercitation duis adipisicing aliqua non esse eu aliqua. Qui elit amet adipisicing dolore ad. Aliquip nulla cillum quis ea cillum dolor ad veniam. Velit quis Lorem consequat exercitation commodo. Enim aliqua laborum veniam fugiat mollit sint do minim sunt.\r\nExercitation tempor occaecat irure labore laboris reprehenderit duis. Veniam minim dolor laborum quis ea consequat nulla. Laborum tempor et est reprehenderit ullamco. Elit in minim voluptate ad excepteur quis irure sint anim ipsum.\r\nCillum excepteur nisi culpa commodo adipisicing minim reprehenderit minim sit. Occaecat exercitation quis et ex est consectetur in Lorem mollit laboris voluptate nulla exercitation. Deserunt enim in sint dolor elit voluptate. Eu reprehenderit deserunt quis duis. Occaecat minim culpa dolor aute magna eu ut laboris ex cillum.\r\nCulpa tempor est amet dolor cupidatat ex ea velit do in ut esse et. Sunt eiusmod nostrud nostrud occaecat qui amet. Id nostrud ex aliqua dolore est ex. Dolore aute eiusmod officia duis anim et dolor labore occaecat deserunt sit eiusmod. Duis proident esse proident consectetur enim.\r\n",
+          "rating": 43,
+          "language": "Pol",
+          "difficulty": "Expert",
+          "type": "Seminar",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e45365e969d732f73",
+          "trainers": [
+              {
+                  "id": "5b66c10e759b1321ca7a991e",
+                  "name": "Vang Whitehead",
+                  "avatar": "https://randomuser.me/api/portraits/women/32.jpg"
+              },
+              {
+                  "id": "5b66c10e9de79846807cfa89",
+                  "name": "Nicole Schmidt",
+                  "avatar": "https://randomuser.me/api/portraits/men/60.jpg"
+              },
+              {
+                  "id": "5b66c10e54b521fe86ffe0c0",
+                  "name": "Tabitha Emerson",
+                  "avatar": "https://randomuser.me/api/portraits/women/62.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=8",
+          "date": "2018-12-06T02:37:38",
+          "duration": 26,
+          "title": "mollit dolor tempor excepteur voluptate irure ad do",
+          "description": "Nisi ullamco in nostrud sit anim eu minim. Dolore dolor magna culpa qui adipisicing dolor. Consectetur eiusmod non consequat cupidatat elit ea eiusmod cupidatat ipsum. Aute commodo qui aliquip ea ullamco irure qui incididunt id voluptate cupidatat quis laboris.\r\nConsequat quis est tempor quis est quis ea ea anim. Adipisicing velit esse esse sint consectetur ut cillum aute non amet laboris sunt fugiat. Magna veniam consequat adipisicing magna enim ipsum elit consectetur pariatur ea minim sint sit qui. Voluptate laborum ex eiusmod velit magna aliquip fugiat eu. Irure Lorem dolore nulla consectetur mollit cillum. Amet minim aliqua nisi mollit. Consectetur anim deserunt anim commodo consequat voluptate adipisicing in.\r\nDolor enim commodo velit magna elit sint excepteur ea ex elit culpa incididunt officia. Ea pariatur cillum anim duis ut irure dolor. Anim anim elit amet elit amet aliqua velit est occaecat. Voluptate amet do nisi pariatur cillum id. Lorem magna irure minim eiusmod ut consequat. Do laborum cillum sunt culpa aliqua qui do do irure dolore occaecat aute ut.\r\nEx eu laborum veniam esse laborum. Dolor do quis sit ea pariatur officia minim esse Lorem labore qui. Commodo laboris in amet amet veniam fugiat Lorem est sunt ea minim ullamco. Magna incididunt veniam mollit deserunt duis eu adipisicing.\r\nProident ullamco occaecat in dolore. Incididunt minim sit culpa sit consequat in laborum ea proident veniam minim qui tempor. Exercitation esse nostrud enim officia ea commodo occaecat. Dolor pariatur aute aliqua sunt tempor consequat est nisi. Duis tempor aliquip aliqua labore quis nostrud labore qui magna id est duis in.\r\nLaboris irure enim labore enim sunt aliqua. Irure officia mollit reprehenderit Lorem consectetur fugiat ipsum magna Lorem incididunt. Mollit non aliqua sit laboris dolor exercitation eiusmod irure ipsum adipisicing qui commodo.\r\nAliqua enim laboris labore deserunt enim enim consectetur elit et adipisicing ex anim ad veniam. Amet irure quis fugiat voluptate exercitation labore aliquip. Non aute do elit excepteur eu aliqua amet et exercitation. Dolore cupidatat Lorem ad occaecat laboris adipisicing tempor anim laboris elit. Ea consequat voluptate Lorem pariatur sit sit incididunt et ipsum ut dolore nostrud.\r\nLaborum consequat incididunt cupidatat reprehenderit. Culpa proident occaecat irure quis irure nulla do. Aliqua ad mollit reprehenderit ex. Sunt laboris ea sit anim ipsum mollit laboris laboris irure exercitation. Ea consectetur eu est culpa mollit elit incididunt aliquip. Ea ipsum deserunt nulla dolore consectetur dolor laborum proident. Do cupidatat do cupidatat eu do et exercitation.\r\n",
+          "rating": 38,
+          "language": "Fra",
+          "difficulty": "Expert",
+          "type": "Training",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e5d4d28a7c62879ba",
+          "trainers": [
+              {
+                  "id": "5b66c10e70d2bf4772efa16d",
+                  "name": "Lora French",
+                  "avatar": "https://randomuser.me/api/portraits/women/25.jpg"
+              },
+              {
+                  "id": "5b66c10e47a2fcffd43fc19a",
+                  "name": "Jocelyn Holland",
+                  "avatar": "https://randomuser.me/api/portraits/women/6.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=2",
+          "date": "2018-09-16T01:12:03",
+          "duration": 484,
+          "title": "pariatur laborum aliqua duis commodo dolor",
+          "description": "Tempor enim ipsum sint laboris aliqua laborum Lorem voluptate consequat amet nulla anim cillum sit. Velit reprehenderit fugiat laboris ipsum Lorem mollit tempor deserunt occaecat irure cupidatat. Minim officia do cupidatat velit officia.\r\nAnim reprehenderit proident id qui voluptate excepteur enim. Commodo dolor qui ullamco adipisicing eiusmod qui irure aliquip fugiat nostrud quis duis sunt. Amet id adipisicing aute et aliquip commodo sint velit laboris esse. Ut excepteur do officia quis occaecat occaecat aute ipsum exercitation enim amet. Nostrud reprehenderit ut nulla excepteur.\r\nCupidatat pariatur enim mollit sint aliquip et dolor amet officia do officia nulla enim. Sit deserunt minim enim nisi eu exercitation ex nostrud. Sint ea magna quis et. Sit culpa aliqua non ipsum nisi ad dolore occaecat excepteur velit laboris.\r\nSunt do ad sit cupidatat ad laboris proident cupidatat reprehenderit amet aute nisi incididunt do. Dolore deserunt amet elit culpa sint reprehenderit in nulla consectetur voluptate. Culpa consequat ut adipisicing esse. Aliqua sunt nisi duis fugiat duis incididunt ex labore ipsum ullamco anim.\r\nLorem mollit ex deserunt laborum ipsum culpa voluptate ipsum laborum nulla amet quis. Anim consequat in sit esse exercitation veniam aute. Elit dolor ea id deserunt occaecat deserunt est. Fugiat mollit enim amet ex pariatur esse consectetur culpa.\r\nTempor commodo minim aliqua excepteur magna sit dolore dolore commodo qui ut ea exercitation commodo. Aute pariatur occaecat non commodo est quis aliquip ea ea. Lorem id deserunt adipisicing minim voluptate.\r\n",
+          "rating": 21,
+          "language": "Eng",
+          "difficulty": "For All",
+          "type": "Training",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10ee47e44e25f2a3b5f",
+          "trainers": [
+              {
+                  "id": "5b66c10e206f85258480cdb1",
+                  "name": "Julianne Norton",
+                  "avatar": "https://randomuser.me/api/portraits/men/20.jpg"
+              },
+              {
+                  "id": "5b66c10e38c9d774dbd5b52e",
+                  "name": "Carmella Hansen",
+                  "avatar": "https://randomuser.me/api/portraits/men/37.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=13",
+          "date": "2018-10-18T10:27:18",
+          "duration": 452,
+          "title": "fugiat fugiat consectetur cupidatat adipisicing deserunt ea exercitation sint",
+          "description": "Nisi labore nulla eiusmod officia voluptate nostrud culpa incididunt ad et nostrud voluptate consequat esse. Do deserunt aute eu veniam dolor pariatur reprehenderit reprehenderit in nostrud magna excepteur. Velit cupidatat ullamco velit fugiat. Do voluptate ut exercitation proident enim ut aliquip minim ad eiusmod irure eiusmod elit. Consequat velit amet fugiat officia mollit irure culpa labore Lorem laborum nostrud culpa sunt. Irure est anim voluptate laboris. Proident aliquip enim veniam nulla incididunt nulla aliquip est proident.\r\nNon aliqua culpa sint elit commodo Lorem anim nostrud dolor consequat sunt quis cillum anim. Aliquip sunt officia do ex sit est amet dolore. Officia dolor ad pariatur consectetur aliqua ea labore ipsum sint aute. Occaecat deserunt non incididunt sunt excepteur eu occaecat cupidatat nisi ullamco labore aute proident.\r\nNon non ut incididunt ut ad. Est sint consequat veniam enim elit eiusmod. Enim velit sint ipsum in duis labore excepteur magna duis cupidatat minim deserunt.\r\n",
+          "rating": 41,
+          "language": "Esp",
+          "difficulty": "Expert",
+          "type": "Training",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e847eefab2335bd79",
+          "trainers": [
+              {
+                  "id": "5b66c10e9addfb88f213c350",
+                  "name": "Leona Mcmahon",
+                  "avatar": "https://randomuser.me/api/portraits/women/33.jpg"
+              },
+              {
+                  "id": "5b66c10ed679a21abe2e3cc1",
+                  "name": "Chaney Jacobs",
+                  "avatar": "https://randomuser.me/api/portraits/women/14.jpg"
+              },
+              {
+                  "id": "5b66c10efdb28c4e3000d996",
+                  "name": "Karen Rutledge",
+                  "avatar": "https://randomuser.me/api/portraits/men/20.jpg"
+              },
+              {
+                  "id": "5b66c10ec4abc0a34bc92b05",
+                  "name": "Warren Oneill",
+                  "avatar": "https://randomuser.me/api/portraits/women/63.jpg"
+              },
+              {
+                  "id": "5b66c10ea1f570a0064ff992",
+                  "name": "Irwin Robinson",
+                  "avatar": "https://randomuser.me/api/portraits/men/12.jpg"
+              },
+              {
+                  "id": "5b66c10ebdc7e2f8e6b601a3",
+                  "name": "Gonzales Martin",
+                  "avatar": "https://randomuser.me/api/portraits/women/8.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=8",
+          "date": "2018-08-31T12:41:03",
+          "duration": 315,
+          "title": "reprehenderit ipsum ipsum veniam proident excepteur",
+          "description": "Lorem consectetur ea sunt in reprehenderit commodo anim ad elit esse laborum proident dolor. Non tempor velit laboris ipsum. Duis elit dolore est ipsum. Id anim nostrud ex ut enim Lorem laboris consectetur. Amet sint eu amet culpa ut et laboris enim incididunt.\r\nEx anim labore duis minim eu consectetur laboris nisi elit culpa incididunt ipsum sit. Esse consequat labore dolore amet tempor qui exercitation occaecat tempor nostrud. Labore veniam consectetur exercitation consequat culpa exercitation ut Lorem culpa do voluptate. Adipisicing nostrud dolor in qui elit laboris deserunt adipisicing incididunt esse et magna dolor.\r\nElit sint in consectetur nisi elit occaecat deserunt veniam tempor non consequat ex ullamco ex. Commodo sit eu eiusmod sit consequat sint voluptate. Deserunt cupidatat do irure ullamco ut magna proident amet cupidatat enim aliqua amet nostrud nostrud.\r\nNon dolor pariatur mollit dolor laborum est officia nisi dolore. Eu nisi enim sit tempor. Lorem occaecat esse minim eu voluptate labore incididunt magna. Dolor officia qui duis sunt labore labore exercitation occaecat ut aliquip sunt deserunt. Pariatur eiusmod ut laborum nulla est tempor nisi amet occaecat nulla adipisicing pariatur. Sunt enim elit consequat dolor dolor quis cillum veniam voluptate ex.\r\nCupidatat eu proident duis eiusmod ex do ad cupidatat pariatur laboris mollit. Occaecat officia laborum dolore incididunt minim irure proident. Officia do eiusmod laboris culpa quis eu eiusmod fugiat esse officia amet duis. Sint eiusmod ipsum esse commodo aliqua adipisicing nulla eiusmod tempor eiusmod nostrud duis aliquip. Est excepteur reprehenderit est in excepteur consectetur quis duis sunt cillum anim. In consectetur excepteur cupidatat reprehenderit aliquip id excepteur in anim. Velit do aliquip elit exercitation dolore occaecat aliquip consequat consequat anim esse.\r\n",
+          "rating": 31,
+          "language": "Rus",
+          "difficulty": "Intermediate",
+          "type": "Seminar",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e3496b3b738416ac7",
+          "trainers": [
+              {
+                  "id": "5b66c10ef2a7971ef3b70de1",
+                  "name": "Morton Wyatt",
+                  "avatar": "https://randomuser.me/api/portraits/women/9.jpg"
+              },
+              {
+                  "id": "5b66c10ee17f29ffebc94b7d",
+                  "name": "Rivas Roth",
+                  "avatar": "https://randomuser.me/api/portraits/men/23.jpg"
+              },
+              {
+                  "id": "5b66c10ef2e758a35acb2ef2",
+                  "name": "Marlene Jennings",
+                  "avatar": "https://randomuser.me/api/portraits/women/6.jpg"
+              },
+              {
+                  "id": "5b66c10e6cd1414991482841",
+                  "name": "Talley Calhoun",
+                  "avatar": "https://randomuser.me/api/portraits/men/6.jpg"
+              },
+              {
+                  "id": "5b66c10ef54001fed427b11c",
+                  "name": "Cornelia Mccarthy",
+                  "avatar": "https://randomuser.me/api/portraits/women/62.jpg"
+              },
+              {
+                  "id": "5b66c10e29ebf350ce248b84",
+                  "name": "Hatfield Tucker",
+                  "avatar": "https://randomuser.me/api/portraits/women/30.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=15",
+          "date": "2018-08-11T08:13:42",
+          "duration": 411,
+          "title": "non irure adipisicing",
+          "description": "Non tempor eiusmod Lorem incididunt laborum eu nisi cupidatat nostrud laborum sunt esse aliquip officia. Nisi consectetur ad non cillum sunt nostrud cillum mollit. Consectetur mollit et esse est nisi aliquip exercitation fugiat.\r\nFugiat aliquip nulla ex consequat. Laborum veniam excepteur fugiat excepteur dolore quis magna est mollit exercitation Lorem consectetur ullamco magna. Amet occaecat fugiat dolore amet ullamco voluptate nulla sit voluptate anim minim voluptate reprehenderit. Laboris id commodo tempor sint reprehenderit consectetur eu. Laborum commodo proident est ea officia mollit deserunt Lorem ut tempor eu duis tempor eiusmod. Fugiat elit nisi qui anim duis magna amet officia aute aliquip eiusmod aliqua ad minim. Et eu commodo sint ex consectetur cupidatat excepteur.\r\nNisi ex minim aliquip enim laboris qui et enim nisi. Anim irure in occaecat in magna non est laboris. Dolor velit voluptate do laboris eiusmod est laboris anim dolore. Excepteur aute aliqua culpa cillum et eu Lorem voluptate enim exercitation in.\r\nNostrud dolore tempor nisi sit pariatur voluptate velit pariatur magna pariatur. Proident dolore ex ex deserunt exercitation veniam in pariatur nisi consequat et reprehenderit eiusmod. Eu laboris voluptate fugiat aliqua do laborum sit amet esse ad deserunt labore veniam. Mollit laboris ut minim consequat laborum et ea do esse labore velit eu fugiat nisi. Deserunt officia magna ullamco amet laborum ea culpa laboris labore nulla fugiat et. Esse id adipisicing commodo cillum nisi laborum do cillum tempor non excepteur non.\r\nExcepteur ea nostrud cupidatat tempor cillum. Amet enim eu incididunt minim in est sit est ut deserunt voluptate aliqua. Dolor Lorem enim sint incididunt. Pariatur occaecat amet elit excepteur fugiat sint id Lorem. Anim laborum sint et id amet cillum ea irure et in officia do. Sint elit labore sunt in ex qui commodo duis pariatur magna esse anim ex excepteur. Do cillum consequat culpa minim incididunt Lorem.\r\nDeserunt est fugiat pariatur id ex. Et qui commodo ipsum non. Consectetur commodo culpa Lorem ex ullamco dolor anim. Magna exercitation voluptate anim sunt fugiat ullamco cupidatat labore culpa consequat deserunt magna dolore. Aliqua non minim consequat incididunt nulla in veniam fugiat sit ad aliqua. Minim Lorem in deserunt occaecat sit deserunt minim proident do magna est Lorem eu incididunt.\r\nProident deserunt irure incididunt nulla in labore do adipisicing reprehenderit aliquip velit reprehenderit cupidatat. Eiusmod cupidatat dolore non laborum dolor labore consectetur sunt consequat excepteur voluptate qui laboris qui. Tempor anim exercitation ullamco ad quis qui. Ea ut culpa commodo excepteur anim officia dolor nulla reprehenderit aliqua quis enim. Reprehenderit qui eu eiusmod et ea excepteur ea est tempor esse excepteur amet. Dolore ad fugiat velit voluptate incididunt aute magna sit reprehenderit voluptate enim minim. Consequat occaecat excepteur exercitation consequat.\r\nNisi exercitation labore anim do ullamco non labore ut cillum culpa cillum culpa. Elit incididunt aute id eu ad. Ipsum veniam ex est deserunt anim ad do est in amet velit. Ad quis veniam do laboris in mollit aliquip esse minim et aute enim incididunt.\r\nAdipisicing dolor Lorem veniam do aliquip deserunt duis ex ex fugiat sunt nostrud ex. Dolor aliquip nostrud ea eiusmod nulla amet minim minim consectetur consequat et eiusmod consectetur. Enim quis do et anim ea commodo exercitation aliqua ut ut.\r\nConsectetur veniam sunt commodo dolore cillum duis consequat mollit aute. Est pariatur labore ullamco qui aute qui labore qui. Velit in id nulla ullamco veniam reprehenderit nisi ipsum proident adipisicing veniam enim sint qui. Ut mollit sint reprehenderit tempor labore. Laborum laborum mollit adipisicing Lorem.\r\nAmet officia sint velit sunt irure ex deserunt sit incididunt qui ex non cillum ullamco. Excepteur anim ea culpa sint tempor aliqua Lorem laboris. Nisi reprehenderit in mollit et velit aliquip aliqua commodo ut adipisicing sit incididunt anim.\r\nCupidatat do Lorem eu esse cillum voluptate. Cillum voluptate consequat do commodo commodo dolor. Fugiat excepteur magna ullamco voluptate pariatur veniam pariatur laborum anim deserunt. Id ipsum enim adipisicing cillum anim irure ut exercitation aliqua excepteur consequat duis consequat elit. Eu ut cillum excepteur reprehenderit sint duis laborum laborum.\r\nDeserunt nulla veniam ut nulla excepteur laborum incididunt adipisicing amet ut proident. Velit non sint eiusmod non consequat cillum. Amet magna sunt dolor reprehenderit minim excepteur.\r\nLorem est reprehenderit nisi culpa id laborum nulla cupidatat duis laboris consequat. Aliqua nisi minim qui commodo consequat veniam quis voluptate deserunt. Nostrud cillum adipisicing proident sint quis nulla ad quis velit ullamco ullamco. Laborum sit commodo magna Lorem excepteur proident. Deserunt nulla est sit non dolor. Sint nulla excepteur tempor cillum ut eu. Id ipsum elit cupidatat aliquip occaecat nisi minim id dolor.\r\nSint non pariatur nostrud reprehenderit consequat labore. Reprehenderit commodo aliqua nostrud officia anim ex laborum ad velit qui aute aliquip labore. Nulla deserunt nostrud adipisicing duis quis consequat laborum cupidatat duis exercitation quis.\r\n",
+          "rating": 17,
+          "language": "Fra",
+          "difficulty": "For All",
+          "type": "Training",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10eaa7ec140288e9303",
+          "trainers": [
+              {
+                  "id": "5b66c10e28d1cb2ccc2986e9",
+                  "name": "Magdalena Joyce",
+                  "avatar": "https://randomuser.me/api/portraits/men/42.jpg"
+              },
+              {
+                  "id": "5b66c10eb27b4f554ca49575",
+                  "name": "Rhodes Finley",
+                  "avatar": "https://randomuser.me/api/portraits/women/56.jpg"
+              },
+              {
+                  "id": "5b66c10ed5d2cb6b4c06088e",
+                  "name": "Latonya Hamilton",
+                  "avatar": "https://randomuser.me/api/portraits/women/47.jpg"
+              },
+              {
+                  "id": "5b66c10e2e04badb48759de3",
+                  "name": "Santiago Gardner",
+                  "avatar": "https://randomuser.me/api/portraits/men/27.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=1",
+          "date": "2018-11-05T02:11:28",
+          "duration": 167,
+          "title": "veniam consectetur duis id laboris anim magna pariatur nulla consectetur",
+          "description": "Voluptate deserunt ipsum eiusmod minim ex proident ipsum qui culpa. Minim amet aliquip dolore ea. Culpa aliquip mollit nulla sint exercitation laboris cillum. Fugiat eu pariatur officia fugiat. Ut excepteur culpa sunt non proident nulla nostrud nisi. Irure sit duis incididunt nostrud consectetur cupidatat reprehenderit ex ipsum proident.\r\nNostrud adipisicing ullamco et deserunt do magna ullamco ad nulla culpa veniam dolor occaecat. Veniam sit officia aliquip ex incididunt sit minim esse occaecat qui. Laboris cillum anim adipisicing exercitation magna aute esse commodo laborum cupidatat velit minim officia. Amet duis mollit velit consectetur ex elit. Cillum eiusmod aute est commodo consequat Lorem id ipsum Lorem sint laborum cupidatat pariatur veniam.\r\nAmet fugiat reprehenderit Lorem cupidatat anim aliquip. Lorem nisi sit pariatur eiusmod. Tempor amet quis ullamco adipisicing ipsum aute duis deserunt amet incididunt qui nulla magna consequat. Id nisi excepteur laborum tempor Lorem proident esse. Duis amet magna dolore veniam et quis elit nulla excepteur nostrud proident. Sit est quis reprehenderit dolor id in nostrud consectetur quis cillum commodo culpa.\r\nAliqua id culpa adipisicing laborum nostrud cupidatat cupidatat do ipsum mollit proident culpa Lorem. Proident excepteur nostrud voluptate dolor dolor. Labore enim dolor cillum laborum duis dolore officia proident in proident cupidatat qui fugiat officia. Tempor sit anim qui non cupidatat non.\r\nEu nisi pariatur nisi laboris eiusmod irure deserunt aute enim. Reprehenderit occaecat cupidatat sunt cupidatat. Voluptate aute do qui laboris commodo occaecat duis fugiat incididunt nostrud velit ipsum tempor magna. Veniam deserunt excepteur pariatur nulla in pariatur mollit voluptate. Sunt ea eiusmod sint cupidatat ex tempor ut exercitation pariatur labore cillum. Voluptate tempor in duis labore magna consequat velit id labore laboris.\r\nCillum sunt duis dolore minim non ea labore exercitation adipisicing officia. Dolor et dolore irure fugiat incididunt ut eu anim duis labore. Ad enim laboris consectetur elit incididunt officia veniam veniam magna sit ipsum voluptate ullamco.\r\nAliquip anim eu amet culpa eiusmod nostrud. Veniam nostrud eu ut do nisi labore. Magna minim qui in in sunt. Consequat irure velit cupidatat deserunt cupidatat ex enim aliquip exercitation. Sit velit ad id elit sit commodo. Exercitation minim nisi mollit anim dolor eiusmod aliqua aute Lorem enim aliquip.\r\nPariatur nulla incididunt ut eiusmod ipsum pariatur elit sit irure veniam incididunt dolore eu. Nostrud fugiat reprehenderit sit consequat deserunt consectetur irure eu mollit reprehenderit sit laboris elit. Ex reprehenderit enim irure commodo eiusmod nisi sint amet excepteur incididunt. Id et labore esse dolor esse excepteur eu reprehenderit Lorem magna laboris veniam incididunt duis. Id ut sit veniam aliquip exercitation ea duis mollit proident tempor exercitation eiusmod. Ex deserunt sint nulla cupidatat velit nulla. Laborum exercitation sint Lorem esse ad aliqua velit ullamco dolor id nulla.\r\nNisi fugiat irure laboris veniam eu consectetur nisi. Exercitation do non ipsum anim incididunt voluptate sit ipsum commodo. Consequat culpa deserunt nostrud enim reprehenderit nisi fugiat.\r\nQui occaecat sint pariatur enim mollit ea ad officia amet laborum ad sunt aute do. Sint cupidatat aute ex aliqua aliqua aute nostrud do ut nulla quis cupidatat cillum proident. Pariatur consectetur et ex amet voluptate minim incididunt aliqua quis laboris aute enim. Reprehenderit deserunt consequat dolore consequat ut aliquip proident aute tempor enim dolor eiusmod commodo qui. Sunt cupidatat velit ut ipsum in officia tempor consequat fugiat. Ex sit ad adipisicing est officia dolor laboris amet nostrud voluptate cillum enim. Ut dolor enim velit commodo in.\r\nIrure deserunt eiusmod voluptate qui. Nulla reprehenderit labore culpa irure ipsum. Duis eu commodo cupidatat ipsum tempor deserunt ut esse deserunt eiusmod ullamco consectetur. Duis dolore consectetur mollit dolor reprehenderit do velit consequat deserunt pariatur sunt nulla fugiat id. Consectetur laboris sunt consectetur nisi sit do do irure occaecat tempor qui irure Lorem.\r\n",
+          "rating": 29,
+          "language": "Eng",
+          "difficulty": "Expert",
+          "type": "Seminar",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e55df7d9128451239",
+          "trainers": [
+              {
+                  "id": "5b66c10e296c35c7fb6cd7e2",
+                  "name": "Tessa Weber",
+                  "avatar": "https://randomuser.me/api/portraits/women/11.jpg"
+              },
+              {
+                  "id": "5b66c10eef0bae0b0f015506",
+                  "name": "Kris Ayers",
+                  "avatar": "https://randomuser.me/api/portraits/women/5.jpg"
+              },
+              {
+                  "id": "5b66c10ef0c286dfa305d413",
+                  "name": "Samantha Dotson",
+                  "avatar": "https://randomuser.me/api/portraits/men/30.jpg"
+              },
+              {
+                  "id": "5b66c10e481f79ad6a2da8b6",
+                  "name": "Eliza Rowland",
+                  "avatar": "https://randomuser.me/api/portraits/women/62.jpg"
+              },
+              {
+                  "id": "5b66c10e892376799be16f87",
+                  "name": "Sabrina Skinner",
+                  "avatar": "https://randomuser.me/api/portraits/women/66.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=11",
+          "date": "2018-08-20T11:03:27",
+          "duration": 143,
+          "title": "adipisicing consectetur dolore anim",
+          "description": "Irure fugiat minim nulla eu veniam do voluptate qui qui occaecat. Laborum velit Lorem magna sunt culpa excepteur anim reprehenderit cillum. Irure sit adipisicing ut velit cillum amet consectetur cupidatat tempor dolore magna anim ullamco dolor. Elit sunt aute veniam officia ullamco commodo sit aute dolor. Dolor reprehenderit aliquip ullamco voluptate in veniam pariatur aliquip.\r\nIrure ex ipsum fugiat qui sit magna laborum quis eiusmod. Adipisicing veniam magna ut non officia minim duis ex sunt. Aliqua veniam laboris adipisicing consectetur fugiat quis minim dolor elit. Amet amet laborum consequat consectetur officia elit. Laborum id consectetur quis adipisicing reprehenderit sit adipisicing dolore. Culpa velit voluptate aliqua consectetur commodo non ex aliqua reprehenderit nulla laborum laboris esse. Veniam voluptate sunt magna irure voluptate duis.\r\nSunt eu magna quis commodo reprehenderit nostrud culpa dolor duis ipsum officia do. Mollit sunt aliquip pariatur ullamco velit officia aute aliquip fugiat aute qui eiusmod. Tempor veniam nostrud nisi occaecat incididunt adipisicing reprehenderit culpa in cupidatat sit consectetur dolore. In ea consectetur elit minim culpa enim Lorem Lorem voluptate culpa. Exercitation id duis anim ullamco aliquip aliquip tempor eiusmod do tempor dolore amet. Et consequat officia ad elit sunt anim deserunt tempor do.\r\n",
+          "rating": 21,
+          "language": "Rus",
+          "difficulty": "Expert",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10ed2e673f8aac1e3c4",
+          "trainers": [
+              {
+                  "id": "5b66c10e1b89dbcfabc5dced",
+                  "name": "Laurel Cannon",
+                  "avatar": "https://randomuser.me/api/portraits/men/69.jpg"
+              },
+              {
+                  "id": "5b66c10e7ed7dcd17b99b70e",
+                  "name": "Jamie Rosales",
+                  "avatar": "https://randomuser.me/api/portraits/women/66.jpg"
+              },
+              {
+                  "id": "5b66c10e47416116c310112f",
+                  "name": "Sarah Poole",
+                  "avatar": "https://randomuser.me/api/portraits/men/2.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=20",
+          "date": "2018-12-26T01:05:23",
+          "duration": 25,
+          "title": "irure in id nisi",
+          "description": "Minim elit anim dolore nostrud ad aliqua veniam occaecat fugiat pariatur. Minim amet duis voluptate cupidatat commodo cillum do excepteur. Est quis quis fugiat ut do fugiat voluptate pariatur ipsum dolor in excepteur.\r\nEsse non eu eu mollit cillum aute veniam. Ullamco sit proident aliqua incididunt officia enim enim. Exercitation minim in occaecat in nulla veniam mollit Lorem sit laborum sunt magna sint adipisicing. Amet consequat ipsum est nisi veniam laboris adipisicing cillum do qui ut eiusmod. Exercitation sunt eiusmod ad sunt ea exercitation id amet occaecat.\r\nVoluptate sint Lorem excepteur quis occaecat magna quis elit ea. Aute cillum incididunt exercitation non veniam pariatur magna officia et laborum qui. Labore amet eu elit aliqua ipsum anim. Minim cillum exercitation laborum consequat dolore. Sunt ex enim ex laborum occaecat id. Eiusmod officia ipsum dolor nostrud. Non eu et nulla elit est nisi velit aute officia adipisicing veniam ex.\r\nTempor reprehenderit et amet elit ipsum non labore cupidatat excepteur quis proident cillum laborum quis. Sint cupidatat sunt eu cupidatat anim. Ullamco do mollit Lorem pariatur. Ut ut qui sunt officia proident velit duis tempor consequat ut officia nulla. Exercitation irure culpa cillum officia incididunt nisi in sunt et. Sit voluptate cupidatat occaecat laborum nisi non quis duis deserunt esse dolore ut.\r\nAliqua ad ex reprehenderit reprehenderit nostrud in tempor. Commodo mollit in do dolor proident consectetur exercitation occaecat aliquip consectetur veniam deserunt. Minim incididunt ex tempor reprehenderit amet sunt aute aliqua aute ex irure do sunt. Nostrud minim exercitation laborum dolore pariatur tempor deserunt commodo adipisicing. Pariatur qui nulla anim in in reprehenderit occaecat eiusmod qui incididunt laborum. Ad dolore deserunt exercitation occaecat eiusmod enim exercitation.\r\nSint dolor dolore laboris veniam occaecat sunt id ipsum incididunt aliquip et quis id est. Dolor eiusmod ipsum non laboris aliquip. Ut enim nulla duis tempor nisi in aute enim minim sunt sint Lorem adipisicing officia. Anim consequat veniam nulla mollit consequat proident id sint. Fugiat esse laboris dolore reprehenderit enim officia adipisicing occaecat. Exercitation adipisicing nisi deserunt velit.\r\nEnim culpa est eiusmod qui adipisicing. Qui esse excepteur pariatur quis pariatur laboris laborum irure deserunt reprehenderit mollit dolor occaecat ipsum. Excepteur nostrud veniam et nostrud aliquip qui laborum magna esse magna cillum elit consectetur labore. Enim velit ullamco officia ad officia reprehenderit enim irure. Fugiat irure consectetur ad sunt sint.\r\nNostrud Lorem commodo ea do ut aute ex elit in duis do in id reprehenderit. Do consequat velit nisi magna adipisicing officia magna irure eiusmod labore dolore. Cupidatat aliqua cupidatat pariatur culpa aute aliquip proident amet. Ullamco reprehenderit proident eiusmod in. Ut aute ad eiusmod veniam laborum ipsum ad proident reprehenderit non quis quis nostrud.\r\nCulpa et Lorem ipsum tempor sit amet tempor non incididunt eu adipisicing. Quis adipisicing qui cupidatat est ipsum laborum exercitation. Enim id veniam nulla irure ex exercitation cupidatat exercitation in incididunt ex exercitation. Anim culpa aliqua cillum labore anim dolore excepteur sunt. Amet consectetur incididunt tempor mollit ex consequat occaecat cupidatat. Veniam do enim excepteur excepteur consequat eiusmod proident exercitation cupidatat velit reprehenderit occaecat nulla. Eu consectetur cillum tempor consectetur laborum do voluptate occaecat qui laborum.\r\nCupidatat excepteur pariatur et dolor aute cupidatat amet. Sunt id magna in ex. Cupidatat magna aute anim et tempor. Amet dolor ullamco dolore sint ipsum ad. Qui adipisicing elit culpa nisi proident amet in. Id culpa commodo irure ex ad id laborum nostrud est minim culpa amet. Labore cillum voluptate in ex.\r\nAd labore veniam anim excepteur consequat pariatur non aliqua esse occaecat. Mollit magna tempor dolore adipisicing. Laboris labore fugiat est id reprehenderit est qui ut adipisicing culpa.\r\nDo est ex id do magna duis velit. Nostrud qui qui cupidatat in. Veniam dolore officia Lorem adipisicing cupidatat mollit ullamco ipsum ex. In ex nostrud eu reprehenderit occaecat eiusmod id velit ipsum aliquip cillum aliqua sunt sunt. Mollit aliquip officia tempor elit elit non adipisicing ipsum non sit adipisicing qui occaecat Lorem. Elit adipisicing aute commodo ipsum.\r\n",
+          "rating": 28,
+          "language": "Esp",
+          "difficulty": "Novice",
+          "type": "Training",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e19946578c48157e1",
+          "trainers": [
+              {
+                  "id": "5b66c10e0bda75457dffc26a",
+                  "name": "Gilliam Rose",
+                  "avatar": "https://randomuser.me/api/portraits/men/49.jpg"
+              },
+              {
+                  "id": "5b66c10eef01aeed044f7cd2",
+                  "name": "Jolene Summers",
+                  "avatar": "https://randomuser.me/api/portraits/men/50.jpg"
+              },
+              {
+                  "id": "5b66c10ed46cec494fb66820",
+                  "name": "Kathy Harding",
+                  "avatar": "https://randomuser.me/api/portraits/men/29.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=18",
+          "date": "2018-11-04T08:46:14",
+          "duration": 466,
+          "title": "elit ea ipsum",
+          "description": "Excepteur ex tempor veniam ullamco ullamco in culpa pariatur commodo aute. Consequat veniam velit irure enim. Laborum irure reprehenderit do culpa proident cupidatat sint et ea pariatur. Esse aliquip fugiat Lorem non eiusmod est elit labore voluptate voluptate. Qui Lorem ex tempor elit et amet anim fugiat enim cupidatat velit aute. Nulla reprehenderit aliquip exercitation officia. Laborum fugiat ipsum officia mollit ut quis laboris.\r\nId cillum non minim aliqua consequat ipsum excepteur aute anim excepteur ad est. Sit voluptate culpa ut mollit quis sit velit sunt ex mollit est quis dolore. Irure eu anim ut irure cillum sit. Incididunt est sint officia esse excepteur veniam duis. Anim in exercitation commodo laboris do ipsum eu Lorem minim id. Nisi ex non pariatur excepteur. Dolore nostrud eiusmod deserunt nisi aliquip proident culpa ad nostrud est reprehenderit et eu velit.\r\nNon esse velit aliquip id enim. Duis duis et sunt sint enim eu aliqua minim Lorem id et et enim. Dolore consectetur in pariatur et pariatur voluptate ex nisi. Voluptate anim eiusmod et laborum ut exercitation aliquip et qui proident eiusmod pariatur. Ad sunt amet magna id duis.\r\nEnim minim aliqua consectetur est consectetur eiusmod aliqua eu velit. Adipisicing amet irure laboris consequat. Id laboris tempor sint excepteur laborum adipisicing labore fugiat excepteur. Dolor officia sunt cillum quis esse irure eu irure.\r\nNulla consectetur do nulla dolore officia magna quis occaecat ullamco fugiat. Consectetur incididunt irure amet deserunt pariatur nostrud sit tempor. Adipisicing commodo amet dolor qui. Adipisicing incididunt cillum sunt proident nostrud fugiat proident consequat consectetur veniam amet consectetur.\r\n",
+          "rating": 18,
+          "language": "Fra",
+          "difficulty": "For All",
+          "type": "Video course",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10eb02ff45f9663ec7b",
+          "trainers": [
+              {
+                  "id": "5b66c10e32cf4cd903e471c0",
+                  "name": "Lenora Mathews",
+                  "avatar": "https://randomuser.me/api/portraits/women/33.jpg"
+              },
+              {
+                  "id": "5b66c10e7c681791cd547d7c",
+                  "name": "Peters Rodriguez",
+                  "avatar": "https://randomuser.me/api/portraits/women/22.jpg"
+              },
+              {
+                  "id": "5b66c10e1ff5fa8b07e6b3a7",
+                  "name": "Kendra Kennedy",
+                  "avatar": "https://randomuser.me/api/portraits/men/54.jpg"
+              },
+              {
+                  "id": "5b66c10e1f8f2127f31dabe8",
+                  "name": "Whitney Brennan",
+                  "avatar": "https://randomuser.me/api/portraits/men/5.jpg"
+              },
+              {
+                  "id": "5b66c10e88f066e828900035",
+                  "name": "Cohen Weeks",
+                  "avatar": "https://randomuser.me/api/portraits/men/18.jpg"
+              },
+              {
+                  "id": "5b66c10ee49ac8cf0a8e584d",
+                  "name": "Cox Gould",
+                  "avatar": "https://randomuser.me/api/portraits/men/44.jpg"
+              },
+              {
+                  "id": "5b66c10e83cb7502ce8c9491",
+                  "name": "Acevedo Britt",
+                  "avatar": "https://randomuser.me/api/portraits/women/62.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=14",
+          "date": "2018-12-02T02:08:36",
+          "duration": 362,
+          "title": "nostrud excepteur dolore in excepteur officia cupidatat qui ea",
+          "description": "Sunt ipsum commodo cupidatat excepteur reprehenderit culpa Lorem ex nulla esse qui cillum elit minim. Nostrud anim magna ex deserunt laborum exercitation dolore adipisicing deserunt minim reprehenderit enim. Sit cupidatat id minim officia id.\r\nDuis velit aliqua pariatur excepteur velit esse velit laboris cillum ullamco mollit id voluptate. Nulla in elit laboris sit velit eiusmod eiusmod ullamco dolore nostrud proident aliqua reprehenderit. Cillum eiusmod incididunt aute officia irure. Quis ea culpa incididunt aliqua laboris commodo ut ipsum minim. Enim fugiat ullamco est minim laborum culpa.\r\nAute Lorem ipsum anim id irure ipsum cillum Lorem nulla ipsum. Aute occaecat ad deserunt esse tempor in magna. Et voluptate labore dolore deserunt fugiat aliqua. Ea elit qui eiusmod occaecat occaecat magna tempor laborum elit laboris Lorem ut.\r\nLabore irure dolor duis ex labore. Incididunt tempor esse veniam aliqua officia mollit nisi reprehenderit fugiat. Anim cillum ex aliquip mollit magna veniam nostrud. Nostrud velit cillum dolore ex minim aute. Veniam cillum laboris non elit excepteur et. Occaecat anim excepteur occaecat ex. Lorem laboris nisi irure exercitation mollit in minim ut culpa eu.\r\nEsse do occaecat commodo excepteur aute proident laboris nisi officia. Veniam qui incididunt consectetur magna cillum officia. Lorem laborum veniam id laboris deserunt nisi exercitation amet. Id pariatur pariatur voluptate excepteur quis ea occaecat commodo deserunt consequat est excepteur. Ut consequat deserunt occaecat consectetur culpa adipisicing aliqua ullamco ipsum proident.\r\n",
+          "rating": 32,
+          "language": "Rus",
+          "difficulty": "Advanced",
+          "type": "Video course",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e84fc9e9c0f2e5572",
+          "trainers": [
+              {
+                  "id": "5b66c10e9573aa2cfcb35a50",
+                  "name": "Lauren Pate",
+                  "avatar": "https://randomuser.me/api/portraits/men/43.jpg"
+              },
+              {
+                  "id": "5b66c10ebe98e83c5354c145",
+                  "name": "May Rhodes",
+                  "avatar": "https://randomuser.me/api/portraits/men/18.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=11",
+          "date": "2018-12-11T10:11:04",
+          "duration": 295,
+          "title": "nulla labore consectetur voluptate fugiat adipisicing",
+          "description": "Irure irure cupidatat exercitation adipisicing ex eu. Est sit dolore anim duis adipisicing ullamco commodo enim Lorem mollit sunt. Dolor sit ad sint exercitation laborum. Sunt ut reprehenderit eiusmod ea. Laborum incididunt commodo occaecat laboris magna nisi quis sunt voluptate cillum cillum ad. Est velit velit eu est dolor enim ea amet. Aliquip do aute commodo adipisicing laboris eiusmod occaecat aliqua.\r\nDolor irure cupidatat culpa ea voluptate officia ad occaecat proident sit dolor elit Lorem. Magna occaecat nulla reprehenderit dolor veniam duis mollit nostrud consectetur fugiat aute adipisicing nostrud mollit. Eiusmod consectetur consectetur ut cillum. Tempor commodo ipsum est enim. In sint amet minim amet id consequat reprehenderit. Aliquip ut in velit aute aute tempor laboris cupidatat. Labore excepteur nulla sint aute.\r\nReprehenderit ullamco dolore dolor anim non adipisicing in proident. Labore nostrud magna id nisi Lorem eiusmod adipisicing ea nulla excepteur et dolore eiusmod do. Reprehenderit sit qui nostrud reprehenderit incididunt. Nulla enim laboris irure ea ex cupidatat anim ea ullamco. Officia ad magna incididunt esse laborum proident reprehenderit voluptate dolore aliquip dolore eu id.\r\nExercitation veniam consequat in proident magna. Id commodo eu minim exercitation est esse tempor aute sit reprehenderit Lorem. Velit nulla in enim velit. Ex consectetur ad laboris exercitation excepteur duis quis irure ad ullamco exercitation incididunt laboris. Cillum amet sunt laboris voluptate nisi officia amet eu incididunt reprehenderit ipsum ipsum culpa. Qui nulla ullamco non id officia id nostrud ad officia magna velit aliqua id anim. Anim ullamco nisi officia excepteur do aliqua ex voluptate sit voluptate irure velit consectetur in.\r\nOfficia duis ad sunt incididunt id fugiat adipisicing nulla mollit nulla tempor sit. Exercitation fugiat eu dolor sint aliqua amet exercitation veniam et consequat dolore veniam sint mollit. Aliquip est cillum velit ullamco nostrud. Elit culpa mollit anim eu reprehenderit ad enim. In sint excepteur amet irure. Mollit qui cillum irure aute.\r\nAmet fugiat id occaecat aliquip sit consectetur veniam adipisicing do fugiat. Excepteur consectetur Lorem cillum eiusmod commodo quis. Enim minim id veniam id sunt nulla nulla. Proident ullamco voluptate do minim. Cupidatat consectetur ipsum aliqua eiusmod nulla incididunt laboris voluptate cupidatat nulla. Ullamco commodo Lorem cupidatat cillum sint ut laborum ullamco. Cupidatat qui eiusmod enim ex excepteur mollit non labore.\r\nExercitation aute enim occaecat nisi deserunt eiusmod ad aliquip voluptate laborum. Officia quis laborum laborum nostrud exercitation voluptate ipsum in ipsum mollit culpa enim ad non. Sunt minim tempor pariatur et amet.\r\nId reprehenderit ullamco in occaecat minim laborum consectetur sunt reprehenderit magna nostrud ad ipsum eiusmod. Esse culpa esse esse aliquip ea deserunt enim occaecat consectetur. Minim voluptate do in enim occaecat labore commodo minim eiusmod.\r\nDolore exercitation eiusmod eu voluptate aliqua ipsum id id. Ipsum irure do eu cupidatat pariatur. Culpa dolore ullamco qui labore. Id anim officia adipisicing ut magna enim. Laborum voluptate do magna ex magna non pariatur voluptate et velit esse duis minim. Eiusmod aute ut commodo tempor.\r\nDolore nulla cillum adipisicing cillum est enim nisi qui tempor aliquip. Nostrud occaecat quis veniam culpa culpa ullamco deserunt. Eu enim duis laboris amet.\r\nEa ad tempor do deserunt nostrud. Non pariatur nostrud adipisicing ad ad laboris et nisi qui sint labore amet. Excepteur sint esse ea ad veniam mollit anim fugiat deserunt.\r\nUllamco laborum enim tempor magna amet ut amet amet esse ullamco sunt irure deserunt. Sint ad ipsum non id laboris aliqua qui aliquip aliqua Lorem duis adipisicing irure laborum. Exercitation qui qui incididunt irure minim eu occaecat mollit elit dolor. Adipisicing sunt enim tempor duis laborum fugiat magna anim. Nostrud culpa non sunt amet irure adipisicing ea do nulla ullamco non qui id elit. Fugiat labore excepteur laboris ea. Proident ullamco aliqua enim voluptate nostrud amet.\r\n",
+          "rating": 18,
+          "language": "Rus",
+          "difficulty": "Intermediate",
+          "type": "Lecture",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10ed97d780052a20d5b",
+          "trainers": [
+              {
+                  "id": "5b66c10e9e89a5db59181000",
+                  "name": "Charlotte Dalton",
+                  "avatar": "https://randomuser.me/api/portraits/women/18.jpg"
+              },
+              {
+                  "id": "5b66c10ecd4f73fe6e99fad7",
+                  "name": "Tiffany Simpson",
+                  "avatar": "https://randomuser.me/api/portraits/men/65.jpg"
+              },
+              {
+                  "id": "5b66c10e895302121855bd46",
+                  "name": "Mercado William",
+                  "avatar": "https://randomuser.me/api/portraits/men/24.jpg"
+              },
+              {
+                  "id": "5b66c10e41a618b9f2cd35a6",
+                  "name": "Palmer Russo",
+                  "avatar": "https://randomuser.me/api/portraits/men/53.jpg"
+              },
+              {
+                  "id": "5b66c10e90a41b267a51d2d3",
+                  "name": "Hurley Fitzpatrick",
+                  "avatar": "https://randomuser.me/api/portraits/men/14.jpg"
+              },
+              {
+                  "id": "5b66c10e770245f3c599ea98",
+                  "name": "Gladys Cleveland",
+                  "avatar": "https://randomuser.me/api/portraits/women/13.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=11",
+          "date": "2018-08-16T05:11:42",
+          "duration": 113,
+          "title": "exercitation velit est ad ullamco",
+          "description": "Ipsum fugiat aute do officia proident magna duis cupidatat amet commodo do anim anim laborum. Irure nostrud eu laborum labore qui. Id ea sit sunt culpa consequat non amet culpa incididunt. Aliquip officia sint voluptate non eiusmod in occaecat mollit nulla incididunt exercitation occaecat ad mollit. Anim aliquip culpa ipsum proident.\r\nNostrud laboris minim consectetur sint esse laboris pariatur eu aute laboris aliqua. Pariatur proident ipsum ut officia sint occaecat in qui laboris veniam. Ullamco cillum ipsum reprehenderit aute reprehenderit qui Lorem. Do minim laboris eiusmod adipisicing magna commodo. Veniam fugiat occaecat Lorem consectetur mollit voluptate est mollit sunt sunt magna reprehenderit commodo cupidatat. Ut deserunt id sunt ex ea mollit nisi sit anim id exercitation.\r\nAliqua esse in nostrud ex irure reprehenderit id occaecat incididunt exercitation ut. Incididunt ad excepteur do proident quis. Nisi qui aliquip minim irure consequat sunt. Adipisicing id non occaecat nostrud non est qui esse fugiat elit incididunt minim. Anim deserunt esse cillum eu exercitation nulla sunt laboris. Minim veniam aliquip dolore labore aliqua exercitation id aute.\r\nQuis velit dolor amet do sunt. Reprehenderit laborum nulla duis laborum. Labore enim et laborum veniam id irure minim anim enim.\r\nCillum aliquip aliqua et incididunt fugiat velit pariatur nulla duis. Anim aliqua eiusmod amet ea in irure. Est aliquip duis ea id. Elit elit sunt cupidatat veniam nostrud culpa qui. Aliqua sit duis cupidatat tempor eu occaecat voluptate ad aute cillum minim tempor. Ea deserunt tempor fugiat laborum anim fugiat do irure ex pariatur deserunt laboris. Exercitation irure duis deserunt laboris laborum laborum aliquip.\r\nDeserunt dolor ad consequat officia. Laboris non id irure incididunt duis reprehenderit cupidatat sit id. Enim duis id tempor adipisicing voluptate excepteur mollit deserunt sint fugiat minim nisi. Commodo duis fugiat anim eiusmod laborum aliquip. Laborum reprehenderit labore in in culpa enim cillum est nisi. Dolore labore duis ea excepteur reprehenderit non nisi eiusmod cillum anim officia occaecat veniam.\r\n",
+          "rating": 20,
+          "language": "Rus",
+          "difficulty": "Novice",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e3da324c203ed91b9",
+          "trainers": [
+              {
+                  "id": "5b66c10e4777f02c7f820889",
+                  "name": "Bird Rice",
+                  "avatar": "https://randomuser.me/api/portraits/women/16.jpg"
+              },
+              {
+                  "id": "5b66c10ed233a807cdf4198c",
+                  "name": "Josephine Maldonado",
+                  "avatar": "https://randomuser.me/api/portraits/men/34.jpg"
+              },
+              {
+                  "id": "5b66c10e46aaa54c442e4e5b",
+                  "name": "Mary Dillon",
+                  "avatar": "https://randomuser.me/api/portraits/women/49.jpg"
+              },
+              {
+                  "id": "5b66c10ec977838add807499",
+                  "name": "Castillo Franks",
+                  "avatar": "https://randomuser.me/api/portraits/women/58.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=8",
+          "date": "2018-11-14T12:40:55",
+          "duration": 157,
+          "title": "esse do voluptate",
+          "description": "Eiusmod ullamco esse nostrud adipisicing amet qui officia proident magna non amet consequat. Officia mollit proident commodo dolor quis minim nisi nisi aliquip. Quis elit ipsum ex dolore reprehenderit. Eu qui voluptate ipsum occaecat magna ad enim reprehenderit exercitation est.\r\nQui eiusmod esse aliquip esse. Qui veniam dolor amet sit sunt eu labore aliqua sunt culpa. Sit eu anim incididunt nostrud tempor est commodo occaecat ipsum. Et ea cupidatat pariatur esse cupidatat cupidatat. Cupidatat dolor sunt laboris eiusmod do velit mollit voluptate eiusmod. Deserunt nisi consectetur deserunt qui cillum commodo ut ad Lorem ipsum sit. Elit incididunt eiusmod voluptate velit deserunt esse nisi ea ipsum.\r\nAute nisi incididunt magna amet deserunt dolore aute minim proident id. Cillum enim exercitation exercitation minim ad voluptate mollit et. Ex esse reprehenderit veniam anim do. Commodo dolor proident ipsum cillum magna nulla laborum exercitation ullamco est est esse. Exercitation cillum labore aliquip aute magna ea. Sit commodo enim laborum magna quis adipisicing sunt consectetur esse exercitation magna nostrud. Ipsum ullamco Lorem qui pariatur enim Lorem fugiat sunt ut.\r\nOfficia qui ex nulla sint occaecat amet incididunt. Occaecat magna nisi labore nisi reprehenderit ea aliqua laborum ad occaecat ad. Culpa sint deserunt exercitation fugiat aliquip dolore dolor. Ea ad ad est laboris ut ullamco laboris labore irure Lorem aliqua. Ex tempor sit dolor adipisicing occaecat commodo deserunt commodo. Dolor cupidatat et commodo officia duis. Eu in non culpa magna ipsum proident laborum laborum minim.\r\nPariatur ipsum culpa eu et aute sint. Duis sit nulla ad do consequat id dolor do qui id. Sit consequat commodo consequat irure excepteur consectetur sunt elit nostrud sit voluptate ad.\r\nOfficia commodo veniam elit aliqua cupidatat et minim sint ut. Aliqua aliqua excepteur ipsum tempor aliquip elit ut dolore consectetur. Nostrud aliquip reprehenderit laborum esse. Occaecat mollit mollit incididunt amet velit laborum reprehenderit. Ullamco aute non irure do. Labore pariatur aute cillum irure est laboris velit ut laborum.\r\nAnim non minim in esse ea anim pariatur excepteur nulla ipsum qui. Est occaecat enim labore veniam ullamco enim mollit. Occaecat ex quis id sunt sint in id exercitation dolor aliqua deserunt deserunt. Id ex nostrud minim Lorem consequat labore magna minim proident.\r\nDolore minim id enim nisi amet ad ullamco. Culpa consectetur occaecat velit minim est anim in non enim aliqua cupidatat laboris. Ullamco do mollit reprehenderit culpa ex ipsum ad deserunt aliqua occaecat eiusmod nisi ipsum commodo. Laborum aliqua aliquip cillum incididunt nulla exercitation quis voluptate voluptate eu mollit non. Ullamco mollit sunt ea dolor eu aute magna cupidatat aliquip commodo duis id laboris.\r\nVeniam sint Lorem id mollit nostrud est pariatur. Deserunt sint adipisicing officia cillum cupidatat ea ea qui adipisicing quis reprehenderit laborum cupidatat laboris. Esse cillum elit laboris magna deserunt ipsum et exercitation qui cupidatat aliqua sunt esse. Eiusmod nisi nisi Lorem est nisi aute in aliqua veniam eiusmod velit incididunt sunt. Incididunt pariatur consequat proident ea aliquip ullamco quis. Laborum cillum velit dolore dolore exercitation sint velit nulla in et velit duis.\r\nExercitation dolore cillum ut ullamco magna veniam adipisicing tempor duis aliquip ea tempor eu officia. Occaecat non occaecat veniam Lorem ad minim est voluptate officia veniam do voluptate dolor est. Est cupidatat enim aute non ipsum consectetur aute irure. Tempor sunt dolore pariatur sint eu. Nulla sunt pariatur aliqua eu culpa ad ipsum eu veniam. Adipisicing fugiat non sint commodo duis.\r\nConsectetur fugiat consequat culpa aliqua velit exercitation. Eiusmod do nulla amet anim voluptate veniam consequat anim fugiat amet aute nostrud voluptate. Quis deserunt pariatur veniam tempor exercitation cupidatat id adipisicing aute incididunt cillum amet nostrud. Incididunt commodo ex sint et adipisicing aliqua qui. Voluptate quis consequat Lorem aliqua sint ipsum elit qui aliqua consectetur. Ea reprehenderit nisi laboris amet enim id adipisicing dolore laborum duis.\r\nTempor tempor quis ipsum non. Nostrud anim ipsum culpa veniam ullamco quis anim. Exercitation aute nulla cillum ex consectetur ex sit elit exercitation. Deserunt adipisicing ut labore nostrud reprehenderit.\r\n",
+          "rating": 12,
+          "language": "Rus",
+          "difficulty": "Expert",
+          "type": "Lecture",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10e3607648c1ee5b2ee",
+          "trainers": [
+              {
+                  "id": "5b66c10e5e5aae8d073508ef",
+                  "name": "Spencer Koch",
+                  "avatar": "https://randomuser.me/api/portraits/men/61.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=14",
+          "date": "2018-11-17T12:17:32",
+          "duration": 249,
+          "title": "irure non esse ea",
+          "description": "Ex aute Lorem veniam id officia laboris. Ipsum occaecat do velit deserunt reprehenderit do ea commodo commodo qui laboris irure et duis. Et occaecat magna id cillum cillum aliquip consectetur ea minim in et duis. Enim cupidatat nisi ad qui irure. Fugiat reprehenderit sit aliquip dolore laboris fugiat duis. Tempor commodo commodo sint culpa adipisicing.\r\nQui reprehenderit elit elit sit ipsum pariatur eiusmod elit non minim. Elit ex veniam consectetur sint deserunt irure incididunt. Nisi duis labore culpa sunt irure velit ut aliqua. Nostrud sit occaecat enim voluptate tempor reprehenderit. Ea esse ut culpa commodo adipisicing qui et proident nisi aliqua ex dolor. Minim proident laborum eu est velit sint velit voluptate consectetur. Ullamco aliquip nulla ea esse laborum cillum sunt.\r\nEu deserunt culpa dolor non tempor ad non nostrud veniam sit sint sit veniam excepteur. Quis officia veniam officia proident. Labore qui veniam non laboris esse incididunt esse officia labore fugiat labore. Ullamco do eu officia sint non Lorem irure ullamco qui sint dolore laborum sunt magna. Duis occaecat sint officia ad aute adipisicing exercitation non dolore.\r\nIrure id amet ad tempor duis incididunt ut voluptate pariatur veniam duis. Anim reprehenderit do do ad mollit consectetur ad irure deserunt nisi sit quis. Sit amet veniam ea ex laboris amet ex cupidatat ut dolor. Labore est id cillum ad ullamco ea. Duis non occaecat exercitation qui voluptate aute.\r\nNon id adipisicing deserunt excepteur do tempor non aute adipisicing ex. Nostrud proident velit anim occaecat aliqua duis irure Lorem. Esse labore voluptate laborum ea commodo esse ullamco ad anim cupidatat culpa dolore. Eiusmod voluptate aliqua voluptate pariatur consectetur anim sint nisi officia dolor consequat. Eu aliqua duis elit in tempor magna cillum elit proident nisi.\r\nMinim consequat adipisicing excepteur aute nulla non aute. Et sunt aliquip deserunt eu ut aliquip veniam irure ullamco. Ea aliquip velit cillum minim. Sint id nisi consequat cillum officia nostrud. Consectetur ullamco anim esse incididunt.\r\nTempor laborum amet quis enim. Sunt aliquip magna commodo in nostrud incididunt. Exercitation amet velit consectetur nulla velit Lorem tempor labore aliqua. Est nulla reprehenderit anim culpa nulla eiusmod ea est ullamco ullamco. Adipisicing magna officia irure fugiat id pariatur quis nostrud est.\r\nDuis ut id aute velit in nostrud ea. Adipisicing duis exercitation id qui Lorem. Incididunt et qui id ea laborum quis cillum ipsum veniam voluptate consequat proident voluptate laborum. Ad amet consectetur amet voluptate nostrud eiusmod velit aliquip laboris ipsum commodo sit commodo. Laborum esse tempor laboris dolor. Mollit occaecat fugiat nisi labore.\r\nEnim labore labore elit aliquip eu commodo ut. In labore Lorem tempor irure deserunt ipsum ex qui elit reprehenderit aliqua consequat. Commodo dolor nulla minim magna culpa labore mollit nostrud minim voluptate. Anim proident dolor elit tempor quis pariatur est. Do consectetur excepteur consequat tempor consequat duis. Aute minim aliquip incididunt proident enim officia occaecat eu amet exercitation nulla. Officia adipisicing aute nostrud dolor in fugiat cillum dolor ut do.\r\nNulla eu dolore fugiat deserunt duis non duis consectetur dolor culpa tempor magna adipisicing cillum. Occaecat commodo esse quis proident veniam est proident dolor in irure dolore. Magna velit in fugiat sunt amet officia irure sint ex tempor ipsum ullamco officia commodo.\r\nUt do Lorem reprehenderit ex id officia enim qui elit non amet ad labore anim. Velit ullamco exercitation consequat non eiusmod anim duis sit. Incididunt eiusmod ad sunt mollit magna nulla amet deserunt pariatur sint id nostrud. Voluptate est enim voluptate incididunt adipisicing deserunt eiusmod cillum eiusmod dolore irure qui veniam. Ad qui anim ex incididunt eu laborum excepteur. Aute minim labore consequat minim et aute dolor. Qui veniam ipsum ea incididunt cupidatat laboris fugiat ea adipisicing nisi consequat labore magna minim.\r\nAnim tempor Lorem amet aliqua exercitation. Consequat elit laboris incididunt ullamco. Ad deserunt ex ipsum sit. Proident occaecat duis officia occaecat. Incididunt Lorem minim do fugiat qui consectetur enim et nulla. Deserunt nisi laborum adipisicing est tempor culpa excepteur id et amet. Veniam aliqua ullamco sint exercitation ipsum velit et.\r\n",
+          "rating": 32,
+          "language": "Esp",
+          "difficulty": "Advanced",
+          "type": "Video course",
+          "isFavorite": true
+      },
+      {
+          "_id": "5b66c10ebf0e6180e61b69c1",
+          "trainers": [
+              {
+                  "id": "5b66c10e84d1a0af47433778",
+                  "name": "Elma Finch",
+                  "avatar": "https://randomuser.me/api/portraits/men/58.jpg"
+              },
+              {
+                  "id": "5b66c10e98dfcf4d61a9df91",
+                  "name": "Watson Greene",
+                  "avatar": "https://randomuser.me/api/portraits/men/55.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=2",
+          "date": "2018-08-07T03:24:23",
+          "duration": 27,
+          "title": "et ipsum aliquip culpa fugiat minim cillum",
+          "description": "Aliquip enim ea aliquip officia velit. Voluptate in voluptate cillum esse fugiat ex velit Lorem aute labore. Excepteur cupidatat in aute ipsum amet laboris sint et fugiat anim.\r\nNisi labore adipisicing eiusmod adipisicing eu incididunt mollit reprehenderit sint. Eu laborum do duis ex officia non consectetur irure amet amet laborum ipsum mollit. Consectetur Lorem officia Lorem magna qui aute reprehenderit ullamco qui. Ipsum Lorem do qui exercitation sunt. Dolor officia minim aute enim exercitation nulla amet anim magna fugiat quis ex mollit.\r\nIrure quis est nisi exercitation. Id sit proident sit deserunt. Voluptate adipisicing ad aliquip labore est. Enim magna est labore in consectetur occaecat minim ullamco enim reprehenderit aute.\r\nConsequat magna exercitation minim minim magna officia commodo duis fugiat labore fugiat irure sit officia. Cillum enim amet voluptate anim do fugiat nulla nulla non irure cupidatat duis esse. Id do eu dolor velit laboris. Dolore commodo reprehenderit veniam aute duis eu esse commodo velit in.\r\nNostrud laborum dolore amet irure elit aliquip est sunt. Esse aliqua laboris dolor tempor mollit aute elit irure in et laborum. Nulla exercitation laborum in occaecat tempor nostrud eiusmod minim esse duis ullamco. Sit culpa deserunt sunt nulla cupidatat commodo officia ut dolor sint. Officia in id deserunt ut cillum velit occaecat culpa.\r\nTempor excepteur quis velit deserunt. Cillum ipsum officia minim duis. Qui cillum anim id cupidatat ea tempor Lorem aute adipisicing minim.\r\nPariatur velit id id reprehenderit ullamco consectetur nulla pariatur amet est pariatur dolor. Aute nostrud elit amet ut aute excepteur ipsum velit occaecat aute excepteur culpa sint. Ipsum Lorem laborum velit veniam tempor aute elit Lorem pariatur eu consequat velit exercitation. Deserunt ea officia laboris reprehenderit aute irure ut dolor laborum ad nisi dolore in consectetur. Aliquip exercitation aliquip culpa fugiat et elit mollit ullamco excepteur. Cupidatat id magna enim aliquip nisi aliquip.\r\nEst irure velit commodo qui exercitation dolor aliqua reprehenderit consectetur anim aute. In exercitation officia incididunt esse culpa ex nisi consequat irure aliqua deserunt. Commodo voluptate commodo non proident culpa excepteur consectetur qui Lorem.\r\n",
+          "rating": 25,
+          "language": "Rus",
+          "difficulty": "Novice",
+          "type": "Seminar",
+          "isFavorite": false
+      },
+      {
+          "_id": "5b66c10e2c71bffc702695f7",
+          "trainers": [
+              {
+                  "id": "5b66c10e245634c6a9d516e3",
+                  "name": "Dixie Cervantes",
+                  "avatar": "https://randomuser.me/api/portraits/men/63.jpg"
+              },
+              {
+                  "id": "5b66c10eab63de559a0ba087",
+                  "name": "Hutchinson Larsen",
+                  "avatar": "https://randomuser.me/api/portraits/men/69.jpg"
+              },
+              {
+                  "id": "5b66c10e48fdbcc40f35fa52",
+                  "name": "Griffith Trevino",
+                  "avatar": "https://randomuser.me/api/portraits/men/55.jpg"
+              },
+              {
+                  "id": "5b66c10ea098ba177336c2e1",
+                  "name": "Shelley Mosley",
+                  "avatar": "https://randomuser.me/api/portraits/women/58.jpg"
+              }
+          ],
+          "img": "https://loremflickr.com/500/300?random=4",
+          "date": "2018-09-07T06:34:33",
+          "duration": 486,
+          "title": "ullamco deserunt officia sunt",
+          "description": "Ut aliqua laboris minim dolor. Veniam eu sunt sint anim ullamco ut labore occaecat. Proident proident labore et qui aliquip duis duis aute mollit non enim reprehenderit. Enim aliqua eu est nostrud excepteur. Enim ullamco laboris aliqua officia ipsum nisi in sit.\r\nQui aliquip incididunt aliquip id fugiat. Anim enim sunt consequat ut elit commodo mollit magna Lorem culpa quis ullamco cupidatat cillum. Aliqua anim sunt reprehenderit fugiat Lorem culpa nisi voluptate exercitation quis non veniam. Aliqua occaecat cillum consequat veniam commodo nostrud. Dolor in cillum ullamco eu sunt officia consectetur. Aliqua sint irure officia irure et enim nostrud duis nisi aliquip aliqua do velit aliquip.\r\nMollit reprehenderit cupidatat amet ad pariatur incididunt aute et. Est cupidatat eiusmod incididunt sint laboris adipisicing pariatur consequat. Adipisicing et fugiat sit quis occaecat sunt veniam adipisicing aliqua veniam. Aute cupidatat enim ut officia minim sit amet aute aliquip veniam culpa.\r\nProident id qui irure elit adipisicing velit proident ea aliqua. Ad adipisicing elit veniam officia veniam aute veniam. Aliqua ullamco consectetur enim Lorem culpa labore aute eu ut tempor ipsum. Excepteur eiusmod exercitation ipsum consectetur id.\r\nConsectetur elit commodo reprehenderit enim culpa quis. Elit qui mollit qui dolore est anim est cupidatat cupidatat amet sit magna. Ad aliqua laborum nulla reprehenderit amet aliqua velit. Velit exercitation ex proident eu magna. Lorem deserunt aliquip dolore officia elit reprehenderit minim.\r\nPariatur commodo excepteur enim mollit aliquip sunt deserunt. Tempor consectetur ad sint consequat magna cillum fugiat. Anim eu adipisicing ea magna voluptate eu sunt amet officia ipsum aliquip. Officia in exercitation cupidatat duis. Eiusmod mollit do deserunt aute aute.\r\nCommodo quis anim amet veniam magna culpa magna ullamco nulla sunt enim eu consectetur commodo. Id sint anim sint commodo reprehenderit laborum incididunt adipisicing. Velit nostrud mollit ea aliquip velit labore ad cillum. Eiusmod occaecat deserunt laboris est sint. Ex aliqua culpa velit irure sit occaecat laboris culpa cillum ex sint do aliqua elit.\r\nEu laboris voluptate duis laborum commodo eiusmod officia. Consequat magna sit cillum ex culpa elit laboris proident velit sit pariatur. Velit nostrud quis ex minim excepteur.\r\nEa eu tempor pariatur cillum sit excepteur nostrud. Amet laboris aliquip veniam labore sint pariatur veniam et sunt proident laborum voluptate in eu. Ex nulla sunt ipsum veniam ipsum quis ullamco est ullamco adipisicing commodo.\r\nAdipisicing nulla adipisicing labore irure. Occaecat duis exercitation ullamco duis veniam velit deserunt qui laboris. Aliqua ut aliquip tempor aute ut aute elit mollit.\r\nAliqua voluptate mollit duis laboris ea eiusmod mollit. Reprehenderit reprehenderit culpa quis sint nostrud mollit ut commodo adipisicing cillum irure incididunt. Labore dolore exercitation est velit anim non incididunt dolore. Lorem est nulla reprehenderit consequat nisi ipsum id Lorem esse Lorem non. Ea aute est ipsum velit.\r\n",
+          "rating": 47,
+          "language": "Eng",
+          "difficulty": "Expert",
+          "type": "Seminar",
+          "isFavorite": false
+      }
 ]

@@ -1,0 +1,17 @@
+<div class="input-container">
+    <label class="label label-required" for="trainers">Trainers</label>
+    <ul class="droplist">
+        <li class="droplist__item" *ngFor="let trainer of items">
+          {{trainer.name}}
+          <span class="btn-container delete-btn" (click)="onClick(trainer.id)">
+            <i class="fas fa-times"></i>
+          </span>
+        </li>
+        <li class="droplist__input-container">
+            <input
+                id="trainers" class="" type="text" required
+                name="trainers" placeholder="new trainers" [(ngModel)]="newItemName"
+                (keydown)="onKeyDown($event)" (blur)="onBlur()" (focus)="onFocus()" />
+        </li>
+    </ul>
+</div>
