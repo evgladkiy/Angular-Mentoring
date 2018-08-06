@@ -9,6 +9,7 @@ import { Trainer } from '../../models';
 })
 export class TagItComponent implements OnInit {
   @Input() items: Trainer[];
+  @Input() tagItId: string;
   @Output() tagItValueChanged = new EventEmitter<Trainer[]>();
 
   public newItemName = '';

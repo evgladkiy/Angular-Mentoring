@@ -8,13 +8,15 @@ import { Component, OnInit, Input, ElementRef, EventEmitter, Output, HostListene
 export class DroplistComponent implements OnInit {
   @Input() items: string[];
   @Input() value: string;
+  @Input() droplistId: string;
   @Output() dropdownValueChanged = new EventEmitter<string>();
 
   private checkbox: HTMLInputElement;
 
   @HostListener('body:click', ['$event'])
   onclick(event: any): void {
-    if (!event.target.closest('app-droplist')) {
+    const droplist: HTMLElement = event.target.closest('app-droplist');
+    if (!droplist || (droplist && droplist.getAttribute('droplistId') !== this.droplistId)) {
       this.checkbox.checked = false;
     }
   }

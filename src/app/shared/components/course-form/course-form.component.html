@@ -28,6 +28,7 @@
         <div class="input-container">
             <label class="label label-required" for="difficulty">Difficulty</label>
             <app-droplist
+                droplistId="difficulty"
                 [items]="coursesDifficulty"
                 [value]="course.difficulty ? course.difficulty : 'Select Difficulty'"
                 (dropdownValueChanged)="onDropdownValueChanged($event, 'difficulty')">
@@ -36,6 +37,7 @@
           <div class="input-container">
               <label class="label label-required" for="type">Type</label>
             <app-droplist
+                droplistId="type"
                 [items]="typesOfCourse"
                 [value]="course.type ? course.type : 'Select Type'"
                 (dropdownValueChanged)="onDropdownValueChanged($event, 'type')">
@@ -44,7 +46,11 @@
     </div>
     <div class="input-container">
         <label class="label label-required" for="trainers">Trainers</label>
-        <app-tag-it [items]="course.trainers" (tagItValueChanged)="onTagItValueChanged($event)"></app-tag-it>
+        <app-tag-it
+            tagItId="trainer"
+            [items]="course.trainers"
+            (tagItValueChanged)="onTagItValueChanged($event)">
+        </app-tag-it>
     </div>
     <div class="small-inputs-container">
         <div class="input-container">

@@ -12,6 +12,7 @@ import { AddCourseModule } from './add-course/add-course.module';
 import { ErrorPageModule } from './error-page/error-page.module';
 
 import { AuthGuard } from './guards/auth.guard';
+import { EditCourseModule } from './edit-course/edit-course.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -22,6 +23,7 @@ import { AuthGuard } from './guards/auth.guard';
     SharedModule,
     CoursesModule,
     AddCourseModule,
+    EditCourseModule,
     ErrorPageModule,
     AppRoutingModule,
   ],
