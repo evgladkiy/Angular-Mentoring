@@ -3,14 +3,14 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 import { SharedModule } from '../shared/shared.module';
+import { AuthGuard } from './guards/auth.guard';
 
 import {
   HeaderComponent,
   FooterComponent,
   HeaderLogoComponent,
   UserPanelComponent,
-  BreadcrumbsComponent
- } from './';
+ } from './components';
 
 
 @NgModule({
@@ -24,12 +24,11 @@ import {
     FooterComponent,
     HeaderLogoComponent,
     UserPanelComponent,
-    BreadcrumbsComponent,
   ],
+  providers: [AuthGuard],
   exports: [
     HeaderComponent,
     FooterComponent,
-    BreadcrumbsComponent,
   ],
 })
 export class CoreModule { }

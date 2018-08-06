@@ -1,0 +1,52 @@
+<!-- <p>Shown <b>{{activePage * coursesPerPage}}</b> course of <b>{{numberOfCourses}}</b> courses</p> -->
+<div class="pagination-wrapper">
+  <ul class="pagination-container">
+      <li>
+          <button
+              class="pagination-btn__arrow pagination-btn__arrow_left"
+              (click)="onClickPaginationBtn(1)"
+              [disabled]="activePage === 1" >
+                  <i class="fas fa-angle-double-left"></i>
+          </button>
+      </li>
+      <li>
+          <button
+              class="pagination-btn__arrow pagination-btn__arrow_left"
+              (click)="onClickPaginationBtn(activePage - 1)"
+              [disabled]="activePage === 1">
+                  <i class="fas fa-angle-left"></i>
+          </button>
+      </li>
+      <li *ngIf="buttons[0] !== 1">
+        <span class="ellipsis ellipsis_left">...</span>
+      </li>
+      <li *ngFor="let buttonNum of buttons">
+          <button
+              class="pagination-btn"
+              [ngClass]="{'active': buttonNum === activePage}"
+              (click)="onClickPaginationBtn(buttonNum)">
+                  {{buttonNum}}
+          </button>
+      </li>
+      <li *ngIf="buttons[buttons.length - 1] !== numberOfPages">
+        <span class="ellipsis ellipsis_left">...</span>
+      </li>
+      <li>
+          <button
+              class="pagination-btn__arrow pagination-btn__arrow_right"
+              (click)="onClickPaginationBtn(activePage + 1)"
+              [disabled]="activePage === numberOfPages">
+                  <i class="fas fa-angle-right"></i>
+          </button>
+      </li>
+      <li>
+          <button
+              class="pagination-btn__arrow pagination-btn__arrow_right"
+              (click)="onClickPaginationBtn(numberOfPages)"
+              [disabled]="activePage === numberOfPages">
+                  <i class="fas fa-angle-double-right"></i>
+            </button>
+      </li>
+  </ul>
+</div>
+

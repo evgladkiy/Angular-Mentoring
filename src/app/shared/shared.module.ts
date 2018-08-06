@@ -10,7 +10,8 @@ import {
   ModalWindowComponent,
   CourseFormComponent,
   DroplistComponent,
-  TagItComponent
+  TagItComponent,
+  BreadcrumbsComponent,
 } from './components';
 
 @NgModule({
@@ -28,6 +29,7 @@ import {
     CourseFormComponent,
     TagItComponent,
     DroplistComponent,
+    BreadcrumbsComponent
   ],
   providers: [
     AuthService,
@@ -42,6 +44,7 @@ import {
     CourseFormComponent,
     TagItComponent,
     DroplistComponent,
+    BreadcrumbsComponent,
   ],
 })
 export class SharedModule { }

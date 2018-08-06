@@ -1,0 +1,20 @@
+<app-course-list-toolbox (filtred)="onFiltredCourse($event)"></app-course-list-toolbox>
+<div class="course-container" >
+  <p *ngIf="courses && courses.length === 0">Course List is empty...</p>
+  <app-course-list-item
+      *ngFor="let course of courses | orderBy : 'date' | slice : 0 : coursesPerPage"
+      [course]="course" [appHighlightByDate]="course.date">
+  </app-course-list-item>
+</div>
+<app-course-list-pagination
+  *ngIf="courses && courses.length"
+  [numberOfCourses]="courses.length">
+</app-course-list-pagination>
+<app-modal-window
+    *ngIf="shouldShowModal" modalTitle="WAT???!!!" submitText="Delete"
+    (submitModal)="onSubmitModal()" (closeModal)="onCloseModal()">
+      <p>Do you really want to delete course <b>"{{courseToDelete.title | capitalized}}"</b> by
+        <b>{{courseToDelete.trainers[0].name}} </b>
+        <span *ngIf="courseToDelete.trainers.length > 1">and other trainers</span>???
+      </p>
+</app-modal-window>
