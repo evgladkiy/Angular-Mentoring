@@ -4,6 +4,7 @@ import { RouterModule } from '@angular/router';
 
 import { SharedModule } from '../shared/shared.module';
 import { AuthGuard } from './guards/auth.guard';
+import { CourseResolver } from './resolvers/courses.resolver';
 
 import {
   HeaderComponent,
@@ -25,7 +26,10 @@ import {
     HeaderLogoComponent,
     UserPanelComponent,
   ],
-  providers: [AuthGuard],
+  providers: [
+    AuthGuard,
+    CourseResolver,
+  ],
   exports: [
     HeaderComponent,
     FooterComponent,

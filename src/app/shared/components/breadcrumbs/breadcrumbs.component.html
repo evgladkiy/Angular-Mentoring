@@ -1,10 +1,10 @@
-<nav class="breadcrumbs-navigation">
-    <li class="breadcrumbs-navigation__item" *ngFor="let page of path; let first = first; let last = last;">
-        <a [routerLink]="['/' + page]" *ngIf="!last" class="breadcrumbs-navigation__link">
+<nav *ngIf="crumbs.length > 1" class="breadcrumbs-navigation">
+    <li class="breadcrumbs-navigation__item" *ngFor="let crumb of crumbs; let first = first; let last = last;">
+        <a [routerLink]="['/' + crumb]" *ngIf="!last" class="breadcrumbs-navigation__link">
             <i *ngIf="first" class="fas fa-home"></i>
-            {{page}}
+            {{crumb}}
         </a>
-        <span *ngIf="last">{{page}}</span>
+        <span *ngIf="last">{{crumb}}</span>
         <i *ngIf="!last" class="fas fa-angle-double-right"></i>
     </li>
 </nav>

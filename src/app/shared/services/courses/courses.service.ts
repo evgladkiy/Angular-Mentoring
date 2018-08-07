@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 
 import { courses } from './courses';
-
 import { Course } from '../../models';
 
 @Injectable({
@@ -22,6 +21,12 @@ export class CoursesService {
 
   getCoursebyId(id: string): Course {
     return this.courses.find(course => course._id === id);
+  }
+
+  getCourseTitleByid(id: string): string {
+    const searchedCourse: Course = this.courses.find(course => course._id === id);
+
+    return searchedCourse._id;
   }
 
   addCourse(newCourse: Course): void {
