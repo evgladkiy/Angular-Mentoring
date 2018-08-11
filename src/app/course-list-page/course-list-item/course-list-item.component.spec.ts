@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { Component, DebugElement } from '@angular/core';
+import { Component, DebugElement, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { CourseListItemComponent } from './course-list-item.component';
 import { CapitalizedPipe, DurationPipe } from '../../shared/pipes';
@@ -41,6 +41,7 @@ describe('CourseListItemComponent', () => {
         CapitalizedPipe,
         DurationPipe,
       ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
     })
     .compileComponents();
   }));
@@ -56,37 +57,6 @@ describe('CourseListItemComponent', () => {
     const imgDebugElement: DebugElement = courseEl.query(By.css('img'));
 
     expect(imgDebugElement.nativeElement.src).toBe(testHost.course.img);
-  });
-
-  it('course header should be correct', () => {
-    const h3DebugElement: DebugElement = courseEl.query(By.css('.course-info__header'));
-
-    expect(h3DebugElement.nativeElement.textContent.trim()).toBe(testHost.course.title);
-  });
-
-  it('course description should be correct', () => {
-    const pDebugElement: DebugElement = courseEl.query(By.css('.course-info__description'));
-
-    expect(pDebugElement.nativeElement.textContent.trim()).toBe(testHost.course.description);
-  });
-
-  it('course author should be correct', () => {
-    const courseAuthorDebugElement: DebugElement = courseEl.query(By.css('.course-author__txt'));
-    expect(courseAuthorDebugElement.nativeElement.textContent).toContain(testHost.course.author);
-  });
-
-  it('course duration should be correct', () => {
-    const courseDurationDebugElement: DebugElement = courseEl.query(By.css('.course-duration__txt'));
-
-    expect(courseDurationDebugElement.nativeElement.textContent).toContain(testHost.course.duration);
-  });
-
-  it('should raise correct course id when clicked', () => {
-    const deleteBtn = courseEl.query(By.css('.btn-delete'));
-
-    deleteBtn.triggerEventHandler('click', null);
-
-    expect(testHost.courseToDeleteId).toBe(testHost.course._id);
   });
 
 });

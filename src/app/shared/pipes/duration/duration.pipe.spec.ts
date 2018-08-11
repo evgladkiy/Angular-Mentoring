@@ -13,10 +13,10 @@ describe('DurationPipe', () => {
 
   it('should correct transform duration', () => {
     expect(durationPipe.transform(0)).toBe('0min');
-    expect(durationPipe.transform(45)).toBe('45min');
-    expect(durationPipe.transform(60)).toBe('1h');
-    expect(durationPipe.transform(61)).toBe('1h 1min');
-    expect(durationPipe.transform(122)).toBe('2h 2min');
-    expect(durationPipe.transform(155)).toBe('2h 35min');
+    expect(durationPipe.transform(45)).toBe('45 min');
+    expect(durationPipe.transform(60)).toBe('1 h');
+    expect(durationPipe.transform(61)).toBe('1 h 1 min');
+    expect(durationPipe.transform(122)).toBe('2 h 2 min');
+    expect(durationPipe.transform(155)).toBe('2 h 35 min');
   });
 });

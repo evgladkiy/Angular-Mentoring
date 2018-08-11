@@ -1,6 +1,8 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { CourseListPageComponent } from './course-list-page.component';
+import { OrderByPipe, CapitalizedPipe } from '../shared/pipes';
 
 describe('CourseListPageComponent', () => {
   let component: CourseListPageComponent;
@@ -8,7 +10,8 @@ describe('CourseListPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CourseListPageComponent ]
+      declarations: [ CourseListPageComponent, OrderByPipe, CapitalizedPipe ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
     })
     .compileComponents();
   }));

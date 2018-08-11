@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CourseListItemFooterComponent } from './course-list-item-footer.component';
+import { DurationPipe } from '../../shared/pipes';
 
 describe('CourseListItemFooterComponent', () => {
   let component: CourseListItemFooterComponent;
@@ -8,7 +9,7 @@ describe('CourseListItemFooterComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CourseListItemFooterComponent ]
+      declarations: [ CourseListItemFooterComponent, DurationPipe ]
     })
     .compileComponents();
   }));
@@ -19,7 +20,4 @@ describe('CourseListItemFooterComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
 });

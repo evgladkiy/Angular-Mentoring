@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { RouterTestingModule } from '@angular/router/testing';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { CourseFormComponent } from './course-form.component';
+import { DurationPipe } from '../../pipes';
 
 describe('CourseFormComponent', () => {
   let component: CourseFormComponent;
@@ -8,7 +12,9 @@ describe('CourseFormComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ CourseFormComponent ]
+      imports: [ FormsModule, RouterTestingModule ],
+      declarations: [ CourseFormComponent, DurationPipe ],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ],
     })
     .compileComponents();
   }));

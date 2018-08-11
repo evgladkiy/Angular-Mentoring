@@ -7,6 +7,7 @@ import { UserPanelComponent } from './user-panel.component';
 
 describe('UserPanelComponent', () => {
   let fixture: ComponentFixture<UserPanelComponent>;
+  let component: UserPanelComponent;
   const user = {
     _id: '12',
     login: 'Vasia',
@@ -22,13 +23,16 @@ describe('UserPanelComponent', () => {
 
   beforeEach(() => {
     fixture = TestBed.createComponent(UserPanelComponent);
-    fixture.detectChanges();
   });
 
   it('user panel should have correct initial user', () => {
+    component = fixture.componentInstance;
+    component.currentUser = user;
+    fixture.detectChanges();
+
     const debugElement: DebugElement = fixture.debugElement.query(By.css('.user-panel__user'));
     const { login, password } = user;
 
-    expect(debugElement.nativeElement.textContent).toBe(`${login} ${password}`);
+    expect(debugElement.nativeElement.textContent).toBe(`${login}`);
   });
 });
