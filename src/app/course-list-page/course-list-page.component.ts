@@ -1,31 +1,44 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
 
 import { Course } from '../shared/models';
 import { CoursesService, ModalWindowService  } from '../shared/services';
-import { CoursesFilterPipe } from './courses-filter.pipe';
 
 @Component({
   selector: 'app-course-list-page',
   templateUrl: './course-list-page.component.html',
   styleUrls: ['./course-list-page.component.less'],
-  providers: [ CoursesFilterPipe ],
 })
 export class CourseListPageComponent implements OnInit, OnDestroy {
+  private defaultCoursesPerPage = 5;
   private modalWindowSub: Subscription;
+  private coursesSub: Subscription;
+  private numOfCoursesSub: Subscription;
   public courses: Course[];
+  public numberOfCourses: number;
   public courseToDelete: Course;
   public shouldShowModal: boolean;
-  public coursesPerPage = 5;
+  public coursesPerPage: number;
 
   constructor(
     private coursesServise: CoursesService,
-    private coursesFilterPipe: CoursesFilterPipe,
+    private route: ActivatedRoute,
     private modalWindowService: ModalWindowService,
   ) { }
 
   ngOnInit(): void {
-    this.courses = this.coursesServise.getCourses();
+    const { page, count = this.defaultCoursesPerPage, q} = this.route.snapshot.queryParams;
+
+    this.coursesPerPage = Number(count);
+    this.coursesServise.fetchCourses(page, count, q);
+    this.coursesSub = this.coursesServise.coursesChannel$.subscribe(
+      courses =>  this.courses = courses
+    );
+    this.numOfCoursesSub = this.coursesServise.numOfCourseshannel$.subscribe(
+      numOfCourses => this.numberOfCourses = Number(numOfCourses)
+    );
+
     this.modalWindowSub = this.modalWindowService.channel$.subscribe((id) => {
       this.shouldShowModal = Boolean(id);
       this.courseToDelete = this.shouldShowModal
@@ -36,6 +49,8 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.modalWindowSub.unsubscribe();
+    this.numOfCoursesSub.unsubscribe();
+    this.coursesSub.unsubscribe();
   }
 
   onSubmitModal(): void {
@@ -48,11 +63,5 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
 
   onCloseModal(): void {
     this.modalWindowService.closeModal();
-  }
-
-  onFiltredCourse(value: string): void {
-    const allCourses = this.coursesServise.getCourses();
-
-    this.courses = this.coursesFilterPipe.transform(allCourses, value);
   }
 }

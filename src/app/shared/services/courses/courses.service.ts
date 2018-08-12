@@ -1,32 +1,50 @@
 import { Injectable } from '@angular/core';
+import { Subject } from 'rxjs';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
-import { courses } from './courses';
 import { Course } from '../../models';
+import { CoursesRes } from '../../models/courses-res.model';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CoursesService {
+  private serverUrl = 'http://localhost:3000/courses';
+  private cachedCourses: Course[];
   private courses: Course[];
   private typesOfCourse: string[] = ['Training', 'Lecture', 'Video course', 'Seminar'];
   private coursesDifficulty: string[] = ['For All', 'Novice', 'Intermediate', 'Advanced', 'Expert'];
 
-  constructor() {
-    this.init();
-   }
+  private coursesChannel = new Subject<Course[]>();
+  private numOfCourseshannel = new Subject<number>();
+  public coursesChannel$ = this.coursesChannel.asObservable();
+  public numOfCourseshannel$ = this.numOfCourseshannel.asObservable();
+  constructor(private http: HttpClient) {}
 
-  getCourses(): Course[] {
-    return this.courses;
+  fetchCourses(page: number = 1, count: number = 5, q?: string) {
+    let params = new HttpParams()
+      .set('page', String(page))
+      .set('count', String(count));
+
+    if (q) {
+      params = new HttpParams()
+        .set('page', String(page))
+        .set('count', String(count))
+        .set('q', q);
+    }
+    return this.http
+      .get<CoursesRes>(this.serverUrl, { params })
+      .subscribe((res) => {
+        this.cachedCourses = res.courses;
+        this.coursesChannel.next(res.courses);
+        this.numOfCourseshannel.next(res.coursesCount);
+      });
   }
 
-  getCoursebyId(id: string): Course {
-    return this.courses.find(course => course._id === id);
-  }
-
-  getCourseTitleByid(id: string): string {
-    const searchedCourse: Course = this.courses.find(course => course._id === id);
-
-    return searchedCourse._id;
+  getCoursebyId(id: string): Promise<Course> {
+    return this.http
+      .get<Course>(`${this.serverUrl}/${id}`)
+      .toPromise();
   }
 
   addCourse(newCourse: Course): void {
@@ -56,14 +74,5 @@ export class CoursesService {
 
   getDifficultyOfCourses(): string[] {
     return this.coursesDifficulty;
-  }
-
-  init(): void {
-    this.courses = courses.map(course => (
-      {
-        ...course,
-        date: new Date(course.date)
-      }
-    ));
   }
 }

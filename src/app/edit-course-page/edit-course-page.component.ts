@@ -1,4 +1,4 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy, OnChanges } from '@angular/core';
 import { Router, ActivatedRoute  } from '@angular/router';
 import { Subscription } from 'rxjs';
 
@@ -18,12 +18,15 @@ export class EditCoursePageComponent implements OnInit, OnDestroy {
     private router: Router,
     private activeRoute: ActivatedRoute,
     private coursesService: CoursesService) {
+      this.course = this.activeRoute.snapshot.data.course;
     }
 
   ngOnInit() {
-    this.sub = this.activeRoute.data.subscribe(({ course }) => {
-      this.course = course;
-    });
+    this.course = this.activeRoute.snapshot.data.course;
+    console.log(this.activeRoute.snapshot.data.course);
+    // this.sub = this.activeRoute.data.subscribe(data) => {
+    //   this.course = data.course;
+    // });
   }
 
   ngOnDestroy(): void {

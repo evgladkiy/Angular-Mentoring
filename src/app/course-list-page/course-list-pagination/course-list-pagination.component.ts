@@ -1,5 +1,6 @@
 import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { ActivatedRoute } from '@angular/router';
 
 import { CourseListPaginationService } from './course-list-pagination.service';
 
@@ -9,33 +10,30 @@ import { CourseListPaginationService } from './course-list-pagination.service';
   styleUrls: ['./course-list-pagination.component.less']
 })
 export class CourseListPaginationComponent implements OnInit, OnChanges, OnDestroy {
+  @Input() numberOfCourses: number;
+  @Input() coursesPerPage: number;
+
   private buttonsSub: Subscription;
-  private numberOfPagesSub: Subscription;
   public buttons: number[];
   public numberOfPages: number;
-  public coursesPerPage = 5;
   public activePage = 1;
+  public numberOfShownCourses: number;
 
-  @Input() numberOfCourses: number;
-
-  constructor(private paginationService: CourseListPaginationService) {}
+  constructor(private route: ActivatedRoute,
+              private paginationService: CourseListPaginationService) {}
 
   ngOnInit(): void {
     this.buttonsSub = this.paginationService.buttonsChannel$.subscribe(
       buttons => this.buttons = buttons
     );
-    this.numberOfPagesSub = this.paginationService.numberOfPagesChannel$.subscribe((numOfPages) => {
-      this.numberOfPages = numOfPages;
 
-      if (this.activePage > numOfPages) {
-        this.activePage = numOfPages;
-      }
-
-    });
     this.updateButtons();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
+    this.numberOfPages = Math.ceil(this.numberOfCourses / this.coursesPerPage);
+    this.activePage = Number(this.route.snapshot.queryParams['page']) || this.activePage;
+    this.updateNumOfShownCourses();
     this.updateButtons();
   }
 
@@ -44,17 +42,22 @@ export class CourseListPaginationComponent implements OnInit, OnChanges, OnDestr
   }
 
   private updateButtons(): void {
-    this.paginationService.getButtons(this.numberOfCourses, this.coursesPerPage, this.activePage);
+    this.paginationService.getButtons(this.numberOfPages, this.activePage);
   }
 
   onClickPaginationBtn(btn: number): void {
     this.activePage = btn;
+    this.paginationService.fetchCourses(
+      this.activePage,
+      this.coursesPerPage,
+      this.route.snapshot.queryParams['q']);
+    this.updateNumOfShownCourses();
     this.updateButtons();
   }
 
-  // getShownCourses(): string {
-    // return this.numberOfCourses <= this.coursesPerPage * this.activePage
-    //   ? this.numberOfCourses
-    //   : this.coursesPerPage * this.activePage
-  // }
+  updateNumOfShownCourses(): void {
+    this.numberOfShownCourses = this.numberOfCourses >= this.coursesPerPage * this.activePage
+      ? this.coursesPerPage
+      : this.coursesPerPage - (this.coursesPerPage * this.activePage - this.numberOfCourses);
+  }
 }

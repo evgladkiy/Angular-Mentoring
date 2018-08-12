@@ -1,0 +1,38 @@
+[
+  {
+    "id": "5b5e11385809b1e033edea91",
+    "name": "admin",
+    "password": "admin"
+  },
+  {
+    "id": "5b5e11383ef0b4fa75b7e648",
+    "name": "May Bowers",
+    "password": "password"
+  },
+  {
+    "id": "5b5e11386e36374c2aa2236e",
+    "name": "Diane Jacobs",
+    "password": "password"
+  },
+  {
+    "id": "5b5e11380b61ebaf43e6f7b7",
+    "name": "Perez Michael",
+    "password": "password"
+  },
+  {
+    "id": "5b5e1138a55b33a014c49f72",
+    "name": "Aimee Banks",
+    "password": "password"
+  },
+  {
+    "id": "5b5e11387c7ca87bea2de83a",
+    "name": "Lila Reilly",
+    "password": "password"
+  },
+  {
+    "id": "5b5e113862be4b692558435b",
+    "name": "Error Server",
+    "password": "password"
+  }
+]
+  

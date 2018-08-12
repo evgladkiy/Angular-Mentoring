@@ -1,4 +1,6 @@
 import { Component, Output, EventEmitter } from '@angular/core';
+import { CoursesService } from '../../shared/services';
+import { Router, ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-course-list-toolbox',
@@ -8,12 +10,16 @@ import { Component, Output, EventEmitter } from '@angular/core';
 export class CourseListToolboxComponent {
   public searchQuery = '';
 
-  @Output() filtred = new EventEmitter<string>();
-
-  constructor() { }
+  constructor(private router: Router,
+              private activatedRoute: ActivatedRoute,
+              private coursesService: CoursesService) { }
 
   onFilterBtnClick(): void {
-    this.filtred.emit(this.searchQuery.toLowerCase());
+    const { page, count} = this.activatedRoute.snapshot.queryParams;
+    const q = this.searchQuery.toLowerCase();
+
+    this.coursesService.fetchCourses(1, count, q);
+    this.router.navigate(['/courses'], { queryParams: { page: 1, count, q } });
   }
 }
 

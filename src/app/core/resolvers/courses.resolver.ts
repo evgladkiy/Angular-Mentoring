@@ -10,7 +10,7 @@ export class CourseResolver implements Resolve<Course> {
     private coursesService: CoursesService,
     private router: Router) {}
 
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Course {
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<Course> {
     const id = route.paramMap.get('id');
 
     return this.coursesService.getCoursebyId(id);
