@@ -1,13 +1,18 @@
 const express = require('express');
 const router = express.Router();
-var fs = require('fs');
+const fs = require('fs');
 
-var courses = JSON.parse(fs.readFileSync('server/data/courses.json', 'utf8'))
-    .map((course) => {
-        course.date = new Date(course.date);
-        return course;
-    })
-    .sort((courseA, courseB) => Number(courseA.date) - Number(courseB.date));
+function processСourses(courses) {
+    return courses
+        .map((course) => {
+            course.date = new Date(course.date);
+            return course;
+        })
+        .sort((courseA, courseB) => Number(courseA.date) - Number(courseB.date));
+}
+
+let courses = JSON.parse(fs.readFileSync('server/data/courses.json', 'utf8'));
+courses = processСourses(courses);
 
 router.get('', (req, res, next) => {
     const page = Number(req.query.page);
@@ -22,7 +27,7 @@ router.get('', (req, res, next) => {
         ))
     };
 
-    if ((page <=  Math.ceil(resCourses.length / count) && page >= 1) && count >= 0) {
+    if (page && count ) {
         const start = (page - 1) * count ;
         const end = start + count < resCourses.length ? start + count : resCourses.length;
         const slicedCourses = resCourses.slice(start, end);
@@ -71,6 +76,17 @@ router.delete('/:id', (req, res, next) => {
     }
 
     res.json(resJson);
+});
+
+router.post('/', (req, res, next) => {
+    const course = req.body;
+    
+    courses.push(course);
+    courses = processСourses(courses);
+    res.send(JSON.stringify({
+        status: 'OK',
+        msg: `Course id - ${course._id} was added to db`,
+    }));
 });
 
 module.exports = router;

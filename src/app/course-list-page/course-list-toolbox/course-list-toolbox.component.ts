@@ -1,6 +1,8 @@
-import { Component, Output, EventEmitter } from '@angular/core';
-import { CoursesService } from '../../shared/services';
-import { Router, ActivatedRoute } from '@angular/router';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
+import { CoursesService, ReqParamsService } from '../../shared/services';
+import { ReqParams } from '../../shared/models';
 
 @Component({
   selector: 'app-course-list-toolbox',
@@ -11,17 +13,18 @@ export class CourseListToolboxComponent {
   public searchQuery = '';
 
   constructor(private router: Router,
-              private activatedRoute: ActivatedRoute,
+              private reqParamsService: ReqParamsService,
               private coursesService: CoursesService) { }
 
   onFilterBtnClick(): void {
-    const { page, count} = this.activatedRoute.snapshot.queryParams;
+    const params: ReqParams = this.reqParamsService.getDefaultParams();
     const q = this.searchQuery.trim().toLowerCase();
-    const params = { page: 1, ; }
+
     if (q) {
       params.q = q;
     }
-    this.coursesService.fetchCourses(1, count, q);
+
+    this.coursesService.fetchCourses(params.page, params.count, q);
     this.router.navigate(['/courses'], { queryParams: params });
   }
 }

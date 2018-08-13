@@ -3,3 +3,4 @@ export * from './trainer.model';
 export * from './user.model';
 export * from './token-res.model';
 export * from './info-res.model';
+export * from './req-params.model';

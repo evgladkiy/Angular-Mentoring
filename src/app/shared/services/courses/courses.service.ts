@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
-import { HttpClient, HttpParams } from '@angular/common/http';
-import { ActivatedRoute } from '@angular/router';
+import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 
-import { Course, InfoRes } from '../../models';
+import { Course, InfoRes, ReqParams } from '../../models';
 import { CoursesRes } from '../../models/courses-res.model';
+import { ReqParamsService } from '../req-params/req-params.service';
 
 @Injectable({
   providedIn: 'root'
@@ -15,33 +15,38 @@ export class CoursesService {
   private courses: Course[];
   private typesOfCourse: string[] = ['Training', 'Lecture', 'Video course', 'Seminar'];
   private coursesDifficulty: string[] = ['For All', 'Novice', 'Intermediate', 'Advanced', 'Expert'];
-
+  private defaultParams: ReqParams;
   private coursesChannel = new Subject<Course[]>();
-  private numOfCourseshannel = new Subject<number>();
+  private numOfCoursesChannel = new Subject<number>();
   public coursesChannel$ = this.coursesChannel.asObservable();
-  public numOfCourseshannel$ = this.numOfCourseshannel.asObservable();
+  public numOfCoursesChannel$ = this.numOfCoursesChannel.asObservable();
   constructor(private http: HttpClient,
-              private activatedRoute: ActivatedRoute) {}
+              private reqParamsService: ReqParamsService) {
+    this.defaultParams = this.reqParamsService.getDefaultParams();
+  }
 
-  fetchCourses(page: number = 1, count: number = 5, q?: string) {
-    let params = new HttpParams()
-      .set('page', String(page))
-      .set('count', String(count));
-      if (q) {
-        console.log(Boolean(q))
-      params = new HttpParams()
+  fetchCourses(
+    page: number = this.defaultParams.page,
+    count: number = this.defaultParams.count,
+    q?: string) {
+      let params = new HttpParams()
         .set('page', String(page))
-        .set('count', String(count))
-        .set('q', q);
-    }
+        .set('count', String(count));
 
-    return this.http
-      .get<CoursesRes>(this.serverUrl, { params })
-      .subscribe((res) => {
-        this.cachedCourses = res.courses;
-        this.coursesChannel.next(res.courses);
-        this.numOfCourseshannel.next(res.coursesCount);
-      });
+      if (q) {
+        params = new HttpParams()
+          .set('page', String(page))
+          .set('count', String(count))
+          .set('q', q);
+      }
+
+      return this.http
+        .get<CoursesRes>(this.serverUrl, { params })
+        .subscribe((res) => {
+          this.cachedCourses = res.courses;
+          this.coursesChannel.next(res.courses);
+          this.numOfCoursesChannel.next(res.coursesCount);
+        });
   }
 
   getCoursebyId(id: string): Promise<Course> {
@@ -50,8 +55,14 @@ export class CoursesService {
       .toPromise();
   }
 
-  addCourse(newCourse: Course): void {
-    this.courses = [ ... this.courses, newCourse ];
+  addCourse(newCourse: Course) {
+    return this.http
+      .post<InfoRes>(`${this.serverUrl}`, newCourse )
+      .subscribe((res) => {
+        if (res.status !== 'OK') {
+          console.log(res.msg);
+        }
+      });
   }
 
   updateCourse(updatedProps: Partial<Course>): void {
@@ -64,26 +75,24 @@ export class CoursesService {
     ];
   }
 
-  deleteCourse(id: string) {
-    // const { page, count, q } = this.activatedRoute.snapshot.queryParams;
+  deleteCourse(id: string, isLastCourse: boolean) {
     return this.http
     .delete<InfoRes>(`${this.serverUrl}/${id}`)
     .subscribe((res) => {
       if (res.status === 'OK') {
-        const { page, count, q} = this.activatedRoute.snapshot.queryParams;
-         console.log(page, count, q);
-          console.log()
-          this.fetchCourses(page, count, q);
-        } else {
-          console.log(res.msg)
+        const{ count, q } = this.reqParamsService.getParams();
+        let { page } = this.reqParamsService.getParams();
+
+        if (isLastCourse) {
+          page -= 1;
         }
-      });
-    // const courseToDelete = this.courses.find(course => course._id === id);
-
-    // this.courses = this.courses.filter(course => course._id !== id);
-
-    // return courseToDelete;
+        this.fetchCourses(page, count, q);
+      } else {
+        console.log(res.msg);
+      }
+    });
   }
+
   getTypesOfCourses(): string[] {
     return this.typesOfCourse;
   }

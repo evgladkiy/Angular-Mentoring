@@ -4,13 +4,18 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
-import { AuthService, CoursesService, ModalWindowService } from './services';
 import { CapitalizedPipe, DurationPipe, OrderByPipe } from './pipes';
 import {
-  ModalWindowComponent,
-  CourseFormComponent,
-  DroplistComponent,
+  AuthService,
+  CoursesService,
+  ReqParamsService,
+  ModalWindowService,
+} from './services';
+import {
   TagItComponent,
+  DroplistComponent,
+  CourseFormComponent,
+  ModalWindowComponent,
   BreadcrumbsComponent,
 } from './components';
 
@@ -25,25 +30,26 @@ import {
     OrderByPipe,
     DurationPipe,
     CapitalizedPipe,
-    ModalWindowComponent,
-    CourseFormComponent,
     TagItComponent,
     DroplistComponent,
-    BreadcrumbsComponent
+    CourseFormComponent,
+    ModalWindowComponent,
+    BreadcrumbsComponent,
   ],
   providers: [
     AuthService,
     CoursesService,
+    ReqParamsService,
     ModalWindowService,
   ],
   exports: [
     OrderByPipe,
     DurationPipe,
     CapitalizedPipe,
-    ModalWindowComponent,
-    CourseFormComponent,
     TagItComponent,
     DroplistComponent,
+    CourseFormComponent,
+    ModalWindowComponent,
     BreadcrumbsComponent,
   ],
 })

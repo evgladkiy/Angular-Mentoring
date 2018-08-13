@@ -1,19 +1,24 @@
-## Introduction to backend development with Node.js and Express.js part 2
+## Server for Anguar-Mentoring tasks
 
-### Rate Criterias:
+##### Setup
 
-##### *To get max point 5 implement advanced part.
+1) npm install
+2) open http://localhost:3000/
 
-Part 2:
-1) Install and setup mongoose.
-2) Create Mongoose scheme for blog article model.
-3) Replace "console logs"/stubs from part 1 to real communication with database:
-    - Find all blogs;
-    - Find blog by ID;
-    - Insert blog;
-    - Update blog record;
-    - Delete blog from DB;
-4) Implement error handling middleware (examples here) which will send an error without stack trace to client.
- 
-*Advanced:
-Describe mongoose scheme for User model. Implement user registration, add authorization and authentication using http://www.passportjs.org/ (any strategy) for accessing blog article.
+##### Server API
+
+1) http://localhost:3000/user -> all users;
+2) http://localhost:3000/users/auth?user=string&password=string -> fake token;
+3) http://localhost:3000/users/userInfo?token=5b5e11385809b1e033edea91 -> 
+    {
+        "id": string,
+        "name": string,
+        "password": string
+    }
+4) http://localhost:3000/courses -> all courses
+5) http://localhost:3000/courses?start=number&count=number&q=string -> courses for pagination
+6) POST http://localhost:3000/courses -> add course
+7) PUT http://localhost:3000/courses -> update course
+8) http://localhost:3000/courses -> all courses
+9) GET http://localhost:3000/courses/:id -> get course by id
+10) DELETE http://localhost:3000/courses/:id -> delete course by id

@@ -1,8 +1,8 @@
 import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
 
 import { CourseListPaginationService } from './course-list-pagination.service';
+import { ReqParamsService } from '../../shared/services';
 
 @Component({
   selector: 'app-course-list-pagination',
@@ -11,16 +11,20 @@ import { CourseListPaginationService } from './course-list-pagination.service';
 })
 export class CourseListPaginationComponent implements OnInit, OnChanges, OnDestroy {
   @Input() numberOfCourses: number;
-  @Input() coursesPerPage: number;
 
   private buttonsSub: Subscription;
   public buttons: number[];
+  public coursesPerPage: number;
   public numberOfPages: number;
-  public activePage = 1;
-  public numberOfShownCourses: number;
+  public activePage: number;
+  public shownCourses: string;
 
-  constructor(private route: ActivatedRoute,
-              private paginationService: CourseListPaginationService) {}
+  constructor(private reqParamsService: ReqParamsService,
+              private paginationService: CourseListPaginationService) {
+    const { page, count } = this.reqParamsService.getParams();
+    this.coursesPerPage = count;
+    this.activePage = page;
+  }
 
   ngOnInit(): void {
     this.buttonsSub = this.paginationService.buttonsChannel$.subscribe(
@@ -32,8 +36,8 @@ export class CourseListPaginationComponent implements OnInit, OnChanges, OnDestr
 
   ngOnChanges(changes: SimpleChanges): void {
     this.numberOfPages = Math.ceil(this.numberOfCourses / this.coursesPerPage);
-    this.activePage = Number(this.route.snapshot.queryParams['page']) || this.activePage;
-    this.updateNumOfShownCourses();
+    this.activePage = this.reqParamsService.getParams()['page'] || this.activePage;
+    this.updateShownCourses();
     this.updateButtons();
   }
 
@@ -50,14 +54,21 @@ export class CourseListPaginationComponent implements OnInit, OnChanges, OnDestr
     this.paginationService.fetchCourses(
       this.activePage,
       this.coursesPerPage,
-      this.route.snapshot.queryParams['q']);
-    this.updateNumOfShownCourses();
+      this.reqParamsService.getParams()['q']);
+    this.updateShownCourses();
     this.updateButtons();
   }
 
-  updateNumOfShownCourses(): void {
-    this.numberOfShownCourses = this.numberOfCourses >= this.coursesPerPage * this.activePage
-      ? this.coursesPerPage
-      : this.coursesPerPage - (this.coursesPerPage * this.activePage - this.numberOfCourses);
+  updateShownCourses(): void {
+    const lastShownCourse = this.coursesPerPage * this.activePage;
+    const firstShownCourse = lastShownCourse - this.coursesPerPage + 1;
+
+    if (firstShownCourse ===  this.numberOfCourses) {
+      this.shownCourses = String(this.numberOfCourses);
+    } else {
+      this.shownCourses = `${firstShownCourse} -${this.numberOfCourses >= lastShownCourse
+        ? lastShownCourse
+        : this.numberOfCourses}`;
+    }
   }
 }

@@ -38,7 +38,6 @@ export class CourseListPaginationService {
 
   fetchCourses(page: number, itemsPerPage: number, q: string) {
     const count = itemsPerPage;
-
     this.router.navigate(['/courses'], { queryParams: { page, count, q } });
     this.coursesService.fetchCourses(page, itemsPerPage, q);
   }

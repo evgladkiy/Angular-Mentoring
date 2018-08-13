@@ -1,9 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { ActivatedRoute } from '@angular/router';
+import { Router } from '@angular/router';
 
 import { Course } from '../shared/models';
-import { CoursesService, ModalWindowService  } from '../shared/services';
+import { CoursesService, ModalWindowService, ReqParamsService  } from '../shared/services';
 
 @Component({
   selector: 'app-course-list-page',
@@ -11,7 +11,6 @@ import { CoursesService, ModalWindowService  } from '../shared/services';
   styleUrls: ['./course-list-page.component.less'],
 })
 export class CourseListPageComponent implements OnInit, OnDestroy {
-  private defaultCoursesPerPage = 5;
   private modalWindowSub: Subscription;
   private coursesSub: Subscription;
   private numOfCoursesSub: Subscription;
@@ -19,26 +18,24 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
   public numberOfCourses: number;
   public courseToDelete: Course;
   public shouldShowModal: boolean;
-  public coursesPerPage: number;
 
   constructor(
     private coursesServise: CoursesService,
-    private route: ActivatedRoute,
+    private router: Router,
     private modalWindowService: ModalWindowService,
+    private reqParamsService: ReqParamsService,
   ) { }
 
   ngOnInit(): void {
-    const { page, count = this.defaultCoursesPerPage, q} = this.route.snapshot.queryParams;
+    const { page, count, q } = this.reqParamsService.getParams();
 
-    this.coursesPerPage = Number(count);
     this.coursesServise.fetchCourses(page, count, q);
     this.coursesSub = this.coursesServise.coursesChannel$.subscribe(
-      courses =>  this.courses = courses
+      courses => this.courses = courses
     );
-    this.numOfCoursesSub = this.coursesServise.numOfCourseshannel$.subscribe(
+    this.numOfCoursesSub = this.coursesServise.numOfCoursesChannel$.subscribe(
       numOfCourses => this.numberOfCourses = Number(numOfCourses)
     );
-
     this.modalWindowSub = this.modalWindowService.channel$.subscribe((id) => {
       this.shouldShowModal = Boolean(id);
       this.courseToDelete = this.shouldShowModal
@@ -55,9 +52,16 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
 
   onSubmitModal(): void {
     const courseToDeleteId = this.courseToDelete._id;
+    let isLastCourse = false;
 
-    // this.courses = this.courses.filter(course => course._id !== courseToDeleteId);
-    this.coursesServise.deleteCourse(courseToDeleteId);
+    if (this.courses.length === 1 && this.courses[0]._id === courseToDeleteId) {
+      const { page, count, q } = this.reqParamsService.getParams();
+
+      this.router.navigate(['/courses'], { queryParams: { page: page - 1, count, q } });
+      isLastCourse = true;
+    }
+
+    this.coursesServise.deleteCourse(courseToDeleteId, isLastCourse);
     this.modalWindowService.closeModal();
   }
 
