@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
@@ -13,6 +13,7 @@ import { EditCoursePageModule } from './edit-course-page/edit-course-page.module
 import { AddCoursePageModule } from './add-course-page/add-course-page.module';
 
 import { AppComponent } from './app.component';
+import { AccessInterceptor } from './core/interceptors/access-interceptor';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +30,7 @@ import { AppComponent } from './app.component';
     CoursesPageModule,
     AppRoutingModule,
   ],
+  providers: [ { provide: HTTP_INTERCEPTORS, useClass: AccessInterceptor, multi: true }],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

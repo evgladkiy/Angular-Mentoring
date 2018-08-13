@@ -56,7 +56,7 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
   onSubmitModal(): void {
     const courseToDeleteId = this.courseToDelete._id;
 
-    this.courses = this.courses.filter(course => course._id !== courseToDeleteId);
+    // this.courses = this.courses.filter(course => course._id !== courseToDeleteId);
     this.coursesServise.deleteCourse(courseToDeleteId);
     this.modalWindowService.closeModal();
   }

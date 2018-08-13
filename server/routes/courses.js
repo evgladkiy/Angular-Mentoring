@@ -52,4 +52,25 @@ router.get('/:id', (req, res, next) => {
     }
 });
 
+router.delete('/:id', (req, res, next) => {
+    const id = req.params.id;
+    const filtredCourses = courses.filter(course => course._id !== id);
+    let resJson;
+
+    if (filtredCourses.length === courses.length) {
+        resJson = {
+            status: 'error',
+            msg: `Cannot find course id - ${id}`,
+        };
+    } else {
+        courses = filtredCourses;
+        resJson = {
+            status: 'OK',
+            msg: `Course id - ${id} was deleted`,
+        }
+    }
+
+    res.json(resJson);
+});
+
 module.exports = router;

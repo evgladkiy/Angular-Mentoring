@@ -16,10 +16,13 @@ export class CourseListToolboxComponent {
 
   onFilterBtnClick(): void {
     const { page, count} = this.activatedRoute.snapshot.queryParams;
-    const q = this.searchQuery.toLowerCase();
-
+    const q = this.searchQuery.trim().toLowerCase();
+    const params = { page: 1, ; }
+    if (q) {
+      params.q = q;
+    }
     this.coursesService.fetchCourses(1, count, q);
-    this.router.navigate(['/courses'], { queryParams: { page: 1, count, q } });
+    this.router.navigate(['/courses'], { queryParams: params });
   }
 }
 
