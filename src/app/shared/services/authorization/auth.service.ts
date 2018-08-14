@@ -37,7 +37,7 @@ export class AuthService {
     }
   }
 
-  login(token?: string) {
+  getUserInfo(token?: string): Promise<User> {
     const userToken = token || this.getTokenFromStore();
 
     return this.http
@@ -45,7 +45,10 @@ export class AuthService {
         params: { token: userToken }
       })
       .toPromise()
-      .then(user => this.activeUserChannel.next(user));
+      .then((userInfo) => {
+        this.activeUserChannel.next(userInfo);
+        return userInfo;
+      });
   }
 
   logout(): void {
@@ -53,7 +56,7 @@ export class AuthService {
     this.activeUserChannel.next(null);
   }
 
-  authenticate(user: string, password: string) {
+  authenticate(user: string, password: string): Promise<User | Observable<never>> {
     return this.http
       .get<TokenRes>(`${this.authUrl}/auth`, {
         params: {
@@ -64,12 +67,12 @@ export class AuthService {
       .toPromise()
       .then(res => {
         this.setTokenToStore(res.token);
-        return this.login(res.token);
+        return this.getUserInfo(res.token);
       })
       .catch(err => {
         this.handleError(err);
         return throwError('Something bad happened; please try again later.');
-      } );
+      });
   }
 
   isAuthenticated(): boolean {

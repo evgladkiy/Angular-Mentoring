@@ -24,7 +24,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
     const isUserisAuthenticated = this.authService.isAuthenticated();
 
     if (isUserisAuthenticated && !this.activeUser) {
-      this.authService.login();
+      this.authService.getUserInfo();
     }
   }
 

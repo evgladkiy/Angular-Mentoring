@@ -13,7 +13,6 @@ export class AccessInterceptor implements HttpInterceptor {
       const authReq = req.clone({
         headers: req.headers
           .set('Authorization', token)
-          .set('Content-Type', 'application/json')
       });
 
       return next.handle(authReq);

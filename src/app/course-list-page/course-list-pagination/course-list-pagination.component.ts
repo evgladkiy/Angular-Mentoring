@@ -50,13 +50,15 @@ export class CourseListPaginationComponent implements OnInit, OnChanges, OnDestr
   }
 
   onClickPaginationBtn(btn: number): void {
-    this.activePage = btn;
-    this.paginationService.fetchCourses(
-      this.activePage,
-      this.coursesPerPage,
-      this.reqParamsService.getParams()['q']);
-    this.updateShownCourses();
-    this.updateButtons();
+    if (this.activePage !== btn) {
+      this.activePage = btn;
+      this.paginationService.fetchCourses(
+        this.activePage,
+        this.coursesPerPage,
+        this.reqParamsService.getParams()['q']);
+      this.updateShownCourses();
+      this.updateButtons();
+    }
   }
 
   updateShownCourses(): void {
