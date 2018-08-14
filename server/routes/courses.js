@@ -53,7 +53,10 @@ router.get('/:id', (req, res, next) => {
     if (course) {
         res.send(course);
     } else {
-        throw Error(`Cannot find article with ID: ${id}`);
+        res.json({
+            status: 'error',
+            msg: `Cannot find course id - ${id}`,
+        });
     }
 });
 
@@ -62,17 +65,17 @@ router.delete('/:id', (req, res, next) => {
     const filtredCourses = courses.filter(course => course._id !== id);
     let resJson;
 
-    if (filtredCourses.length === courses.length) {
-        resJson = {
-            status: 'error',
-            msg: `Cannot find course id - ${id}`,
-        };
-    } else {
+    if (filtredCourses.length !== courses.length) {
         courses = filtredCourses;
         resJson = {
             status: 'OK',
             msg: `Course id - ${id} was deleted`,
         }
+    } else {
+        resJson = {
+            status: 'error',
+            msg: `Cannot find course id - ${id}`,
+        };
     }
 
     res.json(resJson);
@@ -87,6 +90,30 @@ router.post('/', (req, res, next) => {
         status: 'OK',
         msg: `Course id - ${course._id} was added to db`,
     }));
+});
+
+router.post('/:id', (req, res, next) => {
+    const reqCourse = req.body;
+    const reqCourseId = reqCourse._id;
+    const courseIndex = courses.findIndex(course => course._id === reqCourseId);
+    let resJson;
+
+    if (courseIndex >= 0) {
+        courses.splice(courseIndex, 1, reqCourse);
+        courses = processСourses(courses);
+
+        resJson = {
+            status: 'OK',
+            msg: `Course id - ${reqCourseId} was updated`,
+        }
+    } else {
+        resJson = {
+            status: 'OK',
+            msg: `Cannot find course id - ${reqCourseId}`,
+        }
+    }
+
+    res.json(resJson);
 });
 
 module.exports = router;

@@ -4,11 +4,7 @@
     </div>
     <div class="course-info__container">
         <app-course-list-item-header
-            [type]="course.type"
-            [language]="course.language"
-            [difficulty]="course.difficulty"
-            [isFavorite]="course.isFavorite"
-            [id]="course._id">
+            [course]="course">
         </app-course-list-item-header>
         <app-course-list-item-body
             [title]="course.title"

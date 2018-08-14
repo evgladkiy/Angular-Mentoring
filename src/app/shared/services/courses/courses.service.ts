@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs';
+import { Subject, Observable } from 'rxjs';
 import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
 
 import { Course, InfoRes, ReqParams } from '../../models';
@@ -11,8 +11,6 @@ import { ReqParamsService } from '../req-params/req-params.service';
 })
 export class CoursesService {
   private serverUrl = 'http://localhost:3000/courses';
-  private cachedCourses: Course[];
-  private courses: Course[];
   private typesOfCourse: string[] = ['Training', 'Lecture', 'Video course', 'Seminar'];
   private coursesDifficulty: string[] = ['For All', 'Novice', 'Intermediate', 'Advanced', 'Expert'];
   private defaultParams: ReqParams;
@@ -28,7 +26,7 @@ export class CoursesService {
   fetchCourses(
     page: number = this.defaultParams.page,
     count: number = this.defaultParams.count,
-    q?: string) {
+    q?: string): void {
       let params = new HttpParams()
         .set('page', String(page))
         .set('count', String(count));
@@ -40,23 +38,20 @@ export class CoursesService {
           .set('q', q);
       }
 
-      return this.http
+      this.http
         .get<CoursesRes>(this.serverUrl, { params })
         .subscribe((res) => {
-          this.cachedCourses = res.courses;
           this.coursesChannel.next(res.courses);
           this.numOfCoursesChannel.next(res.coursesCount);
         });
   }
 
-  getCoursebyId(id: string): Promise<Course> {
-    return this.http
-      .get<Course>(`${this.serverUrl}/${id}`)
-      .toPromise();
+  getCoursebyId(id: string): Observable<Course> {
+    return this.http.get<Course>(`${this.serverUrl}/${id}`);
   }
 
-  addCourse(newCourse: Course) {
-    return this.http
+  addCourse(newCourse: Course): void {
+    this.http
       .post<InfoRes>(`${this.serverUrl}`, newCourse )
       .subscribe((res) => {
         if (res.status !== 'OK') {
@@ -65,31 +60,32 @@ export class CoursesService {
       });
   }
 
-  updateCourse(updatedProps: Partial<Course>): void {
-    const updatedCourse = this.courses.find(course => course._id === updatedProps._id);
-
-    this.courses = this.courses.filter(course => course._id !== updatedCourse._id);
-    this.courses = [
-      ...this.courses,
-      { ...updatedCourse, ...updatedProps }
-    ];
+  updateCourse(course: Course): void {
+    this.http
+      .post<InfoRes>(`${this.serverUrl}/${course._id}`, course )
+      .subscribe((res) => {
+        if (res.status !== 'OK') {
+          console.log(res.msg);
+        }
+      });
   }
 
-  deleteCourse(id: string, isLastCourse: boolean) {
-    return this.http
-    .delete<InfoRes>(`${this.serverUrl}/${id}`)
-    .subscribe((res) => {
-      if (res.status === 'OK') {
-        const{ count, q } = this.reqParamsService.getParams();
-        let { page } = this.reqParamsService.getParams();
+  deleteCourse(id: string, isLastCourse: boolean): void {
+    this.http
+      .delete<InfoRes>(`${this.serverUrl}/${id}`)
+      .subscribe((res) => {
+        if (res.status === 'OK') {
+          const{ count, q } = this.reqParamsService.getParams();
+          let { page } = this.reqParamsService.getParams();
 
-        if (isLastCourse) {
-          page -= 1;
+          if (isLastCourse) {
+            page -= 1;
+          }
+
+          this.fetchCourses(page, count, q);
+        } else {
+          console.log(res.msg);
         }
-        this.fetchCourses(page, count, q);
-      } else {
-        console.log(res.msg);
-      }
     });
   }
 

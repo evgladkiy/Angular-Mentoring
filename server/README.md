@@ -18,7 +18,7 @@
 4) http://localhost:3000/courses -> all courses
 5) http://localhost:3000/courses?start=number&count=number&q=string -> courses for pagination
 6) POST http://localhost:3000/courses -> add course
-7) PUT http://localhost:3000/courses -> update course
-8) http://localhost:3000/courses -> all courses
-9) GET http://localhost:3000/courses/:id -> get course by id
+7) http://localhost:3000/courses -> all courses
+8) GET http://localhost:3000/courses/:id -> get course by id
+9) post http://localhost:3000/courses/:id -> update course
 10) DELETE http://localhost:3000/courses/:id -> delete course by id

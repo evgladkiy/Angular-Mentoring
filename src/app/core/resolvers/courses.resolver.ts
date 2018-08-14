@@ -3,6 +3,7 @@ import { Router, Resolve, RouterStateSnapshot, ActivatedRouteSnapshot } from '@a
 
 import { Course } from '../../shared/models';
 import { CoursesService } from '../../shared/services';
+import { Observable } from '../../../../node_modules/rxjs';
 
 @Injectable()
 export class CourseResolver implements Resolve<Course> {
@@ -10,7 +11,7 @@ export class CourseResolver implements Resolve<Course> {
     private coursesService: CoursesService,
     private router: Router) {}
 
-  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Promise<Course> {
+  resolve(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<Course> {
     const id = route.paramMap.get('id');
 
     return this.coursesService.getCoursebyId(id);

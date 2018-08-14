@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, EventEmitter, Output, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 
 import { Course, Trainer } from '../../models';
 import { CoursesService } from '../../services';
@@ -43,7 +43,7 @@ export class CourseFormComponent implements OnInit {
   }
 
   private getDateForInput(): string {
-    const date: Date = this.course ? this.course.date : new Date();
+    const date: Date = this.course ? new Date(this.course.date) : new Date();
     const courseYear: number = date.getFullYear();
     const month: number = date.getMonth() + 1;
     const courseDate: string = date.getDate() < 10 ? '0' + date.getDate() : String(date.getDate());

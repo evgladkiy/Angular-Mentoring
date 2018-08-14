@@ -1,6 +1,5 @@
-import { Component, OnInit, OnDestroy, OnChanges } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute  } from '@angular/router';
-import { Subscription } from 'rxjs';
 
 import { CoursesService } from '../shared/services';
 import { Course } from '../shared/models';
@@ -10,9 +9,8 @@ import { Course } from '../shared/models';
   templateUrl: './edit-course-page.component.html',
   styleUrls: [ './edit-course-page.component.less' ],
 })
-export class EditCoursePageComponent implements OnInit, OnDestroy {
+export class EditCoursePageComponent implements OnInit {
   public course: Course;
-  private sub: Subscription;
 
   constructor (
     private router: Router,
@@ -22,16 +20,8 @@ export class EditCoursePageComponent implements OnInit, OnDestroy {
     }
 
   ngOnInit() {
-    this.course = this.activeRoute.snapshot.data.course;
-    console.log(this.activeRoute.snapshot.data.course);
-    // this.sub = this.activeRoute.data.subscribe(data) => {
-    //   this.course = data.course;
-    // });
+    this.course = { ...this.activeRoute.snapshot.data.course };
   }
-
-  ngOnDestroy(): void {
-    this.sub.unsubscribe();
-    }
 
   onSubmit(course: Course): void {
     this.coursesService.updateCourse(course);

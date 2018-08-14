@@ -1,5 +1,7 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+
 import { CoursesService } from '../../shared/services';
+import { Course } from '../../shared/models';
 
 @Component({
   selector: 'app-course-list-item-header',
@@ -8,19 +10,15 @@ import { CoursesService } from '../../shared/services';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CourseListItemHeaderComponent {
-  @Input() language: string;
-  @Input() difficulty: string;
-  @Input() type: string;
-  @Input() isFavorite: boolean;
-  @Input() id: string;
+  @Input() course: Course;
 
   constructor(private coursesService: CoursesService) { }
 
   onClickFavoriteBtn(): void {
-    this.isFavorite = !this.isFavorite;
-    this.coursesService.updateCourse({
-      _id: this.id,
-      isFavorite: this.isFavorite,
-    });
+    this.course = {
+      ...this.course,
+      isFavorite: !this.course.isFavorite
+    };
+    this.coursesService.updateCourse(this.course);
   }
 }
