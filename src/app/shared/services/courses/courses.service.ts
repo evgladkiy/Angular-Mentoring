@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Subject, Observable } from 'rxjs';
-import { HttpClient, HttpParams, HttpHeaders } from '@angular/common/http';
+import { Observable, BehaviorSubject } from 'rxjs';
+import { HttpClient, HttpParams } from '@angular/common/http';
 
 import { Course, InfoRes, ReqParams } from '../../models';
 import { CoursesRes } from '../../models/courses-res.model';
@@ -14,8 +14,8 @@ export class CoursesService {
   private typesOfCourse: string[] = ['Training', 'Lecture', 'Video course', 'Seminar'];
   private coursesDifficulty: string[] = ['For All', 'Novice', 'Intermediate', 'Advanced', 'Expert'];
   private defaultParams: ReqParams;
-  private coursesChannel = new Subject<Course[]>();
-  private numOfCoursesChannel = new Subject<number>();
+  private coursesChannel = new BehaviorSubject<Course[]>([]);
+  private numOfCoursesChannel = new BehaviorSubject<number>(null);
   public coursesChannel$ = this.coursesChannel.asObservable();
   public numOfCoursesChannel$ = this.numOfCoursesChannel.asObservable();
   constructor(private http: HttpClient,

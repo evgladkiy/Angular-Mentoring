@@ -13,7 +13,6 @@ import { CoursesService, ModalWindowService, ReqParamsService  } from '../shared
 export class CourseListPageComponent implements OnInit, OnDestroy {
   private modalWindowSub: Subscription;
   private coursesSub: Subscription;
-  private numOfCoursesSub: Subscription;
   public courses: Course[];
   public numberOfCourses: number;
   public courseToDelete: Course;
@@ -33,9 +32,7 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
     this.coursesSub = this.coursesServise.coursesChannel$.subscribe(
       courses => this.courses = courses
     );
-    this.numOfCoursesSub = this.coursesServise.numOfCoursesChannel$.subscribe(
-      numOfCourses => this.numberOfCourses = Number(numOfCourses)
-    );
+
     this.modalWindowSub = this.modalWindowService.channel$.subscribe((id) => {
       this.shouldShowModal = Boolean(id);
       this.courseToDelete = this.shouldShowModal
@@ -46,7 +43,6 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.modalWindowSub.unsubscribe();
-    this.numOfCoursesSub.unsubscribe();
     this.coursesSub.unsubscribe();
   }
 

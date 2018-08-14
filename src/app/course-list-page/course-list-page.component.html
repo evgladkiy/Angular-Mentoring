@@ -7,8 +7,7 @@
   </app-course-list-item>
 </div>
 <app-course-list-pagination
-  *ngIf="courses && courses.length"
-  [numberOfCourses]="numberOfCourses">
+    *ngIf="courses && courses.length">
 </app-course-list-pagination>
 <app-modal-window
     *ngIf="shouldShowModal" modalTitle="WAT???!!!" submitText="Delete"
