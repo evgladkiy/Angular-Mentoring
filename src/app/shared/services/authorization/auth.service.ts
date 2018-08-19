@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { catchError, switchMap } from 'rxjs/operators';
+import { HttpClient } from '@angular/common/http';
+import { map } from 'rxjs/operators';
+import { Observable, Subject } from 'rxjs';
 
 import { User } from '../../models/user.model';
-import { throwError, Observable, Subject } from 'rxjs';
 import { TokenRes } from '../../models';
 
 @Injectable({
@@ -29,23 +29,14 @@ export class AuthService {
     localStorage.removeItem(this.storageKey);
   }
 
-  private handleError(error: HttpErrorResponse) {
-    if (error.error instanceof ErrorEvent) {
-      console.error('An error occurred:', error.error.message);
-    } else {
-      console.error(`Backend returned code ${error.status}, body was: ${error.error}`);
-    }
-  }
-
-  getUserInfo(token?: string): Promise<User> {
+  fetchUserInfo(token?: string): void {
     const userToken = token || this.getTokenFromStore();
 
-    return this.http
+    this.http
       .get<User>(`${this.authUrl}/userInfo`, {
         params: { token: userToken }
       })
-      .toPromise()
-      .then((userInfo) => {
+      .subscribe((userInfo) => {
         this.activeUserChannel.next(userInfo);
         return userInfo;
       });
@@ -56,7 +47,7 @@ export class AuthService {
     this.activeUserChannel.next(null);
   }
 
-  authenticate(user: string, password: string): Promise<User | Observable<never>> {
+  authenticate(user: string, password: string): Observable<string> {
     return this.http
       .get<TokenRes>(`${this.authUrl}/auth`, {
         params: {
@@ -64,15 +55,13 @@ export class AuthService {
           password: password,
         }
       })
-      .toPromise()
-      .then(res => {
-        this.setTokenToStore(res.token);
-        return this.getUserInfo(res.token);
-      })
-      .catch(err => {
-        this.handleError(err);
-        return throwError('Something bad happened; please try again later.');
-      });
+      .pipe(
+        map(({ token }) => {
+          this.setTokenToStore(token);
+          this.fetchUserInfo(token);
+          return token;
+        })
+      );
   }
 
   isAuthenticated(): boolean {

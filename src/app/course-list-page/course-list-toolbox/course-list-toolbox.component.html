@@ -1,7 +1,9 @@
 <div class="toolbox__container">
   <div class="toolbox__search-container">
-      <input class="form-input form-input_search" type="search" placeholder="Text to search courses" [(ngModel)]="searchQuery" />
-      <button class="btn btn-green btn-solid btn-icon-left" (click)="onFilterBtnClick()"><i class="fas fa-search"></i>Search</button>
+      <input
+        class="form-input form-input_search" type="search"
+        placeholder="Text to search courses"
+        [(ngModel)]="searchQuery" (ngModelChange)="onModelChanged($event)" />
   </div>
   <a routerLink="new" class="btn btn-blue btn-solid">Add course</a>
 </div>

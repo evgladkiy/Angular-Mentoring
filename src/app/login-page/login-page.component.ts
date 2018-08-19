@@ -10,7 +10,6 @@ import { AuthService } from '../shared/services/authorization/auth.service';
   styleUrls: [ './login-page.component.less' ],
 })
 export class LoginPageComponent implements OnInit {
-  private authUrl = 'http://localhost:3000/users/auth';
   public user: Partial<User>;
 
   constructor(private router: Router,
@@ -32,12 +31,12 @@ export class LoginPageComponent implements OnInit {
     const { user, authService, router } = this;
 
     if (user.login.trim() !== '' && user.password.trim() !== '') {
-        this.authService.authenticate(user.login, user.password)
-          .then(() => {
+        authService.authenticate(user.login, user.password)
+          .subscribe(() => {
             this.resetUser();
             router.navigate(['/courses']);
-          })
-          .catch(err => console.log(err));
+          }
+        );
     }
   }
 }

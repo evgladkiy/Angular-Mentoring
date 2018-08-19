@@ -1,6 +1,6 @@
 <app-course-list-toolbox></app-course-list-toolbox>
 <div *ngIf="courses && courses.length >= 0" class="course-container" >
-  <p *ngIf="courses.length === 0">Course List is empty...</p>
+  <p class="search-error" *ngIf="courses.length === 0">Course List is empty...</p>
   <app-course-list-item
       *ngFor="let course of courses | orderBy : 'date'"
       [course]="course" [appHighlightByDate]="course.date">
