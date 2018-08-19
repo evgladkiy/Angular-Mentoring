@@ -9,7 +9,7 @@ import { AddCoursePageComponent } from './add-course-page/add-course-page.compon
 import { CoursesPageComponent } from './courses-page/courses-page.component';
 
 import { AuthGuard } from './core/guards/auth.guard';
-import { CourseResolver } from './core/resolvers/courses.resolver';
+import { CourseResolver } from './core/resolvers/course.resolver';
 
 const routes: Routes = [
   { path: '', redirectTo: '/courses', pathMatch: 'full' },

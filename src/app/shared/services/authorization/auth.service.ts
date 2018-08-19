@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { map } from 'rxjs/operators';
+import { map, delay } from 'rxjs/operators';
 import { Observable, Subject } from 'rxjs';
 
 import { User } from '../../models/user.model';
@@ -36,6 +36,7 @@ export class AuthService {
       .get<User>(`${this.authUrl}/userInfo`, {
         params: { token: userToken }
       })
+      .pipe(delay(500))
       .subscribe((userInfo) => {
         this.activeUserChannel.next(userInfo);
         return userInfo;

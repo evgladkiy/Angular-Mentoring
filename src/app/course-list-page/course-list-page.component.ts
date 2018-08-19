@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 
 import { Course } from '../shared/models';
 import { CoursesService, ModalWindowService, ReqParamsService  } from '../shared/services';
+import { delay } from 'rxjs/operators';
+import { SpinnerService } from '../core/components/spinner/spinner.service';
 
 @Component({
   selector: 'app-course-list-page',
@@ -15,14 +17,16 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
   private coursesSub: Subscription;
   public courses: Course[];
   public numberOfCourses: number;
+  public coursesCount: number;
   public courseToDelete: Course;
   public shouldShowModal: boolean;
 
   constructor(
-    private coursesServise: CoursesService,
     private router: Router,
-    private modalWindowService: ModalWindowService,
+    private coursesServise: CoursesService,
+    private spinnerService: SpinnerService,
     private reqParamsService: ReqParamsService,
+    private modalWindowService: ModalWindowService,
   ) { }
 
   ngOnInit(): void {
@@ -32,7 +36,6 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
     this.coursesSub = this.coursesServise.coursesChannel$.subscribe(
       courses => this.courses = courses
     );
-
     this.modalWindowSub = this.modalWindowService.channel$.subscribe((id) => {
       this.shouldShowModal = Boolean(id);
       this.courseToDelete = this.shouldShowModal
@@ -48,17 +51,26 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
 
   onSubmitModal(): void {
     const courseToDeleteId = this.courseToDelete._id;
-    let isLastCourse = false;
+    this.spinnerService.showSpinner();
 
-    if (this.courses.length === 1 && this.courses[0]._id === courseToDeleteId) {
-      const { page, count, q } = this.reqParamsService.getParams();
+    this.coursesServise.deleteCourse(courseToDeleteId)
+      .pipe(delay(300))
+      .subscribe((res) => {
+        if (res.status === 'OK') {
+          const { count, q } = this.reqParamsService.getParams();
+          let { page } = this.reqParamsService.getParams();
 
-      this.router.navigate(['/courses'], { queryParams: { page: page - 1, count, q } });
-      isLastCourse = true;
-    }
+          if (this.courses.length === 1 && this.courses[0]._id === courseToDeleteId) {
+            page = page - 1;
+            this.router.navigate(['/courses'], { queryParams: { page, count, q } });
+          }
 
-    this.coursesServise.deleteCourse(courseToDeleteId, isLastCourse);
-    this.modalWindowService.closeModal();
+          this.coursesServise.fetchCourses(page, count, q);
+        } else {
+          console.log(res.msg);
+        }
+        this.modalWindowService.closeModal();
+    });
   }
 
   onCloseModal(): void {

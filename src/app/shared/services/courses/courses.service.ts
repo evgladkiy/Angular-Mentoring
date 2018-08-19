@@ -1,10 +1,12 @@
 import { Injectable } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { HttpClient, HttpParams } from '@angular/common/http';
+import { delay } from 'rxjs/operators';
 
 import { Course, InfoRes, ReqParams } from '../../models';
 import { CoursesRes } from '../../models/courses-res.model';
 import { ReqParamsService } from '../req-params/req-params.service';
+import { SpinnerService } from '../../../core/components/spinner/spinner.service';
 
 @Injectable({
   providedIn: 'root'
@@ -19,6 +21,7 @@ export class CoursesService {
   public coursesChannel$ = this.coursesChannel.asObservable();
   public numOfCoursesChannel$ = this.numOfCoursesChannel.asObservable();
   constructor(private http: HttpClient,
+              private spinnerService: SpinnerService,
               private reqParamsService: ReqParamsService) {
     this.defaultParams = this.reqParamsService.getDefaultParams();
   }
@@ -26,7 +29,7 @@ export class CoursesService {
   fetchCourses(
     page: number = this.defaultParams.page,
     count: number = this.defaultParams.count,
-    q?: string): void {
+    q?: string) {
       let params = new HttpParams()
         .set('page', String(page))
         .set('count', String(count));
@@ -37,10 +40,13 @@ export class CoursesService {
           .set('count', String(count))
           .set('q', q);
       }
+      this.spinnerService.showSpinner();
 
-      this.http
+      return this.http
         .get<CoursesRes>(this.serverUrl, { params })
+        .pipe(delay(500))
         .subscribe((res) => {
+          this.spinnerService.hideSpinner();
           this.coursesChannel.next(res.courses);
           this.numOfCoursesChannel.next(res.coursesCount);
         });
@@ -50,43 +56,19 @@ export class CoursesService {
     return this.http.get<Course>(`${this.serverUrl}/${id}`);
   }
 
-  addCourse(newCourse: Course): void {
-    this.http
-      .post<InfoRes>(`${this.serverUrl}`, newCourse )
-      .subscribe((res) => {
-        if (res.status !== 'OK') {
-          console.log(res.msg);
-        }
-      });
+  addCourse(newCourse: Course): Observable<InfoRes> {
+    return this.http
+      .post<InfoRes>(`${this.serverUrl}`, newCourse);
   }
 
-  updateCourse(course: Course): void {
-    this.http
-      .post<InfoRes>(`${this.serverUrl}/${course._id}`, course )
-      .subscribe((res) => {
-        if (res.status !== 'OK') {
-          console.log(res.msg);
-        }
-      });
+  updateCourse(course: Course): Observable<InfoRes> {
+    return this.http
+      .post<InfoRes>(`${this.serverUrl}/${course._id}`, course);
   }
 
-  deleteCourse(id: string, isLastCourse: boolean): void {
-    this.http
-      .delete<InfoRes>(`${this.serverUrl}/${id}`)
-      .subscribe((res) => {
-        if (res.status === 'OK') {
-          const{ count, q } = this.reqParamsService.getParams();
-          let { page } = this.reqParamsService.getParams();
-
-          if (isLastCourse) {
-            page -= 1;
-          }
-
-          this.fetchCourses(page, count, q);
-        } else {
-          console.log(res.msg);
-        }
-    });
+  deleteCourse(id: string): Observable<InfoRes> {
+    return this.http
+      .delete<InfoRes>(`${this.serverUrl}/${id}`);
   }
 
   getTypesOfCourses(): string[] {

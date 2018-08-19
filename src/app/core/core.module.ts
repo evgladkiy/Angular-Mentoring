@@ -4,15 +4,16 @@ import { RouterModule } from '@angular/router';
 
 import { SharedModule } from '../shared/shared.module';
 import { AuthGuard } from './guards/auth.guard';
-import { CourseResolver } from './resolvers/courses.resolver';
+import { CourseResolver } from './resolvers/course.resolver';
 
 import {
   HeaderComponent,
   FooterComponent,
   HeaderLogoComponent,
   UserPanelComponent,
+  SpinnerComponent,
  } from './components';
-
+import { SpinnerService } from './components/spinner/spinner.service';
 
 @NgModule({
   imports: [
@@ -25,14 +26,17 @@ import {
     FooterComponent,
     HeaderLogoComponent,
     UserPanelComponent,
+    SpinnerComponent,
   ],
   providers: [
     AuthGuard,
     CourseResolver,
+    SpinnerService,
   ],
   exports: [
     HeaderComponent,
     FooterComponent,
+    SpinnerComponent,
   ],
 })
 export class CoreModule { }
