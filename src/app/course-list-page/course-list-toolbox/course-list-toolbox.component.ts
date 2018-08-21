@@ -1,10 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
+import { Subject, Subscription } from 'rxjs';
 import debounces from 'lodash.debounce';
 
 import { CoursesService, ReqParamsService } from '../../shared/services';
+import { SpinnerService } from '../../core/components/spinner/spinner.service';
 import { ReqParams } from '../../shared/models';
-import { Subject, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-course-list-toolbox',
@@ -14,6 +15,7 @@ import { Subject, Subscription } from 'rxjs';
 export class CourseListToolboxComponent implements OnInit, OnDestroy {
   public searchQuery: string;
   private inputValueSub: Subscription;
+  private coursesSub: Subscription;
   private inlutValueChannel = new Subject<string>();
   private inlutValueChannel$ = this.inlutValueChannel.asObservable();
   private debaunceTime = 300;
@@ -24,14 +26,22 @@ export class CourseListToolboxComponent implements OnInit, OnDestroy {
       params.q = q;
     }
 
-    this.coursesService.fetchCourses(params.page, params.count, q);
+    if (this.coursesSub) {
+      this.coursesSub.unsubscribe();
+    }
+
+    this.spinnerService.showSpinner();
     this.router.navigate(['/courses'], { queryParams: params });
-    }, this.debaunceTime);
+    this.coursesSub = this.coursesService.fetchCourses(params.page, params.count, q).subscribe(
+      () => this.spinnerService.hideSpinner()
+    );
+  }, this.debaunceTime);
 
   constructor(private router: Router,
+              private spinnerService: SpinnerService,
               private activatedRoute: ActivatedRoute,
-              private reqParamsService: ReqParamsService,
-              private coursesService: CoursesService) { }
+              private coursesService: CoursesService,
+              private reqParamsService: ReqParamsService) { }
 
   ngOnInit(): void {
     this.searchQuery = this.activatedRoute.snapshot.queryParams['q'] || '';
@@ -42,6 +52,7 @@ export class CourseListToolboxComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.inputValueSub.unsubscribe();
+    this.coursesSub.unsubscribe();
   }
 
   onModelChanged(inputValue: string): void {

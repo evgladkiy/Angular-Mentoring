@@ -23,7 +23,7 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
 
   constructor(
     private router: Router,
-    private coursesServise: CoursesService,
+    private coursesService: CoursesService,
     private spinnerService: SpinnerService,
     private reqParamsService: ReqParamsService,
     private modalWindowService: ModalWindowService,
@@ -31,9 +31,11 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
 
   ngOnInit(): void {
     const { page, count, q } = this.reqParamsService.getParams();
-
-    this.coursesServise.fetchCourses(page, count, q);
-    this.coursesSub = this.coursesServise.coursesChannel$.subscribe(
+    this.spinnerService.showSpinner();
+    this.coursesService.fetchCourses(page, count, q).subscribe(
+      () => this.spinnerService.hideSpinner()
+    );
+    this.coursesSub = this.coursesService.coursesChannel$.subscribe(
       courses => this.courses = courses
     );
     this.modalWindowSub = this.modalWindowService.channel$.subscribe((id) => {
@@ -53,7 +55,7 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
     const courseToDeleteId = this.courseToDelete._id;
     this.spinnerService.showSpinner();
 
-    this.coursesServise.deleteCourse(courseToDeleteId)
+    this.coursesService.deleteCourse(courseToDeleteId)
       .pipe(delay(300))
       .subscribe((res) => {
         if (res.status === 'OK') {
@@ -65,7 +67,9 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
             this.router.navigate(['/courses'], { queryParams: { page, count, q } });
           }
 
-          this.coursesServise.fetchCourses(page, count, q);
+          this.coursesService.fetchCourses(page, count, q).subscribe(
+            () => this.spinnerService.hideSpinner()
+          );
         } else {
           console.log(res.msg);
         }

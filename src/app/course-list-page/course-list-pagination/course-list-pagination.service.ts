@@ -3,6 +3,7 @@ import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
 
 import { CoursesService } from '../../shared/services';
+import { SpinnerService } from '../../core/components/spinner/spinner.service';
 
 @Injectable({
   providedIn: 'root'
@@ -13,6 +14,7 @@ export class CourseListPaginationService {
   public buttonsChannel$ = this.buttons.asObservable();
 
   constructor(private router: Router,
+              private spinnerService: SpinnerService,
               private coursesService: CoursesService) { }
 
   getButtons(numberOfPages: number, activePage: number): void {
@@ -38,7 +40,11 @@ export class CourseListPaginationService {
 
   fetchCourses(page: number, itemsPerPage: number, q: string) {
     const count = itemsPerPage;
+
+    this.spinnerService.showSpinner();
     this.router.navigate(['/courses'], { queryParams: { page, count, q } });
-    this.coursesService.fetchCourses(page, itemsPerPage, q);
+    this.coursesService.fetchCourses(page, itemsPerPage, q).subscribe(
+      () => this.spinnerService.hideSpinner()
+    );
   }
 }

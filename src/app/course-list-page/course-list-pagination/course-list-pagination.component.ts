@@ -24,7 +24,7 @@ export class CourseListPaginationComponent implements OnInit, OnDestroy {
   public shownCourses: string;
 
   constructor(private activatedRoute: ActivatedRoute,
-              private coursesServise: CoursesService,
+              private coursesService: CoursesService,
               private reqParamsService: ReqParamsService,
               private paginationService: CourseListPaginationService,
               ) {
@@ -41,7 +41,7 @@ export class CourseListPaginationComponent implements OnInit, OnDestroy {
     this.buttonsSub = this.paginationService.buttonsChannel$.subscribe(
       buttons => this.buttons = buttons
     );
-    this.numOfCoursesSub = this.coursesServise.numOfCoursesChannel$.subscribe(numOfCourses => {
+    this.numOfCoursesSub = this.coursesService.numOfCoursesChannel$.subscribe(numOfCourses => {
       this.numberOfCourses = Number(numOfCourses);
       this.numberOfPages = Math.ceil(this.numberOfCourses / this.coursesPerPage);
       this.updateShownCourses();
