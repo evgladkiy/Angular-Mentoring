@@ -52,7 +52,7 @@ export class CourseListToolboxComponent implements OnInit, OnDestroy {
 
   ngOnDestroy(): void {
     this.inputValueSub.unsubscribe();
-    this.coursesSub.unsubscribe();
+    // this.coursesSub.unsubscribe();
   }
 
   onModelChanged(inputValue: string): void {

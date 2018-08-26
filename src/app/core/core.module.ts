@@ -14,12 +14,14 @@ import {
   SpinnerComponent,
  } from './components';
 import { SpinnerService } from './components/spinner/spinner.service';
+import { AppStoreModule } from './@Ngrx/app-store.module';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
     RouterModule,
+    AppStoreModule,
   ],
   declarations: [
     HeaderComponent,

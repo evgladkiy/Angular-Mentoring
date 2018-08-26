@@ -30,7 +30,7 @@ import { AccessInterceptor } from './core/interceptors/access-interceptor';
     CoursesPageModule,
     AppRoutingModule,
   ],
-  providers: [ { provide: HTTP_INTERCEPTORS, useClass: AccessInterceptor, multi: true }],
+  providers: [{ provide: HTTP_INTERCEPTORS, useClass: AccessInterceptor, multi: true }],
   bootstrap: [AppComponent],
 })
 export class AppModule { }

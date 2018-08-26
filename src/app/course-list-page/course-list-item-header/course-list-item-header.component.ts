@@ -3,6 +3,10 @@ import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { CoursesService } from '../../shared/services';
 import { Course } from '../../shared/models';
 
+import { Store } from '@ngrx/store';
+import * as CoursesActions from './../../core/@Ngrx/courses/courses.actions';
+import { AppState } from '../../core/@Ngrx';
+
 @Component({
   selector: 'app-course-list-item-header',
   templateUrl: './course-list-item-header.component.html',
@@ -12,13 +16,17 @@ import { Course } from '../../shared/models';
 export class CourseListItemHeaderComponent {
   @Input() course: Course;
 
-  constructor(private coursesService: CoursesService) { }
+  constructor(private store: Store<AppState>,
+    private coursesService: CoursesService) { }
 
   onClickFavoriteBtn(): void {
-    this.course = {
-      ...this.course,
-      isFavorite: !this.course.isFavorite
-    };
-    this.coursesService.updateCourse(this.course);
+    const updatedCourse = { ...this.course, isFavorite: !this.course.isFavorite };
+    this.store.dispatch(new CoursesActions.UpdateCourse(updatedCourse));
+    // console.log(this.store);
+    // this.course = {
+    //   ...this.course,
+    //   isFavorite: !this.course.isFavorite
+    // };
+    // this.coursesService.updateCourse(this.course);
   }
 }

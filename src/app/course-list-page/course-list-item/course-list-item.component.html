@@ -3,14 +3,8 @@
         <img [src]="course.img" alt="Course image">
     </div>
     <div class="course-info__container">
-        <app-course-list-item-header
-            [course]="course">
-        </app-course-list-item-header>
-        <app-course-list-item-body
-            [title]="course.title"
-            [description]="course.description"
-            [id]="course._id">
-        </app-course-list-item-body>
+        <app-course-list-item-header [course]="course"></app-course-list-item-header>
+        <app-course-list-item-body [course]="course"></app-course-list-item-body>
         <app-course-list-item-footer
             [duration]="course.duration"
             [rating]="course.rating"

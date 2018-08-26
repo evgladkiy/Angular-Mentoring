@@ -28,7 +28,7 @@ export class CoursesService {
   fetchCourses(
     page: number = this.defaultParams.page,
     count: number = this.defaultParams.count,
-    q?: string): Observable<Course[]> {
+    q?: string): Observable<CoursesRes> {
       let params = new HttpParams()
         .set('page', String(page))
         .set('count', String(count));
@@ -48,7 +48,7 @@ export class CoursesService {
             this.coursesChannel.next(res.courses);
             this.numOfCoursesChannel.next(res.coursesCount);
 
-            return res.courses;
+            return res;
           })
         );
   }

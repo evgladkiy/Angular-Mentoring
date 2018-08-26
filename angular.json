@@ -33,7 +33,9 @@
               "src/less/styles.less"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["src/less"]
+              "includePaths": [
+                "src/less"
+              ]
             },
             "scripts": []
           },
@@ -88,7 +90,9 @@
               "src/less/styles.less"
             ],
             "stylePreprocessorOptions": {
-              "includePaths": ["src/less"]
+              "includePaths": [
+                "src/less"
+              ]
             },
             "scripts": [],
             "assets": [
@@ -139,5 +143,8 @@
       }
     }
   },
-  "defaultProject": "Angular-Mentoring"
+  "defaultProject": "Angular-Mentoring",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }

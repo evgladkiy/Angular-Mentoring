@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute  } from '@angular/router';
 import { delay } from 'rxjs/operators';
 
+// import { Store, select } from '@ngrx/store';
+// import { AppState, Courses }
+
 import { CoursesService } from '../shared/services';
 import { Course } from '../shared/models';
 import { SpinnerService } from '../core/components/spinner/spinner.service';
@@ -24,6 +27,7 @@ export class EditCoursePageComponent implements OnInit {
 
   ngOnInit() {
     this.course = { ...this.activeRoute.snapshot.data.course };
+    console.log(this.course)
   }
 
   onSubmit(course: Course): void {
