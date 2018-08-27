@@ -35,12 +35,12 @@ export class AuthService {
     this.http
       .get<User>(`${this.authUrl}/userInfo`, {
         params: { token: userToken }
-      })
-      .pipe(delay(500))
-      .subscribe((userInfo) => {
-        this.activeUserChannel.next(userInfo);
-        return userInfo;
       });
+      // .pipe(delay(500));
+      // .subscribe((userInfo) => {
+      //   this.activeUserChannel.next(userInfo);
+      //   return userInfo;
+      // });
   }
 
   logout(): void {

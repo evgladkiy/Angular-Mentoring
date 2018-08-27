@@ -9,7 +9,7 @@ export function coursesReducer(state = initialState, action: CoursesActions): Co
       return { ...state, loading: true };
     }
 
-    case CoursesActionTypes.GET_COURSES_SUCCESS : {
+    case CoursesActionTypes.GET_COURSES_SUCCESS: {
       const { courses, coursesCount } = action.payload;
       console.log('GET_COURSES_SUCCESS action in reducer');
       return {
@@ -22,7 +22,7 @@ export function coursesReducer(state = initialState, action: CoursesActions): Co
       };
     }
 
-    case CoursesActionTypes.GET_COURSES_ERROR : {
+    case CoursesActionTypes.GET_COURSES_ERROR: {
       console.log('GET_COURSES_ERROR action in reducer');
 
       return {
@@ -77,7 +77,7 @@ export function coursesReducer(state = initialState, action: CoursesActions): Co
       return { ...state };
     }
 
-    case CoursesActionTypes.DELETE_COURSE_SUCCESS : {
+    case CoursesActionTypes.DELETE_COURSE_SUCCESS: {
       const courses = state.courses
         .filter(course => course._id !== action.payload);
 
@@ -88,7 +88,7 @@ export function coursesReducer(state = initialState, action: CoursesActions): Co
       };
     }
 
-    case CoursesActionTypes.DELETE_COURSE_ERROR : {
+    case CoursesActionTypes.DELETE_COURSE_ERROR: {
       return { ...state, error: action.payload };
     }
 

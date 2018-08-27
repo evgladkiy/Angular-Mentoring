@@ -14,6 +14,8 @@ import { AddCoursePageModule } from './add-course-page/add-course-page.module';
 
 import { AppComponent } from './app.component';
 import { AccessInterceptor } from './core/interceptors/access-interceptor';
+import { EffectsModule } from '@ngrx/effects';
+import { UserEffects } from './core/@Ngrx/user/user.effects';
 
 @NgModule({
   declarations: [AppComponent],
@@ -29,6 +31,7 @@ import { AccessInterceptor } from './core/interceptors/access-interceptor';
     ErrorPageModule,
     CoursesPageModule,
     AppRoutingModule,
+    EffectsModule.forFeature([UserEffects])
   ],
   providers: [{ provide: HTTP_INTERCEPTORS, useClass: AccessInterceptor, multi: true }],
   bootstrap: [AppComponent],

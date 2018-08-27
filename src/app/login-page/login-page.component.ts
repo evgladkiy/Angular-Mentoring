@@ -5,6 +5,9 @@ import { delay } from 'rxjs/operators';
 import { User } from '../shared/models';
 import { AuthService } from '../shared/services/authorization/auth.service';
 import { SpinnerService } from '../core/components/spinner/spinner.service';
+import { Store, select } from '@ngrx/store';
+import { AppState, getUsersState } from '../core/@Ngrx';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-login-page',
@@ -13,8 +16,10 @@ import { SpinnerService } from '../core/components/spinner/spinner.service';
 })
 export class LoginPageComponent implements OnInit {
   public user: Partial<User>;
+  private userSub: Subscription;
 
   constructor(private router: Router,
+              private store: Store<AppState>,
               private authService: AuthService,
               private spinnerService: SpinnerService) { }
 
@@ -26,6 +31,9 @@ export class LoginPageComponent implements OnInit {
   }
 
   ngOnInit() {
+    this.userSub = this.store.pipe(select(getUsersState)).subscribe(
+      userInfo => console.log(userInfo)
+    );
     this.authService.logout();     // for force open login page
     this.resetUser();
   }
