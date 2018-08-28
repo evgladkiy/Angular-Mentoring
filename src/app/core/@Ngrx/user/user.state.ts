@@ -1,20 +1,21 @@
 import { User } from '../../../shared/models';
 
-
 export interface UserState {
   user: Readonly<User>;
   isAuthenticated: boolean;
-  loaded: boolean;
   loading: boolean;
+  isAuthorized: boolean;
+  isInitialized: boolean;
   token: string;
-  authEror: Error | string;
+  error: Error | string;
 }
 
 export const initialUserState: UserState = {
   user: null,
   isAuthenticated: false,
   loading: false,
-  loaded: false,
+  isAuthorized: false,
+  isInitialized: false,
   token: null,
-  authEror: null,
+  error: null,
 };

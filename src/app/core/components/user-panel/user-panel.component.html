@@ -1,4 +1,6 @@
 <div>
-    <span class="user-panel__user">{{currentUser.name}}</span>
-    <button class="btn btn-blue btn-solid btn-small btn-icon-left" (click)="onLogout()"><i class="far fa-trash-alt"></i>Log Off</button>
+    <span class="user-panel__user">{{(user | async).name}}</span>
+    <button class="btn btn-blue btn-solid btn-small btn-icon-left" (click)="onLogout()">
+      <i class="far fa-trash-alt"></i>Log Off
+    </button>
 </div>

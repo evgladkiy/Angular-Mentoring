@@ -2,31 +2,39 @@ import { createFeatureSelector, createSelector } from '@ngrx/store';
 
 import { UserState } from './user.state';
 
-export const getUsersState = createFeatureSelector<UserState>('user');
+export const getUserState = createFeatureSelector<UserState>('user');
 
-// export const getCourses = createSelector(
-//   getCoursesState,
-//   (state: CoursesState) => state.courses
-// );
+export const getUser = createSelector(
+  getUserState,
+  (state: UserState) => state.user
+);
 
-// export const getCoursesCount = createSelector(
-//   getCoursesState,
-//   (state: CoursesState) => state.coursesCount
-// );
+export const getIsUserAuthenticated = createSelector(
+  getUserState,
+  (state: UserState) => state.isAuthenticated
+);
 
-// export const getCourseToDelete = createSelector(
-//   getCoursesState,
-//   (state: CoursesState) => state.courseToDelete
-// );
+export const getIsUserInitialized = createSelector(
+  getUserState,
+  (state: UserState) => state.isInitialized
+);
 
-// export const getCoursesError = createSelector(
-//   getCoursesState,
-//   (state: CoursesState) => state.error
-// );
+export const getUserError = createSelector(
+  getUserState,
+  (state: UserState) => state.error
+);
 
-// export const getCoursesLoaded = createSelector(
-//   getCoursesState,
-//   (state: CoursesState) => state.loaded
-// );
+export const getIsUserLoading = createSelector(
+  getUserState,
+  (state: UserState) => state.loading
+);
 
+export const getIsUserAuthorized = createSelector(
+  getUserState,
+  (state: UserState) => state.isAuthorized
+);
 
+export const getAuthToken = createSelector(
+  getUserState,
+  (state: UserState) => state.token
+);

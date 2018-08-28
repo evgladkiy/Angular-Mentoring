@@ -6,15 +6,20 @@ export enum UserActionTypes {
   GET_USER_INFO_SUCCESS = '[User] GET_USER_INFO_SUCCESS',
   GET_USER_INFO_ERORR = '[User] GET_USER_INFO_ERORR',
 
-  SET_TOKEN = '[User] SET_TOKEN',
+  AUTHENTICATE = '[User] AUTHENTICATE',
+  AUTHENTICATE_SUCCESS = '[User] AUTHENTICATE_SUCCESS',
+  AUTHENTICATE_ERROR = '[User] AUTHENTICATE_ERROR',
 
-  AUTHENTICATE_USER = '[User] AUTHENTICATE_USER',
-  AUTHENTICATE_USER_SUCCESS = '[User] AUTHENTICATE_USER_SUCCESS',
-  AUTHENTICATE_USER_ERROR = '[User] AUTHENTICATE_USER_ERROR',
+  INITIALIZE = '[User] INITIALIZE',
+  INITIALIZE_SUCCESS = '[User] INITIALIZE_SUCCESS',
+
+  LOGOUT = '[User] LOGOUT',
+  LOGOUT_SUCCESS = '[User] LOGOUT_SUCCESS',
 }
 
 export class GetUserInfo implements Action {
   readonly type = UserActionTypes.GET_USER_INFO;
+  constructor(public payload: string) {}
 }
 
 export class GetUserInfoSuccess implements Action {
@@ -27,13 +32,46 @@ export class GetUserInfoError implements Action {
   constructor(public payload: Error | string) {}
 }
 
-export class SetToken implements Action {
-  readonly type = UserActionTypes.SET_TOKEN;
+export class Authenticate implements Action {
+  readonly type = UserActionTypes.AUTHENTICATE;
+  constructor(public payload: Partial<User>) {}
+}
+
+export class AuthenticateSuccess implements Action {
+  readonly type = UserActionTypes.AUTHENTICATE_SUCCESS;
+  constructor(public payload: string) {}
+}
+
+export class AuthenticateERROR implements Action {
+  readonly type = UserActionTypes.AUTHENTICATE_ERROR;
   constructor(public payload: Error | string) {}
 }
 
+export class Initialize {
+  readonly type = UserActionTypes.INITIALIZE;
+}
+
+export class InitializeSuccess {
+  readonly type = UserActionTypes.INITIALIZE_SUCCESS;
+  constructor(public payload: string) {}
+}
+
+export class Logout {
+  readonly type = UserActionTypes.LOGOUT;
+}
+
+export class LogoutSuccess {
+  readonly type = UserActionTypes.LOGOUT_SUCCESS;
+}
+
 export type UserActions =
-    GetUserInfo
+  | GetUserInfo
   | GetUserInfoSuccess
   | GetUserInfoError
-  | SetToken;
+  | Authenticate
+  | AuthenticateSuccess
+  | AuthenticateERROR
+  | Initialize
+  | InitializeSuccess
+  | Logout
+  | LogoutSuccess;

@@ -1,39 +1,26 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Router } from '@angular/router';
-import { Subscription } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
-import { AuthService } from '../../../shared/services';
-import { User } from '../../../shared/models';
+import { Store, select } from '@ngrx/store';
+import { AppState, getIsUserAuthorized } from '../../@Ngrx';
+import * as UserActions from './../../@Ngrx/user/user.actions';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: [ './header.component.less' ],
 })
-export class HeaderComponent implements OnInit, OnDestroy {
-  private activeUserSub: Subscription;
-  private activeUser: User;
-  constructor(private router: Router,
-              public authService: AuthService) { }
+export class HeaderComponent implements OnInit {
+  public isUserAuthorized: Observable<boolean>;
+
+  constructor(private store: Store<AppState>) { }
 
   ngOnInit(): void {
-    this.activeUserSub = this.authService.activeUserChannel$.subscribe(
-      user => this.activeUser = user
-    );
-
-    const isUserisAuthenticated = this.authService.isAuthenticated();
-
-    if (isUserisAuthenticated && !this.activeUser) {
-      this.authService.fetchUserInfo();
-    }
-  }
-
-  ngOnDestroy(): void {
-    this.activeUserSub.unsubscribe();
+    this.isUserAuthorized = this.store.pipe(select(getIsUserAuthorized));
+    this.store.dispatch(new UserActions.Initialize());
   }
 
   onLogout(): void {
-    this.authService.logout();
-    this.router.navigate(['/login']);
+    this.store.dispatch(new UserActions.Logout());
   }
 }

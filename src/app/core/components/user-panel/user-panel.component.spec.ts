@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { DebugElement } from '@angular/core';
 import { By } from '@angular/platform-browser';
+import { of } from 'rxjs';
 
 
 import { UserPanelComponent } from './user-panel.component';
@@ -27,7 +28,7 @@ describe('UserPanelComponent', () => {
 
   it('user panel should have correct initial user', () => {
     component = fixture.componentInstance;
-    component.currentUser = user;
+    component.user = of(user);
     fixture.detectChanges();
 
     const debugElement: DebugElement = fixture.debugElement.query(By.css('.user-panel__user'));

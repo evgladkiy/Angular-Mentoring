@@ -1,21 +1,26 @@
 import { Injectable } from '@angular/core';
 import { HttpInterceptor, HttpHandler, HttpRequest } from '@angular/common/http';
 
-import { AuthService } from '../../shared/services';
+import { Store, select } from '@ngrx/store';
+import { AppState, getAuthToken } from '../@Ngrx';
 
 @Injectable()
 export class AccessInterceptor implements HttpInterceptor {
-  constructor(private authService: AuthService) {}
+  private token: string;
+
+  constructor(private store: Store<AppState>) {
+    this.store.pipe(select(getAuthToken)).subscribe(
+      token => this.token = token
+    );
+  }
 
   intercept(req: HttpRequest<any>, next: HttpHandler) {
-    if (this.authService.isAuthenticated()) {
-      const token = this.authService.getToken();
-      const authReq = req.clone({
-        headers: req.headers
-          .set('Authorization', token)
-      });
+    if (this.token) {
 
-      return next.handle(authReq);
+      return next.handle(req.clone({
+        headers: req.headers
+          .set('Authorization', this.token)
+      }));
     }
 
     return next.handle(req);

@@ -1,4 +1,8 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+
+import { Store, select } from '@ngrx/store';
+import { AppState, getUser } from '../../@Ngrx';
 
 import { User } from '../../../shared/models/user.model';
 
@@ -7,11 +11,16 @@ import { User } from '../../../shared/models/user.model';
   templateUrl: './user-panel.component.html',
   styleUrls: ['./user-panel.component.less'],
 })
-export class UserPanelComponent {
-  @Input() currentUser: User;
+export class UserPanelComponent implements OnInit {
   @Output() logout = new EventEmitter<any>();
 
-  constructor() { }
+  public user: Observable<User>;
+
+  constructor(private store: Store<AppState>) { }
+
+  ngOnInit(): void {
+    this.user = this.store.pipe(select(getUser));
+  }
 
   onLogout(): void {
     this.logout.emit();
