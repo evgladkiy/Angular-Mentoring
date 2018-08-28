@@ -6,6 +6,9 @@ import debounces from 'lodash.debounce';
 import { CoursesService, ReqParamsService } from '../../shared/services';
 import { SpinnerService } from '../../core/components/spinner/spinner.service';
 import { ReqParams } from '../../shared/models';
+import { Store } from '@ngrx/store';
+import { AppState } from '../../core/@Ngrx';
+import * as CoursesActions from './../../core/@Ngrx/courses/courses.actions';
 
 @Component({
   selector: 'app-course-list-toolbox',
@@ -30,14 +33,13 @@ export class CourseListToolboxComponent implements OnInit, OnDestroy {
       this.coursesSub.unsubscribe();
     }
 
-    this.spinnerService.showSpinner();
-    this.router.navigate(['/courses'], { queryParams: params });
-    this.coursesSub = this.coursesService.fetchCourses(params.page, params.count, q).subscribe(
-      () => this.spinnerService.hideSpinner()
-    );
+    this.router
+      .navigate(['/courses'], { queryParams: params })
+      .then(() => this.store.dispatch(new CoursesActions.GetCourses()));
   }, this.debaunceTime);
 
   constructor(private router: Router,
+              private store: Store<AppState>,
               private spinnerService: SpinnerService,
               private activatedRoute: ActivatedRoute,
               private coursesService: CoursesService,

@@ -4,6 +4,8 @@ import { Subscription } from 'rxjs';
 import { CourseListPaginationService } from './course-list-pagination.service';
 import { ReqParamsService, CoursesService } from '../../shared/services';
 import { ActivatedRoute } from '@angular/router';
+import { Store, select } from '@ngrx/store';
+import { AppState, getCoursesCount } from '../../core/@Ngrx';
 
 @Component({
   selector: 'app-course-list-pagination',
@@ -23,11 +25,13 @@ export class CourseListPaginationComponent implements OnInit, OnDestroy {
   public numberOfCourses: number;
   public shownCourses: string;
 
-  constructor(private activatedRoute: ActivatedRoute,
-              private coursesService: CoursesService,
-              private reqParamsService: ReqParamsService,
-              private paginationService: CourseListPaginationService,
-              ) {
+  constructor(
+    private activatedRoute: ActivatedRoute,
+    private coursesService: CoursesService,
+    private store: Store<AppState>,
+    private reqParamsService: ReqParamsService,
+    private paginationService: CourseListPaginationService,
+  ) {
     const { page, count } = this.reqParamsService.getParams();
     this.defaultCoursesPerPage = count;
     this.defaultActivePage = page;
@@ -41,7 +45,8 @@ export class CourseListPaginationComponent implements OnInit, OnDestroy {
     this.buttonsSub = this.paginationService.buttonsChannel$.subscribe(
       buttons => this.buttons = buttons
     );
-    this.numOfCoursesSub = this.coursesService.numOfCoursesChannel$.subscribe(numOfCourses => {
+
+    this.numOfCoursesSub = this.store.pipe(select(getCoursesCount)).subscribe(numOfCourses => {
       this.numberOfCourses = Number(numOfCourses);
       this.numberOfPages = Math.ceil(this.numberOfCourses / this.coursesPerPage);
       this.updateShownCourses();

@@ -14,7 +14,6 @@ export enum UserActionTypes {
   INITIALIZE_SUCCESS = '[User] INITIALIZE_SUCCESS',
 
   LOGOUT = '[User] LOGOUT',
-  LOGOUT_SUCCESS = '[User] LOGOUT_SUCCESS',
 }
 
 export class GetUserInfo implements Action {
@@ -60,10 +59,6 @@ export class Logout {
   readonly type = UserActionTypes.LOGOUT;
 }
 
-export class LogoutSuccess {
-  readonly type = UserActionTypes.LOGOUT_SUCCESS;
-}
-
 export type UserActions =
   | GetUserInfo
   | GetUserInfoSuccess
@@ -73,5 +68,4 @@ export type UserActions =
   | AuthenticateERROR
   | Initialize
   | InitializeSuccess
-  | Logout
-  | LogoutSuccess;
+  | Logout;

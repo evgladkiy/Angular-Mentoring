@@ -1,5 +1,4 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
-import { ModalWindowService } from '../../shared/services';
 import * as CoursesActions from '../../core/@Ngrx/courses/courses.actions';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../core/@Ngrx';
@@ -12,11 +11,9 @@ import { Course } from '../../shared/models';
 })
 export class CourseListItemBodyComponent {
   @Input() course: Course;
-  constructor(private store: Store<AppState>,
-              private modalWindowService: ModalWindowService) { }
+  constructor(private store: Store<AppState>) { }
 
   onClick(id: string): void {
     this.store.dispatch(new CoursesActions.SetCourseToDelete(this.course));
-    // this.modalWindowService.showModalByCourseId(id);
   }
 }

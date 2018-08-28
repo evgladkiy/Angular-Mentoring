@@ -18,14 +18,12 @@ export class UserEffects {
     private router: Router
   ) {}
 
-  @Effect()
+  @Effect({ dispatch: false })
   logout$ = this.actions$.pipe(
     ofType(UserActions.UserActionTypes.LOGOUT),
     map(() => {
       this.router.navigate(['/login']);
       this.authService.deleteTokenFromStore();
-
-      return new UserActions.LogoutSuccess();
     })
   );
 
@@ -57,6 +55,7 @@ export class UserEffects {
             const { token } = res;
 
             this.authService.setTokenToStore(token);
+            this.router.navigate(['/courses']);
 
             return token;
           }),
@@ -78,12 +77,8 @@ export class UserEffects {
       this.authService
         .fetchUserInfo(payload)
         .pipe(
-          map((userInfo: User) => {
-            this.router.navigate(['/courses']);
-
-            return new UserActions.GetUserInfoSuccess(userInfo);
-          },
-          catchError(err => of(new UserActions.GetUserInfoError(err)))
+          map((userInfo: User) => new UserActions.GetUserInfoSuccess(userInfo)),
+          catchError(err => of(new UserActions.GetUserInfoError(err))
         )
       )
     )

@@ -21,6 +21,6 @@ export class HeaderComponent implements OnInit {
   }
 
   onLogout(): void {
-    this.store.dispatch(new UserActions.Logout());
+    this.store.dispatch(new UserActions.Loggit sout());
   }
 }

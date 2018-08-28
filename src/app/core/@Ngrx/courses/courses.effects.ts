@@ -4,26 +4,33 @@ import { Router } from '@angular/router';
 import { Action } from '@ngrx/store';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import * as CoursesActions from './courses.actions';
-import { CoursesService } from '../../../shared/services';
-import { Observable } from 'rxjs';
-import { switchMap, concatMap, pluck } from 'rxjs/operators';
-import { Course } from '../../../shared/models';
+import { CoursesService, ReqParamsService } from '../../../shared/services';
+import { Observable, of } from 'rxjs';
+import { switchMap, concatMap, pluck, catchError, map } from 'rxjs/operators';
+import { Course, InfoRes } from '../../../shared/models';
 
 @Injectable()
 export class CoursesEffects {
   constructor(
     private router: Router,
+    private reqParamsService: ReqParamsService,
     private actions$: Actions,
     private coursesService: CoursesService) {}
 
   @Effect()
   getCourses$: Observable<Action> = this.actions$.pipe(
     ofType(CoursesActions.CoursesActionTypes.GET_COURSES),
-    switchMap((action: CoursesActions.GetCourses) =>
-      this.coursesService.fetchCourses()
-      .toPromise()
-      .then(res => new CoursesActions.GetCoursesSuccess(res))
-      .catch(err => new CoursesActions.GetCoursesError(err))
+    switchMap(() => {
+      const params = this.reqParamsService.getParams();
+      console.log(params);
+      return this.coursesService
+        .fetchCourses(params.page, params.count, params.q)
+        .pipe(
+          map(res => new CoursesActions.GetCoursesSuccess(res)),
+          catchError(err => of(new CoursesActions.AsyncCoursesActionError(err)))
+        );
+      }
+
     )
   );
 
@@ -34,14 +41,15 @@ export class CoursesEffects {
     concatMap((payload: Course) =>
       this.coursesService
         .updateCourse(payload)
-        .toPromise()
-        .then((res) => {
-          if (this.router.url !== '/courses') {
-            this.router.navigate(['/courses']);
-          }
-          return new CoursesActions.UpdateCourseSuccess(payload);
-        })
-        .catch(err => new CoursesActions.UpdateCourseError(err))
+          .pipe(
+            map((res: InfoRes) => {
+              if (this.router.url !== '/courses') {
+                this.router.navigate(['/courses']);
+              }
+              return new CoursesActions.UpdateCourseSuccess(payload);
+            }),
+            catchError(err => of(new CoursesActions.AsyncCoursesActionError(err)))
+          )
     )
   );
 
@@ -52,12 +60,14 @@ export class CoursesEffects {
     concatMap((payload: Course) =>
       this.coursesService
         .addCourse(payload)
-        .toPromise()
-        .then(res => {
-          this.router.navigate(['/courses']);
-          return new CoursesActions.CreateCourseSuccess();
-        })
-        .catch(err => new CoursesActions.CreateCourseError(err))
+        .pipe(
+          map((res: InfoRes) => {
+            this.router.navigate(['/courses']);
+
+            return new CoursesActions.CreateCourseSuccess();
+        }),
+        catchError(err => of(new CoursesActions.AsyncCoursesActionError(err)))
+      )
     )
   );
 
@@ -65,12 +75,18 @@ export class CoursesEffects {
   deleteCourse$: Observable<Action> = this.actions$.pipe(
     ofType(CoursesActions.CoursesActionTypes.DELETE_COURSE),
     pluck('payload'),
-    concatMap((payload: Course) => {
-      return this.coursesService
-        .deleteCourse(payload._id)
-        .toPromise()
-        .then(() => new CoursesActions.DeleteCourseSuccess(payload._id))
-        .catch(err => new CoursesActions.DeleteCourseError(err));
-    })
+    concatMap((payload: string) =>
+      this.coursesService
+        .deleteCourse(payload)
+        .pipe(
+          switchMap((res: InfoRes) => {
+            return [
+              new CoursesActions.DeleteCourseSuccess(payload),
+              new CoursesActions.GetCourses()
+            ];
+          }),
+          catchError(err => of(new CoursesActions.AsyncCoursesActionError(err)))
+      )
+    )
   );
 }

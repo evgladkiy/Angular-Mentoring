@@ -9,7 +9,6 @@ import {
   AuthService,
   CoursesService,
   ReqParamsService,
-  ModalWindowService,
 } from './services';
 import {
   TagItComponent,
@@ -40,7 +39,6 @@ import {
     AuthService,
     CoursesService,
     ReqParamsService,
-    ModalWindowService,
   ],
   exports: [
     OrderByPipe,

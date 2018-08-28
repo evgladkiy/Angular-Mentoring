@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs';
 import { Router } from '@angular/router';
 
-import { CoursesService } from '../../shared/services';
-import { SpinnerService } from '../../core/components/spinner/spinner.service';
+import { Store } from '@ngrx/store';
+import { AppState } from '../../core/@Ngrx';
+import * as CoursesActions from './../../core/@Ngrx/courses/courses.actions';
 
 @Injectable({
   providedIn: 'root'
@@ -13,9 +14,10 @@ export class CourseListPaginationService {
   private buttons = new Subject<number[]>();
   public buttonsChannel$ = this.buttons.asObservable();
 
-  constructor(private router: Router,
-              private spinnerService: SpinnerService,
-              private coursesService: CoursesService) { }
+  constructor(
+    private router: Router,
+    private store: Store<AppState>
+  ) { }
 
   getButtons(numberOfPages: number, activePage: number): void {
     const numberOfButtons = numberOfPages <= this.maxButtonsAmoutn
@@ -41,10 +43,9 @@ export class CourseListPaginationService {
   fetchCourses(page: number, itemsPerPage: number, q: string) {
     const count = itemsPerPage;
 
-    this.spinnerService.showSpinner();
-    this.router.navigate(['/courses'], { queryParams: { page, count, q } });
-    this.coursesService.fetchCourses(page, itemsPerPage, q).subscribe(
-      () => this.spinnerService.hideSpinner()
-    );
+    this.router
+      .navigate(['/courses'], { queryParams: { page, count, q } })
+      .then(() => this.store.dispatch(new CoursesActions.GetCourses()));
+
   }
 }

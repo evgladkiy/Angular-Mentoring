@@ -4,7 +4,6 @@ import { UserActions, UserActionTypes } from './user.actions';
 export function userReducer(state = initialUserState, action: UserActions): UserState {
 
   switch (action.type) {
-    case UserActionTypes.LOGOUT_SUCCESS:
     case UserActionTypes.INITIALIZE: {
       return state;
     }
