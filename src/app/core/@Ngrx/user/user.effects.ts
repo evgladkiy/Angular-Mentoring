@@ -6,6 +6,7 @@ import { switchMap, pluck, catchError, map, concatMap } from 'rxjs/operators';
 import { Action } from '@ngrx/store';
 import { Actions, Effect, ofType } from '@ngrx/effects';
 import * as UserActions from './user.actions';
+import * as RouterActions from './../router/router.actions';
 
 import { AuthService } from '../../../shared/services';
 import { User, TokenRes } from '../../../shared/models';
@@ -26,6 +27,12 @@ export class UserEffects {
       this.authService.deleteTokenFromStore();
     })
   );
+
+  // @Effect({ dispatch: false })
+  // logout2$ = this.actions$.pipe(
+  //   ofType(UserActions.UserActionTypes.LOGOUT),
+  //   map(() => (new RouterActions.Go({ path: ['/login'] })))
+  // );
 
   @Effect()
   initialize$: Observable<Action> = this.actions$.pipe(

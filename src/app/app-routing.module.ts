@@ -8,8 +8,7 @@ import { EditCoursePageComponent } from './edit-course-page/edit-course-page.com
 import { AddCoursePageComponent } from './add-course-page/add-course-page.component';
 import { CoursesPageComponent } from './courses-page/courses-page.component';
 
-import { AuthGuard } from './core/guards/auth.guard';
-import { CourseResolver } from './core/resolvers/course.resolver';
+import { AuthGuard, CourseExistsGuard, CoursesPreloadingGuard } from './core/guards';
 
 const routes: Routes = [
   { path: '', redirectTo: '/courses', pathMatch: 'full' },
@@ -21,6 +20,7 @@ const routes: Routes = [
       {
         path: '',
         component: CourseListPageComponent,
+        canActivate: [ CoursesPreloadingGuard ],
       },
       {
         path: 'new',
@@ -29,9 +29,7 @@ const routes: Routes = [
       {
         path: ':id',
         component: EditCoursePageComponent,
-        resolve: {
-          course: CourseResolver,
-        }
+        canActivate: [ CourseExistsGuard ],
       },
     ],
   },
@@ -41,8 +39,12 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  // imports: [RouterModule.forRoot(routes, { enableTracing: true })],
   imports: [ RouterModule.forRoot(routes) ],
-  exports: [ RouterModule ]
+  exports: [ RouterModule ],
+  providers: [
+    AuthGuard,
+    CourseExistsGuard,
+    CoursesPreloadingGuard,
+  ]
 })
 export class AppRoutingModule { }

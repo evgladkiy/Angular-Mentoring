@@ -19,6 +19,11 @@ export const getCourseToDelete = createSelector(
   (state: CoursesState) => state.courseToDelete
 );
 
+export const getCourseToUpdate = createSelector(
+  getCoursesState,
+  (state: CoursesState) => state.courseToUpdate
+);
+
 export const getCoursesError = createSelector(
   getCoursesState,
   (state: CoursesState) => state.error
@@ -27,6 +32,11 @@ export const getCoursesError = createSelector(
 export const getCoursesLoaded = createSelector(
   getCoursesState,
   (state: CoursesState) => state.loaded
+);
+
+export const getCoursesLoading = createSelector(
+  getCoursesState,
+  (state: CoursesState) => state.loading
 );
 
 

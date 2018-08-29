@@ -1,13 +1,11 @@
 import { Action } from '@ngrx/store';
+
 import { Course } from '../../../shared/models';
 import { CoursesRes } from '../../../shared/models/courses-res.model';
 
 export enum CoursesActionTypes {
   GET_COURSES = '[Courses] GET_COURSES',
   GET_COURSES_SUCCESS = '[Courses] GET_COURSES_SUCCESS',
-
-  GET_COURSE = '[Courses] GET_COURSE',
-  GET_COURSE_SUCCESS = '[Courses] GET_COURSE_SUCCESS',
 
   CREATE_COURSE = '[Courses] CREATE_COURSE',
   CREATE_COURSE_SUCCESS = '[Courses] CREATE_COURSE_SUCCESS',
@@ -18,8 +16,10 @@ export enum CoursesActionTypes {
   DELETE_COURSE = '[Courses] DELETE_COURSE',
   DELETE_COURSE_SUCCESS = '[Courses] DELETE_COURSE_SUCCESS',
 
-  ASYNC_COURSES_ACTION_ERROR = '[Courses] ASYNC_COURSES_ACTION_ERROR',
+  GET_COURSE = '[Courses] GET_COURSE',
   SET_COURSE_TO_DELETE = '[Courses] SET_COURSE_TO_DELETE',
+  SET_COURSE_TO_UPDATE = '[Courses] SET_COURSE_TO_UPDATE',
+  ASYNC_COURSES_ACTION_ERROR = '[Courses] ASYNC_COURSES_ACTION_ERROR',
 }
 
 export class GetCourses implements Action {
@@ -33,14 +33,8 @@ export class GetCoursesSuccess implements Action {
 
 export class GetCourse implements Action {
   readonly type = CoursesActionTypes.GET_COURSE;
-  constructor(public payload: number) {}
+  constructor(public payload: string) {}
 }
-
-export class GetCourseSuccess implements Action {
-  readonly type = CoursesActionTypes.GET_COURSE_SUCCESS;
-  constructor(public payload: Course) {}
-}
-
 
 export class CreateCourse implements Action {
   readonly type = CoursesActionTypes.CREATE_COURSE;
@@ -50,7 +44,6 @@ export class CreateCourse implements Action {
 export class CreateCourseSuccess implements Action {
   readonly type = CoursesActionTypes.CREATE_COURSE_SUCCESS;
 }
-
 
 export class UpdateCourse implements Action {
   readonly type = CoursesActionTypes.UPDATE_COURSE;
@@ -62,10 +55,9 @@ export class UpdateCourseSuccess implements Action {
   constructor(public payload: Course) {}
 }
 
-
 export class DeleteCourse implements Action {
   readonly type = CoursesActionTypes.DELETE_COURSE;
-  constructor(public payload: string) {}
+  constructor(public payload: { id: string, isLast: boolean }) {}
 }
 
 export class DeleteCourseSuccess implements Action {
@@ -83,13 +75,15 @@ export class SetCourseToDelete implements Action {
   constructor(public payload: Course) {}
 }
 
-
+export class SetCourseToUpdate implements Action {
+  readonly type = CoursesActionTypes.SET_COURSE_TO_UPDATE;
+  constructor(public payload: Course) {}
+}
 
 export type CoursesActions =
-  | GetCourses
+    GetCourses
   | GetCoursesSuccess
   | GetCourse
-  | GetCourseSuccess
   | CreateCourse
   | CreateCourseSuccess
   | UpdateCourse
@@ -97,4 +91,5 @@ export type CoursesActions =
   | DeleteCourse
   | DeleteCourseSuccess
   | AsyncCoursesActionError
-  | SetCourseToDelete;
+  | SetCourseToDelete
+  | SetCourseToUpdate;

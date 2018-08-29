@@ -60,7 +60,7 @@ export class Logout {
 }
 
 export type UserActions =
-  | GetUserInfo
+    GetUserInfo
   | GetUserInfoSuccess
   | GetUserInfoError
   | Authenticate

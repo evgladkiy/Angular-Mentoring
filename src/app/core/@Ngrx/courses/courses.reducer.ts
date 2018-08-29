@@ -16,12 +16,21 @@ export function coursesReducer(state = initialState, action: CoursesActions): Co
       const { courses, coursesCount } = action.payload;
 
       return {
-        ...state,
         courses,
         coursesCount,
         loading: false,
         loaded: true,
+        courseToUpdate: null,
+        courseToDelete: null,
         error: null
+      };
+    }
+
+    case CoursesActionTypes.SET_COURSE_TO_UPDATE: {
+      return {
+        ...state,
+        loading: false,
+        courseToUpdate: action.payload,
       };
     }
 

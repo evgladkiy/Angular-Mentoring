@@ -1,10 +1,11 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute  } from '@angular/router';
+import { Observable } from 'rxjs';
+import { Store, select } from '@ngrx/store';
+
+import { AppState, getCourseToUpdate } from '../core/@Ngrx';
+import * as CoursesActions from '../core/@Ngrx/courses/courses.actions';
 
 import { Course } from '../shared/models';
-import { Store } from '@ngrx/store';
-import { AppState } from '../core/@Ngrx';
-import * as CoursesActions from '../core/@Ngrx/courses/courses.actions';
 
 @Component({
   selector: 'app-edit-course-page',
@@ -12,16 +13,12 @@ import * as CoursesActions from '../core/@Ngrx/courses/courses.actions';
   styleUrls: [ './edit-course-page.component.less' ],
 })
 export class EditCoursePageComponent implements OnInit {
-  public course: Course;
+  public courseToUpdate: Observable<Readonly<Course>>;
 
-  constructor (
-    private store: Store<AppState>,
-    private activeRoute: ActivatedRoute) {
-      this.course = this.activeRoute.snapshot.data.course;
-    }
+  constructor (private store: Store<AppState>) { }
 
   ngOnInit() {
-    this.course = { ...this.activeRoute.snapshot.data.course };
+    this.courseToUpdate = this.store.pipe(select(getCourseToUpdate));
   }
 
   onSubmit(course: Course): void {
