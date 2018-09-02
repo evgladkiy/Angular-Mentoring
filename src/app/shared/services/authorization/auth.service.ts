@@ -4,6 +4,7 @@ import { Observable } from 'rxjs';
 
 import { User } from '../../models/user.model';
 import { TokenRes } from '../../models';
+import { delay } from 'rxjs/operators';
 
 @Injectable({
   providedIn: 'root'
@@ -32,7 +33,8 @@ export class AuthService {
     return this.http
       .get<User>(`${this.authUrl}/userInfo`, {
         params: { token: userToken }
-      });
+      })
+      .pipe(delay(500));
   }
 
   authenticate(user: string, password: string): Observable<TokenRes> {

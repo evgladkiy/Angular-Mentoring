@@ -12,6 +12,10 @@ export function coursesReducer(state = initialState, action: CoursesActions): Co
       return { ...state, loading: true };
     }
 
+    case CoursesActionTypes.GET_COURSES_AND_NAVIGATE_BY_QUERY: {
+      return state;
+    }
+
     case CoursesActionTypes.GET_COURSES_SUCCESS: {
       const { courses, coursesCount } = action.payload;
 

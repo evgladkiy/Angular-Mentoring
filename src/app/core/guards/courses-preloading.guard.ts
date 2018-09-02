@@ -25,7 +25,7 @@ export class CoursesPreloadingGuard implements CanActivate {
       select(getCoursesLoaded),
       tap(loaded => {
         if (!loaded) {
-          this.store.dispatch(new CoursesActions.GetCourses());
+          this.store.dispatch(new CoursesActions.GetCourses(null));
         }
       }),
       take(1)

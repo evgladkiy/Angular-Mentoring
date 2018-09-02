@@ -45,7 +45,6 @@ export class CourseListPaginationService {
 
     this.router
       .navigate(['/courses'], { queryParams: { page, count, q } })
-      .then(() => this.store.dispatch(new CoursesActions.GetCourses()));
-
+      .then(() => this.store.dispatch(new CoursesActions.GetCourses(null)));
   }
 }

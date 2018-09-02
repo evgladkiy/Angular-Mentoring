@@ -1,4 +1,4 @@
-<div *ngIf="shouldShowSpinner" class="spinner-container">
+<div *ngIf="(coursesLoading$ | async) || (userLoading$ | async)" class="spinner-container">
     <div class="spinner centred">
       <div class="rect1"></div>
       <div class="rect2"></div>

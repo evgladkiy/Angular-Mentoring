@@ -1,8 +1,8 @@
-import { Component, Input, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { CourseListPaginationService } from './course-list-pagination.service';
-import { ReqParamsService, CoursesService } from '../../shared/services';
+import { ReqParamsService } from '../../shared/services';
 import { ActivatedRoute } from '@angular/router';
 import { Store, select } from '@ngrx/store';
 import { AppState, getCoursesCount } from '../../core/@Ngrx';
@@ -27,7 +27,6 @@ export class CourseListPaginationComponent implements OnInit, OnDestroy {
 
   constructor(
     private activatedRoute: ActivatedRoute,
-    private coursesService: CoursesService,
     private store: Store<AppState>,
     private reqParamsService: ReqParamsService,
     private paginationService: CourseListPaginationService,

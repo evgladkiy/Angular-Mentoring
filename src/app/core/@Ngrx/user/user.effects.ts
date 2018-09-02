@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
 import { Observable, of } from 'rxjs';
 import { switchMap, pluck, catchError, map, concatMap } from 'rxjs/operators';
 
@@ -16,23 +15,15 @@ export class UserEffects {
   constructor(
     private actions$: Actions,
     private authService: AuthService,
-    private router: Router
   ) {}
 
   @Effect({ dispatch: false })
   logout$ = this.actions$.pipe(
     ofType(UserActions.UserActionTypes.LOGOUT),
     map(() => {
-      this.router.navigate(['/login']);
       this.authService.deleteTokenFromStore();
     })
   );
-
-  // @Effect({ dispatch: false })
-  // logout2$ = this.actions$.pipe(
-  //   ofType(UserActions.UserActionTypes.LOGOUT),
-  //   map(() => (new RouterActions.Go({ path: ['/login'] })))
-  // );
 
   @Effect()
   initialize$: Observable<Action> = this.actions$.pipe(
@@ -62,7 +53,6 @@ export class UserEffects {
             const { token } = res;
 
             this.authService.setTokenToStore(token);
-            this.router.navigate(['/courses']);
 
             return token;
           }),
@@ -89,5 +79,17 @@ export class UserEffects {
         )
       )
     )
+  );
+
+  @Effect()
+  logout2$ = this.actions$.pipe(
+    ofType(UserActions.UserActionTypes.LOGOUT),
+    map(() => new RouterActions.Go({ path: ['/login'] }))
+  );
+
+  @Effect()
+  AuthenticateSuccess$ = this.actions$.pipe(
+    ofType(UserActions.UserActionTypes.AUTHENTICATE_SUCCESS),
+    map(() => new RouterActions.Go({ path: ['/courses'] }))
   );
 }

@@ -20,7 +20,7 @@ const routes: Routes = [
       {
         path: '',
         component: CourseListPageComponent,
-        canActivate: [ CoursesPreloadingGuard ],
+        // canActivate: [ CoursesPreloadingGuard ],
       },
       {
         path: 'new',

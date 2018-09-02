@@ -1,11 +1,13 @@
 import { Action } from '@ngrx/store';
 
-import { Course } from '../../../shared/models';
+import { Course, ReqParams } from '../../../shared/models';
 import { CoursesRes } from '../../../shared/models/courses-res.model';
+import { DeleteCoursePayload } from '../../../shared/models/delete-course.payload';
 
 export enum CoursesActionTypes {
   GET_COURSES = '[Courses] GET_COURSES',
   GET_COURSES_SUCCESS = '[Courses] GET_COURSES_SUCCESS',
+  GET_COURSES_AND_NAVIGATE_BY_QUERY = '[Courses] GET_COURSES_AND_NAVIGATE_BY_QUERY',
 
   CREATE_COURSE = '[Courses] CREATE_COURSE',
   CREATE_COURSE_SUCCESS = '[Courses] CREATE_COURSE_SUCCESS',
@@ -24,11 +26,17 @@ export enum CoursesActionTypes {
 
 export class GetCourses implements Action {
   readonly type = CoursesActionTypes.GET_COURSES;
+  constructor(public payload: ReqParams) {}
 }
 
 export class GetCoursesSuccess implements Action {
   readonly type = CoursesActionTypes.GET_COURSES_SUCCESS;
   constructor(public payload: CoursesRes) {}
+}
+
+export class GetCoursesAndNavigateByQuery implements Action {
+  readonly type = CoursesActionTypes.GET_COURSES_AND_NAVIGATE_BY_QUERY;
+  constructor(public payload: string) {}
 }
 
 export class GetCourse implements Action {
@@ -62,7 +70,7 @@ export class DeleteCourse implements Action {
 
 export class DeleteCourseSuccess implements Action {
   readonly type = CoursesActionTypes.DELETE_COURSE_SUCCESS;
-  constructor(public payload: string) {}
+  constructor(public payload: DeleteCoursePayload) {}
 }
 
 export class AsyncCoursesActionError implements Action {
@@ -83,6 +91,7 @@ export class SetCourseToUpdate implements Action {
 export type CoursesActions =
     GetCourses
   | GetCoursesSuccess
+  | GetCoursesAndNavigateByQuery
   | GetCourse
   | CreateCourse
   | CreateCourseSuccess

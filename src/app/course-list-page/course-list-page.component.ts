@@ -29,6 +29,7 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
       course => this.courseToDelete = course
     );
     this.coursesLoadingError$ = this.store.pipe(select(getCoursesError));
+    this.store.dispatch(new CoursesActions.GetCourses(null));
   }
 
   ngOnDestroy(): void {
@@ -41,25 +42,6 @@ export class CourseListPageComponent implements OnInit, OnDestroy {
     const isLast = this.courses.length === 1 && this.courses[0]._id === id;
 
     this.store.dispatch(new CoursesActions.DeleteCourse({ id, isLast }));
-    // this.coursesService.deleteCourse(courseToDeleteId)
-    //   .pipe(delay(300))
-    //   .subscribe((res) => {
-    //     if (res.status === 'OK') {
-    //       const { count, q } = this.reqParamsService.getParams();
-    //       let { page } = this.reqParamsService.getParams();
-
-    //       if (this.courses.length === 1 && this.courses[0]._id === courseToDeleteId) {
-    //         page = page - 1;
-    //         this.router.navigate(['/courses'], { queryParams: { page, count, q } });
-    //       }
-
-    //       this.coursesService.fetchCourses(page, count, q).subscribe(
-    //         () => this.spinnerService.hideSpinner()
-    //       );
-    //     } else {
-    //       console.log(res.msg);
-    //     }
-    // });
   }
 
   onCloseModal(): void {

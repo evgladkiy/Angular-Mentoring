@@ -1,25 +1,21 @@
-import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
 
-import { SpinnerService } from './spinner.service';
+import { Store, select } from '@ngrx/store';
+import { AppState, getIsCoursesLoading, getIsUserLoading } from '../../@Ngrx';
 
 @Component({
   selector: 'app-spinner',
   templateUrl: './spinner.component.html',
   styleUrls: ['./spinner.component.less']
 })
-export class SpinnerComponent implements OnInit, OnDestroy {
-  private spinnerVisibilitySub: Subscription;
-  public shouldShowSpinner: boolean;
-  constructor(private spinnerService: SpinnerService) { }
+export class SpinnerComponent implements OnInit {
+  public coursesLoading$: Observable<boolean>;
+  public userLoading$: Observable<boolean>;
+  constructor(private store: Store<AppState>) { }
 
-  ngOnInit(): void {
-    this.spinnerVisibilitySub = this.spinnerService.shouldShowSpinnerChannel$.subscribe(
-      isShown => this.shouldShowSpinner = isShown
-    );
-  }
-
-  ngOnDestroy(): void {
-    this.spinnerVisibilitySub.unsubscribe();
+  ngOnInit() {
+    this.coursesLoading$ = this.store.pipe(select(getIsCoursesLoading));
+    this.userLoading$ = this.store.pipe(select(getIsUserLoading));
   }
 }

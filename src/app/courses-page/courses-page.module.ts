@@ -8,10 +8,12 @@ import { coursesReducer, CoursesEffects } from '../core/@Ngrx';
 import { SharedModule } from '../shared/shared.module';
 import { AppRoutingModule } from '../app-routing.module';
 import { CoursesPageComponent } from './courses-page.component';
+import { CoreModule } from '../core/core.module';
 
 @NgModule({
   imports: [
     CommonModule,
+    CoreModule,
     SharedModule,
     AppRoutingModule,
     StoreModule.forFeature('courses', coursesReducer),
@@ -19,6 +21,6 @@ import { CoursesPageComponent } from './courses-page.component';
   ],
   declarations: [CoursesPageComponent],
   exports: [CoursesPageComponent],
-
 })
+
 export class CoursesPageModule { }

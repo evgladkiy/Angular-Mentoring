@@ -4,11 +4,11 @@ import { RouterModule } from '@angular/router';
 
 import { StoreModule } from '@ngrx/store';
 import { AppStoreModule } from './@Ngrx/app-store.module';
-import { userReducer, UserEffects, RouterEffects } from './@Ngrx';
+import { userReducer, UserEffects } from './@Ngrx';
 import { EffectsModule } from '@ngrx/effects';
 
 import { SharedModule } from '../shared/shared.module';
-import { SpinnerService } from './components/spinner/spinner.service';
+
 import {
   HeaderComponent,
   FooterComponent,
@@ -25,7 +25,6 @@ import {
     AppStoreModule,
     StoreModule.forFeature('user', userReducer),
     EffectsModule.forFeature([UserEffects]),
-    EffectsModule.forRoot([RouterEffects]),
   ],
   declarations: [
     HeaderComponent,
@@ -34,7 +33,6 @@ import {
     UserPanelComponent,
     SpinnerComponent,
   ],
-  providers: [ SpinnerService ],
   exports: [
     HeaderComponent,
     FooterComponent,

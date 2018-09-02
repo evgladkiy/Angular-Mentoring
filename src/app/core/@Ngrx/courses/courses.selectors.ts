@@ -34,7 +34,7 @@ export const getCoursesLoaded = createSelector(
   (state: CoursesState) => state.loaded
 );
 
-export const getCoursesLoading = createSelector(
+export const getIsCoursesLoading = createSelector(
   getCoursesState,
   (state: CoursesState) => state.loading
 );
