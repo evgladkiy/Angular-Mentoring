@@ -30,7 +30,7 @@ export class CoursesService {
 
       return this
         .http.get<CoursesRes>(this.serverUrl, { params })
-        // .pipe(delay(500));
+        .pipe(delay(500));
   }
 
   getCoursebyId(id: string): Observable<Course> {
