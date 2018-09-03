@@ -1,11 +1,9 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
-import { CourseListPaginationService } from './course-list-pagination.service';
-import { ReqParamsService } from '../../shared/services';
-import { ActivatedRoute } from '@angular/router';
 import { Store, select } from '@ngrx/store';
-import { AppState, getCoursesCount } from '../../core/@Ngrx';
+import { AppState, getPagination, getPaginationCoursesPerPage, getRouterState } from '../../core/@Ngrx';
+import * as CoursesActions from './../../core/@Ngrx/courses/courses.actions';
 
 @Component({
   selector: 'app-course-list-pagination',
@@ -13,65 +11,44 @@ import { AppState, getCoursesCount } from '../../core/@Ngrx';
   styleUrls: ['./course-list-pagination.component.less']
 })
 export class CourseListPaginationComponent implements OnInit, OnDestroy {
-  private buttonsSub: Subscription;
-  private paramsSub: Subscription;
-  private numOfCoursesSub: Subscription;
-  private buttons: number[];
-  private activePage: number;
+  private sub: Subscription;
   private coursesPerPage: number;
-  private numberOfPages: number;
-  private defaultCoursesPerPage: number;
-  private defaultActivePage: number;
+  public activePage: number;
+  public buttons: ReadonlyArray<number>;
+  public numberOfPages: number;
   public numberOfCourses: number;
   public shownCourses: string;
 
-  constructor(
-    private activatedRoute: ActivatedRoute,
-    private store: Store<AppState>,
-    private reqParamsService: ReqParamsService,
-    private paginationService: CourseListPaginationService,
-  ) {
-    const { page, count } = this.reqParamsService.getParams();
-    this.defaultCoursesPerPage = count;
-    this.defaultActivePage = page;
-  }
+  constructor(private store: Store<AppState>) {}
 
   ngOnInit(): void {
-    this.paramsSub = this.activatedRoute.queryParams.subscribe((params) => {
-      this.activePage = +params['page'] || this.defaultActivePage;
-      this.coursesPerPage = +params['count'] || this.defaultCoursesPerPage;
-    });
-    this.buttonsSub = this.paginationService.buttonsChannel$.subscribe(
-      buttons => this.buttons = buttons
-    );
+    this.store.pipe(select(getPaginationCoursesPerPage)).subscribe((
+      coursesPerPage => this.coursesPerPage = coursesPerPage
+    )).unsubscribe();
 
-    this.numOfCoursesSub = this.store.pipe(select(getCoursesCount)).subscribe(numOfCourses => {
-      this.numberOfCourses = Number(numOfCourses);
-      this.numberOfPages = Math.ceil(this.numberOfCourses / this.coursesPerPage);
+    this.store.pipe(select(getRouterState)).subscribe((
+      { state: { queryParams: { page = 1 } } }) =>
+        this.store.dispatch(new CoursesActions.UpdatePaginationButtons(Number(page)))
+    ).unsubscribe();
+
+    this.sub = this.store.pipe(select(getPagination)).subscribe(({
+      buttons, activePage, coursesCount, numberOfPages
+    }) => {
+      this.buttons = buttons;
+      this.activePage = activePage;
+      this.numberOfCourses = coursesCount;
+      this.numberOfPages = numberOfPages;
       this.updateShownCourses();
-      this.updateButtons();
     });
   }
 
   ngOnDestroy(): void {
-    this.buttonsSub.unsubscribe();
-    this.paramsSub.unsubscribe();
-    this.numOfCoursesSub.unsubscribe();
-  }
-
-  private updateButtons(): void {
-    this.paginationService.getButtons(this.numberOfPages, this.activePage);
+    this.sub.unsubscribe();
   }
 
   onClickPaginationBtn(btn: number): void {
     if (this.activePage !== btn) {
-      this.activePage = btn;
-      this.paginationService.fetchCourses(
-        this.activePage,
-        this.coursesPerPage,
-        this.reqParamsService.getParams()['q']);
-      this.updateShownCourses();
-      this.updateButtons();
+      this.store.dispatch(new CoursesActions.PaginationButtonClick(btn));
     }
   }
 
@@ -82,7 +59,7 @@ export class CourseListPaginationComponent implements OnInit, OnDestroy {
     if (firstShownCourse ===  this.numberOfCourses) {
       this.shownCourses = String(this.numberOfCourses);
     } else {
-      this.shownCourses = `${firstShownCourse} -${this.numberOfCourses >= lastShownCourse
+      this.shownCourses = `${firstShownCourse} - ${this.numberOfCourses >= lastShownCourse
         ? lastShownCourse
         : this.numberOfCourses}`;
     }

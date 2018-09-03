@@ -22,6 +22,9 @@ export enum CoursesActionTypes {
   SET_COURSE_TO_DELETE = '[Courses] SET_COURSE_TO_DELETE',
   SET_COURSE_TO_UPDATE = '[Courses] SET_COURSE_TO_UPDATE',
   ASYNC_COURSES_ACTION_ERROR = '[Courses] ASYNC_COURSES_ACTION_ERROR',
+
+  PAGINATION_BUTTON_CLICK = '[Courses] PAGINATION_BUTTON_CLICK',
+  UPDATE_PAGINATION_BUTTONS = '[Courses] UPDATE_PAGINATION_BUTTONS',
 }
 
 export class GetCourses implements Action {
@@ -88,6 +91,16 @@ export class SetCourseToUpdate implements Action {
   constructor(public payload: Course) {}
 }
 
+export class PaginationButtonClick implements Action {
+  readonly type = CoursesActionTypes.PAGINATION_BUTTON_CLICK;
+  constructor(public payload: number) {}
+}
+
+export class UpdatePaginationButtons implements Action {
+  readonly type = CoursesActionTypes.UPDATE_PAGINATION_BUTTONS;
+  constructor(public payload: number) {}
+}
+
 export type CoursesActions =
     GetCourses
   | GetCoursesSuccess
@@ -101,4 +114,6 @@ export type CoursesActions =
   | DeleteCourseSuccess
   | AsyncCoursesActionError
   | SetCourseToDelete
-  | SetCourseToUpdate;
+  | SetCourseToUpdate
+  | PaginationButtonClick
+  | UpdatePaginationButtons;

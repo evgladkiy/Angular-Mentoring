@@ -9,11 +9,6 @@ export const getCourses = createSelector(
   (state: CoursesState) => state.courses
 );
 
-export const getCoursesCount = createSelector(
-  getCoursesState,
-  (state: CoursesState) => state.coursesCount
-);
-
 export const getCourseToDelete = createSelector(
   getCoursesState,
   (state: CoursesState) => state.courseToDelete
@@ -39,4 +34,13 @@ export const getIsCoursesLoading = createSelector(
   (state: CoursesState) => state.loading
 );
 
+export const getPagination = createSelector(
+  getCoursesState,
+  (state: CoursesState) => state.pagination
+);
+
+export const getPaginationCoursesPerPage = createSelector(
+  getCoursesState,
+  (state: CoursesState) => state.pagination.coursesPerPage
+);
 

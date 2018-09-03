@@ -1,7 +1,7 @@
-import { Component, OnDestroy } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { Store } from '@ngrx/store';
+
+import { Store, select } from '@ngrx/store';
 import { AppState } from '../../../core/@Ngrx';
 import { getRouterState } from '../../../core/@Ngrx/router/router.selector';
 
@@ -10,27 +10,17 @@ import { getRouterState } from '../../../core/@Ngrx/router/router.selector';
   templateUrl: './breadcrumbs.component.html',
   styleUrls: [ './breadcrumbs.component.less' ],
 })
-export class BreadcrumbsComponent implements OnDestroy {
+export class BreadcrumbsComponent implements OnDestroy, OnInit {
   public crumbs: string[];
   private sub: Subscription;
 
-  constructor(
-    private store: Store<AppState>,
-    private activeRoute: ActivatedRoute) {
-      this.store.select(getRouterState).subscribe((router) => {
-        this.crumbs = this.parseUrlToCrumbs(router.state.url);
+  constructor(private store: Store<AppState>) {}
 
-        if (this.sub) {
-          this.sub.unsubscribe();
-        }
-
-        this.sub = this.activeRoute.firstChild.data.subscribe((data) => {
-          if (data.course && this.crumbs.length > 1) {
-            this.crumbs[1] = data.course.title;
-          }
-        });
-      });
-    }
+  ngOnInit(): void {
+    this.sub = this.store.pipe(select(getRouterState)).subscribe((routerState) => {
+      this.crumbs = this.parseUrlToCrumbs(routerState.state.url);
+    });
+  }
 
   ngOnDestroy(): void {
     this.sub.unsubscribe();

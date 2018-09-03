@@ -18,15 +18,18 @@ export function coursesReducer(state = initialState, action: CoursesActions): Co
 
     case CoursesActionTypes.GET_COURSES_SUCCESS: {
       const { courses, coursesCount } = action.payload;
+      const { pagination } = state;
+      const numberOfPages = Math.ceil(coursesCount / pagination.coursesPerPage);
 
       return {
+        ...state,
         courses,
-        coursesCount,
         loading: false,
         loaded: true,
         courseToUpdate: null,
         courseToDelete: null,
-        error: null
+        error: null,
+        pagination: { ...pagination, numberOfPages, coursesCount }
       };
     }
 
@@ -74,6 +77,48 @@ export function coursesReducer(state = initialState, action: CoursesActions): Co
 
     case CoursesActionTypes.SET_COURSE_TO_DELETE: {
       return { ...state, courseToDelete: action.payload };
+    }
+
+    case CoursesActionTypes.PAGINATION_BUTTON_CLICK: {
+      return {
+        ...state,
+        pagination: {
+          ...state.pagination,
+          activePage: action.payload,
+        }
+      };
+    }
+
+    case CoursesActionTypes.UPDATE_PAGINATION_BUTTONS: {
+      const { pagination, courseToDelete } = state;
+      const { maxButtonsAmoutn } = pagination;
+      const { payload: activePage }  = action;
+      const numberOfPages = courseToDelete
+        ? activePage
+        : pagination.numberOfPages;
+      const numberOfButtons = numberOfPages <= maxButtonsAmoutn
+        ? numberOfPages
+        : maxButtonsAmoutn;
+      const middleBtnNumber: number = Math.ceil(numberOfButtons / 2);
+
+      const buttons = Array(numberOfButtons)
+        .fill(null)
+        .map((item, index) => {
+          const buttonNumber = index + 1;
+
+          if (activePage <= 3 || (numberOfPages <= maxButtonsAmoutn))  {
+            return buttonNumber;
+          } else if (numberOfPages - middleBtnNumber < activePage) {
+            return numberOfPages + buttonNumber - maxButtonsAmoutn;
+          } else {
+            return activePage + buttonNumber - middleBtnNumber;
+          }
+        });
+
+      return {
+        ...state,
+        pagination: {...pagination, buttons, activePage }
+      };
     }
 
     default: {

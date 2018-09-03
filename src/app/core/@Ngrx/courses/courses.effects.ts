@@ -110,6 +110,7 @@ export class CoursesEffects {
               const { page, count, q } = this.reqParamsService.getParams();
 
               result.push(new RouterActions.Go({ path: ['/courses'], queryParams: { page: page - 1, count, q }  }));
+              result.push(new CoursesActions.UpdatePaginationButtons(page - 1));
             }
 
             result.push(new CoursesActions.DeleteCourseSuccess(payload));
@@ -134,6 +135,25 @@ export class CoursesEffects {
 
       return [
         new RouterActions.Go({ path: ['/courses'], queryParams: params }),
+        new CoursesActions.UpdatePaginationButtons(1),
+        new CoursesActions.GetCourses(params)
+      ];
+    })
+  );
+
+  @Effect()
+  paginationButtonClick$: Observable<Action> = this.actions$.pipe(
+    ofType(CoursesActions.CoursesActionTypes.PAGINATION_BUTTON_CLICK),
+    pluck('payload'),
+    switchMap((activePage: number) => {
+
+      const params: ReqParams = this.reqParamsService.getParams();
+
+      params.page = activePage;
+
+      return [
+        new RouterActions.Go({ path: ['/courses'], queryParams: params }),
+        new CoursesActions.UpdatePaginationButtons(activePage),
         new CoursesActions.GetCourses(params)
       ];
     })
@@ -150,7 +170,7 @@ export class CoursesEffects {
     ofType(CoursesActions.CoursesActionTypes.DELETE_COURSE_SUCCESS),
     pluck('payload'),
     map((payload: DeleteCoursePayload) => {
-      const params = this.reqParamsService.getDefaultParams();
+      const params = this.reqParamsService.getParams();
       const { page } = params;
 
       if (payload.isLast && page > 1) {

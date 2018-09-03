@@ -1,5 +1,4 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
 import { Subscription } from 'rxjs';
 import debounces from 'lodash.debounce';
 
@@ -16,23 +15,23 @@ export class CourseListToolboxComponent implements OnInit, OnDestroy {
   public searchQuery: string;
   private routerStateSub: Subscription;
   private routeQ: string;
-
+  private isInited = false;
   private debaunceTime = 300;
   private filterDebounce = debounces((q: string) => {
     this.store.dispatch(new CoursesActions.GetCoursesAndNavigateByQuery(q));
   }, this.debaunceTime);
 
-  constructor(
-    private store: Store<AppState>,
-    private activatedRoute: ActivatedRoute
-  ) { }
+  constructor(private store: Store<AppState>
+) { }
 
   ngOnInit(): void {
-    this.searchQuery = this.activatedRoute.snapshot.queryParams['q'] || '';
-
-    this.routerStateSub = this.store.pipe(select(getRouterState)).subscribe(
-      routerState => {
-        this.routeQ = routerState.state.queryParams.q;
+    this.routerStateSub = this.store.pipe(select(getRouterState)).subscribe((
+      { state: { queryParams } }) => {
+        if (!this.isInited) {
+          this.searchQuery = queryParams['q'] || '';
+          this.isInited = true;
+        }
+        this.routeQ = queryParams.q;
       }
     );
   }
