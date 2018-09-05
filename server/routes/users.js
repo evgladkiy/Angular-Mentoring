@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-var fs = require('fs');
+const fs = require('fs');
 
-var users = JSON.parse(fs.readFileSync('server/data/users.json', 'utf8'));
+const users = JSON.parse(fs.readFileSync('server/data/users.json', 'utf8'));
 
 router.get('', (req, res, next) => {
 	res.json(users);

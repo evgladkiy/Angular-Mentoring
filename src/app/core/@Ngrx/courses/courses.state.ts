@@ -15,9 +15,11 @@ export interface CoursesState {
     coursesCount: number;
     buttons: ReadonlyArray<number>;
   };
+  typesOfCourse: ReadonlyArray<string>;
+  coursesDifficulty: ReadonlyArray<string>;
 }
 
-export const initialState: CoursesState = {
+export const initialCoursesState: CoursesState = {
   courses: [],
   courseToDelete: null,
   courseToUpdate: null,
@@ -32,4 +34,6 @@ export const initialState: CoursesState = {
     coursesPerPage: 5,
     buttons: [1, 2, 3, 4, 5],
   },
+  typesOfCourse: ['Training', 'Lecture', 'Video course', 'Seminar'],
+  coursesDifficulty: ['For All', 'Novice', 'Intermediate', 'Advanced', 'Expert'],
 };

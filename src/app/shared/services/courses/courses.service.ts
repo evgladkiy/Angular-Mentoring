@@ -11,8 +11,6 @@ import { delay } from 'rxjs/operators';
 })
 export class CoursesService {
   private serverUrl = 'http://localhost:3000/courses';
-  private typesOfCourse: string[] = ['Training', 'Lecture', 'Video course', 'Seminar'];
-  private coursesDifficulty: string[] = ['For All', 'Novice', 'Intermediate', 'Advanced', 'Expert'];
 
   constructor(private http: HttpClient) {}
 
@@ -52,13 +50,5 @@ export class CoursesService {
   deleteCourse(id: string): Observable<InfoRes> {
     return this.http
       .delete<InfoRes>(`${this.serverUrl}/${id}`);
-  }
-
-  getTypesOfCourses(): string[] {
-    return this.typesOfCourse;
-  }
-
-  getDifficultyOfCourses(): string[] {
-    return this.coursesDifficulty;
   }
 }

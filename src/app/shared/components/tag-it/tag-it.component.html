@@ -1,14 +1,25 @@
-<ul class="tag-it">
-    <li class="tag-it__item" *ngFor="let item of items">
-      {{item.name}}
-      <span class="btn-container delete-btn" (click)="onClick(item.id)">
-        <i class="fas fa-times"></i>
-      </span>
-    </li>
-    <li class="tag-it__input-container">
-        <input
-            [id]="tagItId"  type="text" required
-            [name]="tagItId" [placeholder]="tagItId" [(ngModel)]="newItemName"
-            (keydown)="onKeyDown($event)" (blur)="onBlur()" (focus)="onFocus()" />
-    </li>
-</ul>
+<section>
+    <ul class="tag-it">
+        <li class="tag-it__item" *ngFor="let item of items">
+            {{item.name}}
+            <span class="btn-container delete-btn" (click)="onClick(item.id)">
+                <i class="fas fa-times"></i>
+            </span>
+        </li>
+        <li class="tag-it__input-container">
+            <input
+                [id]="tagItId"  type="text" required
+                [name]="tagItId" [placeholder]="tagItId" [(ngModel)]="newItemName"
+                (keydown)="onKeyDown($event)" (blur)="onBlur()" (focus)="onFocus()" />
+        </li>
+    </ul>
+    <ul class="all-items__list">
+        <li class="all-items__list-item" *ngFor="let letter of itemsForListLetters">
+          <ul>
+            <li>{{letter}}</li>
+            <li *ngFor="let item of itemsForList[letter]">{{item.name}}</li>
+          </ul>
+        </li>
+    </ul>
+</section>
+

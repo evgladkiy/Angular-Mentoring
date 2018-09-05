@@ -44,3 +44,12 @@ export const getPaginationCoursesPerPage = createSelector(
   (state: CoursesState) => state.pagination.coursesPerPage
 );
 
+export const getTypesOfCourses = createSelector(
+  getCoursesState,
+  (state: CoursesState) => state.typesOfCourse
+);
+
+export const getDifficultyOfCourses = createSelector(
+  getCoursesState,
+  (state: CoursesState) => state.coursesDifficulty
+);

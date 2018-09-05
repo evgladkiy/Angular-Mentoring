@@ -1,7 +1,15 @@
 import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Observable } from 'rxjs';
+
+import { Store } from '@ngrx/store';
+import {
+  AppState,
+  getTrainers,
+  getDifficultyOfCourses,
+  getTypesOfCourses
+} from '../../../core/@Ngrx';
 
 import { Course, Trainer } from '../../models';
-import { CoursesService } from '../../services';
 
 @Component({
   selector: 'app-course-form',
@@ -9,20 +17,21 @@ import { CoursesService } from '../../services';
   styleUrls: [ './course-form.component.less' ],
 })
 export class CourseFormComponent implements OnInit {
-  public typesOfCourse: string[];
-  public coursesDifficulty: string[];
   public date: string;
-
-  constructor(private coursesService: CoursesService) { }
+  public typesOfCourse$: Observable<ReadonlyArray<string>>;
+  public coursesDifficulty$: Observable<ReadonlyArray<string>>;
+  public allTrainers$: Observable<ReadonlyArray<Trainer>>;
+  constructor(private store: Store<AppState>) { }
 
   @Input() course?: Course;
   @Input() submitBtnText: string;
   @Output() submited = new EventEmitter<Course>();
 
   ngOnInit() {
-    this.typesOfCourse = this.coursesService.getTypesOfCourses();
-    this.coursesDifficulty = this.coursesService.getDifficultyOfCourses();
     this.date = this.getDateForInput();
+    this.allTrainers$ = this.store.select(getTrainers);
+    this.typesOfCourse$ = this.store.select(getTypesOfCourses);
+    this.coursesDifficulty$ = this.store.select(getDifficultyOfCourses);
 
     if (!this.course) {
       this.course = {

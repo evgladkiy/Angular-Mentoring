@@ -6,15 +6,17 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { EffectsModule } from '@ngrx/effects';
 import { routerReducers, RouterStateSerializerProvider } from './router';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
-
 import { RouterEffects } from './router/router.effects';
+import { trainersReducer, TrainersEffects } from './trainers';
+
 import { environment } from '../../../environments/environment';
 
 @NgModule({
   imports: [
     CommonModule,
     StoreModule.forRoot(routerReducers),
-    EffectsModule.forRoot([RouterEffects]),
+    EffectsModule.forRoot([RouterEffects, TrainersEffects]),
+    StoreModule.forFeature('trainers', trainersReducer),
     StoreRouterConnectingModule.forRoot(),
     !environment.production ? StoreDevtoolsModule.instrument() : []
   ],

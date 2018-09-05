@@ -29,7 +29,7 @@
             <label class="label label-required" for="difficulty">Difficulty</label>
             <app-droplist
                 droplistId="difficulty"
-                [items]="coursesDifficulty"
+                [items]="coursesDifficulty$ | async"
                 [value]="course.difficulty ? course.difficulty : 'Select Difficulty'"
                 (dropdownValueChanged)="onDropdownValueChanged($event, 'difficulty')">
             </app-droplist>
@@ -38,7 +38,7 @@
               <label class="label label-required" for="type">Type</label>
             <app-droplist
                 droplistId="type"
-                [items]="typesOfCourse"
+                [items]="typesOfCourse$ | async"
                 [value]="course.type ? course.type : 'Select Type'"
                 (dropdownValueChanged)="onDropdownValueChanged($event, 'type')">
             </app-droplist>
@@ -48,6 +48,7 @@
         <label class="label label-required" for="trainers">Trainers</label>
         <app-tag-it
             tagItId="trainer"
+            [allItems]="allTrainers$ | async"
             [items]="course.trainers"
             (tagItValueChanged)="onTagItValueChanged($event)">
         </app-tag-it>

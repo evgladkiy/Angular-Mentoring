@@ -8,7 +8,7 @@ import { EditCoursePageComponent } from './edit-course-page/edit-course-page.com
 import { AddCoursePageComponent } from './add-course-page/add-course-page.component';
 import { CoursesPageComponent } from './courses-page/courses-page.component';
 
-import { AuthGuard, CourseExistsGuard, CoursesPreloadingGuard } from './core/guards';
+import { AuthGuard, CourseExistsGuard, CoursesPreloadingGuard, TrainersPreloadingGuard } from './core/guards';
 
 const routes: Routes = [
   { path: '', redirectTo: '/courses', pathMatch: 'full' },
@@ -25,11 +25,12 @@ const routes: Routes = [
       {
         path: 'new',
         component: AddCoursePageComponent,
+        canActivate: [ TrainersPreloadingGuard ],
       },
       {
         path: ':id',
         component: EditCoursePageComponent,
-        canActivate: [ CourseExistsGuard ],
+        canActivate: [ CourseExistsGuard, TrainersPreloadingGuard ],
       },
     ],
   },
@@ -45,6 +46,7 @@ const routes: Routes = [
     AuthGuard,
     CourseExistsGuard,
     CoursesPreloadingGuard,
+    TrainersPreloadingGuard,
   ]
 })
 export class AppRoutingModule { }

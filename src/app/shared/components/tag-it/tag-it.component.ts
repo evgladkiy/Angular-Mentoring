@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, ElementRef, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
+import { Component, OnInit, OnChanges, Input, ElementRef,
+  Output, EventEmitter, ChangeDetectionStrategy, SimpleChanges } from '@angular/core';
 import { Trainer } from '../../models';
 
 @Component({
@@ -7,8 +8,9 @@ import { Trainer } from '../../models';
   styleUrls: ['./tag-it.component.less'],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TagItComponent implements OnInit {
+export class TagItComponent implements OnInit, OnChanges {
   @Input() items: Trainer[];
+  @Input() allItems: Partial<ReadonlyArray<Trainer>>;
   @Input() tagItId: string;
   @Output() tagItValueChanged = new EventEmitter<Trainer[]>();
 
@@ -16,7 +18,8 @@ export class TagItComponent implements OnInit {
   private newItemId: number;
   private focusBorderColor = '#30b6dd';
   private tagIt: HTMLElement;
-
+  public itemsForList: any;
+  public itemsForListLetters: string[];
   constructor(private el: ElementRef) { }
 
   private createTrainer(): Trainer {
@@ -37,6 +40,19 @@ export class TagItComponent implements OnInit {
     this.newItemId = this.items.reduce((acc, item) => (
       Number(item.id) >= acc ? Number(item.id) + 1 : acc
     ), 1);
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes.allItems) {
+      const allItems = changes.allItems.currentValue;
+
+      this.itemsForList = allItems.reduce((acc, item) => {
+        const firstLetter = item.name[0].toUpperCase();
+        acc[firstLetter] ? acc[firstLetter].push(item) : acc[firstLetter] = [item];
+        return acc;
+      }, {});
+      this.itemsForListLetters = Object.keys(this.itemsForList);
+    }
   }
 
   onKeyDown(event: KeyboardEvent): void {

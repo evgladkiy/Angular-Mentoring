@@ -1,7 +1,7 @@
-import { initialState, CoursesState } from './courses.state';
+import { initialCoursesState, CoursesState } from './courses.state';
 import { CoursesActions, CoursesActionTypes } from './courses.actions';
 
-export function coursesReducer(state = initialState, action: CoursesActions): CoursesState {
+export function coursesReducer(state = initialCoursesState, action: CoursesActions): CoursesState {
   switch (action.type) {
 
     case CoursesActionTypes.GET_COURSE:

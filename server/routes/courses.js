@@ -12,6 +12,7 @@ function processСourses(courses) {
 }
 
 let courses = JSON.parse(fs.readFileSync('server/data/courses.json', 'utf8'));
+
 courses = processСourses(courses);
 
 router.get('', (req, res, next) => {
