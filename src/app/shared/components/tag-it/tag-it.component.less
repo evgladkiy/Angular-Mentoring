@@ -1,6 +1,9 @@
 @import "variables";
 @import "mixins";
 
+section {
+    position: relative;
+}
 .tag-it {
     display: flex;
     flex-wrap: wrap;
@@ -9,20 +12,11 @@
     border: 1px solid #d9dbe3;
     border-radius: 3px;
     font-size: 1.6rem;
-
-    &__item {
-        height: 30px;
-        margin: 12px 12px 0 0 ;
-        padding: 0 12px;
-        background: #f2f3f7;
-        font-size: 1.4rem;
-        line-height: 30px;
-        vertical-align: middle;
-    }
+    min-height: 48px;
 
     &__input-container {
         flex: 1;
-        margin-top: 12px;
+        margin-top: 8px;
 
         & input {
             height: 30px;
@@ -34,18 +28,107 @@
     }
 
     & .delete-btn {
-        margin-left: 5px;
-        padding: 0 5px;
+        margin-left: 3px;
+        padding: 0 3px;
         cursor: pointer;
 
         & i {
             font-size: 1rem;
-            opacity: 0.7;
+            opacity: 0.5;
             .transition;
         }
 
         &:hover i {
-          opacity: 0.5;
+            opacity: 0.5;
         }
     }
+}
+.letter-items__list-item,
+.tag-it__item {
+    height: 30px;
+    margin: 8px 8px 0 0 ;
+    padding: 0 12px;
+    background: #f2f3f7;
+    font-size: 1.4rem;
+    line-height: 30px;
+    vertical-align: middle;
+    border-radius: 3px;
+
+}
+
+.letter-items {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__list-item {
+      display: flex;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+
+    &__letter {
+      font-size: 16px;
+      font-weight: 600;
+      opacity: 0.75;
+    }
+}
+
+.all-items {
+
+    &__list-container {
+        position: absolute;
+        top: 54px;
+        left: 0;
+        z-index: 2;
+        border-radius: 3px;
+        background: white;
+        box-shadow: 0px 1px 10px 2px #e0e0e0;
+
+       &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: calc(100% - 17px);
+            height: 50px;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), white 70%, white);
+        }
+    }
+
+    &__list {
+        flex-direction: column;
+        padding: 0 12px;
+        max-height: 260px;
+        overflow-y: scroll;
+    }
+
+    &__list-item {
+        margin-top: 12px;
+    }
+
+    &__list-item:last-of-type {
+        padding-bottom: 55px;
+    }
+}
+
+.buttons-container {
+    position: absolute;
+    padding: 12px;
+    z-index: 3;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    width: calc(100% - 17px);
+}
+
+.tag-it__btn {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    color: @blue;
 }

@@ -9,17 +9,26 @@
         <li class="tag-it__input-container">
             <input
                 [id]="tagItId"  type="text" required
-                [name]="tagItId" [placeholder]="tagItId" [(ngModel)]="newItemName"
+                [name]="tagItId" [placeholder]="'Start type ' + tagItId + ' name'" [(ngModel)]="newItemName"
                 (keydown)="onKeyDown($event)" (blur)="onBlur()" (focus)="onFocus()" />
         </li>
     </ul>
-    <ul class="all-items__list">
-        <li class="all-items__list-item" *ngFor="let letter of itemsForListLetters">
-          <ul>
-            <li>{{letter}}</li>
-            <li *ngFor="let item of itemsForList[letter]">{{item.name}}</li>
-          </ul>
-        </li>
-    </ul>
+    <div class="all-items__list-container">
+      <ul class="all-items__list">
+          <li class="all-items__list-item" *ngFor="let letter of itemsForListLetters">
+              <span class="letter-items__letter">{{letter}}</span>
+              <ul class="letter-items__list">
+                  <li *ngFor="let item of itemsForList[letter]">
+                      <!-- <a class="letter-items__list-item btn-container" [appHighlightByText]='newItemName'>{{item.name}}</a> -->
+                      <a class="letter-items__list-item btn-container">{{item.name}}</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+      <div class="buttons-container">
+          <button class="btn-container tag-it__btn">Hide all</button>
+          <button class="btn-container tag-it__btn">Add new {{tagItId}}</button>
+      </div>
+    </div>
 </section>
 

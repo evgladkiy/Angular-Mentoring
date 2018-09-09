@@ -11,6 +11,7 @@
     line-height: 1;
     text-align: center;
     cursor: pointer;
+    .transition;
 
     &:hover {
         text-decoration: none;
@@ -52,6 +53,11 @@
     & i {
         right: 5px;
     }
+}
+
+.btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.8;
 }
 
 /* ===== button size ===== */
@@ -104,12 +110,12 @@
     border-color: @main;
     color: @main;
 
-    &:hover {
+    &:not(:disabled):hover {
         background: @main;
         color: @txt-color;
     }
 
-    &:active {
+    &:not(:disabled):active {
         border-color: @active;
         background: @active;
         color: @txt-color;
@@ -120,13 +126,13 @@
         background: @main;
         color: @txt-color;
 
-        &:hover {
+        &:not(:disabled):hover {
             border-color: @hover;
             background: @hover;
             color: @txt-color;
         }
 
-        &:active {
+        &:not(:disabled):active {
             border-color: @active;
             background: @active;
             color: @txt-color;

@@ -19,7 +19,6 @@ export class TrainersEffects {
   getTrainers$: Observable<Action> = this.actions$.pipe(
     ofType(TrainersActions.TrainersActionTypes.GET_TRAINERS),
     switchMap(() => {
-      console.log('get trainers effect');
       return this.trainersService
         .fetchCourses()
         .pipe(

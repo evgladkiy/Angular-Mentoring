@@ -1,18 +1,8 @@
 .input-container {
     width: 100%;
-    margin-bottom: 20px;
-}
-
-.label {
-    display: inline-block;
-    font-size: 1.6rem;
-    margin-bottom: 6px;
-
-    &.label-required::after {
-      content: "*";
-      padding-left: 5px;
-      color: @fuchsia;
-   }
+    padding-bottom: 24px;
+    position: relative;
+    margin-bottom: 10px;
 }
 
 .checkbox-container {
@@ -73,8 +63,8 @@
 
   &.label-required::after {
       content: "*";
-      padding-left: 5px;
-      color: @fuchsia;
+      padding-left: 2px;
+      color: @input-error-color;
   }
 }
 
@@ -99,10 +89,22 @@
     }
 }
 
+.ng-invalid.ng-touched,
+.ng-invalid.ng-touched > input[type="text"] {
+    border-color: @input-error-color;
+}
+
+.input-error {
+    font-size: 1.5rem;
+    color: @input-error-color;
+    position: absolute;
+    bottom: 0;
+}
+
 textarea.input {
     padding: 12px;
     resize: vertical;
-    min-height: 110px;
+    min-height: 115px;
 }
 
 .form-input:focus {

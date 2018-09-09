@@ -1,5 +1,6 @@
+<label class="label label-required" for="difficulty">{{droplistId | capitalized}}</label>
 <div class="droplist">
-    <input class="droplist__input" type="checkbox" [id]="droplistId">
+    <input class="droplist__input" type="checkbox" [id]="droplistId" [(ngModel)]="checked">
     <label class="droplist__label input" [for]="droplistId">{{value}}
         <i class="fas fa-angle-down droplist__label-icon"></i>
     </label>
@@ -9,3 +10,4 @@
         </li>
     </ul>
 </div>
+`

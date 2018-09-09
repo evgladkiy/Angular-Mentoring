@@ -44,7 +44,7 @@ export class TagItComponent implements OnInit, OnChanges {
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.allItems) {
-      const allItems = changes.allItems.currentValue;
+      const allItems = changes.allItems.currentValue.slice(0, 10);
 
       this.itemsForList = allItems.reduce((acc, item) => {
         const firstLetter = item.name[0].toUpperCase();

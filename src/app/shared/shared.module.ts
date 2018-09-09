@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { CapitalizedPipe, DurationPipe, OrderByPipe } from './pipes';
+import { HighlightByDateDirective, HighlightByTextDirective } from './directives';
 import {
   AuthService,
   CoursesService,
@@ -16,14 +17,17 @@ import {
   CourseFormComponent,
   ModalWindowComponent,
   BreadcrumbsComponent,
+  DurationInputComponent,
+  DateInputComponent,
 } from './components';
 
 @NgModule({
   imports: [
-    FormsModule,
     CommonModule,
     RouterModule,
     HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   declarations: [
     OrderByPipe,
@@ -34,6 +38,10 @@ import {
     CourseFormComponent,
     ModalWindowComponent,
     BreadcrumbsComponent,
+    HighlightByDateDirective,
+    HighlightByTextDirective,
+    DurationInputComponent,
+    DateInputComponent,
   ],
   providers: [
     AuthService,
@@ -49,6 +57,8 @@ import {
     CourseFormComponent,
     ModalWindowComponent,
     BreadcrumbsComponent,
+    HighlightByDateDirective,
+    HighlightByTextDirective
   ],
 })
 export class SharedModule { }

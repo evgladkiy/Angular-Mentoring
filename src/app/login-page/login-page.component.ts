@@ -4,7 +4,7 @@ import { Store } from '@ngrx/store';
 import { AppState } from '../core/@Ngrx';
 import * as UserActions from './../core/@Ngrx/user/user.actions';
 
-import { User } from '../shared/models';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-login-page',
@@ -12,27 +12,25 @@ import { User } from '../shared/models';
   styleUrls: [ './login-page.component.less' ],
 })
 export class LoginPageComponent implements OnInit {
-  public user: Partial<User>;
+  public userForm = new FormGroup({
+    login: new FormControl('', [Validators.required, Validators.minLength(3)]),
+    password: new FormControl('', [Validators.required, Validators.minLength(3)])
+  });
 
   constructor(private store: Store<AppState>) { }
 
-  private resetUser(): void {
-    this.user = {
-      login: '',
-      password: '',
-    };
-  }
-
   ngOnInit() {
     this.store.dispatch(new UserActions.Logout());   // for force open login page
-    this.resetUser();
+    this.userForm.setValue({
+      login: '',
+      password: ''
+    });
   }
 
   onSubmit(): void {
-    const { login, password } = this.user;
-
+    const { value: user, value: { login, password } } = this.userForm;
     if (login.trim() !== '' && password.trim() !== '') {
-      this.store.dispatch(new UserActions.Authenticate(this.user));
+      this.store.dispatch(new UserActions.Authenticate(user));
     }
   }
 }

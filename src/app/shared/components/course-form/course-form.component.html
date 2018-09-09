@@ -1,50 +1,47 @@
-<form (keydown.enter)="$event.preventDefault()" #courseForm="ngForm" novalidate>
+<form [formGroup]="courseForm" (keydown.enter)="$event.preventDefault()">
     <div class="input-container">
         <label class="label label-required" for="title">Title</label>
-        <input id="title" class="input" type="text" name="title" placeholder="course title" [(ngModel)]="course.title" required />
+        <input id="title" class="input" type="text" name="title"
+            placeholder="course title"formControlName="title" />
+        <p class="input-error"*ngIf=
+            "courseForm.controls['title'].errors
+            && courseForm.controls['title'].touched
+            && courseForm.controls['title'].errors.required"
+        >Course title is required</p>
+        <p class="input-error" *ngIf=
+            "courseForm.controls['title'].errors
+            && courseForm.controls['title'].touched
+            && !courseForm.controls['title'].errors.required
+            && courseForm.controls['title'].errors.maxlength"
+        >Course title should be less than 50 characters</p>
     </div>
     <div class="input-container">
         <label class="label label-required" for="description">Description</label>
-        <textarea id="description" class="input" name="description" placeholder="course description" [(ngModel)]="course.description" required ></textarea>
+        <textarea id="description" class="input" name="description"
+            placeholder="course description" formControlName="description"></textarea>
+        <p class="input-error"*ngIf=
+            "courseForm.controls['description'].errors
+            && courseForm.controls['description'].touched
+            && courseForm.controls['description'].errors.required"
+        >Course title is required</p>
+        <p class="input-error" *ngIf=
+            "courseForm.controls['description'].errors
+            && courseForm.controls['description'].touched
+            && !courseForm.controls['description'].errors.required
+            && courseForm.controls['description'].errors.maxlength"
+        >Course title should be less than 500 characters</p>
     </div>
     <div class="input-container">
         <label class="label label-required" for="img">Course poster</label>
-        <input id="img" class="input" type="text" name="img" placeholder="course img" [(ngModel)]="course.img" required />
+        <input id="img" class="input" type="text" name="img"
+            placeholder="course img" formControlName="img" />
+        <p class="input-error"*ngIf=
+            "courseForm.controls['img'].errors
+            && courseForm.controls['img'].touched
+            && courseForm.controls['img'].errors.required"
+        >Course title is required</p>
     </div>
-    <div class="small-inputs-container">
-        <div class="input-container">
-            <label class="label label-required" for="date">Date</label>
-            <input id="date" class="input" type="date" name="date" placeholder="course date" [(ngModel)]="date" required />
-        </div>
-        <div class="duration-container">
-            <div class="input-container">
-                <label class="label label-required" for="date">Duration in minutes</label>
-                <input id="duration" class="input" type="number" name="duration"  max="3600" [(ngModel)]="course.duration" required />
-            </div>
-            <p>{{course.duration | duration}}</p>
-        </div>
-    </div>
-    <div class="small-inputs-container">
-        <div class="input-container">
-            <label class="label label-required" for="difficulty">Difficulty</label>
-            <app-droplist
-                droplistId="difficulty"
-                [items]="coursesDifficulty$ | async"
-                [value]="course.difficulty ? course.difficulty : 'Select Difficulty'"
-                (dropdownValueChanged)="onDropdownValueChanged($event, 'difficulty')">
-            </app-droplist>
-        </div>
-          <div class="input-container">
-              <label class="label label-required" for="type">Type</label>
-            <app-droplist
-                droplistId="type"
-                [items]="typesOfCourse$ | async"
-                [value]="course.type ? course.type : 'Select Type'"
-                (dropdownValueChanged)="onDropdownValueChanged($event, 'type')">
-            </app-droplist>
-          </div>
-    </div>
-    <div class="input-container">
+    <!-- <div class="input-container">
         <label class="label label-required" for="trainers">Trainers</label>
         <app-tag-it
             tagItId="trainer"
@@ -52,20 +49,118 @@
             [items]="course.trainers"
             (tagItValueChanged)="onTagItValueChanged($event)">
         </app-tag-it>
+    </div> -->
+    <div class="small-inputs-container">
+        <div class="input-container">
+            <app-droplist
+                droplistId="difficulty"
+                [items]="coursesDifficulty$ | async"
+                formControlName="difficulty">
+            </app-droplist>
+            <p class="input-error" *ngIf=
+                "courseForm.controls['difficulty'].errors
+                && courseForm.controls['difficulty'].touched
+                && courseForm.controls['difficulty'].errors.notSelected"
+            >You should select course difficulty</p>
+        </div>
+            <div class="input-container">
+                <app-droplist
+                    droplistId="type"
+                    [items]="typesOfCourse$ | async"
+                    formControlName="type">
+                </app-droplist>
+                <p class="input-error" *ngIf=
+                    "courseForm.controls['type'].errors
+                    && courseForm.controls['type'].touched
+                    && courseForm.controls['type'].errors.notSelected"
+                >You should select type of course</p>
+            </div>
+    </div>
+    <div class="small-inputs-container">
+        <div class="input-container">
+            <app-date-input formControlName="date"></app-date-input>
+            <p class="input-error" *ngIf=
+                "courseForm.controls['date'].errors
+                && courseForm.controls['date'].touched
+                && courseForm.controls['date'].errors.required"
+            >Course date is required</p>
+            <p class="input-error" *ngIf=
+                "courseForm.controls['date'].errors
+                && courseForm.controls['date'].touched
+                && !courseForm.controls['date'].errors.required
+                && courseForm.controls['date'].errors.invalidDate"
+            >Data should be dd/mm/yyyy</p>
+        </div>
+        <div class="duration-container">
+            <div class="input-container">
+                <app-duration-input formControlName="duration"></app-duration-input>
+                <p class="input-error" *ngIf=
+                    "courseForm.controls['duration'].errors
+                    && courseForm.controls['duration'].touched
+                    && courseForm.controls['duration'].errors.required"
+                >Course duration is required</p>
+                <p class="input-error" *ngIf=
+                    "courseForm.controls['duration'].errors
+                    && courseForm.controls['duration'].touched
+                    && !courseForm.controls['duration'].errors.required
+                    && courseForm.controls['duration'].errors.notInteger"
+                >Duration must be an integer</p>
+                <p class="input-error" *ngIf=
+                    "courseForm.controls['duration'].errors
+                    && courseForm.controls['duration'].touched
+                    && !courseForm.controls['duration'].errors.required
+                    && !courseForm.controls['duration'].errors.notInteger
+                    && courseForm.controls['duration'].errors.max"
+                >Duration must be an less than 900 minutes</p>
+            </div>
+            <p class="duration-value" *ngIf="courseForm.controls.duration.valid">
+                {{courseForm.controls.duration.value | duration}}
+            </p>
+        </div>
     </div>
     <div class="small-inputs-container">
         <div class="input-container">
             <label class="label label-required" for="rating">Rating (1-100)</label>
-            <input id="rating" class="input" type="number" name="rating" min="0" max="100" placeholder="course rating" [(ngModel)]="course.rating" required />
+            <input id="rating" class="input" type="number" name="rating"
+                placeholder="course rating" formControlName="rating" />
+            <p class="input-error"*ngIf=
+                "courseForm.controls['rating'].errors
+                && courseForm.controls['rating'].touched
+                && courseForm.controls['rating'].errors.required"
+            >Course rating is required</p>
+            <p class="input-error" *ngIf=
+                "courseForm.controls['rating'].errors
+                && courseForm.controls['rating'].touched
+                && !courseForm.controls['rating'].errors.required
+                && courseForm.controls['rating'].errors.min"
+            >Course rating should be equal or greater than 0</p>
+            <p class="input-error" *ngIf=
+                "courseForm.controls['rating'].errors
+                && courseForm.controls['rating'].touched
+                && !courseForm.controls['rating'].errors.required
+                && courseForm.controls['rating'].errors.max"
+            >Course rating should be equal or less than 100</p>
         </div>
           <div class="input-container">
               <label class="label label-required" for="language">Language</label>
-              <input id="language" class="input" type="text" name="language"  max="3600" placeholder="course language" [(ngModel)]="course.language" required />
+              <input id="language" class="input" type="text" name="language"
+                  placeholder="course language" formControlName="language" />
+              <p class="input-error"*ngIf=
+                  "courseForm.controls['language'].errors
+                  && courseForm.controls['language'].touched
+                  && courseForm.controls['language'].errors.required"
+              >Course language is required</p>
+              <p class="input-error" *ngIf=
+                  "courseForm.controls['language'].errors
+                  && courseForm.controls['language'].touched
+                  && !courseForm.controls['language'].errors.required
+                  && courseForm.controls['language'].errors.minlength"
+              >Course language should have at least 2 characters</p>
           </div>
     </div>
     <div class="checkbox-container">
         <label class="label" for="isFavorite">Favorite Course: </label>
-        <input id="isFavorite" class="checkbox" type="checkbox" name="isFavorite" [(ngModel)]="course.isFavorite" required />
+        <input id="isFavorite" class="checkbox" type="checkbox" name="isFavorite" formControlName="isFavorite" />
         <label class="label-icon" for="isFavorite"><i class="fas fa-check"></i></label>
     </div>
     <div class="bnts-container">

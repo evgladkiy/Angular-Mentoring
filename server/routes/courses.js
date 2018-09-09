@@ -6,6 +6,8 @@ function processСourses(courses) {
     return courses
         .map((course) => {
             course.date = new Date(course.date);
+            course.title = course.title.slice(0, 50);
+            course.description = course.description.slice(0, 500);
             return course;
         })
         .sort((courseA, courseB) => Number(courseA.date) - Number(courseB.date));

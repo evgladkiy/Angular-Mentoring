@@ -5,6 +5,7 @@ import debounces from 'lodash.debounce';
 import { Store, select } from '@ngrx/store';
 import { AppState, getRouterState } from '../../core/@Ngrx';
 import * as CoursesActions from './../../core/@Ngrx/courses/courses.actions';
+import { FormControl, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-course-list-toolbox',
@@ -12,7 +13,9 @@ import * as CoursesActions from './../../core/@Ngrx/courses/courses.actions';
   styleUrls: ['./course-list-toolbox.component.less']
 })
 export class CourseListToolboxComponent implements OnInit, OnDestroy {
-  public searchQuery: string;
+  public searchForm = new FormGroup({
+    searchQuery: new FormControl(),
+  });
   private routerStateSub: Subscription;
   private routeQ: string;
   private isInited = false;
@@ -28,7 +31,8 @@ export class CourseListToolboxComponent implements OnInit, OnDestroy {
     this.routerStateSub = this.store.pipe(select(getRouterState)).subscribe((
       { state: { queryParams } }) => {
         if (!this.isInited) {
-          this.searchQuery = queryParams['q'] || '';
+
+          this.searchForm.setValue({ searchQuery: queryParams['q'] || '' });
           this.isInited = true;
         }
         this.routeQ = queryParams.q;

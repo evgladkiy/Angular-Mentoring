@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
 import { SharedModule } from '../shared/shared.module';
@@ -12,18 +12,16 @@ import { CourseListItemFooterComponent } from './course-list-item-footer/course-
 import { CourseListPaginationComponent } from './course-list-pagination/course-list-pagination.component';
 import { CourseListToolboxComponent } from './course-list-toolbox/course-list-toolbox.component';
 
-import { HighlightByDateDirective } from './highlight-by-date.directive';
 import { CoursesFilterPipe } from './courses-filter.pipe';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
+    ReactiveFormsModule,
     SharedModule,
     RouterModule,
   ],
   declarations: [
-    HighlightByDateDirective,
     CourseListPageComponent,
     CoursesFilterPipe,
     CourseListItemComponent,

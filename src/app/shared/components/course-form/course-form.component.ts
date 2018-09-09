@@ -1,6 +1,6 @@
-import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output, OnChanges, SimpleChanges } from '@angular/core';
 import { Observable } from 'rxjs';
-
+import { dateValidator, integerValidator, dropListValidator } from './../../../core/validators';
 import { Store } from '@ngrx/store';
 import {
   AppState,
@@ -10,13 +10,26 @@ import {
 } from '../../../core/@Ngrx';
 
 import { Course, Trainer } from '../../models';
+import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-course-form',
   templateUrl: './course-form.component.html',
   styleUrls: [ './course-form.component.less' ],
 })
-export class CourseFormComponent implements OnInit {
+export class CourseFormComponent implements OnInit, OnChanges {
+  public courseForm = new FormGroup({
+    title: new FormControl('', [Validators.required, Validators.maxLength(50)]),
+    description: new FormControl('', [Validators.required, Validators.maxLength(500)]),
+    img: new FormControl('https://loremflickr.com/500/300?random=12', [Validators.required]),
+    date: new FormControl(this.getDateForInput(), [Validators.required, dateValidator]),
+    difficulty: new FormControl('Select difficulty', [dropListValidator]),
+    type: new FormControl('Select type', [dropListValidator]),
+    duration: new FormControl('', [Validators.required, integerValidator, Validators.max(900)]),
+    language: new FormControl('', [Validators.required, Validators.minLength(2)]),
+    rating: new FormControl(0, [Validators.required, Validators.max(100), Validators.min(0)]),
+    isFavorite: new FormControl(false),
+  });
   public date: string;
   public typesOfCourse$: Observable<ReadonlyArray<string>>;
   public coursesDifficulty$: Observable<ReadonlyArray<string>>;
@@ -28,47 +41,67 @@ export class CourseFormComponent implements OnInit {
   @Output() submited = new EventEmitter<Course>();
 
   ngOnInit() {
-    this.date = this.getDateForInput();
+    this.date = this.getDateForInput(new Date());
     this.allTrainers$ = this.store.select(getTrainers);
     this.typesOfCourse$ = this.store.select(getTypesOfCourses);
     this.coursesDifficulty$ = this.store.select(getDifficultyOfCourses);
 
-    if (!this.course) {
-      this.course = {
-        _id: String(Math.random()),
-        title: null,
-        description: null,
-        date: null,
-        duration: 0,
-        trainers: [],
-        img: 'https://loremflickr.com/500/300?random=12',
-        rating: 0,
-        language: null,
-        difficulty: null,
-        type: null,
-        isFavorite: false,
-      };
+    // if (!this.course) {
+      // this.course = {
+      //   _id: String(Math.random()),
+      //   title: null,
+      //   description: null,
+      //   date: null,
+      //   duration: 0,
+      //   trainers: [],
+      //   // img: 'https://loremflickr.com/500/300?random=12',
+      //   rating: 0,
+      //   language: null,
+      //   difficulty: null,
+      //   type: null,
+      //   isFavorite: false,
+      // };
+    // }
+  }
+
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes.course && changes.course.currentValue) {
+      const course: Course = changes.course.currentValue;
+      this.courseForm.setValue({
+        title: course.title,
+        description: course.description,
+        img: course.img,
+        date: this.getDateForInput(new Date(this.course.date)),
+        duration: course.duration,
+        difficulty: course.difficulty,
+        type: course.type,
+        language: course.language,
+        rating: course.rating,
+        isFavorite: course.isFavorite,
+      });
     }
   }
 
-  private getDateForInput(): string {
-    const date: Date = this.course ? new Date(this.course.date) : new Date();
+  private getDateForInput(date = new Date()): string {
     const courseYear: number = date.getFullYear();
     const month: number = date.getMonth() + 1;
     const courseDate: string = date.getDate() < 10 ? '0' + date.getDate() : String(date.getDate());
     const courseMonth: string = month < 10 ? '0' + month : String(month);
 
-    return `${courseYear}-${courseMonth}-${courseDate}`;
+    return `${courseDate}/${courseMonth}/${courseYear}`;
   }
 
   onSubmit(): void {
-    this.course.date = new Date(this.date);
-    this.submited.emit(this.course);
+    console.log(this.courseForm);
+    console.log(this.courseForm.value);
+    // this.course.date = new Date(this.date);
+    // this.submited.emit(this.course);
   }
 
   onTagItValueChanged(trainers: Trainer[]): void {
     this.course.trainers = trainers;
   }
+
   onDropdownValueChanged(value: string, prop: string): void {
     this.course[prop] = value;
   }

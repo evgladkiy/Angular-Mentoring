@@ -1,36 +1,63 @@
-import { Component, OnInit, Input, ElementRef, EventEmitter, Output, HostListener } from '@angular/core';
+import { Component, Input, HostListener, forwardRef } from '@angular/core';
+import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
 @Component({
   selector: 'app-droplist',
   templateUrl: './droplist.component.html',
-  styleUrls: ['./droplist.component.less']
+  styleUrls: ['./droplist.component.less'],
+  providers: [{
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: forwardRef(() => DroplistComponent),
+    multi: true
+  }]
 })
-export class DroplistComponent implements OnInit {
+export class DroplistComponent implements ControlValueAccessor {
   @Input() items: string[];
-  @Input() value: string;
   @Input() droplistId: string;
-  @Output() dropdownValueChanged = new EventEmitter<string>();
 
-  private checkbox: HTMLInputElement;
+  public checked = false;
+  currentValue: string;
 
   @HostListener('body:click', ['$event'])
   onclick(event: any): void {
     const droplist: HTMLElement = event.target.closest('app-droplist');
     if (!droplist || (droplist && droplist.getAttribute('droplistId') !== this.droplistId)) {
-      this.checkbox.checked = false;
+      if (this.checked) {
+        this.onTouched();
+        this.checked = false;
+      }
     }
-  }
-
-  constructor(private el: ElementRef) { }
-
-  ngOnInit() {
-      const nativeElement: HTMLElement = this.el.nativeElement;
-      this.checkbox = nativeElement.querySelector('.droplist__input');
   }
 
   onClick(item: string): void {
       this.value = item;
-      this.checkbox.checked = false;
-      this.dropdownValueChanged.emit(item);
+      this.checked = false;
+      this.onTouched();
+  }
+
+  set value(newValue) {
+    this.currentValue = newValue;
+    this.onChange(newValue);
+  }
+
+  get value( ) {
+    return this.currentValue;
+  }
+
+  onChange = (i) => {};
+  onTouched = () => {};
+
+  registerOnChange(fn: any) {
+    this.onChange = fn;
+  }
+
+  registerOnTouched(fn: any) {
+    this.onTouched = fn;
+  }
+
+  writeValue(value: any) {
+    if (value !== this.currentValue) {
+      this.currentValue = value;
+    }
   }
 }
