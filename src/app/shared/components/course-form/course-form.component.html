@@ -41,15 +41,18 @@
             && courseForm.controls['img'].errors.required"
         >Course title is required</p>
     </div>
-    <!-- <div class="input-container">
-        <label class="label label-required" for="trainers">Trainers</label>
+    <div class="input-container">
         <app-tag-it
             tagItId="trainer"
             [allItems]="allTrainers$ | async"
-            [items]="course.trainers"
-            (tagItValueChanged)="onTagItValueChanged($event)">
-        </app-tag-it>
-    </div> -->
+            formControlName="trainers"
+        ></app-tag-it>
+        <p class="input-error"*ngIf=
+            "courseForm.controls['trainers'].errors
+            && courseForm.controls['trainers'].touched
+            && courseForm.controls['trainers'].errors.tagsNotSelected"
+        >At least one trainer should be selected</p>
+    </div>
     <div class="small-inputs-container">
         <div class="input-container">
             <app-droplist

@@ -16,7 +16,7 @@ export class DroplistComponent implements ControlValueAccessor {
   @Input() droplistId: string;
 
   public checked = false;
-  currentValue: string;
+  public currentValue: string;
 
   @HostListener('body:click', ['$event'])
   onclick(event: any): void {

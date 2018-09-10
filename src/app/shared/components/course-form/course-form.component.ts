@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, EventEmitter, Output, OnChanges, SimpleChanges } from '@angular/core';
 import { Observable } from 'rxjs';
-import { dateValidator, integerValidator, dropListValidator } from './../../../core/validators';
+import { dateValidator, integerValidator, dropListValidator, tagItValidator } from './../../../core/validators';
 import { Store } from '@ngrx/store';
 import {
   AppState,
@@ -25,12 +25,13 @@ export class CourseFormComponent implements OnInit, OnChanges {
     date: new FormControl(this.getDateForInput(), [Validators.required, dateValidator]),
     difficulty: new FormControl('Select difficulty', [dropListValidator]),
     type: new FormControl('Select type', [dropListValidator]),
+    trainers: new FormControl([], [tagItValidator]),
     duration: new FormControl('', [Validators.required, integerValidator, Validators.max(900)]),
     language: new FormControl('', [Validators.required, Validators.minLength(2)]),
     rating: new FormControl(0, [Validators.required, Validators.max(100), Validators.min(0)]),
     isFavorite: new FormControl(false),
   });
-  public date: string;
+  // public date: string;
   public typesOfCourse$: Observable<ReadonlyArray<string>>;
   public coursesDifficulty$: Observable<ReadonlyArray<string>>;
   public allTrainers$: Observable<ReadonlyArray<Trainer>>;
@@ -41,32 +42,15 @@ export class CourseFormComponent implements OnInit, OnChanges {
   @Output() submited = new EventEmitter<Course>();
 
   ngOnInit() {
-    this.date = this.getDateForInput(new Date());
     this.allTrainers$ = this.store.select(getTrainers);
     this.typesOfCourse$ = this.store.select(getTypesOfCourses);
     this.coursesDifficulty$ = this.store.select(getDifficultyOfCourses);
-
-    // if (!this.course) {
-      // this.course = {
-      //   _id: String(Math.random()),
-      //   title: null,
-      //   description: null,
-      //   date: null,
-      //   duration: 0,
-      //   trainers: [],
-      //   // img: 'https://loremflickr.com/500/300?random=12',
-      //   rating: 0,
-      //   language: null,
-      //   difficulty: null,
-      //   type: null,
-      //   isFavorite: false,
-      // };
-    // }
   }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.course && changes.course.currentValue) {
       const course: Course = changes.course.currentValue;
+
       this.courseForm.setValue({
         title: course.title,
         description: course.description,
@@ -74,6 +58,7 @@ export class CourseFormComponent implements OnInit, OnChanges {
         date: this.getDateForInput(new Date(this.course.date)),
         duration: course.duration,
         difficulty: course.difficulty,
+        trainers: course.trainers,
         type: course.type,
         language: course.language,
         rating: course.rating,
@@ -98,11 +83,11 @@ export class CourseFormComponent implements OnInit, OnChanges {
     // this.submited.emit(this.course);
   }
 
-  onTagItValueChanged(trainers: Trainer[]): void {
-    this.course.trainers = trainers;
-  }
+  // onTagItValueChanged(trainers: Trainer[]): void {
+  //   this.course.trainers = trainers;
+  // }
 
-  onDropdownValueChanged(value: string, prop: string): void {
-    this.course[prop] = value;
-  }
+  // onDropdownValueChanged(value: string, prop: string): void {
+  //   this.course[prop] = value;
+  // }
 }

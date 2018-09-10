@@ -1,33 +1,36 @@
+<label class="label label-required" for="trainers">Trainers</label>
 <section>
-    <ul class="tag-it">
-        <li class="tag-it__item" *ngFor="let item of items">
+    <ul [ngClass]="{'tag-it':true, 'focused': shouldShowList}">
+        <li class="tag-it__item" *ngFor="let item of currentValue">
             {{item.name}}
-            <span class="btn-container delete-btn" (click)="onClick(item.id)">
+            <span class="btn-container delete-btn" (click)="onDeleteItem(item.id)">
                 <i class="fas fa-times"></i>
             </span>
         </li>
         <li class="tag-it__input-container">
             <input
-                [id]="tagItId"  type="text" required
+                [id]="tagItId"  type="text" required #tagInput
                 [name]="tagItId" [placeholder]="'Start type ' + tagItId + ' name'" [(ngModel)]="newItemName"
-                (keydown)="onKeyDown($event)" (blur)="onBlur()" (focus)="onFocus()" />
+                (focus)="onFocus()" (ngModelChange)="onModelChanged($event)"/>
         </li>
     </ul>
-    <div class="all-items__list-container">
+    <div *ngIf="shouldShowList" class="all-items__list-container" id="items-list">
       <ul class="all-items__list">
+          <li class="all-items__error" *ngIf="itemsForListLetters.length===0" >Cannot find trainers...</li>
           <li class="all-items__list-item" *ngFor="let letter of itemsForListLetters">
               <span class="letter-items__letter">{{letter}}</span>
               <ul class="letter-items__list">
                   <li *ngFor="let item of itemsForList[letter]">
                       <!-- <a class="letter-items__list-item btn-container" [appHighlightByText]='newItemName'>{{item.name}}</a> -->
-                      <a class="letter-items__list-item btn-container">{{item.name}}</a>
+                      <a class="letter-items__list-item btn-container" (click)="onItemClick(item)">{{item.name}}</a>
                   </li>
               </ul>
           </li>
       </ul>
       <div class="buttons-container">
-          <button class="btn-container tag-it__btn">Hide all</button>
-          <button class="btn-container tag-it__btn">Add new {{tagItId}}</button>
+          <button class="btn-container tag-it__btn" (click)="onCloseBtnClick()">Hide all</button>
+          <button class="btn-container tag-it__btn" (click)="onClearBtnClick()">Clear</button>
+          <button class="btn-container tag-it__btn" (click)="onAddBtnClick(tagInput.value)">Add new {{tagItId}}</button>
       </div>
     </div>
 </section>

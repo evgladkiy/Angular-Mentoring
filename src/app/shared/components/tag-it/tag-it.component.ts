@@ -1,83 +1,136 @@
 import { Component, OnInit, OnChanges, Input, ElementRef,
-  Output, EventEmitter, ChangeDetectionStrategy, SimpleChanges } from '@angular/core';
+  ChangeDetectionStrategy, SimpleChanges, forwardRef, HostListener, AfterViewInit } from '@angular/core';
 import { Trainer } from '../../models';
+import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
 @Component({
   selector: 'app-tag-it',
   templateUrl: './tag-it.component.html',
   styleUrls: ['./tag-it.component.less'],
+  providers: [{
+    provide: NG_VALUE_ACCESSOR,
+    useExisting: forwardRef(() => TagItComponent),
+    multi: true
+  }],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TagItComponent implements OnInit, OnChanges {
-  @Input() items: Trainer[];
+export class TagItComponent implements OnChanges, AfterViewInit, ControlValueAccessor {
   @Input() allItems: Partial<ReadonlyArray<Trainer>>;
   @Input() tagItId: string;
-  @Output() tagItValueChanged = new EventEmitter<Trainer[]>();
 
+  private tagItInput: HTMLInputElement;
+  public shouldShowList = false;
   public newItemName = '';
-  private newItemId: number;
-  private focusBorderColor = '#30b6dd';
-  private tagIt: HTMLElement;
   public itemsForList: any;
   public itemsForListLetters: string[];
-  constructor(private el: ElementRef) { }
+  public currentValue: Trainer[];
 
-  private createTrainer(): Trainer {
-    const newItem: Trainer = {
-      id: String(this.newItemId),
-      name: this.newItemName,
-      avatar: `https://randomuser.me/api/portraits/men/${this.newItemId++}.jpg`
-    };
+  @HostListener('body:click', ['$event'])
+  onclick(event: any): void {
+    const targetEl: HTMLElement = event.target;
+    const closestTagIt = <HTMLElement>targetEl.closest('app-tag-it');
+    const closestCloseBtn = <HTMLElement>targetEl.closest('.delete-btn');
 
-    this.newItemName = '';
+    if (!closestTagIt && !closestCloseBtn) {
+      this.shouldShowList = false;
+      this.onTouched();
 
-    return newItem;
+    } else {
+      this.tagItInput.focus();
+    }
   }
 
-  ngOnInit() {
-    const nativeElement: HTMLElement = this.el.nativeElement;
-    this.tagIt = nativeElement.querySelector('.tag-it');
-    this.newItemId = this.items.reduce((acc, item) => (
-      Number(item.id) >= acc ? Number(item.id) + 1 : acc
-    ), 1);
+  constructor(private el: ElementRef) { }
+
+  private createTrainer(name: string): Trainer {
+    return  <Trainer>{
+      id: String(Math.random()),
+      name: name,
+      avatar: `https://randomuser.me/api/portraits/men/${12}.jpg`
+    };
+  }
+
+  ngAfterViewInit(): void {
+    this.tagItInput = this.el.nativeElement.querySelector(`#${this.tagItId}`);
   }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes.allItems) {
-      const allItems = changes.allItems.currentValue.slice(0, 10);
-
-      this.itemsForList = allItems.reduce((acc, item) => {
-        const firstLetter = item.name[0].toUpperCase();
-        acc[firstLetter] ? acc[firstLetter].push(item) : acc[firstLetter] = [item];
-        return acc;
-      }, {});
-      this.itemsForListLetters = Object.keys(this.itemsForList);
+      this.updateItemsForList(changes.allItems.currentValue);
     }
   }
 
-  onKeyDown(event: KeyboardEvent): void {
-    if (event.keyCode === 13 && this.newItemName.trim()) {
-      this.items.push(this.createTrainer());
-      this.tagItValueChanged.emit(this.items);
+  updateItemsForList(items): void {
+    this.itemsForList = items.reduce((acc, item) => {
+      const firstLetter = item.name[0].toUpperCase();
+      acc[firstLetter] ? acc[firstLetter].push(item) : acc[firstLetter] = [item];
+      return acc;
+    }, {});
+    this.itemsForListLetters = Object.keys(this.itemsForList);
+  }
+
+  onItemClick(addedTrainer: Trainer): void {
+    const trainerIndex = this.value
+      .findIndex(trainer => trainer.id === addedTrainer.id);
+
+    if (trainerIndex < 0) {
+      this.value = [...this.value, addedTrainer];
     }
   }
 
-  onBlur(): void {
-    if (this.newItemName.trim()) {
-      this.items.push(this.createTrainer());
-      this.tagItValueChanged.emit(this.items);
-    }
+  onCloseBtnClick(): void {
+    this.shouldShowList = false;
+  }
 
-    this.tagIt.style.borderColor = '';
+  onAddBtnClick(value: string): void {
+    const newTrainer = this.createTrainer(value);
+    this.value = [...this.value, newTrainer];
+    this.newItemName = '';
+    this.updateItemsForList(this.allItems);
+  }
+
+  onClearBtnClick(): void {
+    this.newItemName = '';
+    this.updateItemsForList(this.allItems);
+  }
+
+  onModelChanged(value: string): void {
+    const lowwerValue = value.toLocaleLowerCase();
+    const filtedItems = this.allItems.filter(({ name }) => name.toLocaleLowerCase().indexOf(lowwerValue) >= 0);
+    this.updateItemsForList(filtedItems);
   }
 
   onFocus(): void {
-    this.tagIt.style.borderColor = this.focusBorderColor;
+    this.shouldShowList = true;
   }
 
-  onClick(id: string): void {
-    this.items = this.items.filter(
-      item => item.id !== id);
-    this.tagItValueChanged.emit(this.items);
+  onDeleteItem(id: string): void {
+    this.value = this.value.filter(item => item.id !== id);
+  }
+
+  set value(newValue) {
+    this.currentValue = newValue;
+    this.onChange(newValue);
+  }
+
+  get value( ) {
+    return this.currentValue;
+  }
+
+  onChange = (i) => {};
+  onTouched = () => {};
+
+  registerOnChange(fn: any) {
+    this.onChange = fn;
+  }
+
+  registerOnTouched(fn: any) {
+    this.onTouched = fn;
+  }
+
+  writeValue(value: any) {
+    if (value !== this.currentValue) {
+      this.currentValue = value;
+    }
   }
 }
