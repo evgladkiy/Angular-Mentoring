@@ -57,7 +57,9 @@ export class TagItComponent implements AfterViewInit, ControlValueAccessor {
   private updateItemsForList(items): void {
     this.itemsForList = items.reduce((acc, item) => {
       const firstLetter = item.name[0].toUpperCase();
+
       acc[firstLetter] ? acc[firstLetter].push(item) : acc[firstLetter] = [item];
+
       return acc;
     }, {});
     this.itemsForListLetters = Object.keys(this.itemsForList);
@@ -78,6 +80,7 @@ export class TagItComponent implements AfterViewInit, ControlValueAccessor {
 
   onAddBtnClick(value: string): void {
     const newTrainer = this.createTrainer(value);
+
     this.value = [...this.value, newTrainer];
     this.newItemName = '';
     this.updateItemsForList(this.allItems);
@@ -92,6 +95,7 @@ export class TagItComponent implements AfterViewInit, ControlValueAccessor {
     const lowwerValue = value.toLocaleLowerCase();
     const filtedItems = this.allItems
       .filter(({ name }) => name.toLocaleLowerCase().indexOf(lowwerValue) >= 0);
+
     this.updateItemsForList(filtedItems);
   }
 

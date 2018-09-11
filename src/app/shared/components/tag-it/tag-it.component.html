@@ -21,9 +21,9 @@
               <span class="letter-items__letter">{{letter}}</span>
               <ul class="letter-items__list">
                   <li *ngFor="let item of itemsForList[letter]">
-                      <a class="letter-items__list-item btn-container"
-                        [appHighlightByText]=' { text: newItemName, name: item.name }'
-                        (click)="onItemClick(item)">{{item.name}}</a>
+                      <app-tag-it-item-text (click)="onItemClick(item)"
+                          [text]="item.name" [textToHighlight]="newItemName"
+                      ></app-tag-it-item-text>
                   </li>
               </ul>
           </li>

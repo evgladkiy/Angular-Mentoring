@@ -5,7 +5,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
 
 import { CapitalizedPipe, DurationPipe, OrderByPipe } from './pipes';
-import { HighlightByDateDirective, HighlightByTextDirective } from './directives';
+import { HighlightByDateDirective } from './directives';
 import {
   AuthService,
   CoursesService,
@@ -19,6 +19,7 @@ import {
   BreadcrumbsComponent,
   DurationInputComponent,
   DateInputComponent,
+  TagItItemTextComponent,
 } from './components';
 
 @NgModule({
@@ -39,9 +40,9 @@ import {
     ModalWindowComponent,
     BreadcrumbsComponent,
     HighlightByDateDirective,
-    HighlightByTextDirective,
     DurationInputComponent,
     DateInputComponent,
+    TagItItemTextComponent,
   ],
   providers: [
     AuthService,
@@ -58,7 +59,6 @@ import {
     ModalWindowComponent,
     BreadcrumbsComponent,
     HighlightByDateDirective,
-    HighlightByTextDirective
   ],
 })
 export class SharedModule { }
