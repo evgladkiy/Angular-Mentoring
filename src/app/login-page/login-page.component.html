@@ -1,7 +1,9 @@
 <form [formGroup]="userForm" (ngSubmit)="onSubmit()" novalidate>
+  <p class="loading-error" *ngIf="shouldShowError">Incorrect user or password, try again(admin, admin)</p>
     <div class="input-container">
         <label class="label label-required" for="login">Login</label>
-        <input id="login" class="input" type="text" name="login" placeholder="login" formControlName="login" />
+        <input id="login" class="input" type="text" name="login"
+          placeholder="login" formControlName="login" (ngModelChange)="onModelChanged($event)" />
         <p class="input-error" *ngIf=
             "userForm.controls['login'].errors
             && userForm.controls['login'].touched
@@ -16,7 +18,8 @@
     </div>
     <div class="input-container">
         <label class="label label-required" for="password">Password</label>
-        <input id="password"  class="input" type="password" name="password" placeholder="password" formControlName="password" />
+        <input id="password"  class="input" type="password" name="password"
+          placeholder="password" formControlName="password" (ngModelChange)="onModelChanged($event)" />
         <p class="input-error"*ngIf=
             "userForm.controls['password'].errors
             && userForm.controls['password'].touched

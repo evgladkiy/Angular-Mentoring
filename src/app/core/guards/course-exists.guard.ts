@@ -36,6 +36,7 @@ export class CourseExistsGuard implements CanActivate {
 
         return Boolean(courseToUpdate);
       }),
+      // switchMap
       tap((isCourseInStore: boolean) => {
         if (!isCourseInStore) {
           this.store.dispatch(new CoursesActions.GetCourse(id));

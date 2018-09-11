@@ -1,5 +1,5 @@
-import { Component, OnInit, OnChanges, Input, ElementRef,
-  ChangeDetectionStrategy, SimpleChanges, forwardRef, HostListener, AfterViewInit } from '@angular/core';
+import { Component, OnChanges, Input, ElementRef, ChangeDetectionStrategy,
+  SimpleChanges, forwardRef, HostListener, AfterViewInit } from '@angular/core';
 import { Trainer } from '../../models';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
 
@@ -33,8 +33,6 @@ export class TagItComponent implements OnChanges, AfterViewInit, ControlValueAcc
 
     if (!closestTagIt && !closestCloseBtn) {
       this.shouldShowList = false;
-      this.onTouched();
-
     } else {
       this.tagItInput.focus();
     }
@@ -96,12 +94,17 @@ export class TagItComponent implements OnChanges, AfterViewInit, ControlValueAcc
 
   onModelChanged(value: string): void {
     const lowwerValue = value.toLocaleLowerCase();
-    const filtedItems = this.allItems.filter(({ name }) => name.toLocaleLowerCase().indexOf(lowwerValue) >= 0);
+    const filtedItems = this.allItems
+      .filter(({ name }) => name.toLocaleLowerCase().indexOf(lowwerValue) >= 0);
     this.updateItemsForList(filtedItems);
   }
 
   onFocus(): void {
     this.shouldShowList = true;
+  }
+
+  onBlur(): void {
+    this.onTouched();
   }
 
   onDeleteItem(id: string): void {

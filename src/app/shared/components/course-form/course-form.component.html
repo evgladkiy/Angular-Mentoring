@@ -168,6 +168,6 @@
     </div>
     <div class="bnts-container">
         <a routerLink="/courses" class="btn btn-solid btn-blue btn-icon-left" type="submit"><i class="fas fa-chevron-left"></i> Back</a>
-        <button class="btn btn-solid btn-green" type="submit" (click)="onSubmit()">{{submitBtnText}}</button>
+        <button class="btn btn-solid btn-green" type="submit" (click)="onSubmit()" [disabled]="courseForm.invalid">{{submitBtnText}}</button>
     </div>
 </form>

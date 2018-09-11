@@ -11,7 +11,7 @@
             <input
                 [id]="tagItId"  type="text" required #tagInput
                 [name]="tagItId" [placeholder]="'Start type ' + tagItId + ' name'" [(ngModel)]="newItemName"
-                (focus)="onFocus()" (ngModelChange)="onModelChanged($event)"/>
+                (focus)="onFocus()" (ngModelChange)="onModelChanged($event)" (blur)="onBlur()"/>
         </li>
     </ul>
     <div *ngIf="shouldShowList" class="all-items__list-container" id="items-list">
@@ -21,8 +21,9 @@
               <span class="letter-items__letter">{{letter}}</span>
               <ul class="letter-items__list">
                   <li *ngFor="let item of itemsForList[letter]">
-                      <!-- <a class="letter-items__list-item btn-container" [appHighlightByText]='newItemName'>{{item.name}}</a> -->
-                      <a class="letter-items__list-item btn-container" (click)="onItemClick(item)">{{item.name}}</a>
+                      <a class="letter-items__list-item btn-container"
+                        [appHighlightByText]=' { text: newItemName, name: item.name }'
+                        (click)="onItemClick(item)">{{item.name}}</a>
                   </li>
               </ul>
           </li>
@@ -30,7 +31,7 @@
       <div class="buttons-container">
           <button class="btn-container tag-it__btn" (click)="onCloseBtnClick()">Hide all</button>
           <button class="btn-container tag-it__btn" (click)="onClearBtnClick()">Clear</button>
-          <button class="btn-container tag-it__btn" (click)="onAddBtnClick(tagInput.value)">Add new {{tagItId}}</button>
+          <button class="btn-container tag-it__btn" (click)="onAddBtnClick(tagInput.value)">Add new</button>
       </div>
     </div>
 </section>

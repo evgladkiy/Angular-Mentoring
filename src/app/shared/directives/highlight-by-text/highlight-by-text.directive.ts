@@ -1,50 +1,30 @@
-import { Directive, Input, OnInit, ElementRef, OnChanges, SimpleChanges } from '@angular/core';
+import { Directive, Input, ElementRef, OnChanges, SimpleChanges } from '@angular/core';
+
+interface Data {
+  text: string;
+  name: string;
+}
 
 @Directive({
   selector: '[appHighlightByText]'
 })
 export class HighlightByTextDirective implements  OnChanges {
-  @Input('appHighlightByText') text: string;
-  private color = '#b23a6b';
-  private regexp = /(^<span>|<\/span>)$/gi;
+  @Input('appHighlightByText') data: Data;
+
   constructor(private el: ElementRef) { }
 
   ngOnChanges(changes: SimpleChanges): void {
+    const { text, name } = this.data;
     const nativeElement: HTMLElement = this.el.nativeElement;
-    let nativeElementText: string = nativeElement.innerHTML;
-    console.log(nativeElementText)
-    nativeElementText.replace(this.regexp, '');
-    nativeElementText.replace(/\r|\n/gi, '')
+    const { firstChange } = changes.data;
+    const textIndex: number = name.toLowerCase().indexOf(text);
 
-    console.log(nativeElementText)
-    const textIndex: number = nativeElementText.toLocaleLowerCase().indexOf(this.text.toLocaleLowerCase());
-    if (textIndex >= 1) {
-      console.log(nativeElementText.slice(0, textIndex) + 'a')
-      const newText = nativeElementText.slice(0, textIndex)
-        + '<span>' + nativeElementText.slice(textIndex , textIndex + this.text.length)
-        + '</span>'
-        + nativeElementText.slice(textIndex + this.text.length);
-        nativeElement.innerHTML = newText;
+    if (textIndex >= 0 && (!firstChange || text)) {
+        const newText = `
+          <span>${name.slice(0, textIndex)}</span>
+            <span class="highlight-by-text">${name.slice(textIndex , textIndex + text.length)}</span>
+          <span>${name.slice(textIndex + text.length)}<span>`;
+      nativeElement.innerHTML = newText;
     }
   }
-  // }(): void {
-  //   const nativeElement: HTMLElement = this.el.nativeElement;
-  //   const nativeElementText = nativeElement.innerHTML;
-  //   console.log(nativeElement, nativeElementText)
-    // const todayMs = Date.now();
-    // const creationDateMs = Number(this.creationDate);
-    // const differenceInMs: number = todayMs - creationDateMs;
-
-    // const daysForFreshCourse = 14;
-    // const freshCourseDuration: number = 1000 * 60 * 60 * 24 * daysForFreshCourse;
-
-    // if (differenceInMs < 0) { // upcoming course
-    //   nativeElement.style.borderColor = 'crimson';
-    // }
-
-    // if (differenceInMs >= 0 && differenceInMs <= freshCourseDuration) { // fresh course
-    //   nativeElement.style.borderColor = 'rgb(35, 133, 35)';
-    // }
-  // }
-
 }

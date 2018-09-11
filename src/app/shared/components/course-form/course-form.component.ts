@@ -31,10 +31,12 @@ export class CourseFormComponent implements OnInit, OnChanges {
     rating: new FormControl(0, [Validators.required, Validators.max(100), Validators.min(0)]),
     isFavorite: new FormControl(false),
   });
-  // public date: string;
+
   public typesOfCourse$: Observable<ReadonlyArray<string>>;
   public coursesDifficulty$: Observable<ReadonlyArray<string>>;
   public allTrainers$: Observable<ReadonlyArray<Trainer>>;
+  public courseToUpdateId = String(Math.random());
+
   constructor(private store: Store<AppState>) { }
 
   @Input() course?: Course;
@@ -51,6 +53,7 @@ export class CourseFormComponent implements OnInit, OnChanges {
     if (changes.course && changes.course.currentValue) {
       const course: Course = changes.course.currentValue;
 
+      this.courseToUpdateId = changes.course.currentValue._id;
       this.courseForm.setValue({
         title: course.title,
         description: course.description,
@@ -76,18 +79,20 @@ export class CourseFormComponent implements OnInit, OnChanges {
     return `${courseDate}/${courseMonth}/${courseYear}`;
   }
 
-  onSubmit(): void {
-    console.log(this.courseForm);
-    console.log(this.courseForm.value);
-    // this.course.date = new Date(this.date);
-    // this.submited.emit(this.course);
+  private getDateForCoure(date: string): Date {
+    const dateArr = date.split('/');
+    const courseDate: number = Number(dateArr[0]);
+    const courseMonth: number = Number(dateArr[1]);
+    const courseYear: number = Number(dateArr[2]);
+
+    return new Date(courseYear, courseMonth - 1, courseDate);
   }
 
-  // onTagItValueChanged(trainers: Trainer[]): void {
-  //   this.course.trainers = trainers;
-  // }
+  onSubmit(): void {
+    const { value: course } = this.courseForm;
 
-  // onDropdownValueChanged(value: string, prop: string): void {
-  //   this.course[prop] = value;
-  // }
+    course.date = this.getDateForCoure(course.date);
+    course._id = this.courseToUpdateId;
+    this.submited.emit(course);
+  }
 }
