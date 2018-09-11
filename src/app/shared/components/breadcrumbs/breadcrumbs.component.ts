@@ -23,7 +23,9 @@ export class BreadcrumbsComponent implements OnDestroy, OnInit {
   }
 
   ngOnDestroy(): void {
-    this.sub.unsubscribe();
+    if (this.sub) {
+      this.sub.unsubscribe();
+    }
   }
 
   private parseUrlToCrumbs(url: string): string[] {

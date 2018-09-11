@@ -1,7 +1,8 @@
-import { Component, OnChanges, Input, ElementRef, ChangeDetectionStrategy,
-  SimpleChanges, forwardRef, HostListener, AfterViewInit } from '@angular/core';
-import { Trainer } from '../../models';
+import { Component, Input, ElementRef, ChangeDetectionStrategy,
+  forwardRef, HostListener, AfterViewInit } from '@angular/core';
 import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
+
+import { Trainer } from '../../models';
 
 @Component({
   selector: 'app-tag-it',
@@ -14,7 +15,7 @@ import { NG_VALUE_ACCESSOR, ControlValueAccessor } from '@angular/forms';
   }],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TagItComponent implements OnChanges, AfterViewInit, ControlValueAccessor {
+export class TagItComponent implements AfterViewInit, ControlValueAccessor {
   @Input() allItems: Partial<ReadonlyArray<Trainer>>;
   @Input() tagItId: string;
 
@@ -50,15 +51,10 @@ export class TagItComponent implements OnChanges, AfterViewInit, ControlValueAcc
 
   ngAfterViewInit(): void {
     this.tagItInput = this.el.nativeElement.querySelector(`#${this.tagItId}`);
+    this.updateItemsForList(this.allItems);
   }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes.allItems) {
-      this.updateItemsForList(changes.allItems.currentValue);
-    }
-  }
-
-  updateItemsForList(items): void {
+  private updateItemsForList(items): void {
     this.itemsForList = items.reduce((acc, item) => {
       const firstLetter = item.name[0].toUpperCase();
       acc[firstLetter] ? acc[firstLetter].push(item) : acc[firstLetter] = [item];

@@ -23,13 +23,13 @@
             "courseForm.controls['description'].errors
             && courseForm.controls['description'].touched
             && courseForm.controls['description'].errors.required"
-        >Course title is required</p>
+        >Course description is required</p>
         <p class="input-error" *ngIf=
             "courseForm.controls['description'].errors
             && courseForm.controls['description'].touched
             && !courseForm.controls['description'].errors.required
             && courseForm.controls['description'].errors.maxlength"
-        >Course title should be less than 500 characters</p>
+        >Course description should be less than 500 characters</p>
     </div>
     <div class="input-container">
         <label class="label label-required" for="img">Course poster</label>
@@ -39,7 +39,7 @@
             "courseForm.controls['img'].errors
             && courseForm.controls['img'].touched
             && courseForm.controls['img'].errors.required"
-        >Course title is required</p>
+        >Course poster is required</p>
     </div>
     <div class="input-container">
         <app-tag-it

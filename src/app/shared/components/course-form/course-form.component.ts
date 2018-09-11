@@ -1,4 +1,4 @@
-import { Component, OnInit, Input, EventEmitter, Output, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output } from '@angular/core';
 import { Observable } from 'rxjs';
 import { dateValidator, integerValidator, dropListValidator, tagItValidator } from './../../../core/validators';
 import { Store } from '@ngrx/store';
@@ -17,7 +17,7 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   templateUrl: './course-form.component.html',
   styleUrls: [ './course-form.component.less' ],
 })
-export class CourseFormComponent implements OnInit, OnChanges {
+export class CourseFormComponent implements OnInit {
   public courseForm = new FormGroup({
     title: new FormControl('', [Validators.required, Validators.maxLength(50)]),
     description: new FormControl('', [Validators.required, Validators.maxLength(500)]),
@@ -47,25 +47,20 @@ export class CourseFormComponent implements OnInit, OnChanges {
     this.allTrainers$ = this.store.select(getTrainers);
     this.typesOfCourse$ = this.store.select(getTypesOfCourses);
     this.coursesDifficulty$ = this.store.select(getDifficultyOfCourses);
-  }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes.course && changes.course.currentValue) {
-      const course: Course = changes.course.currentValue;
-
-      this.courseToUpdateId = changes.course.currentValue._id;
+    if (this.course) {
       this.courseForm.setValue({
-        title: course.title,
-        description: course.description,
-        img: course.img,
+        title: this.course.title,
+        description: this.course.description,
+        img: this.course.img,
         date: this.getDateForInput(new Date(this.course.date)),
-        duration: course.duration,
-        difficulty: course.difficulty,
-        trainers: course.trainers,
-        type: course.type,
-        language: course.language,
-        rating: course.rating,
-        isFavorite: course.isFavorite,
+        duration: this.course.duration,
+        difficulty: this.course.difficulty,
+        trainers: this.course.trainers,
+        type: this.course.type,
+        language: this.course.language,
+        rating: this.course.rating,
+        isFavorite: this.course.isFavorite,
       });
     }
   }
@@ -90,9 +85,11 @@ export class CourseFormComponent implements OnInit, OnChanges {
 
   onSubmit(): void {
     const { value: course } = this.courseForm;
+    const courseId = this.course ? this.course._id : String(Math.random());
 
     course.date = this.getDateForCoure(course.date);
-    course._id = this.courseToUpdateId;
+    course._id = courseId;
+
     this.submited.emit(course);
   }
 }
